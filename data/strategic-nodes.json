@@ -537,5 +537,82 @@
     ],
     "note": "Polo productivo a unos 3 km del centro de Rafaela, con acceso por RN 34 e infraestructura industrial, servicios empresariales, centro logístico y resguardo aduanero. Coordenada referencial del sector; confirmar ubicación del lote o empresa con la administración.",
     "source": "https://paer.rafaela.gob.ar/parque-actividades-economicas-rafaela/"
+  },
+  {
+    "name": "Aeropuerto Internacional Coronel Felipe Varela",
+    "province": "Catamarca",
+    "type": "Aeropuerto",
+    "coords": [
+      -28.5937,
+      -65.7509
+    ],
+    "note": "Terminal aérea en Las Tejas de Valle Viejo, a unos 15 km de San Fernando del Valle de Catamarca. Coordenada referencial; verificar accesos y operación antes de planificar traslados.",
+    "source": "https://www.argentina.gob.ar/catamarca/llegar"
+  },
+  {
+    "name": "Aeropuerto Internacional El Pucú",
+    "province": "Formosa",
+    "type": "Aeropuerto",
+    "coords": [
+      -26.2127,
+      -58.2281
+    ],
+    "note": "Aeropuerto situado aproximadamente 7 km al sur del centro de Formosa. Coordenada referencial; confirmar servicios y operación con el administrador.",
+    "source": "https://www.argentina.gob.ar/formosa/llegar"
+  },
+  {
+    "name": "Puerto de Formosa",
+    "province": "Formosa",
+    "type": "Puerto",
+    "coords": [
+      -26.184,
+      -58.177
+    ],
+    "note": "Puerto sobre la margen derecha del río Paraguay. La referencia oficial describe tráfico vecinal fronterizo y operaciones de carga; coordenada aproximada del sector portuario.",
+    "source": "https://www.argentina.gob.ar/formosa/llegar"
+  },
+  {
+    "name": "Puerto de Concepción del Uruguay",
+    "province": "Entre Ríos",
+    "type": "Puerto",
+    "coords": [
+      -32.484,
+      -58.232
+    ],
+    "note": "Puerto sobre el río Uruguay, con infraestructura para operaciones de buques de carga. Coordenada referencial; consultar calado, servicios y disponibilidad con la autoridad portuaria.",
+    "source": "https://www.argentina.gob.ar/entre-rios/llegar"
+  },
+  {
+    "name": "Centro de Frontera Concordia — Salto Grande",
+    "province": "Entre Ríos",
+    "type": "Paso fronterizo",
+    "coords": [
+      -31.266,
+      -57.95
+    ],
+    "note": "Paso terrestre entre Concordia (Argentina) y Salto (Uruguay), ubicado en el complejo hidroeléctrico de Salto Grande. Horarios y modalidades pueden variar; verificar antes del viaje.",
+    "source": "https://www.argentina.gob.ar/interior/centros-de-frontera/concordia"
+  },
+  {
+    "name": "Aeropuerto de Santa Rosa",
+    "province": "La Pampa",
+    "type": "Aeropuerto",
+    "coords": [
+      -36.5883,
+      -64.2757
+    ],
+    "note": "Aeropuerto ubicado a unos 4,5 km de la capital pampeana. Coordenada referencial; consultar arribos, partidas y servicios vigentes.",
+    "source": "https://www.argentina.gob.ar/lapampa/llegar"
+  },
+  {
+    "name": "Aeropuerto Internacional Teniente Benjamín Matienzo",
+    "province": "Tucumán",
+    "type": "Aeropuerto",
+    "coords": [
+      -26.8409,
+      -65.1049
+    ],
+    "note": "Aeropuerto situado a unos 9 km al este de San Miguel de Tucumán, con conectividad aérea y actividad de carga. Coordenada referencial; verificar servicios y operación.",
+    "source": "https://www.argentina.gob.ar/tucuman/llegar"
   }
 ]
