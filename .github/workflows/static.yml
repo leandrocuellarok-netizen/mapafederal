@@ -128,6 +128,8 @@ jobs:
           grep -q 'poi-type' index.html
           grep -q 'province-card' index.html
           grep -q 'profile-grid' index.html
+          grep -q 'profile-insights' index.html
+          grep -q 'renderProfileInsights' index.html
           grep -q 'data/provincial-profiles.json' index.html
           grep -q 'map-fallback' index.html
           grep -q 'aria-live="polite"' index.html
