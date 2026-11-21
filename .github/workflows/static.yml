@@ -96,7 +96,11 @@ jobs:
           grep -q '<html lang="es">' index.html
           grep -q 'property="og:title"' index.html
           grep -q 'map-province-filter' index.html
+          grep -q 'poi-type' index.html
           grep -q 'province-card' index.html
+          grep -q 'map-fallback' index.html
+          grep -q 'aria-live="polite"' index.html
+          grep -q 'typeof L !== "undefined"' index.html
           grep -q 'data/strategic-nodes.json' index.html
           grep -q 'data/news.json' index.html
 
