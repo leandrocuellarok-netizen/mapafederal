@@ -714,5 +714,17 @@
     "note": "Ubicado al sur de General Güemes sobre la RN 34, km 1.132. El ente provincial informa más de 430 hectáreas activas y conexión con la red Belgrano Cargas; no confundir el parque con el nodo logístico proyectado. Coordenada cartográfica aproximada.",
     "source": "https://www.egpais.com.ar/parques/parque-industrial-guemes/",
     "coordinateSource": "https://mapcarta.com/es/W1390977508"
+  },
+  {
+    "name": "Puerto de San Nicolás — muelle provincial",
+    "province": "Buenos Aires",
+    "type": "Puerto",
+    "coords": [
+      -33.351389,
+      -60.175139
+    ],
+    "note": "La ficha de ANPyN localiza el muelle fiscal en el km 348,5 de la margen derecha del Paraná. Informa un frente multipropósito y calado declarado de 10,5 m; confirmar condiciones operativas y servicios vigentes con el Consorcio de Gestión.",
+    "source": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/san-nicolas-muelle-provincial",
+    "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/san-nicolas-muelle-provincial"
   }
 ]
