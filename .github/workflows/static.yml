@@ -136,6 +136,9 @@ jobs:
           grep -q 'typeof L !== "undefined"' index.html
           grep -q 'data/strategic-nodes.json' index.html
           grep -q 'data/news.json' index.html
+          grep -q 'id="export-nodes"' index.html
+          grep -q 'id="export-profiles"' index.html
+          grep -q 'function downloadCsv' index.html
 
   deploy:
     needs: validate
