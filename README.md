@@ -7,10 +7,11 @@ Plataforma web estática en evolución para explorar infraestructura, nodos terr
 ## Funcionalidades disponibles
 
 - Mapa interactivo con Leaflet y cartografía de OpenStreetMap.
-- Catálogo externo de 60 nodos estratégicos en `data/strategic-nodes.json`, con presencia en las 23 provincias y la Ciudad Autónoma de Buenos Aires, puntos de referencia y advertencias sobre coordenadas aproximadas.
+- Catálogo externo de 63 nodos estratégicos en `data/strategic-nodes.json`, con presencia en las 23 provincias y la Ciudad Autónoma de Buenos Aires, puntos de referencia y advertencias sobre coordenadas aproximadas.
 - Filtros del mapa por categoría y provincia; búsqueda por varios términos sin depender de tildes.
 - Buscador por nombre, provincia y tipo de nodo.
-- Directorio tabular filtrable por provincia, con accesos que centran el mapa y fichas de cobertura basadas exclusivamente en los nodos registrados.
+- Directorio tabular filtrable por provincia y categoría, sincronizado con los filtros del mapa; sus accesos centran el punto seleccionado y muestran su ficha.
+- Degradación controlada: si Leaflet o la cartografía externa no cargan, el directorio y las noticias siguen disponibles.
 - Sección editorial alimentada por `data/news.json`, con filtros por tema y búsqueda.
 - Diseño adaptable, navegación por anclas y avisos de estado.
 - Validación automática de los archivos JSON antes de desplegar en GitHub Pages.
@@ -23,7 +24,7 @@ Para pasos fronterizos, consultar siempre el estado y los horarios vigentes en M
 
 ### Ampliaciones incorporadas
 
-La cobertura del catálogo alcanza ahora las 24 jurisdicciones argentinas y 60 nodos estratégicos. Se incorporaron referencias para Catamarca, Formosa, Entre Ríos, La Pampa y Tucumán, además de ampliar la infraestructura fluvial y fronteriza de Formosa y Entre Ríos. Las coordenadas de estos puntos son aproximadas y se deben verificar antes de cualquier uso operativo.
+La cobertura del catálogo alcanza ahora las 24 jurisdicciones argentinas y 63 nodos estratégicos. Se incorporaron referencias para Catamarca, Formosa, Entre Ríos, La Pampa y Tucumán, además de ampliar la infraestructura fluvial y fronteriza de Formosa y Entre Ríos. Las coordenadas de estos puntos son aproximadas y se deben verificar antes de cualquier uso operativo.
 
 
 - Aeropuerto Internacional Gobernador Horacio Guzmán (Perico, Jujuy): ubicación y descripción institucional en [Argentina.gob.ar](https://www.argentina.gob.ar/transporte/obras-en-los-aeropuertos/aeropuerto-de-jujuy).
@@ -39,6 +40,9 @@ La interfaz permite filtrar el mapa y el directorio por tipo y provincia. La val
 - [Centros de frontera — Pino Hachado](https://www.argentina.gob.ar/interior/centros-de-frontera/pino-hachado), [Agua Negra](https://www.argentina.gob.ar/interior/centros-de-frontera/agua-negra) y [Pircas Negras](https://www.argentina.gob.ar/interior/centros-de-frontera/pircas-negras).
 - [Puerto de Comodoro Rivadavia](https://puertocomodororivadavia.ar/), [Puerto San Antonio Este](https://www.patagonia-norte.com.ar/sae.html), [Terminal Zárate](https://www.terminalzarate.com.ar/) y [Consorcio Portuario Regional de Mar del Plata](https://puertomardelplata.net/).
 - [Parque Industrial Pilar](https://www.parqueindustrialpilar.org.ar/contacto).
+- [Puerto de Barranqueras — muelle provincial](https://www.argentina.gob.ar/puertos-vias-navegables-y-marina-mercante/informaci%C3%B3n-portuaria/barranqueras-provincial): ficha oficial de localización y coordenadas del muelle.
+- [Paso Internacional San Francisco](https://www.turismofiambala.com.ar/qu%C3%A9-visitar/paso-internacional-san-francisco): referencia geográfica y datos generales de Turismo Fiambalá; consultar el estado operativo antes de viajar.
+- [Parque Industrial Bahía Blanca](https://pibb.com.ar/): sitio institucional del parque y referencia de su emplazamiento; el marcador del mapa es aproximado.
 - [Neuquén Informa — infraestructura de Vaca Muerta y Añelo](https://www.neuqueninforma.gob.ar/noticias/2025/09/08/251191-vaca-muerta-provincia-y-operadoras-acordaron-construir-una-obra-vial-estrategica).
 - [OpenStreetMap](https://www.openstreetmap.org/copyright) — cartografía base y atribución.
 
@@ -100,7 +104,7 @@ Criterio editorial:
 5. Priorizar relevancia para empresas, inversión, comercio, infraestructura y actividad productiva argentina.
 6. No presentar contenido de prueba como actualidad periodística.
 
-Las noticias cargadas actualmente fueron contrastadas con publicaciones oficiales de INDEC, Presidencia de la Nación, INTI, INTA y organismos nacionales vinculados con producción y comercio. Entre las incorporaciones recientes figuran la ronda internacional de negocios de Argentina Alimenta y las herramientas del INTA para trazabilidad y diferenciación de productos cárnicos. La última curación de contenido de esta versión corresponde al 21 de noviembre de 2026. Se agregó la aprobación del proyecto Argentina LNG al RIGI, con cifras atribuidas a Reuters; la aprobación regulatoria no implica que el proyecto ya esté en operación. La sección es editorial y estática: no realiza scraping ni actualización automática. Para automatizar la curación se requiere integrar fuentes RSS/API permitidas, respetar licencias y términos de uso y establecer revisión editorial.
+Las noticias cargadas actualmente fueron contrastadas con publicaciones oficiales de INDEC, Presidencia de la Nación, INTI, INTA y organismos nacionales vinculados con producción y comercio. Se incorporó la segunda Ronda de Negocios RIGI, prevista para el 2 de diciembre de 2026: la inscripción a reuniones de negocios cerró el 16 de noviembre, mientras que la asistencia a las demás actividades puede inscribirse hasta el 30 de noviembre según la publicación del Ministerio de Economía del 11 de noviembre. La sede figuraba pendiente de designación en esa fuente. Entre las incorporaciones recientes figuran la ronda internacional de negocios de Argentina Alimenta y las herramientas del INTA para trazabilidad y diferenciación de productos cárnicos. La última curación de contenido de esta versión corresponde al 21 de noviembre de 2026. Se agregó la aprobación del proyecto Argentina LNG al RIGI, con cifras atribuidas a Reuters; la aprobación regulatoria no implica que el proyecto ya esté en operación. La sección es editorial y estática: no realiza scraping ni actualización automática. Para automatizar la curación se requiere integrar fuentes RSS/API permitidas, respetar licencias y términos de uso y establecer revisión editorial.
 
 ## Arquitectura
 
