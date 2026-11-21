@@ -1,0 +1,508 @@
+[
+  {
+    "name": "Ciudad Autónoma de Buenos Aires",
+    "province": "CABA",
+    "type": "Ciudad",
+    "coords": [
+      -34.6037,
+      -58.3816
+    ],
+    "note": "Centro político, financiero y de servicios.",
+    "source": "https://www.buenosaires.gob.ar/"
+  },
+  {
+    "name": "Puerto de Buenos Aires",
+    "province": "CABA",
+    "type": "Puerto",
+    "coords": [
+      -34.576,
+      -58.369
+    ],
+    "note": "Infraestructura portuaria y logística metropolitana.",
+    "source": "https://www.puertobuenosaires.gob.ar/"
+  },
+  {
+    "name": "Aeropuerto Internacional de Ezeiza",
+    "province": "Buenos Aires",
+    "type": "Aeropuerto",
+    "coords": [
+      -34.8222,
+      -58.5358
+    ],
+    "note": "Principal nodo aeroportuario internacional del país.",
+    "source": "https://www.aa2000.com.ar/ezeiza"
+  },
+  {
+    "name": "Aeroparque Jorge Newbery",
+    "province": "CABA",
+    "type": "Aeropuerto",
+    "coords": [
+      -34.5592,
+      -58.4156
+    ],
+    "note": "Conectividad aérea de cabotaje y regional.",
+    "source": "https://www.aa2000.com.ar/aeroparque"
+  },
+  {
+    "name": "Puerto La Plata",
+    "province": "Buenos Aires",
+    "type": "Puerto",
+    "coords": [
+      -34.856,
+      -57.883
+    ],
+    "note": "Nodo portuario de la región capital bonaerense.",
+    "source": "https://www.puertolaplata.com/"
+  },
+  {
+    "name": "Polo petroquímico de Bahía Blanca",
+    "province": "Buenos Aires",
+    "type": "Industria",
+    "coords": [
+      -38.72,
+      -62.27
+    ],
+    "note": "Complejo industrial y petroquímico de referencia regional.",
+    "source": "https://www.bahia.gob.ar/"
+  },
+  {
+    "name": "Puerto de Rosario",
+    "province": "Santa Fe",
+    "type": "Puerto",
+    "coords": [
+      -32.95,
+      -60.64
+    ],
+    "note": "Nodo portuario del sistema fluvial del Paraná.",
+    "source": "https://www.enapro.com.ar/"
+  },
+  {
+    "name": "Complejo portuario San Lorenzo",
+    "province": "Santa Fe",
+    "type": "Puerto",
+    "coords": [
+      -32.74,
+      -60.73
+    ],
+    "note": "Área portuaria e industrial del Gran Rosario.",
+    "source": "https://www.enapro.com.ar/"
+  },
+  {
+    "name": "Aeropuerto Internacional de Rosario",
+    "province": "Santa Fe",
+    "type": "Aeropuerto",
+    "coords": [
+      -32.9036,
+      -60.785
+    ],
+    "note": "Conectividad aérea de la región Rosario.",
+    "source": "https://aeropuertorosario.com/"
+  },
+  {
+    "name": "Puerto de Santa Fe",
+    "province": "Santa Fe",
+    "type": "Puerto",
+    "coords": [
+      -31.65,
+      -60.7
+    ],
+    "note": "Infraestructura portuaria sobre el sistema Paraná.",
+    "source": "https://www.puertosfe.com/"
+  },
+  {
+    "name": "Puerto de Bahía Blanca",
+    "province": "Buenos Aires",
+    "type": "Puerto",
+    "coords": [
+      -38.78,
+      -62.27
+    ],
+    "note": "Complejo portuario e industrial del sudoeste bonaerense.",
+    "source": "https://puertobahiablanca.com/"
+  },
+  {
+    "name": "Puerto de Quequén",
+    "province": "Buenos Aires",
+    "type": "Puerto",
+    "coords": [
+      -38.57,
+      -58.7
+    ],
+    "note": "Nodo portuario del sudeste bonaerense.",
+    "source": "https://www.puertoquequen.com/"
+  },
+  {
+    "name": "Parque Industrial Córdoba",
+    "province": "Córdoba",
+    "type": "Industria",
+    "coords": [
+      -31.4,
+      -64.18
+    ],
+    "note": "Área industrial del principal centro urbano provincial.",
+    "source": "https://www.cordoba.gob.ar/"
+  },
+  {
+    "name": "Aeropuerto Internacional Córdoba",
+    "province": "Córdoba",
+    "type": "Aeropuerto",
+    "coords": [
+      -31.3236,
+      -64.208
+    ],
+    "note": "Conectividad aérea del centro del país.",
+    "source": "https://www.aa2000.com.ar/cordoba"
+  },
+  {
+    "name": "Paso Cristo Redentor",
+    "province": "Mendoza",
+    "type": "Paso fronterizo",
+    "coords": [
+      -32.824,
+      -70.07
+    ],
+    "note": "Corredor internacional terrestre entre Argentina y Chile.",
+    "source": "https://www.argentina.gob.ar/seguridad/pasosinternacionales"
+  },
+  {
+    "name": "Aeropuerto Internacional El Plumerillo",
+    "province": "Mendoza",
+    "type": "Aeropuerto",
+    "coords": [
+      -32.8317,
+      -68.7929
+    ],
+    "note": "Conectividad aérea de Cuyo.",
+    "source": "https://www.aa2000.com.ar/mendoza"
+  },
+  {
+    "name": "Parque Industrial Neuquén",
+    "province": "Neuquén",
+    "type": "Industria",
+    "coords": [
+      -38.93,
+      -68.1
+    ],
+    "note": "Área de actividad industrial y servicios de la región.",
+    "source": "https://www.neuquencapital.gov.ar/"
+  },
+  {
+    "name": "Aeropuerto Presidente Perón",
+    "province": "Neuquén",
+    "type": "Aeropuerto",
+    "coords": [
+      -38.949,
+      -68.1557
+    ],
+    "note": "Conectividad aérea de la región metropolitana neuquina.",
+    "source": "https://www.aa2000.com.ar/neuquen"
+  },
+  {
+    "name": "Paso Cardenal Samoré",
+    "province": "Neuquén",
+    "type": "Paso fronterizo",
+    "coords": [
+      -40.71,
+      -71.94
+    ],
+    "note": "Conexión internacional entre Neuquén y la Región de Los Lagos.",
+    "source": "https://www.argentina.gob.ar/seguridad/pasosinternacionales"
+  },
+  {
+    "name": "Puerto de Ushuaia",
+    "province": "Tierra del Fuego",
+    "type": "Puerto",
+    "coords": [
+      -54.8,
+      -68.3
+    ],
+    "note": "Nodo portuario, logístico y de cruceros australes.",
+    "source": "https://www.puertoushuaia.com/"
+  },
+  {
+    "name": "Aeropuerto Malvinas Argentinas",
+    "province": "Tierra del Fuego",
+    "type": "Aeropuerto",
+    "coords": [
+      -54.8433,
+      -68.2958
+    ],
+    "note": "Acceso aéreo a Ushuaia y Tierra del Fuego.",
+    "source": "https://www.aa2000.com.ar/ushuaia"
+  },
+  {
+    "name": "Paso Jama",
+    "province": "Jujuy",
+    "type": "Paso fronterizo",
+    "coords": [
+      -23.24,
+      -67.03
+    ],
+    "note": "Corredor internacional hacia el norte de Chile.",
+    "source": "https://www.argentina.gob.ar/seguridad/pasosinternacionales"
+  },
+  {
+    "name": "Parque Industrial Salta",
+    "province": "Salta",
+    "type": "Industria",
+    "coords": [
+      -24.78,
+      -65.39
+    ],
+    "note": "Área de radicación industrial de la provincia.",
+    "source": "https://www.salta.gob.ar/"
+  },
+  {
+    "name": "Aeropuerto Internacional Martín Miguel de Güemes",
+    "province": "Salta",
+    "type": "Aeropuerto",
+    "coords": [
+      -24.855,
+      -65.486
+    ],
+    "note": "Conectividad aérea del noroeste argentino.",
+    "source": "https://www.aa2000.com.ar/salta"
+  },
+  {
+    "name": "Paso de los Libres - Uruguayana",
+    "province": "Corrientes",
+    "type": "Paso fronterizo",
+    "coords": [
+      -29.71,
+      -57.09
+    ],
+    "note": "Corredor vial internacional sobre el río Uruguay.",
+    "source": "https://www.argentina.gob.ar/seguridad/pasosinternacionales"
+  },
+  {
+    "name": "Puerto de Corrientes",
+    "province": "Corrientes",
+    "type": "Puerto",
+    "coords": [
+      -27.47,
+      -58.84
+    ],
+    "note": "Infraestructura portuaria sobre el río Paraná.",
+    "source": "https://www.corrientes.gob.ar/"
+  },
+  {
+    "name": "Aeropuerto Internacional de Iguazú",
+    "province": "Misiones",
+    "type": "Aeropuerto",
+    "coords": [
+      -25.7373,
+      -54.4734
+    ],
+    "note": "Acceso aéreo a uno de los principales destinos turísticos del país.",
+    "source": "https://www.aa2000.com.ar/iguazu"
+  },
+  {
+    "name": "Complejo Industrial La Rioja",
+    "province": "La Rioja",
+    "type": "Industria",
+    "coords": [
+      -29.41,
+      -66.86
+    ],
+    "note": "Área industrial y productiva provincial.",
+    "source": "https://www.larioja.gob.ar/"
+  },
+  {
+    "name": "Parque Industrial San Luis",
+    "province": "San Luis",
+    "type": "Industria",
+    "coords": [
+      -33.3,
+      -66.34
+    ],
+    "note": "Área de actividad industrial provincial.",
+    "source": "https://www.sanluis.gov.ar/"
+  },
+  {
+    "name": "Aeropuerto Internacional de Bariloche",
+    "province": "Río Negro",
+    "type": "Aeropuerto",
+    "coords": [
+      -41.1512,
+      -71.1575
+    ],
+    "note": "Conectividad de un destino turístico y científico patagónico.",
+    "source": "https://www.aa2000.com.ar/bariloche"
+  },
+  {
+    "name": "Puerto Madryn",
+    "province": "Chubut",
+    "type": "Puerto",
+    "coords": [
+      -42.77,
+      -65.04
+    ],
+    "note": "Nodo portuario e industrial patagónico.",
+    "source": "https://www.chubut.gov.ar/"
+  },
+  {
+    "name": "Aeropuerto de Comodoro Rivadavia",
+    "province": "Chubut",
+    "type": "Aeropuerto",
+    "coords": [
+      -45.7853,
+      -67.4655
+    ],
+    "note": "Conectividad de un centro energético patagónico.",
+    "source": "https://www.aa2000.com.ar/comodororivadavia"
+  },
+  {
+    "name": "Paso Integración Austral",
+    "province": "Santa Cruz",
+    "type": "Paso fronterizo",
+    "coords": [
+      -52.08,
+      -69.52
+    ],
+    "note": "Conexión terrestre internacional en el extremo sur.",
+    "source": "https://www.argentina.gob.ar/seguridad/pasosinternacionales"
+  },
+  {
+    "name": "Aeropuerto Internacional de Resistencia",
+    "province": "Chaco",
+    "type": "Aeropuerto",
+    "coords": [
+      -27.4499,
+      -59.0561
+    ],
+    "note": "Conectividad aérea del nordeste argentino.",
+    "source": "https://www.aa2000.com.ar/resistencia"
+  },
+  {
+    "name": "Aeropuerto de Santiago del Estero",
+    "province": "Santiago del Estero",
+    "type": "Aeropuerto",
+    "coords": [
+      -27.7656,
+      -64.3092
+    ],
+    "note": "Conectividad aérea de la región centro-norte.",
+    "source": "https://www.aa2000.com.ar/santiagodelestero"
+  },
+  {
+    "name": "Puerto de Mar del Plata",
+    "province": "Buenos Aires",
+    "type": "Puerto",
+    "coords": [
+      -38.034,
+      -57.542
+    ],
+    "note": "Nodo portuario pesquero, comercial y turístico del litoral bonaerense. Coordenada referencial.",
+    "source": "https://puertomardelplata.net/"
+  },
+  {
+    "name": "Puerto San Antonio Este",
+    "province": "Río Negro",
+    "type": "Puerto",
+    "coords": [
+      -40.8,
+      -64.87
+    ],
+    "note": "Puerto de aguas profundas de la costa rionegrina. Coordenada referencial; consultar condiciones operativas con la administración.",
+    "source": "https://www.patagonia-norte.com.ar/sae.html"
+  },
+  {
+    "name": "Puerto de Comodoro Rivadavia",
+    "province": "Chubut",
+    "type": "Puerto",
+    "coords": [
+      -45.8625,
+      -67.4716
+    ],
+    "note": "Nodo portuario de la cuenca del Golfo San Jorge, vinculado a cargas, pesca y servicios energéticos.",
+    "source": "https://puertocomodororivadavia.ar/"
+  },
+  {
+    "name": "Puerto Deseado",
+    "province": "Santa Cruz",
+    "type": "Puerto",
+    "coords": [
+      -47.75,
+      -65.9
+    ],
+    "note": "Puerto de la costa atlántica santacruceña. Coordenada referencial; verificar servicios y operatoria.",
+    "source": "https://www.uneposc.com.ar/"
+  },
+  {
+    "name": "Puerto Campana",
+    "province": "Buenos Aires",
+    "type": "Puerto",
+    "coords": [
+      -34.16,
+      -58.96
+    ],
+    "note": "Nodo portuario e industrial del corredor del Paraná. Coordenada referencial.",
+    "source": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/tarifas-de-puertos"
+  },
+  {
+    "name": "Terminal Zárate",
+    "province": "Buenos Aires",
+    "type": "Logística",
+    "coords": [
+      -34.09,
+      -59.03
+    ],
+    "note": "Terminal portuaria y logística sobre el Paraná de las Palmas. Coordenada referencial.",
+    "source": "https://www.terminalzarate.com.ar/"
+  },
+  {
+    "name": "Paso Pino Hachado",
+    "province": "Neuquén",
+    "type": "Paso fronterizo",
+    "coords": [
+      -38.65,
+      -70.9
+    ],
+    "note": "Centro de frontera que conecta Las Lajas con Liucura, Chile; habilitado para carga, vehículos y pasajeros. Coordenada referencial; estado y horarios deben verificarse.",
+    "source": "https://www.argentina.gob.ar/interior/centros-de-frontera/pino-hachado"
+  },
+  {
+    "name": "Paso Agua Negra",
+    "province": "San Juan",
+    "type": "Paso fronterizo",
+    "coords": [
+      -30.22,
+      -69.82
+    ],
+    "note": "Conecta Las Flores con Huanta, Chile; corredor turístico y bioceánico de altura. Apertura y condiciones sujetas a temporada y clima.",
+    "source": "https://www.argentina.gob.ar/interior/centros-de-frontera/agua-negra"
+  },
+  {
+    "name": "Paso Pircas Negras",
+    "province": "La Rioja",
+    "type": "Paso fronterizo",
+    "coords": [
+      -28.14,
+      -68.74
+    ],
+    "note": "Conecta el departamento Vinchina con la Región de Atacama; paso estacional sujeto a condiciones climáticas.",
+    "source": "https://www.argentina.gob.ar/interior/centros-de-frontera/pircas-negras"
+  },
+  {
+    "name": "Parque Industrial Pilar",
+    "province": "Buenos Aires",
+    "type": "Industria",
+    "coords": [
+      -34.39,
+      -58.96
+    ],
+    "note": "Concentración industrial privada en el partido de Pilar. Coordenada referencial; consultar administración para disponibilidad y servicios.",
+    "source": "https://www.parqueindustrialpilar.org.ar/contacto"
+  },
+  {
+    "name": "Añelo — nodo Vaca Muerta",
+    "province": "Neuquén",
+    "type": "Logística",
+    "coords": [
+      -38.35,
+      -68.79
+    ],
+    "note": "Localidad de referencia para servicios e infraestructura asociados al desarrollo de Vaca Muerta; no representa la ubicación de un yacimiento específico.",
+    "source": "https://www.neuqueninforma.gob.ar/noticias/2025/09/08/251191-vaca-muerta-provincia-y-operadoras-acordaron-construir-una-obra-vial-estrategica"
+  }
+]
