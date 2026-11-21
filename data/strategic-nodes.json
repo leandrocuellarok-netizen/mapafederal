@@ -702,5 +702,17 @@
     ],
     "note": "Cruce internacional por la RN 145 que conecta Malargüe con Talca y funciona como alternativa del sur mendocino al Sistema Cristo Redentor. Marcador geográfico aproximado; horarios, condiciones de ruta y habilitación deben verificarse en la información oficial antes de viajar.",
     "source": "https://www.argentina.gob.ar/interior/centros-de-frontera/pehuenche"
+  },
+  {
+    "name": "Parque Industrial Güemes",
+    "province": "Salta",
+    "type": "Industria",
+    "coords": [
+      -24.70634,
+      -65.03103
+    ],
+    "note": "Ubicado al sur de General Güemes sobre la RN 34, km 1.132. El ente provincial informa más de 430 hectáreas activas y conexión con la red Belgrano Cargas; no confundir el parque con el nodo logístico proyectado.",
+    "source": "https://www.egpais.com.ar/parques/parque-industrial-guemes/",
+    "coordinateSource": "https://mapcarta.com/es/W1390977508"
   }
 ]
