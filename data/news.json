@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "title": "El superávit comercial llegó a USD 3.394 millones en octubre",
+    "date": "2026-11-19",
+    "category": "Comercio",
+    "summary": "El INDEC informó exportaciones por USD 10.061 millones (+26,4% interanual) e importaciones por USD 6.668 millones (-6,7%). El intercambio totalizó USD 16.729 millones. El dato permite seguir la evolución de los flujos externos y la demanda de bienes importados.",
+    "source": "INDEC",
+    "url": "https://www.indec.gob.ar/uploads/informesdeprensa/ica_11_262BEEC7410A.pdf"
+  },
+  {
+    "title": "Cuatro emprendimientos fueron distinguidos en la final nacional 2026",
+    "date": "2026-11-20",
+    "category": "Empresas",
+    "summary": "Más de 1.000 proyectos participaron del concurso y 77 llegaron a la instancia nacional. Los ganadores fueron Hermetia (CABA), Arbanit (Santa Fe), Odycell (CABA) y StartApp (Misiones); accederán a mentorías, formación y una agenda comercial internacional.",
+    "source": "Secretaría de Industria, Comercio y PyME",
+    "url": "https://www.argentina.gob.ar/noticias/el-gobierno-nacional-anuncio-los-cuatro-ganadores-del-concurso-emprendimiento-argentino"
+  },
+  {
+    "title": "Ushuaia: llaman a licitación para un nuevo muelle de catamaranes",
+    "date": "2026-11-20",
+    "category": "Infraestructura",
+    "summary": "La ANPYN aprobó el llamado a licitación para construir un muelle de 120 metros, con presupuesto estimado de ARS 12.580 millones y un plazo de obra de un año. La intervención apunta a ampliar capacidad y ordenar el embarque turístico; el artículo indica que la licitación se publicaría en los días siguientes.",
+    "source": "Agencia Nacional de Puertos y Navegación",
+    "url": "https://www.argentina.gob.ar/noticias/anpyn-llama-licitacion-para-la-construccion-de-un-nuevo-muelle-de-catamaranes-en-el-puerto"
+  },
+  {
+    "title": "Toyota anunció un proyecto de inversión superior a USD 1.300 millones en Zárate",
+    "date": "2026-11-16",
+    "category": "Empresas",
+    "summary": "La compañía presentó un proyecto para construir una nueva planta destinada a vehículos electrificados en Zárate. Según la comunicación oficial, la operación comenzaría en 2030 y el plan prevé ampliar proveedores locales y capacidad exportadora.",
+    "source": "Presidencia de la Nación",
+    "url": "https://www.argentina.gob.ar/noticias/toyota-anuncio-una-inversion-de-mas-de-usd-1300-millones-para-construir-una-nueva-planta-en"
+  }
+]
