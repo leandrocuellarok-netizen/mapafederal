@@ -614,5 +614,49 @@
     ],
     "note": "Aeropuerto situado a unos 9 km al este de San Miguel de Tucumán, con conectividad aérea y actividad de carga. Coordenada referencial; verificar servicios y operación.",
     "source": "https://www.argentina.gob.ar/tucuman/llegar"
+  },
+  {
+    "name": "Puerto Iguazú — destino Cataratas y Triple Frontera",
+    "province": "Misiones",
+    "type": "Turismo",
+    "coords": [
+      -25.5991,
+      -54.5736
+    ],
+    "note": "Destino turístico internacional y puerta de acceso a las Cataratas del Iguazú y la Triple Frontera. Coordenada urbana referencial; verificar conectividad y servicios vigentes.",
+    "source": "https://visitiguazu.travel/sin-categoria/informacion-de-interes/"
+  },
+  {
+    "name": "Mendoza — destino de enoturismo y reuniones",
+    "province": "Mendoza",
+    "type": "Turismo",
+    "coords": [
+      -32.8895,
+      -68.8458
+    ],
+    "note": "Destino con oferta de enoturismo, gastronomía, alojamiento y conectividad; la provincia también promueve el turismo de reuniones. Coordenada urbana referencial.",
+    "source": "https://www.argentina.gob.ar/node/444514"
+  },
+  {
+    "name": "San Carlos de Bariloche — destino ejecutivo y naturaleza",
+    "province": "Río Negro",
+    "type": "Turismo",
+    "coords": [
+      -41.1335,
+      -71.3103
+    ],
+    "note": "Destino patagónico con oferta hotelera, gastronómica, eventos y conectividad aérea y terrestre. Coordenada urbana referencial; servicios y frecuencias deben verificarse.",
+    "source": "https://www.barilocheturismo.gob.ar/es/sobre-bariloche"
+  },
+  {
+    "name": "El Calafate — puerta de acceso a Los Glaciares",
+    "province": "Santa Cruz",
+    "type": "Turismo",
+    "coords": [
+      -50.3376,
+      -72.2648
+    ],
+    "note": "Destino turístico patagónico y puerta de acceso al sector sur del Parque Nacional Los Glaciares, con servicios de excursiones y alojamiento. Coordenada urbana referencial.",
+    "source": "https://turismo.santacruz.gob.ar/donde-ir/el-calafate"
   }
 ]
