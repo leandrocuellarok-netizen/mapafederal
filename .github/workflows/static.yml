@@ -107,6 +107,9 @@ jobs:
 
           assert [item["date"] for item in news] == sorted((item["date"] for item in news), reverse=True), "Las noticias deben estar ordenadas de más recientes a más antiguas"
 
+          ibicuy = next((node for node in nodes if node["name"] == "Puerto de Ibicuy"), None)
+          assert ibicuy and ibicuy["province"] == "Entre Ríos", "Falta el nodo oficial Puerto de Ibicuy"
+          assert ibicuy.get("coordinateSource") == ibicuy["source"], "La fuente de coordenadas de Ibicuy debe estar declarada"
           print(f"Validación correcta: {len(nodes)} nodos en {len(covered_jurisdictions)} jurisdicciones y {len(news)} noticias.")
           PY
       - name: Check inline JavaScript syntax
@@ -139,6 +142,10 @@ jobs:
           grep -q 'id="export-nodes"' index.html
           grep -q 'id="export-profiles"' index.html
           grep -q 'function downloadCsv' index.html
+          grep -q 'id="brief-province"' index.html
+          grep -q 'id="export-province-brief"' index.html
+          grep -q 'function exportProvinceBrief' index.html
+          grep -q 'Módulos conceptuales' index.html
 
   deploy:
     needs: validate
