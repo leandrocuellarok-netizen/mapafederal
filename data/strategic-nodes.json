@@ -738,5 +738,17 @@
     "note": "Terminal fluvial sobre el Paraná, en Nemesio Parma. La ficha de ANPyN declara un muelle de 250 m y calado de 6 m.",
     "source": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/nuevo-puerto-de-posadas",
     "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/nuevo-puerto-de-posadas"
+  },
+  {
+    "name": "Puerto de Ibicuy",
+    "province": "Entre Ríos",
+    "type": "Puerto",
+    "coords": [
+      -33.758889,
+      -59.178944
+    ],
+    "note": "Puerto sobre el río Ibicuy, km 217 y margen izquierda. La ficha de ANPyN registra un muelle continental de 220 m, calado declarado de 12 m y diseño para buques Panamax.",
+    "source": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/ibicuy",
+    "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/ibicuy"
   }
 ]
