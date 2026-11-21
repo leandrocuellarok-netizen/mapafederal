@@ -123,6 +123,23 @@ jobs:
           Path("/tmp/mapafederal-inline.js").write_text("\n".join(scripts), encoding="utf-8")
           PY
           node --check /tmp/mapafederal-inline.js
+      - name: Test CSV formula-injection protection
+        run: |
+          node - <<'JS'
+          const fs = require("fs");
+          const vm = require("vm");
+          const html = fs.readFileSync("index.html", "utf8");
+          const start = html.indexOf("function csvCell(value){");
+          const end = html.indexOf("\nfunction downloadCsv", start);
+          if (start < 0 || end < 0) throw new Error("No se encontró csvCell para probar.");
+          const csvCell = vm.runInNewContext("(" + html.slice(start, end) + ")");
+          if (csvCell("=1+1").charAt(1) !== "'") throw new Error("No se neutralizó una fórmula con =.");
+          if (csvCell("  +SUM(A1:A2)").charAt(1) !== "'") throw new Error("No se neutralizó una fórmula precedida por espacios.");
+          if (csvCell("@SUM(1,2)").charAt(1) !== "'") throw new Error("No se neutralizó una fórmula con @.");
+          if (csvCell(-34.6) !== '"' + String(-34.6) + '"') throw new Error("Se alteró un valor numérico negativo.");
+          console.log("CSV seguro: fórmulas neutralizadas y valores numéricos preservados.");
+          JS
+
       - name: Check public entry point
         run: |
           grep -q '<html lang="es">' index.html
