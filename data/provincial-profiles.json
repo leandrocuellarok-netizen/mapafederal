@@ -1,0 +1,206 @@
+{
+  "title": "Exportaciones provinciales de bienes",
+  "period": "2025",
+  "unit": "millones de USD FOB",
+  "published": "2026-03-10",
+  "publisher": "INDEC",
+  "sourceUrl": "https://www.indec.gob.ar/uploads/informesdeprensa/opex_03_26929F77A2CA.pdf",
+  "profileYear": "2025",
+  "profilePublisher": "Ministerio de Economía — Panel de Indicadores Provinciales",
+  "profileIndexUrl": "https://www.argentina.gob.ar/economia/politicaeconomica/informes-productivos-0/informes-provinciales/panel-de-indicadores-provinciales",
+  "methodology": "Exportaciones de bienes atribuidas al origen provincial. Variación interanual frente a 2024 y participación sobre el total nacional. Las cifras son nominales y no representan el PBG, el empleo ni el tamaño total de la economía provincial. Las fichas complementarias tituladas 2025 contienen indicadores con distintos años de referencia; revisar la fecha de cada indicador antes de comparar.",
+  "profiles": [
+    {
+      "province": "Buenos Aires",
+      "region": "Pampeana",
+      "exportsUsdMillions": 31684,
+      "yearOnYearPct": 7.3,
+      "nationalSharePct": 36.4,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/buenos_aires_infografia_2025.pdf"
+    },
+    {
+      "province": "CABA",
+      "region": "Pampeana",
+      "exportsUsdMillions": 409,
+      "yearOnYearPct": 12.5,
+      "nationalSharePct": 0.5,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/caba_infografia_2025.pdf"
+    },
+    {
+      "province": "Córdoba",
+      "region": "Pampeana",
+      "exportsUsdMillions": 10913,
+      "yearOnYearPct": 6.7,
+      "nationalSharePct": 12.5,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/cordoba_infografia_2025.pdf"
+    },
+    {
+      "province": "Entre Ríos",
+      "region": "Pampeana",
+      "exportsUsdMillions": 2115,
+      "yearOnYearPct": 30.8,
+      "nationalSharePct": 2.4,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/entre_rios_infografia_2025.pdf"
+    },
+    {
+      "province": "La Pampa",
+      "region": "Pampeana",
+      "exportsUsdMillions": 939,
+      "yearOnYearPct": -3.7,
+      "nationalSharePct": 1.1,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/la_pampa_infografia_2025.pdf"
+    },
+    {
+      "province": "Santa Fe",
+      "region": "Pampeana",
+      "exportsUsdMillions": 16190,
+      "yearOnYearPct": 5.2,
+      "nationalSharePct": 18.6,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/santa_fe_infografia_2025.pdf"
+    },
+    {
+      "province": "Chubut",
+      "region": "Patagonia",
+      "exportsUsdMillions": 3966,
+      "yearOnYearPct": 12.9,
+      "nationalSharePct": 4.6,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/chubut_infografia_2025.pdf"
+    },
+    {
+      "province": "Neuquén",
+      "region": "Patagonia",
+      "exportsUsdMillions": 4534,
+      "yearOnYearPct": 18.8,
+      "nationalSharePct": 5.2,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/neuquen_infografia_2025.pdf"
+    },
+    {
+      "province": "Río Negro",
+      "region": "Patagonia",
+      "exportsUsdMillions": 670,
+      "yearOnYearPct": 11.4,
+      "nationalSharePct": 0.8,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/rio_negro_infografia_2025.pdf"
+    },
+    {
+      "province": "Santa Cruz",
+      "region": "Patagonia",
+      "exportsUsdMillions": 2953,
+      "yearOnYearPct": 30.2,
+      "nationalSharePct": 3.4,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/santa_cruz_infografia_2025.pdf"
+    },
+    {
+      "province": "Tierra del Fuego",
+      "region": "Patagonia",
+      "exportsUsdMillions": 490,
+      "yearOnYearPct": 18.2,
+      "nationalSharePct": 0.6,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/tierra_del_fuego_infografia_2025.pdf"
+    },
+    {
+      "province": "Catamarca",
+      "region": "NOA",
+      "exportsUsdMillions": 402,
+      "yearOnYearPct": 22.2,
+      "nationalSharePct": 0.5,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/catamarca_infografia_2025.pdf"
+    },
+    {
+      "province": "Jujuy",
+      "region": "NOA",
+      "exportsUsdMillions": 1259,
+      "yearOnYearPct": 17.2,
+      "nationalSharePct": 1.4,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/jujuy_infografia_2025.pdf"
+    },
+    {
+      "province": "La Rioja",
+      "region": "NOA",
+      "exportsUsdMillions": 163,
+      "yearOnYearPct": -25.7,
+      "nationalSharePct": 0.2,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/la_rioja_infografia_2025.pdf"
+    },
+    {
+      "province": "Salta",
+      "region": "NOA",
+      "exportsUsdMillions": 1432,
+      "yearOnYearPct": 28.6,
+      "nationalSharePct": 1.6,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/salta_infografia_2025.pdf"
+    },
+    {
+      "province": "Santiago del Estero",
+      "region": "NOA",
+      "exportsUsdMillions": 796,
+      "yearOnYearPct": 25.4,
+      "nationalSharePct": 0.9,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/santiago_del_estero_infografia_2025.pdf"
+    },
+    {
+      "province": "Tucumán",
+      "region": "NOA",
+      "exportsUsdMillions": 967,
+      "yearOnYearPct": 3.9,
+      "nationalSharePct": 1.1,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/tucuman_infografia_2025.pdf"
+    },
+    {
+      "province": "Mendoza",
+      "region": "Cuyo",
+      "exportsUsdMillions": 1539,
+      "yearOnYearPct": -4.1,
+      "nationalSharePct": 1.8,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/mendoza_infografia_2025.pdf"
+    },
+    {
+      "province": "San Juan",
+      "region": "Cuyo",
+      "exportsUsdMillions": 2101,
+      "yearOnYearPct": 11.1,
+      "nationalSharePct": 2.4,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/san_juan_infografia_2025.pdf"
+    },
+    {
+      "province": "San Luis",
+      "region": "Cuyo",
+      "exportsUsdMillions": 686,
+      "yearOnYearPct": 2,
+      "nationalSharePct": 0.8,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/san_luis_infografia_2025.pdf"
+    },
+    {
+      "province": "Chaco",
+      "region": "NEA",
+      "exportsUsdMillions": 235,
+      "yearOnYearPct": 8.7,
+      "nationalSharePct": 0.3,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/chaco_infografia_2025.pdf"
+    },
+    {
+      "province": "Corrientes",
+      "region": "NEA",
+      "exportsUsdMillions": 336,
+      "yearOnYearPct": 31.6,
+      "nationalSharePct": 0.4,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/corrientes_infografia_2025.pdf"
+    },
+    {
+      "province": "Formosa",
+      "region": "NEA",
+      "exportsUsdMillions": 29,
+      "yearOnYearPct": 18.2,
+      "nationalSharePct": 0,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/formosa_infografia_2025.pdf"
+    },
+    {
+      "province": "Misiones",
+      "region": "NEA",
+      "exportsUsdMillions": 533,
+      "yearOnYearPct": 20.8,
+      "nationalSharePct": 0.6,
+      "profileUrl": "https://www.argentina.gob.ar/sites/default/files/misiones_infografia_2025.pdf"
+    }
+  ]
+}
