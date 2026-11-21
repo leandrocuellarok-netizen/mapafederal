@@ -32,6 +32,8 @@ jobs:
               nodes = json.load(f)
           with open("data/news.json", encoding="utf-8") as f:
               news = json.load(f)
+          with open("data/provincial-profiles.json", encoding="utf-8") as f:
+              provincial_data = json.load(f)
 
           assert isinstance(nodes, list) and nodes, "El catálogo de nodos está vacío"
           assert isinstance(news, list), "El archivo de noticias debe ser una lista"
@@ -49,6 +51,10 @@ jobs:
               assert -55.2 <= lat <= -21.7 and -73.6 <= lon <= -53.5, f"Coordenada fuera del rango argentino: {node['name']}"
               source = urlparse(node["source"])
               assert source.scheme == "https" and source.netloc, f"Fuente no HTTPS: {node['name']}"
+              coordinate_source = node.get("coordinateSource")
+              if coordinate_source:
+                  parsed_coordinate_source = urlparse(coordinate_source)
+                  assert parsed_coordinate_source.scheme == "https" and parsed_coordinate_source.netloc, f"Fuente de coordenadas no HTTPS: {node['name']}"
               key = node["name"].casefold()
               assert key not in names, f"Nodo duplicado: {node['name']}"
               names.add(key)
@@ -63,6 +69,27 @@ jobs:
           covered_jurisdictions = {node["province"] for node in nodes}
           missing_jurisdictions = expected_jurisdictions - covered_jurisdictions
           assert not missing_jurisdictions, f"Faltan jurisdicciones en el catálogo: {sorted(missing_jurisdictions)}"
+          assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
+          assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
+          assert isinstance(provincial_data.get("published"), str), "Falta fecha de publicación del dataset provincial"
+          source_url = urlparse(provincial_data.get("sourceUrl", ""))
+          assert source_url.scheme == "https" and source_url.netloc, "Fuente OPEX no HTTPS"
+          province_profiles = provincial_data.get("profiles")
+          assert isinstance(province_profiles, list) and len(province_profiles) == 24, "Se requieren 24 perfiles provinciales"
+          profile_names = set()
+          allowed_regions = {"Pampeana", "Patagonia", "NOA", "Cuyo", "NEA"}
+          for profile in province_profiles:
+              for field in ("province", "region", "profileUrl"):
+                  assert isinstance(profile.get(field), str) and profile[field].strip(), f"Perfil provincial sin {field}"
+              assert profile["region"] in allowed_regions, f"Región no admitida: {profile['region']}"
+              assert profile["province"] not in profile_names, f"Perfil provincial duplicado: {profile['province']}"
+              profile_names.add(profile["province"])
+              assert isinstance(profile.get("exportsUsdMillions"), (int, float)) and profile["exportsUsdMillions"] >= 0, f"Exportaciones inválidas: {profile['province']}"
+              assert isinstance(profile.get("yearOnYearPct"), (int, float)), f"Variación interanual inválida: {profile['province']}"
+              assert isinstance(profile.get("nationalSharePct"), (int, float)) and 0 <= profile["nationalSharePct"] <= 100, f"Participación inválida: {profile['province']}"
+              profile_url = urlparse(profile["profileUrl"])
+              assert profile_url.scheme == "https" and profile_url.netloc, f"Ficha provincial no HTTPS: {profile['province']}"
+          assert profile_names == expected_jurisdictions, f"Los perfiles no cubren exactamente las 24 jurisdicciones: {sorted(expected_jurisdictions - profile_names)}"
 
           categories = {"Economía", "Empresas", "Comercio", "Infraestructura", "Regulación", "Tecnología"}
           news_urls = set()
@@ -100,6 +127,8 @@ jobs:
           grep -q 'map-province-filter' index.html
           grep -q 'poi-type' index.html
           grep -q 'province-card' index.html
+          grep -q 'profile-grid' index.html
+          grep -q 'data/provincial-profiles.json' index.html
           grep -q 'map-fallback' index.html
           grep -q 'aria-live="polite"' index.html
           grep -q 'typeof L !== "undefined"' index.html
