@@ -691,5 +691,16 @@
     ],
     "note": "Parque de gestión público-privada, próximo al puerto, al polo petroquímico y a la zona franca. Marcador aproximado del predio; no representa un acceso ni una parcela específica. Confirmar ubicación y disponibilidad directamente con la administración.",
     "source": "https://pibb.com.ar/"
+  },
+  {
+    "name": "Paso Internacional Pehuenche",
+    "province": "Mendoza",
+    "type": "Paso fronterizo",
+    "coords": [
+      -35.983278,
+      -70.4
+    ],
+    "note": "Cruce internacional por la RN 145 que conecta Malargüe con Talca y funciona como alternativa del sur mendocino al Sistema Cristo Redentor. Marcador geográfico aproximado; horarios, condiciones de ruta y habilitación deben verificarse en la información oficial antes de viajar.",
+    "source": "https://www.argentina.gob.ar/interior/centros-de-frontera/pehuenche"
   }
 ]
