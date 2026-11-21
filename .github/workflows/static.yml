@@ -40,22 +40,29 @@ jobs:
               for field in ("name", "province", "type", "note", "source"):
                   assert isinstance(node.get(field), str) and node[field].strip(), f"Nodo sin {field}"
               coords = node.get("coords")
-              assert isinstance(coords, list) and len(coords) == 2, f"Coordenadas inválidas: {node['name']}"
+              assert isinstance(coords, list) and len(coords) == 2, f"Coordenadas inválidas: {node.get('name')}"
               lat, lon = coords
-              assert isinstance(lat, (int, float)) and isinstance(lon, (int, float)), f"Coordenadas no numéricas: {node['name']}"
+              assert isinstance(lat, (int, float)) and not isinstance(lat, bool), f"Latitud no numérica: {node['name']}"
+              assert isinstance(lon, (int, float)) and not isinstance(lon, bool), f"Longitud no numérica: {node['name']}"
               assert -55.2 <= lat <= -21.7 and -73.6 <= lon <= -53.5, f"Coordenada fuera del rango argentino: {node['name']}"
-              assert urlparse(node["source"]).scheme == "https", f"Fuente no HTTPS: {node['name']}"
+              source = urlparse(node["source"])
+              assert source.scheme == "https" and source.netloc, f"Fuente no HTTPS: {node['name']}"
               key = node["name"].casefold()
               assert key not in names, f"Nodo duplicado: {node['name']}"
               names.add(key)
 
           categories = {"Economía", "Empresas", "Comercio", "Infraestructura", "Regulación", "Tecnología"}
+          news_urls = set()
           for item in news:
               for field in ("title", "date", "category", "summary", "source", "url"):
                   assert isinstance(item.get(field), str) and item[field].strip(), f"Noticia sin {field}"
               date.fromisoformat(item["date"])
               assert item["category"] in categories, f"Categoría no admitida: {item['category']}"
-              assert urlparse(item["url"]).scheme == "https", f"URL de noticia no HTTPS: {item['title']}"
+              assert len(item["summary"]) <= 700, f"Síntesis demasiado extensa: {item['title']}"
+              url = urlparse(item["url"])
+              assert url.scheme == "https" and url.netloc, f"URL de noticia no HTTPS: {item['title']}"
+              assert item["url"] not in news_urls, f"Noticia duplicada: {item['url']}"
+              news_urls.add(item["url"])
 
           print(f"Validación correcta: {len(nodes)} nodos y {len(news)} noticias.")
           PY
@@ -73,6 +80,9 @@ jobs:
       - name: Check public entry point
         run: |
           grep -q '<html lang="es">' index.html
+          grep -q 'property="og:title"' index.html
+          grep -q 'map-province-filter' index.html
+          grep -q 'province-card' index.html
           grep -q 'data/strategic-nodes.json' index.html
           grep -q 'data/news.json' index.html
 
