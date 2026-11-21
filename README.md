@@ -8,9 +8,9 @@ Plataforma web estática en evolución para explorar infraestructura, nodos terr
 
 - Mapa interactivo con Leaflet y cartografía de OpenStreetMap.
 - Catálogo externo de 49 nodos iniciales en `data/strategic-nodes.json`, con puntos de referencia y advertencias sobre coordenadas aproximadas.
-- Filtros por ciudades, puertos, aeropuertos, pasos fronterizos, industria y logística.
+- Filtros del mapa por categoría y provincia; búsqueda por varios términos sin depender de tildes.
 - Buscador por nombre, provincia y tipo de nodo.
-- Directorio tabular con enlaces a fuentes de referencia.
+- Directorio tabular filtrable por provincia, con accesos que centran el mapa y fichas de cobertura basadas exclusivamente en los nodos registrados.
 - Sección editorial alimentada por `data/news.json`, con filtros por tema y búsqueda.
 - Diseño adaptable, navegación por anclas y avisos de estado.
 - Validación automática de los archivos JSON antes de desplegar en GitHub Pages.
