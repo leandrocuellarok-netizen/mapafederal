@@ -7,7 +7,7 @@ Plataforma web estática en evolución para explorar infraestructura, nodos terr
 ## Funcionalidades disponibles
 
 - Mapa interactivo con Leaflet y cartografía de OpenStreetMap.
-- Catálogo externo de 67 nodos estratégicos en `data/strategic-nodes.json`, con presencia en las 23 provincias y la Ciudad Autónoma de Buenos Aires, referencias de fuente y advertencias sobre coordenadas aproximadas.
+- Catálogo externo de 68 nodos estratégicos en `data/strategic-nodes.json`, con presencia en las 23 provincias y la Ciudad Autónoma de Buenos Aires, referencias de fuente y advertencias sobre coordenadas aproximadas.
 - Perfiles de exportaciones provinciales 2025 en `data/provincial-profiles.json`, basados en el informe OPEX del INDEC y enlazados con las fichas oficiales 2025 del Ministerio de Economía.
 - Filtros del mapa por categoría y provincia; búsqueda por varios términos sin depender de tildes.
 - Buscador por nombre, provincia y tipo de nodo.
@@ -25,7 +25,7 @@ Para pasos fronterizos, consultar siempre el estado y los horarios vigentes en M
 
 ### Ampliaciones incorporadas
 
-La cobertura del catálogo alcanza ahora las 24 jurisdicciones argentinas y 67 nodos estratégicos. Se incorporó el muelle provincial del Puerto de San Nicolás con coordenadas publicadas por ANPyN. Se incorporaron referencias para Catamarca, Formosa, Entre Ríos, La Pampa y Tucumán, además de ampliar la infraestructura fluvial y fronteriza de Formosa y Entre Ríos. Se sumó el Parque Industrial Güemes, ubicado al sur de General Güemes sobre RN 34 km 1.132; el ente provincial EGPAIS documenta su superficie activa y conexión ferroviaria. Su coordenada se toma de OpenStreetMap a través de Mapcarta y es orientativa.
+La cobertura del catálogo alcanza ahora las 24 jurisdicciones argentinas y 68 nodos estratégicos. Se incorporó el Puerto de Ibicuy, con coordenadas publicadas por ANPyN y datos técnicos del muelle continental. Se incorporó el muelle provincial del Puerto de San Nicolás con coordenadas publicadas por ANPyN. Se incorporaron referencias para Catamarca, Formosa, Entre Ríos, La Pampa y Tucumán, además de ampliar la infraestructura fluvial y fronteriza de Formosa y Entre Ríos. Se sumó el Parque Industrial Güemes, ubicado al sur de General Güemes sobre RN 34 km 1.132; el ente provincial EGPAIS documenta su superficie activa y conexión ferroviaria. Su coordenada se toma de OpenStreetMap a través de Mapcarta y es orientativa.
 
 
 - Aeropuerto Internacional Gobernador Horacio Guzmán (Perico, Jujuy): ubicación y descripción institucional en [Argentina.gob.ar](https://www.argentina.gob.ar/transporte/obras-en-los-aeropuertos/aeropuerto-de-jujuy).
@@ -45,6 +45,7 @@ Se incorporó el Nuevo Puerto de Posadas — muelle 1, en Nemesio Parma (Misione
 - [Parque Industrial Pilar](https://www.parqueindustrialpilar.org.ar/contacto).
 - [Puerto de Barranqueras — muelle provincial](https://www.argentina.gob.ar/puertos-vias-navegables-y-marina-mercante/informaci%C3%B3n-portuaria/barranqueras-provincial): ficha oficial de localización y coordenadas del muelle.
 - [Puerto de San Nicolás — muelle provincial](https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/san-nicolas-muelle-provincial): ficha ANPyN con latitud, longitud, localización y características técnicas del muelle fiscal.
+- [Puerto de Ibicuy](https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/ibicuy): ficha ANPyN con coordenadas, localización sobre el río Ibicuy y datos del muelle continental (220 m de atraque, 12 m de calado declarado y diseño Panamax).
 - [Paso Internacional San Francisco](https://www.turismofiambala.com.ar/qu%C3%A9-visitar/paso-internacional-san-francisco): referencia geográfica y datos generales de Turismo Fiambalá; consultar el estado operativo antes de viajar.
 - [Parque Industrial Bahía Blanca](https://pibb.com.ar/): sitio institucional del parque y referencia de su emplazamiento; la coordenada aproximada se contrastó con la [ficha pública del registro de parques industriales](https://parquesindustriales.com.ar/parque?id=11279).
 - [Parque Industrial Güemes — EGPAIS](https://www.egpais.com.ar/parques/parque-industrial-guemes/): fuente institucional para ubicación, superficie e infraestructura. La coordenada cartográfica aproximada se contrastó con [Mapcarta / OpenStreetMap](https://mapcarta.com/es/W1390977508).
@@ -126,7 +127,7 @@ Criterio editorial:
 5. Priorizar relevancia para empresas, inversión, comercio, infraestructura y actividad productiva argentina.
 6. No presentar contenido de prueba como actualidad periodística.
 
-Las noticias cargadas actualmente fueron contrastadas con publicaciones oficiales de INDEC, Presidencia de la Nación, INTI, INTA y organismos nacionales vinculados con producción y comercio. Se incorporó la segunda Ronda de Negocios RIGI, prevista para el 2 de diciembre de 2026: la inscripción a reuniones de negocios cerró el 16 de noviembre, mientras que la asistencia a las demás actividades puede inscribirse hasta el 30 de noviembre según la publicación del Ministerio de Economía del 11 de noviembre. La sede figuraba pendiente de designación en esa fuente. Entre las incorporaciones recientes figuran la ronda internacional de negocios de Argentina Alimenta y las herramientas del INTA para trazabilidad y diferenciación de productos cárnicos. Se agregó la noticia del INTI sobre las jornadas EMC Days realizadas en Buenos Aires y Córdoba, con participación de Würth Elektronik y Electrocomponentes SA, publicada el 20 de noviembre de 2026. La última curación de contenido de esta versión corresponde al 21 de noviembre de 2026. Se agregó la aprobación del proyecto Argentina LNG al RIGI, con cifras atribuidas a Reuters; la aprobación regulatoria no implica que el proyecto ya esté en operación. La sección es editorial y estática: no realiza scraping ni actualización automática. Para automatizar la curación se requiere integrar fuentes RSS/API permitidas, respetar licencias y términos de uso y establecer revisión editorial.
+Las noticias cargadas actualmente fueron contrastadas con publicaciones oficiales de INDEC, Presidencia de la Nación, INTI, INTA y organismos nacionales vinculados con producción y comercio. Se incorporó la segunda Ronda de Negocios RIGI, prevista para el 2 de diciembre de 2026: la inscripción a reuniones de negocios cerró el 16 de noviembre, mientras que la asistencia a las demás actividades puede inscribirse hasta el 30 de noviembre según la publicación del Ministerio de Economía del 11 de noviembre. La sede figuraba pendiente de designación en esa fuente. Entre las incorporaciones recientes figuran la ronda internacional de negocios de Argentina Alimenta y las herramientas del INTA para trazabilidad y diferenciación de productos cárnicos. Se agregó la noticia del INTI sobre las jornadas EMC Days realizadas en Buenos Aires y Córdoba, con participación de Würth Elektronik y Electrocomponentes SA, publicada el 20 de noviembre de 2026. La última noticia incorporada al catálogo tiene fecha 20 de noviembre de 2026; la revisión editorial de esta versión se realizó el 21 de noviembre de 2026 sin añadir publicaciones no verificadas. Se agregó la aprobación del proyecto Argentina LNG al RIGI, con cifras atribuidas a Reuters; la aprobación regulatoria no implica que el proyecto ya esté en operación. La sección es editorial y estática: no realiza scraping ni actualización automática. Para automatizar la curación se requiere integrar fuentes RSS/API permitidas, respetar licencias y términos de uso y establecer revisión editorial.
 
 ## Exportación de datos para análisis
 
@@ -136,6 +137,19 @@ El directorio de nodos y los perfiles provinciales permiten descargar los result
 - **Perfiles provinciales:** jurisdicción, región, período, exportaciones FOB, variación interanual, participación nacional, ficha provincial y fuente estadística.
 - Los archivos se generan en el navegador, con codificación UTF-8 y separador de punto y coma para facilitar su apertura en hojas de cálculo configuradas para español.
 - La exportación no añade datos nuevos ni convierte las coordenadas orientativas en ubicaciones operativas. Revisar siempre las fuentes y el período antes de utilizar los archivos en informes comerciales.
+
+## Ficha de prospección territorial
+
+La herramienta permite seleccionar una jurisdicción y descargar una ficha Markdown que reúne:
+- Exportaciones provinciales de bienes, período y variación interanual del dataset OPEX.
+- Nodos de infraestructura registrados para esa jurisdicción, con categoría, descripción y coordenadas de referencia.
+- Enlaces a las fuentes estadísticas, fichas provinciales y referencias de cada nodo.
+
+La ficha se genera en el navegador y no consulta servicios externos ni incorpora datos nuevos. Es un insumo preliminar de prospección, no una lista de empresas, un análisis de mercado completo ni una recomendación de inversión. El catálogo geográfico es selectivo y las coordenadas deben verificarse antes de cualquier uso operativo.
+
+## Módulos conceptuales y funcionales
+
+Los cinco módulos de la sección de hoja de ruta (inversión y desarrollos, eventos corporativos, inteligencia política-territorial, turismo ejecutivo y ampliación del explorador) son conceptuales y están identificados como planificados. No deben presentarse como funciones disponibles. Las herramientas funcionales actuales son el mapa, el directorio de nodos, los perfiles OPEX, las noticias curadas y las exportaciones CSV/Markdown.
 
 ## Arquitectura
 
