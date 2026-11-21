@@ -504,5 +504,38 @@
     ],
     "note": "Localidad de referencia para servicios e infraestructura asociados al desarrollo de Vaca Muerta; no representa la ubicación de un yacimiento específico.",
     "source": "https://www.neuqueninforma.gob.ar/noticias/2025/09/08/251191-vaca-muerta-provincia-y-operadoras-acordaron-construir-una-obra-vial-estrategica"
+  },
+  {
+    "name": "Aeropuerto Internacional Gobernador Horacio Guzmán",
+    "province": "Jujuy",
+    "type": "Aeropuerto",
+    "coords": [
+      -24.3925,
+      -65.0978
+    ],
+    "note": "Terminal aérea ubicada en Perico, departamento El Carmen, a unos 33 km al sudeste de San Salvador de Jujuy. Coordenada referencial; verificar accesos y operación antes de planificar traslados.",
+    "source": "https://www.argentina.gob.ar/transporte/obras-en-los-aeropuertos/aeropuerto-de-jujuy"
+  },
+  {
+    "name": "Aeropuerto Internacional Domingo Faustino Sarmiento",
+    "province": "San Juan",
+    "type": "Aeropuerto",
+    "coords": [
+      -31.5714,
+      -68.4183
+    ],
+    "note": "Aeropuerto ubicado en Las Chacritas, a unos 15 km al sudeste del centro de San Juan. Coordenada referencial; verificar accesos y operación antes de planificar traslados.",
+    "source": "https://www.argentina.gob.ar/node/118621"
+  },
+  {
+    "name": "Parque de Actividades Económicas de Rafaela (PAER)",
+    "province": "Santa Fe",
+    "type": "Industria",
+    "coords": [
+      -31.2365,
+      -61.4865
+    ],
+    "note": "Polo productivo a unos 3 km del centro de Rafaela, con acceso por RN 34 e infraestructura industrial, servicios empresariales, centro logístico y resguardo aduanero. Coordenada referencial del sector; confirmar ubicación del lote o empresa con la administración.",
+    "source": "https://paer.rafaela.gob.ar/parque-actividades-economicas-rafaela/"
   }
 ]
