@@ -47,7 +47,7 @@ footer{background:#061b14;color:#d9e2db;padding:30px 0}.foot{display:flex;justif
 <script>
 let points=[];
 const colors={"Ciudad":"#C7A35B","Puerto":"#337D68","Aeropuerto":"#547FA5","Paso fronterizo":"#547FA5","Logística":"#337D68","Industria":"#9D7040","Turismo":"#9D7040"};
-const mapAvailable=typeof L!=="undefined";
+const mapAvailable=typeof L !== "undefined";
 const mapElement=document.getElementById("map");
 const map=mapAvailable?L.map("map",{scrollWheelZoom:false}).setView([-38.4,-63.6],4):null;
 if(mapAvailable){L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"&copy; OpenStreetMap contributors",maxZoom:18}).addTo(map);}else{mapElement.innerHTML='<div class="map-fallback" role="status">La cartografía no está disponible en este momento. El directorio y las fichas de nodos siguen funcionando.</div>';}
