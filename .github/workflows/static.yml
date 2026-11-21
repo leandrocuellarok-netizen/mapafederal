@@ -78,6 +78,8 @@ jobs:
               assert item["url"] not in news_urls, f"Noticia duplicada: {item['url']}"
               news_urls.add(item["url"])
 
+          assert [item["date"] for item in news] == sorted((item["date"] for item in news), reverse=True), "Las noticias deben estar ordenadas de más recientes a más antiguas"
+
           print(f"Validación correcta: {len(nodes)} nodos en {len(covered_jurisdictions)} jurisdicciones y {len(news)} noticias.")
           PY
       - name: Check inline JavaScript syntax
