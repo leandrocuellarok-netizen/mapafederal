@@ -1,13 +1,5 @@
 [
   {
-    "title": "El superávit comercial llegó a USD 3.394 millones en octubre",
-    "date": "2026-11-19",
-    "category": "Comercio",
-    "summary": "El INDEC informó exportaciones por USD 10.061 millones (+26,4% interanual) e importaciones por USD 6.668 millones (-6,7%). El intercambio totalizó USD 16.729 millones. El dato permite seguir la evolución de los flujos externos y la demanda de bienes importados.",
-    "source": "INDEC",
-    "url": "https://www.indec.gob.ar/uploads/informesdeprensa/ica_11_262BEEC7410A.pdf"
-  },
-  {
     "title": "Cuatro emprendimientos fueron distinguidos en la final nacional 2026",
     "date": "2026-11-20",
     "category": "Empresas",
@@ -22,14 +14,6 @@
     "summary": "La ANPYN aprobó el llamado a licitación para construir un muelle de 120 metros, con presupuesto estimado de ARS 12.580 millones y un plazo de obra de un año. La intervención apunta a ampliar capacidad y ordenar el embarque turístico; el artículo indica que la licitación se publicaría en los días siguientes.",
     "source": "Agencia Nacional de Puertos y Navegación",
     "url": "https://www.argentina.gob.ar/noticias/anpyn-llama-licitacion-para-la-construccion-de-un-nuevo-muelle-de-catamaranes-en-el-puerto"
-  },
-  {
-    "title": "Toyota anunció un proyecto de inversión superior a USD 1.300 millones en Zárate",
-    "date": "2026-11-16",
-    "category": "Empresas",
-    "summary": "La compañía presentó un proyecto para construir una nueva planta destinada a vehículos electrificados en Zárate. Según la comunicación oficial, la operación comenzaría en 2030 y el plan prevé ampliar proveedores locales y capacidad exportadora.",
-    "source": "Presidencia de la Nación",
-    "url": "https://www.argentina.gob.ar/noticias/toyota-anuncio-una-inversion-de-mas-de-usd-1300-millones-para-construir-una-nueva-planta-en"
   },
   {
     "title": "El Proyecto KT+ presentó resultados de asistencia técnica a pymes de distintas regiones",
@@ -54,5 +38,37 @@
     "summary": "La XIII edición del encuentro anual de la Cámara Argentina de Biotecnología abordó aplicaciones y oportunidades de la biotecnología en salud, agro e industria. La agenda puso el foco en la articulación entre empresas, sistema científico-tecnológico y sector público para impulsar innovación, inversión y desarrollo productivo.",
     "source": "Secretaría de Innovación, Ciencia y Tecnología",
     "url": "https://www.argentina.gob.ar/noticias/biotecnologia-argentina-innovacion-para-el-desarrollo-productivo"
+  },
+  {
+    "title": "El superávit comercial llegó a USD 3.394 millones en octubre",
+    "date": "2026-11-19",
+    "category": "Comercio",
+    "summary": "El INDEC informó exportaciones por USD 10.061 millones (+26,4% interanual) e importaciones por USD 6.668 millones (-6,7%). El intercambio totalizó USD 16.729 millones. El dato permite seguir la evolución de los flujos externos y la demanda de bienes importados.",
+    "source": "INDEC",
+    "url": "https://www.indec.gob.ar/uploads/informesdeprensa/ica_11_262BEEC7410A.pdf"
+  },
+  {
+    "title": "El INTA destacó la trazabilidad y la diferenciación como oportunidades para la cadena cárnica",
+    "date": "2026-11-18",
+    "category": "Tecnología",
+    "summary": "El organismo presentó herramientas para verificar origen, autenticidad y atributos de calidad de productos cárnicos. La propuesta apunta a agregar valor y mejorar la competitividad, con aplicaciones vinculadas a las demandas de distintos mercados.",
+    "source": "INTA",
+    "url": "https://www.argentina.gob.ar/noticias/la-demanda-de-carnes-diferenciadas-abre-oportunidades-para-agregar-valor"
+  },
+  {
+    "title": "Argentina Alimenta reunió a productores y compradores de 25 países",
+    "date": "2026-11-17",
+    "category": "Comercio",
+    "summary": "La primera edición de la feria reunió a más de 300 expositores y contempló una ronda internacional con 43 empresas importadoras de 25 países. La agenda buscó vincular productores y fabricantes argentinos de alimentos y bebidas con distribuidores, supermercados y compradores del canal HORECA.",
+    "source": "Presidencia de la Nación",
+    "url": "https://www.argentina.gob.ar/noticias/la-secretaria-general-de-la-presidencia-recorrio-la-feria-argentina-alimenta"
+  },
+  {
+    "title": "Toyota anunció un proyecto de inversión superior a USD 1.300 millones en Zárate",
+    "date": "2026-11-16",
+    "category": "Empresas",
+    "summary": "La compañía presentó un proyecto para construir una nueva planta destinada a vehículos electrificados en Zárate. Según la comunicación oficial, la operación comenzaría en 2030 y el plan prevé ampliar proveedores locales y capacidad exportadora.",
+    "source": "Presidencia de la Nación",
+    "url": "https://www.argentina.gob.ar/noticias/toyota-anuncio-una-inversion-de-mas-de-usd-1300-millones-para-construir-una-nueva-planta-en"
   }
 ]
