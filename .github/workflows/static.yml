@@ -36,9 +36,11 @@ jobs:
           assert isinstance(nodes, list) and nodes, "El catálogo de nodos está vacío"
           assert isinstance(news, list), "El archivo de noticias debe ser una lista"
           names = set()
+          allowed_node_types = {"Ciudad", "Puerto", "Aeropuerto", "Paso fronterizo", "Logística", "Industria", "Turismo"}
           for node in nodes:
               for field in ("name", "province", "type", "note", "source"):
                   assert isinstance(node.get(field), str) and node[field].strip(), f"Nodo sin {field}"
+              assert node["type"] in allowed_node_types, f"Tipo de nodo no admitido: {node['type']}"
               coords = node.get("coords")
               assert isinstance(coords, list) and len(coords) == 2, f"Coordenadas inválidas: {node.get('name')}"
               lat, lon = coords
@@ -68,6 +70,7 @@ jobs:
               for field in ("title", "date", "category", "summary", "source", "url"):
                   assert isinstance(item.get(field), str) and item[field].strip(), f"Noticia sin {field}"
               date.fromisoformat(item["date"])
+              assert item["date"] <= date.today().isoformat(), f"Noticia con fecha futura: {item['title']}"
               assert item["category"] in categories, f"Categoría no admitida: {item['category']}"
               assert len(item["summary"]) <= 700, f"Síntesis demasiado extensa: {item['title']}"
               url = urlparse(item["url"])
