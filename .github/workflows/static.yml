@@ -65,9 +65,9 @@ jobs:
           from pathlib import Path
           import re
           html = Path("index.html").read_text(encoding="utf-8")
-          scripts = re.findall(r'<script(?![^>]*\\bsrc=)[^>]*>(.*?)</script>', html, flags=re.I | re.S)
+          scripts = re.findall(r'<script(?![^>]*\bsrc=)[^>]*>(.*?)</script>', html, flags=re.I | re.S)
           assert scripts, "No se encontró JavaScript de aplicación"
-          Path("/tmp/mapafederal-inline.js").write_text("\\n".join(scripts), encoding="utf-8")
+          Path("/tmp/mapafederal-inline.js").write_text("\n".join(scripts), encoding="utf-8")
           PY
           node --check /tmp/mapafederal-inline.js
       - name: Check public entry point
