@@ -51,6 +51,17 @@ jobs:
               assert key not in names, f"Nodo duplicado: {node['name']}"
               names.add(key)
 
+          expected_jurisdictions = {
+              "CABA", "Buenos Aires", "Catamarca", "Chaco", "Chubut", "Córdoba",
+              "Corrientes", "Entre Ríos", "Formosa", "Jujuy", "La Pampa", "La Rioja",
+              "Mendoza", "Misiones", "Neuquén", "Río Negro", "Salta", "San Juan",
+              "San Luis", "Santa Cruz", "Santa Fe", "Santiago del Estero",
+              "Tierra del Fuego", "Tucumán"
+          }
+          covered_jurisdictions = {node["province"] for node in nodes}
+          missing_jurisdictions = expected_jurisdictions - covered_jurisdictions
+          assert not missing_jurisdictions, f"Faltan jurisdicciones en el catálogo: {sorted(missing_jurisdictions)}"
+
           categories = {"Economía", "Empresas", "Comercio", "Infraestructura", "Regulación", "Tecnología"}
           news_urls = set()
           for item in news:
@@ -64,7 +75,7 @@ jobs:
               assert item["url"] not in news_urls, f"Noticia duplicada: {item['url']}"
               news_urls.add(item["url"])
 
-          print(f"Validación correcta: {len(nodes)} nodos y {len(news)} noticias.")
+          print(f"Validación correcta: {len(nodes)} nodos en {len(covered_jurisdictions)} jurisdicciones y {len(news)} noticias.")
           PY
       - name: Check inline JavaScript syntax
         run: |
