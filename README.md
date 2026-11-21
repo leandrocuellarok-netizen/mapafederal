@@ -7,7 +7,7 @@ Plataforma web estática en evolución para explorar infraestructura, nodos terr
 ## Funcionalidades disponibles
 
 - Mapa interactivo con Leaflet y cartografía de OpenStreetMap.
-- Catálogo externo de 66 nodos estratégicos en `data/strategic-nodes.json`, con presencia en las 23 provincias y la Ciudad Autónoma de Buenos Aires, referencias de fuente y advertencias sobre coordenadas aproximadas.
+- Catálogo externo de 67 nodos estratégicos en `data/strategic-nodes.json`, con presencia en las 23 provincias y la Ciudad Autónoma de Buenos Aires, referencias de fuente y advertencias sobre coordenadas aproximadas.
 - Perfiles de exportaciones provinciales 2025 en `data/provincial-profiles.json`, basados en el informe OPEX del INDEC y enlazados con las fichas oficiales 2025 del Ministerio de Economía.
 - Filtros del mapa por categoría y provincia; búsqueda por varios términos sin depender de tildes.
 - Buscador por nombre, provincia y tipo de nodo.
@@ -25,7 +25,7 @@ Para pasos fronterizos, consultar siempre el estado y los horarios vigentes en M
 
 ### Ampliaciones incorporadas
 
-La cobertura del catálogo alcanza ahora las 24 jurisdicciones argentinas y 66 nodos estratégicos. Se incorporó el muelle provincial del Puerto de San Nicolás con coordenadas publicadas por ANPyN. Se incorporaron referencias para Catamarca, Formosa, Entre Ríos, La Pampa y Tucumán, además de ampliar la infraestructura fluvial y fronteriza de Formosa y Entre Ríos. Se sumó el Parque Industrial Güemes, ubicado al sur de General Güemes sobre RN 34 km 1.132; el ente provincial EGPAIS documenta su superficie activa y conexión ferroviaria. Su coordenada se toma de OpenStreetMap a través de Mapcarta y es orientativa.
+La cobertura del catálogo alcanza ahora las 24 jurisdicciones argentinas y 67 nodos estratégicos. Se incorporó el muelle provincial del Puerto de San Nicolás con coordenadas publicadas por ANPyN. Se incorporaron referencias para Catamarca, Formosa, Entre Ríos, La Pampa y Tucumán, además de ampliar la infraestructura fluvial y fronteriza de Formosa y Entre Ríos. Se sumó el Parque Industrial Güemes, ubicado al sur de General Güemes sobre RN 34 km 1.132; el ente provincial EGPAIS documenta su superficie activa y conexión ferroviaria. Su coordenada se toma de OpenStreetMap a través de Mapcarta y es orientativa.
 
 
 - Aeropuerto Internacional Gobernador Horacio Guzmán (Perico, Jujuy): ubicación y descripción institucional en [Argentina.gob.ar](https://www.argentina.gob.ar/transporte/obras-en-los-aeropuertos/aeropuerto-de-jujuy).
@@ -33,6 +33,8 @@ La cobertura del catálogo alcanza ahora las 24 jurisdicciones argentinas y 66 n
 - Parque de Actividades Económicas de Rafaela (PAER): descripción, infraestructura y localización general en [su sitio institucional](https://paer.rafaela.gob.ar/parque-actividades-economicas-rafaela/).
 
 La interfaz permite filtrar el mapa y el directorio por tipo y provincia. La ficha geográfica informa cuántos nodos del catálogo están registrados y qué tipos contiene; no debe interpretarse como un inventario exhaustivo. La nueva sección de perfiles económicos presenta exportaciones de bienes por jurisdicción para 2025, con variación interanual y participación nacional, según el informe OPEX del INDEC. También enlaza a la ficha provincial 2025 del Ministerio de Economía. Las exportaciones no representan el PBG ni el tamaño total de cada economía provincial. La interfaz calcula además tres señales descriptivas a partir del mismo dataset: mayor valor exportado por jurisdicción, mayor crecimiento interanual y región con mayor suma de exportaciones provinciales. Son comparaciones estadísticas, no recomendaciones de inversión ni mediciones de rentabilidad.
+
+Se incorporó el Nuevo Puerto de Posadas — muelle 1, en Nemesio Parma (Misiones), con localización y datos técnicos publicados por ANPyN: muelle declarado de 250 m y calado de 6 m. Las coordenadas se convirtieron desde grados, minutos y segundos de la ficha institucional y se conservan también como fuente de coordenadas del marcador.
 
 ### Fuentes institucionales de referencia
 
@@ -125,6 +127,15 @@ Criterio editorial:
 6. No presentar contenido de prueba como actualidad periodística.
 
 Las noticias cargadas actualmente fueron contrastadas con publicaciones oficiales de INDEC, Presidencia de la Nación, INTI, INTA y organismos nacionales vinculados con producción y comercio. Se incorporó la segunda Ronda de Negocios RIGI, prevista para el 2 de diciembre de 2026: la inscripción a reuniones de negocios cerró el 16 de noviembre, mientras que la asistencia a las demás actividades puede inscribirse hasta el 30 de noviembre según la publicación del Ministerio de Economía del 11 de noviembre. La sede figuraba pendiente de designación en esa fuente. Entre las incorporaciones recientes figuran la ronda internacional de negocios de Argentina Alimenta y las herramientas del INTA para trazabilidad y diferenciación de productos cárnicos. Se agregó la noticia del INTI sobre las jornadas EMC Days realizadas en Buenos Aires y Córdoba, con participación de Würth Elektronik y Electrocomponentes SA, publicada el 20 de noviembre de 2026. La última curación de contenido de esta versión corresponde al 21 de noviembre de 2026. Se agregó la aprobación del proyecto Argentina LNG al RIGI, con cifras atribuidas a Reuters; la aprobación regulatoria no implica que el proyecto ya esté en operación. La sección es editorial y estática: no realiza scraping ni actualización automática. Para automatizar la curación se requiere integrar fuentes RSS/API permitidas, respetar licencias y términos de uso y establecer revisión editorial.
+
+## Exportación de datos para análisis
+
+El directorio de nodos y los perfiles provinciales permiten descargar los resultados visibles en formato CSV desde sus respectivos botones. La exportación respeta los filtros de búsqueda, provincia, categoría o región activos.
+
+- **Nodos:** nombre, jurisdicción, categoría, descripción, latitud, longitud, fuente institucional y fuente de coordenadas cuando está disponible.
+- **Perfiles provinciales:** jurisdicción, región, período, exportaciones FOB, variación interanual, participación nacional, ficha provincial y fuente estadística.
+- Los archivos se generan en el navegador, con codificación UTF-8 y separador de punto y coma para facilitar su apertura en hojas de cálculo configuradas para español.
+- La exportación no añade datos nuevos ni convierte las coordenadas orientativas en ubicaciones operativas. Revisar siempre las fuentes y el período antes de utilizar los archivos en informes comerciales.
 
 ## Arquitectura
 
