@@ -658,5 +658,38 @@
     ],
     "note": "Destino turístico patagónico y puerta de acceso al sector sur del Parque Nacional Los Glaciares, con servicios de excursiones y alojamiento. Coordenada urbana referencial.",
     "source": "https://turismo.santacruz.gob.ar/donde-ir/el-calafate"
+  },
+  {
+    "name": "Puerto de Barranqueras — muelle provincial",
+    "province": "Chaco",
+    "type": "Puerto",
+    "coords": [
+      -27.490139,
+      -58.923278
+    ],
+    "note": "Infraestructura portuaria sobre el riacho Barranqueras, en la hidrovía Paraná-Paraguay. Coordenada tomada de la ficha de localización del muelle provincial; verificar condiciones de operación, calado y servicios con la autoridad portuaria.",
+    "source": "https://www.argentina.gob.ar/puertos-vias-navegables-y-marina-mercante/informaci%C3%B3n-portuaria/barranqueras-provincial"
+  },
+  {
+    "name": "Paso Internacional San Francisco",
+    "province": "Catamarca",
+    "type": "Paso fronterizo",
+    "coords": [
+      -26.876389,
+      -68.310278
+    ],
+    "note": "Paso cordillerano que conecta Catamarca con la Región de Atacama, Chile. La ubicación corresponde a las coordenadas geográficas publicadas por Turismo Fiambalá; altura, clima, horarios y estado operativo exigen consulta previa.",
+    "source": "https://www.turismofiambala.com.ar/qu%C3%A9-visitar/paso-internacional-san-francisco"
+  },
+  {
+    "name": "Parque Industrial Bahía Blanca",
+    "province": "Buenos Aires",
+    "type": "Industria",
+    "coords": [
+      -38.760879,
+      -62.283723
+    ],
+    "note": "Parque de gestión público-privada, próximo al puerto, al polo petroquímico y a la zona franca. Marcador aproximado del predio; no representa un acceso ni una parcela específica. Confirmar ubicación y disponibilidad directamente con la administración.",
+    "source": "https://pibb.com.ar/"
   }
 ]
