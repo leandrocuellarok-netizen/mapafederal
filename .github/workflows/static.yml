@@ -119,6 +119,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+      - name: Allow artifact metadata to propagate
+        run: sleep 3
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
