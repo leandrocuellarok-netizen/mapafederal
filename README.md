@@ -7,7 +7,7 @@ Plataforma web estática en evolución para explorar infraestructura, nodos terr
 ## Funcionalidades disponibles
 
 - Mapa interactivo con Leaflet y cartografía de OpenStreetMap.
-- Catálogo externo de 56 nodos estratégicos en `data/strategic-nodes.json`, con presencia en las 23 provincias y la Ciudad Autónoma de Buenos Aires, puntos de referencia y advertencias sobre coordenadas aproximadas.
+- Catálogo externo de 60 nodos estratégicos en `data/strategic-nodes.json`, con presencia en las 23 provincias y la Ciudad Autónoma de Buenos Aires, puntos de referencia y advertencias sobre coordenadas aproximadas.
 - Filtros del mapa por categoría y provincia; búsqueda por varios términos sin depender de tildes.
 - Buscador por nombre, provincia y tipo de nodo.
 - Directorio tabular filtrable por provincia, con accesos que centran el mapa y fichas de cobertura basadas exclusivamente en los nodos registrados.
@@ -23,7 +23,7 @@ Para pasos fronterizos, consultar siempre el estado y los horarios vigentes en M
 
 ### Ampliaciones incorporadas
 
-La cobertura del catálogo alcanza ahora las 24 jurisdicciones argentinas. Se incorporaron referencias para Catamarca, Formosa, Entre Ríos, La Pampa y Tucumán, además de ampliar la infraestructura fluvial y fronteriza de Formosa y Entre Ríos. Las coordenadas de estos puntos son aproximadas y se deben verificar antes de cualquier uso operativo.
+La cobertura del catálogo alcanza ahora las 24 jurisdicciones argentinas y 60 nodos estratégicos. Se incorporaron referencias para Catamarca, Formosa, Entre Ríos, La Pampa y Tucumán, además de ampliar la infraestructura fluvial y fronteriza de Formosa y Entre Ríos. Las coordenadas de estos puntos son aproximadas y se deben verificar antes de cualquier uso operativo.
 
 
 - Aeropuerto Internacional Gobernador Horacio Guzmán (Perico, Jujuy): ubicación y descripción institucional en [Argentina.gob.ar](https://www.argentina.gob.ar/transporte/obras-en-los-aeropuertos/aeropuerto-de-jujuy).
@@ -41,6 +41,18 @@ La interfaz permite filtrar el mapa y el directorio por tipo y provincia. La val
 - [Parque Industrial Pilar](https://www.parqueindustrialpilar.org.ar/contacto).
 - [Neuquén Informa — infraestructura de Vaca Muerta y Añelo](https://www.neuqueninforma.gob.ar/noticias/2025/09/08/251191-vaca-muerta-provincia-y-operadoras-acordaron-construir-una-obra-vial-estrategica).
 - [OpenStreetMap](https://www.openstreetmap.org/copyright) — cartografía base y atribución.
+
+
+### Destinos turísticos y ejecutivos incorporados
+
+Se añadieron cuatro nodos de tipo **Turismo** para ampliar la dimensión de destinos y servicios ejecutivos:
+
+- [Puerto Iguazú](https://visitiguazu.travel/sin-categoria/informacion-de-interes/): destino Cataratas y Triple Frontera, con referencia del ente municipal de turismo.
+- [Mendoza](https://www.argentina.gob.ar/node/444514): enoturismo, gastronomía, alojamiento y experiencias de naturaleza.
+- [San Carlos de Bariloche](https://www.barilocheturismo.gob.ar/es/sobre-bariloche): oferta hotelera, gastronómica, de naturaleza y actividades durante todo el año.
+- [El Calafate](https://turismo.santacruz.gob.ar/donde-ir/el-calafate): puerta de acceso al sector sur del Parque Nacional Los Glaciares.
+
+Las coordenadas son puntos urbanos de referencia, no direcciones de hoteles ni validaciones de servicios. La oferta y conectividad deben confirmarse con los organismos y prestadores antes de planificar operaciones.
 
 ## Cómo actualizar el catálogo de nodos
 
@@ -88,7 +100,7 @@ Criterio editorial:
 5. Priorizar relevancia para empresas, inversión, comercio, infraestructura y actividad productiva argentina.
 6. No presentar contenido de prueba como actualidad periodística.
 
-Las noticias cargadas actualmente fueron contrastadas con publicaciones oficiales de INDEC, Presidencia de la Nación, INTI, INTA y organismos nacionales vinculados con producción y comercio. Entre las incorporaciones recientes figuran la ronda internacional de negocios de Argentina Alimenta y las herramientas del INTA para trazabilidad y diferenciación de productos cárnicos. La última curación de contenido de esta versión corresponde al 21 de noviembre de 2026. La sección es editorial y estática: no realiza scraping ni actualización automática. Para automatizar la curación se requiere integrar fuentes RSS/API permitidas, respetar licencias y términos de uso y establecer revisión editorial.
+Las noticias cargadas actualmente fueron contrastadas con publicaciones oficiales de INDEC, Presidencia de la Nación, INTI, INTA y organismos nacionales vinculados con producción y comercio. Entre las incorporaciones recientes figuran la ronda internacional de negocios de Argentina Alimenta y las herramientas del INTA para trazabilidad y diferenciación de productos cárnicos. La última curación de contenido de esta versión corresponde al 21 de noviembre de 2026. Se agregó la aprobación del proyecto Argentina LNG al RIGI, con cifras atribuidas a Reuters; la aprobación regulatoria no implica que el proyecto ya esté en operación. La sección es editorial y estática: no realiza scraping ni actualización automática. Para automatizar la curación se requiere integrar fuentes RSS/API permitidas, respetar licencias y términos de uso y establecer revisión editorial.
 
 ## Arquitectura
 
