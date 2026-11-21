@@ -750,5 +750,17 @@
     "note": "Puerto sobre el río Ibicuy, km 217 y margen izquierda. La ficha de ANPyN registra un muelle continental de 220 m, calado declarado de 12 m y diseño para buques Panamax.",
     "source": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/ibicuy",
     "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/ibicuy"
+  },
+  {
+    "name": "Puerto de San Pedro",
+    "province": "Buenos Aires",
+    "type": "Puerto",
+    "coords": [
+      -33.6856667,
+      -59.6393611
+    ],
+    "note": "Puerto fluvial sobre la margen derecha del Paraná, km 277. La ficha de ANPyN registra un muelle de ultramar de 220 m y otro de carga general de 75 m, ambos con calado declarado de 9,8 m; confirmar condiciones operativas, calado efectivo y servicios con la autoridad portuaria.",
+    "source": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/san-pedro",
+    "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/san-pedro"
   }
 ]
