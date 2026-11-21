@@ -1,29 +1,72 @@
-# Simple workflow for deploying static content to GitHub Pages
+# Validate data and deploy the static site to GitHub Pages
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Validate geographic and editorial JSON
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import date
+          from urllib.parse import urlparse
+
+          with open("data/strategic-nodes.json", encoding="utf-8") as f:
+              nodes = json.load(f)
+          with open("data/news.json", encoding="utf-8") as f:
+              news = json.load(f)
+
+          assert isinstance(nodes, list) and nodes, "El catálogo de nodos está vacío"
+          assert isinstance(news, list), "El archivo de noticias debe ser una lista"
+          names = set()
+          for node in nodes:
+              for field in ("name", "province", "type", "note", "source"):
+                  assert isinstance(node.get(field), str) and node[field].strip(), f"Nodo sin {field}"
+              coords = node.get("coords")
+              assert isinstance(coords, list) and len(coords) == 2, f"Coordenadas inválidas: {node['name']}"
+              lat, lon = coords
+              assert isinstance(lat, (int, float)) and isinstance(lon, (int, float)), f"Coordenadas no numéricas: {node['name']}"
+              assert -55.2 <= lat <= -21.7 and -73.6 <= lon <= -53.5, f"Coordenada fuera del rango argentino: {node['name']}"
+              assert urlparse(node["source"]).scheme == "https", f"Fuente no HTTPS: {node['name']}"
+              key = node["name"].casefold()
+              assert key not in names, f"Nodo duplicado: {node['name']}"
+              names.add(key)
+
+          categories = {"Economía", "Empresas", "Comercio", "Infraestructura", "Regulación", "Tecnología"}
+          for item in news:
+              for field in ("title", "date", "category", "summary", "source", "url"):
+                  assert isinstance(item.get(field), str) and item[field].strip(), f"Noticia sin {field}"
+              date.fromisoformat(item["date"])
+              assert item["category"] in categories, f"Categoría no admitida: {item['category']}"
+              assert urlparse(item["url"]).scheme == "https", f"URL de noticia no HTTPS: {item['title']}"
+
+          print(f"Validación correcta: {len(nodes)} nodos y {len(news)} noticias.")
+          PY
+      - name: Check public entry point
+        run: |
+          grep -q '<html lang="es">' index.html
+          grep -q 'data/strategic-nodes.json' index.html
+          grep -q 'data/news.json' index.html
+
   deploy:
+    needs: validate
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -36,7 +79,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
