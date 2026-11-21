@@ -59,6 +59,17 @@ jobs:
 
           print(f"Validación correcta: {len(nodes)} nodos y {len(news)} noticias.")
           PY
+      - name: Check inline JavaScript syntax
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          html = Path("index.html").read_text(encoding="utf-8")
+          scripts = re.findall(r'<script(?![^>]*\\bsrc=)[^>]*>(.*?)</script>', html, flags=re.I | re.S)
+          assert scripts, "No se encontró JavaScript de aplicación"
+          Path("/tmp/mapafederal-inline.js").write_text("\\n".join(scripts), encoding="utf-8")
+          PY
+          node --check /tmp/mapafederal-inline.js
       - name: Check public entry point
         run: |
           grep -q '<html lang="es">' index.html
