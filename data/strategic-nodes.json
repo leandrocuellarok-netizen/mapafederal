@@ -726,5 +726,17 @@
     "note": "La ficha de ANPyN localiza el muelle fiscal en el km 348,5 de la margen derecha del Paraná. Informa un frente multipropósito y calado declarado de 10,5 m; confirmar condiciones operativas y servicios vigentes con el Consorcio de Gestión.",
     "source": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/san-nicolas-muelle-provincial",
     "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/san-nicolas-muelle-provincial"
+  },
+  {
+    "name": "Nuevo Puerto de Posadas — muelle 1",
+    "province": "Misiones",
+    "type": "Puerto",
+    "coords": [
+      -27.3671861,
+      -55.9855167
+    ],
+    "note": "Terminal fluvial sobre el Paraná, en Nemesio Parma. La ficha de ANPyN declara un muelle de 250 m y calado de 6 m.",
+    "source": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/nuevo-puerto-de-posadas",
+    "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/nuevo-puerto-de-posadas"
   }
 ]
