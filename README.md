@@ -7,7 +7,7 @@ Plataforma web estática en evolución para explorar infraestructura, nodos terr
 ## Funcionalidades disponibles
 
 - Mapa interactivo con Leaflet y cartografía de OpenStreetMap.
-- Catálogo externo de 46 nodos iniciales en `data/strategic-nodes.json`.
+- Catálogo externo de 49 nodos iniciales en `data/strategic-nodes.json`, con puntos de referencia y advertencias sobre coordenadas aproximadas.
 - Filtros por ciudades, puertos, aeropuertos, pasos fronterizos, industria y logística.
 - Buscador por nombre, provincia y tipo de nodo.
 - Directorio tabular con enlaces a fuentes de referencia.
@@ -20,6 +20,14 @@ Plataforma web estática en evolución para explorar infraestructura, nodos terr
 El catálogo es una selección inicial, no un registro oficial exhaustivo. Las coordenadas se usan para visualización orientativa; no deben utilizarse para navegación, seguridad, planificación operativa ni decisiones de inversión sin una verificación adicional. Los enlaces de cada ficha documentan la entidad o la infraestructura, pero no necesariamente certifican la coordenada exacta, su estado operativo o la disponibilidad de servicios.
 
 Para pasos fronterizos, consultar siempre el estado y los horarios vigentes en Migraciones y en los organismos responsables. Las condiciones pueden cambiar por clima, temporada y decisiones bilaterales.
+
+### Ampliaciones incorporadas
+
+- Aeropuerto Internacional Gobernador Horacio Guzmán (Perico, Jujuy): ubicación y descripción institucional en [Argentina.gob.ar](https://www.argentina.gob.ar/transporte/obras-en-los-aeropuertos/aeropuerto-de-jujuy).
+- Aeropuerto Domingo Faustino Sarmiento (Las Chacritas, San Juan): referencia institucional en [Argentina.gob.ar](https://www.argentina.gob.ar/node/118621).
+- Parque de Actividades Económicas de Rafaela (PAER): descripción, infraestructura y localización general en [su sitio institucional](https://paer.rafaela.gob.ar/parque-actividades-economicas-rafaela/).
+
+La interfaz permite filtrar el mapa y el directorio por tipo y provincia. La ficha provincial informa únicamente cuántos nodos del catálogo están registrados y qué tipos contiene; no debe interpretarse como un perfil socioeconómico ni como cobertura completa de la provincia.
 
 ### Fuentes institucionales de referencia
 
@@ -77,7 +85,7 @@ Criterio editorial:
 5. Priorizar relevancia para empresas, inversión, comercio, infraestructura y actividad productiva argentina.
 6. No presentar contenido de prueba como actualidad periodística.
 
-Las noticias cargadas actualmente fueron contrastadas con publicaciones oficiales de INDEC, Presidencia de la Nación y la Agencia Nacional de Puertos y Navegación. La sección es editorial y estática: no realiza scraping ni actualización automática. Para automatizar la curación se requiere integrar fuentes RSS/API permitidas, respetar licencias y términos de uso y establecer revisión editorial.
+Las noticias cargadas actualmente fueron contrastadas con publicaciones oficiales de INDEC, Presidencia de la Nación, INTI y la Secretaría de Innovación, Ciencia y Tecnología. La última curación de contenido de esta versión corresponde al 20 de noviembre de 2026. La sección es editorial y estática: no realiza scraping ni actualización automática. Para automatizar la curación se requiere integrar fuentes RSS/API permitidas, respetar licencias y términos de uso y establecer revisión editorial.
 
 ## Arquitectura
 
