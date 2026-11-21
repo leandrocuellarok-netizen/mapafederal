@@ -103,7 +103,11 @@ async function loadNews(){try{const response=await fetch("./data/news.json",{cac
 document.getElementById("news-search").addEventListener("input",renderNews);
 document.getElementById("news-category").addEventListener("change",renderNews);
 async function loadPoints(){try{const response=await fetch("./data/strategic-nodes.json",{cache:"no-store"});if(!response.ok)throw new Error("No se pudo cargar el catálogo");const loaded=await response.json();if(!Array.isArray(loaded))throw new Error("Formato de catálogo inválido");points=loaded.filter(p=>p&&typeof p.name==="string"&&typeof p.province==="string"&&typeof p.type==="string"&&Array.isArray(p.coords)&&p.coords.length===2&&p.coords.every(Number.isFinite)&&p.coords[0]>=-55.2&&p.coords[0]<=-21.7&&p.coords[1]>=-73.6&&p.coords[1]<=-53.5);populateProvinceFilters();drawMap();renderPOI();updateProvinceBriefAvailability();}catch(error){document.getElementById("map-count").textContent="Datos no disponibles";document.getElementById("result").innerHTML="<strong>No se pudo cargar el catálogo</strong>Revisá data/strategic-nodes.json o intentá nuevamente.";document.getElementById("poi-body").innerHTML='<tr><td colspan="4">No se pudo cargar el catálogo de nodos.</td></tr>';}}
-function csvCell(value){return '"'+String(value??"").replace(/"/g,'""')+'"';}
+function csvCell(value){
+  const text=String(value??"");
+  const safe=typeof value==="string"&&/^[\s\uFEFF]*[=+\-@]/.test(text)?"'"+text:text;
+  return '"'+safe.replace(/"/g,'""')+'"';
+}
 function downloadCsv(filename,headers,rows,statusId){
   const status=document.getElementById(statusId);
   if(!rows.length){status.textContent="No hay resultados para exportar.";return;}
