@@ -1,6 +1,6 @@
 # Hoja de ruta del ecosistema de inteligencia
 
-Actualizada: 21 de noviembre de 2026.
+Actualizada: 22 de noviembre de 2026.
 
 ## Estado real
 
@@ -44,6 +44,7 @@ INDEC también publica OPEX del primer semestre 2026 (02/09/2026), con variacion
 3. Deduplicar por URL canónica: host y esquema sin distinción de mayúsculas, puerto HTTPS predeterminado y ruta raíz normalizados, fragmentos excluidos y parámetros de consulta preservados. Rechazar URLs con credenciales.
 4. Mantener revisión editorial antes de publicar noticias.
 5. Respetar licencias, condiciones de uso y límites de frecuencia.
+6. En cada noticia conservar `period` (o `null` si la fuente no informa uno), estado de verificación, fecha de revisión y alcance; la revisión editorial no equivale a monitoreo en tiempo real.
 
 ### Fase 4 — Event Intelligence
 1. Fuentes oficiales de organizadores, cámaras, parques industriales y recintos.
