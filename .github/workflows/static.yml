@@ -86,7 +86,7 @@ jobs:
           assert "comparar dos jurisdicciones" in federal["currentCapability"]
           inline_scripts = re.findall(r"<script>(.*?)</script>", html, flags=re.S)
           assert inline_scripts, "No se encontró el JavaScript de la interfaz"
-          subprocess.run(["node", "--check"], input=inline_scripts[-1], text=True, check=True)
+          subprocess.run(["node", "--check", "-"], input=inline_scripts[-1], text=True, check=True)
           print("Interfaz, traducción, estado honesto y sintaxis del JavaScript inline: OK.")
           PY
       - name: Validate geographic and editorial JSON
