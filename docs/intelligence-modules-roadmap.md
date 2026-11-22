@@ -33,10 +33,12 @@ INDEC también publica OPEX del primer semestre 2026 (02/09/2026), con variacion
 - [INDEC — Origen provincial de las exportaciones](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-79).
 
 ### Fase 2 — Investment Finder
-1. Diseñar un esquema de proyectos y oportunidades: identificador, nombre, sector, jurisdicción, ubicación, etapa, monto si está publicado, fecha de vigencia, organismo responsable, fuente y estado de verificación.
-2. Incorporar primero datos oficiales públicos y programas de promoción que permitan reutilización.
-3. No derivar "oportunidades" únicamente de exportaciones o presencia de infraestructura.
-4. No publicar recomendaciones de inversión automáticas sin criterios y revisión.
+1. El contrato inicial está versionado en `data/investment-opportunities.json`; el catálogo permanece vacío y no representa oportunidades publicadas.
+2. Cada registro requiere identificador, nombre, tipo de registro, sector, jurisdicción, etapa, estado de oportunidad, vigencia, fuente HTTPS, fecha de publicación, período (o `null`) y estado/fecha/alcance de verificación. La ubicación y el monto son opcionales; el monto solo se incorpora si la fuente lo publica y se conserva su base y moneda.
+3. Una oportunidad solo puede figurar como abierta si la fuente está verificada, la vigencia comenzó y no terminó, y el proyecto no está completado ni cancelado.
+4. Incorporar primero datos oficiales públicos y programas de promoción que permitan reutilización.
+5. No derivar "oportunidades" únicamente de exportaciones o presencia de infraestructura.
+6. No publicar recomendaciones de inversión automáticas sin criterios y revisión.
 
 ### Fase 3 — Territorial Monitor
 1. Seleccionar fuentes RSS/API de organismos públicos y entidades sectoriales.
