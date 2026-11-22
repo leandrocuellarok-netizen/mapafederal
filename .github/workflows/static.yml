@@ -122,6 +122,18 @@ jobs:
           assert profile_names == expected_jurisdictions, f"Los perfiles no cubren exactamente las 24 jurisdicciones: {sorted(expected_jurisdictions - profile_names)}"
 
           categories = {"Economía", "Empresas", "Comercio", "Infraestructura", "Regulación", "Tecnología"}
+
+          def canonical_news_url(raw_url):
+              parsed = urlparse(raw_url)
+              return parsed._replace(
+                  scheme=parsed.scheme.lower(),
+                  netloc=parsed.netloc.lower(),
+                  fragment=""
+              ).geturl()
+
+          assert canonical_news_url("HTTPS://Example.COM/noticia#seccion") == "https://example.com/noticia"
+          assert canonical_news_url("https://example.com/noticia?id=1") != canonical_news_url("https://example.com/noticia?id=2")
+
           news_urls = set()
           news_titles = set()
           for item in news:
@@ -133,8 +145,9 @@ jobs:
               assert len(item["summary"]) <= 700, f"Síntesis demasiado extensa: {item['title']}"
               url = urlparse(item["url"])
               assert url.scheme == "https" and url.netloc, f"URL de noticia no HTTPS: {item['title']}"
-              assert item["url"] not in news_urls, f"Noticia duplicada por URL: {item['url']}"
-              news_urls.add(item["url"])
+              canonical_url = canonical_news_url(item["url"])
+              assert canonical_url not in news_urls, f"Noticia duplicada por URL canónica: {item['url']}"
+              news_urls.add(canonical_url)
               title_key = " ".join(item["title"].split()).casefold()
               assert title_key not in news_titles, f"Titular duplicado: {item['title']}"
               news_titles.add(title_key)
