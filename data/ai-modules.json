@@ -28,13 +28,14 @@
       "description": "Exploración y clasificación de oportunidades con criterios definidos.",
       "status": "planned",
       "statusLabel": "Planificado · requiere datos empresariales",
-      "currentCapability": "El sitio ofrece perfiles de exportaciones y nodos territoriales; no contiene un inventario validado de oportunidades.",
+      "currentCapability": "Existe un contrato JSON versionado y validado en data/investment-opportunities.json, actualmente vacío; no hay inventario validado de oportunidades ni recomendaciones.",
       "dependencies": [
-        "Directorio B2B con identificadores y fuentes",
+        "data/investment-opportunities.json",
+        "Fuentes públicas con condiciones de reutilización permitidas",
         "Datos de proyectos e inversiones con fecha de vigencia",
         "Criterios de elegibilidad definidos"
       ],
-      "nextStep": "Diseñar un esquema de oportunidades y una política de verificación antes de cargar registros.",
+      "nextStep": "Seleccionar fuentes oficiales reutilizables y cargar únicamente registros con vigencia, fecha, período y verificación documentados.",
       "acceptanceCriteria": [
         "Cada oportunidad incluye fuente, fecha y estado",
         "Filtros por sector, jurisdicción y etapa",
