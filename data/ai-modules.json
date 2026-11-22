@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-21",
+  "note": "Los estados describen capacidades disponibles en el repositorio, no promesas de desarrollo ni integraciones externas.",
+  "modules": [
+    {
+      "id": "federal-ai-assistant",
+      "name": "Federal AI Assistant",
+      "description": "Interfaz conversacional para consultas territoriales y empresariales.",
+      "status": "planned",
+      "statusLabel": "Planificado · requiere modelo y backend",
+      "currentCapability": "No hay conversación con un modelo en producción.",
+      "dependencies": [
+        "Proveedor o modelo desplegable",
+        "Backend para proteger credenciales",
+        "Política de fuentes, citas y límites de respuesta"
+      ],
+      "nextStep": "Definir proveedor/modelo, presupuesto, privacidad y casos de uso prioritarios.",
+      "acceptanceCriteria": [
+        "Respuestas basadas en fuentes trazables",
+        "Claves fuera del frontend público",
+        "Registro de errores y límites de uso"
+      ]
+    },
+    {
+      "id": "investment-finder",
+      "name": "Investment Finder",
+      "description": "Exploración y clasificación de oportunidades con criterios definidos.",
+      "status": "planned",
+      "statusLabel": "Planificado · requiere datos empresariales",
+      "currentCapability": "El sitio ofrece perfiles de exportaciones y nodos territoriales; no contiene un inventario validado de oportunidades.",
+      "dependencies": [
+        "Directorio B2B con identificadores y fuentes",
+        "Datos de proyectos e inversiones con fecha de vigencia",
+        "Criterios de elegibilidad definidos"
+      ],
+      "nextStep": "Diseñar un esquema de oportunidades y una política de verificación antes de cargar registros.",
+      "acceptanceCriteria": [
+        "Cada oportunidad incluye fuente, fecha y estado",
+        "Filtros por sector, jurisdicción y etapa",
+        "No se muestran oportunidades vencidas como activas"
+      ]
+    },
+    {
+      "id": "territorial-monitor",
+      "name": "Territorial Monitor",
+      "description": "Seguimiento de novedades y cambios relevantes por región.",
+      "status": "planned",
+      "statusLabel": "Planificado · requiere fuentes y ejecución programada",
+      "currentCapability": "Las noticias se cargan editorialmente en data/news.json; no existe monitoreo automático.",
+      "dependencies": [
+        "Feeds RSS/APIs permitidos",
+        "Normalización y deduplicación",
+        "Ejecución programada y revisión editorial"
+      ],
+      "nextStep": "Seleccionar fuentes oficiales y definir frecuencia, licencias y criterios de relevancia.",
+      "acceptanceCriteria": [
+        "Cada alerta conserva fuente y fecha",
+        "Deduplicación por URL y contenido",
+        "La publicación requiere verificación editorial"
+      ]
+    },
+    {
+      "id": "event-intelligence",
+      "name": "Event Intelligence",
+      "description": "Descubrimiento y organización de eventos por sector y localización.",
+      "status": "planned",
+      "statusLabel": "Planificado · requiere fuentes de organizadores",
+      "currentCapability": "No hay agenda integrada de eventos verificados.",
+      "dependencies": [
+        "Fuentes oficiales de organizadores y recintos",
+        "Modelo de eventos y fechas",
+        "Reglas para cancelar/actualizar eventos"
+      ],
+      "nextStep": "Definir categorías, campos obligatorios y primeras fuentes institucionales.",
+      "acceptanceCriteria": [
+        "Fecha, sede, organizador y enlace oficial",
+        "Estado confirmado, reprogramado o cancelado",
+        "Fecha de última comprobación visible"
+      ]
+    },
+    {
+      "id": "federal-reports",
+      "name": "Federal Reports",
+      "description": "Informes territoriales con trazabilidad de fuentes y fecha de actualización.",
+      "status": "pilot",
+      "statusLabel": "Piloto funcional · exportación local",
+      "currentCapability": "Genera fichas Markdown descargables por jurisdicción con exportaciones OPEX 2025 y nodos registrados, e incluye fuentes y advertencias metodológicas. No usa IA.",
+      "dependencies": [
+        "data/provincial-profiles.json",
+        "data/strategic-nodes.json",
+        "Fuentes estadísticas y geográficas enlazadas"
+      ],
+      "nextStep": "Añadir plantillas comparativas entre jurisdicciones y un registro explícito de período/fecha de actualización por indicador.",
+      "acceptanceCriteria": [
+        "Cada indicador conserva período y fuente",
+        "Se distinguen datos oficiales de inferencias",
+        "El informe puede regenerarse con los datos versionados"
+      ]
+    },
+    {
+      "id": "executive-travel-ai",
+      "name": "Executive Travel AI",
+      "description": "Asistencia para planificar desplazamientos y experiencias ejecutivas.",
+      "status": "planned",
+      "statusLabel": "Planificado · requiere modelo y datos de servicios",
+      "currentCapability": "El mapa contiene destinos turísticos de referencia, pero no un catálogo validado de hoteles, disponibilidad ni reservas.",
+      "dependencies": [
+        "Datos actualizados de transporte y prestadores",
+        "Fuentes de horarios/disponibilidad",
+        "Modelo y backend para recomendaciones"
+      ],
+      "nextStep": "Definir alcance: inspiración de destinos o planificación operativa con datos en vivo.",
+      "acceptanceCriteria": [
+        "Disponibilidad y horarios con fecha de consulta",
+        "Prestadores y enlaces oficiales",
+        "No simular reservas ni disponibilidad"
+      ]
+    }
+  ]
+}
