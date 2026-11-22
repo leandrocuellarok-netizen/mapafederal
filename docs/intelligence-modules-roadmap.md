@@ -10,7 +10,7 @@ El estado de cada módulo está versionado en `data/ai-modules.json` y se presen
 |---|---|---|
 | Federal AI Assistant | Planificado | No consulta un modelo. Requiere modelo y backend. |
 | Investment Finder | Planificado | Una interfaz documental de solo lectura con filtros por texto, sector, alcance, jurisdicción y estado; un registro nacional del RIMI con fuente normativa verificada. La disponibilidad del trámite y la elegibilidad permanecen desconocidas; no hay recomendaciones ni evaluación de solicitantes. |
-| Territorial Monitor | Planificado | Las noticias se cargan manualmente; no hay monitoreo RSS/API. |
+| Territorial Monitor | Planificado | Las noticias se cargan manualmente y la interfaz permite filtrar jurisdicciones explícitamente mencionadas; no hay monitoreo RSS/API. |
 | Event Intelligence | Planificado | No existe agenda integrada de eventos verificados. |
 | Federal Reports | Piloto funcional | Genera fichas Markdown por jurisdicción y compara dos jurisdicciones con los tres indicadores homogéneos del OPEX anual 2025, mostrando fuente y verificación. No usa IA. |
 | Executive Travel AI | Planificado | Hay destinos de referencia, pero no disponibilidad, reservas ni recomendaciones en vivo. |
@@ -48,12 +48,13 @@ Fuentes del registro semilla RIMI (publicadas el 04/11/2026):
 6. No publicar recomendaciones de inversión automáticas sin criterios y revisión.
 
 ### Fase 3 — Territorial Monitor
-1. Seleccionar fuentes RSS/API de organismos públicos y entidades sectoriales.
-2. Registrar fuente, fecha de publicación, fecha de consulta, URL canónica y jurisdicciones/sectores mencionados.
-3. Deduplicar por URL canónica: host y esquema sin distinción de mayúsculas, puerto HTTPS predeterminado y ruta raíz normalizados, fragmentos excluidos y parámetros de consulta preservados. Rechazar URLs con credenciales.
-4. Mantener revisión editorial antes de publicar noticias.
-5. Respetar licencias, condiciones de uso y límites de frecuencia.
-6. En cada noticia conservar `period` (o `null` si la fuente no informa uno), estado de verificación, fecha de revisión y alcance; la revisión editorial no equivale a monitoreo en tiempo real.
+1. La interfaz editorial ya permite buscar por texto y categoría, y filtrar por jurisdicciones explícitamente mencionadas en `data/news.json`; los registros ambiguos quedan sin asignación. Esta clasificación no mide impacto ni cobertura territorial completa.
+2. Seleccionar fuentes RSS/API de organismos públicos y entidades sectoriales.
+3. Registrar fuente, fecha de publicación, fecha de consulta, URL canónica y jurisdicciones/sectores mencionados.
+4. Deduplicar por URL canónica: host y esquema sin distinción de mayúsculas, puerto HTTPS predeterminado y ruta raíz normalizados, fragmentos excluidos y parámetros de consulta preservados. Rechazar URLs con credenciales.
+5. Mantener revisión editorial antes de publicar noticias.
+6. Respetar licencias, condiciones de uso y límites de frecuencia.
+7. En cada noticia conservar `period` (o `null` si la fuente no informa uno), estado de verificación, fecha de revisión y alcance; la revisión editorial no equivale a monitoreo en tiempo real.
 
 ### Fase 4 — Event Intelligence
 1. El contrato inicial está versionado en `data/events.json`; el catálogo permanece vacío y no representa una agenda activa.
