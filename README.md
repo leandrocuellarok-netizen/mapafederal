@@ -163,6 +163,8 @@ La herramienta permite seleccionar una jurisdicción y descargar una ficha Markd
 
 La ficha se genera en el navegador y no consulta servicios externos ni incorpora datos nuevos. Es un insumo preliminar de prospección, no una lista de empresas, un análisis de mercado completo ni una recomendación de inversión. El catálogo geográfico es selectivo y las coordenadas deben verificarse antes de cualquier uso operativo.
 
+Investment Finder cuenta ahora con un contrato versionado en `data/investment-opportunities.json`, pero el catálogo permanece vacío: todavía no hay oportunidades verificadas publicables. Cada registro futuro exige tipo, sector, jurisdicción, etapa, estado, vigencia, fuente HTTPS, fecha de publicación, período (o `null`) y estado/fecha/alcance de verificación. Los montos son opcionales y solo se admiten cuando están publicados por la fuente. Una oportunidad no puede figurar abierta si no está verificada o si su vigencia terminó. Las exportaciones y la presencia de infraestructura no se convierten por sí solas en oportunidades.
+
 ## Ecosistema de inteligencia
 
 La interfaz presenta los seis módulos desde un único manifiesto: `data/ai-modules.json`. Federal Reports permanece en piloto funcional; Federal AI Assistant, Investment Finder, Territorial Monitor, Event Intelligence y Executive Travel AI permanecen planificados. Los estados, capacidades actuales, dependencias y próximos pasos se mantienen en ese archivo y no deben duplicarse como una segunda lista independiente en la interfaz.
@@ -175,6 +177,7 @@ Las funciones comprobables actuales son el mapa, el directorio de nodos, los per
 - `data/strategic-nodes.json`: catálogo geográfico.
 - `data/news.json`: noticias curadas.
 - `data/events.json`: contrato versionado de Event Intelligence; permanece vacío hasta disponer de eventos confirmados por sus organizadores.
+- `data/investment-opportunities.json`: contrato versionado de Investment Finder; permanece vacío hasta contar con oportunidades respaldadas por fuentes públicas permitidas y verificadas.
 - Leaflet 1.9.4: visualización geográfica.
 - OpenStreetMap: teselas, sujetas a disponibilidad y política de uso.
 - `.github/workflows/static.yml`: validación de datos y despliegue.
