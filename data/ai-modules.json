@@ -28,14 +28,14 @@
       "description": "Exploración y clasificación de oportunidades con criterios definidos.",
       "status": "planned",
       "statusLabel": "Planificado · requiere datos empresariales",
-      "currentCapability": "El catálogo validado en data/investment-opportunities.json contiene un registro documental nacional del RIMI para bienes de alta eficiencia energética, con fuente normativa verificada. La disponibilidad del trámite SGI y la elegibilidad de solicitantes no fueron confirmadas; opportunityStatus permanece unknown. No hay interfaz de búsqueda, filtros ni recomendaciones.",
+      "currentCapability": "La interfaz pública ofrece un catálogo documental de solo lectura con filtros locales por texto, sector, alcance, jurisdicción y estado. El registro nacional del RIMI conserva fuente normativa, fecha de publicación, período, vigencia y alcance/fecha de verificación; opportunityStatus permanece unknown porque no se confirmó la operatividad del SGI ni la elegibilidad de solicitantes. No hay ingesta automática, evaluación de elegibilidad ni recomendaciones.",
       "dependencies": [
         "data/investment-opportunities.json",
         "Fuentes públicas con condiciones de reutilización permitidas",
         "Datos de proyectos e inversiones con fecha de vigencia",
         "Criterios de elegibilidad definidos"
       ],
-      "nextStep": "Confirmar la operatividad del trámite SGI y sumar oportunidades provinciales o nacionales únicamente cuando fuente, condiciones, vigencia y estado puedan verificarse.",
+      "nextStep": "Confirmar la operatividad del trámite SGI y sumar oportunidades provinciales o nacionales únicamente cuando fuente, condiciones, vigencia y estado puedan verificarse; mantener la interfaz como consulta documental hasta entonces.",
       "acceptanceCriteria": [
         "Cada oportunidad incluye fuente, fecha y estado",
         "Filtros por sector, jurisdicción y etapa",
