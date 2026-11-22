@@ -112,7 +112,7 @@ Editar `data/news.json` y agregar un objeto:
 {
   "title": "Titular fiel a la fuente",
   "date": "2026-11-20",
-  "period": null,
+  "period": "No consignado en el registro editorial",
   "category": "Economía",
   "summary": "Síntesis propia y breve basada en la nota original.",
   "source": "Nombre del medio u organismo",
@@ -131,7 +131,7 @@ Editar `data/news.json` y agregar un objeto:
 Categorías admitidas: Economía, Empresas, Comercio, Infraestructura, Regulación y Tecnología.
 
 Metadatos obligatorios:
-- `period`: período estadístico o temporal explícito de la fuente (por ejemplo, `2026-10`); usar `null` si la fuente no informa un período de referencia independiente de la fecha de publicación.
+- `period`: período estadístico o temporal explícito de la fuente (por ejemplo, `2026-10`). Si no se consignó un período independiente de la fecha de publicación, usar el texto exacto `No consignado en el registro editorial`; no inferir períodos. El validador rechaza `null`, campos ausentes o cadenas vacías para las noticias.
 - `verification.status`: `editorial_reviewed`, `pending`, `not_verified` u `outdated`.
 - `verification.checkedAt`: fecha ISO de la última revisión registrada; usar `null` si todavía no se revisó. Cuando existe, no puede preceder a la fecha de publicación ni ser futura.
 - `verification.scope`: alcance concreto de la revisión, obligatorio para todos los estados. `editorial_reviewed` exige una fecha de revisión válida y no significa monitoreo automático, vigencia en tiempo real ni disponibilidad permanente del enlace.
