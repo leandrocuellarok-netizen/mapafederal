@@ -86,13 +86,13 @@
       "description": "Informes territoriales con trazabilidad de fuentes y fecha de actualización.",
       "status": "pilot",
       "statusLabel": "Piloto funcional · exportación local",
-      "currentCapability": "Genera fichas Markdown descargables por jurisdicción con exportaciones OPEX 2025 y nodos registrados. Las fichas exponen período, fecha de publicación y estado, fecha y alcance de verificación de la fuente estadística. No usa IA.",
+      "currentCapability": "Genera fichas Markdown por jurisdicción y permite comparar dos jurisdicciones con los indicadores homogéneos del OPEX anual 2025: exportaciones de bienes, variación interanual y participación nacional. La comparación utiliza un único período y fuente INDEC, y expone publicación, fecha y alcance de verificación. Es descriptiva, no usa IA y no incorpora otros indicadores provinciales no homologados.",
       "dependencies": [
         "data/provincial-profiles.json",
         "data/strategic-nodes.json",
         "Fuentes estadísticas y geográficas enlazadas"
       ],
-      "nextStep": "Añadir plantillas comparativas entre jurisdicciones y un registro explícito de período/fecha de actualización por indicador.",
+      "nextStep": "Incorporar indicadores adicionales únicamente cuando exista una serie pública con período, unidad, cobertura y metodología comparables para las 24 jurisdicciones.",
       "acceptanceCriteria": [
         "Cada indicador conserva período y fuente",
         "Se distinguen datos oficiales de inferencias",
