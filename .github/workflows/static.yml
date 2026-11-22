@@ -64,6 +64,9 @@ jobs:
           assert.ok(Math.abs(result.differences.nationalSharePct - 23.9) < 1e-9);
           assert.throws(() => compareProfiles(buenosAires, buenosAires, metadata), /diferentes/);
           assert.throws(() => compareProfiles(buenosAires, cordoba, { ...metadata, verification: { ...metadata.verification, status: "outdated" } }), /verificada/);
+          assert.throws(() => compareProfiles(buenosAires, cordoba, { ...metadata, verification: { ...metadata.verification, checkedAt: "2026-03-09" } }), /preceder/);
+          const tomorrow = new Date(Date.now() + 86400000).toISOString().slice(0, 10);
+          assert.throws(() => compareProfiles(buenosAires, cordoba, { ...metadata, verification: { ...metadata.verification, checkedAt: tomorrow } }), /futura/);
           assert.throws(() => compareProfiles({ ...buenosAires, exportsUsdMillions: NaN }, cordoba, metadata), /no finito/);
           assert.throws(() => compareProfiles(buenosAires, cordoba, { ...metadata, sourceUrl: "http://example.org/data" }), /HTTPS/);
           console.log("Federal Reports: comparación homogénea, diferencias y rechazos de seguridad aprobados.");
