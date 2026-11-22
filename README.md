@@ -203,7 +203,7 @@ Si un despliegue falla después de cargar el artefacto de Pages, revisar primero
 
 La sección de módulos se alimenta de `data/ai-modules.json` y sus criterios técnicos están documentados en [docs/intelligence-modules-roadmap.md](docs/intelligence-modules-roadmap.md).
 
-- **Federal Reports:** piloto funcional. Genera una ficha Markdown descargable por jurisdicción con exportaciones OPEX anuales 2025, nodos territoriales, enlaces a fuentes y advertencias metodológicas. No utiliza un modelo de IA.
+- **Federal Reports:** piloto funcional. Genera una ficha Markdown descargable por jurisdicción con exportaciones OPEX anuales 2025, nodos territoriales, enlaces a fuentes y advertencias metodológicas. No utiliza un modelo de IA. Las exportaciones distinguen el período OPEX del año de edición de las fichas provinciales complementarias; el título 2025 de una ficha no se presenta como período universal de todos sus indicadores.
 - **Federal AI Assistant, Investment Finder, Territorial Monitor, Event Intelligence y Executive Travel AI:** planificados. No deben ofrecerse como funciones disponibles hasta implementar y probar sus integraciones.
 
 INDEC publicó el OPEX del primer semestre de 2026 el 2 de septiembre de 2026, con resultados regionales. Ese período parcial debe mantenerse separado del OPEX anual 2025 que alimenta las fichas provinciales. La página de INDEC anuncia el próximo informe anual 2026 para el 9 de marzo de 2027: [Origen provincial de las exportaciones](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-79).
