@@ -35,6 +35,8 @@ jobs:
               news = json.load(f)
           with open("data/events.json", encoding="utf-8") as f:
               event_catalog = json.load(f)
+          with open("data/investment-opportunities.json", encoding="utf-8") as f:
+              investment_catalog = json.load(f)
           with open("data/provincial-profiles.json", encoding="utf-8") as f:
               provincial_data = json.load(f)
           with open("data/ai-modules.json", encoding="utf-8") as f:
@@ -332,6 +334,119 @@ jobs:
               else:
                   raise AssertionError("Se aceptó un fixture de evento inválido")
           print(f"Catálogo de eventos válido: {len(events)} registros verificados; esquema y fixtures comprobados.")
+
+          # Investment Finder: contrato verificable, sin inferir oportunidades desde exportaciones o infraestructura.
+          assert investment_catalog.get("schemaVersion") == 1, "Versión de esquema de oportunidades no admitida"
+          investment_updated = date.fromisoformat(investment_catalog.get("updatedAt", ""))
+          assert investment_updated.isoformat() == investment_catalog["updatedAt"] and investment_updated <= date.today(), "Fecha de actualización inválida en oportunidades"
+          assert isinstance(investment_catalog.get("note"), str) and investment_catalog["note"].strip(), "Falta la nota de alcance del catálogo de oportunidades"
+          opportunities = investment_catalog.get("opportunities")
+          assert isinstance(opportunities, list), "El catálogo de oportunidades debe contener una lista"
+          opportunity_ids = set()
+          opportunity_types = {"project", "public_program", "tender", "incentive"}
+          opportunity_stages = {"announced", "feasibility", "preparation", "under_construction", "operational", "completed", "cancelled", "unknown"}
+          opportunity_statuses = {"open", "closed", "suspended", "unknown"}
+          verification_statuses = {"verified", "not_verified", "outdated"}
+
+          def validate_opportunity(opportunity):
+              required = ("id", "name", "recordType", "sector", "jurisdiction", "location", "stage", "opportunityStatus", "amount", "validFrom", "validUntil", "sourceName", "sourceUrl", "sourcePublishedAt", "period", "verification")
+              for field in required:
+                  assert field in opportunity, f"Oportunidad sin campo {field}"
+              for field in ("id", "name", "recordType", "sector", "stage", "opportunityStatus", "sourceName", "sourceUrl", "sourcePublishedAt"):
+                  assert isinstance(opportunity[field], str) and opportunity[field].strip(), f"Oportunidad con {field} vacío"
+              assert opportunity["recordType"] in opportunity_types, f"Tipo de registro no admitido: {opportunity['id']}"
+              assert opportunity["stage"] in opportunity_stages, f"Etapa no admitida: {opportunity['id']}"
+              assert opportunity["opportunityStatus"] in opportunity_statuses, f"Estado de oportunidad no admitido: {opportunity['id']}"
+              assert opportunity["jurisdiction"] in expected_jurisdictions, f"Jurisdicción no admitida: {opportunity['id']}"
+              location = opportunity["location"]
+              assert location is None or (isinstance(location, str) and location.strip()), f"Ubicación inválida: {opportunity['id']}"
+              source_url = urlparse(opportunity["sourceUrl"])
+              assert source_url.scheme == "https" and source_url.hostname and source_url.username is None and source_url.password is None, f"Fuente de oportunidad inválida: {opportunity['id']}"
+              source_published = date.fromisoformat(opportunity["sourcePublishedAt"])
+              assert source_published.isoformat() == opportunity["sourcePublishedAt"] and source_published <= date.today(), f"Fecha de publicación de fuente inválida: {opportunity['id']}"
+              assert opportunity["period"] is None or (isinstance(opportunity["period"], str) and opportunity["period"].strip()), f"Período inválido: {opportunity['id']}"
+              valid_from = opportunity["validFrom"]
+              valid_until = opportunity["validUntil"]
+              if valid_from is not None:
+                  valid_from = date.fromisoformat(valid_from)
+                  assert valid_from.isoformat() == opportunity["validFrom"], f"Inicio de vigencia no ISO: {opportunity['id']}"
+              if valid_until is not None:
+                  valid_until = date.fromisoformat(valid_until)
+                  assert valid_until.isoformat() == opportunity["validUntil"], f"Fin de vigencia no ISO: {opportunity['id']}"
+              if valid_from is not None and valid_until is not None:
+                  assert valid_until >= valid_from, f"Vigencia invertida: {opportunity['id']}"
+              amount = opportunity["amount"]
+              if amount is not None:
+                  assert isinstance(amount, dict), f"Monto inválido: {opportunity['id']}"
+                  assert isinstance(amount.get("value"), (int, float)) and not isinstance(amount.get("value"), bool) and amount["value"] >= 0, f"Valor monetario inválido: {opportunity['id']}"
+                  currency = amount.get("currency")
+                  assert isinstance(currency, str) and len(currency) == 3 and currency.isalpha() and currency.isupper(), f"Moneda inválida: {opportunity['id']}"
+                  assert isinstance(amount.get("basis"), str) and amount["basis"].strip(), f"Falta la base del monto: {opportunity['id']}"
+              verification = opportunity["verification"]
+              assert isinstance(verification, dict), f"Verificación inválida: {opportunity['id']}"
+              assert verification.get("status") in verification_statuses, f"Estado de verificación no admitido: {opportunity['id']}"
+              assert isinstance(verification.get("scope"), str) and verification["scope"].strip(), f"Falta el alcance de verificación: {opportunity['id']}"
+              checked_at = verification.get("checkedAt")
+              if verification["status"] == "verified":
+                  assert isinstance(checked_at, str), f"Oportunidad verificada sin fecha: {opportunity['id']}"
+              else:
+                  assert checked_at is None or isinstance(checked_at, str), f"Fecha de verificación inválida: {opportunity['id']}"
+              if checked_at is not None:
+                  checked_date = date.fromisoformat(checked_at)
+                  assert checked_date.isoformat() == checked_at and source_published <= checked_date <= date.today(), f"Fecha de verificación inconsistente: {opportunity['id']}"
+              if opportunity["opportunityStatus"] == "open":
+                  assert verification["status"] == "verified" and checked_at is not None, f"Oportunidad abierta sin verificación vigente registrada: {opportunity['id']}"
+                  assert valid_from is not None and valid_from <= date.today(), f"Oportunidad abierta sin inicio de vigencia válido: {opportunity['id']}"
+                  assert valid_until is None or valid_until >= date.today(), f"Oportunidad vencida marcada como abierta: {opportunity['id']}"
+                  assert opportunity["stage"] not in {"completed", "cancelled"}, f"Proyecto finalizado marcado como oportunidad abierta: {opportunity['id']}"
+              return opportunity["id"].strip().casefold()
+
+          for opportunity in opportunities:
+              opportunity_key = validate_opportunity(opportunity)
+              assert opportunity_key not in opportunity_ids, f"ID de oportunidad duplicado: {opportunity['id']}"
+              opportunity_ids.add(opportunity_key)
+
+          # Fixture sintético: valida el contrato sin publicar una oportunidad real.
+          sample_opportunity = {
+              "id": "fixture-programa",
+              "name": "Programa de prueba",
+              "recordType": "public_program",
+              "sector": "Industria",
+              "jurisdiction": "Buenos Aires",
+              "location": None,
+              "stage": "announced",
+              "opportunityStatus": "open",
+              "amount": None,
+              "validFrom": "2026-11-21",
+              "validUntil": None,
+              "sourceName": "Fuente sintética",
+              "sourceUrl": "https://example.org/oportunidad",
+              "sourcePublishedAt": "2026-11-20",
+              "period": None,
+              "verification": {
+                  "status": "verified",
+                  "checkedAt": "2026-11-21",
+                  "scope": "Fixture sintético para probar el contrato de trazabilidad."
+              }
+          }
+          validate_opportunity(sample_opportunity)
+          invalid_opportunities = (
+              {**sample_opportunity, "sourceUrl": "http://example.org/oportunidad"},
+              {**sample_opportunity, "jurisdiction": "Atlantis"},
+              {**sample_opportunity, "sourcePublishedAt": "2026-11-23"},
+              {**sample_opportunity, "verification": {**sample_opportunity["verification"], "checkedAt": "2026-11-19"}},
+              {**sample_opportunity, "verification": {**sample_opportunity["verification"], "status": "outdated"}},
+              {**sample_opportunity, "validUntil": "2026-11-20"},
+              {**sample_opportunity, "amount": {"value": -1, "currency": "USD", "basis": "Monto total"}}
+          )
+          for invalid_opportunity in invalid_opportunities:
+              try:
+                  validate_opportunity(invalid_opportunity)
+              except (AssertionError, ValueError):
+                  pass
+              else:
+                  raise AssertionError("Se aceptó un fixture de oportunidad inválido")
+          print(f"Investment Finder válido: {len(opportunities)} registros; contrato, vigencia, fuentes y fixtures comprobados.")
 
           ibicuy = next((node for node in nodes if node["name"] == "Puerto de Ibicuy"), None)
           assert ibicuy and ibicuy["province"] == "Entre Ríos", "Falta el nodo oficial Puerto de Ibicuy"
