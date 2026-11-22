@@ -378,7 +378,7 @@ jobs:
           print(f"Catálogo de eventos válido: {len(events)} registros verificados; esquema y fixtures comprobados.")
 
           # Investment Finder: contrato verificable, sin inferir oportunidades desde exportaciones o infraestructura.
-          assert investment_catalog.get("schemaVersion") == 1, "Versión de esquema de oportunidades no admitida"
+          assert investment_catalog.get("schemaVersion") == 2, "Versión de esquema de oportunidades no admitida"
           investment_updated = date.fromisoformat(investment_catalog.get("updatedAt", ""))
           assert investment_updated.isoformat() == investment_catalog["updatedAt"] and investment_updated <= date.today(), "Fecha de actualización inválida en oportunidades"
           assert isinstance(investment_catalog.get("note"), str) and investment_catalog["note"].strip(), "Falta la nota de alcance del catálogo de oportunidades"
@@ -386,20 +386,25 @@ jobs:
           assert isinstance(opportunities, list), "El catálogo de oportunidades debe contener una lista"
           opportunity_ids = set()
           opportunity_types = {"project", "public_program", "tender", "incentive"}
+          opportunity_scopes = {"national", "provincial"}
           opportunity_stages = {"announced", "feasibility", "preparation", "under_construction", "operational", "completed", "cancelled", "unknown"}
           opportunity_statuses = {"open", "closed", "suspended", "unknown"}
           verification_statuses = {"verified", "not_verified", "outdated"}
 
           def validate_opportunity(opportunity):
-              required = ("id", "name", "recordType", "sector", "jurisdiction", "location", "stage", "opportunityStatus", "amount", "validFrom", "validUntil", "sourceName", "sourceUrl", "sourcePublishedAt", "period", "verification")
+              required = ("id", "name", "recordType", "scope", "sector", "jurisdiction", "location", "stage", "opportunityStatus", "amount", "validFrom", "validUntil", "sourceName", "sourceUrl", "sourcePublishedAt", "period", "verification")
               for field in required:
                   assert field in opportunity, f"Oportunidad sin campo {field}"
               for field in ("id", "name", "recordType", "sector", "stage", "opportunityStatus", "sourceName", "sourceUrl", "sourcePublishedAt"):
                   assert isinstance(opportunity[field], str) and opportunity[field].strip(), f"Oportunidad con {field} vacío"
               assert opportunity["recordType"] in opportunity_types, f"Tipo de registro no admitido: {opportunity['id']}"
+              assert opportunity["scope"] in opportunity_scopes, f"Alcance territorial no admitido: {opportunity['id']}"
               assert opportunity["stage"] in opportunity_stages, f"Etapa no admitida: {opportunity['id']}"
               assert opportunity["opportunityStatus"] in opportunity_statuses, f"Estado de oportunidad no admitido: {opportunity['id']}"
-              assert opportunity["jurisdiction"] in expected_jurisdictions, f"Jurisdicción no admitida: {opportunity['id']}"
+              if opportunity["scope"] == "national":
+                  assert opportunity["jurisdiction"] is None, f"Una oportunidad nacional no debe asignarse a una provincia: {opportunity['id']}"
+              else:
+                  assert opportunity["jurisdiction"] in expected_jurisdictions, f"Jurisdicción provincial no admitida: {opportunity['id']}"
               location = opportunity["location"]
               assert location is None or (isinstance(location, str) and location.strip()), f"Ubicación inválida: {opportunity['id']}"
               source_url = urlparse(opportunity["sourceUrl"])
@@ -449,12 +454,16 @@ jobs:
               opportunity_key = validate_opportunity(opportunity)
               assert opportunity_key not in opportunity_ids, f"ID de oportunidad duplicado: {opportunity['id']}"
               opportunity_ids.add(opportunity_key)
+          rimi = next((item for item in opportunities if item["id"] == "rimi-eficiencia-energetica-2026"), None)
+          assert rimi is not None and rimi["scope"] == "national" and rimi["jurisdiction"] is None, "Falta el registro RIMI de alcance nacional"
+          assert rimi["opportunityStatus"] == "unknown", "RIMI no debe mostrarse como oportunidad abierta sin verificar el trámite SGI"
 
           # Fixture sintético: valida el contrato sin publicar una oportunidad real.
           sample_opportunity = {
               "id": "fixture-programa",
               "name": "Programa de prueba",
               "recordType": "public_program",
+              "scope": "provincial",
               "sector": "Industria",
               "jurisdiction": "Buenos Aires",
               "location": None,
@@ -474,9 +483,14 @@ jobs:
               }
           }
           validate_opportunity(sample_opportunity)
+          national_fixture = {**sample_opportunity, "id": "fixture-nacional", "scope": "national", "jurisdiction": None}
+          validate_opportunity(national_fixture)
           invalid_opportunities = (
               {**sample_opportunity, "sourceUrl": "http://example.org/oportunidad"},
               {**sample_opportunity, "jurisdiction": "Atlantis"},
+              {**sample_opportunity, "scope": "national"},
+              {**sample_opportunity, "scope": "provincial", "jurisdiction": None},
+              {**sample_opportunity, "scope": "municipal"},
               {**sample_opportunity, "sourcePublishedAt": "2026-11-23"},
               {**sample_opportunity, "verification": {**sample_opportunity["verification"], "checkedAt": "2026-11-19"}},
               {**sample_opportunity, "verification": {**sample_opportunity["verification"], "status": "outdated"}},

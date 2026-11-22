@@ -1,6 +1,31 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "updatedAt": "2026-11-22",
-  "note": "Catálogo inicial vacío. No contiene oportunidades verificadas; cada registro futuro deberá conservar fuente pública permitida, fecha de publicación, período y estado/fecha/alcance de verificación.",
-  "opportunities": []
+  "note": "Catálogo inicial con un registro normativo nacional documentado. Su estado de disponibilidad permanece desconocido: no se confirmó la operatividad del trámite SGI ni la elegibilidad de solicitantes. No constituye una recomendación de inversión.",
+  "opportunities": [
+    {
+      "id": "rimi-eficiencia-energetica-2026",
+      "name": "RIMI — inversiones en bienes de alta eficiencia energética",
+      "recordType": "incentive",
+      "scope": "national",
+      "sector": "Industria / eficiencia energética",
+      "jurisdiction": null,
+      "location": null,
+      "stage": "unknown",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-11-04",
+      "validUntil": null,
+      "sourceName": "Boletín Oficial de la República Argentina — Secretaría de Energía",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/primera/350021/20261104",
+      "sourcePublishedAt": "2026-11-04",
+      "period": "Vigencia normativa desde 2026-11-04; la Resolución SE 311/2026 no fija fecha de cierre.",
+      "description": "La Resolución SE 311/2026 aprueba el listado de bienes de alta eficiencia energética destinados a optimizar, recuperar o reducir el consumo energético en unidades productivas. El encuadramiento requiere cumplir criterios técnicos y presentar una declaración jurada técnica. Las inversiones que no puedan encuadrarse en el listado deben acreditar una reducción cuantificada del consumo mediante informe profesional. Los servicios de ingeniería, instalación, puesta en marcha, programación y capacitación pueden integrar la inversión cuando forman parte de su costo.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-22",
+        "scope": "Verificada la publicación oficial y la vigencia normativa de la Resolución SE 311/2026. No se verificó la disponibilidad operativa del Sistema de Gestión de Inversiones (SGI), la elegibilidad de una empresa concreta ni la concesión de beneficios; por eso opportunityStatus permanece unknown."
+      }
+    }
+  ]
 }
