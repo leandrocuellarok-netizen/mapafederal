@@ -125,8 +125,10 @@ function exportVisibleProfiles(){
   const query=normalizeText(document.getElementById("profile-search").value);
   const region=document.getElementById("profile-region").value;
   const filtered=[...provincialProfiles].filter(p=>(region==="Todas"||p.region===region)&&normalizeText(p.province).includes(query)).sort((a,b)=>b.exportsUsdMillions-a.exportsUsdMillions);
-  const rows=filtered.map(p=>[p.province,p.region,profilesMetadata?.period||"",p.exportsUsdMillions,p.yearOnYearPct,p.nationalSharePct,p.profileUrl,profilesMetadata?.sourceUrl||""]);
-  downloadCsv("mapa-federal-perfiles-provinciales.csv",["Provincia","Región","Período","Exportaciones USD millones FOB","Variación interanual %","Participación nacional %","Ficha provincial","Fuente estadística"],rows,"profiles-export-status");
+  const verification=profilesMetadata?.verification||{};
+  const verificationStatus=({verified:"Verificado",not_verified:"No verificado",outdated:"Desactualizado"})[verification.status]||"No informado";
+  const rows=filtered.map(p=>[p.province,p.region,profilesMetadata?.period||"",p.exportsUsdMillions,p.yearOnYearPct,p.nationalSharePct,p.profileUrl,profilesMetadata?.published||"",profilesMetadata?.publisher||"",verificationStatus,verification.checkedAt||"",verification.scope||"",profilesMetadata?.sourceUrl||""]);
+  downloadCsv("mapa-federal-perfiles-provinciales.csv",["Provincia","Región","Período","Exportaciones USD millones FOB","Variación interanual %","Participación nacional %","Ficha provincial","Publicación de la fuente","Organismo publicador","Estado de verificación","Fecha de verificación","Alcance de verificación","Fuente estadística"],rows,"profiles-export-status");
 }
 function exportProvinceBrief(){
   const status=document.getElementById("brief-export-status");
