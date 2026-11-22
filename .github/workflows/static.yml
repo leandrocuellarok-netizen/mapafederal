@@ -34,6 +34,21 @@ jobs:
               news = json.load(f)
           with open("data/provincial-profiles.json", encoding="utf-8") as f:
               provincial_data = json.load(f)
+          with open("data/ai-modules.json", encoding="utf-8") as f:
+              module_data = json.load(f)
+          modules = module_data.get("modules")
+          assert isinstance(modules, list) and len(modules) == 6, "Deben existir seis módulos documentados"
+          module_ids = [module.get("id") for module in modules]
+          assert len(set(module_ids)) == 6, "IDs de módulos duplicados"
+          assert set(module_ids) == {"federal-ai-assistant", "investment-finder", "territorial-monitor", "event-intelligence", "federal-reports", "executive-travel-ai"}, "Falta o sobra un módulo"
+          statuses = {module.get("id"): module.get("status") for module in modules}
+          assert statuses["federal-reports"] == "pilot", "Federal Reports debe reflejar el piloto funcional actual"
+          assert all(statuses[module_id] == "planned" for module_id in module_ids if module_id != "federal-reports"), "Un módulo futuro aparece como operativo sin implementación"
+          for module in modules:
+              for field in ("name", "description", "statusLabel", "currentCapability", "nextStep"):
+                  assert isinstance(module.get(field), str) and module[field].strip(), f"Módulo sin {field}: {module.get('id')}"
+              assert isinstance(module.get("dependencies"), list) and module["dependencies"], f"Módulo sin dependencias: {module.get('id')}"
+          print("Hoja de ruta válida: 6 módulos, 1 piloto funcional y 5 módulos planificados.")
 
           assert isinstance(nodes, list) and nodes, "El catálogo de nodos está vacío"
           assert isinstance(news, list), "El archivo de noticias debe ser una lista"
