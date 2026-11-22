@@ -114,7 +114,17 @@ const translations={en:{
 "La Resolución SE 311/2026 aprueba el listado de bienes de alta eficiencia energética destinados a optimizar, recuperar o reducir el consumo energético en unidades productivas. El encuadramiento requiere cumplir criterios técnicos y presentar una declaración jurada técnica. Las inversiones que no puedan encuadrarse en el listado deben acreditar una reducción cuantificada del consumo mediante informe profesional. Los servicios de ingeniería, instalación, puesta en marcha, programación y capacitación pueden integrar la inversión cuando forman parte de su costo.":"Resolution SE 311/2026 approves a list of high-efficiency energy goods intended to optimize, recover or reduce energy consumption in productive facilities. Eligibility requires meeting technical criteria and submitting a technical sworn statement. Investments not covered by the list must demonstrate a quantified reduction in consumption through a professional report. Engineering, installation, commissioning, programming and training services may form part of the investment when included in its cost."
 ,
 "registros documentados":"documented records",
-"No consignado en el registro editorial":"Not recorded in the editorial entry"
+"No consignado en el registro editorial":"Not recorded in the editorial entry",
+"Filtrar por etapa":"Filter by project stage",
+"Todas las etapas":"All stages",
+"Anunciado":"Announced",
+"Factibilidad":"Feasibility",
+"En preparación":"In preparation",
+"En construcción":"Under construction",
+"En operación":"Operational",
+"Finalizado":"Completed",
+"Cancelado":"Cancelled",
+"Etapa no informada":"Stage not reported"
 }};
 const storageKey="mapa-federal-language", originalText=new WeakMap(), originalAttrs=new WeakMap();
 let language="es", observer;
