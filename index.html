@@ -95,7 +95,7 @@ function renderNews(){
  root.setAttribute("aria-busy","false");
  const query=normalizeText(document.getElementById("news-search").value);
  const category=document.getElementById("news-category").value;
- const terms=query.split(/\\s+/).filter(Boolean);
+ const terms=query.split(/\s+/).filter(Boolean);
  if(newsLoadError){root.innerHTML='<div class="empty">No se pudo cargar el archivo editorial. Revisá data/news.json.</div>';return;}
  const filtered=[...newsItems].sort((a,b)=>b.date.localeCompare(a.date)).filter(item=>(category==="Todas"||item.category===category)&&terms.every(term=>normalizeText([item.title,item.summary,item.source,item.category].join(" ")).includes(term)));
  root.innerHTML=filtered.length?filtered.map(item=>{
