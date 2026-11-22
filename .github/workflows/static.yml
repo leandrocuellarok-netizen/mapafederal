@@ -25,6 +25,7 @@ jobs:
         run: |
           python - <<'PY'
           import json
+          import math
           from datetime import date, time
           from urllib.parse import urlparse
           from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
@@ -378,7 +379,9 @@ jobs:
               amount = opportunity["amount"]
               if amount is not None:
                   assert isinstance(amount, dict), f"Monto inválido: {opportunity['id']}"
-                  assert isinstance(amount.get("value"), (int, float)) and not isinstance(amount.get("value"), bool) and amount["value"] >= 0, f"Valor monetario inválido: {opportunity['id']}"
+                  amount_value = amount.get("value")
+              assert isinstance(amount_value, (int, float)) and not isinstance(amount_value, bool) and amount_value >= 0, f"Valor monetario inválido: {opportunity['id']}"
+              assert not isinstance(amount_value, float) or math.isfinite(amount_value), f"El monto debe ser finito: {opportunity['id']}"
                   currency = amount.get("currency")
                   assert isinstance(currency, str) and len(currency) == 3 and currency.isalpha() and currency.isupper(), f"Moneda inválida: {opportunity['id']}"
                   assert isinstance(amount.get("basis"), str) and amount["basis"].strip(), f"Falta la base del monto: {opportunity['id']}"
@@ -437,7 +440,8 @@ jobs:
               {**sample_opportunity, "verification": {**sample_opportunity["verification"], "checkedAt": "2026-11-19"}},
               {**sample_opportunity, "verification": {**sample_opportunity["verification"], "status": "outdated"}},
               {**sample_opportunity, "validUntil": "2026-11-20"},
-              {**sample_opportunity, "amount": {"value": -1, "currency": "USD", "basis": "Monto total"}}
+              {**sample_opportunity, "amount": {"value": -1, "currency": "USD", "basis": "Monto total"}},
+              {**sample_opportunity, "amount": {"value": float("inf"), "currency": "USD", "basis": "Monto total"}}
           )
           for invalid_opportunity in invalid_opportunities:
               try:
