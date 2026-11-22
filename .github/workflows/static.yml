@@ -532,9 +532,10 @@ jobs:
           const vm = require("vm");
           const html = fs.readFileSync("index.html", "utf8");
           const catalog = JSON.parse(fs.readFileSync("data/investment-opportunities.json", "utf8"));
-          for (const id of ["investment-search", "investment-sector", "investment-scope", "investment-jurisdiction", "investment-status", "investment-grid"]) {
+          for (const id of ["investment-search", "investment-sector", "investment-scope", "investment-jurisdiction", "investment-status", "investment-count", "investment-grid"]) {
             if (!html.includes('id="' + id + '"')) throw new Error("Falta el control de Investment Finder: " + id);
           }
+          if (!html.includes("registros documentados")) throw new Error("Falta la etiqueta traducible del contador.");
           const start = html.indexOf("function filterInvestmentOpportunities(records,filters){");
           const end = html.indexOf("\nfunction investmentStatusLabel", start);
           if (start < 0 || end < 0) throw new Error("No se encontró el filtro reutilizable de Investment Finder.");
