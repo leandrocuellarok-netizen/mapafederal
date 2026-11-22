@@ -21,6 +21,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Validate bilingual interface
+        run: |
+          node --check assets/i18n.js
+          python - <<'PY'
+          from pathlib import Path
+          html = Path("index.html").read_text(encoding="utf-8")
+          script = Path("assets/i18n.js").read_text(encoding="utf-8")
+          assert 'id="language-select"' in html, "Falta el selector de idioma"
+          assert './assets/i18n.js' in html, "Falta cargar el módulo de traducciones"
+          assert 'document.documentElement.lang=language' in script, "El idioma del documento no se actualiza"
+          assert 'localStorage.setItem(storageKey,language)' in script, "No se conserva la preferencia de idioma"
+          assert 'setLanguage:apply' in script, "No se expone la API reutilizable"
+          assert 'const originalText=new WeakMap()' in script, "El cambio de idioma debe preservar los textos originales"
+          print("Interfaz bilingüe: sintaxis, selector, persistencia, API y reversibilidad comprobados.")
+          PY
       - name: Validate geographic and editorial JSON
         run: |
           python - <<'PY'
