@@ -214,12 +214,12 @@ jobs:
           const vm = require("vm");
           const html = fs.readFileSync("index.html", "utf8");
           const start = html.indexOf("function exportVisibleProfiles(){");
-          const end = html.indexOf("\\nfunction exportProvinceBrief", start);
+          const end = html.indexOf("\nfunction exportProvinceBrief", start);
           if (start < 0 || end < 0) throw new Error("No se encontró exportVisibleProfiles para probar.");
           let captured;
           const context = {
             document: { getElementById(id) { return { value: id === "profile-search" ? "" : "Todas" }; } },
-            normalizeText(value) { return String(value ?? "").normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").toLowerCase(); },
+            normalizeText(value) { return String(value ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); },
             provincialProfiles: [{ province: "Buenos Aires", region: "Pampeana", exportsUsdMillions: 31684, yearOnYearPct: 7.3, nationalSharePct: 36.4, profileUrl: "https://example.gov/profile.pdf" }],
             profilesMetadata: { period: "2025", published: "2026-03-10", publisher: "INDEC", sourceUrl: "https://example.gov/opex.pdf", verification: { status: "verified", checkedAt: "2026-11-21", scope: "Test scope" } },
             downloadCsv(...args) { captured = args; }
