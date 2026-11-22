@@ -19,6 +19,7 @@ El estado de cada módulo está versionado en `data/ai-modules.json` y se presen
 
 ### Fase 1 — Federal Reports (piloto operativo)
 - Mantener período, unidad, fecha de publicación y fuente junto a cada indicador.
+- Exponer en cada ficha la fecha, el estado y el alcance de la verificación de la fuente estadística; la verificación del OPEX no certifica los nodos geográficos ni las fichas provinciales complementarias.
 - Añadir comparativas de dos o más jurisdicciones sin mezclar períodos.
 - Incorporar un resumen ejecutivo que distinga observaciones descriptivas de inferencias.
 - Exportar Markdown y CSV con referencias a las fuentes.

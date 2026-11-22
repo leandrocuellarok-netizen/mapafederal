@@ -87,6 +87,13 @@ jobs:
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
           assert isinstance(provincial_data.get("published"), str), "Falta fecha de publicación del dataset provincial"
+          verification = provincial_data.get("verification")
+          assert isinstance(verification, dict), "Falta el registro de verificación del dataset provincial"
+          assert verification.get("status") in {"verified", "not_verified", "outdated"}, "Estado de verificación provincial no admitido"
+          assert isinstance(verification.get("checkedAt"), str), "Falta fecha de verificación provincial"
+          verification_date = date.fromisoformat(verification["checkedAt"])
+          assert verification_date <= date.today(), "La fecha de verificación provincial no puede ser futura"
+          assert isinstance(verification.get("scope"), str) and verification["scope"].strip(), "Falta el alcance de verificación provincial"
           source_url = urlparse(provincial_data.get("sourceUrl", ""))
           assert source_url.scheme == "https" and source_url.netloc, "Fuente OPEX no HTTPS"
           province_profiles = provincial_data.get("profiles")

@@ -85,7 +85,7 @@
       "description": "Informes territoriales con trazabilidad de fuentes y fecha de actualización.",
       "status": "pilot",
       "statusLabel": "Piloto funcional · exportación local",
-      "currentCapability": "Genera fichas Markdown descargables por jurisdicción con exportaciones OPEX 2025 y nodos registrados, e incluye fuentes y advertencias metodológicas. No usa IA.",
+      "currentCapability": "Genera fichas Markdown descargables por jurisdicción con exportaciones OPEX 2025 y nodos registrados. Las fichas exponen período, fecha de publicación y estado, fecha y alcance de verificación de la fuente estadística. No usa IA.",
       "dependencies": [
         "data/provincial-profiles.json",
         "data/strategic-nodes.json",

@@ -202,5 +202,10 @@
       "nationalSharePct": 0.6,
       "profileUrl": "https://www.argentina.gob.ar/sites/default/files/misiones_infografia_2025.pdf"
     }
-  ]
+  ],
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-21",
+    "scope": "Los 24 registros de exportaciones de bienes, variación interanual y participación nacional fueron cotejados con el cuadro 1 del informe OPEX 2025 del INDEC. Esta verificación no cubre las fichas provinciales complementarias ni los nodos geográficos."
+  }
 }

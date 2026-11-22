@@ -15,6 +15,7 @@ Plataforma web estática en evolución para explorar infraestructura, nodos terr
 - Degradación controlada: si Leaflet o la cartografía externa no cargan, el directorio y las noticias siguen disponibles.
 - Sección editorial alimentada por `data/news.json`, con filtros por tema y búsqueda.
 - Diseño adaptable, navegación por anclas y avisos de estado.
+- Fichas territoriales Markdown por jurisdicción con período, fecha de publicación y estado/alcance de verificación del dataset OPEX.
 - Validación automática de los archivos JSON antes de desplegar en GitHub Pages.
 
 ## Datos geográficos: alcance y calidad
