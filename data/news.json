@@ -1,33 +1,5 @@
 [
   {
-    "title": "Chubut: el potencial minero convive con un riesgo social y regulatorio persistente",
-    "date": "2026-11-03",
-    "period": "2021-2026",
-    "category": "Empresas",
-    "summary": "El debate sobre la minería de uranio en la Meseta Central vuelve a generar controversia en Chubut. Tras la aprobación de la Ley XVII N.º 149, las movilizaciones de diciembre de 2021 precedieron su derogación por la Ley XVII N.º 150. En 2025, organizaciones locales alertaron sobre proyectos de uranio; en noviembre de 2026 se reportaron nuevas solicitudes de exploración y un pedido vecinal para reabrir el debate. Para empresas, estos antecedentes señalan riesgos de licencia social, controversia regulatoria y demoras que deben evaluarse por proyecto y localidad, sin asumir una posición uniforme de la población.",
-    "source": "No a la Mina (reproducido por Biodiversidad en América Latina)",
-    "url": "https://www.biodiversidadla.org/Articulos/Nuevo-intento-para-habilitar-la-megamineria-en-la-meseta-chubutense",
-    "relatedSources": [
-      {
-        "label": "Gobierno de Chubut — Ley XVII N.º 150 (derogación)",
-        "url": "https://sistemas.chubut.gov.ar/digesto/sistema/consulta.php?idile1=81944"
-      },
-      {
-        "label": "La Nación — movilizaciones y derogación en diciembre de 2021",
-        "url": "https://www.lanacion.com.ar/politica/la-pelea-por-la-mineria-en-chubut-investigan-si-hubo-instigadores-y-una-zona-liberada-que-fomentaron-nid26122021/"
-      },
-      {
-        "label": "Tiempo Argentino — organizaciones en alerta por proyectos de uranio (30/07/2025)",
-        "url": "https://www.tiempoar.com.ar/ta_article/chubut-organizaciones-sociales-y-comunidades-en-estado-de-alerta-ante-una-nueva-avanzada-minera/"
-      }
-    ],
-    "verification": {
-      "status": "editorial_reviewed",
-      "checkedAt": "2026-11-22",
-      "scope": "Contraste editorial del informe de noviembre de 2026 con la Ley XVII N.º 150 publicada en el digesto oficial de Chubut y coberturas periodísticas sobre las movilizaciones de 2021 y la alerta de organizaciones en 2025. No es monitoreo en tiempo real ni una medición de opinión pública."
-    }
-  },
-  {
     "title": "Argentina aprobó el ingreso al RIGI del proyecto Argentina LNG de YPF, Eni y XRG",
     "date": "2026-11-20",
     "category": "Empresas",
@@ -193,6 +165,34 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
+    }
+  },
+  {
+    "title": "Chubut: el potencial minero convive con un riesgo social y regulatorio persistente",
+    "date": "2026-11-03",
+    "period": "2021-2026",
+    "category": "Empresas",
+    "summary": "El debate sobre la minería de uranio en la Meseta Central vuelve a generar controversia en Chubut. Tras la aprobación de la Ley XVII N.º 149, las movilizaciones de diciembre de 2021 precedieron su derogación por la Ley XVII N.º 150. En 2025, organizaciones locales alertaron sobre proyectos de uranio; en noviembre de 2026 se reportaron nuevas solicitudes de exploración y un pedido vecinal para reabrir el debate. Para empresas, estos antecedentes señalan riesgos de licencia social, controversia regulatoria y demoras que deben evaluarse por proyecto y localidad, sin asumir una posición uniforme de la población.",
+    "source": "No a la Mina (reproducido por Biodiversidad en América Latina)",
+    "url": "https://www.biodiversidadla.org/Articulos/Nuevo-intento-para-habilitar-la-megamineria-en-la-meseta-chubutense",
+    "relatedSources": [
+      {
+        "label": "Gobierno de Chubut — Ley XVII N.º 150 (derogación)",
+        "url": "https://sistemas.chubut.gov.ar/digesto/sistema/consulta.php?idile1=81944"
+      },
+      {
+        "label": "La Nación — movilizaciones y derogación en diciembre de 2021",
+        "url": "https://www.lanacion.com.ar/politica/la-pelea-por-la-mineria-en-chubut-investigan-si-hubo-instigadores-y-una-zona-liberada-que-fomentaron-nid26122021/"
+      },
+      {
+        "label": "Tiempo Argentino — organizaciones en alerta por proyectos de uranio (30/07/2025)",
+        "url": "https://www.tiempoar.com.ar/ta_article/chubut-organizaciones-sociales-y-comunidades-en-estado-de-alerta-ante-una-nueva-avanzada-minera/"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-22",
+      "scope": "Contraste editorial del informe de noviembre de 2026 con la Ley XVII N.º 150 publicada en el digesto oficial de Chubut y coberturas periodísticas sobre las movilizaciones de 2021 y la alerta de organizaciones en 2025. No es monitoreo en tiempo real ni una medición de opinión pública."
     }
   }
 ]
