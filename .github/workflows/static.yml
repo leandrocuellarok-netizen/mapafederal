@@ -194,6 +194,7 @@ jobs:
           # Event Intelligence: contrato de datos preparado, sin simular una agenda activa.
           assert event_catalog.get("schemaVersion") == 1, "Versión de esquema de eventos no admitida"
           catalog_updated = date.fromisoformat(event_catalog.get("updatedAt", ""))
+          assert catalog_updated.isoformat() == event_catalog["updatedAt"], "Fecha de actualización de eventos no ISO"
           assert catalog_updated <= date.today(), "Fecha futura en catálogo de eventos"
           assert isinstance(event_catalog.get("note"), str) and event_catalog["note"].strip(), "Falta la nota de alcance del catálogo de eventos"
           events = event_catalog.get("events")
@@ -232,14 +233,18 @@ jobs:
               source_url = urlparse(event["sourceUrl"])
               assert source_url.scheme == "https" and source_url.hostname and source_url.username is None and source_url.password is None, f"Fuente oficial de evento inválida: {event['id']}"
               published = date.fromisoformat(event["sourcePublishedAt"])
+              assert published.isoformat() == event["sourcePublishedAt"], f"Fecha de publicación de fuente no ISO: {event['id']}"
               verification = event["verification"]
               assert isinstance(verification, dict), f"Verificación de evento inválida: {event['id']}"
               assert verification.get("status") in event_verification_statuses, f"Estado de verificación de evento no admitido: {event['id']}"
               checked_at = date.fromisoformat(verification.get("checkedAt", ""))
+              assert checked_at.isoformat() == verification["checkedAt"], f"Fecha de verificación no ISO: {event['id']}"
               assert published <= checked_at <= date.today(), f"Fechas de fuente/verificación inconsistentes: {event['id']}"
               assert isinstance(verification.get("scope"), str) and verification["scope"].strip(), f"Evento sin alcance de verificación: {event['id']}"
               if event["status"] in {"confirmed", "rescheduled"}:
                   assert verification["status"] == "verified", f"Evento futuro no confirmado por fuente oficial: {event['id']}"
+                  last_event_day = date.fromisoformat(end_date) if end_date else start_date
+                  assert last_event_day >= date.today(), f"Evento vencido todavía marcado como próximo: {event['id']}"
               return event["id"].strip().casefold()
 
           for event in events:
@@ -275,6 +280,7 @@ jobs:
           for invalid_fixture in (
               {**sample_event, "sourceUrl": "http://example.org/evento"},
               {**sample_event, "endDate": "2026-12-09"},
+              {**sample_event, "startDate": "2026-11-20"},
               {**sample_event, "verification": {**sample_event["verification"], "status": "outdated"}}
           ):
               try:
