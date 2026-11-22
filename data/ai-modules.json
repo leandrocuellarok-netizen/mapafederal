@@ -48,7 +48,7 @@
       "description": "Seguimiento de novedades y cambios relevantes por región.",
       "status": "planned",
       "statusLabel": "Planificado · requiere fuentes y ejecución programada",
-      "currentCapability": "Las noticias se cargan editorialmente en data/news.json; no existe monitoreo automático.",
+      "currentCapability": "Las noticias se cargan editorialmente en data/news.json. La interfaz permite buscar, filtrar por categoría y por jurisdicciones explícitamente mencionadas en cada registro; las referencias ambiguas quedan sin asignación. No existe monitoreo automático RSS/API ni alertas en tiempo real.",
       "dependencies": [
         "Feeds RSS/APIs permitidos",
         "Normalización y deduplicación",
