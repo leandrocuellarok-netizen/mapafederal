@@ -1,5 +1,33 @@
 [
   {
+    "title": "Chubut: el potencial minero convive con un riesgo social y regulatorio persistente",
+    "date": "2026-11-03",
+    "period": "2021-2026",
+    "category": "Empresas",
+    "summary": "Un nuevo intento de reabrir el debate sobre la minería de uranio en la Meseta Central vuelve a poner en primer plano la conflictividad territorial de Chubut. En diciembre de 2021, tras la aprobación de la Ley XVII N.º 149, las movilizaciones masivas conocidas como Chubutazo precedieron su derogación por la Ley XVII N.º 150, del 21 de diciembre. En 2025, organizaciones y asambleas comunicaron estado de alerta ante anuncios de proyectos de uranio; en noviembre de 2026 se informó sobre nuevas solicitudes de exploración y una nota de vecinos de Paso de Indios que pidió reactivar el debate. Para empresas, esto señala un riesgo elevado de licencia social, controversia regulatoria y demoras: debe evaluarse por proyecto y localidad, sin asumir rechazo uniforme ni viabilidad automática.",
+    "source": "No a la Mina (reproducido por Biodiversidad en América Latina)",
+    "url": "https://www.biodiversidadla.org/Articulos/Nuevo-intento-para-habilitar-la-megamineria-en-la-meseta-chubutense",
+    "relatedSources": [
+      {
+        "label": "Gobierno de Chubut — Ley XVII N.º 150 (derogación)",
+        "url": "https://sistemas.chubut.gov.ar/digesto/sistema/consulta.php?idile1=81944"
+      },
+      {
+        "label": "La Nación — movilizaciones y derogación en diciembre de 2021",
+        "url": "https://www.lanacion.com.ar/politica/la-pelea-por-la-mineria-en-chubut-investigan-si-hubo-instigadores-y-una-zona-liberada-que-fomentaron-nid26122021/"
+      },
+      {
+        "label": "Tiempo Argentino — organizaciones en alerta por proyectos de uranio (30/07/2025)",
+        "url": "https://www.tiempoar.com.ar/ta_article/chubut-organizaciones-sociales-y-comunidades-en-estado-de-alerta-ante-una-nueva-avanzada-minera/"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-22",
+      "scope": "Contraste editorial del informe de noviembre de 2026 con la Ley XVII N.º 150 publicada en el digesto oficial de Chubut y coberturas periodísticas sobre las movilizaciones de 2021 y la alerta de organizaciones en 2025. No es monitoreo en tiempo real ni una medición de opinión pública."
+    }
+  },
+  {
     "title": "Argentina aprobó el ingreso al RIGI del proyecto Argentina LNG de YPF, Eni y XRG",
     "date": "2026-11-20",
     "category": "Empresas",
