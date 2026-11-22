@@ -211,7 +211,7 @@ jobs:
           print("Trazabilidad editorial: fechas ISO, posteriores a la publicación y no futuras; estados pendientes admitidos.")
 
           def validate_news_summary(item):
-              validate_news_summary(item)
+              assert len(item["summary"]) <= 700, f"Síntesis demasiado extensa: {item['title']}"
 
           summary_fixture = {"title": "Fixture de síntesis editorial", "summary": "x" * 700}
           validate_news_summary(summary_fixture)
@@ -230,7 +230,7 @@ jobs:
               date.fromisoformat(item["date"])
               assert item["date"] <= date.today().isoformat(), f"Noticia con fecha futura: {item['title']}"
               assert item["category"] in categories, f"Categoría no admitida: {item['category']}"
-              assert len(item["summary"]) <= 700, f"Síntesis demasiado extensa: {item['title']}"
+              validate_news_summary(item)
               assert "period" in item, f"Noticia sin campo de período: {item['title']}"
               assert item["period"] is None or (isinstance(item["period"], str) and item["period"].strip()), f"Período inválido: {item['title']}"
               validate_news_verification(item)
