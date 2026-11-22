@@ -224,6 +224,16 @@ jobs:
               validate_news_verification(item)
               url = urlparse(item["url"])
               assert url.scheme == "https" and url.netloc, f"URL de noticia no HTTPS: {item['title']}"
+              related_sources = item.get("relatedSources", [])
+              assert isinstance(related_sources, list), f"Fuentes complementarias inválidas: {item['title']}"
+              related_labels = set()
+              for related_source in related_sources:
+                  assert isinstance(related_source, dict), f"Fuente complementaria inválida: {item['title']}"
+                  assert isinstance(related_source.get("label"), str) and related_source["label"].strip(), f"Fuente complementaria sin etiqueta: {item['title']}"
+                  related_url = urlparse(related_source.get("url", ""))
+                  assert related_url.scheme == "https" and related_url.netloc, f"Fuente complementaria no HTTPS: {item['title']}"
+                  assert related_source["label"] not in related_labels, f"Etiqueta de fuente complementaria duplicada: {item['title']}"
+                  related_labels.add(related_source["label"])
               canonical_url = canonical_news_url(item["url"])
               assert canonical_url not in news_urls, f"Noticia duplicada por URL canónica: {item['url']}"
               news_urls.add(canonical_url)
