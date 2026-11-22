@@ -23,6 +23,7 @@ El estado de cada módulo está versionado en `data/ai-modules.json` y se presen
 - Añadir comparativas de dos o más jurisdicciones sin mezclar períodos.
 - Incorporar un resumen ejecutivo que distinga observaciones descriptivas de inferencias.
 - Exportar Markdown y CSV con referencias a las fuentes.
+- En las fichas Markdown y CSV, separar explícitamente el período estadístico OPEX del año de edición de las fichas provinciales complementarias. El año del título de una ficha no debe interpretarse como período de todos sus indicadores; cada indicador debe contrastarse con su período publicado.
 - No etiquetar el piloto como informe generado por IA.
 
 Fuentes iniciales:
