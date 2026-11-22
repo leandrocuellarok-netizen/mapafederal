@@ -95,6 +95,45 @@ jobs:
           subprocess.run(["node", "--check", "-"], input=inline_scripts[-1], text=True, check=True)
           print("Interfaz, traducción, estado honesto y sintaxis del JavaScript inline: OK.")
           PY
+      - name: Test Federal Reports CSV export safety and provenance
+        run: |
+          node - <<'JS'
+          const assert = require("node:assert/strict");
+          const fs = require("node:fs");
+          const vm = require("node:vm");
+          const html = fs.readFileSync("index.html", "utf8");
+          const start = html.indexOf("function csvCell(value){");
+          const end = html.indexOf("\nfunction downloadCsv", start);
+          assert.ok(start >= 0 && end > start, "No se encontró el serializador CSV.");
+          const csvCell = vm.runInNewContext("(" + html.slice(start, end) + ")");
+          assert.equal(csvCell("a;b"), '"a;b"');
+          assert.equal(csvCell('a"b'), '"a""b"');
+          assert.equal(csvCell("línea 1\nlínea 2"), '"línea 1\nlínea 2"');
+          assert.equal(csvCell("=1+1"), "\"'=1+1\"");
+          assert.equal(csvCell(" +SUM(A1:A2)"), "\"' +SUM(A1:A2)\"");
+          assert.equal(csvCell("-2"), "\"'-2\"");
+          assert.equal(csvCell("@SUM(1)"), "\"'@SUM(1)\"");
+          assert.equal(csvCell(42), '"42"');
+          assert.equal(csvCell(null), '""');
+          const exportStart = html.indexOf("function exportVisibleProfiles(){");
+          const exportEnd = html.indexOf("\nfunction exportProvinceBrief", exportStart);
+          assert.ok(exportStart >= 0 && exportEnd > exportStart, "No se encontró la exportación de perfiles.");
+          const profileExport = html.slice(exportStart, exportEnd);
+          for (const field of [
+            "Período OPEX",
+            "Publicación de la fuente estadística",
+            "Organismo publicador estadístico",
+            "Estado de verificación estadística",
+            "Fecha de verificación estadística",
+            "Alcance de verificación estadística",
+            "Fuente estadística"
+          ]) {
+            assert.ok(profileExport.includes(field), "La exportación perdió trazabilidad: " + field);
+          }
+          assert.ok(profileExport.includes('mapa-federal-perfiles-provinciales.csv'), "Falta el archivo de exportación de perfiles.");
+          console.log("Federal Reports: CSV escapado, neutralización de fórmulas y metadatos de procedencia comprobados.");
+          JS
+
       - name: Validate geographic and editorial JSON
         run: |
           python - <<'PY'
