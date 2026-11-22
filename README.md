@@ -136,7 +136,7 @@ Las noticias cargadas actualmente fueron contrastadas con publicaciones oficiale
 El directorio de nodos y los perfiles provinciales permiten descargar los resultados visibles en formato CSV desde sus respectivos botones. La exportación respeta los filtros de búsqueda, provincia, categoría o región activos.
 
 - **Nodos:** nombre, jurisdicción, categoría, descripción, latitud, longitud, fuente institucional y fuente de coordenadas cuando está disponible.
-- **Perfiles provinciales:** jurisdicción, región, período, exportaciones FOB, variación interanual, participación nacional, ficha provincial y fuente estadística.
+- **Perfiles provinciales:** jurisdicción, región, período, exportaciones FOB, variación interanual, participación nacional, ficha provincial, fecha de publicación y organismo de la fuente, estado/fecha/alcance de verificación y enlace al informe estadístico.
 - Los archivos se generan en el navegador, con codificación UTF-8 y separador de punto y coma para facilitar su apertura en hojas de cálculo configuradas para español.
 - Las celdas de texto que comienzan con `=`, `+`, `-` o `@` (incluso después de espacios) se neutralizan con un apóstrofo para reducir el riesgo de inyección de fórmulas al abrir los CSV en hojas de cálculo; los valores numéricos, incluidas coordenadas negativas, conservan su formato.
 - La exportación no añade datos nuevos ni convierte las coordenadas orientativas en ubicaciones operativas. Revisar siempre las fuentes y el período antes de utilizar los archivos en informes comerciales.
