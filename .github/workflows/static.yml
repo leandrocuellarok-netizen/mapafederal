@@ -210,6 +210,18 @@ jobs:
                   raise AssertionError(f"Se aceptó una fecha de verificación inválida: {invalid_checked_at}")
           print("Trazabilidad editorial: fechas ISO, posteriores a la publicación y no futuras; estados pendientes admitidos.")
 
+          def validate_news_summary(item):
+              validate_news_summary(item)
+
+          summary_fixture = {"title": "Fixture de síntesis editorial", "summary": "x" * 700}
+          validate_news_summary(summary_fixture)
+          try:
+              validate_news_summary({**summary_fixture, "summary": "x" * 701})
+          except AssertionError:
+              pass
+          else:
+              raise AssertionError("Se aceptó una síntesis de más de 700 caracteres")
+
           news_urls = set()
           news_titles = set()
           for item in news:
