@@ -115,6 +115,10 @@ jobs:
           assert not missing_jurisdictions, f"Faltan jurisdicciones en el catálogo: {sorted(missing_jurisdictions)}"
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
+          assert isinstance(provincial_data.get("profileYear"), str) and provincial_data["profileYear"].isdigit(), "Falta el año de edición de las fichas complementarias"
+          assert isinstance(provincial_data.get("profilePublisher"), str) and provincial_data["profilePublisher"].strip(), "Falta el organismo publicador de las fichas complementarias"
+          profile_index = urlparse(provincial_data.get("profileIndexUrl", ""))
+          assert profile_index.scheme == "https" and profile_index.netloc, "El índice de fichas complementarias debe tener fuente HTTPS"
           assert isinstance(provincial_data.get("published"), str), "Falta fecha de publicación del dataset provincial"
           verification = provincial_data.get("verification")
           assert isinstance(verification, dict), "Falta el registro de verificación del dataset provincial"
@@ -549,7 +553,41 @@ jobs:
           for (const header of requiredHeaders) if (!headers.includes(header)) throw new Error("Falta columna de trazabilidad: " + header);
           const requiredValues = ["2025", "2026-03-10", "INDEC", "Verificado", "2026-11-21", "Test scope", "https://example.gov/opex.pdf"];
           for (const value of requiredValues) if (!rows[0].includes(value)) throw new Error("Falta valor de trazabilidad: " + value);
-          console.log("CSV provincial conserva período, publicación, organismo, estado/fecha/alcance de verificación y fuente.");
+          if (rows[0][headers.indexOf("Año de edición de ficha complementaria")] !== "2025") throw new Error("Falta el año de edición de la ficha complementaria.");
+          if (!rows[0][headers.indexOf("Nota sobre período de ficha complementaria")].includes("no garantiza")) throw new Error("Falta la advertencia de período de la ficha complementaria.");
+          console.log("CSV provincial conserva trazabilidad OPEX y separa el año de edición de la ficha complementaria.");
+
+          (async () => {
+            const reportStart = html.indexOf("function exportProvinceBrief(){");
+            const reportEnd = html.indexOf('\ndocument.getElementById("brief-province").addEventListener', reportStart);
+            if (reportStart < 0 || reportEnd < 0) throw new Error("No se encontró exportProvinceBrief para probar.");
+            let capturedBlob;
+            const link = { click(){}, remove(){} };
+            const reportContext = {
+              document: {
+                getElementById(id) {
+                  if (id === "brief-province") return { value: "Buenos Aires" };
+                  if (id === "brief-export-status") return { textContent: "" };
+                  throw new Error("Elemento inesperado: " + id);
+                },
+                createElement() { return link; },
+                body: { appendChild(){} }
+              },
+              URL: { createObjectURL(blob) { capturedBlob = blob; return "blob:test"; }, revokeObjectURL(){} },
+              window: { setTimeout(){} },
+              provincialProfiles: context.provincialProfiles,
+              profilesMetadata: context.profilesMetadata,
+              points: [{ name: "Puerto de prueba", province: "Buenos Aires", type: "Puerto", note: "Nodo de prueba", coords: [-34.6, -58.4], source: "https://example.gov/port", coordinateSource: "https://example.gov/map" }]
+            };
+            const exportReport = vm.runInNewContext("(" + html.slice(reportStart, reportEnd) + ")", reportContext);
+            exportReport();
+            if (!capturedBlob) throw new Error("No se generó el informe territorial.");
+            const markdown = await capturedBlob.text();
+            for (const value of ["Año de edición de ficha complementaria: 2025", "no garantiza que todos sus indicadores", "Ministerio de Economía — Panel de Indicadores Provinciales", "https://example.gov/profile.pdf"]) {
+              if (!markdown.includes(value)) throw new Error("El informe no conserva la aclaración o fuente: " + value);
+            }
+            console.log("Federal Reports: informe Markdown incluye año de edición, advertencia de período y fuente complementaria.");
+          })().catch(error => { console.error(error); process.exitCode = 1; });
           JS
 
       - name: Check public entry point
