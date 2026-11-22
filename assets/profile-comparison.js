@@ -21,6 +21,8 @@
     if(source.protocol!=="https:"||!source.hostname)throw new TypeError("La fuente estadística debe usar HTTPS.");
     const verification=metadata.verification;
     if(!verification||verification.status!=="verified"||!isIsoDate(verification.checkedAt)||typeof verification.scope!=="string"||!verification.scope.trim())throw new Error("La comparación requiere una fuente verificada con fecha y alcance documentados.");
+    if(verification.checkedAt<metadata.published)throw new Error("La fecha de verificación no puede preceder a la publicación de la fuente.");
+    if(verification.checkedAt>new Date().toISOString().slice(0,10))throw new Error("La fecha de verificación no puede ser futura.");
     const fields=["exportsUsdMillions","yearOnYearPct","nationalSharePct"];
     for(const profile of [first,second]){
       for(const field of fields){
