@@ -380,8 +380,8 @@ jobs:
               if amount is not None:
                   assert isinstance(amount, dict), f"Monto inválido: {opportunity['id']}"
                   amount_value = amount.get("value")
-              assert isinstance(amount_value, (int, float)) and not isinstance(amount_value, bool) and amount_value >= 0, f"Valor monetario inválido: {opportunity['id']}"
-              assert not isinstance(amount_value, float) or math.isfinite(amount_value), f"El monto debe ser finito: {opportunity['id']}"
+                  assert isinstance(amount_value, (int, float)) and not isinstance(amount_value, bool) and amount_value >= 0, f"Valor monetario inválido: {opportunity['id']}"
+                  assert not isinstance(amount_value, float) or math.isfinite(amount_value), f"El monto debe ser finito: {opportunity['id']}"
                   currency = amount.get("currency")
                   assert isinstance(currency, str) and len(currency) == 3 and currency.isalpha() and currency.isupper(), f"Moneda inválida: {opportunity['id']}"
                   assert isinstance(amount.get("basis"), str) and amount["basis"].strip(), f"Falta la base del monto: {opportunity['id']}"
