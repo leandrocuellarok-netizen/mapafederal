@@ -12,7 +12,7 @@ El estado de cada módulo está versionado en `data/ai-modules.json` y se presen
 | Investment Finder | Planificado | Una interfaz documental de solo lectura con filtros por texto, sector, alcance, jurisdicción y estado; un registro nacional del RIMI con fuente normativa verificada. La disponibilidad del trámite y la elegibilidad permanecen desconocidas; no hay recomendaciones ni evaluación de solicitantes. |
 | Territorial Monitor | Planificado | Las noticias se cargan manualmente; no hay monitoreo RSS/API. |
 | Event Intelligence | Planificado | No existe agenda integrada de eventos verificados. |
-| Federal Reports | Piloto funcional | Genera una ficha Markdown por jurisdicción con OPEX anual 2025, nodos y enlaces a fuentes. No usa IA. |
+| Federal Reports | Piloto funcional | Genera fichas Markdown por jurisdicción y compara dos jurisdicciones con los tres indicadores homogéneos del OPEX anual 2025, mostrando fuente y verificación. No usa IA. |
 | Executive Travel AI | Planificado | Hay destinos de referencia, pero no disponibilidad, reservas ni recomendaciones en vivo. |
 
 ## Secuencia de implementación
@@ -20,7 +20,8 @@ El estado de cada módulo está versionado en `data/ai-modules.json` y se presen
 ### Fase 1 — Federal Reports (piloto operativo)
 - Mantener período, unidad, fecha de publicación y fuente junto a cada indicador.
 - Exponer en cada ficha la fecha, el estado y el alcance de la verificación de la fuente estadística; la verificación del OPEX no certifica los nodos geográficos ni las fichas provinciales complementarias.
-- Añadir comparativas de dos o más jurisdicciones sin mezclar períodos.
+- Incorporado un comparador descriptivo de dos jurisdicciones para exportaciones, variación interanual y participación nacional del mismo OPEX anual 2025; diferencia calculada como jurisdicción A menos B. No mezclar períodos ni presentar el resultado como ranking de inversión.
+- Ampliar la comparación a otros indicadores solo cuando período, unidad, cobertura y metodología sean homogéneos para las 24 jurisdicciones.
 - Incorporar un resumen ejecutivo que distinga observaciones descriptivas de inferencias.
 - Exportar Markdown y CSV con referencias a las fuentes.
 - En las fichas Markdown y CSV, separar explícitamente el período estadístico OPEX del año de edición de las fichas provinciales complementarias. El año del título de una ficha no debe interpretarse como período de todos sus indicadores; cada indicador debe contrastarse con su período publicado.
