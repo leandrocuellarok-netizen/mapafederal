@@ -54,9 +54,17 @@ jobs:
           assert isinstance(news, list), "El archivo de noticias debe ser una lista"
           names = set()
           allowed_node_types = {"Ciudad", "Puerto", "Aeropuerto", "Paso fronterizo", "Logística", "Industria", "Turismo"}
+          expected_jurisdictions = {
+              "CABA", "Buenos Aires", "Catamarca", "Chaco", "Chubut", "Córdoba",
+              "Corrientes", "Entre Ríos", "Formosa", "Jujuy", "La Pampa", "La Rioja",
+              "Mendoza", "Misiones", "Neuquén", "Río Negro", "Salta", "San Juan",
+              "San Luis", "Santa Cruz", "Santa Fe", "Santiago del Estero",
+              "Tierra del Fuego", "Tucumán"
+          }
           for node in nodes:
               for field in ("name", "province", "type", "note", "source"):
                   assert isinstance(node.get(field), str) and node[field].strip(), f"Nodo sin {field}"
+              assert node["province"] in expected_jurisdictions, f"Jurisdicción no admitida: {node['province']}"
               assert node["type"] in allowed_node_types, f"Tipo de nodo no admitido: {node['type']}"
               coords = node.get("coords")
               assert isinstance(coords, list) and len(coords) == 2, f"Coordenadas inválidas: {node.get('name')}"
@@ -70,8 +78,8 @@ jobs:
               if coordinate_source:
                   parsed_coordinate_source = urlparse(coordinate_source)
                   assert parsed_coordinate_source.scheme == "https" and parsed_coordinate_source.netloc, f"Fuente de coordenadas no HTTPS: {node['name']}"
-              key = node["name"].casefold()
-              assert key not in names, f"Nodo duplicado: {node['name']}"
+              key = " ".join(node["name"].split()).casefold()
+              assert key not in names, f"Nodo duplicado (ignorando mayúsculas y espacios): {node['name']}"
               names.add(key)
 
           expected_jurisdictions = {
