@@ -207,6 +207,34 @@ jobs:
           console.log("CSV seguro: fórmulas neutralizadas y valores numéricos preservados.");
           JS
 
+      - name: Test provincial CSV provenance
+        run: |
+          node - <<'JS'
+          const fs = require("fs");
+          const vm = require("vm");
+          const html = fs.readFileSync("index.html", "utf8");
+          const start = html.indexOf("function exportVisibleProfiles(){");
+          const end = html.indexOf("\\nfunction exportProvinceBrief", start);
+          if (start < 0 || end < 0) throw new Error("No se encontró exportVisibleProfiles para probar.");
+          let captured;
+          const context = {
+            document: { getElementById(id) { return { value: id === "profile-search" ? "" : "Todas" }; } },
+            normalizeText(value) { return String(value ?? "").normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").toLowerCase(); },
+            provincialProfiles: [{ province: "Buenos Aires", region: "Pampeana", exportsUsdMillions: 31684, yearOnYearPct: 7.3, nationalSharePct: 36.4, profileUrl: "https://example.gov/profile.pdf" }],
+            profilesMetadata: { period: "2025", published: "2026-03-10", publisher: "INDEC", sourceUrl: "https://example.gov/opex.pdf", verification: { status: "verified", checkedAt: "2026-11-21", scope: "Test scope" } },
+            downloadCsv(...args) { captured = args; }
+          };
+          const exportProfiles = vm.runInNewContext("(" + html.slice(start, end) + ")", context);
+          exportProfiles();
+          if (!captured) throw new Error("No se generó la exportación provincial.");
+          const [filename, headers, rows] = captured;
+          const requiredHeaders = ["Publicación de la fuente", "Organismo publicador", "Estado de verificación", "Fecha de verificación", "Alcance de verificación", "Fuente estadística"];
+          for (const header of requiredHeaders) if (!headers.includes(header)) throw new Error("Falta columna de trazabilidad: " + header);
+          const requiredValues = ["2025", "2026-03-10", "INDEC", "Verificado", "2026-11-21", "Test scope", "https://example.gov/opex.pdf"];
+          for (const value of requiredValues) if (!rows[0].includes(value)) throw new Error("Falta valor de trazabilidad: " + value);
+          console.log("CSV provincial conserva período, publicación, organismo, estado/fecha/alcance de verificación y fuente.");
+          JS
+
       - name: Check public entry point
         run: |
           grep -q '<html lang="es">' index.html
