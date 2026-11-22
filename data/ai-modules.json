@@ -28,7 +28,7 @@
       "description": "Exploración y clasificación de oportunidades con criterios definidos.",
       "status": "planned",
       "statusLabel": "Planificado · requiere datos empresariales",
-      "currentCapability": "La interfaz pública ofrece un catálogo documental de solo lectura con filtros locales por texto, sector, alcance, jurisdicción y estado. El registro nacional del RIMI conserva fuente normativa, fecha de publicación, período, vigencia y alcance/fecha de verificación; opportunityStatus permanece unknown porque no se confirmó la operatividad del SGI ni la elegibilidad de solicitantes. No hay ingesta automática, evaluación de elegibilidad ni recomendaciones.",
+      "currentCapability": "La interfaz pública ofrece un catálogo documental de solo lectura con filtros locales por texto, sector, alcance, jurisdicción, etapa y estado. El registro nacional del RIMI conserva fuente normativa, fecha de publicación, período, vigencia y alcance/fecha de verificación; opportunityStatus permanece unknown porque no se confirmó la operatividad del SGI ni la elegibilidad de solicitantes. No hay ingesta automática, evaluación de elegibilidad ni recomendaciones.",
       "dependencies": [
         "data/investment-opportunities.json",
         "Fuentes públicas con condiciones de reutilización permitidas",
