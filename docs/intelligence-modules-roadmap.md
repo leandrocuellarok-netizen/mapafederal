@@ -9,7 +9,7 @@ El estado de cada módulo está versionado en `data/ai-modules.json` y se presen
 | Módulo | Estado | Capacidad comprobable |
 |---|---|---|
 | Federal AI Assistant | Planificado | No consulta un modelo. Requiere modelo y backend. |
-| Investment Finder | Planificado | Un registro documental nacional del RIMI con fuente normativa verificada; disponibilidad del trámite y elegibilidad permanecen desconocidas. No hay interfaz de búsqueda ni recomendaciones. |
+| Investment Finder | Planificado | Una interfaz documental de solo lectura con filtros por texto, sector, alcance, jurisdicción y estado; un registro nacional del RIMI con fuente normativa verificada. La disponibilidad del trámite y la elegibilidad permanecen desconocidas; no hay recomendaciones ni evaluación de solicitantes. |
 | Territorial Monitor | Planificado | Las noticias se cargan manualmente; no hay monitoreo RSS/API. |
 | Event Intelligence | Planificado | No existe agenda integrada de eventos verificados. |
 | Federal Reports | Piloto funcional | Genera una ficha Markdown por jurisdicción con OPEX anual 2025, nodos y enlaces a fuentes. No usa IA. |
@@ -34,7 +34,7 @@ INDEC también publica OPEX del primer semestre 2026 (02/09/2026), con variacion
 - [INDEC — Origen provincial de las exportaciones](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-79).
 
 ### Fase 2 — Investment Finder
-1. El esquema 2 está versionado en `data/investment-opportunities.json`. Incluye un registro documental nacional del RIMI para bienes de alta eficiencia energética; la fuente normativa está verificada, pero `opportunityStatus` se mantiene `unknown` porque no se confirmó la operatividad del trámite SGI ni la elegibilidad de solicitantes. No representa una convocatoria abierta.
+1. El esquema 2 está versionado en `data/investment-opportunities.json` y se consulta desde una interfaz pública de solo lectura, con filtros locales por texto, sector, alcance, jurisdicción y estado. Incluye un registro documental nacional del RIMI para bienes de alta eficiencia energética; la fuente normativa está verificada, pero `opportunityStatus` se mantiene `unknown` porque no se confirmó la operatividad del trámite SGI ni la elegibilidad de solicitantes. No representa una convocatoria abierta ni ofrece recomendaciones.
 2. Cada registro requiere identificador, nombre, tipo de registro, alcance (`national` o `provincial`), sector, etapa, estado de oportunidad, vigencia, fuente HTTPS, fecha de publicación, período (o `null`) y estado/fecha/alcance de verificación. Para alcance nacional, `jurisdiction` debe ser `null`; para alcance provincial, debe corresponder a una de las 24 jurisdicciones admitidas. La ubicación y el monto son opcionales; el monto solo se incorpora si la fuente lo publica, se conserva su base y moneda y el valor es numérico, finito y no negativo; la moneda debe expresarse con tres letras ASCII mayúsculas (forma de código ISO 4217, sin afirmar que se valida contra el catálogo completo de códigos). La validación rechaza infinitos, monedas con caracteres no ASCII y otros valores monetarios no válidos.
 3. Una oportunidad solo puede figurar como abierta si la fuente está verificada, la vigencia comenzó y no terminó, y el proyecto no está completado ni cancelado.
 4. Incorporar primero datos oficiales públicos y programas de promoción que permitan reutilización.
