@@ -13,7 +13,7 @@ Plataforma web estática en evolución para explorar infraestructura, nodos terr
 - Buscador por nombre, provincia y tipo de nodo.
 - Directorio tabular filtrable por provincia y categoría, sincronizado con los filtros del mapa; sus accesos centran el punto seleccionado y muestran su ficha.
 - Degradación controlada: si Leaflet o la cartografía externa no cargan, el directorio y las noticias siguen disponibles.
-- Sección editorial alimentada por `data/news.json`, con filtros por tema y búsqueda; la validación evita titulares repetidos y enlaces duplicados tras normalizar esquema, host, puerto HTTPS predeterminado, ruta raíz y fragmentos, preservando los parámetros de consulta.
+- Sección editorial alimentada por `data/news.json`, con filtros por tema, jurisdicciones explícitamente mencionadas y búsqueda; los registros ambiguos no reciben una provincia por inferencia. La validación evita titulares repetidos y enlaces duplicados tras normalizar esquema, host, puerto HTTPS predeterminado, ruta raíz y fragmentos, preservando los parámetros de consulta.
 - Diseño adaptable, navegación por anclas y avisos de estado.
 - Fichas territoriales Markdown por jurisdicción con período, fecha de publicación y estado/alcance de verificación del dataset OPEX.
 - Validación automática de los archivos JSON antes de desplegar en GitHub Pages.
@@ -117,6 +117,9 @@ Editar `data/news.json` y agregar un objeto:
   "summary": "Síntesis propia y breve basada en la nota original.",
   "source": "Nombre del medio u organismo",
   "url": "https://dominio-oficial-o-medio.example/noticia",
+  "jurisdictions": ["Buenos Aires"],
+  "geographyStatus": "explicit",
+  "geographyEvidence": ["Zárate (provincia de Buenos Aires)"],
   "relatedSources": [
     {"label": "Norma oficial o fuente complementaria", "url": "https://organismo.gob.ar/documento"}
   ],
@@ -132,6 +135,9 @@ Categorías admitidas: Economía, Empresas, Comercio, Infraestructura, Regulaci�
 
 Metadatos obligatorios:
 - `period`: período estadístico o temporal explícito de la fuente (por ejemplo, `2026-10`). Si no se consignó un período independiente de la fecha de publicación, usar el texto exacto `No consignado en el registro editorial`; no inferir períodos. El validador rechaza `null`, campos ausentes o cadenas vacías para las noticias.
+- `jurisdictions`: lista de provincias o CABA identificadas explícitamente en la fuente enlazada. Usar los nombres normalizados del catálogo territorial; si no hay una jurisdicción provincial inequívoca, usar `[]`.
+- `geographyStatus`: `explicit` cuando `jurisdictions` y `geographyEvidence` contienen referencias explícitas; `not_specified` cuando ambas listas están vacías. La clasificación es editorial: no mide impacto ni cobertura total.
+- `geographyEvidence`: lugares o referencias geográficas concretas que justifican la asignación (por ejemplo, `Zárate (provincia de Buenos Aires)`). No convertir referencias ambiguas como `AMBA` en una provincia por inferencia.
 - `verification.status`: `editorial_reviewed`, `pending`, `not_verified` u `outdated`.
 - `verification.checkedAt`: fecha ISO de la última revisión registrada; usar `null` si todavía no se revisó. Cuando existe, no puede preceder a la fecha de publicación ni ser futura.
 - `verification.scope`: alcance concreto de la revisión, obligatorio para todos los estados. `editorial_reviewed` exige una fecha de revisión válida y no significa monitoreo automático, vigencia en tiempo real ni disponibilidad permanente del enlace.
