@@ -525,6 +525,38 @@ jobs:
           Path("/tmp/mapafederal-inline.js").write_text("\n".join(scripts), encoding="utf-8")
           PY
           node --check /tmp/mapafederal-inline.js
+      - name: Test Investment Finder filters and provenance
+        run: |
+          node - <<'JS'
+          const fs = require("fs");
+          const vm = require("vm");
+          const html = fs.readFileSync("index.html", "utf8");
+          const catalog = JSON.parse(fs.readFileSync("data/investment-opportunities.json", "utf8"));
+          for (const id of ["investment-search", "investment-sector", "investment-scope", "investment-jurisdiction", "investment-status", "investment-grid"]) {
+            if (!html.includes('id="' + id + '"')) throw new Error("Falta el control de Investment Finder: " + id);
+          }
+          const start = html.indexOf("function filterInvestmentOpportunities(records,filters){");
+          const end = html.indexOf("\nfunction investmentStatusLabel", start);
+          if (start < 0 || end < 0) throw new Error("No se encontró el filtro reutilizable de Investment Finder.");
+          const normalizeText = value => String(value ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("es").trim();
+          const filter = vm.runInNewContext("(" + html.slice(start, end) + ")", { normalizeText });
+          const record = catalog.opportunities[0];
+          if (!record || record.opportunityStatus !== "unknown") throw new Error("El registro documental RIMI debe conservar disponibilidad desconocida.");
+          const base = { query: "eficiencia energética", sector: "all", scope: "national", jurisdiction: "Nacional", status: "unknown" };
+          if (filter(catalog.opportunities, base).length !== 1) throw new Error("No se encontró el registro nacional mediante búsqueda y filtros combinados.");
+          if (filter(catalog.opportunities, { ...base, status: "open" }).length !== 0) throw new Error("El registro RIMI no debe aparecer como oportunidad abierta.");
+          if (filter(catalog.opportunities, { ...base, scope: "provincial" }).length !== 0) throw new Error("El filtro provincial incluyó un registro nacional.");
+          if (filter(catalog.opportunities, { ...base, jurisdiction: "Buenos Aires" }).length !== 0) throw new Error("El filtro de jurisdicción incluyó un registro nacional.");
+          if (filter(catalog.opportunities, { ...base, query: "boletin oficial" }).length !== 1) throw new Error("La búsqueda no encuentra la fuente documental.");
+          for (const field of ["sourceName", "sourceUrl", "sourcePublishedAt", "period", "validFrom", "verification"]) {
+            if (!record[field]) throw new Error("El registro carece de trazabilidad: " + field);
+          }
+          if (!record.sourceUrl.startsWith("https://") || !record.verification.checkedAt || !record.verification.scope) {
+            throw new Error("La fuente y el alcance/fecha de verificación deben permanecer visibles.");
+          }
+          console.log("Investment Finder: filtros locales, alcance nacional, estado desconocido y trazabilidad comprobados.");
+          JS
+
       - name: Test CSV formula-injection protection
         run: |
           node - <<'JS'
@@ -627,6 +659,9 @@ jobs:
           grep -q 'id="export-nodes"' index.html
           grep -q 'id="export-profiles"' index.html
           grep -q 'function downloadCsv' index.html
+          grep -q 'id="investment-grid"' index.html
+          grep -q 'function loadInvestmentFinder' index.html
+          grep -q 'function filterInvestmentOpportunities' index.html
           grep -q 'id="brief-province"' index.html
           grep -q 'id="export-province-brief"' index.html
           grep -q 'function exportProvinceBrief' index.html
