@@ -542,14 +542,14 @@ jobs:
             document: { getElementById(id) { return { value: id === "profile-search" ? "" : "Todas" }; } },
             normalizeText(value) { return String(value ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); },
             provincialProfiles: [{ province: "Buenos Aires", region: "Pampeana", exportsUsdMillions: 31684, yearOnYearPct: 7.3, nationalSharePct: 36.4, profileUrl: "https://example.gov/profile.pdf" }],
-            profilesMetadata: { period: "2025", published: "2026-03-10", publisher: "INDEC", sourceUrl: "https://example.gov/opex.pdf", verification: { status: "verified", checkedAt: "2026-11-21", scope: "Test scope" } },
+            profilesMetadata: { period: "2025", profileYear: "2025", profilePublisher: "Ministerio de Economía — Panel de Indicadores Provinciales", profileIndexUrl: "https://example.gov/profiles", published: "2026-03-10", publisher: "INDEC", sourceUrl: "https://example.gov/opex.pdf", verification: { status: "verified", checkedAt: "2026-11-21", scope: "Test scope" } },
             downloadCsv(...args) { captured = args; }
           };
           const exportProfiles = vm.runInNewContext("(" + html.slice(start, end) + ")", context);
           exportProfiles();
           if (!captured) throw new Error("No se generó la exportación provincial.");
           const [filename, headers, rows] = captured;
-          const requiredHeaders = ["Publicación de la fuente", "Organismo publicador", "Estado de verificación", "Fecha de verificación", "Alcance de verificación", "Fuente estadística"];
+          const requiredHeaders = ["Publicación de la fuente estadística", "Organismo publicador estadístico", "Estado de verificación estadística", "Fecha de verificación estadística", "Alcance de verificación estadística", "Fuente estadística", "Año de edición de ficha complementaria", "Nota sobre período de ficha complementaria"];
           for (const header of requiredHeaders) if (!headers.includes(header)) throw new Error("Falta columna de trazabilidad: " + header);
           const requiredValues = ["2025", "2026-03-10", "INDEC", "Verificado", "2026-11-21", "Test scope", "https://example.gov/opex.pdf"];
           for (const value of requiredValues) if (!rows[0].includes(value)) throw new Error("Falta valor de trazabilidad: " + value);
@@ -574,6 +574,7 @@ jobs:
                 body: { appendChild(){} }
               },
               URL: { createObjectURL(blob) { capturedBlob = blob; return "blob:test"; }, revokeObjectURL(){} },
+              Blob,
               window: { setTimeout(){} },
               provincialProfiles: context.provincialProfiles,
               profilesMetadata: context.profilesMetadata,
