@@ -108,6 +108,7 @@ jobs:
 
           categories = {"Economía", "Empresas", "Comercio", "Infraestructura", "Regulación", "Tecnología"}
           news_urls = set()
+          news_titles = set()
           for item in news:
               for field in ("title", "date", "category", "summary", "source", "url"):
                   assert isinstance(item.get(field), str) and item[field].strip(), f"Noticia sin {field}"
@@ -117,8 +118,11 @@ jobs:
               assert len(item["summary"]) <= 700, f"Síntesis demasiado extensa: {item['title']}"
               url = urlparse(item["url"])
               assert url.scheme == "https" and url.netloc, f"URL de noticia no HTTPS: {item['title']}"
-              assert item["url"] not in news_urls, f"Noticia duplicada: {item['url']}"
+              assert item["url"] not in news_urls, f"Noticia duplicada por URL: {item['url']}"
               news_urls.add(item["url"])
+              title_key = " ".join(item["title"].split()).casefold()
+              assert title_key not in news_titles, f"Titular duplicado: {item['title']}"
+              news_titles.add(title_key)
 
           assert [item["date"] for item in news] == sorted((item["date"] for item in news), reverse=True), "Las noticias deben estar ordenadas de más recientes a más antiguas"
 
