@@ -13,7 +13,7 @@ Plataforma web estática en evolución para explorar infraestructura, nodos terr
 - Buscador por nombre, provincia y tipo de nodo.
 - Directorio tabular filtrable por provincia y categoría, sincronizado con los filtros del mapa; sus accesos centran el punto seleccionado y muestran su ficha.
 - Degradación controlada: si Leaflet o la cartografía externa no cargan, el directorio y las noticias siguen disponibles.
-- Sección editorial alimentada por `data/news.json`, con filtros por tema y búsqueda; la validación evita titulares repetidos y enlaces duplicados tras normalizar esquema, host y fragmentos de URL.
+- Sección editorial alimentada por `data/news.json`, con filtros por tema y búsqueda; la validación evita titulares repetidos y enlaces duplicados tras normalizar esquema, host, puerto HTTPS predeterminado, ruta raíz y fragmentos, preservando los parámetros de consulta.
 - Diseño adaptable, navegación por anclas y avisos de estado.
 - Fichas territoriales Markdown por jurisdicción con período, fecha de publicación y estado/alcance de verificación del dataset OPEX.
 - Validación automática de los archivos JSON antes de desplegar en GitHub Pages.
