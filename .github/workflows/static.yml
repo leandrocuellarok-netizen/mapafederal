@@ -835,6 +835,32 @@ jobs:
           grep -q 'async function loadModules()' index.html
           grep -q 'docs/intelligence-modules-roadmap.md' README.md
 
+
+      - name: Validate SEO, GEO and brand assets
+        run: |
+          python - <<'PY'
+          import json
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          html = Path("index.html").read_text(encoding="utf-8")
+          robots = Path("robots.txt").read_text(encoding="utf-8")
+          sitemap = ET.parse("sitemap.xml").getroot()
+          logo = Path("assets/mapa-federal.svg").read_text(encoding="utf-8")
+          assert '<title>Mapa Federal | Inteligencia territorial y económica de Argentina</title>' in html
+          assert 'rel="canonical" href="https://leandrocuellarok-netizen.github.io/mapafederal/"' in html
+          assert 'application/ld+json' in html
+          block = html.split('<script type="application/ld+json">', 1)[1].split('</script>', 1)[0]
+          data = json.loads(block)
+          assert any(item.get("@type") == "WebSite" for item in data["@graph"])
+          assert any(item.get("@type") == "WebApplication" for item in data["@graph"])
+          assert 'id="preguntas"' in html and "¿Los datos se actualizan en tiempo real?" in html
+          assert "Sitemap: https://leandrocuellarok-netizen.github.io/mapafederal/sitemap.xml" in robots
+          urls = [node.text for node in sitemap.findall("{http://www.sitemaps.org/schemas/sitemap/0.9}url/{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
+          assert urls == ["https://leandrocuellarok-netizen.github.io/mapafederal/"]
+          assert '<svg' in logo and 'Silueta de Argentina' in logo
+          print("SEO/GEO: metadatos, Schema.org, FAQ visible, robots, sitemap y emblema validados.")
+          PY
+
   deploy:
     needs: validate
     environment:
