@@ -112,14 +112,27 @@ Editar `data/news.json` y agregar un objeto:
 {
   "title": "Titular fiel a la fuente",
   "date": "2026-11-20",
+  "period": null,
   "category": "Economía",
   "summary": "Síntesis propia y breve basada en la nota original.",
   "source": "Nombre del medio u organismo",
-  "url": "https://dominio-oficial-o-medio.example/noticia"
+  "url": "https://dominio-oficial-o-medio.example/noticia",
+  "verification": {
+    "status": "pending",
+    "checkedAt": null,
+    "scope": "Pendiente de revisión editorial."
+  }
 }
 ```
 
 Categorías admitidas: Economía, Empresas, Comercio, Infraestructura, Regulación y Tecnología.
+
+Metadatos obligatorios:
+- `period`: período estadístico o temporal explícito de la fuente (por ejemplo, `2026-10`); usar `null` si la fuente no informa un período de referencia independiente de la fecha de publicación.
+- `verification.status`: `editorial_reviewed`, `pending`, `not_verified` u `outdated`.
+- `verification.checkedAt`: fecha ISO de la última revisión editorial registrada; usar `null` si todavía no se revisó.
+- `verification.scope`: alcance concreto de la revisión. `editorial_reviewed` no significa monitoreo automático, vigencia en tiempo real ni disponibilidad permanente del enlace.
+
 
 Criterio editorial:
 1. Confirmar que la nota exista y que el enlace original abra.
