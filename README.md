@@ -167,13 +167,14 @@ La ficha se genera en el navegador y no consulta servicios externos ni incorpora
 
 La interfaz presenta los seis módulos desde un único manifiesto: `data/ai-modules.json`. Federal Reports permanece en piloto funcional; Federal AI Assistant, Investment Finder, Territorial Monitor, Event Intelligence y Executive Travel AI permanecen planificados. Los estados, capacidades actuales, dependencias y próximos pasos se mantienen en ese archivo y no deben duplicarse como una segunda lista independiente en la interfaz.
 
-Las funciones comprobables actuales son el mapa, el directorio de nodos, los perfiles OPEX, las noticias curadas y las exportaciones CSV/Markdown. El buscador no es un modelo de IA y la sección de módulos no implica integraciones en producción.
+Las funciones comprobables actuales son el mapa, el directorio de nodos, los perfiles OPEX, las noticias curadas y las exportaciones CSV/Markdown. `data/events.json` contiene únicamente el contrato de datos validado para Event Intelligence y no tiene eventos cargados; no existe una agenda integrada. El buscador no es un modelo de IA y la sección de módulos no implica integraciones en producción.
 
 ## Arquitectura
 
 - `index.html`: interfaz y lógica cliente.
 - `data/strategic-nodes.json`: catálogo geográfico.
 - `data/news.json`: noticias curadas.
+- `data/events.json`: contrato versionado de Event Intelligence; permanece vacío hasta disponer de eventos confirmados por sus organizadores.
 - Leaflet 1.9.4: visualización geográfica.
 - OpenStreetMap: teselas, sujetas a disponibilidad y política de uso.
 - `.github/workflows/static.yml`: validación de datos y despliegue.
