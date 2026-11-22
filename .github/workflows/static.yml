@@ -369,7 +369,7 @@ jobs:
               "sourceName": "Fuente de prueba",
               "sourceUrl": "https://example.org/evento",
               "sourcePublishedAt": "2026-11-20",
-              "period": "No consignado en la fuente de prueba",
+              "period": None,
               "status": "confirmed",
               "verification": {
                   "status": "verified",
@@ -491,7 +491,7 @@ jobs:
               "sourceName": "Fuente sintética",
               "sourceUrl": "https://example.org/oportunidad",
               "sourcePublishedAt": "2026-11-20",
-              "period": None,
+              "period": "No consignado en la fuente de prueba",
               "verification": {
                   "status": "verified",
                   "checkedAt": "2026-11-21",
