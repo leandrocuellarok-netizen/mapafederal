@@ -171,3 +171,14 @@ Las interfaces de IA están planificadas, no conectadas. El buscador actual es u
 GitHub Pages despliega el sitio estático desde la rama principal. Las funciones que requieran claves privadas, servidor, base de datos o integraciones protegidas deberán implementarse mediante un backend; nunca incluir secretos en JavaScript público.
 
 Si un despliegue falla después de cargar el artefacto de Pages, revisar primero los registros del job. Cuando el problema sea un artefacto duplicado, iniciar una ejecución nueva del workflow completo; no volver a ejecutar únicamente el job de despliegue dentro del mismo run, porque puede conservar el artefacto anterior.
+
+
+## Ecosistema de inteligencia: estado y hoja de ruta
+
+La sección de módulos se alimenta de `data/ai-modules.json` y sus criterios técnicos están documentados en [docs/intelligence-modules-roadmap.md](docs/intelligence-modules-roadmap.md).
+
+- **Federal Reports:** piloto funcional. Genera una ficha Markdown descargable por jurisdicción con exportaciones OPEX anuales 2025, nodos territoriales, enlaces a fuentes y advertencias metodológicas. No utiliza un modelo de IA.
+- **Federal AI Assistant, Investment Finder, Territorial Monitor, Event Intelligence y Executive Travel AI:** planificados. No deben ofrecerse como funciones disponibles hasta implementar y probar sus integraciones.
+
+INDEC publicó el OPEX del primer semestre de 2026 el 2 de septiembre de 2026, con resultados regionales. Ese período parcial debe mantenerse separado del OPEX anual 2025 que alimenta las fichas provinciales. La página de INDEC anuncia el próximo informe anual 2026 para el 9 de marzo de 2027: [Origen provincial de las exportaciones](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-79).
+
