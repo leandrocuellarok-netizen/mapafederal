@@ -34,7 +34,7 @@ INDEC también publica OPEX del primer semestre 2026 (02/09/2026), con variacion
 
 ### Fase 2 — Investment Finder
 1. El contrato inicial está versionado en `data/investment-opportunities.json`; el catálogo permanece vacío y no representa oportunidades publicadas.
-2. Cada registro requiere identificador, nombre, tipo de registro, sector, jurisdicción, etapa, estado de oportunidad, vigencia, fuente HTTPS, fecha de publicación, período (o `null`) y estado/fecha/alcance de verificación. La ubicación y el monto son opcionales; el monto solo se incorpora si la fuente lo publica, se conserva su base y moneda y el valor es numérico, finito y no negativo. La validación rechaza infinitos y otros valores monetarios no válidos.
+2. Cada registro requiere identificador, nombre, tipo de registro, sector, jurisdicción, etapa, estado de oportunidad, vigencia, fuente HTTPS, fecha de publicación, período (o `null`) y estado/fecha/alcance de verificación. La ubicación y el monto son opcionales; el monto solo se incorpora si la fuente lo publica, se conserva su base y moneda y el valor es numérico, finito y no negativo; la moneda debe expresarse con tres letras ASCII mayúsculas (forma de código ISO 4217, sin afirmar que se valida contra el catálogo completo de códigos). La validación rechaza infinitos, monedas con caracteres no ASCII y otros valores monetarios no válidos.
 3. Una oportunidad solo puede figurar como abierta si la fuente está verificada, la vigencia comenzó y no terminó, y el proyecto no está completado ni cancelado.
 4. Incorporar primero datos oficiales públicos y programas de promoción que permitan reutilización.
 5. No derivar "oportunidades" únicamente de exportaciones o presencia de infraestructura.
