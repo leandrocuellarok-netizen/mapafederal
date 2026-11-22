@@ -2,6 +2,8 @@
 (function(){
 "use strict";
 const translations={en:{
+"millones de USD FOB":"millions of FOB USD",
+"Los 24 registros de exportaciones de bienes, variación interanual y participación nacional fueron cotejados con el cuadro 1 del informe OPEX 2025 del INDEC. Esta verificación no cubre las fichas provinciales complementarias ni los nodos geográficos.":"The 24 records for goods exports, year-on-year change and national share were checked against table 1 of INDEC's 2025 OPEX report. This verification does not cover the supplementary provincial profiles or geographic nodes.",
 "Federal Reports · Comparación homogénea":"Federal Reports · Like-for-like comparison",
 "Compará dos jurisdicciones":"Compare two jurisdictions",
 "Compará exportaciones, variación interanual y participación nacional usando el mismo conjunto estadístico OPEX. La comparación es descriptiva y no constituye una recomendación de inversión.":"Compare exports, year-on-year change and national share using the same OPEX dataset. This is a descriptive comparison, not an investment recommendation.",
