@@ -369,7 +369,7 @@ jobs:
               "sourceName": "Fuente de prueba",
               "sourceUrl": "https://example.org/evento",
               "sourcePublishedAt": "2026-11-20",
-              "period": None,
+              "period": "No consignado en la fuente de prueba",
               "status": "confirmed",
               "verification": {
                   "status": "verified",
@@ -427,7 +427,7 @@ jobs:
               assert source_url.scheme == "https" and source_url.hostname and source_url.username is None and source_url.password is None, f"Fuente de oportunidad inválida: {opportunity['id']}"
               source_published = date.fromisoformat(opportunity["sourcePublishedAt"])
               assert source_published.isoformat() == opportunity["sourcePublishedAt"] and source_published <= date.today(), f"Fecha de publicación de fuente inválida: {opportunity['id']}"
-              assert opportunity["period"] is None or (isinstance(opportunity["period"], str) and opportunity["period"].strip()), f"Período inválido: {opportunity['id']}"
+              assert isinstance(opportunity["period"], str) and opportunity["period"].strip(), f"Período ausente o inválido: {opportunity['id']}"
               valid_from = opportunity["validFrom"]
               valid_until = opportunity["validUntil"]
               if valid_from is not None:
@@ -508,6 +508,8 @@ jobs:
               {**sample_opportunity, "scope": "provincial", "jurisdiction": None},
               {**sample_opportunity, "scope": "municipal"},
               {**sample_opportunity, "sourcePublishedAt": "2026-11-23"},
+              {**sample_opportunity, "period": None},
+              {**sample_opportunity, "period": ""},
               {**sample_opportunity, "verification": {**sample_opportunity["verification"], "checkedAt": "2026-11-19"}},
               {**sample_opportunity, "verification": {**sample_opportunity["verification"], "status": "outdated"}},
               {**sample_opportunity, "validUntil": "2026-11-20"},
