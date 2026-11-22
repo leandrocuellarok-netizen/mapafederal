@@ -614,7 +614,7 @@ jobs:
           }
           if (!html.includes("registros documentados")) throw new Error("Falta la etiqueta traducible del contador.");
           const start = html.indexOf("function filterInvestmentOpportunities(records,filters){");
-          const end = html.indexOf("\nfunction investmentStatusLabel", start);
+          const end = html.indexOf("\nfunction investmentStageLabel", start);
           if (start < 0 || end < 0) throw new Error("No se encontró el filtro reutilizable de Investment Finder.");
           const normalizeText = value => String(value ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("es").trim();
           const filter = vm.runInNewContext("(" + html.slice(start, end) + ")", { normalizeText });
@@ -628,7 +628,11 @@ jobs:
           const stagedFixtures = [record, { ...record, id: "fixture-anunciado", stage: "announced" }];
           if (filter(stagedFixtures, { ...base, stage: "announced" }).length !== 1) throw new Error("El filtro por etapa no aísla registros anunciados.");
           if (filter(stagedFixtures, { ...base, stage: "unknown" }).length !== 1) throw new Error("El filtro por etapa no conserva registros sin etapa informada.");
-          if (!html.includes("function investmentStageLabel(stage){")) throw new Error("Falta el catálogo de etiquetas legibles para las etapas.");
+          const stageStart = html.indexOf("function investmentStageLabel(stage){");
+          const stageEnd = html.indexOf("\nfunction investmentStatusLabel", stageStart);
+          if (stageStart < 0 || stageEnd < 0) throw new Error("Falta el catálogo de etiquetas legibles para las etapas.");
+          const stageLabel = vm.runInNewContext("(" + html.slice(stageStart, stageEnd) + ")");
+          if (stageLabel("announced") !== "Anunciado" || stageLabel("unknown") !== "Etapa no informada") throw new Error("Las etiquetas de etapa no son correctas.");
           if (filter(catalog.opportunities, { ...base, scope: "provincial" }).length !== 0) throw new Error("El filtro provincial incluyó un registro nacional.");
           if (filter(catalog.opportunities, { ...base, jurisdiction: "Buenos Aires" }).length !== 0) throw new Error("El filtro de jurisdicción incluyó un registro nacional.");
           if (filter(catalog.opportunities, { ...base, query: "boletin oficial" }).length !== 1) throw new Error("La búsqueda no encuentra la fuente documental.");
