@@ -383,7 +383,7 @@ jobs:
                   assert isinstance(amount_value, (int, float)) and not isinstance(amount_value, bool) and amount_value >= 0, f"Valor monetario inválido: {opportunity['id']}"
                   assert not isinstance(amount_value, float) or math.isfinite(amount_value), f"El monto debe ser finito: {opportunity['id']}"
                   currency = amount.get("currency")
-                  assert isinstance(currency, str) and len(currency) == 3 and currency.isalpha() and currency.isupper(), f"Moneda inválida: {opportunity['id']}"
+                  assert isinstance(currency, str) and len(currency) == 3 and currency.isascii() and currency.isalpha() and currency.isupper(), f"Moneda inválida: {opportunity['id']}"
                   assert isinstance(amount.get("basis"), str) and amount["basis"].strip(), f"Falta la base del monto: {opportunity['id']}"
               verification = opportunity["verification"]
               assert isinstance(verification, dict), f"Verificación inválida: {opportunity['id']}"
@@ -441,7 +441,9 @@ jobs:
               {**sample_opportunity, "verification": {**sample_opportunity["verification"], "status": "outdated"}},
               {**sample_opportunity, "validUntil": "2026-11-20"},
               {**sample_opportunity, "amount": {"value": -1, "currency": "USD", "basis": "Monto total"}},
-              {**sample_opportunity, "amount": {"value": float("inf"), "currency": "USD", "basis": "Monto total"}}
+              {**sample_opportunity, "amount": {"value": float("inf"), "currency": "USD", "basis": "Monto total"}},
+              {**sample_opportunity, "amount": {"value": 100, "currency": "ÅBC", "basis": "Monto total"}},
+              {**sample_opportunity, "amount": {"value": 100, "currency": "usd", "basis": "Monto total"}}
           )
           for invalid_opportunity in invalid_opportunities:
               try:
