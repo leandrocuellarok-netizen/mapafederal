@@ -130,8 +130,8 @@ Categorías admitidas: Economía, Empresas, Comercio, Infraestructura, Regulaci�
 Metadatos obligatorios:
 - `period`: período estadístico o temporal explícito de la fuente (por ejemplo, `2026-10`); usar `null` si la fuente no informa un período de referencia independiente de la fecha de publicación.
 - `verification.status`: `editorial_reviewed`, `pending`, `not_verified` u `outdated`.
-- `verification.checkedAt`: fecha ISO de la última revisión editorial registrada; usar `null` si todavía no se revisó.
-- `verification.scope`: alcance concreto de la revisión. `editorial_reviewed` no significa monitoreo automático, vigencia en tiempo real ni disponibilidad permanente del enlace.
+- `verification.checkedAt`: fecha ISO de la última revisión registrada; usar `null` si todavía no se revisó. Cuando existe, no puede preceder a la fecha de publicación ni ser futura.
+- `verification.scope`: alcance concreto de la revisión, obligatorio para todos los estados. `editorial_reviewed` exige una fecha de revisión válida y no significa monitoreo automático, vigencia en tiempo real ni disponibilidad permanente del enlace.
 
 
 Criterio editorial:
