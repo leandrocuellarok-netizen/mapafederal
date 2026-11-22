@@ -157,6 +157,56 @@ jobs:
           else:
               raise AssertionError("No se rechazó una URL editorial con credenciales")
 
+          def validate_news_verification(item):
+              verification = item.get("verification")
+              assert isinstance(verification, dict), f"Noticia sin estado de verificación: {item.get('title', 'sin titular')}"
+              verification_status = verification.get("status")
+              assert verification_status in {"editorial_reviewed", "pending", "not_verified", "outdated"}, f"Estado de verificación no admitido: {item.get('title', 'sin titular')}"
+              assert isinstance(verification.get("scope"), str) and verification["scope"].strip(), f"Verificación sin alcance: {item.get('title', 'sin titular')}"
+              checked_at = verification.get("checkedAt")
+              if verification_status == "editorial_reviewed":
+                  assert isinstance(checked_at, str), f"Revisión editorial sin fecha: {item.get('title', 'sin titular')}"
+              else:
+                  assert checked_at is None or isinstance(checked_at, str), f"Fecha de verificación inválida: {item.get('title', 'sin titular')}"
+              if checked_at is not None:
+                  checked_date = date.fromisoformat(checked_at)
+                  assert checked_date.isoformat() == checked_at, f"Fecha de verificación no ISO: {item.get('title', 'sin titular')}"
+                  published_date = date.fromisoformat(item["date"])
+                  assert published_date <= checked_date <= date.today(), f"Fecha de verificación anterior a la publicación o futura: {item.get('title', 'sin titular')}"
+
+          verification_fixture = {
+              "title": "Fixture de trazabilidad editorial",
+              "date": "2026-11-20",
+              "verification": {
+                  "status": "editorial_reviewed",
+                  "checkedAt": "2026-11-21",
+                  "scope": "Prueba sintética del contrato de verificación."
+              }
+          }
+          validate_news_verification(verification_fixture)
+          pending_fixture = {
+              "title": "Fixture pendiente",
+              "date": "2026-11-20",
+              "verification": {
+                  "status": "pending",
+                  "checkedAt": None,
+                  "scope": "Pendiente de revisión editorial."
+              }
+          }
+          validate_news_verification(pending_fixture)
+          for invalid_checked_at in ("2026-11-19", "2026-11-21T00:00:00", "2026-11-23"):
+              invalid_fixture = {
+                  **verification_fixture,
+                  "verification": {**verification_fixture["verification"], "checkedAt": invalid_checked_at}
+              }
+              try:
+                  validate_news_verification(invalid_fixture)
+              except (AssertionError, ValueError):
+                  pass
+              else:
+                  raise AssertionError(f"Se aceptó una fecha de verificación inválida: {invalid_checked_at}")
+          print("Trazabilidad editorial: fechas ISO, posteriores a la publicación y no futuras; estados pendientes admitidos.")
+
           news_urls = set()
           news_titles = set()
           for item in news:
@@ -168,18 +218,7 @@ jobs:
               assert len(item["summary"]) <= 700, f"Síntesis demasiado extensa: {item['title']}"
               assert "period" in item, f"Noticia sin campo de período: {item['title']}"
               assert item["period"] is None or (isinstance(item["period"], str) and item["period"].strip()), f"Período inválido: {item['title']}"
-              verification = item.get("verification")
-              assert isinstance(verification, dict), f"Noticia sin estado de verificación: {item['title']}"
-              verification_status = verification.get("status")
-              assert verification_status in {"editorial_reviewed", "pending", "not_verified", "outdated"}, f"Estado de verificación no admitido: {item['title']}"
-              checked_at = verification.get("checkedAt")
-              if verification_status == "editorial_reviewed":
-                  assert isinstance(checked_at, str), f"Revisión editorial sin fecha: {item['title']}"
-                  checked_date = date.fromisoformat(checked_at)
-                  assert checked_date <= date.today(), f"Fecha de revisión futura: {item['title']}"
-                  assert isinstance(verification.get("scope"), str) and verification["scope"].strip(), f"Revisión sin alcance: {item['title']}"
-              else:
-                  assert checked_at is None or isinstance(checked_at, str), f"Fecha de verificación inválida: {item['title']}"
+              validate_news_verification(item)
               url = urlparse(item["url"])
               assert url.scheme == "https" and url.netloc, f"URL de noticia no HTTPS: {item['title']}"
               canonical_url = canonical_news_url(item["url"])
