@@ -163,6 +163,20 @@ jobs:
               assert item["date"] <= date.today().isoformat(), f"Noticia con fecha futura: {item['title']}"
               assert item["category"] in categories, f"Categoría no admitida: {item['category']}"
               assert len(item["summary"]) <= 700, f"Síntesis demasiado extensa: {item['title']}"
+              assert "period" in item, f"Noticia sin campo de período: {item['title']}"
+              assert item["period"] is None or (isinstance(item["period"], str) and item["period"].strip()), f"Período inválido: {item['title']}"
+              verification = item.get("verification")
+              assert isinstance(verification, dict), f"Noticia sin estado de verificación: {item['title']}"
+              verification_status = verification.get("status")
+              assert verification_status in {"editorial_reviewed", "pending", "not_verified", "outdated"}, f"Estado de verificación no admitido: {item['title']}"
+              checked_at = verification.get("checkedAt")
+              if verification_status == "editorial_reviewed":
+                  assert isinstance(checked_at, str), f"Revisión editorial sin fecha: {item['title']}"
+                  checked_date = date.fromisoformat(checked_at)
+                  assert checked_date <= date.today(), f"Fecha de revisión futura: {item['title']}"
+                  assert isinstance(verification.get("scope"), str) and verification["scope"].strip(), f"Revisión sin alcance: {item['title']}"
+              else:
+                  assert checked_at is None or isinstance(checked_at, str), f"Fecha de verificación inválida: {item['title']}"
               url = urlparse(item["url"])
               assert url.scheme == "https" and url.netloc, f"URL de noticia no HTTPS: {item['title']}"
               canonical_url = canonical_news_url(item["url"])
@@ -251,6 +265,9 @@ jobs:
           grep -q 'typeof L !== "undefined"' index.html
           grep -q 'data/strategic-nodes.json' index.html
           grep -q 'data/news.json' index.html
+          grep -q 'news-provenance' index.html
+          grep -q 'Período de referencia' index.html
+          grep -q 'editorial_reviewed' index.html
           grep -q 'id="export-nodes"' index.html
           grep -q 'id="export-profiles"' index.html
           grep -q 'function downloadCsv' index.html
