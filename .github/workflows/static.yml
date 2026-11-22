@@ -241,6 +241,23 @@ jobs:
           else:
               raise AssertionError("Se aceptó una síntesis de más de 700 caracteres")
 
+          def validate_news_period(item):
+              assert isinstance(item.get("period"), str) and item["period"].strip(), f"Período no explícito: {item.get('title', 'fixture')}"
+
+          period_fixture = {"title": "Fixture de período editorial", "period": "No consignado en el registro editorial"}
+          validate_news_period(period_fixture)
+          for invalid_period_fixture in (
+              {**period_fixture, "period": None},
+              {"title": period_fixture["title"]},
+              {**period_fixture, "period": "   "}
+          ):
+              try:
+                  validate_news_period(invalid_period_fixture)
+              except AssertionError:
+                  pass
+              else:
+                  raise AssertionError("Se aceptó un período editorial ausente o vacío")
+
           news_urls = set()
           news_titles = set()
           for item in news:
@@ -250,8 +267,7 @@ jobs:
               assert item["date"] <= date.today().isoformat(), f"Noticia con fecha futura: {item['title']}"
               assert item["category"] in categories, f"Categoría no admitida: {item['category']}"
               validate_news_summary(item)
-              assert "period" in item, f"Noticia sin campo de período: {item['title']}"
-              assert item["period"] is None or (isinstance(item["period"], str) and item["period"].strip()), f"Período inválido: {item['title']}"
+              validate_news_period(item)
               validate_news_verification(item)
               url = urlparse(item["url"])
               assert url.scheme == "https" and url.netloc, f"URL de noticia no HTTPS: {item['title']}"
