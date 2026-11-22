@@ -11,7 +11,10 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
-    }
+    },
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": []
   },
   {
     "title": "Cuatro emprendimientos fueron distinguidos en la final nacional 2026",
@@ -25,7 +28,18 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
-    }
+    },
+    "jurisdictions": [
+      "CABA",
+      "Santa Fe",
+      "Misiones"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Ciudad de Buenos Aires",
+      "Santa Fe",
+      "Misiones"
+    ]
   },
   {
     "title": "Ushuaia: llaman a licitación para un nuevo muelle de catamaranes",
@@ -39,7 +53,14 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
-    }
+    },
+    "jurisdictions": [
+      "Tierra del Fuego"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Ushuaia (Tierra del Fuego)"
+    ]
   },
   {
     "title": "El Proyecto KT+ presentó resultados de asistencia técnica a pymes de distintas regiones",
@@ -53,7 +74,30 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
-    }
+    },
+    "jurisdictions": [
+      "Buenos Aires",
+      "Santa Fe",
+      "Jujuy",
+      "Formosa",
+      "San Luis",
+      "Mendoza",
+      "Salta",
+      "Corrientes",
+      "Entre Ríos"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Mar del Plata (Buenos Aires)",
+      "Rosario (Santa Fe)",
+      "Jujuy",
+      "Formosa",
+      "San Luis",
+      "Mendoza",
+      "Salta",
+      "Corrientes",
+      "Concepción del Uruguay (Entre Ríos)"
+    ]
   },
   {
     "title": "El INTI presentó más de 40 casos de innovación para la industria 4.0",
@@ -67,7 +111,10 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
-    }
+    },
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": []
   },
   {
     "title": "BioArgentina 2026 reunió en Bariloche a empresas, investigadores y emprendedores",
@@ -81,7 +128,14 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
-    }
+    },
+    "jurisdictions": [
+      "Río Negro"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "San Carlos de Bariloche (Río Negro)"
+    ]
   },
   {
     "title": "INTI, Würth Elektronik y Electrocomponentes impulsaron jornadas sobre compatibilidad electromagnética",
@@ -95,7 +149,16 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
-    }
+    },
+    "jurisdictions": [
+      "Buenos Aires",
+      "Córdoba"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Provincia de Buenos Aires",
+      "Ciudad de Córdoba (Córdoba)"
+    ]
   },
   {
     "title": "El superávit comercial llegó a USD 3.394 millones en octubre",
@@ -109,7 +172,10 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
-    }
+    },
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": []
   },
   {
     "title": "El INTA destacó la trazabilidad y la diferenciación como oportunidades para la cadena cárnica",
@@ -123,7 +189,10 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
-    }
+    },
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": []
   },
   {
     "title": "Argentina Alimenta reunió a productores y compradores de 25 países",
@@ -137,7 +206,10 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
-    }
+    },
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": []
   },
   {
     "title": "Toyota anunció un proyecto de inversión superior a USD 1.300 millones en Zárate",
@@ -151,7 +223,14 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
-    }
+    },
+    "jurisdictions": [
+      "Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Zárate (provincia de Buenos Aires)"
+    ]
   },
   {
     "title": "La segunda Ronda de Negocios RIGI se realizará el 2 de diciembre con foco en energía e hidrocarburos",
@@ -165,7 +244,10 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
-    }
+    },
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": []
   },
   {
     "title": "Chubut: el potencial minero convive con un riesgo social y regulatorio persistente",
@@ -193,6 +275,13 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-22",
       "scope": "Contraste editorial del informe de noviembre de 2026 con la Ley XVII N.º 150 publicada en el digesto oficial de Chubut y coberturas periodísticas sobre las movilizaciones de 2021 y la alerta de organizaciones en 2025. No es monitoreo en tiempo real ni una medición de opinión pública."
-    }
+    },
+    "jurisdictions": [
+      "Chubut"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Chubut y Meseta Central"
+    ]
   }
 ]
