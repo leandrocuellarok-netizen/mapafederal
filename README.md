@@ -135,7 +135,8 @@ Metadatos obligatorios:
 - `verification.status`: `editorial_reviewed`, `pending`, `not_verified` u `outdated`.
 - `verification.checkedAt`: fecha ISO de la última revisión registrada; usar `null` si todavía no se revisó. Cuando existe, no puede preceder a la fecha de publicación ni ser futura.
 - `verification.scope`: alcance concreto de la revisión, obligatorio para todos los estados.
-- `relatedSources`: lista opcional de fuentes complementarias, cada una con etiqueta y URL HTTPS; se muestran como enlaces adicionales y se validan automáticamente. `editorial_reviewed` exige una fecha de revisión válida y no significa monitoreo automático, vigencia en tiempo real ni disponibilidad permanente del enlace.
+- `verification.scope`: alcance concreto de la revisión, obligatorio para todos los estados. `editorial_reviewed` exige una fecha de revisión válida y no significa monitoreo automático, vigencia en tiempo real ni disponibilidad permanente del enlace.
+- `relatedSources`: lista opcional de fuentes complementarias, cada una con etiqueta y URL HTTPS; se muestran como enlaces adicionales y se validan automáticamente.
 
 
 Criterio editorial:
