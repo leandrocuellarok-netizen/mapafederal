@@ -41,7 +41,7 @@ INDEC también publica OPEX del primer semestre 2026 (02/09/2026), con variacion
 ### Fase 3 — Territorial Monitor
 1. Seleccionar fuentes RSS/API de organismos públicos y entidades sectoriales.
 2. Registrar fuente, fecha de publicación, fecha de consulta, URL canónica y jurisdicciones/sectores mencionados.
-3. Deduplicar por URL canónica (host y esquema sin distinción de mayúsculas; fragmentos excluidos; parámetros de consulta preservados) y similitud de titular.
+3. Deduplicar por URL canónica: host y esquema sin distinción de mayúsculas, puerto HTTPS predeterminado y ruta raíz normalizados, fragmentos excluidos y parámetros de consulta preservados. Rechazar URLs con credenciales.
 4. Mantener revisión editorial antes de publicar noticias.
 5. Respetar licencias, condiciones de uso y límites de frecuencia.
 
