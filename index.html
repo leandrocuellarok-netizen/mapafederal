@@ -305,7 +305,7 @@ function filterInvestmentOpportunities(records,filters){
     return (filters.scope==="all"||opportunity.scope===filters.scope)
       &&(filters.sector==="all"||opportunity.sector===filters.sector)
       &&(filters.jurisdiction==="all"||jurisdiction===filters.jurisdiction)
-      &&(filters.stage==="all"||opportunity.stage===filters.stage)
+      &&(!filters.stage||filters.stage==="all"||opportunity.stage===filters.stage)
       &&(filters.status==="all"||opportunity.opportunityStatus===filters.status)
       &&terms.every(term=>haystack.includes(term));
   });
