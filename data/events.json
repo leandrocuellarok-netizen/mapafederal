@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-22",
+  "note": "Catálogo inicial vacío. No hay eventos cargados ni una agenda integrada; cada registro futuro deberá contar con fuente del organizador y verificación fechada.",
+  "events": []
+}
