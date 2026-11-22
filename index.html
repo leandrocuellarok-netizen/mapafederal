@@ -146,8 +146,9 @@ function exportVisibleProfiles(){
   const filtered=[...provincialProfiles].filter(p=>(region==="Todas"||p.region===region)&&normalizeText(p.province).includes(query)).sort((a,b)=>b.exportsUsdMillions-a.exportsUsdMillions);
   const verification=profilesMetadata?.verification||{};
   const verificationStatus=({verified:"Verificado",not_verified:"No verificado",outdated:"Desactualizado"})[verification.status]||"No informado";
-  const rows=filtered.map(p=>[p.province,p.region,profilesMetadata?.period||"",p.exportsUsdMillions,p.yearOnYearPct,p.nationalSharePct,p.profileUrl,profilesMetadata?.published||"",profilesMetadata?.publisher||"",verificationStatus,verification.checkedAt||"",verification.scope||"",profilesMetadata?.sourceUrl||""]);
-  downloadCsv("mapa-federal-perfiles-provinciales.csv",["Provincia","Región","Período","Exportaciones USD millones FOB","Variación interanual %","Participación nacional %","Ficha provincial","Publicación de la fuente","Organismo publicador","Estado de verificación","Fecha de verificación","Alcance de verificación","Fuente estadística"],rows,"profiles-export-status");
+  const profilePeriodNote="El año de edición de la ficha no garantiza que todos sus indicadores correspondan a ese período; consultar el período individual en el PDF.";
+  const rows=filtered.map(p=>[p.province,p.region,profilesMetadata?.period||"",p.exportsUsdMillions,p.yearOnYearPct,p.nationalSharePct,profilesMetadata?.profileYear||"",profilePeriodNote,p.profileUrl,profilesMetadata?.published||"",profilesMetadata?.publisher||"",verificationStatus,verification.checkedAt||"",verification.scope||"",profilesMetadata?.sourceUrl||""]);
+  downloadCsv("mapa-federal-perfiles-provinciales.csv",["Provincia","Región","Período OPEX","Exportaciones USD millones FOB","Variación interanual %","Participación nacional %","Año de edición de ficha complementaria","Nota sobre período de ficha complementaria","Ficha provincial","Publicación de la fuente estadística","Organismo publicador estadístico","Estado de verificación estadística","Fecha de verificación estadística","Alcance de verificación estadística","Fuente estadística"],rows,"profiles-export-status");
 }
 function exportProvinceBrief(){
   const status=document.getElementById("brief-export-status");
@@ -177,7 +178,11 @@ function exportProvinceBrief(){
     "- Variación interanual: "+variation,
     "- Participación nacional: "+number(profile.nationalSharePct)+"%",
     "- Fuente estadística: "+clean(profilesMetadata?.publisher||"INDEC")+" — "+clean(profilesMetadata?.sourceUrl||""),
-    "- Ficha provincial: "+clean(profile.profileUrl||"No disponible"),
+    "- Ficha provincial complementaria: "+clean(profile.profileUrl||"No disponible"),
+    "- Año de edición de ficha complementaria: "+clean(profilesMetadata?.profileYear||"No informado"),
+    "- Organismo de ficha complementaria: "+clean(profilesMetadata?.profilePublisher||"No informado"),
+    "- Nota sobre período de la ficha complementaria: El año de edición de la ficha no garantiza que todos sus indicadores correspondan a ese período; consultar el período individual en el PDF.",
+    "- Índice de fichas provinciales: "+clean(profilesMetadata?.profileIndexUrl||"No disponible"),
     "",
     "## Infraestructura registrada en Mapa Federal",
     "",
