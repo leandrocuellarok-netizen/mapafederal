@@ -241,10 +241,12 @@ jobs:
               assert checked_at.isoformat() == verification["checkedAt"], f"Fecha de verificación no ISO: {event['id']}"
               assert published <= checked_at <= date.today(), f"Fechas de fuente/verificación inconsistentes: {event['id']}"
               assert isinstance(verification.get("scope"), str) and verification["scope"].strip(), f"Evento sin alcance de verificación: {event['id']}"
+              last_event_day = date.fromisoformat(end_date) if end_date else start_date
               if event["status"] in {"confirmed", "rescheduled"}:
                   assert verification["status"] == "verified", f"Evento futuro no confirmado por fuente oficial: {event['id']}"
-                  last_event_day = date.fromisoformat(end_date) if end_date else start_date
                   assert last_event_day >= date.today(), f"Evento vencido todavía marcado como próximo: {event['id']}"
+              if event["status"] == "completed":
+                  assert last_event_day <= date.today(), f"Evento marcado como completado tiene fecha futura: {event['id']}"
               return event["id"].strip().casefold()
 
           for event in events:
@@ -281,6 +283,7 @@ jobs:
               {**sample_event, "sourceUrl": "http://example.org/evento"},
               {**sample_event, "endDate": "2026-12-09"},
               {**sample_event, "startDate": "2026-11-20"},
+              {**sample_event, "status": "completed"},
               {**sample_event, "verification": {**sample_event["verification"], "status": "outdated"}}
           ):
               try:
