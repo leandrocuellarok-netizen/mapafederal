@@ -231,7 +231,7 @@ document.getElementById("export-profiles").addEventListener("click",exportVisibl
 
 
 function filterInvestmentOpportunities(records,filters){
-  const terms=normalizeText(filters.query||"").split(/\\s+/).filter(Boolean);
+  const terms=normalizeText(filters.query||"").split(/\s+/).filter(Boolean);
   return records.filter(opportunity=>{
     const jurisdiction=opportunity.scope==="national"?"Nacional":(opportunity.jurisdiction||"");
     const haystack=normalizeText([opportunity.name,opportunity.sector,jurisdiction,opportunity.location,opportunity.description,opportunity.sourceName,opportunity.sourceUrl].join(" "));
