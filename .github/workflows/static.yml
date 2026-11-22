@@ -609,7 +609,7 @@ jobs:
           const vm = require("vm");
           const html = fs.readFileSync("index.html", "utf8");
           const catalog = JSON.parse(fs.readFileSync("data/investment-opportunities.json", "utf8"));
-          for (const id of ["investment-search", "investment-sector", "investment-scope", "investment-jurisdiction", "investment-status", "investment-count", "investment-grid"]) {
+          for (const id of ["investment-search", "investment-sector", "investment-scope", "investment-jurisdiction", "investment-stage", "investment-status", "investment-count", "investment-grid"]) {
             if (!html.includes('id="' + id + '"')) throw new Error("Falta el control de Investment Finder: " + id);
           }
           if (!html.includes("registros documentados")) throw new Error("Falta la etiqueta traducible del contador.");
@@ -623,6 +623,12 @@ jobs:
           const base = { query: "eficiencia energética", sector: "all", scope: "national", jurisdiction: "Nacional", status: "unknown" };
           if (filter(catalog.opportunities, base).length !== 1) throw new Error("No se encontró el registro nacional mediante búsqueda y filtros combinados.");
           if (filter(catalog.opportunities, { ...base, status: "open" }).length !== 0) throw new Error("El registro RIMI no debe aparecer como oportunidad abierta.");
+          if (filter(catalog.opportunities, { ...base, stage: "unknown" }).length !== 1) throw new Error("El filtro por etapa no encuentra el registro RIMI.");
+          if (filter(catalog.opportunities, { ...base, stage: "announced" }).length !== 0) throw new Error("El filtro por etapa mezcló registros de distintas etapas.");
+          const stagedFixtures = [record, { ...record, id: "fixture-anunciado", stage: "announced" }];
+          if (filter(stagedFixtures, { ...base, stage: "announced" }).length !== 1) throw new Error("El filtro por etapa no aísla registros anunciados.");
+          if (filter(stagedFixtures, { ...base, stage: "unknown" }).length !== 1) throw new Error("El filtro por etapa no conserva registros sin etapa informada.");
+          if (!html.includes("function investmentStageLabel(stage){")) throw new Error("Falta el catálogo de etiquetas legibles para las etapas.");
           if (filter(catalog.opportunities, { ...base, scope: "provincial" }).length !== 0) throw new Error("El filtro provincial incluyó un registro nacional.");
           if (filter(catalog.opportunities, { ...base, jurisdiction: "Buenos Aires" }).length !== 0) throw new Error("El filtro de jurisdicción incluyó un registro nacional.");
           if (filter(catalog.opportunities, { ...base, query: "boletin oficial" }).length !== 1) throw new Error("La búsqueda no encuentra la fuente documental.");
@@ -738,6 +744,7 @@ jobs:
           grep -q 'id="export-profiles"' index.html
           grep -q 'function downloadCsv' index.html
           grep -q 'id="investment-grid"' index.html
+          grep -q 'id="investment-stage"' index.html
           grep -q 'function loadInvestmentFinder' index.html
           grep -q 'function filterInvestmentOpportunities' index.html
           grep -q 'id="brief-province"' index.html
