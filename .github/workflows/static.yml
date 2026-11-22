@@ -25,13 +25,16 @@ jobs:
         run: |
           python - <<'PY'
           import json
-          from datetime import date
+          from datetime import date, time
           from urllib.parse import urlparse
+          from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
           with open("data/strategic-nodes.json", encoding="utf-8") as f:
               nodes = json.load(f)
           with open("data/news.json", encoding="utf-8") as f:
               news = json.load(f)
+          with open("data/events.json", encoding="utf-8") as f:
+              event_catalog = json.load(f)
           with open("data/provincial-profiles.json", encoding="utf-8") as f:
               provincial_data = json.load(f)
           with open("data/ai-modules.json", encoding="utf-8") as f:
@@ -187,6 +190,100 @@ jobs:
               news_titles.add(title_key)
 
           assert [item["date"] for item in news] == sorted((item["date"] for item in news), reverse=True), "Las noticias deben estar ordenadas de más recientes a más antiguas"
+
+          # Event Intelligence: contrato de datos preparado, sin simular una agenda activa.
+          assert event_catalog.get("schemaVersion") == 1, "Versión de esquema de eventos no admitida"
+          catalog_updated = date.fromisoformat(event_catalog.get("updatedAt", ""))
+          assert catalog_updated <= date.today(), "Fecha futura en catálogo de eventos"
+          assert isinstance(event_catalog.get("note"), str) and event_catalog["note"].strip(), "Falta la nota de alcance del catálogo de eventos"
+          events = event_catalog.get("events")
+          assert isinstance(events, list), "El catálogo de eventos debe contener una lista"
+          event_ids = set()
+          event_statuses = {"confirmed", "rescheduled", "cancelled", "completed"}
+          event_verification_statuses = {"verified", "outdated"}
+          event_scopes = {"local", "regional", "national", "virtual"}
+
+          def validate_event(event):
+              required = ("id", "name", "startDate", "endDate", "time", "timeZone", "scope", "jurisdiction", "venue", "organizer", "sector", "sourceName", "sourceUrl", "sourcePublishedAt", "period", "status", "verification")
+              for field in required:
+                  assert field in event, f"Evento sin campo {field}"
+              for field in ("id", "name", "startDate", "timeZone", "scope", "venue", "organizer", "sector", "sourceName", "sourceUrl", "sourcePublishedAt", "status"):
+                  assert isinstance(event[field], str) and event[field].strip(), f"Evento con {field} vacío"
+              start_date = date.fromisoformat(event["startDate"])
+              assert start_date.isoformat() == event["startDate"], f"Fecha de inicio no ISO: {event['id']}"
+              end_date = event["endDate"]
+              if end_date is not None:
+                  parsed_end = date.fromisoformat(end_date)
+                  assert parsed_end.isoformat() == end_date and parsed_end >= start_date, f"Rango de fechas inválido: {event['id']}"
+              if event["time"] is not None:
+                  parsed_time = time.fromisoformat(event["time"])
+                  assert parsed_time.strftime("%H:%M") == event["time"], f"Hora inválida (usar HH:MM): {event['id']}"
+              try:
+                  ZoneInfo(event["timeZone"])
+              except ZoneInfoNotFoundError:
+                  raise AssertionError(f"Zona horaria IANA no reconocida: {event['timeZone']}")
+              assert event["scope"] in event_scopes, f"Alcance de evento no admitido: {event['scope']}"
+              jurisdiction = event["jurisdiction"]
+              assert jurisdiction is None or jurisdiction in expected_jurisdictions, f"Jurisdicción de evento no admitida: {jurisdiction}"
+              if event["scope"] in {"local", "regional"}:
+                  assert jurisdiction is not None, f"Evento local/regional sin jurisdicción: {event['id']}"
+              assert event["period"] is None or (isinstance(event["period"], str) and event["period"].strip()), f"Período de evento inválido: {event['id']}"
+              assert event["status"] in event_statuses, f"Estado de evento no admitido: {event['id']}"
+              source_url = urlparse(event["sourceUrl"])
+              assert source_url.scheme == "https" and source_url.hostname and source_url.username is None and source_url.password is None, f"Fuente oficial de evento inválida: {event['id']}"
+              published = date.fromisoformat(event["sourcePublishedAt"])
+              verification = event["verification"]
+              assert isinstance(verification, dict), f"Verificación de evento inválida: {event['id']}"
+              assert verification.get("status") in event_verification_statuses, f"Estado de verificación de evento no admitido: {event['id']}"
+              checked_at = date.fromisoformat(verification.get("checkedAt", ""))
+              assert published <= checked_at <= date.today(), f"Fechas de fuente/verificación inconsistentes: {event['id']}"
+              assert isinstance(verification.get("scope"), str) and verification["scope"].strip(), f"Evento sin alcance de verificación: {event['id']}"
+              if event["status"] in {"confirmed", "rescheduled"}:
+                  assert verification["status"] == "verified", f"Evento futuro no confirmado por fuente oficial: {event['id']}"
+              return event["id"].strip().casefold()
+
+          for event in events:
+              event_key = validate_event(event)
+              assert event_key not in event_ids, f"ID de evento duplicado: {event['id']}"
+              event_ids.add(event_key)
+
+          # Fixtures sintéticos: prueban el contrato sin publicar eventos ficticios.
+          sample_event = {
+              "id": "fixture-evento",
+              "name": "Evento de prueba",
+              "startDate": "2026-12-10",
+              "endDate": None,
+              "time": "10:30",
+              "timeZone": "America/Argentina/Buenos_Aires",
+              "scope": "local",
+              "jurisdiction": "Buenos Aires",
+              "venue": "Sede de prueba",
+              "organizer": "Organizador de prueba",
+              "sector": "Tecnología",
+              "sourceName": "Fuente de prueba",
+              "sourceUrl": "https://example.org/evento",
+              "sourcePublishedAt": "2026-11-20",
+              "period": None,
+              "status": "confirmed",
+              "verification": {
+                  "status": "verified",
+                  "checkedAt": "2026-11-21",
+                  "scope": "Fixture sintético para validar campos y fechas."
+              }
+          }
+          validate_event(sample_event)
+          for invalid_fixture in (
+              {**sample_event, "sourceUrl": "http://example.org/evento"},
+              {**sample_event, "endDate": "2026-12-09"},
+              {**sample_event, "verification": {**sample_event["verification"], "status": "outdated"}}
+          ):
+              try:
+                  validate_event(invalid_fixture)
+              except (AssertionError, ValueError):
+                  pass
+              else:
+                  raise AssertionError("Se aceptó un fixture de evento inválido")
+          print(f"Catálogo de eventos válido: {len(events)} registros verificados; esquema y fixtures comprobados.")
 
           ibicuy = next((node for node in nodes if node["name"] == "Puerto de Ibicuy"), None)
           assert ibicuy and ibicuy["province"] == "Entre Ríos", "Falta el nodo oficial Puerto de Ibicuy"
