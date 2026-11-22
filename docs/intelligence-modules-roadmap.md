@@ -9,7 +9,7 @@ El estado de cada módulo está versionado en `data/ai-modules.json` y se presen
 | Módulo | Estado | Capacidad comprobable |
 |---|---|---|
 | Federal AI Assistant | Planificado | No consulta un modelo. Requiere modelo y backend. |
-| Investment Finder | Planificado | Hay nodos territoriales y OPEX, pero no un inventario validado de oportunidades. |
+| Investment Finder | Planificado | Un registro documental nacional del RIMI con fuente normativa verificada; disponibilidad del trámite y elegibilidad permanecen desconocidas. No hay interfaz de búsqueda ni recomendaciones. |
 | Territorial Monitor | Planificado | Las noticias se cargan manualmente; no hay monitoreo RSS/API. |
 | Event Intelligence | Planificado | No existe agenda integrada de eventos verificados. |
 | Federal Reports | Piloto funcional | Genera una ficha Markdown por jurisdicción con OPEX anual 2025, nodos y enlaces a fuentes. No usa IA. |
@@ -34,10 +34,15 @@ INDEC también publica OPEX del primer semestre 2026 (02/09/2026), con variacion
 - [INDEC — Origen provincial de las exportaciones](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-79).
 
 ### Fase 2 — Investment Finder
-1. El contrato inicial está versionado en `data/investment-opportunities.json`; el catálogo permanece vacío y no representa oportunidades publicadas.
-2. Cada registro requiere identificador, nombre, tipo de registro, sector, jurisdicción, etapa, estado de oportunidad, vigencia, fuente HTTPS, fecha de publicación, período (o `null`) y estado/fecha/alcance de verificación. La ubicación y el monto son opcionales; el monto solo se incorpora si la fuente lo publica, se conserva su base y moneda y el valor es numérico, finito y no negativo; la moneda debe expresarse con tres letras ASCII mayúsculas (forma de código ISO 4217, sin afirmar que se valida contra el catálogo completo de códigos). La validación rechaza infinitos, monedas con caracteres no ASCII y otros valores monetarios no válidos.
+1. El esquema 2 está versionado en `data/investment-opportunities.json`. Incluye un registro documental nacional del RIMI para bienes de alta eficiencia energética; la fuente normativa está verificada, pero `opportunityStatus` se mantiene `unknown` porque no se confirmó la operatividad del trámite SGI ni la elegibilidad de solicitantes. No representa una convocatoria abierta.
+2. Cada registro requiere identificador, nombre, tipo de registro, alcance (`national` o `provincial`), sector, etapa, estado de oportunidad, vigencia, fuente HTTPS, fecha de publicación, período (o `null`) y estado/fecha/alcance de verificación. Para alcance nacional, `jurisdiction` debe ser `null`; para alcance provincial, debe corresponder a una de las 24 jurisdicciones admitidas. La ubicación y el monto son opcionales; el monto solo se incorpora si la fuente lo publica, se conserva su base y moneda y el valor es numérico, finito y no negativo; la moneda debe expresarse con tres letras ASCII mayúsculas (forma de código ISO 4217, sin afirmar que se valida contra el catálogo completo de códigos). La validación rechaza infinitos, monedas con caracteres no ASCII y otros valores monetarios no válidos.
 3. Una oportunidad solo puede figurar como abierta si la fuente está verificada, la vigencia comenzó y no terminó, y el proyecto no está completado ni cancelado.
 4. Incorporar primero datos oficiales públicos y programas de promoción que permitan reutilización.
+
+Fuentes del registro semilla RIMI (publicadas el 04/11/2026):
+- [Boletín Oficial — Resolución SE 311/2026](https://www.boletinoficial.gob.ar/detalleAviso/primera/350021/20261104): aprueba el listado de bienes de alta eficiencia energética y establece su vigencia desde la publicación.
+- [Argentina.gob.ar — incentivos RIMI para eficiencia energética](https://www.argentina.gob.ar/noticias/el-gobierno-nacional-amplia-los-incentivos-del-rimi-para-que-las-pymes-inviertan-en): resumen institucional de los bienes y criterios técnicos.
+- [Resolución General Conjunta 5849/2026](https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-5849-2026-425917/texto): documenta el procedimiento y la referencia al Sistema de Gestión de Inversiones que ARCA debía implementar. Su disponibilidad operativa no se confirmó en esta revisión; por eso el estado de oportunidad no se marca como abierto.
 5. No derivar "oportunidades" únicamente de exportaciones o presencia de infraestructura.
 6. No publicar recomendaciones de inversión automáticas sin criterios y revisión.
 
