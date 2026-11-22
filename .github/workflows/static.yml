@@ -300,6 +300,40 @@ jobs:
           else:
               raise AssertionError("Se aceptó una síntesis de más de 700 caracteres")
 
+          def validate_news_geography(item):
+              jurisdictions = item.get("jurisdictions")
+              evidence = item.get("geographyEvidence")
+              status = item.get("geographyStatus")
+              assert isinstance(jurisdictions, list), f"Noticia sin lista territorial: {item.get('title', 'sin titular')}"
+              assert isinstance(evidence, list), f"Noticia sin evidencia territorial: {item.get('title', 'sin titular')}"
+              assert len(jurisdictions) == len(set(jurisdictions)), f"Jurisdicciones duplicadas: {item.get('title', 'sin titular')}"
+              assert all(isinstance(value, str) and value in expected_jurisdictions for value in jurisdictions), f"Jurisdicción no admitida: {item.get('title', 'sin titular')}"
+              assert all(isinstance(value, str) and value.strip() for value in evidence), f"Evidencia territorial vacía: {item.get('title', 'sin titular')}"
+              if status == "explicit":
+                  assert jurisdictions and evidence, f"Clasificación explícita incompleta: {item.get('title', 'sin titular')}"
+              elif status == "not_specified":
+                  assert not jurisdictions and not evidence, f"Registro ambiguo no debe recibir jurisdicciones: {item.get('title', 'sin titular')}"
+              else:
+                  raise AssertionError(f"Estado territorial no admitido: {status}")
+
+          geography_fixture = {"title": "Fixture geográfico", "jurisdictions": ["Chubut"], "geographyStatus": "explicit", "geographyEvidence": ["Meseta Central de Chubut"]}
+          validate_news_geography(geography_fixture)
+          not_specified_fixture = {"title": "Fixture sin jurisdicción", "jurisdictions": [], "geographyStatus": "not_specified", "geographyEvidence": []}
+          validate_news_geography(not_specified_fixture)
+          for invalid_geography in (
+              {**geography_fixture, "jurisdictions": ["Provincia inventada"]},
+              {**geography_fixture, "geographyEvidence": []},
+              {**not_specified_fixture, "jurisdictions": ["CABA"]},
+              {**not_specified_fixture, "geographyStatus": "inferred"}
+          ):
+              try:
+                  validate_news_geography(invalid_geography)
+              except AssertionError:
+                  pass
+              else:
+                  raise AssertionError("Se aceptó una clasificación territorial incoherente")
+          print("Territorial Monitor: jurisdicciones normalizadas, evidencia y ausencia de inferencias validadas.")
+
           def validate_news_period(item):
               assert isinstance(item.get("period"), str) and item["period"].strip(), f"Período no explícito: {item.get('title', 'fixture')}"
 
@@ -327,6 +361,7 @@ jobs:
               assert item["category"] in categories, f"Categoría no admitida: {item['category']}"
               validate_news_summary(item)
               validate_news_period(item)
+              validate_news_geography(item)
               validate_news_verification(item)
               url = urlparse(item["url"])
               assert url.scheme == "https" and url.netloc, f"URL de noticia no HTTPS: {item['title']}"
@@ -602,6 +637,42 @@ jobs:
           Path("/tmp/mapafederal-inline.js").write_text("\n".join(scripts), encoding="utf-8")
           PY
           node --check /tmp/mapafederal-inline.js
+      - name: Test Territorial Monitor jurisdiction filtering
+        run: |
+          node - <<'JS'
+          const fs = require("fs");
+          const vm = require("vm");
+          const html = fs.readFileSync("index.html", "utf8");
+          const i18n = fs.readFileSync("assets/i18n.js", "utf8");
+          const news = JSON.parse(fs.readFileSync("data/news.json", "utf8"));
+          for (const id of ["news-search", "news-category", "news-jurisdiction", "news-grid"]) {
+            if (!html.includes('id="' + id + '"')) throw new Error("Falta el control editorial: " + id);
+          }
+          if (!html.includes("populateNewsJurisdictionFilter")) throw new Error("No se genera el filtro desde el catálogo.");
+          if (!i18n.includes('"Jurisdicciones mencionadas:"') || !i18n.includes('"Jurisdicción provincial no especificada"')) throw new Error("Faltan traducciones territoriales.");
+          for (const item of news) {
+            if (!Array.isArray(item.jurisdictions) || !Array.isArray(item.geographyEvidence)) throw new Error("Noticia sin metadatos geográficos: " + item.title);
+            if (item.geographyStatus === "explicit" && (!item.jurisdictions.length || !item.geographyEvidence.length)) throw new Error("Clasificación explícita incompleta: " + item.title);
+            if (item.geographyStatus === "not_specified" && (item.jurisdictions.length || item.geographyEvidence.length)) throw new Error("Se asignó ubicación a un registro ambiguo: " + item.title);
+          }
+          const start = html.indexOf("function filterNewsItems(items,filters){");
+          const end = html.indexOf("\nfunction populateNewsJurisdictionFilter", start);
+          if (start < 0 || end < 0) throw new Error("No se encontró el filtro territorial reutilizable.");
+          const normalizeText = value => String(value ?? "").toLowerCase().trim();
+          const filter = vm.runInNewContext("(" + html.slice(start, end) + ")", { normalizeText });
+          const base = { query: "", category: "Todas", jurisdiction: "all" };
+          const ush = filter(news, { ...base, jurisdiction: "Tierra del Fuego" });
+          if (ush.length !== 1 || !ush[0].title.startsWith("Ushuaia:")) throw new Error("No se localizó Ushuaia en Tierra del Fuego.");
+          const chubut = filter(news, { ...base, jurisdiction: "Chubut" });
+          if (chubut.length !== 1 || !chubut[0].title.startsWith("Chubut:")) throw new Error("No se localizó Chubut.");
+          const buenosAires = filter(news, { ...base, jurisdiction: "Buenos Aires" });
+          if (!buenosAires.some(item => item.title.startsWith("Toyota anunció"))) throw new Error("No se localizó Zárate en Buenos Aires.");
+          if (filter(news, { ...base, jurisdiction: "CABA" }).length !== 1) throw new Error("CABA y provincia de Buenos Aires no se distinguen.");
+          if (filter(news, { ...base, jurisdiction: "Entre Ríos" }).length !== 1) throw new Error("No se localizó Concepción del Uruguay.");
+          if (filter(news, { ...base, category: "Empresas", jurisdiction: "Tierra del Fuego" }).length !== 0) throw new Error("Los filtros combinados no son restrictivos.");
+          console.log("Territorial Monitor: filtro territorial, filtros combinados, registros ambiguos y traducciones comprobados.");
+          JS
+
       - name: Test Investment Finder filters and provenance
         run: |
           node - <<'JS'
@@ -741,6 +812,9 @@ jobs:
           grep -q 'typeof L !== "undefined"' index.html
           grep -q 'data/strategic-nodes.json' index.html
           grep -q 'data/news.json' index.html
+          grep -q 'id="news-jurisdiction"' index.html
+          grep -q 'function filterNewsItems' index.html
+          grep -q 'geographyStatus' index.html
           grep -q 'news-provenance' index.html
           grep -q 'Período de referencia' index.html
           grep -q 'editorial_reviewed' index.html
