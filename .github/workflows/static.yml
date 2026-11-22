@@ -81,6 +81,9 @@ jobs:
           assert './assets/profile-comparison.js' in html
           assert 'MapaFederalProfileComparison.compareProfiles' in html
           assert '"Compará dos jurisdicciones":"Compare two jurisdictions"' in translations
+          assert '"millones de USD FOB":"millions of FOB USD"' in translations
+          assert 'were checked against table 1' in translations
+          assert '<span>Verificado</span>' in html
           federal = next(item for item in modules["modules"] if item["id"] == "federal-reports")
           assert federal["status"] == "pilot"
           assert "comparar dos jurisdicciones" in federal["currentCapability"]
