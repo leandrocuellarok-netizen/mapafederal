@@ -229,8 +229,9 @@ jobs:
           grep -q 'id="brief-province"' index.html
           grep -q 'id="export-province-brief"' index.html
           grep -q 'function exportProvinceBrief' index.html
-          grep -q 'Módulos conceptuales' index.html
-          grep -q 'id="ai-module-grid"' index.html
+          grep -q 'Seis módulos, estados transparentes.' index.html
+          test "$(grep -o 'id="ai-module-grid"' index.html | wc -l)" -eq 1
+          ! grep -q 'Cinco módulos proyectados' index.html
           grep -q 'data/ai-modules.json' index.html
           grep -q 'async function loadModules()' index.html
           grep -q 'docs/intelligence-modules-roadmap.md' README.md
