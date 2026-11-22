@@ -207,3 +207,8 @@ La sección de módulos se alimenta de `data/ai-modules.json` y sus criterios t�
 
 INDEC publicó el OPEX del primer semestre de 2026 el 2 de septiembre de 2026, con resultados regionales. Ese período parcial debe mantenerse separado del OPEX anual 2025 que alimenta las fichas provinciales. La página de INDEC anuncia el próximo informe anual 2026 para el 9 de marzo de 2027: [Origen provincial de las exportaciones](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-79).
 
+## Interfaz bilingüe (español / inglés)
+
+La interfaz incorpora un selector ES / EN en la navegación. El idioma predeterminado es español; la preferencia elegida se conserva localmente en el navegador y el atributo `lang` del documento se actualiza al cambiar de idioma. El catálogo reutilizable está en `assets/i18n.js` y expone `window.MapaFederalI18n.setLanguage("es"|"en")` y `getLanguage()` para futuras vistas y componentes.
+
+El módulo traduce etiquetas, navegación, textos editoriales de interfaz, controles, mensajes y elementos dinámicos reconocidos por el catálogo. Los nombres propios, topónimos, cifras, titulares originales de fuentes y datos oficiales se conservan para evitar alterar la denominación de origen. Las nuevas cadenas de interfaz deben incorporarse al catálogo inglés y probarse en ambos idiomas. La traducción de resúmenes editoriales y contenidos de datos debe prepararse como contenido localizado revisado, no mediante traducción automática indiscriminada.
