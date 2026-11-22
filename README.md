@@ -150,9 +150,11 @@ La herramienta permite seleccionar una jurisdicción y descargar una ficha Markd
 
 La ficha se genera en el navegador y no consulta servicios externos ni incorpora datos nuevos. Es un insumo preliminar de prospección, no una lista de empresas, un análisis de mercado completo ni una recomendación de inversión. El catálogo geográfico es selectivo y las coordenadas deben verificarse antes de cualquier uso operativo.
 
-## Módulos conceptuales y funcionales
+## Ecosistema de inteligencia
 
-Los cinco módulos de la sección de hoja de ruta (inversión y desarrollos, eventos corporativos, inteligencia política-territorial, turismo ejecutivo y ampliación del explorador) son conceptuales y están identificados como planificados. No deben presentarse como funciones disponibles. Las herramientas funcionales actuales son el mapa, el directorio de nodos, los perfiles OPEX, las noticias curadas y las exportaciones CSV/Markdown.
+La interfaz presenta los seis módulos desde un único manifiesto: `data/ai-modules.json`. Federal Reports permanece en piloto funcional; Federal AI Assistant, Investment Finder, Territorial Monitor, Event Intelligence y Executive Travel AI permanecen planificados. Los estados, capacidades actuales, dependencias y próximos pasos se mantienen en ese archivo y no deben duplicarse como una segunda lista independiente en la interfaz.
+
+Las funciones comprobables actuales son el mapa, el directorio de nodos, los perfiles OPEX, las noticias curadas y las exportaciones CSV/Markdown. El buscador no es un modelo de IA y la sección de módulos no implica integraciones en producción.
 
 ## Arquitectura
 
