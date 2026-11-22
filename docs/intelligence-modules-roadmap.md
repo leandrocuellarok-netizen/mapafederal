@@ -47,10 +47,12 @@ INDEC también publica OPEX del primer semestre 2026 (02/09/2026), con variacion
 6. En cada noticia conservar `period` (o `null` si la fuente no informa uno), estado de verificación, fecha de revisión y alcance; la revisión editorial no equivale a monitoreo en tiempo real.
 
 ### Fase 4 — Event Intelligence
-1. Fuentes oficiales de organizadores, cámaras, parques industriales y recintos.
-2. Campos obligatorios: nombre, fecha/hora y zona horaria, sede, organizador, sector, URL oficial y fecha de última verificación.
-3. Estados: confirmado, reprogramado, cancelado, finalizado.
-4. Excluir eventos vencidos de recomendaciones futuras.
+1. El contrato inicial está versionado en `data/events.json`; el catálogo permanece vacío y no representa una agenda activa.
+2. Seleccionar fuentes oficiales de organizadores, cámaras, parques industriales y recintos, comprobando permisos de reutilización y condiciones de uso antes de automatizar la ingesta.
+3. Cada registro debe conservar identificador, nombre, fecha de inicio y fin, hora local si está publicada, zona horaria IANA, alcance, jurisdicción cuando corresponda, sede, organizador, sector, nombre y URL de la fuente oficial, fecha de publicación de la fuente, período (o `null` si no está informado), estado del evento y estado/fecha/alcance de verificación.
+4. Los estados del evento son `confirmed`, `rescheduled`, `cancelled` y `completed`. Los eventos confirmados o reprogramados solo se admiten si la fuente oficial está verificada; los registros desactualizados no deben presentarse como próximos.
+5. La validación rechaza fechas incoherentes, zonas horarias no reconocidas, jurisdicciones inválidas, URLs que no sean HTTPS y registros sin trazabilidad.
+6. No publicar eventos no verificados ni inferir fechas, sedes o disponibilidad a partir de anuncios incompletos.
 
 ### Fase 5 — Executive Travel AI
 1. Separar destinos de referencia de servicios reservables.
