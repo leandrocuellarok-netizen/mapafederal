@@ -44,8 +44,7 @@ footer{background:#061b14;color:#d9e2db;padding:30px 0}.foot{display:flex;justif
 <article class="module"><div class="module-index">04</div><h3>Inteligencia política y territorial</h3><p>Instituciones, políticas públicas, dinámicas regionales e información contextual.</p><span class="module-status">Conceptual · planificado</span></article>
 <article class="module"><div class="module-index">05</div><h3>Turismo ejecutivo</h3><p>Destinos, hotelería, gastronomía, conectividad y experiencias para viajes de negocios.</p><span class="module-status">Conceptual · planificado</span></article>
 </div></div></section>
-<section class="ai" id="asistente"><div class="wrap"><div class="section-head"><div><div class="eyebrow">06 / Ecosistema de inteligencia</div><h2>Una plataforma preparada para IA.</h2></div><p>Las próximas capas inteligentes podrán conectarse a modelos, datos territoriales y fuentes verificadas.</p></div><div class="ai-grid">
-<article class="ai-item"><h3>Federal AI Assistant</h3><p>Interfaz conversacional para consultas territoriales y empresariales.</p><span class="status">Planificado · requiere modelo</span></article><article class="ai-item"><h3>Investment Finder</h3><p>Exploración y clasificación de oportunidades con criterios definidos.</p><span class="status">Planificado · requiere datos</span></article><article class="ai-item"><h3>Territorial Monitor</h3><p>Seguimiento de novedades y cambios relevantes por región.</p><span class="status">Planificado · requiere fuentes</span></article><article class="ai-item"><h3>Event Intelligence</h3><p>Descubrimiento y organización de eventos por sector y localización.</p><span class="status">Planificado · requiere fuentes</span></article><article class="ai-item"><h3>Federal Reports</h3><p>Informes territoriales con trazabilidad de fuentes y fecha de actualización.</p><span class="status">Planificado · requiere datos</span></article><article class="ai-item"><h3>Executive Travel AI</h3><p>Asistencia para planificar desplazamientos y experiencias ejecutivas.</p><span class="status">Planificado · requiere modelo</span></article></div></div></section>
+<section class="ai" id="asistente"><div class="wrap"><div class="section-head"><div><div class="eyebrow">06 / Ecosistema de inteligencia</div><h2>Seis módulos, estados transparentes.</h2></div><p>Federal Reports ya cuenta con un piloto de informes descargables basado en datos versionados. Los otros cinco módulos permanecen planificados hasta integrar modelos, fuentes y servicios verificables.</p></div><div class="ai-grid" id="ai-module-grid" aria-live="polite"><div class="ai-item"><h3>Cargando hoja de ruta</h3><p>Consultando estados y dependencias de cada módulo.</p></div></div><p class="editorial-note" id="ai-roadmap-note">Los módulos conceptuales no representan servicios activos ni integraciones en producción.</p></div></section>
 </main>
 <footer><div class="wrap foot"><div class="brand"><span class="brandmark">✦</span><span>MAPA FEDERAL</span></div><small>INTELIGENCIA TERRITORIAL PARA EMPRESARIOS Y EJECUTIVOS</small></div></footer>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -202,8 +201,29 @@ document.getElementById("export-province-brief").addEventListener("click",export
 document.getElementById("export-nodes").addEventListener("click",exportVisibleNodes);
 document.getElementById("export-profiles").addEventListener("click",exportVisibleProfiles);
 
+
+async function loadModules(){
+  const root=document.getElementById("ai-module-grid");
+  const note=document.getElementById("ai-roadmap-note");
+  try{
+    const response=await fetch("./data/ai-modules.json",{cache:"no-store"});
+    if(!response.ok) throw new Error("No se pudo cargar el manifiesto de módulos");
+    const data=await response.json();
+    if(!Array.isArray(data.modules)||data.modules.length!==6) throw new Error("Manifiesto incompleto");
+    root.innerHTML=data.modules.map((module,index)=>{
+      const deps=module.dependencies.map(item=>escapeHtml(item)).join(" · ");
+      return '<article class="ai-item"><div class="module-index">0'+(index+1)+'</div><h3>'+escapeHtml(module.name)+'</h3><p>'+escapeHtml(module.description)+'</p><span class="status">'+escapeHtml(module.statusLabel)+'</span><details style="margin-top:12px"><summary style="cursor:pointer;color:#E2C783;font-size:10px">Estado y próximo paso</summary><p style="margin-top:9px">'+escapeHtml(module.currentCapability)+'</p><p><strong style="color:#E2C783">Próximo paso:</strong> '+escapeHtml(module.nextStep)+'</p><p><strong style="color:#E2C783">Dependencias:</strong> '+deps+'</p></details></article>';
+    }).join("");
+    note.textContent="Hoja de ruta actualizada: "+data.updatedAt+". Estados documentados en data/ai-modules.json.";
+  }catch(error){
+    root.innerHTML='<div class="empty">No se pudo cargar la hoja de ruta. Consultá data/ai-modules.json.</div>';
+    note.textContent="La hoja de ruta no está disponible en este momento.";
+  }
+}
+
 loadPoints();
 loadNews();
 loadProfiles();
+loadModules();
 </script>
 </body></html>
