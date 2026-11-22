@@ -36,6 +36,59 @@ jobs:
           assert "originalText=new WeakMap()" in script, "El cambio de idioma debe preservar los textos originales"
           print("Interfaz bilingüe: sintaxis, selector, persistencia, API y reversibilidad comprobados.")
           PY
+      - name: Test Federal Reports provincial comparison
+        run: |
+          node --check assets/profile-comparison.js
+          node - <<'NODE'
+          const assert = require("node:assert/strict");
+          const { compareProfiles } = require("./assets/profile-comparison.js");
+          const metadata = {
+            period: "2025",
+            unit: "millones de USD FOB",
+            publisher: "INDEC",
+            published: "2026-03-10",
+            sourceUrl: "https://www.indec.gob.ar/uploads/informesdeprensa/opex_03_26929F77A2CA.pdf",
+            verification: {
+              status: "verified",
+              checkedAt: "2026-11-21",
+              scope: "Fixture de prueba; los tres indicadores pertenecen al mismo conjunto OPEX."
+            }
+          };
+          const buenosAires = { province: "Buenos Aires", exportsUsdMillions: 31684, yearOnYearPct: 7.3, nationalSharePct: 36.4 };
+          const cordoba = { province: "Córdoba", exportsUsdMillions: 10913, yearOnYearPct: 6.7, nationalSharePct: 12.5 };
+          const result = compareProfiles(buenosAires, cordoba, metadata);
+          assert.equal(result.period, "2025");
+          assert.equal(result.publisher, "INDEC");
+          assert.equal(result.differences.exportsUsdMillions, 20771);
+          assert.ok(Math.abs(result.differences.yearOnYearPct - 0.6) < 1e-9);
+          assert.ok(Math.abs(result.differences.nationalSharePct - 23.9) < 1e-9);
+          assert.throws(() => compareProfiles(buenosAires, buenosAires, metadata), /diferentes/);
+          assert.throws(() => compareProfiles(buenosAires, cordoba, { ...metadata, verification: { ...metadata.verification, status: "outdated" } }), /verificada/);
+          assert.throws(() => compareProfiles({ ...buenosAires, exportsUsdMillions: NaN }, cordoba, metadata), /no finito/);
+          assert.throws(() => compareProfiles(buenosAires, cordoba, { ...metadata, sourceUrl: "http://example.org/data" }), /HTTPS/);
+          console.log("Federal Reports: comparación homogénea, diferencias y rechazos de seguridad aprobados.");
+          NODE
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          import re
+          import subprocess
+          html = Path("index.html").read_text(encoding="utf-8")
+          helper = Path("assets/profile-comparison.js").read_text(encoding="utf-8")
+          translations = Path("assets/i18n.js").read_text(encoding="utf-8")
+          modules = json.loads(Path("data/ai-modules.json").read_text(encoding="utf-8"))
+          assert 'id="comparison-province-a"' in html and 'id="comparison-province-b"' in html
+          assert './assets/profile-comparison.js' in html
+          assert 'MapaFederalProfileComparison.compareProfiles' in html
+          assert '"Compará dos jurisdicciones":"Compare two jurisdictions"' in translations
+          federal = next(item for item in modules["modules"] if item["id"] == "federal-reports")
+          assert federal["status"] == "pilot"
+          assert "comparar dos jurisdicciones" in federal["currentCapability"]
+          inline_scripts = re.findall(r"<script>(.*?)</script>", html, flags=re.S)
+          assert inline_scripts, "No se encontró el JavaScript de la interfaz"
+          subprocess.run(["node", "--check"], input=inline_scripts[-1], text=True, check=True)
+          print("Interfaz, traducción, estado honesto y sintaxis del JavaScript inline: OK.")
+          PY
       - name: Validate geographic and editorial JSON
         run: |
           python - <<'PY'
