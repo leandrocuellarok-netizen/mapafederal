@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-21",
+  "updatedAt": "2026-11-22",
   "note": "Los estados describen capacidades disponibles en el repositorio, no promesas de desarrollo ni integraciones externas.",
   "modules": [
     {
@@ -66,17 +66,17 @@
       "description": "Descubrimiento y organización de eventos por sector y localización.",
       "status": "planned",
       "statusLabel": "Planificado · requiere fuentes de organizadores",
-      "currentCapability": "No hay agenda integrada de eventos verificados.",
+      "currentCapability": "Existe un contrato JSON versionado y validado en data/events.json, actualmente vacío; no hay agenda integrada ni eventos publicados.",
       "dependencies": [
+        "data/events.json",
         "Fuentes oficiales de organizadores y recintos",
-        "Modelo de eventos y fechas",
         "Reglas para cancelar/actualizar eventos"
       ],
-      "nextStep": "Definir categorías, campos obligatorios y primeras fuentes institucionales.",
+      "nextStep": "Seleccionar fuentes oficiales y autorizadas, definir frecuencia y responsables de revisión antes de cargar eventos.",
       "acceptanceCriteria": [
-        "Fecha, sede, organizador y enlace oficial",
-        "Estado confirmado, reprogramado o cancelado",
-        "Fecha de última comprobación visible"
+        "Cada evento conserva fecha, fuente oficial, período y estado",
+        "Se registra la fecha y el alcance de la verificación",
+        "Los eventos desactualizados no se presentan como próximos"
       ]
     },
     {
