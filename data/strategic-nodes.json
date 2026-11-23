@@ -808,8 +808,7 @@
       -58.79507
     ],
     "note": "Cabecera del Partido de Escobar. Punto de referencia urbano; no representa el límite administrativo del partido.",
-    "source": "https://mapcarta.com/es/19217836",
-    "coordinateSource": "OpenStreetMap, vía Mapcarta; coordenada de referencia."
+    "source": "https://mapcarta.com/es/19217836"
   },
   {
     "name": "Garín — centro de localidad",
@@ -820,8 +819,7 @@
       -58.74076
     ],
     "note": "Localidad del Partido de Escobar. Punto de referencia urbano; no representa el límite administrativo de Garín.",
-    "source": "https://mapcarta.com/es/19213366",
-    "coordinateSource": "OpenStreetMap, vía Mapcarta; coordenada de referencia."
+    "source": "https://mapcarta.com/es/19213366"
   },
   {
     "name": "Parque Industrial Garín",
@@ -833,7 +831,7 @@
     ],
     "note": "Área industrial identificada por el Municipio de Escobar. Coordenada orientativa publicada por el directorio CIPO; verificar ubicación y situación operativa antes de decisiones comerciales.",
     "source": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
-    "coordinateSource": "Directorio CIPO: https://parquesindustriales.com.ar/parque?id=49080"
+    "coordinateSource": "https://parquesindustriales.com.ar/parque?id=49080"
   },
   {
     "name": "Bioparque Temaikèn",
