@@ -139,7 +139,7 @@ jobs:
           python - <<'PY'
           import json
           import math
-          from datetime import date, time
+          from datetime import date, time, timedelta
           from urllib.parse import urlparse
           from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
@@ -314,7 +314,7 @@ jobs:
               }
           }
           validate_news_verification(pending_fixture)
-          for invalid_checked_at in ("2026-11-19", "2026-11-21T00:00:00", "2026-11-23"):
+          for invalid_checked_at in ("2026-11-19", "2026-11-21T00:00:00", (date.today() + timedelta(days=1)).isoformat()):
               invalid_fixture = {
                   **verification_fixture,
                   "verification": {**verification_fixture["verification"], "checkedAt": invalid_checked_at}
@@ -640,7 +640,7 @@ jobs:
               {**sample_opportunity, "scope": "national"},
               {**sample_opportunity, "scope": "provincial", "jurisdiction": None},
               {**sample_opportunity, "scope": "municipal"},
-              {**sample_opportunity, "sourcePublishedAt": "2026-11-23"},
+              {**sample_opportunity, "sourcePublishedAt": (date.today() + timedelta(days=1)).isoformat()},
               {**sample_opportunity, "period": None},
               {**sample_opportunity, "period": ""},
               {**sample_opportunity, "verification": {**sample_opportunity["verification"], "checkedAt": "2026-11-19"}},
