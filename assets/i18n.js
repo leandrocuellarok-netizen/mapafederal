@@ -2,6 +2,18 @@
 (function(){
 "use strict";
 const translations={en:{
+"referencias cartográficas ·":"mapped references ·",
+"de 7 localidades con puntos propios. El catálogo actual se concentra en":"of 7 localities with their own mapped points. The current catalogue is concentrated in",
+"Belén de Escobar y Garín":"Belén de Escobar and Garín",
+"; no se inventan coordenadas para las restantes.":"; coordinates are not invented for the remaining localities.",
+"Barrios:":"Neighborhoods:",
+"Economía:":"Economy:",
+"Servicios:":"Services:",
+"Control de consistencia:":"Consistency check:",
+"Publicación:":"Publication:",
+"Estado:":"Status:",
+"Período:":"Period:",
+"Alcance:":"Scope:",
 "Escobar · Perfil local":"Escobar · Local profile",
 "El partido, visto desde sus siete localidades.":"The district, seen through its seven localities.",
 "Información territorial, económica y de servicios con fuente, período y alcance de verificación. Los datos no representan un censo en tiempo real ni una delimitación catastral.":"Territorial, economic and service information with sources, periods and verification scope. These data are not a live census or a cadastral boundary map.",
@@ -62,7 +74,6 @@ const translations={en:{
 "referencias cartográficas":"mapped references",
 "de 7 localidades con puntos propios.":"of 7 localities with their own mapped points.",
 "El catálogo actual se concentra en":"The current catalogue is concentrated in",
-"y":"and",
 "Ver en mapa ↗":"View on map ↗",
 "No hay referencias cartográficas locales cargadas.":"No local map references are loaded.",
 "Las páginas municipales consultadas no indican fecha de publicación; se registra fecha de consulta y alcance. La verificación fue web, no presencial. Horarios, recorridos y prestaciones pueden cambiar.":"The municipal pages consulted do not state publication dates; the consultation date and scope are recorded. Verification was online, not in person. Hours, routes and services may change.",

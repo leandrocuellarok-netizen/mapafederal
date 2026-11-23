@@ -1156,8 +1156,8 @@ jobs:
               "https://leandrocuellarok-netizen.github.io/mapafederal/investment-finder/",
           ]
           assert urls == expected_urls
-          assert '<svg' in logo and 'silueta de Argentina' in logo
-          print("SEO/GEO: metadatos, Schema.org, FAQ retirada, robots, sitemap de cuatro páginas y emblema validados.")
+          assert '<svg' in logo and 'aria-label="Mapa Federal"' in logo and '#07502B' in logo and '#A65A18' in logo
+          print("SEO/GEO: metadatos, Schema.org, FAQ retirada, robots, sitemap de cuatro páginas y nuevo emblema argentino validados.")
           PY
 
   deploy:
