@@ -850,7 +850,7 @@ jobs:
           const vm = require("vm");
           const html = fs.readFileSync("index.html", "utf8");
           const catalog = JSON.parse(fs.readFileSync("data/investment-opportunities.json", "utf8"));
-          for (const id of ["investment-search", "investment-sector", "investment-scope", "investment-jurisdiction", "investment-stage", "investment-status", "investment-count", "investment-grid"]) {
+          for (const id of ["investment-search", "investment-sector", "investment-scope", "investment-jurisdiction", "investment-stage", "investment-status", "investment-verification", "investment-count", "investment-grid"]) {
             if (!html.includes('id="' + id + '"')) throw new Error("Falta el control de Investment Finder: " + id);
           }
           if (!html.includes("registros documentados")) throw new Error("Falta la etiqueta traducible del contador.");
@@ -861,13 +861,21 @@ jobs:
           const filter = vm.runInNewContext("(" + html.slice(start, end) + ")", { normalizeText });
           const record = catalog.opportunities[0];
           if (!record || record.opportunityStatus !== "unknown") throw new Error("El registro documental RIMI debe conservar disponibilidad desconocida.");
-          const base = { query: "eficiencia energética", sector: "all", scope: "national", jurisdiction: "Nacional", status: "unknown" };
+          const base = { query: "eficiencia energética", sector: "all", scope: "national", jurisdiction: "Nacional", status: "unknown", verification: "all" };
           const kit40Record = catalog.opportunities.find(item => item.id === "programa-kit-4-0-2026");
           if (!kit40Record || kit40Record.opportunityStatus !== "unknown" || kit40Record.verification?.status !== "verified") throw new Error("KIT 4.0 debe conservar fuente verificada y disponibilidad no confirmada.");
           if (filter(catalog.opportunities, { ...base, query: "kit 4.0" }).length !== 1) throw new Error("La búsqueda no encuentra KIT 4.0.");
           if (filter(catalog.opportunities, { ...base, query: "kit 4.0", status: "open" }).length !== 0) throw new Error("KIT 4.0 no debe aparecer como disponibilidad confirmada.");
           if (!kit40Record.description.includes("no como pago directo a la PyME")) throw new Error("La ficha debe aclarar que el beneficio se acredita al proveedor.");
           if (filter(catalog.opportunities, base).length !== 1) throw new Error("No se encontró el registro nacional mediante búsqueda y filtros combinados.");
+          if (filter(catalog.opportunities, { ...base, verification: "verified" }).length !== 1) throw new Error("El filtro debe encontrar una fuente verificada aunque la disponibilidad sea desconocida.");
+          if (filter(catalog.opportunities, { ...base, verification: "outdated" }).length !== 0) throw new Error("Una fuente verificada no debe aparecer como desactualizada.");
+          const verificationFixtures = [
+            { ...record, id: "fixture-fuente-verificada", verification: { ...record.verification, status: "verified" } },
+            { ...record, id: "fixture-fuente-desactualizada", verification: { ...record.verification, status: "outdated" } }
+          ];
+          if (filter(verificationFixtures, { ...base, verification: "verified" }).length !== 1) throw new Error("El filtro no separa las fuentes verificadas.");
+          if (filter(verificationFixtures, { ...base, verification: "outdated" }).length !== 1) throw new Error("El filtro no separa las verificaciones desactualizadas.");
           if (filter(catalog.opportunities, { ...base, status: "open" }).length !== 0) throw new Error("El registro RIMI no debe aparecer como oportunidad abierta.");
           if (filter(catalog.opportunities, { ...base, stage: "unknown" }).length !== 1) throw new Error("El filtro por etapa no encuentra el registro RIMI.");
           if (filter(catalog.opportunities, { ...base, stage: "announced" }).length !== 0) throw new Error("El filtro por etapa mezcló registros de distintas etapas.");
