@@ -774,5 +774,29 @@
     "note": "Depósito de plata, plomo y oro ubicado aproximadamente 40 km al oeste de Gastre. SEGEMAR registra el depósito en etapa de factibilidad; Pan American Silver informa que permanece en cuidado y mantenimiento. El punto representa la localización del depósito, no una mina en operación ni una autorización de explotación.",
     "source": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp24342.html",
     "coordinateSource": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp24342.html"
+  },
+  {
+    "name": "Cerro Moro — distrito epitermal Au-Ag",
+    "province": "Santa Cruz",
+    "type": "Recurso mineral",
+    "coords": [
+      -48.115,
+      -66.65805
+    ],
+    "note": "Depósito epitermal de baja sulfuración, con mineralización vetiforme de oro y plata, dentro del Macizo del Deseado. Pan American Silver informa operación productiva; SEGEMAR registra estado de producción. Recursos al 30/06/2026: 4,6 Moz de plata medidos e indicados y 3,5 Moz inferidos; además, recursos de oro. No confundir recursos con reservas ni con superficie total del distrito.",
+    "source": "https://panamericansilver.com/operations/silver-segment/cerro-moro/",
+    "coordinateSource": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp559.html"
+  },
+  {
+    "name": "Manantial Espejo — distrito epitermal Au-Ag",
+    "province": "Santa Cruz",
+    "type": "Recurso mineral",
+    "coords": [
+      -48.79944,
+      -69.49055
+    ],
+    "note": "Depósito epitermal de baja sulfuración de oro y plata, en el Macizo del Deseado. Pan American Silver informa que la extracción y el procesamiento finalizaron a fines de 2022 y que la operación está en cuidado y mantenimiento, con plan de cierre en marcha. Recursos al 30/06/2026: 6,6 Moz de plata medidos e indicados y 1,8 Moz inferidos; las reservas históricas publicadas por la compañía tienen fecha 30/06/2022 y no deben presentarse como reservas actuales.",
+    "source": "https://panamericansilver.com/es/operations/silver-segment/manantial-espejo/",
+    "coordinateSource": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp585.html"
   }
 ]
