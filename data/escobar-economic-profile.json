@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-23",
+  "jurisdiction": "Partido de Escobar",
+  "province": "Buenos Aires",
+  "country": "Argentina",
+  "scope": "Perfil económico distrital y nodos industriales documentados; no constituye un censo actualizado ni un inventario exhaustivo de empresas.",
+  "indicators": {
+    "referenceYear": 2024,
+    "industrialEstablishments": {
+      "value": 516,
+      "unit": "establecimientos",
+      "comparison": {
+        "year": 2016,
+        "value": 370
+      },
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/"
+    },
+    "commercialEstablishments": {
+      "value": 7356,
+      "unit": "establecimientos",
+      "comparison": {
+        "year": 2016,
+        "value": 5499
+      },
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/"
+    },
+    "industrialRegisterGrowth": {
+      "value": 39.4,
+      "unit": "porcentaje",
+      "period": "2016-2024",
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/"
+    },
+    "commercialRegisterGrowth": {
+      "value": 33.7,
+      "unit": "porcentaje",
+      "period": "2016-2024",
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/"
+    }
+  },
+  "industrialAreas": [
+    {
+      "id": "parque-industrial-garin",
+      "name": "Parque Industrial Garín",
+      "locality": "Garín",
+      "status": "documented",
+      "description": "Área industrial consolidada del distrito; el Municipio la describe como polo de empresas, inversión y empleo.",
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-23",
+        "scope": "Identificación y caracterización general en página institucional municipal; no se registran parcelas, coordenadas ni disponibilidad de naves."
+      }
+    },
+    {
+      "id": "parque-industrial-loma-verde",
+      "name": "Parque Industrial de Loma Verde",
+      "locality": "Loma Verde",
+      "status": "documented",
+      "description": "Área industrial en expansión; el Municipio informa ampliación de zonificación en 2024 para radicación de empresas de categoría 2.",
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-23",
+        "scope": "Identificación y caracterización general en página institucional municipal; no se registran parcelas, coordenadas ni disponibilidad de naves."
+      }
+    }
+  ],
+  "sectors": [
+    "Productos metalúrgicos",
+    "Maquinaria y equipo",
+    "Autopartes",
+    "Logística",
+    "Plástico",
+    "Consumo masivo",
+    "Alimentos",
+    "Tecnología",
+    "Biotecnología"
+  ],
+  "companyCases": [
+    {
+      "name": "Danone Specialized Nutrition",
+      "locality": "Garín",
+      "status": "operating_site_reported",
+      "evidenceDate": "2026-08-05",
+      "description": "El Municipio informó una visita institucional a la planta ubicada en el parque industrial de Garín.",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/el-municipio-y-la-provincia-destacaron-el-desarrollo-de-escobar-en-una/"
+    },
+    {
+      "name": "Grupo Addnice",
+      "locality": "Garín",
+      "status": "announced_project",
+      "evidenceDate": "2026-11-04",
+      "description": "Proyecto anunciado para trasladar su planta a Garín durante 2027; no registrar como planta ya operativa.",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/garin-sumara-una-nueva-planta-industrial-y-fortalecera-su-perfil-produ/"
+    }
+  ],
+  "sourcePublisher": "Municipalidad de Escobar",
+  "sourcePublishedAt": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-23",
+    "scope": "Se contrastaron las cifras del perfil económico municipal, las dos áreas industriales y los casos empresariales con publicaciones institucionales enlazadas. Las cifras corresponden al año de referencia 2024; los casos empresariales conservan su estado y fecha documental."
+  }
+}
