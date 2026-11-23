@@ -306,7 +306,7 @@ jobs:
               assert profile_url.scheme == "https" and profile_url.netloc, f"Ficha provincial no HTTPS: {profile['province']}"
           assert profile_names == expected_jurisdictions, f"Los perfiles no cubren exactamente las 24 jurisdicciones: {sorted(expected_jurisdictions - profile_names)}"
 
-          categories = {"Economía", "Empresas", "Comercio", "Infraestructura", "Regulación", "Tecnología"}
+          categories = {"Economía", "Empresas", "Comercio", "Infraestructura", "Regulación", "Tecnología", "Minería"}
 
           def canonical_news_url(raw_url):
               parsed = urlparse(raw_url)
