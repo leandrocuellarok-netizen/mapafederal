@@ -1068,7 +1068,7 @@ jobs:
           grep -q 'href="./radar-ia/"' index.html
           grep -q 'href="./investment-finder/"' index.html
           grep -q 'id="homepage-scope"' index.html
-          grep -q '.poi,.news,.investment{display:none!important}' index.html
+          grep -q '.poi,.news,.investment{display:block!important;padding:30px 0}' index.html
           ! grep -q 'Seis módulos, estados transparentes.' index.html
           ! grep -q 'id="ai-module-grid"' index.html
           grep -q 'docs/intelligence-modules-roadmap.md' README.md
