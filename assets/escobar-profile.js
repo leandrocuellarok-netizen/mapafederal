@@ -30,7 +30,9 @@ function renderProfile(territory,economy){
  const directory=economy.companyDirectory;
  const directoryHtml=directory?'<div class="escobar-item"><span class="escobar-status">'+escapeHtml(statusLabel(directory.status))+'</span><h4>'+escapeHtml(directory.name)+'</h4><p>'+escapeHtml(directory.description)+'</p><p class="escobar-meta">Publicación: '+escapeHtml(date(directory.sourcePublishedAt))+' · Vigencia: '+escapeHtml(directory.validityPeriod||"No indicada")+' · Verificación: '+escapeHtml(date(directory.verification&&directory.verification.checkedAt))+'</p>'+sourceLink(directory.sourceUrl,"Consultar listado ↗")+'</div>':"";
  el("escobar-economy").innerHTML='<div class="escobar-item"><h4>Indicadores municipales '+escapeHtml(year)+'</h4><p>'+escapeHtml(number(industry.value||0))+' establecimientos industriales y '+escapeHtml(number(commerce.value||0))+' comerciales.</p><p class="escobar-meta">Comparación industrial: '+escapeHtml(number(industry.comparison&&industry.comparison.value||0))+' en '+escapeHtml(industry.comparison&&industry.comparison.year||"")+' y '+escapeHtml(number(industry.previousYearComparison&&industry.previousYearComparison.value||0))+' en '+escapeHtml(industry.previousYearComparison&&industry.previousYearComparison.year||"")+'. Comparación comercial: '+escapeHtml(number(commerce.comparison&&commerce.comparison.value||0))+' y '+escapeHtml(number(commerce.previousYearComparison&&commerce.previousYearComparison.value||0))+'.</p><p class="escobar-meta">La fuente no informa fecha exacta de corte ni metodología del padrón.</p>'+sourceLink(industry.sourceUrl,"Indicadores municipales ↗")+'</div><h4>Parques industriales</h4>'+parks+'<h4>Proyecto logístico</h4>'+projects+'<h4>Casos y directorios empresariales</h4>'+cases+directoryHtml;
- const services=(territory.serviceDirectories||[]).map(item=>{
+ const health=territory.healthFacilitiesDirectory;
+ const healthIds=new Set((health&&Array.isArray(health.facilities)?health.facilities:[]).map(item=>item.id));
+ const services=(territory.serviceDirectories||[]).filter(item=>!healthIds.has(item.id)).map(item=>{
   const details=[item.address?("Ubicación: "+item.address):"",item.serviceHours?("Horario: "+item.serviceHours):"",item.phone?("Teléfono: "+item.phone):""].filter(Boolean).join(" · ");
   const links=(item.mapUrl?sourceLink(item.mapUrl,"Cómo llegar ↗"):"")+(item.sourceUrl?sourceLink(item.sourceUrl,"Consultar directorio ↗"):"");
   return '<div class="escobar-item"><span class="escobar-status">'+escapeHtml(statusLabel(item.status))+'</span><h4>'+escapeHtml(item.name)+'</h4><p>'+escapeHtml(item.summary)+'</p>'
@@ -38,7 +40,6 @@ function renderProfile(territory,economy){
    +'<p class="escobar-meta">Publicación: '+escapeHtml(date(item.sourcePublishedAt))+' · Vigencia: '+escapeHtml(item.validityPeriod||"No indicada")+' · Verificación: '+escapeHtml(date(item.verification&&item.verification.checkedAt))+'</p><p class="escobar-meta">Alcance: '+escapeHtml(item.verification&&item.verification.scope||"No informado")+'</p>'
    +(links?'<p>'+links+'</p>':"")+'</div>';
  }).join("");
- const health=territory.healthFacilitiesDirectory;
  const facilities=(health&&Array.isArray(health.facilities)?health.facilities:[]).map(item=>{
   const place=item.locality+(item.neighborhood?" · B° "+item.neighborhood:"");
   const servicesList=Array.isArray(item.services)?item.services.join(" · "):"";
