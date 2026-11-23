@@ -1,6 +1,31 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-22",
-  "note": "Catálogo inicial vacío. No hay eventos cargados ni una agenda integrada; cada registro futuro deberá contar con fuente del organizador y verificación fechada.",
-  "events": []
+  "updatedAt": "2026-11-23",
+  "note": "Catálogo documental de eventos con procedencia y verificación. No es una agenda integrada ni confirma eventos futuros. Los registros históricos se conservan como completados.",
+  "events": [
+    {
+      "id": "feria-japonesa-bazaa-5-edicion-2026",
+      "name": "5.ª edición de la Feria Japonesa Bazaa",
+      "startDate": "2026-11-15",
+      "endDate": null,
+      "time": "12:00",
+      "timeZone": "America/Argentina/Buenos_Aires",
+      "scope": "local",
+      "jurisdiction": "Buenos Aires",
+      "venue": "Polo de Educación Superior de Escobar, Sucre y Obligado, Ingeniero Maschwitz, Partido de Escobar, Buenos Aires, Argentina",
+      "organizer": "Municipalidad de Escobar",
+      "sector": "Cultura / comunidad japonesa / emprendimientos",
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/este-domingo-llega-a-escobar-la-5-edicion-de-la-feria-japonesa/",
+      "sourcePublishedAt": "2026-11-16",
+      "period": "Edición única del 15 de noviembre de 2026; horario anunciado de 12:00 a 20:00 (hora de Argentina).",
+      "status": "completed",
+      "description": "Jornada cultural con puestos de comida japonesa, productos artesanales, plantas, regalos y artículos comestibles; incluyó espectáculos de danza, música y expresiones artísticas vinculadas a la cultura japonesa. El horario de cierre de las 20:00 se conserva en el período descriptivo porque el esquema del catálogo registra una única hora de inicio.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-23",
+        "scope": "Se verificaron en la publicación municipal la fecha del evento, sede, horario, carácter gratuito y contenidos anunciados. La fuente fue publicada el 16/11/2026, un día después del evento; el estado completed es histórico y no implica disponibilidad actual."
+      }
+    }
+  ]
 }
