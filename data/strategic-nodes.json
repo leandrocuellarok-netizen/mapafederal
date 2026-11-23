@@ -920,5 +920,109 @@
       "checkedAt": "2026-11-23",
       "scope": "El directorio oficial de Munchi’s identifica una sucursal denominada Temaikèn en Av. Sarmiento. La coordenada proviene de Near-place; no se verificó presencialmente el local, su horario ni su actividad en el momento de consulta."
     }
+  },
+  {
+    "name": "Centro de Ingeniero Maschwitz — referencia urbana",
+    "province": "Buenos Aires",
+    "type": "Ciudad",
+    "coords": [
+      -34.38913,
+      -58.7379
+    ],
+    "note": "Punto de referencia del centro urbano según ficha cartográfica. No representa el límite administrativo de la localidad ni del partido.",
+    "source": "https://www.escobar.gob.ar/identidad-memoria-y-futuro-con-la-firma-de-una-ordenanza-historica-escobar-reconocio-oficialmente-sus-246-barrios/",
+    "district": "Partido de Escobar",
+    "locality": "Ingeniero Maschwitz",
+    "sourceName": "Municipalidad de Escobar",
+    "sourcePublishedAt": "2026-09-25",
+    "sourcePublicationNote": "Publicación municipal del 2026-09-25 sobre el reconocimiento oficial de las siete localidades y los 246 barrios; no aporta coordenadas.",
+    "coordinateSource": "https://mapcarta.com/fr/19212600",
+    "coordinateSourceName": "Mapcarta (cartografía basada en OpenStreetMap y fuentes asociadas)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La ficha cartográfica no informa fecha de publicación; consultada el 2026-11-23. La coordenada es una referencia puntual, no un límite administrativo.",
+    "validityPeriod": "La condición de localidad se documenta en la publicación municipal del 2026-09-25; el punto cartográfico fue consultado el 2026-11-23 y no delimita el área.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-23",
+      "scope": "La Municipalidad reconoce Ingeniero Maschwitz entre las siete localidades. Se contrastó el punto con la ficha Mapcarta basada en OpenStreetMap; referencia de centro urbano, no polígono ni límite. Verificación web, no presencial."
+    }
+  },
+  {
+    "name": "Centro de Loma Verde — referencia urbana",
+    "province": "Buenos Aires",
+    "type": "Ciudad",
+    "coords": [
+      -34.33058,
+      -58.84454
+    ],
+    "note": "Punto de referencia del centro urbano según ficha cartográfica. No representa el límite administrativo de la localidad ni del partido.",
+    "source": "https://www.escobar.gob.ar/identidad-memoria-y-futuro-con-la-firma-de-una-ordenanza-historica-escobar-reconocio-oficialmente-sus-246-barrios/",
+    "district": "Partido de Escobar",
+    "locality": "Loma Verde",
+    "sourceName": "Municipalidad de Escobar",
+    "sourcePublishedAt": "2026-09-25",
+    "sourcePublicationNote": "Publicación municipal del 2026-09-25 sobre el reconocimiento oficial de las siete localidades y los 246 barrios; no aporta coordenadas.",
+    "coordinateSource": "https://mapcarta.com/es/37672468",
+    "coordinateSourceName": "Mapcarta (cartografía basada en OpenStreetMap y fuentes asociadas)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La ficha cartográfica no informa fecha de publicación; consultada el 2026-11-23. La coordenada es una referencia puntual, no un límite administrativo.",
+    "validityPeriod": "La condición de localidad se documenta en la publicación municipal del 2026-09-25; el punto cartográfico fue consultado el 2026-11-23 y no delimita el área.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-23",
+      "scope": "La Municipalidad reconoce Loma Verde entre las siete localidades. Se contrastó el punto con la ficha Mapcarta basada en OpenStreetMap; referencia de centro urbano, no polígono ni límite. Verificación web, no presencial."
+    }
+  },
+  {
+    "name": "Centro de Matheu — referencia urbana",
+    "province": "Buenos Aires",
+    "type": "Ciudad",
+    "coords": [
+      -34.38182,
+      -58.82509
+    ],
+    "note": "Punto de referencia del centro urbano según ficha cartográfica. No representa el límite administrativo de la localidad ni del partido.",
+    "source": "https://www.escobar.gob.ar/identidad-memoria-y-futuro-con-la-firma-de-una-ordenanza-historica-escobar-reconocio-oficialmente-sus-246-barrios/",
+    "district": "Partido de Escobar",
+    "locality": "Matheu",
+    "sourceName": "Municipalidad de Escobar",
+    "sourcePublishedAt": "2026-09-25",
+    "sourcePublicationNote": "Publicación municipal del 2026-09-25 sobre el reconocimiento oficial de las siete localidades y los 246 barrios; no aporta coordenadas.",
+    "coordinateSource": "https://mapcarta.com/19207242",
+    "coordinateSourceName": "Mapcarta (cartografía basada en OpenStreetMap y fuentes asociadas)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La ficha cartográfica no informa fecha de publicación; consultada el 2026-11-23. La coordenada es una referencia puntual, no un límite administrativo.",
+    "validityPeriod": "La condición de localidad se documenta en la publicación municipal del 2026-09-25; el punto cartográfico fue consultado el 2026-11-23 y no delimita el área.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-23",
+      "scope": "La Municipalidad reconoce Matheu entre las siete localidades. Se contrastó el punto con la ficha Mapcarta basada en OpenStreetMap; referencia de centro urbano, no polígono ni límite. Verificación web, no presencial."
+    }
+  },
+  {
+    "name": "Maquinista Savio — referencia sector este",
+    "province": "Buenos Aires",
+    "type": "Ciudad",
+    "coords": [
+      -34.40066,
+      -58.77637
+    ],
+    "note": "Punto cartográfico del sector este de Maquinista Savio, identificado en la ficha como «Maquinista F. Savio Este». No es el centro urbano ni representa el límite administrativo de la localidad o del partido.",
+    "source": "https://www.escobar.gob.ar/identidad-memoria-y-futuro-con-la-firma-de-una-ordenanza-historica-escobar-reconocio-oficialmente-sus-246-barrios/",
+    "district": "Partido de Escobar",
+    "locality": "Maquinista Savio",
+    "sourceName": "Municipalidad de Escobar",
+    "sourcePublishedAt": "2026-09-25",
+    "sourcePublicationNote": "Publicación municipal del 2026-09-25 sobre el reconocimiento oficial de las siete localidades y los 246 barrios; no aporta coordenadas.",
+    "coordinateSource": "https://mapcarta.com/es/37672478",
+    "coordinateSourceName": "Mapcarta (cartografía basada en OpenStreetMap y fuentes asociadas)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La ficha cartográfica no informa fecha de publicación; consultada el 2026-11-23. La coordenada es una referencia puntual, no un límite administrativo.",
+    "validityPeriod": "La condición de localidad se documenta en la publicación municipal del 2026-09-25; el punto cartográfico fue consultado el 2026-11-23 y no delimita el área.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-23",
+      "scope": "La Municipalidad reconoce Maquinista Savio entre las siete localidades. La ficha cartográfica identifica este punto como Maquinista F. Savio Este, dentro del Partido de Escobar; se registra únicamente como referencia del sector este, no como centro ni límite. Verificación web, no presencial."
+    }
   }
 ]
