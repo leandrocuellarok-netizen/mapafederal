@@ -148,6 +148,22 @@ jobs:
           assert "poiPage=1;renderPOI()" in html, "Los filtros deben reiniciar la paginación"
           print("Directorio de nodos: paginación, límite de 20 registros, navegación y reinicio por filtros comprobados.")
           PY
+      - name: Validate Mapa Federal Argentina logo
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          logo = Path("assets/mapa-federal.svg")
+          root = ET.parse(logo).getroot()
+          ns = {"svg": "http://www.w3.org/2000/svg"}
+          assert root.attrib.get("viewBox") == "0 0 500 500"
+          assert root.find(".//svg:clipPath[@id='argentina']", ns) is not None, "Falta la silueta continental argentina"
+          assert root.find(".//svg:path[@d]", ns) is not None
+          html = Path("index.html").read_text(encoding="utf-8")
+          assert html.count("./assets/mapa-federal.svg") >= 2, "El logo debe aparecer en navegación y portada"
+          assert "Silueta de Argentina con los colores celeste y blanco" in html
+          print("Logo SVG válido: silueta argentina, bandera, navegación y portada enlazadas.")
+          PY
       - name: Validate geographic and editorial JSON
         run: |
           python - <<'PY'
