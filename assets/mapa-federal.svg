@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-labelledby="title desc">
 <title id="title">Mapa Federal — Argentina</title>
-<desc id="desc">Una silueta reconocible de Argentina continental y Tierra del Fuego, con los colores celeste y blanco de la bandera sobre fondo verde profundo.</desc>
+<desc id="desc">Una silueta de Argentina continental y Tierra del Fuego, con los colores celeste y blanco de la bandera sobre fondo verde profundo.</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#123F30"/><stop offset="1" stop-color="#061F18"/></linearGradient>
   <clipPath id="argentina">
