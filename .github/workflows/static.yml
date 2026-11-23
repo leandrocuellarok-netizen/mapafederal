@@ -258,6 +258,23 @@ jobs:
           assert territory["status"] == "operativo" and territory["validityPeriod"]
           assert territory["verification"]["checkedAt"] == "2026-11-23"
           assert len(territory["serviceDirectories"]) == 4
+          health = territory["healthFacilitiesDirectory"]
+          assert health["status"] == "operativo"
+          assert health["sourceUrl"] == "https://www.escobar.gob.ar/municipio/guardias/"
+          assert health["sourcePublishedAt"] is None
+          assert health["verification"]["checkedAt"] == "2026-11-23"
+          assert "no se realizó comprobación presencial" in health["verification"]["scope"]
+          assert len(health["facilities"]) == 11
+          assert {item["locality"] for item in health["facilities"]} == {"Belén de Escobar", "Garín", "Ingeniero Maschwitz", "Maquinista Savio", "Matheu", "Loma Verde"}
+          selles = next(item for item in health["facilities"] if item["id"] == "caps-juan-carlos-selles")
+          assert selles["locality"] == "Garín" and selles["neighborhood"] == "24 de Febrero"
+          lopez = next(item for item in health["facilities"] if item["id"] == "hospital-horacio-lopez")
+          assert lopez["address"] is None and "156" in lopez["addressNote"] and "240" in lopez["addressNote"]
+          susana = next(item for item in health["facilities"] if item["id"] == "udp-susana-lara")
+          assert "16:30" in susana["serviceNote"] and "17 h" in susana["serviceHours"]
+          for url in [health["sourceUrl"], health["additionalDirectoryUrl"]] + [item.get("addressSourceUrl") for item in health["facilities"] if item.get("addressSourceUrl")] + [item.get("serviceNoteSourceUrl") for item in health["facilities"] if item.get("serviceNoteSourceUrl")]:
+              parsed = urlparse(url)
+              assert parsed.scheme == "https" and parsed.netloc
           allowed = {"operativo", "anunciado", "histórico", "pendiente", "no verificado"}
           for item in territory["serviceDirectories"]:
               parsed = urlparse(item["sourceUrl"])
@@ -279,6 +296,9 @@ jobs:
           profile_js = Path("assets/escobar-profile.js").read_text(encoding="utf-8")
           assert 'sourceLink(item.mapUrl,"Cómo llegar ↗")' in profile_js
           assert "item.serviceHours" in profile_js
+          assert "territory.healthFacilitiesDirectory" in profile_js
+          assert "escobar-health-facility" in profile_js
+          assert "health.localityCoverageNote" in profile_js
           indicators = economy["indicators"]
           assert indicators["referenceYear"] == 2026
           assert indicators["industrialEstablishments"]["value"] == 382
