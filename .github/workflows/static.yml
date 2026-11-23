@@ -821,6 +821,24 @@ jobs:
           print("Investment Finder: manifiesto, documentación, trazabilidad y disponibilidad no confirmada alineados.")
           PY
 
+      - name: Validate Investment Finder period contract documentation
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          roadmap = Path("docs/intelligence-modules-roadmap.md").read_text(encoding="utf-8")
+          readme = Path("README.md").read_text(encoding="utf-8")
+          required = "No consignado en la fuente"
+
+          assert "período explícito no vacío" in roadmap, "La hoja de ruta debe exigir un período explícito."
+          assert required in roadmap, "La hoja de ruta debe documentar el valor para períodos no publicados."
+          assert "no usar `null`, cadenas vacías ni inferirlo" in roadmap, "La hoja de ruta no debe permitir períodos nulos o inferidos."
+          assert "período (o `null`)" not in roadmap, "La documentación conserva el contrato anterior incompatible."
+          assert required in readme, "README y hoja de ruta deben compartir el mismo valor explícito."
+
+          print("Investment Finder: período explícito y documentación alineada con el contrato de datos.")
+          PY
+
       - name: Test CSV formula-injection protection
         run: |
           node - <<'JS'
