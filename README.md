@@ -110,6 +110,7 @@ Editar `data/news.json` y agregar un objeto:
 
 ```json
 {
+  "id": "news-dominio-oficial-o-medio-example-noticia",
   "title": "Titular fiel a la fuente",
   "date": "2026-11-20",
   "period": "No consignado en el registro editorial",
@@ -134,6 +135,7 @@ Editar `data/news.json` y agregar un objeto:
 Categorías admitidas: Economía, Empresas, Comercio, Infraestructura, Regulación y Tecnología.
 
 Metadatos obligatorios:
+- `id`: identificador interno determinista: `news-` + host, ruta y consulta de la URL canónica, en minúsculas y con cada secuencia no alfanumérica reemplazada por un guion. Se eliminan el fragmento y el puerto HTTPS predeterminado. No es un ID asignado por la fuente; si cambia la URL, recalcularlo. CI valida que coincida con la URL y que sea único.
 - `period`: período estadístico o temporal explícito de la fuente (por ejemplo, `2026-10`). Si no se consignó un período independiente de la fecha de publicación, usar el texto exacto `No consignado en el registro editorial`; no inferir períodos. El validador rechaza `null`, campos ausentes o cadenas vacías para las noticias.
 - `jurisdictions`: lista de provincias o CABA identificadas explícitamente en la fuente enlazada. Usar los nombres normalizados del catálogo territorial; si no hay una jurisdicción provincial inequívoca, usar `[]`.
 - `geographyStatus`: `explicit` cuando `jurisdictions` y `geographyEvidence` contienen referencias explícitas; `not_specified` cuando ambas listas están vacías. La clasificación es editorial: no mide impacto ni cobertura total.
