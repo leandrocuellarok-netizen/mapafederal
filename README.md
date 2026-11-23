@@ -204,6 +204,16 @@ Las funciones comprobables actuales son el mapa, el directorio de nodos, los per
 
 Fuentes primarias: [Municipalidad de Escobar — reconocimiento oficial de los 246 barrios](https://www.escobar.gob.ar/identidad-memoria-y-futuro-con-la-firma-de-una-ordenanza-historica-escobar-reconocio-oficialmente-sus-246-barrios/) · [Escobar 360° — Presupuesto Participativo 2026](https://escobar360.escobar.gob.ar/servicio.aspx?ser_id=3032).
 
+## Perfil económico de Escobar
+
+`data/escobar-economic-profile.json` reúne un perfil económico distrital con indicadores de referencia 2024 publicados por la Municipalidad: 516 establecimientos industriales y 7.356 comerciales. El Municipio informa variaciones del padrón de +39,4% y +33,7%, respectivamente, respecto de 2016. Estos valores se presentan como cifras institucionales de referencia, no como un relevamiento actualizado a 2026.
+
+El archivo identifica el Parque Industrial Garín y el Parque Industrial de Loma Verde, y documenta sectores productivos mencionados por el Municipio. Incluye dos casos empresariales con distinto estado: Danone Specialized Nutrition, cuya planta en Garín fue visitada por autoridades en agosto de 2026, y Grupo Addnice, cuyo traslado de planta a Garín fue anunciado como proyecto para 2027. Un anuncio no equivale a una instalación ya operativa.
+
+No se publican coordenadas ni parcelas industriales porque las fuentes utilizadas no permiten validar esos datos con precisión. Tampoco se infiere disponibilidad de terrenos, naves, beneficios fiscales o vacantes laborales.
+
+Fuentes primarias: [Municipalidad de Escobar — Escobar, tierra de inversiones](https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/) · [Recorrida por el Parque Industrial de Garín, 05/08/2026](https://www.escobar.gob.ar/noticias/el-municipio-y-la-provincia-destacaron-el-desarrollo-de-escobar-en-una/) · [Proyecto industrial anunciado para Garín, 04/11/2026](https://www.escobar.gob.ar/noticias/garin-sumara-una-nueva-planta-industrial-y-fortalecera-su-perfil-produ/).
+
 ## Arquitectura
 
 - `index.html`: interfaz y lógica cliente.
