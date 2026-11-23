@@ -88,6 +88,8 @@ footer{background:#061b14;color:#d9e2db;padding:30px 0}.foot{display:flex;justif
     <label for="comparison-province-a">Primera jurisdicción<select id="comparison-province-a"><option value="">Seleccioná una jurisdicción</option></select></label>
     <label for="comparison-province-b">Segunda jurisdicción<select id="comparison-province-b"><option value="">Seleccioná una jurisdicción</option></select></label>
     <button type="button" id="compare-provinces" class="export-btn" disabled>Comparar jurisdicciones</button>
+    <button type="button" id="export-profile-comparison" class="export-btn" disabled>Exportar comparación CSV</button>
+    <span id="profile-comparison-export-status" class="micro" role="status" aria-live="polite"></span>
   </div>
   <div class="profile-comparison-result" id="profile-comparison-result" role="status" aria-live="polite">Seleccioná dos jurisdicciones para comparar el mismo período estadístico.</div>
 </div><div class="profiles-grid" id="profile-grid" aria-live="polite" aria-busy="false"><div class="empty">Cargando perfiles económicos provinciales…</div></div><p class="editorial-note">Exportaciones de bienes en millones de USD FOB, año 2025; variación frente a 2024 y participación en el total nacional. Las fichas ministeriales 2025 reúnen indicadores con distintos años de referencia: consultá el período de cada indicador antes de compararlo. Las exportaciones no equivalen al PBG ni al tamaño total de la economía provincial.</p></div></section>
@@ -99,7 +101,7 @@ footer{background:#061b14;color:#d9e2db;padding:30px 0}.foot{display:flex;justif
 <script src="./assets/i18n.js" defer></script>
 <script src="./assets/profile-comparison.js"></script>
 <script>
-let points=[];
+let points=[];let lastProfileComparison=null;
 const colors={"Ciudad":"#C7A35B","Puerto":"#337D68","Aeropuerto":"#547FA5","Paso fronterizo":"#547FA5","Logística":"#337D68","Industria":"#9D7040","Turismo":"#9D7040"};
 const mapAvailable=typeof L !== "undefined";
 const mapElement=document.getElementById("map");
@@ -165,6 +167,9 @@ function updateProfileComparisonAvailability(){
   const second=document.getElementById("comparison-province-b").value;
   const button=document.getElementById("compare-provinces");
   const result=document.getElementById("profile-comparison-result");
+  lastProfileComparison=null;
+  document.getElementById("export-profile-comparison").disabled=true;
+  document.getElementById("profile-comparison-export-status").textContent="";
   button.disabled=profilesLoadError||!first||!second||first===second;
   result.textContent=!first||!second?"Seleccioná dos jurisdicciones para comparar el mismo período estadístico.":first===second?"Elegí dos jurisdicciones diferentes.":"Comparación lista. Ejecutá el cálculo para ver diferencias descriptivas.";
 }
@@ -175,6 +180,8 @@ function renderProfileComparison(){
   try{
     if(!window.MapaFederalProfileComparison)throw new Error("El comparador no está disponible.");
     const result=window.MapaFederalProfileComparison.compareProfiles(first,second,profilesMetadata);
+    lastProfileComparison=result;
+    document.getElementById("export-profile-comparison").disabled=false;
     const integer=value=>new Intl.NumberFormat("es-AR",{maximumFractionDigits:0}).format(value);
     const decimal=value=>new Intl.NumberFormat("es-AR",{minimumFractionDigits:1,maximumFractionDigits:1}).format(value);
     const signed=(value,digits)=>((value>0?"+":value<0?"−":"")+new Intl.NumberFormat("es-AR",{minimumFractionDigits:digits,maximumFractionDigits:digits}).format(Math.abs(value)));
@@ -185,11 +192,24 @@ function renderProfileComparison(){
     ];
     const source=safeUrl(result.sourceUrl);
     root.innerHTML='<div class="comparison-table-wrap"><table class="comparison-table"><thead><tr><th>Indicador</th><th>'+escapeHtml(result.first.province)+'</th><th>'+escapeHtml(result.second.province)+'</th><th>Diferencia (A - B)</th></tr></thead><tbody>'+rows.map(row=>'<tr>'+row.map(cell=>'<td>'+escapeHtml(cell)+'</td>').join("")+'</tr>').join("")+'</tbody></table></div><div class="comparison-provenance"><p><strong>Período:</strong> '+escapeHtml(result.period)+' · <strong>Unidad:</strong> '+escapeHtml(result.unit)+'</p><p><strong>Fuente:</strong> '+escapeHtml(result.publisher)+' · <a href="'+escapeHtml(source)+'" target="_blank" rel="noopener noreferrer">Consultar OPEX oficial ↗</a> · <strong>Publicación:</strong> '+escapeHtml(result.published)+'</p><p><strong>Verificación:</strong> <span>Verificado</span> · '+escapeHtml(result.verification.checkedAt)+'</p><p><strong>Alcance de la verificación:</strong> '+escapeHtml(result.verification.scope)+'</p><p>Diferencia calculada como primera jurisdicción menos segunda. Es una comparación descriptiva de exportaciones de bienes, no un ranking de atractivo inversor ni una medida del PBG.</p></div>';
-  }catch(error){root.textContent=error.message||"No se pudo generar la comparación con los datos disponibles.";}
+  }catch(error){
+    lastProfileComparison=null;
+    document.getElementById("export-profile-comparison").disabled=true;
+    root.textContent=error.message||"No se pudo generar la comparación con los datos disponibles.";
+  }
+}
+function exportProfileComparison(){
+  const status=document.getElementById("profile-comparison-export-status");
+  if(!lastProfileComparison){status.textContent="Primero generá una comparación.";return;}
+  try{
+    const table=window.MapaFederalProfileComparison.toExportTable(lastProfileComparison);
+    downloadCsv("mapa-federal-comparacion-provincial.csv",table.headers,table.rows,"profile-comparison-export-status");
+  }catch(error){status.textContent=error.message||"No se pudo exportar la comparación.";}
 }
 document.getElementById("comparison-province-a").addEventListener("change",updateProfileComparisonAvailability);
 document.getElementById("comparison-province-b").addEventListener("change",updateProfileComparisonAvailability);
 document.getElementById("compare-provinces").addEventListener("click",renderProfileComparison);
+document.getElementById("export-profile-comparison").addEventListener("click",exportProfileComparison);
 document.getElementById("profile-search").addEventListener("input",renderProfiles);
 document.getElementById("profile-region").addEventListener("change",renderProfiles);
 const POI_PAGE_SIZE=20;let poiPage=1;function renderPOI(){const query=normalizeText(document.getElementById("poi-search").value);const province=document.getElementById("poi-province").value;const type=document.getElementById("poi-type").value;const terms=query.split(/\s+/).filter(Boolean);const arr=points.filter(p=>(province==="Todas"||p.province===province)&&(type==="Todos"||p.type===type)&&matchesSector(p,activeSector)&&terms.every(term=>normalizeText([p.name,p.province,p.type,p.note].join(" ")).includes(term)));const pageCount=Math.max(1,Math.ceil(arr.length/POI_PAGE_SIZE));poiPage=Math.min(Math.max(1,poiPage),pageCount);const first=(poiPage-1)*POI_PAGE_SIZE;const pageItems=arr.slice(first,first+POI_PAGE_SIZE);document.getElementById("poi-count").textContent=arr.length+" de "+points.length+" nodos encontrados";document.getElementById("poi-body").innerHTML=pageItems.map(p=>{const index=points.indexOf(p);const url=safeUrl(p.source);const source=url!=="#"?'<a href="'+escapeHtml(url)+'" target="_blank" rel="noopener noreferrer">Fuente ↗</a>':"<span>Sin enlace</span>";return "<tr><td><button type=\"button\" class=\"poi-focus\" data-point-index=\""+index+"\">"+escapeHtml(p.name)+"</button></td><td>"+escapeHtml(p.province)+"</td><td><span class=\"type\">"+escapeHtml(p.type)+"</span></td><td>"+source+"</td></tr>";}).join("")||'<tr><td colspan="4">No se encontraron puntos.</td></tr>';document.getElementById("poi-page-status").textContent=arr.length?("Mostrando "+(first+1)+"–"+Math.min(first+POI_PAGE_SIZE,arr.length)+" de "+arr.length+" · Página "+poiPage+" de "+pageCount):"Sin resultados";document.getElementById("poi-prev").disabled=poiPage<=1;document.getElementById("poi-next").disabled=poiPage>=pageCount;renderProvinceCard();}
