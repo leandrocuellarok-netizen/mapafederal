@@ -762,5 +762,17 @@
     "note": "Puerto fluvial sobre la margen derecha del Paraná, km 277. La ficha de ANPyN registra un muelle de ultramar de 220 m y otro de carga general de 75 m, ambos con calado declarado de 9,8 m; confirmar condiciones operativas, calado efectivo y servicios con la autoridad portuaria.",
     "source": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/san-pedro",
     "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/san-pedro"
+  },
+  {
+    "name": "Proyecto Navidad — depósito polimetálico",
+    "province": "Chubut",
+    "type": "Recurso mineral",
+    "coords": [
+      -42.41527,
+      -68.82583
+    ],
+    "note": "Depósito de plata, plomo y oro ubicado aproximadamente 40 km al oeste de Gastre. SEGEMAR registra el depósito en etapa de factibilidad; Pan American Silver informa que permanece en cuidado y mantenimiento. El punto representa la localización del depósito, no una mina en operación ni una autorización de explotación.",
+    "source": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp24342.html",
+    "coordinateSource": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp24342.html"
   }
 ]
