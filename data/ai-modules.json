@@ -67,7 +67,7 @@
       "description": "Descubrimiento y organización de eventos por sector y localización.",
       "status": "planned",
       "statusLabel": "Planificado · requiere fuentes de organizadores",
-      "currentCapability": "Existe un contrato JSON versionado y validado en data/events.json, actualmente vacío; no hay agenda integrada ni eventos publicados.",
+      "currentCapability": "Existe un contrato JSON versionado y validado en data/events.json con un primer registro histórico verificado: la 5.ª Feria Japonesa Bazaa de Ingeniero Maschwitz (15/11/2026), marcada como completada. No hay agenda integrada ni confirmación de eventos futuros.",
       "dependencies": [
         "data/events.json",
         "Fuentes oficiales de organizadores y recintos",
