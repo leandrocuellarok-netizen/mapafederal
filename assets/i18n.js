@@ -12,6 +12,7 @@ const translations={en:{
 "Seleccioná una jurisdicción":"Select a jurisdiction",
 "Comparar jurisdicciones":"Compare jurisdictions",
 "Exportar comparación CSV":"Export comparison CSV",
+"Exportar resultados CSV":"Export filtered results CSV",
 "Primero generá una comparación.":"Generate a comparison first.",
 "Seleccioná dos jurisdicciones para comparar el mismo período estadístico.":"Select two jurisdictions to compare the same statistical period.",
 "Elegí dos jurisdicciones diferentes.":"Choose two different jurisdictions.",
