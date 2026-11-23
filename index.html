@@ -65,7 +65,32 @@ footer{background:#061b14;color:#d9e2db;padding:30px 0}.foot{display:flex;justif
 .tool-card strong{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#82672f}
 @media(max-width:700px){.tool-cards{grid-template-columns:1fr}}
 </style>
-<style id="homepage-scope">/* La portada conserva el explorador y los perfiles; los módulos completos viven en sus páginas propias. */.poi,.news,.investment{display:none!important}</style>
+<style id="homepage-scope">
+/* En portada, las tres herramientas conservan información y funciones en una vista resumida. Sus páginas propias ofrecen el desarrollo completo. */
+.poi,.news,.investment{display:block!important;padding:30px 0}
+.poi .section-head,.news .section-head,.investment .section-head{margin-bottom:14px;gap:16px}
+.poi .section-head h2,.news .section-head h2,.investment .section-head h2{font-size:clamp(23px,3vw,32px)}
+.poi .section-head p,.news .section-head p,.investment .section-head p{max-width:520px;font-size:10px;line-height:1.5}
+.poi-tools,.news-tools,.investment-tools{gap:7px;margin:10px 0}
+.poi .province-card{padding:10px 13px;margin:9px 0;font-size:10px}
+.poi-table th,.poi-table td{padding:7px 9px;font-size:10px}
+.poi-pagination{margin-top:8px}
+.news-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.news-card{min-height:0;padding:13px}
+.news-card h3{font-size:16px;margin:10px 0 6px}
+.news-card p{font-size:10px;line-height:1.45;margin-bottom:9px}
+.investment-tools{grid-template-columns:repeat(3,minmax(0,1fr))}
+.investment-tools input{grid-column:span 3}
+.investment-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.investment-card{padding:13px}
+.investment-card h3{font-size:17px;margin:8px 0}
+.investment-card p{font-size:10px;line-height:1.45}
+.investment-meta{gap:6px;margin:9px 0}
+.investment-meta div{padding:7px}
+.investment-provenance{padding-top:8px;margin-top:8px}
+@media(max-width:700px){.news-grid,.investment-grid{grid-template-columns:1fr 1fr}.investment-tools{grid-template-columns:1fr 1fr}.investment-tools input{grid-column:span 2}}
+@media(max-width:480px){.news-grid,.investment-grid{grid-template-columns:1fr}.investment-tools{grid-template-columns:1fr}.investment-tools input{grid-column:auto}}
+</style>
 </head>
 <body>
 <header><div class="wrap nav"><a class="brand" href="#"><img class="brandmark" src="./assets/mapa-federal.svg" alt="" width="38" height="38" decoding="async"><span>MAPA FEDERAL</span></a><nav class="navlinks"><a href="#explorador">Mapa</a><a href="./nodos-estrategicos/">Nodos estratégicos</a><a href="#perfiles">Perfiles económicos</a><a href="./radar-ia/">Radar IA</a><a href="./investment-finder/">Investment Finder</a></nav><a class="nav-cta" href="#explorador">Explorar Argentina ↗</a><label class="language-switch" for="language-select"><span class="sr-only">Language</span><select id="language-select" aria-label="Seleccionar idioma"><option value="es">ES</option><option value="en">EN</option></select></label></div></header>
