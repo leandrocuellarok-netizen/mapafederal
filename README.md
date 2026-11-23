@@ -198,6 +198,12 @@ La interfaz presenta los seis módulos desde un único manifiesto: `data/ai-modu
 
 Las funciones comprobables actuales son el mapa, el directorio de nodos, los perfiles OPEX, las noticias curadas, el catálogo documental filtrable de Investment Finder y las exportaciones CSV/Markdown. `data/events.json` contiene únicamente el contrato de datos validado para Event Intelligence y no tiene eventos cargados; no existe una agenda integrada. El buscador no es un modelo de IA y la sección de módulos no implica integraciones en producción.
 
+## Base territorial de Escobar
+
+`data/escobar-territory.json` registra las siete localidades del partido y el número de barrios oficialmente reconocidos por la Municipalidad tras la promulgación de la Ordenanza 6515: Belén de Escobar (108), Garín (34), Ingeniero Maschwitz (33), Loma Verde (22), Matheu (21), Maquinista Savio (19) y 24 de Febrero (9). El total es 246 barrios. La fuente municipal fue publicada el 25/09/2026 y se conserva con fecha y alcance de verificación. Estos conteos describen la delimitación territorial comunicada por el Municipio; no representan población, superficie ni indicadores económicos. La división territorial también se contrasta con el Presupuesto Participativo 2026 de Escobar 360°.
+
+Fuentes primarias: [Municipalidad de Escobar — reconocimiento oficial de los 246 barrios](https://www.escobar.gob.ar/identidad-memoria-y-futuro-con-la-firma-de-una-ordenanza-historica-escobar-reconocio-oficialmente-sus-246-barrios/) · [Escobar 360° — Presupuesto Participativo 2026](https://escobar360.escobar.gob.ar/servicio.aspx?ser_id=3032).
+
 ## Arquitectura
 
 - `index.html`: interfaz y lógica cliente.
