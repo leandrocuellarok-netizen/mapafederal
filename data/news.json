@@ -1,37 +1,5 @@
 [
   {
-    "title": "Proyecto Navidad: Chubut mantiene sin explotar uno de los grandes depósitos de plata del mundo",
-    "date": "2026-11-08",
-    "category": "Minería",
-    "summary": "Un informe publicado el 8 de noviembre de 2026 señala que el depósito Navidad, ubicado a unos 40 km de Gastre, continúa sin producir. SEGEMAR lo registra como un depósito polimetálico de plata, plomo y oro en etapa de factibilidad. Pan American Silver informa recursos medidos e indicados de 632,4 millones de onzas de plata y recursos inferidos de 119,4 millones de onzas, con cifras al 30 de junio de 2026. La compañía mantiene el proyecto en cuidado y mantenimiento; estos recursos no equivalen a reservas listas para extracción ni a producción futura garantizada.",
-    "source": "ABC Diario; SEGEMAR; Pan American Silver",
-    "url": "https://www.abcdiario.com.ar/petroleo-mineria/santa-cruz-exporto-us2-627-millones-en-minerales-y-chubut-sigue-sin-explotar-uno-de-los-mayores-yacimientos-de-plata-del-mundo/",
-    "relatedSources": [
-      {
-        "label": "SEGEMAR — ficha del depósito Navidad",
-        "url": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp24342.html"
-      },
-      {
-        "label": "Pan American Silver — estado y recursos del proyecto",
-        "url": "https://panamericansilver.com/es/operations/silver-segment/navidad/"
-      }
-    ],
-    "period": "Recursos minerales informados al 30/06/2026; noticia publicada el 08/11/2026",
-    "verification": {
-      "status": "editorial_reviewed",
-      "checkedAt": "2026-11-23",
-      "scope": "Contraste del artículo periodístico con la ficha de yacimientos de SEGEMAR y la página oficial de Pan American Silver. No constituye una evaluación independiente del recurso ni una autorización ambiental o minera."
-    },
-    "jurisdictions": [
-      "Chubut"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "Proyecto Navidad, aproximadamente 40 km al este de Gastre; coordenadas publicadas por SEGEMAR."
-    ],
-    "id": "news-www-abcdiario-com-ar-petroleo-mineria-santa-cruz-exporto-us2-627-millones-en-minerales-y-chubut-sigue-sin-explotar-uno-de-los-mayores-yacimientos-de-plata-del-mundo"
-  },
-  {
     "title": "Argentina aprobó el ingreso al RIGI del proyecto Argentina LNG de YPF, Eni y XRG",
     "date": "2026-11-20",
     "category": "Empresas",
@@ -292,6 +260,38 @@
     "geographyStatus": "not_specified",
     "geographyEvidence": [],
     "id": "news-www-argentina-gob-ar-noticias-ya-esta-abierta-la-inscripcion-para-la-segunda-ronda-de-negocios-rigi-con-foco-en"
+  },
+  {
+    "title": "Proyecto Navidad: Chubut mantiene sin explotar uno de los grandes depósitos de plata del mundo",
+    "date": "2026-11-08",
+    "category": "Minería",
+    "summary": "Un informe publicado el 8 de noviembre de 2026 señala que el depósito Navidad, ubicado a unos 40 km de Gastre, continúa sin producir. SEGEMAR lo registra como un depósito polimetálico de plata, plomo y oro en etapa de factibilidad. Pan American Silver informa recursos medidos e indicados de 632,4 millones de onzas de plata y recursos inferidos de 119,4 millones de onzas, con cifras al 30 de junio de 2026. La compañía mantiene el proyecto en cuidado y mantenimiento; estos recursos no equivalen a reservas listas para extracción ni a producción futura garantizada.",
+    "source": "ABC Diario; SEGEMAR; Pan American Silver",
+    "url": "https://www.abcdiario.com.ar/petroleo-mineria/santa-cruz-exporto-us2-627-millones-en-minerales-y-chubut-sigue-sin-explotar-uno-de-los-mayores-yacimientos-de-plata-del-mundo/",
+    "relatedSources": [
+      {
+        "label": "SEGEMAR — ficha del depósito Navidad",
+        "url": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp24342.html"
+      },
+      {
+        "label": "Pan American Silver — estado y recursos del proyecto",
+        "url": "https://panamericansilver.com/es/operations/silver-segment/navidad/"
+      }
+    ],
+    "period": "Recursos minerales informados al 30/06/2026; noticia publicada el 08/11/2026",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-23",
+      "scope": "Contraste del artículo periodístico con la ficha de yacimientos de SEGEMAR y la página oficial de Pan American Silver. No constituye una evaluación independiente del recurso ni una autorización ambiental o minera."
+    },
+    "jurisdictions": [
+      "Chubut"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Proyecto Navidad, aproximadamente 40 km al este de Gastre; coordenadas publicadas por SEGEMAR."
+    ],
+    "id": "news-www-abcdiario-com-ar-petroleo-mineria-santa-cruz-exporto-us2-627-millones-en-minerales-y-chubut-sigue-sin-explotar-uno-de-los-mayores-yacimientos-de-plata-del-mundo"
   },
   {
     "title": "Chubut: el potencial minero convive con un riesgo social y regulatorio persistente",
