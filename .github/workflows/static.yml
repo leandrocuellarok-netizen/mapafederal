@@ -263,7 +263,7 @@ jobs:
           assert health["sourceUrl"] == "https://www.escobar.gob.ar/municipio/guardias/"
           assert health["sourcePublishedAt"] is None
           assert health["verification"]["checkedAt"] == "2026-11-23"
-          assert "no se realizó comprobación presencial" in health["verification"]["scope"]
+          assert "no se realizó comprobación presencial" in health["verification"]["scope"].lower()
           assert len(health["facilities"]) == 11
           assert {item["locality"] for item in health["facilities"]} == {"Belén de Escobar", "Garín", "Ingeniero Maschwitz", "Maquinista Savio", "Matheu", "Loma Verde"}
           selles = next(item for item in health["facilities"] if item["id"] == "caps-juan-carlos-selles")
