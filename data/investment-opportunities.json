@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-22",
-  "note": "Catálogo inicial con un registro normativo nacional documentado. Su estado de disponibilidad permanece desconocido: no se confirmó la operatividad del trámite SGI ni la elegibilidad de solicitantes. No constituye una recomendación de inversión.",
+  "updatedAt": "2026-11-23",
+  "note": "Catálogo documental con dos registros nacionales: RIMI y Programa KIT 4.0. Las fuentes normativas están verificadas, pero la disponibilidad de ambos permanece desconocida: no se confirmó la operatividad del trámite SGI para RIMI ni el saldo presupuestario y la disponibilidad de kits/proveedores para KIT 4.0. No constituye una recomendación de inversión.",
   "opportunities": [
     {
       "id": "rimi-eficiencia-energetica-2026",
@@ -25,6 +25,30 @@
         "status": "verified",
         "checkedAt": "2026-11-22",
         "scope": "Verificada la publicación oficial y la vigencia normativa de la Resolución SE 311/2026. No se verificó la disponibilidad operativa del Sistema de Gestión de Inversiones (SGI), la elegibilidad de una empresa concreta ni la concesión de beneficios; por eso opportunityStatus permanece unknown."
+      }
+    },
+    {
+      "id": "programa-kit-4-0-2026",
+      "name": "Programa KIT 4.0 — cofinanciamiento para digitalización e Industria 4.0",
+      "recordType": "public_program",
+      "scope": "national",
+      "sector": "Industria / transformación digital / Industria 4.0",
+      "jurisdiction": null,
+      "location": null,
+      "stage": "operational",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-04-27",
+      "validUntil": null,
+      "sourceName": "Argentina.gob.ar — Resolución 8/2026, texto actualizado (Programa KIT 4.0)",
+      "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-8-2026-425190/actualizacion",
+      "sourcePublishedAt": "2026-04-27",
+      "period": "Vigencia normativa desde 2026-04-27; bases modificadas el 2026-09-01 y catálogo actualizado el 2026-09-25. La convocatoria es abierta y continua según las bases, sujeta al cupo y a eventuales suspensiones.",
+      "description": "Programa nacional para PyMEs que incorpora servicios, hardware y software estandarizados para digitalización e Industria 4.0. El portal oficial informa cobertura de hasta el 50% del valor neto del kit, con topes publicados de ARS 20.000.000 para kits avanzados y ARS 15.000.000 para kits básicos, de gestión, comercio y calidad. El beneficio FONPEC se acredita en la cuenta tributaria ARCA del proveedor PEC, no como pago directo a la PyME; la empresa conserva a su cargo el IVA, la contraparte y cualquier saldo no cubierto. La normativa fija un cupo general de ARS 9.000 millones y exige al menos tres proveedores habilitados para que un kit figure disponible. La Disposición 106/2026 incorporó, entre otros, kits de canales y comercio digital, CRM, automatización y analítica e inteligencia artificial comercial. No se confirmó el saldo del cupo ni la disponibilidad de un kit/proveedor concreto; no asumir elegibilidad ni concesión del beneficio.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-23",
+        "scope": "Contraste del portal oficial del Programa KIT 4.0, la Resolución 8/2026 en texto actualizado, la Resolución 343/2026 (publicada el 2026-09-01) y la Disposición 106/2026 (publicada el 2026-09-25). Se verificaron las bases, el procedimiento y las modificaciones del catálogo; no se confirmó el saldo del cupo de ARS 9.000 millones ni la disponibilidad actual de cada kit y de al menos tres proveedores habilitados. Por eso opportunityStatus permanece unknown."
       }
     }
   ]

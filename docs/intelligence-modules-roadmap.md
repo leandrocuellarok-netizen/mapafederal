@@ -1,6 +1,6 @@
 # Hoja de ruta del ecosistema de inteligencia
 
-Actualizada: 22 de noviembre de 2026.
+Actualizada: 23 de noviembre de 2026.
 
 ## Estado real
 
@@ -9,7 +9,7 @@ El estado de cada módulo está versionado en `data/ai-modules.json` y se presen
 | Módulo | Estado | Capacidad comprobable |
 |---|---|---|
 | Federal AI Assistant | Planificado | No consulta un modelo. Requiere modelo y backend. |
-| Investment Finder | Planificado | Una interfaz documental de solo lectura con filtros por texto, sector, alcance, jurisdicción y estado; un registro nacional del RIMI con fuente normativa verificada. La disponibilidad del trámite y la elegibilidad permanecen desconocidas; no hay recomendaciones ni evaluación de solicitantes. |
+| Investment Finder | Planificado | Una interfaz documental de solo lectura con filtros por texto, sector, alcance, jurisdicción, etapa y estado; registros nacionales del RIMI y del Programa KIT 4.0 con fuentes verificadas y disponibilidad no confirmada. No hay recomendaciones ni evaluación de solicitantes. |
 | Territorial Monitor | Planificado | Las noticias se cargan manualmente y la interfaz permite filtrar jurisdicciones explícitamente mencionadas; no hay monitoreo RSS/API. |
 | Event Intelligence | Planificado | No existe agenda integrada de eventos verificados. |
 | Federal Reports | Piloto funcional | Genera fichas Markdown por jurisdicción y compara dos jurisdicciones con los tres indicadores homogéneos del OPEX anual 2025, mostrando fuente y verificación. No usa IA. |
@@ -35,7 +35,7 @@ INDEC también publica OPEX del primer semestre 2026 (02/09/2026), con variacion
 - [INDEC — Origen provincial de las exportaciones](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-79).
 
 ### Fase 2 — Investment Finder
-1. El esquema 2 está versionado en `data/investment-opportunities.json` y se consulta desde una interfaz pública de solo lectura, con filtros locales por texto, sector, alcance, jurisdicción, etapa y estado. Incluye un registro documental nacional del RIMI para bienes de alta eficiencia energética; la fuente normativa está verificada, pero `opportunityStatus` se mantiene `unknown` porque no se confirmó la operatividad del trámite SGI ni la elegibilidad de solicitantes. No representa una convocatoria abierta ni ofrece recomendaciones.
+1. El esquema 2 está versionado en `data/investment-opportunities.json` y se consulta desde una interfaz pública de solo lectura, con filtros locales por texto, sector, alcance, jurisdicción, etapa y estado. Incluye dos registros nacionales: RIMI para bienes de alta eficiencia energética y Programa KIT 4.0 para digitalización e Industria 4.0. En ambos se verifica la fuente normativa, pero `opportunityStatus` permanece `unknown` hasta confirmar las condiciones operativas: trámite SGI y elegibilidad en RIMI; saldo presupuestario, disponibilidad de kits y proveedores habilitados en KIT 4.0. No se presentan como convocatorias confirmadas ni ofrecen recomendaciones.
 2. Cada registro requiere identificador, nombre, tipo de registro, alcance (`national` o `provincial`), sector, etapa, estado de oportunidad, vigencia, fuente HTTPS, fecha de publicación, período (o `null`) y estado/fecha/alcance de verificación. Para alcance nacional, `jurisdiction` debe ser `null`; para alcance provincial, debe corresponder a una de las 24 jurisdicciones admitidas. La ubicación y el monto son opcionales; el monto solo se incorpora si la fuente lo publica, se conserva su base y moneda y el valor es numérico, finito y no negativo; la moneda debe expresarse con tres letras ASCII mayúsculas (forma de código ISO 4217, sin afirmar que se valida contra el catálogo completo de códigos). La validación rechaza infinitos, monedas con caracteres no ASCII y otros valores monetarios no válidos.
 3. Una oportunidad solo puede figurar como abierta si la fuente está verificada, la vigencia comenzó y no terminó, y el proyecto no está completado ni cancelado.
 4. Incorporar primero datos oficiales públicos y programas de promoción que permitan reutilización.
@@ -44,6 +44,13 @@ Fuentes del registro semilla RIMI (publicadas el 04/11/2026):
 - [Boletín Oficial — Resolución SE 311/2026](https://www.boletinoficial.gob.ar/detalleAviso/primera/350021/20261104): aprueba el listado de bienes de alta eficiencia energética y establece su vigencia desde la publicación.
 - [Argentina.gob.ar — incentivos RIMI para eficiencia energética](https://www.argentina.gob.ar/noticias/el-gobierno-nacional-amplia-los-incentivos-del-rimi-para-que-las-pymes-inviertan-en): resumen institucional de los bienes y criterios técnicos.
 - [Resolución General Conjunta 5849/2026](https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-5849-2026-425917/texto): documenta el procedimiento y la referencia al Sistema de Gestión de Inversiones que ARCA debía implementar. Su disponibilidad operativa no se confirmó en esta revisión; por eso el estado de oportunidad no se marca como abierto.
+Fuentes del registro KIT 4.0 (base publicada el 27/04/2026; modificaciones el 01/09/2026 y 25/09/2026):
+- [Ministerio de Economía — Acceder al Kit 4.0](https://www.argentina.gob.ar/node/486698): requisitos, proceso TAD y topes publicados de cobertura por tipo de kit.
+- [Resolución 8/2026 — texto actualizado](https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-8-2026-425190/actualizacion): convocatoria abierta y continua, cupo general de ARS 9.000 millones y condiciones del beneficio FONPEC.
+- [Resolución 343/2026](https://www.argentina.gob.ar/normativa/nacional/norma-429516): modificación de las bases, publicada el 01/09/2026.
+- [Disposición 106/2026](https://www.argentina.gob.ar/normativa/nacional/norma-430493/texto): actualización del catálogo, publicada el 25/09/2026; incorpora COM-01, COM-02, COM-03 (analítica e inteligencia artificial comercial) y CAL-01.
+El portal informa una cobertura de hasta el 50% del valor neto, con topes publicados de ARS 20.000.000 para kits avanzados y ARS 15.000.000 para kits básicos, de gestión, comercio y calidad. El beneficio se acredita al proveedor PEC, no directamente a la PyME. La disponibilidad de cada kit exige al menos tres proveedores habilitados y el cupo puede agotarse o suspenderse; como no se confirmó el saldo ni la disponibilidad concreta, el registro permanece con estado unknown.
+
 5. No derivar "oportunidades" únicamente de exportaciones o presencia de infraestructura.
 6. No publicar recomendaciones de inversión automáticas sin criterios y revisión.
 

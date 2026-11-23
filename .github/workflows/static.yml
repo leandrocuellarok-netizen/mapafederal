@@ -631,6 +631,12 @@ jobs:
           rimi = next((item for item in opportunities if item["id"] == "rimi-eficiencia-energetica-2026"), None)
           assert rimi is not None and rimi["scope"] == "national" and rimi["jurisdiction"] is None, "Falta el registro RIMI de alcance nacional"
           assert rimi["opportunityStatus"] == "unknown", "RIMI no debe mostrarse como oportunidad abierta sin verificar el trámite SGI"
+          kit40 = next((item for item in opportunities if item["id"] == "programa-kit-4-0-2026"), None)
+          assert kit40 is not None and kit40["scope"] == "national" and kit40["jurisdiction"] is None, "Falta el registro nacional KIT 4.0"
+          assert kit40["stage"] == "operational" and kit40["opportunityStatus"] == "unknown", "KIT 4.0 no debe confundirse con disponibilidad confirmada"
+          assert kit40["verification"]["status"] == "verified" and kit40["verification"]["checkedAt"] == "2026-11-23", "Falta la verificación fechada de KIT 4.0"
+          assert "no como pago directo a la PyME" in kit40["description"] and "tres proveedores" in kit40["description"], "KIT 4.0 debe explicar el destino del beneficio y la condición de proveedores"
+          assert "saldo del cupo" in kit40["verification"]["scope"], "KIT 4.0 debe documentar el límite de la verificación"
 
           # Fixture sintético: valida el contrato sin publicar una oportunidad real.
           sample_opportunity = {
@@ -756,6 +762,11 @@ jobs:
           const record = catalog.opportunities[0];
           if (!record || record.opportunityStatus !== "unknown") throw new Error("El registro documental RIMI debe conservar disponibilidad desconocida.");
           const base = { query: "eficiencia energética", sector: "all", scope: "national", jurisdiction: "Nacional", status: "unknown" };
+          const kit40Record = catalog.opportunities.find(item => item.id === "programa-kit-4-0-2026");
+          if (!kit40Record || kit40Record.opportunityStatus !== "unknown" || kit40Record.verification?.status !== "verified") throw new Error("KIT 4.0 debe conservar fuente verificada y disponibilidad no confirmada.");
+          if (filter(catalog.opportunities, { ...base, query: "kit 4.0" }).length !== 1) throw new Error("La búsqueda no encuentra KIT 4.0.");
+          if (filter(catalog.opportunities, { ...base, query: "kit 4.0", status: "open" }).length !== 0) throw new Error("KIT 4.0 no debe aparecer como disponibilidad confirmada.");
+          if (!kit40Record.description.includes("no como pago directo a la PyME")) throw new Error("La ficha debe aclarar que el beneficio se acredita al proveedor.");
           if (filter(catalog.opportunities, base).length !== 1) throw new Error("No se encontró el registro nacional mediante búsqueda y filtros combinados.");
           if (filter(catalog.opportunities, { ...base, status: "open" }).length !== 0) throw new Error("El registro RIMI no debe aparecer como oportunidad abierta.");
           if (filter(catalog.opportunities, { ...base, stage: "unknown" }).length !== 1) throw new Error("El filtro por etapa no encuentra el registro RIMI.");
