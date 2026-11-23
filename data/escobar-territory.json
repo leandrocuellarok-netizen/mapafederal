@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-23",
+  "jurisdiction": "Partido de Escobar",
+  "province": "Buenos Aires",
+  "country": "Argentina",
+  "note": "Base territorial inicial de las siete localidades reconocidas por el Municipio. Los conteos de barrios reflejan la delimitación oficial comunicada tras la promulgación de la Ordenanza 6515; no son estimaciones demográficas ni sustituyen los planos catastrales.",
+  "sourceName": "Municipalidad de Escobar",
+  "sourceUrl": "https://www.escobar.gob.ar/identidad-memoria-y-futuro-con-la-firma-de-una-ordenanza-historica-escobar-reconocio-oficialmente-sus-246-barrios/",
+  "sourcePublishedAt": "2026-09-25",
+  "territorialReferenceUrl": "https://escobar360.escobar.gob.ar/servicio.aspx?ser_id=3032",
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-23",
+    "scope": "Se verificó en la publicación municipal del 25/09/2026 la existencia de siete localidades y el desglose de 246 barrios por localidad. La fuente de Escobar 360° se utiliza como contraste adicional de la división territorial del Presupuesto Participativo 2026."
+  },
+  "localities": [
+    {
+      "id": "belen-de-escobar",
+      "name": "Belén de Escobar",
+      "officiallyRecognizedNeighborhoods": 108
+    },
+    {
+      "id": "garin",
+      "name": "Garín",
+      "officiallyRecognizedNeighborhoods": 34
+    },
+    {
+      "id": "ingeniero-maschwitz",
+      "name": "Ingeniero Maschwitz",
+      "officiallyRecognizedNeighborhoods": 33
+    },
+    {
+      "id": "loma-verde",
+      "name": "Loma Verde",
+      "officiallyRecognizedNeighborhoods": 22
+    },
+    {
+      "id": "matheu",
+      "name": "Matheu",
+      "officiallyRecognizedNeighborhoods": 21
+    },
+    {
+      "id": "maquinista-savio",
+      "name": "Maquinista Savio",
+      "officiallyRecognizedNeighborhoods": 19
+    },
+    {
+      "id": "24-de-febrero",
+      "name": "24 de Febrero",
+      "officiallyRecognizedNeighborhoods": 9
+    }
+  ]
+}
