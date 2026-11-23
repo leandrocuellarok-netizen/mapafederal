@@ -125,5 +125,183 @@
         "scope": "Se verificó la presencia de direcciones y horarios para espacios de Belén de Escobar e Ingeniero Maschwitz. No se extrapolan esos horarios a las demás localidades ni se verificó presencialmente su funcionamiento."
       }
     }
-  ]
+  ],
+  "healthFacilitiesDirectory": {
+    "name": "Guardias y urgencias por localidad",
+    "sourceName": "Municipalidad de Escobar",
+    "sourceUrl": "https://www.escobar.gob.ar/municipio/guardias/",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-23.",
+    "validFrom": null,
+    "validityPeriod": "Directorio municipal consultado el 2026-11-23; guardias, prestaciones y teléfonos sujetos a actualización.",
+    "status": "operativo",
+    "summary": "Once establecimientos y puestos de atención con guardia o atención urgente nominalmente publicados para seis localidades. No es un inventario exhaustivo de todos los centros de salud.",
+    "localityCoverageNote": "La página declara guardias de 24 horas en todas las localidades, pero el listado nominal muestra seis. El CAPS Juan Carlos Selles figura bajo Garín y se ubica en el barrio 24 de Febrero; no se reasigna a la localidad 24 de Febrero. No se encontró una ficha nominal separada para esa localidad.",
+    "additionalDirectoryUrl": "https://www.escobar.gob.ar/centros-de-salud/",
+    "additionalDirectoryName": "Centros de salud municipales",
+    "verification": {
+      "checkedAt": "2026-11-23",
+      "scope": "Se verificaron en línea nombres, localidades, ubicaciones, prestaciones y horarios publicados en la página municipal de Guardias y emergencias. No se realizó comprobación presencial. Se registran expresamente las discrepancias entre páginas municipales sobre la dirección del Hospital Horacio López y el horario odontológico de la UDP Susana Lara."
+    },
+    "facilities": [
+      {
+        "id": "hospital-enrique-erill",
+        "name": "Hospital Dr. Enrique Erill",
+        "locality": "Belén de Escobar",
+        "category": "Hospital zonal general de agudos",
+        "address": "Eugenia Tapia de Cruz 21",
+        "serviceHours": "Todos los días, las 24 horas",
+        "services": [
+          "Guardia clínica y pediátrica",
+          "Traumatología y ortopedia",
+          "Cirugía general",
+          "Obstetricia y ginecología",
+          "Neonatología",
+          "Laboratorio",
+          "Radiología y tomografía"
+        ],
+        "phone": "3484 420-637"
+      },
+      {
+        "id": "caps-juana-azurduy",
+        "name": "CAPS Juana Azurduy",
+        "locality": "Belén de Escobar",
+        "neighborhood": "Lambertucchi",
+        "category": "CAPS",
+        "address": "Perales y Azucenas",
+        "serviceHours": "Todos los días, las 24 horas",
+        "services": [
+          "Guardia general",
+          "Internación"
+        ],
+        "phone": "3484 430-599"
+      },
+      {
+        "id": "posta-parana-palmas",
+        "name": "Posta Sanitaria Paraná de las Palmas",
+        "locality": "Belén de Escobar",
+        "category": "Posta sanitaria",
+        "address": "Puerto Paraná de las Palmas",
+        "serviceHours": "Sábados y domingos, las 24 horas",
+        "services": [
+          "Guardia general"
+        ],
+        "phone": "3489 461-009"
+      },
+      {
+        "id": "hospital-odontologico-goni",
+        "name": "Hospital Odontológico Dr. Goñi",
+        "locality": "Belén de Escobar",
+        "category": "Hospital odontológico",
+        "address": "Dr. Travi 1215",
+        "serviceHours": "Lunes a viernes, de 8 a 17 h",
+        "services": [
+          "Guardia odontológica"
+        ],
+        "phone": "3484 514-410"
+      },
+      {
+        "id": "hospital-horacio-dupuy",
+        "name": "Hospital Municipal Dr. Horacio Dupuy",
+        "locality": "Garín",
+        "category": "Hospital municipal",
+        "address": "Bv. Presidente Perón 156",
+        "serviceHours": "Todos los días, las 24 horas",
+        "services": [
+          "Guardia clínica y pediátrica",
+          "Traumatología y ortopedia",
+          "Cirugía general",
+          "Laboratorio",
+          "Radiología y tomografía",
+          "Internación"
+        ],
+        "phone": "3484 262-859"
+      },
+      {
+        "id": "caps-juan-carlos-selles",
+        "name": "CAPS Juan Carlos Selles",
+        "locality": "Garín",
+        "neighborhood": "24 de Febrero",
+        "category": "CAPS",
+        "address": "Pablo Marín, B° 24 de Febrero",
+        "serviceHours": "Todos los días, las 24 horas",
+        "services": [
+          "Guardia clínica"
+        ],
+        "phone": "11 2150-0302"
+      },
+      {
+        "id": "hospital-horacio-lopez",
+        "name": "Hospital Municipal Dr. Horacio López",
+        "locality": "Garín",
+        "category": "Hospital oftalmológico y odontológico",
+        "address": null,
+        "addressNote": "La Municipalidad publica dos alturas distintas: la página de Guardias indica Bv. Presidente Perón 156 y la página de Centros de Salud indica Bv. Presidente Perón 240. No se fija una dirección única; confirmar antes de concurrir.",
+        "addressSourceUrl": "https://www.escobar.gob.ar/centros-de-salud/",
+        "serviceHours": "Guardia oftalmológica: todos los días, las 24 horas. Guardia odontológica: días hábiles, de 8 a 17 h",
+        "services": [
+          "Atención oftalmológica",
+          "Atención odontológica"
+        ],
+        "phone": "11 2150-0371"
+      },
+      {
+        "id": "udp-carlos-legaria",
+        "name": "UDP Dr. Carlos Legaria",
+        "locality": "Ingeniero Maschwitz",
+        "category": "Unidad de Diagnóstico Precoz",
+        "address": "Av. El Dorado y Avellaneda",
+        "serviceHours": "Todos los días, las 24 horas",
+        "services": [
+          "Guardia clínica y pediátrica",
+          "Laboratorio",
+          "Internación",
+          "Radiología"
+        ],
+        "phone": null
+      },
+      {
+        "id": "udp-susana-lara",
+        "name": "UDP Dra. Susana Lara",
+        "locality": "Maquinista Savio",
+        "category": "Unidad de Diagnóstico Precoz",
+        "address": "Independencia 140",
+        "serviceHours": "Guardia clínica y pediátrica: todos los días, las 24 horas. Guardia odontológica: lunes a viernes, de 8 a 17 h",
+        "services": [
+          "Guardia clínica y pediátrica",
+          "Guardia odontológica"
+        ],
+        "phone": null,
+        "serviceNote": "La ficha municipal de prestaciones para afiliados a PAMI informa para la guardia odontológica lunes a viernes de 8 a 16:30 h. La página general de Guardias informa hasta las 17 h; confirmar el horario antes de concurrir.",
+        "serviceNoteSourceUrl": "https://www.escobar.gob.ar/municipio/prestaciones-pami/"
+      },
+      {
+        "id": "udp-horacio-canesi",
+        "name": "UDP Polo Sanitario Dr. Horacio Canesi",
+        "locality": "Matheu",
+        "category": "Unidad de Diagnóstico Precoz",
+        "address": "Sarmiento 41",
+        "serviceHours": "Todos los días, las 24 horas",
+        "services": [
+          "Guardia clínica y pediátrica",
+          "Laboratorio",
+          "Internación",
+          "Radiología"
+        ],
+        "phone": "3484 462-759"
+      },
+      {
+        "id": "caps-marta-velazco",
+        "name": "CAPS Dra. Marta Velazco",
+        "locality": "Loma Verde",
+        "category": "CAPS",
+        "address": "Calle 117 s/n",
+        "serviceHours": "Todos los días, las 24 horas",
+        "services": [
+          "Guardia general"
+        ],
+        "phone": "3484 462-759"
+      }
+    ]
+  }
 }
