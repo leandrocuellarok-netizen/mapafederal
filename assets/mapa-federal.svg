@@ -1,15 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-labelledby="title desc">
-<title id="title">Mapa Federal — Argentina</title><desc id="desc">Emblema circular verde y ocre con la silueta de Argentina.</desc>
-<circle cx="250" cy="250" r="222" fill="none" stroke="#075B35" stroke-width="16"/>
-<circle cx="250" cy="250" r="195" fill="none" stroke="#A86A2B" stroke-width="10"/>
-<defs><clipPath id="argentina"><path d="M191 78 L215 66 236 72 252 64 270 77 292 83 306 101 328 108 342 126 330 141 348 153 363 170 355 188 370 202 360 220 370 237 356 253 365 270 349 286 355 304 339 320 342 340 326 357 322 379 307 398 300 420 284 440 270 460 256 450 249 431 239 415 236 395 224 378 226 359 214 341 219 321 207 302 213 282 202 263 210 245 198 225 205 206 195 188 205 169 194 151 204 133 194 115 203 98Z"/></clipPath></defs>
-<path d="M191 78 L215 66 236 72 252 64 270 77 292 83 306 101 328 108 342 126 330 141 348 153 363 170 355 188 370 202 360 220 370 237 356 253 365 270 349 286 355 304 339 320 342 340 326 357 322 379 307 398 300 420 284 440 270 460 256 450 249 431 239 415 236 395 224 378 226 359 214 341 219 321 207 302 213 282 202 263 210 245 198 225 205 206 195 188 205 169 194 151 204 133 194 115 203 98Z" fill="#075B35"/>
+<title id="title">Mapa Federal — Argentina</title>
+<desc id="desc">Silueta reconocible de la Argentina continental y Tierra del Fuego, con los colores celeste y blanco de la bandera sobre fondo verde profundo.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#123F30"/><stop offset="1" stop-color="#061F18"/></linearGradient>
+  <clipPath id="argentina">
+    <path d="M190 66 207 48 226 54 239 43 254 58 270 51 284 66 300 75 307 93 299 108 314 123 329 138 321 153 306 160 312 176 301 193 309 210 297 228 303 246 291 263 296 281 282 299 286 318 271 337 275 356 260 374 260 395 247 416 242 440 229 464 215 450 207 428 195 409 193 388 180 370 184 348 171 329 176 308 163 288 169 267 158 247 171 228 162 209 176 190 168 172 182 154 175 136 190 118 181 100 194 84Z"/>
+  </clipPath>
+</defs>
+<circle cx="250" cy="250" r="226" fill="url(#bg)" stroke="#D6B66F" stroke-width="5"/>
+<circle cx="250" cy="250" r="210" fill="none" stroke="#FFFFFF" stroke-opacity=".16" stroke-width="1.5"/>
 <g clip-path="url(#argentina)">
-<path d="M170 208 C225 195 250 176 282 144 C307 120 328 119 365 124 L378 175 C335 164 315 171 290 198 C257 231 226 245 177 255Z" fill="#A86A2B"/>
-<path d="M180 302 C226 291 255 266 280 239 C309 208 336 206 375 217 L377 265 C340 250 319 260 294 286 C262 319 226 337 184 346Z" fill="#A86A2B"/>
-<path d="M225 390 C250 376 268 354 287 337 C306 320 324 320 345 326 L330 380 C305 372 290 390 274 411 L248 444Z" fill="#A86A2B"/>
-<path d="M176 250 C226 237 259 216 289 185" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
-<path d="M182 346 C228 329 259 307 294 271" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
-<path d="M242 435 C264 415 283 393 305 377" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  <rect x="145" y="35" width="205" height="440" fill="#75BDE8"/>
+  <path d="M145 178H350V325H145Z" fill="#fff"/>
+  <circle cx="247" cy="250" r="15" fill="#E7B94F"/>
+  <g stroke="#fff" stroke-opacity=".3" stroke-width="2" fill="none">
+    <path d="M160 145Q245 170 325 125M158 215Q240 235 315 190M160 285Q240 300 305 255M170 350Q240 365 285 320M185 405Q230 420 265 380"/>
+  </g>
 </g>
+<path d="M190 66 207 48 226 54 239 43 254 58 270 51 284 66 300 75 307 93 299 108 314 123 329 138 321 153 306 160 312 176 301 193 309 210 297 228 303 246 291 263 296 281 282 299 286 318 271 337 275 356 260 374 260 395 247 416 242 440 229 464 215 450 207 428 195 409 193 388 180 370 184 348 171 329 176 308 163 288 169 267 158 247 171 228 162 209 176 190 168 172 182 154 175 136 190 118 181 100 194 84Z" fill="none" stroke="#F5EBD4" stroke-width="5" stroke-linejoin="round"/>
+<path d="M207 476 218 468 232 474 240 485 229 493 213 490Z" fill="#75BDE8" stroke="#F5EBD4" stroke-width="2"/>
+<circle cx="250" cy="250" r="4" fill="#D6B66F"/>
 </svg>
