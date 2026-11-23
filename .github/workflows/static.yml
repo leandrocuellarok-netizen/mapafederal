@@ -791,6 +791,36 @@ jobs:
           console.log("Investment Finder: filtros locales, alcance nacional, estado desconocido y trazabilidad comprobados.");
           JS
 
+      - name: Validate Investment Finder module manifest consistency
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifest = json.loads(Path("data/ai-modules.json").read_text(encoding="utf-8"))
+          catalog = json.loads(Path("data/investment-opportunities.json").read_text(encoding="utf-8"))
+          readme = Path("README.md").read_text(encoding="utf-8")
+          module = next(item for item in manifest["modules"] if item["id"] == "investment-finder")
+
+          assert module["status"] == "planned", "Investment Finder no debe presentarse como operativo."
+          capability = module["currentCapability"].lower()
+          for term in ("rimi", "kit 4.0", "unknown", "saldo del cupo", "disponibilidad", "etapa"):
+              assert term in capability, f"La capacidad documentada no refleja {term!r}."
+          assert "etapa" in readme.lower(), "README debe documentar el filtro por etapa."
+
+          records = {item["id"]: item for item in catalog["opportunities"]}
+          for record_id in ("rimi-eficiencia-energetica-2026", "programa-kit-4-0-2026"):
+              record = records.get(record_id)
+              assert record is not None, f"Falta el registro {record_id}."
+              assert record["opportunityStatus"] == "unknown", f"{record_id} no tiene disponibilidad confirmada."
+              assert record["verification"]["status"] == "verified"
+              assert record["sourceUrl"].startswith("https://")
+              assert record["sourcePublishedAt"] and record["period"]
+              assert record["verification"]["checkedAt"] and record["verification"]["scope"]
+
+          print("Investment Finder: manifiesto, documentación, trazabilidad y disponibilidad no confirmada alineados.")
+          PY
+
       - name: Test CSV formula-injection protection
         run: |
           node - <<'JS'
