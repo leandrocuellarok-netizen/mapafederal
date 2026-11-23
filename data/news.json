@@ -14,7 +14,8 @@
     },
     "jurisdictions": [],
     "geographyStatus": "not_specified",
-    "geographyEvidence": []
+    "geographyEvidence": [],
+    "id": "news-www-reuters-com-business-energy-argentina-approves-incentive-scheme-508-billion-lng-project-2026-11-20"
   },
   {
     "title": "Cuatro emprendimientos fueron distinguidos en la final nacional 2026",
@@ -39,7 +40,8 @@
       "Ciudad de Buenos Aires",
       "Santa Fe",
       "Misiones"
-    ]
+    ],
+    "id": "news-www-argentina-gob-ar-noticias-el-gobierno-nacional-anuncio-los-cuatro-ganadores-del-concurso-emprendimiento-argentino"
   },
   {
     "title": "Ushuaia: llaman a licitación para un nuevo muelle de catamaranes",
@@ -60,7 +62,8 @@
     "geographyStatus": "explicit",
     "geographyEvidence": [
       "Ushuaia (Tierra del Fuego)"
-    ]
+    ],
+    "id": "news-www-argentina-gob-ar-noticias-anpyn-llama-licitacion-para-la-construccion-de-un-nuevo-muelle-de-catamaranes-en-el-puerto"
   },
   {
     "title": "El Proyecto KT+ presentó resultados de asistencia técnica a pymes de distintas regiones",
@@ -97,7 +100,8 @@
       "Salta",
       "Corrientes",
       "Concepción del Uruguay (Entre Ríos)"
-    ]
+    ],
+    "id": "news-www-argentina-gob-ar-noticias-el-proyecto-kt-presento-los-resultados-de-su-segundo-ciclo-de-asistencia-tecnica-empresas"
   },
   {
     "title": "El INTI presentó más de 40 casos de innovación para la industria 4.0",
@@ -114,7 +118,8 @@
     },
     "jurisdictions": [],
     "geographyStatus": "not_specified",
-    "geographyEvidence": []
+    "geographyEvidence": [],
+    "id": "news-www-argentina-gob-ar-noticias-mas-de-40-casos-de-innovacion-en-la-3deg-jornada-de-transformacion-digital-e-industria-40"
   },
   {
     "title": "BioArgentina 2026 reunió en Bariloche a empresas, investigadores y emprendedores",
@@ -135,7 +140,8 @@
     "geographyStatus": "explicit",
     "geographyEvidence": [
       "San Carlos de Bariloche (Río Negro)"
-    ]
+    ],
+    "id": "news-www-argentina-gob-ar-noticias-biotecnologia-argentina-innovacion-para-el-desarrollo-productivo"
   },
   {
     "title": "INTI, Würth Elektronik y Electrocomponentes impulsaron jornadas sobre compatibilidad electromagnética",
@@ -158,7 +164,8 @@
     "geographyEvidence": [
       "Provincia de Buenos Aires",
       "Ciudad de Córdoba (Córdoba)"
-    ]
+    ],
+    "id": "news-www-argentina-gob-ar-noticias-argentina-fue-sede-de-un-encuentro-internacional-sobre-compatibilidad-electromagnetica"
   },
   {
     "title": "El superávit comercial llegó a USD 3.394 millones en octubre",
@@ -175,7 +182,8 @@
     },
     "jurisdictions": [],
     "geographyStatus": "not_specified",
-    "geographyEvidence": []
+    "geographyEvidence": [],
+    "id": "news-www-indec-gob-ar-uploads-informesdeprensa-ica-11-262beec7410a-pdf"
   },
   {
     "title": "El INTA destacó la trazabilidad y la diferenciación como oportunidades para la cadena cárnica",
@@ -192,7 +200,8 @@
     },
     "jurisdictions": [],
     "geographyStatus": "not_specified",
-    "geographyEvidence": []
+    "geographyEvidence": [],
+    "id": "news-www-argentina-gob-ar-noticias-la-demanda-de-carnes-diferenciadas-abre-oportunidades-para-agregar-valor"
   },
   {
     "title": "Argentina Alimenta reunió a productores y compradores de 25 países",
@@ -209,7 +218,8 @@
     },
     "jurisdictions": [],
     "geographyStatus": "not_specified",
-    "geographyEvidence": []
+    "geographyEvidence": [],
+    "id": "news-www-argentina-gob-ar-noticias-la-secretaria-general-de-la-presidencia-recorrio-la-feria-argentina-alimenta"
   },
   {
     "title": "Toyota anunció un proyecto de inversión superior a USD 1.300 millones en Zárate",
@@ -230,7 +240,8 @@
     "geographyStatus": "explicit",
     "geographyEvidence": [
       "Zárate (provincia de Buenos Aires)"
-    ]
+    ],
+    "id": "news-www-argentina-gob-ar-noticias-toyota-anuncio-una-inversion-de-mas-de-usd-1300-millones-para-construir-una-nueva-planta-en"
   },
   {
     "title": "La segunda Ronda de Negocios RIGI se realizará el 2 de diciembre con foco en energía e hidrocarburos",
@@ -247,7 +258,8 @@
     },
     "jurisdictions": [],
     "geographyStatus": "not_specified",
-    "geographyEvidence": []
+    "geographyEvidence": [],
+    "id": "news-www-argentina-gob-ar-noticias-ya-esta-abierta-la-inscripcion-para-la-segunda-ronda-de-negocios-rigi-con-foco-en"
   },
   {
     "title": "Chubut: el potencial minero convive con un riesgo social y regulatorio persistente",
@@ -282,6 +294,7 @@
     "geographyStatus": "explicit",
     "geographyEvidence": [
       "Chubut y Meseta Central"
-    ]
+    ],
+    "id": "news-www-biodiversidadla-org-articulos-nuevo-intento-para-habilitar-la-megamineria-en-la-meseta-chubutense"
   }
 ]

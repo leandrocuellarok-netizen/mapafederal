@@ -51,6 +51,10 @@ Cuando el propietario decida habilitar una clave:
 
 La cuota gratuita de Gemini depende del modelo, región, disponibilidad y límites vigentes. Google indica que en el nivel gratuito el contenido puede utilizarse para mejorar sus productos. No enviar información confidencial o sensible bajo ese nivel. Confirmar condiciones en la consola y documentación antes de habilitar el servicio.
 
+## Identificadores estables para noticias
+
+Cada registro de `data/news.json` debe incluir un `id` interno y determinista: `news-` seguido del host, la ruta y la consulta de la URL canónica de la fuente, normalizados a minúsculas y separados por guiones. La canonicalización elimina fragmentos y puertos HTTPS predeterminados. El identificador no es un ID asignado por el medio: sirve para enlazar fragmentos y validar citas dentro de Mapa Federal. Si cambia la URL de origen, debe recalcularse el ID y actualizarse cualquier referencia dependiente. CI comprueba que el ID coincida con la URL y que no haya duplicados.
+
 ## Flujo de respuesta
 
 1. El usuario formula una pregunta.

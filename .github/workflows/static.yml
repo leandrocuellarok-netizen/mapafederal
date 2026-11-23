@@ -139,6 +139,7 @@ jobs:
           python - <<'PY'
           import json
           import math
+          import re
           from datetime import date, time, timedelta
           from urllib.parse import urlparse
           from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
@@ -266,10 +267,18 @@ jobs:
                   fragment=""
               ).geturl()
 
+          def stable_news_id(raw_url):
+              parsed = urlparse(canonical_news_url(raw_url))
+              source_identity = f"{parsed.hostname}{parsed.path}{'?' + parsed.query if parsed.query else ''}"
+              slug = re.sub(r"[^a-z0-9]+", "-", source_identity.lower()).strip("-")
+              return f"news-{slug}"
+
           assert canonical_news_url("HTTPS://Example.COM:443#seccion") == "https://example.com/"
           assert canonical_news_url("https://example.com") == canonical_news_url("https://example.com/")
           assert canonical_news_url("https://example.com:8443/noticia") == "https://example.com:8443/noticia"
           assert canonical_news_url("https://example.com/noticia?id=1") != canonical_news_url("https://example.com/noticia?id=2")
+          assert stable_news_id("HTTPS://Example.COM:443#seccion") == stable_news_id("https://example.com/")
+          assert stable_news_id("https://example.com/noticia?id=1") != stable_news_id("https://example.com/noticia?id=2")
           try:
               canonical_news_url("https://usuario:clave@example.com/noticia")
           except ValueError:
@@ -392,9 +401,14 @@ jobs:
 
           news_urls = set()
           news_titles = set()
+          news_ids = set()
           for item in news:
-              for field in ("title", "date", "category", "summary", "source", "url"):
+              for field in ("id", "title", "date", "category", "summary", "source", "url"):
                   assert isinstance(item.get(field), str) and item[field].strip(), f"Noticia sin {field}"
+              expected_news_id = stable_news_id(item["url"])
+              assert item["id"] == expected_news_id, f"ID de noticia no determinista: {item['title']}"
+              assert item["id"] not in news_ids, f"ID de noticia duplicado: {item['id']}"
+              news_ids.add(item["id"])
               date.fromisoformat(item["date"])
               assert item["date"] <= date.today().isoformat(), f"Noticia con fecha futura: {item['title']}"
               assert item["category"] in categories, f"Categoría no admitida: {item['category']}"
