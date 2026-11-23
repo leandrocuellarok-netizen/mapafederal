@@ -48,7 +48,7 @@
       if(item.scope==="national"&&item.jurisdiction!==null)throw new TypeError("Un registro nacional no debe asignarse a una jurisdicción: "+item.id);
       if(item.scope==="provincial"&&(typeof item.jurisdiction!=="string"||!item.jurisdiction.trim()))throw new TypeError("Falta la jurisdicción provincial: "+item.id);
       for(const field of ["validFrom","validUntil"]){
-        if(item[field]!==null&&item[field]!==undefined&&(!isIsoDate(item[field])||item[field]>today()&&field==="validFrom"))throw new TypeError("Fecha de vigencia inválida ("+field+"): "+item.id);
+        if(item[field]!==null&&item[field]!==undefined&&!isIsoDate(item[field]))throw new TypeError("Fecha de vigencia inválida ("+field+"): "+item.id);
       }
       const verification=item.verification;
       if(!verification||!Object.prototype.hasOwnProperty.call(verificationLabels,verification.status)||typeof verification.scope!=="string"||!verification.scope.trim())throw new TypeError("Verificación incompleta: "+item.id);
