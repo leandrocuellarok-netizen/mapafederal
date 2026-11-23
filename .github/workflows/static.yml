@@ -134,6 +134,20 @@ jobs:
           console.log("Federal Reports: CSV escapado, neutralización de fórmulas y metadatos de procedencia comprobados.");
           JS
 
+      - name: Test scalable strategic node directory
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          html = Path("index.html").read_text(encoding="utf-8")
+          assert 'id="poi-prev"' in html and 'id="poi-next"' in html, "Faltan controles de paginación del directorio"
+          assert 'id="poi-page-status"' in html, "Falta el estado accesible de paginación"
+          assert "const POI_PAGE_SIZE=20" in html, "El directorio debe limitar la vista a 20 nodos por página"
+          assert "arr.slice(first,first+POI_PAGE_SIZE)" in html, "La tabla debe renderizar solo la página actual"
+          assert 'addEventListener("click",()=>{poiPage=Math.max(1,poiPage-1)' in html, "Falta navegación a la página anterior"
+          assert 'addEventListener("click",()=>{poiPage+=1' in html, "Falta navegación a la página siguiente"
+          assert "poiPage=1;renderPOI()" in html, "Los filtros deben reiniciar la paginación"
+          print("Directorio de nodos: paginación, límite de 20 registros, navegación y reinicio por filtros comprobados.")
+          PY
       - name: Validate geographic and editorial JSON
         run: |
           python - <<'PY'
