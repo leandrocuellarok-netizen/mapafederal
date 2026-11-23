@@ -2,6 +2,11 @@
 (function(){
 "use strict";
 const translations={en:{
+"Organismo/fuente:":"Publisher/source:",
+"Fuente de coordenadas:":"Coordinate source:",
+"Vigencia no informada":"Validity not stated",
+"verificado":"verified",
+"No indicado":"Not stated",
 "referencias cartográficas ·":"mapped references ·",
 "de 7 localidades con puntos propios. El catálogo actual se concentra en":"of 7 localities with their own mapped points. The current catalogue is concentrated in",
 "Belén de Escobar y Garín":"Belén de Escobar and Garín",

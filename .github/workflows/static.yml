@@ -283,6 +283,13 @@ jobs:
           local_nodes = [item for item in nodes if item.get("district") == "Partido de Escobar"]
           assert len(local_nodes) == 5
           assert {item["locality"] for item in local_nodes} == {"Belén de Escobar", "Garín"}
+          for item in local_nodes:
+              assert item.get("sourceName") and item.get("sourcePublicationNote")
+              assert item.get("validityPeriod") and item.get("status") in allowed
+              assert item.get("verification", {}).get("checkedAt") == "2026-11-23"
+              assert item.get("verification", {}).get("scope")
+              if item.get("coordinateSource"):
+                  assert item.get("coordinateSourceName") and item.get("coordinateSourcePublicationNote")
           assert 'id="escobar"' in html
           assert './assets/escobar-profile.js' in html
           assert 'id="escobar-localities"' in html and 'id="escobar-map-nodes"' in html

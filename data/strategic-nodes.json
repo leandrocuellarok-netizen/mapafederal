@@ -810,7 +810,16 @@
     "note": "Cabecera del Partido de Escobar. Punto de referencia urbano; no representa el límite administrativo del partido.",
     "source": "https://mapcarta.com/es/19217836",
     "district": "Partido de Escobar",
-    "locality": "Belén de Escobar"
+    "locality": "Belén de Escobar",
+    "sourceName": "Mapcarta",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La ficha no indica fecha de publicación.",
+    "validityPeriod": "Referencia de centro urbano consultada el 2026-11-23; no delimita el partido ni la localidad.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-23",
+      "scope": "Se comprobó la ficha cartográfica de Mapcarta y la identificación de Belén de Escobar. La coordenada se usa como referencia del centro urbano, no como límite administrativo; verificación web, no presencial."
+    }
   },
   {
     "name": "Garín — centro de localidad",
@@ -823,7 +832,16 @@
     "note": "Localidad del Partido de Escobar. Punto de referencia urbano; no representa el límite administrativo de Garín.",
     "source": "https://mapcarta.com/es/19213366",
     "district": "Partido de Escobar",
-    "locality": "Garín"
+    "locality": "Garín",
+    "sourceName": "Mapcarta",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La ficha no indica fecha de publicación.",
+    "validityPeriod": "Referencia de centro urbano consultada el 2026-11-23; no delimita el partido ni la localidad.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-23",
+      "scope": "Se comprobó la ficha cartográfica de Mapcarta y la identificación de Garín. La coordenada se usa como referencia del centro urbano, no como límite administrativo; verificación web, no presencial."
+    }
   },
   {
     "name": "Parque Industrial Garín",
@@ -837,7 +855,19 @@
     "source": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
     "coordinateSource": "https://parquesindustriales.com.ar/parque?id=49080",
     "district": "Partido de Escobar",
-    "locality": "Garín"
+    "locality": "Garín",
+    "sourceName": "Municipalidad de Escobar",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La página municipal no indica fecha de publicación.",
+    "coordinateSourceName": "Directorio Parques Industriales",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "El directorio no indica fecha de publicación.",
+    "validityPeriod": "Área industrial descrita en la página municipal consultada el 2026-11-23; la coordenada es orientativa y no acredita disponibilidad de lotes o naves.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-23",
+      "scope": "La página municipal caracteriza el Parque Industrial Garín como consolidado. La coordenada se toma del directorio Parques Industriales; no se verificaron parcelas, operación de cada empresa ni disponibilidad comercial."
+    }
   },
   {
     "name": "Bioparque Temaikèn",
@@ -851,7 +881,19 @@
     "source": "https://www.temaiken.org.ar/bioparque",
     "coordinateSource": "https://ar.near-place.com/bioparque-temaiken-ruta-25-km-1-belen-de-escobar",
     "district": "Partido de Escobar",
-    "locality": "Belén de Escobar"
+    "locality": "Belén de Escobar",
+    "sourceName": "Fundación Temaikèn",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La página oficial no indica fecha de publicación.",
+    "coordinateSourceName": "Near-place",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "El directorio no indica fecha de publicación.",
+    "validityPeriod": "Atractivo publicado en la web oficial consultada el 2026-11-23; la coordenada representa un acceso de referencia, no el perímetro del predio.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-23",
+      "scope": "La página oficial identifica el Bioparque y su acceso en Ruta Provincial 25 km 1. La coordenada proviene de Near-place y se usa como referencia de acceso, no perímetro; verificación web, no presencial."
+    }
   },
   {
     "name": "Munchi’s — sucursal Temaikèn",
@@ -865,6 +907,18 @@
     "source": "https://www.munchis.com.ar/locales",
     "coordinateSource": "https://ar.near-place.com/munchis-av-sarmiento-belen-de-escobar",
     "district": "Partido de Escobar",
-    "locality": "Belén de Escobar"
+    "locality": "Belén de Escobar",
+    "sourceName": "Munchi’s",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "El directorio oficial no indica fecha de publicación.",
+    "coordinateSourceName": "Near-place",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "El directorio no indica fecha de publicación.",
+    "validityPeriod": "Sucursal listada oficialmente en la página consultada el 2026-11-23; la coordenada es un punto comercial de referencia y no delimita el establecimiento.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-23",
+      "scope": "El directorio oficial de Munchi’s identifica una sucursal denominada Temaikèn en Av. Sarmiento. La coordenada proviene de Near-place; no se verificó presencialmente el local, su horario ni su actividad en el momento de consulta."
+    }
   }
 ]
