@@ -21,6 +21,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Validate investment sector map filters
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          html = Path("index.html").read_text(encoding="utf-8")
+          sectors = ["Forestoindustria", "Turismo", "Infraestructura", "Minería", "Tecnología", "Siderurgia", "Energía", "Petróleo y gas"]
+          for sector in sectors:
+              assert f'data-sector="{sector}"' in html, f"Falta el filtro sectorial: {sector}"
+          assert "function matchesSector" in html, "Falta el criterio de asociación sectorial"
+          assert "matchesSector(p,activeSector)" in html, "El filtro sectorial no se aplica al catálogo"
+          assert "no acredita un proyecto ni una oportunidad de inversión" in html, "Falta la advertencia de alcance"
+          print("Mapa sectorial: ocho sectores, filtrado y advertencia de alcance comprobados.")
+          PY
       - name: Validate bilingual interface
         run: |
           node --check assets/i18n.js
