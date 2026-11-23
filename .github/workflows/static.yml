@@ -460,7 +460,7 @@ jobs:
               assert jurisdiction is None or jurisdiction in expected_jurisdictions, f"Jurisdicción de evento no admitida: {jurisdiction}"
               if event["scope"] in {"local", "regional"}:
                   assert jurisdiction is not None, f"Evento local/regional sin jurisdicción: {event['id']}"
-              assert event["period"] is None or (isinstance(event["period"], str) and event["period"].strip()), f"Período de evento inválido: {event['id']}"
+              assert isinstance(event["period"], str) and event["period"].strip(), f"Período de evento no explícito: {event['id']}"
               assert event["status"] in event_statuses, f"Estado de evento no admitido: {event['id']}"
               source_url = urlparse(event["sourceUrl"])
               assert source_url.scheme == "https" and source_url.hostname and source_url.username is None and source_url.password is None, f"Fuente oficial de evento inválida: {event['id']}"
@@ -502,7 +502,7 @@ jobs:
               "sourceName": "Fuente de prueba",
               "sourceUrl": "https://example.org/evento",
               "sourcePublishedAt": "2026-11-20",
-              "period": None,
+              "period": "No consignado en la fuente de prueba",
               "status": "confirmed",
               "verification": {
                   "status": "verified",
@@ -516,6 +516,9 @@ jobs:
               {**sample_event, "endDate": "2026-12-09"},
               {**sample_event, "startDate": "2026-11-20"},
               {**sample_event, "status": "completed"},
+              {**sample_event, "period": None},
+              {**sample_event, "period": ""},
+              {**sample_event, "period": "   "},
               {**sample_event, "verification": {**sample_event["verification"], "status": "outdated"}}
           ):
               try:
