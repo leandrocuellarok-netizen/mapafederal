@@ -1039,12 +1039,18 @@ jobs:
           data = json.loads(block)
           assert any(item.get("@type") == "WebSite" for item in data["@graph"])
           assert any(item.get("@type") == "WebApplication" for item in data["@graph"])
-          assert 'id="preguntas"' in html and "¿Los datos se actualizan en tiempo real?" in html
+          assert 'id="preguntas"' not in html
           assert "Sitemap: https://leandrocuellarok-netizen.github.io/mapafederal/sitemap.xml" in robots
           urls = [node.text for node in sitemap.findall("{http://www.sitemaps.org/schemas/sitemap/0.9}url/{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
-          assert urls == ["https://leandrocuellarok-netizen.github.io/mapafederal/"]
+          expected_urls = [
+              "https://leandrocuellarok-netizen.github.io/mapafederal/",
+              "https://leandrocuellarok-netizen.github.io/mapafederal/nodos-estrategicos/",
+              "https://leandrocuellarok-netizen.github.io/mapafederal/radar-ia/",
+              "https://leandrocuellarok-netizen.github.io/mapafederal/investment-finder/",
+          ]
+          assert urls == expected_urls
           assert '<svg' in logo and 'silueta de Argentina' in logo
-          print("SEO/GEO: metadatos, Schema.org, FAQ visible, robots, sitemap y emblema validados.")
+          print("SEO/GEO: metadatos, Schema.org, FAQ retirada, robots, sitemap de cuatro páginas y emblema validados.")
           PY
 
   deploy:
