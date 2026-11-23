@@ -216,7 +216,7 @@ jobs:
           assert isinstance(nodes, list) and nodes, "El catálogo de nodos está vacío"
           assert isinstance(news, list), "El archivo de noticias debe ser una lista"
           names = set()
-          allowed_node_types = {"Ciudad", "Puerto", "Aeropuerto", "Paso fronterizo", "Logística", "Industria", "Turismo"}
+          allowed_node_types = {"Ciudad", "Puerto", "Aeropuerto", "Paso fronterizo", "Logística", "Industria", "Turismo", "Recurso mineral"}
           expected_jurisdictions = {
               "CABA", "Buenos Aires", "Catamarca", "Chaco", "Chubut", "Córdoba",
               "Corrientes", "Entre Ríos", "Formosa", "Jujuy", "La Pampa", "La Rioja",
