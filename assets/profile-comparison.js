@@ -48,5 +48,34 @@
       }
     };
   }
-  return {compareProfiles};
+  function toExportTable(comparison){
+    if(!comparison||!comparison.first||!comparison.second||!comparison.differences||!comparison.verification)throw new TypeError("No hay una comparación completa para exportar.");
+    for(const key of ["period","unit","publisher","published","sourceUrl"]){
+      if(typeof comparison[key]!=="string"||!comparison[key].trim())throw new TypeError("Falta la procedencia de la comparación: "+key);
+    }
+    if(!isIsoDate(comparison.published))throw new TypeError("La fecha de publicación debe ser ISO.");
+    let source;
+    try{source=new URL(comparison.sourceUrl);}catch(_){throw new TypeError("La fuente estadística no es una URL válida.");}
+    if(source.protocol!=="https:"||!source.hostname)throw new TypeError("La fuente estadística debe usar HTTPS.");
+    const verification=comparison.verification;
+    if(verification.status!=="verified"||!isIsoDate(verification.checkedAt)||typeof verification.scope!=="string"||!verification.scope.trim())throw new Error("La exportación requiere una verificación fechada y con alcance documentado.");
+    if(verification.checkedAt<comparison.published||verification.checkedAt>new Date().toISOString().slice(0,10))throw new Error("La fecha de verificación no es coherente con la publicación.");
+    const metrics=[
+      {label:"Exportaciones de bienes",field:"exportsUsdMillions",valueUnit:comparison.unit,differenceUnit:comparison.unit},
+      {label:"Variación interanual",field:"yearOnYearPct",valueUnit:"%",differenceUnit:"puntos porcentuales"},
+      {label:"Participación nacional",field:"nationalSharePct",valueUnit:"%",differenceUnit:"puntos porcentuales"}
+    ];
+    for(const metric of metrics){
+      const a=comparison.first[metric.field],b=comparison.second[metric.field],difference=comparison.differences[metric.field];
+      if(![a,b,difference].every(value=>typeof value==="number"&&Number.isFinite(value)))throw new TypeError("Indicador no numérico o no finito: "+metric.field);
+      if(difference!==a-b)throw new Error("La diferencia exportada no coincide con los valores comparados: "+metric.field);
+    }
+    if(typeof comparison.first.province!=="string"||!comparison.first.province.trim()||typeof comparison.second.province!=="string"||!comparison.second.province.trim())throw new TypeError("La comparación debe identificar ambas jurisdicciones.");
+    const headers=["Indicador","Jurisdicción A","Valor A","Jurisdicción B","Valor B","Diferencia (A - B)","Unidad de valores","Unidad de diferencia","Período","Fuente","Fecha de publicación","URL de fuente","Estado de verificación","Fecha de verificación","Alcance de verificación"];
+    const rows=metrics.map(metric=>[
+      metric.label,comparison.first.province,comparison.first[metric.field],comparison.second.province,comparison.second[metric.field],comparison.differences[metric.field],metric.valueUnit,metric.differenceUnit,comparison.period,comparison.publisher,comparison.published,source.toString(),verification.status,verification.checkedAt,verification.scope
+    ]);
+    return {headers,rows};
+  }
+  return {compareProfiles,toExportTable};
 });
