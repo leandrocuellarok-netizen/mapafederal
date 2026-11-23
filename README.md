@@ -17,6 +17,7 @@ Plataforma web estática en evolución para explorar infraestructura, nodos terr
 - Sección editorial alimentada por `data/news.json`, con filtros por tema, jurisdicciones explícitamente mencionadas y búsqueda; los registros ambiguos no reciben una provincia por inferencia. La validación evita titulares repetidos y enlaces duplicados tras normalizar esquema, host, puerto HTTPS predeterminado, ruta raíz y fragmentos, preservando los parámetros de consulta.
 - Diseño adaptable, navegación por anclas y avisos de estado.
 - Fichas territoriales Markdown por jurisdicción con período, fecha de publicación y estado/alcance de verificación del dataset OPEX.
+- Comparador de dos jurisdicciones con exportación CSV de los tres indicadores homogéneos, diferencias A − B, unidad, período, fuente, publicación y estado/fecha/alcance de verificación.
 - Validación automática de los archivos JSON antes de desplegar en GitHub Pages.
 
 ## Sectores estratégicos de inversión
@@ -172,6 +173,10 @@ El directorio de nodos y los perfiles provinciales permiten descargar los result
 - Los archivos se generan en el navegador, con codificación UTF-8 y separador de punto y coma para facilitar su apertura en hojas de cálculo configuradas para español.
 - Las celdas de texto que comienzan con `=`, `+`, `-` o `@` (incluso después de espacios) se neutralizan con un apóstrofo para reducir el riesgo de inyección de fórmulas al abrir los CSV en hojas de cálculo; los valores numéricos, incluidas coordenadas negativas, conservan su formato.
 - La exportación no añade datos nuevos ni convierte las coordenadas orientativas en ubicaciones operativas. Revisar siempre las fuentes y el período antes de utilizar los archivos en informes comerciales.
+
+### Exportación de comparaciones Federal Reports
+
+Después de generar una comparación entre dos jurisdicciones, el botón **Exportar comparación CSV** descarga las tres métricas comparadas y sus diferencias (primera jurisdicción menos segunda). Cada fila conserva las dos jurisdicciones, valores, unidades, período OPEX, organismo publicador, fecha y URL de publicación, además del estado, fecha y alcance de verificación. Cambiar cualquiera de las jurisdicciones invalida la comparación anterior y deshabilita la exportación hasta volver a calcularla. El archivo se genera localmente con el mismo serializador CSV que neutraliza fórmulas en celdas de texto; no consulta servicios externos ni añade indicadores.
 
 ## Ficha de prospección territorial
 
