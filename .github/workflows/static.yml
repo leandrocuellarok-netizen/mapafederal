@@ -165,6 +165,45 @@ jobs:
           console.log("Federal Reports: CSV escapado, neutralización de fórmulas y metadatos de procedencia comprobados.");
           JS
 
+      - name: Test Investment Finder filtered CSV export and provenance
+        run: |
+          node --check assets/investment-export.js
+          node - <<'NODE'
+          const assert = require("node:assert/strict");
+          const fs = require("node:fs");
+          const catalog = require("./data/investment-opportunities.json");
+          const { toExportTable } = require("./assets/investment-export.js");
+          const table = toExportTable(catalog.opportunities, catalog);
+          assert.equal(table.rows.length, catalog.opportunities.length);
+          const column = name => table.headers.indexOf(name);
+          assert.ok(column("URL de la fuente") >= 0);
+          assert.ok(column("Período") >= 0);
+          assert.ok(column("Fecha de publicación de la fuente") >= 0);
+          assert.ok(column("Estado de verificación") >= 0);
+          assert.ok(column("Fecha de verificación") >= 0);
+          assert.ok(column("Alcance de verificación") >= 0);
+          const rimi = catalog.opportunities.find(item => item.id === "rimi-eficiencia-energetica-2026");
+          const rimiRow = toExportTable([rimi], catalog).rows[0];
+          assert.equal(rimiRow[column("Estado de oportunidad (código)")], "unknown");
+          assert.equal(rimiRow[column("Estado de oportunidad")], "Disponibilidad no confirmada");
+          assert.equal(rimiRow[column("Fecha de publicación de la fuente")], "2026-11-04");
+          assert.equal(rimiRow[column("Estado de verificación (código)")], "verified");
+          assert.equal(rimiRow[column("Período")], rimi.period);
+          assert.equal(rimiRow[column("URL de la fuente")], rimi.sourceUrl);
+          assert.throws(() => toExportTable([{ ...rimi, sourceUrl: "http://example.org/source" }], catalog), /HTTPS/);
+          assert.throws(() => toExportTable([{ ...rimi, period: " " }], catalog), /period/);
+          assert.throws(() => toExportTable([{ ...rimi, verification: { ...rimi.verification, checkedAt: "2026-11-03" } }], catalog), /incoherente/);
+          assert.throws(() => toExportTable([{ ...rimi, amount: { value: Infinity, currency: "ARS", basis: "Monto de prueba" } }], catalog), /Monto publicado inválido/);
+          const page = fs.readFileSync("investment-finder/index.html", "utf8");
+          const translations = fs.readFileSync("assets/i18n.js", "utf8");
+          assert.ok(page.includes('../assets/investment-export.js'));
+          assert.ok(page.includes('id="export-investment-results"'));
+          assert.ok(page.includes('id="investment-export-status"'));
+          assert.ok(page.includes('MapaFederalInvestmentExport.toExportTable(filtered,investmentMetadata)'));
+          assert.ok(page.includes('downloadCsv("mapa-federal-oportunidades-filtradas.csv"'));
+          assert.ok(translations.includes('"Exportar resultados CSV":"Export filtered results CSV"'));
+          console.log("Investment Finder: exportación del conjunto filtrado, estados unknown, fuentes, fechas, períodos y rechazos de datos inválidos comprobados.");
+          NODE
       - name: Test scalable strategic node directory
         run: |
           python - <<'PY'
