@@ -399,6 +399,14 @@ jobs:
               else:
                   raise AssertionError("Se aceptó un período editorial ausente o vacío")
 
+          with open("README.md", encoding="utf-8") as f:
+              readme = f.read()
+          example_news_url = "https://dominio-oficial-o-medio.example/noticia"
+          example_news_id = stable_news_id(example_news_url)
+          assert example_news_id == "news-dominio-oficial-o-medio-example-noticia"
+          assert f'"id": "{example_news_id}"' in readme, "El ejemplo de README debe incluir el ID determinista de su URL"
+          assert "ID interno determinista" in readme, "README debe explicar cómo generar el ID de noticia"
+
           news_urls = set()
           news_titles = set()
           news_ids = set()
