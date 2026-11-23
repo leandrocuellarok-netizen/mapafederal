@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#082D20"><meta name="description" content="Directorio territorial e infraestructura estratégica de Argentina."><meta name="robots" content="index,follow"><link rel="canonical" href="https://leandrocuellarok-netizen.github.io/mapafederal/nodos-estrategicos/"><meta property="og:type" content="website"><meta property="og:title" content="Nodos estratégicos | Mapa Federal"><meta property="og:description" content="Directorio territorial e infraestructura estratégica de Argentina."><meta property="og:url" content="https://leandrocuellarok-netizen.github.io/mapafederal/"><meta property="og:image" content="https://leandrocuellarok-netizen.github.io/mapafederal/assets/mapa-federal.svg"><meta property="og:image:alt" content="Silueta de Argentina con los colores celeste y blanco"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Nodos estratégicos | Mapa Federal"><meta name="twitter:description" content="Directorio territorial e infraestructura estratégica de Argentina."><meta name="twitter:image" content="https://leandrocuellarok-netizen.github.io/mapafederal/assets/mapa-federal.svg">
+<title>Nodos estratégicos | Mapa Federal</title>
+<meta name="application-name" content="Mapa Federal"><meta name="author" content="Mapa Federal">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://leandrocuellarok-netizen.github.io/mapafederal/#organization","name":"Mapa Federal","url":"https://leandrocuellarok-netizen.github.io/mapafederal/","logo":"https://leandrocuellarok-netizen.github.io/mapafederal/assets/mapa-federal.svg","description":"Plataforma de exploración territorial y económica de Argentina con información pública, fuentes identificables y períodos documentados."},{"@type":"WebSite","@id":"https://leandrocuellarok-netizen.github.io/mapafederal/#website","url":"https://leandrocuellarok-netizen.github.io/mapafederal/","name":"Mapa Federal","inLanguage":["es","en"],"publisher":{"@id":"https://leandrocuellarok-netizen.github.io/mapafederal/#organization"}},{"@type":"WebApplication","name":"Mapa Federal","url":"https://leandrocuellarok-netizen.github.io/mapafederal/","applicationCategory":"BusinessApplication","operatingSystem":"Any","description":"Explorador territorial argentino con mapa de nodos, perfiles económicos provinciales, noticias curadas y catálogo documental de oportunidades con filtros locales.","isAccessibleForFree":true,"publisher":{"@id":"https://leandrocuellarok-netizen.github.io/mapafederal/#organization"}}]}</script>
+<link rel="preconnect" href="https://unpkg.com"><link rel="preconnect" href="https://tile.openstreetmap.org">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+:root{--forest:#082D20;--forest2:#104532;--gold:#C7A35B;--gold2:#E2C783;--ivory:#F1EBDD;--paper:#F6F7F3;--ink:#14231D;--muted:#718078;--line:#DDE4DC;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.wrap{width:min(1220px,calc(100% - 44px));margin:auto}
+header{height:76px;position:sticky;top:0;z-index:1000;background:rgba(6,35,25,.96);backdrop-filter:blur(16px);border-bottom:1px solid #c7a35b44;color:white}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;font:20px Georgia,serif;letter-spacing:.12em}.brandmark{width:38px;height:38px;object-fit:contain;display:block;flex:0 0 38px}.hero-symbol{z-index:1;width:min(68%,250px);height:auto;aspect-ratio:1;filter:drop-shadow(0 12px 24px #0005)}.navlinks{display:flex;gap:20px;color:#d7e0d9;font-size:12px}.navlinks a:hover{color:var(--gold2)}.nav-cta{border:1px solid var(--gold);padding:10px 14px;color:var(--gold2);font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.hero{background:radial-gradient(ellipse at 72% 45%,#1a503b 0,#0c3828 38%,#061f17 78%);color:white;position:relative;overflow:hidden;padding:70px 0 56px}.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(90deg,transparent,#000)}.hero-grid{position:relative;display:grid;grid-template-columns:1fr .9fr;gap:42px;align-items:center}.eyebrow{color:var(--gold2);font-size:10px;letter-spacing:.23em;text-transform:uppercase;font-weight:700}.hero h1{font:clamp(42px,5.8vw,70px)/1.03 Georgia,serif;font-weight:400;max-width:720px;margin:20px 0}.hero h1 em{color:var(--gold2);font-style:normal}.hero p{color:#d0ddd5;line-height:1.8;font-size:15px;max-width:550px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border:1px solid transparent;font-size:10px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--gold);color:#18251c}.secondary{border-color:#ffffff55;color:white}.hero-art{min-height:330px;display:grid;place-items:center;position:relative}.halo{position:absolute;width:min(32vw,330px);aspect-ratio:1;border:1px solid #e2c78370;border-radius:50%;box-shadow:0 0 90px #c7a35b20,inset 0 0 70px #c7a35b16}.halo:before,.halo:after{content:"";position:absolute;inset:25px;border:1px solid #e2c78335;border-radius:50%}.halo:after{inset:62px}.hero-symbol{z-index:1;width:min(52%,190px);height:auto;filter:drop-shadow(0 15px 35px #0008)}.hero-note{position:absolute;bottom:0;color:#bdcfc4;font-size:9px;letter-spacing:.2em;text-transform:uppercase}
+.trust{background:#fff;border-bottom:1px solid var(--line)}.trust-row{display:grid;grid-template-columns:repeat(3,1fr);padding:21px 0}.trust-item{padding:2px 24px;border-right:1px solid var(--line)}.trust-item:first-child{padding-left:0}.trust-item:last-child{border:0}.trust-item strong{display:block;font:28px Georgia,serif;color:var(--forest)}.trust-item span{font-size:11px;color:var(--muted)}
+section{padding:70px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:27px}.section-head h2{font:clamp(30px,3.4vw,42px) Georgia,serif;font-weight:400;color:var(--forest);margin:9px 0 0}.section-head p{max-width:460px;font-size:13px;line-height:1.7;color:var(--muted);margin:0}
+.explorer{background:#EDF1EB}.explorer-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:17px}.panel{background:white;border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 12px 35px #092d2010}.panel-head{padding:16px 19px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}.panel-head strong{font:19px Georgia,serif;color:var(--forest)}.micro{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.14em}.live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#b78e46;margin-right:7px}#map{height:490px;background:#dfe9e1}.side-panel{padding:22px}.side-panel h3{font:25px Georgia,serif;color:var(--forest);margin:8px 0}.side-panel p{font-size:12px;line-height:1.65;color:var(--muted)}.search{display:flex;border:1px solid #cfd9d0;border-radius:4px;overflow:hidden;margin:17px 0 11px}.search input{min-width:0;width:100%;padding:13px;border:0;outline:none;font-size:12px}.search button{border:0;background:var(--forest);color:white;padding:0 17px;cursor:pointer}.filters{display:flex;gap:7px;flex-wrap:wrap}.sector-filter{margin-top:16px;padding-top:13px;border-top:1px solid var(--line)}.sector-filter>.micro{display:block;margin-bottom:9px}.sector-filter .filters{gap:6px}.filter{border:1px solid var(--line);background:#fff;color:#58675e;border-radius:30px;padding:7px 10px;font-size:10px;cursor:pointer}.filter.active,.filter:hover{background:var(--forest);color:white}.legend{display:flex;gap:11px;flex-wrap:wrap;margin-top:16px}.legend span{font-size:9px;color:#68776d;display:flex;align-items:center;gap:5px}.legend i{width:8px;height:8px;border-radius:50%;display:inline-block}.answer{background:#F4F6F2;border-left:3px solid var(--gold);padding:14px;margin-top:16px;min-height:92px;font-size:12px;line-height:1.6}.answer strong{display:block;color:var(--forest);margin-bottom:4px}.note{font-size:10px!important;color:#89948c!important}
+.map-fallback{height:100%;min-height:280px;display:grid;place-items:center;padding:28px;text-align:center;color:#52675b;font-size:13px;line-height:1.7}.poi{background:var(--paper)}.poi-tools{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:15px}.poi-tools p{font-size:11px;color:var(--muted);margin:0}.export-btn{border:1px solid var(--gold);background:var(--forest);color:#fff;padding:10px 13px;border-radius:4px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}.export-btn:hover{background:var(--forest2)}.export-btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.poi-tools input,.poi-tools select{border:1px solid var(--line);background:white;padding:10px 12px;border-radius:4px;color:var(--ink);font-size:11px}.poi-table{width:100%;border-collapse:collapse;background:white;border:1px solid var(--line);border-radius:7px;overflow:hidden}.poi-table th,.poi-table td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--line);font-size:11px}.poi-table th{background:#F0F3ED;color:#58675e;font-size:9px;text-transform:uppercase;letter-spacing:.12em}.poi-table td:first-child{font-weight:650;color:var(--forest)}.poi-table tr:last-child td{border-bottom:0}.poi-pagination{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 15px;background:#fff;border:1px solid var(--line);border-top:0;border-radius:0 0 7px 7px}.poi-pagination button{border:1px solid var(--line);background:#fff;color:var(--forest);padding:8px 12px;border-radius:4px;font-size:11px;cursor:pointer}.poi-pagination button:disabled{opacity:.4;cursor:not-allowed}.poi-page-status{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}@media(max-width:620px){.poi-pagination{flex-wrap:wrap}.poi-pagination button{flex:1}}.poi-table a{color:#84652e;text-decoration:underline;text-underline-offset:3px}.poi-focus{padding:0;border:0;background:none;color:var(--forest);font:inherit;font-weight:650;text-align:left;text-decoration:underline;text-decoration-color:#c7a35b;text-underline-offset:3px;cursor:pointer}.poi-focus:focus-visible,.filter:focus-visible,.tag:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #C7A35B;outline-offset:3px}.province-card{display:flex;gap:12px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-left:3px solid var(--gold);padding:13px 15px;margin:0 0 14px;border-radius:4px}.province-card strong{font:18px Georgia,serif;color:var(--forest)}.province-card span,.province-card p{font-size:11px;color:var(--muted);margin:0}.type{display:inline-block;border:1px solid #e5e0d2;border-radius:20px;padding:4px 7px;color:#82672f;font-size:9px}
+.profiles{background:#fff}.profiles-tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}.profiles-tools input,.profiles-tools select{border:1px solid var(--line);padding:10px 12px;background:#fff;border-radius:4px;font-size:11px;color:var(--ink)}.profiles-tools input{min-width:220px}.brief-builder{display:grid;grid-template-columns:minmax(0,1fr) 210px auto;align-items:center;gap:14px;background:#F4F6F2;border:1px solid var(--line);border-radius:6px;padding:16px;margin:0 0 18px}.brief-copy strong{display:block;font:18px Georgia,serif;color:var(--forest);margin:5px 0}.brief-copy p{font-size:11px;line-height:1.55;color:var(--muted);margin:0;max-width:650px}.brief-control label{display:block;font-size:10px;color:var(--muted);margin-bottom:6px}.brief-control select{width:100%;min-width:0;border:1px solid var(--line);background:#fff;padding:10px 12px;border-radius:4px;color:var(--ink);font-size:11px}.brief-action{display:flex;flex-direction:column;gap:7px;align-items:flex-start}.brief-action button:disabled{opacity:.45;cursor:not-allowed}.brief-action [role=status]{min-height:1em}.profiles-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.profile-insights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin:0 0 17px}.insight-card{background:#F4F6F2;border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:6px;padding:15px;min-width:0}.insight-card span{display:block;color:#738078;font-size:9px;letter-spacing:.1em;text-transform:uppercase}.insight-card strong{display:block;color:var(--forest);font:21px Georgia,serif;margin:8px 0 4px;overflow-wrap:anywhere}.insight-card small{display:block;color:var(--muted);font-size:10px;line-height:1.5}.profile-card{border:1px solid var(--line);border-radius:7px;padding:17px;background:#fff;min-width:0}.profile-region{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#8a7041}.profile-card h3{font:20px Georgia,serif;color:var(--forest);margin:9px 0 4px}.profile-value{font:25px Georgia,serif;color:var(--forest);font-variant-numeric:tabular-nums}.profile-caption{font-size:10px;color:var(--muted);margin-top:2px}.profile-bar{height:6px;background:#edf1eb;border-radius:10px;margin:13px 0;overflow:hidden}.profile-bar span{display:block;height:100%;background:var(--gold);border-radius:10px}.profile-stats{display:flex;justify-content:space-between;gap:8px;font-size:10px;color:var(--muted)}.profile-stats strong{display:block;color:var(--ink);font-size:12px;margin-top:3px}.profile-growth.positive{color:#287454}.profile-growth.negative{color:#9b5146}.profile-links{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:12px;margin-top:14px}.profile-links a{font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:#82652f;text-decoration:underline;text-underline-offset:3px}.province-card a{color:#82652f;text-decoration:underline;text-underline-offset:3px;font-size:10px}.news{background:#EDF1EB}.news-tools{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.news-tools input,.news-tools select{border:1px solid var(--line);padding:10px 12px;background:white;border-radius:4px;font-size:11px}.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.news-card{background:white;border:1px solid var(--line);border-radius:7px;padding:19px;display:flex;flex-direction:column;min-height:240px}.news-meta{display:flex;justify-content:space-between;gap:8px;color:#7a887f;font-size:9px;text-transform:uppercase;letter-spacing:.1em}.news-card .news-provenance{font-size:10px;line-height:1.45;color:#7a887f;margin:0 0 12px}.news-card h3{font:20px/1.25 Georgia,serif;color:var(--forest);margin:17px 0 9px}.news-card p{font-size:11px;line-height:1.65;color:var(--muted);margin:0 0 16px}.news-card a{margin-top:auto;color:#86692f;font-size:10px;text-transform:uppercase;letter-spacing:.1em}.news-related{display:grid;gap:7px;margin-top:13px;padding-top:11px;border-top:1px solid var(--line)}.news-related .news-related-link{margin-top:0;font-size:9px;line-height:1.45;text-transform:none;letter-spacing:0}.empty{grid-column:1/-1;padding:25px;background:white;border:1px dashed #cbd5cc;border-radius:6px;color:var(--muted);font-size:12px}.editorial-note{font-size:10px;color:#6d7a71;margin-top:14px;line-height:1.6}
+.modules-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:13px}.module{grid-column:span 2;min-height:195px;padding:22px;background:white;border:1px solid var(--line);border-radius:7px;position:relative;overflow:hidden;transition:.22s}.module:nth-child(4),.module:nth-child(5){grid-column:span 3}.module:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 16px 35px #082d2014}.module-status{display:inline-block;margin-top:10px;border:1px solid #d9dfd8;border-radius:20px;padding:5px 8px;color:#6c796f;font-size:9px;letter-spacing:.06em;text-transform:uppercase}.module-index{font:26px Georgia,serif;color:var(--gold)}.module h3{font:21px Georgia,serif;color:var(--forest);margin:20px 0 8px}.module p{font-size:11px;color:var(--muted);line-height:1.65;max-width:370px}.module:after{content:"";position:absolute;width:140px;height:140px;border:1px solid #c7a35b25;border-radius:50%;right:-62px;bottom:-78px;box-shadow:0 0 0 20px #c7a35b08,0 0 0 42px #c7a35b06}
+.ai{background:var(--forest);color:white}.ai .section-head h2{color:white}.ai .section-head p{color:#bdcfc4}.ai-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.ai-item{border:1px solid #c7a35b55;background:#ffffff08;padding:18px;border-radius:5px}.ai-item h3{font:18px Georgia,serif;color:var(--gold2);margin:0 0 7px}.ai-item p{font-size:11px;color:#c6d4cb;line-height:1.6;margin:0}.status{display:inline-block;margin-top:12px;color:#e3d2a9;font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+.faq{background:#fff}.faq-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.faq-grid article{padding:18px;border:1px solid var(--line);border-radius:6px;background:#fbfcfa}.faq-grid h3{font:18px Georgia,serif;color:var(--forest);margin:0 0 9px}.faq-grid p{font-size:11px;line-height:1.7;color:var(--muted);margin:0}@media(max-width:850px){.faq-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.faq-grid{grid-template-columns:1fr}}
+footer{background:#061b14;color:#d9e2db;padding:30px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px}.foot small{font-size:9px;letter-spacing:.15em;color:#a9b9ae}
+@media(max-width:850px){.brief-builder{grid-template-columns:1fr 1fr}.brief-copy{grid-column:1/-1}.navlinks{display:none}.hero{padding:50px 0 35px}.hero-grid{grid-template-columns:1fr}.hero-art{min-height:270px}.halo{width:240px}.hero-symbol{width:135px}.explorer-grid{grid-template-columns:1fr}.modules-grid{grid-template-columns:repeat(2,1fr)}.module,.module:nth-child(4),.module:nth-child(5){grid-column:span 1}.ai-grid{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-head p{margin-top:11px}.news-grid{grid-template-columns:repeat(2,1fr)}.profiles-grid{grid-template-columns:repeat(2,1fr)}.profile-insights{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:560px){.brief-builder{grid-template-columns:1fr}.brief-copy{grid-column:auto}.wrap{width:calc(100% - 30px)}.brand{font-size:15px}.nav-cta{font-size:8px;padding:9px}.hero h1{font-size:42px}.trust-item{padding:3px 8px}.trust-item strong{font-size:21px}.trust-item span{font-size:9px}.modules-grid,.ai-grid,.news-grid,.profiles-grid,.profile-insights{grid-template-columns:1fr}.module,.module:nth-child(4),.module:nth-child(5){grid-column:span 1;min-height:170px}#map{height:350px}.poi-tools{align-items:stretch;flex-direction:column}.poi-table th:nth-child(3),.poi-table td:nth-child(3){display:none}.poi-table th,.poi-table td{padding:10px 8px;font-size:10px}.foot{display:block}.foot small{display:block;margin-top:13px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+ .language-switch select{appearance:none;background:transparent;border:1px solid #c7a35b;color:#e2c783;padding:9px 8px;font-size:10px;letter-spacing:.1em;cursor:pointer;border-radius:2px}.language-switch select option{color:#14231d;background:#fff}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(max-width:850px){.language-switch{margin-left:auto}}
+.investment{background:#EDF1EB}.investment-tools{display:grid;grid-template-columns:minmax(210px,1.5fr) repeat(5,minmax(120px,1fr));gap:9px;margin:19px 0 10px}.investment-tools input,.investment-tools select{min-width:0;width:100%;border:1px solid var(--line);padding:11px 12px;background:white;border-radius:4px;font-size:11px;color:var(--ink)}.investment-count{font-size:10px;color:var(--muted);margin:12px 0}.investment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.investment-card{background:white;border:1px solid var(--line);border-radius:7px;padding:20px;min-width:0}.investment-card h3{font:22px/1.25 Georgia,serif;color:var(--forest);margin:11px 0}.investment-card p{font-size:11px;line-height:1.65;color:var(--muted)}.investment-badges{display:flex;gap:7px;flex-wrap:wrap}.investment-badge{display:inline-block;padding:5px 8px;border:1px solid #d9dfd8;border-radius:20px;font-size:9px;color:#5e6d63}.investment-badge.unknown{border-color:#d8bd82;background:#fbf7ed;color:#80612b}.investment-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:15px 0}.investment-meta div{padding:9px;background:#f6f7f3;border-radius:4px;min-width:0}.investment-meta strong{display:block;font-size:9px;color:var(--forest);margin-bottom:4px}.investment-meta span{display:block;font-size:10px;line-height:1.5;color:var(--muted);overflow-wrap:anywhere}.investment-provenance{border-top:1px solid var(--line);padding-top:12px;margin-top:12px}.investment-provenance p{margin:5px 0;font-size:10px}.investment-source{display:inline-block;margin-top:8px;color:#86692f;font-size:10px;text-transform:uppercase;letter-spacing:.1em}.investment-empty{grid-column:1/-1;padding:25px;background:white;border:1px dashed #cbd5cc;border-radius:6px;color:var(--muted);font-size:12px}
+@media(max-width:850px){.investment-tools{grid-template-columns:repeat(2,minmax(0,1fr))}.investment-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.investment-tools,.investment-grid{grid-template-columns:1fr}.investment-meta{grid-template-columns:1fr 1fr}}
+
+.profile-comparison{border:1px solid var(--line);background:#F8F9F6;border-radius:6px;padding:16px;margin:0 0 18px}
+.profile-comparison-head strong{display:block;font:18px Georgia,serif;color:var(--forest);margin:5px 0}
+.profile-comparison-head p{font-size:11px;line-height:1.55;color:var(--muted);margin:0;max-width:760px}
+.profile-comparison-controls{display:grid;grid-template-columns:repeat(2,minmax(150px,1fr)) auto;align-items:end;gap:10px;margin-top:14px}
+.profile-comparison-controls label{display:block;font-size:10px;color:var(--muted)}
+.profile-comparison-controls select{display:block;width:100%;min-width:0;margin-top:6px;border:1px solid var(--line);background:#fff;padding:10px 12px;border-radius:4px;color:var(--ink);font-size:11px}
+.profile-comparison-controls button:disabled{opacity:.45;cursor:not-allowed}
+.profile-comparison-result{margin-top:14px;font-size:11px;color:var(--muted);line-height:1.55;min-height:1em}
+.comparison-table-wrap{overflow-x:auto}
+.comparison-table{width:100%;border-collapse:collapse;font-size:11px;color:var(--ink);background:#fff}
+.comparison-table th,.comparison-table td{padding:10px 9px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+.comparison-table th:first-child,.comparison-table td:first-child{text-align:left;white-space:normal}
+.comparison-table thead th{font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:#F4F6F2}
+.comparison-table tbody td:last-child{font-weight:700;color:var(--forest)}
+.comparison-provenance{margin-top:12px;padding-top:10px;border-top:1px solid var(--line);font-size:10px;line-height:1.55;color:var(--muted)}
+.comparison-provenance p{margin:4px 0}
+.comparison-provenance a{color:var(--forest);text-decoration:underline}
+@media(max-width:850px){.profile-comparison-controls{grid-template-columns:1fr 1fr}.profile-comparison-controls button{grid-column:1/-1;justify-self:start}}
+@media(max-width:560px){.profile-comparison-controls{grid-template-columns:1fr}.profile-comparison-controls button{grid-column:auto}.comparison-table{min-width:560px}}
+
+</style>
+
+<style id="home-tools-layout">
+#estrategicos,#actualidad,#investment{display:none!important}
+.tool-hub{padding:58px 0;background:#fff}
+.tool-hub .section-head{margin-bottom:22px}
+.tool-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.tool-card{display:block;padding:23px;background:#F4F6F2;border:1px solid #DDE4DC;border-top:3px solid #C7A35B;border-radius:7px;transition:.2s}
+.tool-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px #082d2014}
+.tool-card span{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#82672f}
+.tool-card h3{font:23px Georgia,serif;color:#082D20;margin:12px 0 8px}
+.tool-card p{font-size:12px;line-height:1.65;color:#718078;margin:0 0 15px}
+.tool-card strong{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#82672f}
+@media(max-width:700px){.tool-cards{grid-template-columns:1fr}}
+</style>
+<style id="standalone-page">body[data-page="estrategicos"] main>section:not(#estrategicos){display:none!important}body[data-page="estrategicos"] .trust{display:none!important}body[data-page="estrategicos"] main{min-height:65vh}</style>
+</head>
+<body data-page="estrategicos">
+<header><div class="wrap nav"><a class="brand" href="#"><img class="brandmark" src="../assets/mapa-federal.svg" alt="" width="38" height="38" decoding="async"><span>MAPA FEDERAL</span></a><nav class="navlinks"><a href="#explorador">Mapa</a><a href="./nodos-estrategicos/">Nodos estratégicos</a><a href="#perfiles">Perfiles económicos</a><a href="./radar-ia/">Radar IA</a><a href="./investment-finder/">Investment Finder</a></nav><a class="nav-cta" href="#explorador">Explorar Argentina ↗</a><label class="language-switch" for="language-select"><span class="sr-only">Language</span><select id="language-select" aria-label="Seleccionar idioma"><option value="es">ES</option><option value="en">EN</option></select></label></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Atlas digital · Inteligencia · Decisiones</div><h1>Argentina no se mira. Se <em>comprende.</em></h1><p>Inteligencia territorial para empresarios y ejecutivos. Una nueva forma de explorar regiones, conectar información y descubrir el contexto detrás de cada decisión.</p><div class="actions"><a class="btn primary" href="#explorador">Ingresar al explorador ↗</a><a class="btn secondary" href="./radar-ia/">Explorar Radar IA</a></div></div><div class="hero-art"><div class="halo"></div><img class="hero-symbol" src="../assets/mapa-federal.svg" alt="Silueta de Argentina con los colores celeste y blanco" width="250" height="250" fetchpriority="high"><div class="hero-note">Cartografía para nuevas perspectivas</div></div></div></section>
+<div class="trust"><div class="wrap trust-row"><div class="trust-item"><strong>24</strong><span>Jurisdicciones argentinas</span></div><div class="trust-item"><strong>5</strong><span>Dimensiones territoriales</span></div><div class="trust-item"><strong>360°</strong><span>Una mirada integrada</span></div></div></div>
+<section class="tool-hub"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Herramientas especializadas</div><h2>Explorá cada plataforma.</h2></div><p>Accedé a espacios independientes con su propia URL y desarrollo.</p></div><div class="tool-cards">
+<a class="tool-card" href="./nodos-estrategicos/"><span>01 / Territorio</span><h3>Nodos estratégicos</h3><p>Directorio territorial, infraestructura y conectividad con fuentes de referencia.</p><strong>Ingresar ↗</strong></a>
+<a class="tool-card" href="./radar-ia/"><span>02 / Información</span><h3>Radar IA</h3><p>Seguimiento de actualidad económica, empresarial, regulatoria y tecnológica.</p><strong>Ingresar ↗</strong></a>
+<a class="tool-card" href="./investment-finder/"><span>03 / Inversión</span><h3>Investment Finder</h3><p>Exploración documental de oportunidades, programas y registros por jurisdicción.</p><strong>Ingresar ↗</strong></a>
+</div></div></section>
+<section class="explorer" id="explorador"><div class="wrap"><div class="section-head"><div><div class="eyebrow">01 / Explorador federal</div><h2>El territorio como interfaz.</h2></div><p>Explorá nodos urbanos y estratégicos. Los marcadores se clasifican por función para facilitar la lectura territorial.</p></div><div class="explorer-grid"><div class="panel"><div class="panel-head"><strong>Mapa de inteligencia territorial</strong><span class="micro"><i class="live-dot"></i><span id="map-count">Nodos seleccionados</span></span></div><div id="map" role="region" aria-label="Mapa interactivo de nodos estratégicos de Argentina"></div></div><aside class="panel side-panel"><div class="eyebrow">Exploración inteligente</div><h3>¿Qué necesitás localizar?</h3><p>Buscá ciudades, puertos, aeropuertos, pasos fronterizos y centros logísticos.</p><div class="search"><input id="query" placeholder="Ej. puerto de Rosario" aria-label="Buscar punto estratégico"><button id="ask" aria-label="Buscar">↗</button></div><div class="filters" id="filters"><button type="button" class="filter active" data-type="Todos" aria-pressed="true">Todos</button><button type="button" class="filter" data-type="Ciudad" aria-pressed="false">Ciudades</button><button type="button" class="filter" data-type="Puerto" aria-pressed="false">Puertos</button><button type="button" class="filter" data-type="Aeropuerto" aria-pressed="false">Aeropuertos</button><button type="button" class="filter" data-type="Paso fronterizo" aria-pressed="false">Fronteras</button><button type="button" class="filter" data-type="Logística" aria-pressed="false">Logística</button><button type="button" class="filter" data-type="Industria" aria-pressed="false">Industria</button><button type="button" class="filter" data-type="Turismo" aria-pressed="false">Turismo</button></div><div class="sector-filter" aria-label="Filtrar por sector estratégico"><span class="micro">Sectores estratégicos · Cancillería</span><div class="filters" id="sector-filters"><button type="button" class="filter active" data-sector="Todos" aria-pressed="true">Todos los sectores</button><button type="button" class="filter" data-sector="Forestoindustria" aria-pressed="false">Forestoindustria</button><button type="button" class="filter" data-sector="Turismo" aria-pressed="false">Turismo</button><button type="button" class="filter" data-sector="Infraestructura" aria-pressed="false">Infraestructura</button><button type="button" class="filter" data-sector="Minería" aria-pressed="false">Minería</button><button type="button" class="filter" data-sector="Tecnología" aria-pressed="false">Tecnología</button><button type="button" class="filter" data-sector="Siderurgia" aria-pressed="false">Siderurgia</button><button type="button" class="filter" data-sector="Energía" aria-pressed="false">Energía</button><button type="button" class="filter" data-sector="Petróleo y gas" aria-pressed="false">Petróleo y gas</button></div><p class="note">Los sectores se vinculan a nodos de referencia cuando existe una relación territorial explícita en el catálogo. Un marcador no acredita un proyecto ni una oportunidad de inversión.</p></div><label class="micro" for="map-province-filter">Filtrar por provincia</label><select id="map-province-filter" aria-label="Filtrar mapa por provincia"><option value="Todas">Todas las provincias</option></select><div class="legend"><span><i style="background:#C7A35B"></i>Ciudades</span><span><i style="background:#337D68"></i>Logística y puertos</span><span><i style="background:#547FA5"></i>Aeropuertos y fronteras</span><span><i style="background:#9D7040"></i>Industria y turismo</span></div><div class="answer" id="result" aria-live="polite"><strong>Explorador preparado</strong>Seleccioná un filtro o buscá un punto estratégico para localizarlo en el mapa.</div><p class="note">La selección inicial es orientativa. Verificá coordenadas, estado operativo y datos institucionales antes de tomar decisiones comerciales.</p></aside></div></div></section>
+<section class="poi" id="estrategicos"><div class="wrap"><div class="section-head"><div><div class="eyebrow">02 / Infraestructura y conectividad</div><h2>Nodos estratégicos federales.</h2></div><p>Una selección inicial de puntos de interés territorial. Cada ficha enlaza a una fuente institucional o cartográfica para ampliar y verificar información.</p></div><div class="poi-tools"><p id="poi-count">Puntos seleccionados</p><input id="poi-search" placeholder="Filtrar por nombre o provincia" aria-label="Buscar en el directorio"><select id="poi-province" aria-label="Filtrar directorio por provincia"><option value="Todas">Todas las provincias</option></select><select id="poi-type" aria-label="Filtrar directorio por categoría"><option value="Todos">Todas las categorías</option></select><button type="button" id="export-nodes" class="export-btn">Exportar nodos CSV</button><span id="nodes-export-status" class="micro" role="status" aria-live="polite"></span></div><div class="province-card" id="province-card" aria-live="polite">Elegí una provincia para consultar la cobertura de nodos registrada en el catálogo. Esta ficha no reemplaza un informe territorial integral.</div><div style="overflow-x:auto"><table class="poi-table"><thead><tr><th>Ubicación</th><th>Provincia</th><th>Tipo</th><th>Referencia</th></tr></thead><tbody id="poi-body"></tbody></table></div><nav class="poi-pagination" aria-label="Paginación del directorio de nodos"><button type="button" id="poi-prev" disabled>← Anterior</button><span class="poi-page-status" id="poi-page-status" role="status" aria-live="polite">Página 1</span><button type="button" id="poi-next" disabled>Siguiente →</button></nav></div></section>
+<section class="profiles" id="perfiles"><div class="wrap"><div class="section-head"><div><div class="eyebrow">03 / Perfil económico provincial</div><h2>24 jurisdicciones. Datos comparables.</h2></div><p>Exportaciones de bienes por provincia, con cifras oficiales del INDEC para 2025. Cada perfil enlaza además a la ficha provincial 2025 del Ministerio de Economía.</p></div><div class="profiles-tools"><input id="profile-search" type="search" placeholder="Buscar provincia" aria-label="Buscar provincia"><select id="profile-region" aria-label="Filtrar perfiles por región"><option value="Todas">Todas las regiones</option></select><span id="profile-count" class="micro">24 jurisdicciones</span><button type="button" id="export-profiles" class="export-btn">Exportar perfiles CSV</button><span id="profiles-export-status" class="micro" role="status" aria-live="polite"></span></div><div class="brief-builder" aria-label="Generador de ficha de prospección territorial">
+  <div class="brief-copy"><span class="micro">Herramienta funcional</span><strong>Ficha de prospección territorial</strong><p>Descargá un informe por jurisdicción con exportaciones oficiales, nodos de infraestructura registrados y enlaces de origen. No es una recomendación de inversión.</p></div>
+  <div class="brief-control"><label for="brief-province">Jurisdicción</label><select id="brief-province" aria-label="Elegir jurisdicción para la ficha"><option value="">Cargando jurisdicciones…</option></select></div>
+  <div class="brief-action"><button type="button" id="export-province-brief" class="export-btn" disabled>Descargar ficha .md</button><span id="brief-export-status" class="micro" role="status" aria-live="polite"></span></div>
+</div><div class="profile-insights" id="profile-insights" aria-label="Señales descriptivas de exportaciones provinciales" aria-live="polite"><div class="insight-card"><span>Mayor volumen exportador</span><strong>Cargando…</strong><small>INDEC · OPEX 2025</small></div><div class="insight-card"><span>Mayor crecimiento interanual</span><strong>Cargando…</strong><small>Variación frente a 2024</small></div><div class="insight-card"><span>Región con mayor exportación</span><strong>Cargando…</strong><small>Suma de exportaciones provinciales</small></div></div><div class="profile-comparison" aria-label="Comparador de jurisdicciones">
+  <div class="profile-comparison-head"><span class="micro">Federal Reports · Comparación homogénea</span><strong>Compará dos jurisdicciones</strong><p>Compará exportaciones, variación interanual y participación nacional usando el mismo conjunto estadístico OPEX. La comparación es descriptiva y no constituye una recomendación de inversión.</p></div>
+  <div class="profile-comparison-controls">
+    <label for="comparison-province-a">Primera jurisdicción<select id="comparison-province-a"><option value="">Seleccioná una jurisdicción</option></select></label>
+    <label for="comparison-province-b">Segunda jurisdicción<select id="comparison-province-b"><option value="">Seleccioná una jurisdicción</option></select></label>
+    <button type="button" id="compare-provinces" class="export-btn" disabled>Comparar jurisdicciones</button>
+  </div>
+  <div class="profile-comparison-result" id="profile-comparison-result" role="status" aria-live="polite">Seleccioná dos jurisdicciones para comparar el mismo período estadístico.</div>
+</div><div class="profiles-grid" id="profile-grid" aria-live="polite" aria-busy="false"><div class="empty">Cargando perfiles económicos provinciales…</div></div><p class="editorial-note">Exportaciones de bienes en millones de USD FOB, año 2025; variación frente a 2024 y participación en el total nacional. Las fichas ministeriales 2025 reúnen indicadores con distintos años de referencia: consultá el período de cada indicador antes de compararlo. Las exportaciones no equivalen al PBG ni al tamaño total de la economía provincial.</p></div></section>
+<section class="news" id="actualidad"><div class="wrap"><div class="section-head"><div><div class="eyebrow">04 / Radar empresarial</div><h2>Actualidad que mueve decisiones.</h2></div><p>Un espacio editorial para noticias económicas, empresariales, regulatorias y sectoriales con fecha, fuente y contexto. Sin titulares inventados ni datos sin verificar.</p></div><div class="news-tools"><input id="news-search" placeholder="Buscar noticias" aria-label="Buscar noticias"><select id="news-category" aria-label="Filtrar noticias"><option value="Todas">Todas las categorías</option><option value="Economía">Economía</option><option value="Empresas">Empresas</option><option value="Comercio">Comercio exterior</option><option value="Infraestructura">Infraestructura</option><option value="Regulación">Regulación</option><option value="Tecnología">Tecnología</option></select><select id="news-jurisdiction" aria-label="Filtrar por jurisdicción"><option value="all">Todas las jurisdicciones</option></select></div><div class="news-grid" id="news-grid" aria-live="polite" aria-busy="false"><div class="empty">La sección editorial está preparada. Incorporá noticias verificadas en el archivo <code>data/news.json</code>, indicando titular, fecha, categoría, síntesis, medio y URL original. No se muestran noticias de ejemplo como si fueran actuales.</div></div><p class="editorial-note">Criterio editorial: relevancia empresarial, fecha explícita, fuente identificable, enlace original y separación entre hechos y análisis. La publicación automática requiere una fuente RSS/API configurada y revisión de calidad.</p><p class="editorial-note">La clasificación territorial solo recoge jurisdicciones identificadas en la fuente; no mide impacto ni asigna ubicaciones ambiguas.</p></div></section>
+<section class="investment" id="investment"><div class="wrap"><div class="section-head"><div><div class="eyebrow">05 / Investment Finder</div><h2>Oportunidades documentadas. Estados transparentes.</h2></div><p>Consultá registros normativos y programas con filtros por sector, alcance, jurisdicción, etapa y estado. Una norma verificada no implica que exista una convocatoria abierta ni que una empresa sea elegible.</p></div><div class="investment-tools"><input id="investment-search" type="search" placeholder="Buscar por nombre, sector o fuente" aria-label="Buscar oportunidades"><select id="investment-sector" aria-label="Filtrar por sector"><option value="all">Todos los sectores</option></select><select id="investment-scope" aria-label="Filtrar por alcance"><option value="all">Todos los alcances</option><option value="national">Nacional</option><option value="provincial">Provincial</option></select><select id="investment-jurisdiction" aria-label="Filtrar por jurisdicción"><option value="all">Todas las jurisdicciones</option></select><select id="investment-stage" aria-label="Filtrar por etapa"><option value="all">Todas las etapas</option></select><select id="investment-status" aria-label="Filtrar por disponibilidad"><option value="all">Todos los estados</option><option value="open">Abierta según fuente</option><option value="unknown">Disponibilidad no confirmada</option><option value="closed">Cerrada</option><option value="expired">Vencida</option></select></div><p class="investment-count"><span id="investment-count" aria-live="polite">0 / 0</span> <span>registros documentados</span></p><div class="investment-grid" id="investment-grid" aria-live="polite" aria-busy="true"><div class="empty">Consultando registros con fuente y verificación documentadas.</div></div><p class="editorial-note">El catálogo es documental y de consulta. No ofrece recomendaciones de inversión, evaluación de elegibilidad, gestión de trámites ni confirmación de fondos disponibles. La fecha de verificación se refiere al alcance indicado en cada registro.</p></div></section>
+</main>
+<footer><div class="wrap foot"><div class="brand"><span class="brandmark">✦</span><span>MAPA FEDERAL</span></div><small>INTELIGENCIA TERRITORIAL PARA EMPRESARIOS Y EJECUTIVOS</small></div></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../assets/i18n.js" defer></script>
+<script src="../assets/profile-comparison.js"></script>
+<script>
+let points=[];
+const colors={"Ciudad":"#C7A35B","Puerto":"#337D68","Aeropuerto":"#547FA5","Paso fronterizo":"#547FA5","Logística":"#337D68","Industria":"#9D7040","Turismo":"#9D7040"};
+const mapAvailable=typeof L !== "undefined";
+const mapElement=document.getElementById("map");
+const map=mapAvailable?L.map("map",{scrollWheelZoom:false}).setView([-38.4,-63.6],4):null;
+if(mapAvailable){L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"&copy; OpenStreetMap contributors",maxZoom:18}).addTo(map);}else{mapElement.innerHTML='<div class="map-fallback" role="status">La cartografía no está disponible en este momento. El directorio y las fichas de nodos siguen funcionando.</div>';}
+let markers=[];let activeType="Todos";let activeProvince="Todas";let activeSector="Todos";
+const sectorNodeNames={
+ "Forestoindustria":[],
+ "Turismo":["Puerto Iguazú — destino Cataratas y Triple Frontera","Mendoza — destino de enoturismo y reuniones","San Carlos de Bariloche — destino ejecutivo y naturaleza","El Calafate — puerta de acceso a Los Glaciares","Aeropuerto Internacional de Iguazú","Aeropuerto Internacional de Bariloche","Puerto de Ushuaia"],
+ "Infraestructura":[],
+ "Minería":["Proyecto Navidad — depósito polimetálico","Cerro Moro — distrito epitermal Au-Ag","Manantial Espejo — distrito epitermal Au-Ag","Paso Jama","Aeropuerto Internacional Gobernador Horacio Guzmán","Aeropuerto Internacional Coronel Felipe Varela","Parque Industrial Güemes","Paso Internacional San Francisco","Paso Agua Negra","Aeropuerto Internacional Domingo Faustino Sarmiento"],
+ "Tecnología":[],
+ "Siderurgia":[],
+ "Energía":["Añelo — nodo Vaca Muerta","Parque Industrial Neuquén","Polo petroquímico de Bahía Blanca","Puerto de Comodoro Rivadavia","Aeropuerto de Comodoro Rivadavia"],
+ "Petróleo y gas":["Añelo — nodo Vaca Muerta","Parque Industrial Neuquén","Polo petroquímico de Bahía Blanca","Puerto de Comodoro Rivadavia","Aeropuerto de Comodoro Rivadavia"]
+};
+function matchesSector(p,sector){if(sector==="Todos")return true;if(sector==="Infraestructura")return ["Puerto","Aeropuerto","Paso fronterizo","Logística"].includes(p.type);return (sectorNodeNames[sector]||[]).includes(p.name);}
+let newsItems=[];let newsLoadError=false;let provincialProfiles=[];let profilesMetadata=null;let profilesLoadError=false;let investmentOpportunities=[];let investmentMetadata=null;let investmentLoadError=false;
+function escapeHtml(value){return String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function safeUrl(value){try{const u=new URL(value);return u.protocol==="https:"?u.href:"#";}catch{return "#";}}
+function normalizeText(value){return String(value??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("es").trim();}
+function sourceLink(p){const url=safeUrl(p.source);const coordinateUrl=safeUrl(p.coordinateSource);const main=url!=="#"?'<a href="'+escapeHtml(url)+'" target="_blank" rel="noopener noreferrer">Fuente institucional ↗</a>':"<span>Fuente no disponible</span>";const coordinates=coordinateUrl!=="#"&&coordinateUrl!==url?' · <a href="'+escapeHtml(coordinateUrl)+'" target="_blank" rel="noopener noreferrer">Fuente de coordenadas ↗</a>':"";return main+coordinates;}
+function makeIcon(type){const c=colors[type]||"#C7A35B";return L.divIcon({className:"",html:'<span aria-hidden="true" style="display:block;width:14px;height:14px;border-radius:50%;background:'+c+';border:3px solid #fff;box-shadow:0 1px 9px #18251f88"></span>',iconSize:[14,14],iconAnchor:[7,7]});}
+function showPoint(p){document.getElementById("result").innerHTML="<strong>"+escapeHtml(p.name)+"</strong>"+escapeHtml(p.province)+" · "+escapeHtml(p.type)+(activeSector!=="Todos"?" · Referencia sectorial: "+escapeHtml(activeSector):"")+"<br>"+escapeHtml(p.note)+"<br>"+sourceLink(p);}
+
+function drawMap(){if(mapAvailable){markers.forEach(m=>map.removeLayer(m));markers=[];}const visible=points.filter(p=>(activeType==="Todos"||p.type===activeType)&&(activeProvince==="Todas"||p.province===activeProvince)&&matchesSector(p,activeSector));if(mapAvailable){visible.forEach(p=>{const popup="<b>"+escapeHtml(p.name)+"</b><br>"+escapeHtml(p.province)+" · "+escapeHtml(p.type)+"<br><small>"+escapeHtml(p.note)+"</small><br>"+sourceLink(p);const m=L.marker(p.coords,{icon:makeIcon(p.type),title:p.name,alt:p.name}).addTo(map).bindPopup(popup);m.on("click",()=>showPoint(p));markers.push(m);});}document.getElementById("map-count").textContent=visible.length+" / "+points.length+" nodos visibles";if(mapAvailable&&visible.length&&(activeProvince!=="Todas"||activeType!=="Todos"||activeSector!=="Todos")){if(visible.length===1)map.setView(visible[0].coords,8);else map.fitBounds(L.latLngBounds(visible.map(p=>p.coords)),{padding:[24,24],maxZoom:8});}}
+function populateProvinceFilters(){const provinces=[...new Set(points.map(p=>p.province))].sort((a,b)=>a.localeCompare(b,"es"));["map-province-filter","poi-province"].forEach(id=>{const select=document.getElementById(id);select.innerHTML='<option value="Todas">Todas las provincias</option>'+provinces.map(p=>'<option value="'+escapeHtml(p)+'">'+escapeHtml(p)+'</option>').join("");});const types=[...new Set(points.map(p=>p.type))].sort((a,b)=>a.localeCompare(b,"es"));document.getElementById("poi-type").innerHTML='<option value="Todos">Todas las categorías</option>'+types.map(t=>'<option value="'+escapeHtml(t)+'">'+escapeHtml(t)+'</option>').join("");}
+function findPoint(){const query=normalizeText(document.getElementById("query").value);const result=document.getElementById("result");if(!query){result.innerHTML="<strong>Escribí una ubicación</strong>Ejemplo: Puerto de Rosario, Ezeiza o Paso Jama.";return;}const terms=query.split(/\s+/).filter(Boolean);const found=points.filter(p=>{const haystack=normalizeText([p.name,p.province,p.type,p.note].join(" "));return terms.every(term=>haystack.includes(term));});if(found.length){activeType="Todos";activeProvince="Todas";activeSector="Todos";document.getElementById("map-province-filter").value="Todas";document.getElementById("poi-province").value="Todas";document.getElementById("poi-type").value="Todos";document.querySelectorAll("#filters .filter").forEach(b=>{const active=b.dataset.type==="Todos";b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});document.querySelectorAll("#sector-filters .filter").forEach(b=>{const active=b.dataset.sector==="Todos";b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});drawMap();renderPOI();const p=found[0];if(mapAvailable)map.setView(p.coords,8);showPoint(p);if(found.length>1)result.innerHTML+="<br><small>"+found.length+" coincidencias. Se centró la primera.</small>";}else result.innerHTML="<strong>Sin coincidencias</strong>Probá con el nombre, la provincia o el tipo de nodo.";}
+document.querySelectorAll("#filters .filter").forEach(button=>button.addEventListener("click",()=>{activeType=button.dataset.type;document.getElementById("poi-type").value=activeType;document.querySelectorAll("#filters .filter").forEach(item=>{const active=item===button;item.classList.toggle("active",active);item.setAttribute("aria-pressed",String(active));});drawMap();renderPOI();}));
+document.getElementById("map-province-filter").addEventListener("change",event=>{activeProvince=event.target.value;document.getElementById("poi-province").value=activeProvince;drawMap();renderPOI();});
+document.getElementById("ask").addEventListener("click",findPoint);
+document.getElementById("query").addEventListener("keydown",event=>{if(event.key==="Enter")findPoint();});
+document.querySelectorAll("#sector-filters [data-sector]").forEach(button=>button.addEventListener("click",()=>{activeSector=button.dataset.sector;document.querySelectorAll("#sector-filters [data-sector]").forEach(item=>{const active=item===button;item.classList.toggle("active",active);item.setAttribute("aria-pressed",String(active));});drawMap();renderPOI();if(activeSector!=="Todos"){const count=points.filter(p=>matchesSector(p,activeSector)).length;document.getElementById("result").innerHTML="<strong>"+escapeHtml(activeSector)+"</strong>"+(count?count+" nodos de referencia visibles.":"Todavía no hay nodos territoriales etiquetados para este sector.")+" La etiqueta sectorial no acredita proyectos ni inversiones.";}}));
+function renderProvinceCard(){const selected=document.getElementById("poi-province").value;const card=document.getElementById("province-card");const source=profilesMetadata?safeUrl(profilesMetadata.sourceUrl):"#";if(selected==="Todas"){card.innerHTML="<strong>Cobertura federal</strong><span>"+points.length+" nodos registrados en "+new Set(points.map(p=>p.province)).size+" jurisdicciones.</span><p>El catálogo geográfico se complementa con datos de exportaciones de bienes 2025 para 24 jurisdicciones, publicados por INDEC.</p>"+(source!=="#"?'<a href="'+escapeHtml(source)+'" target="_blank" rel="noopener noreferrer">Consultar OPEX 2025 ↗</a>':"");return;}const subset=points.filter(p=>p.province===selected);const types=[...new Set(subset.map(p=>p.type))].sort((a,b)=>a.localeCompare(b,"es"));const profile=provincialProfiles.find(p=>p.province===selected);const exportText=profile?"Exportaciones de bienes 2025: US$ "+new Intl.NumberFormat("es-AR").format(profile.exportsUsdMillions)+" millones FOB · "+(profile.yearOnYearPct>=0?"+":"")+new Intl.NumberFormat("es-AR",{minimumFractionDigits:1,maximumFractionDigits:1}).format(profile.yearOnYearPct)+"% interanual · "+new Intl.NumberFormat("es-AR",{minimumFractionDigits:1,maximumFractionDigits:1}).format(profile.nationalSharePct)+"% del total nacional.":"No hay un registro provincial disponible en el dataset económico.";const profileUrl=profile?safeUrl(profile.profileUrl):"#";card.innerHTML="<strong>"+escapeHtml(selected)+"</strong><span>"+subset.length+" nodos registrados</span><p>Tipos documentados: "+escapeHtml(types.join(", ")||"Sin categorías")+" · Cobertura del catálogo, no inventario completo.</p><p>"+escapeHtml(exportText)+"</p>"+(profileUrl!=="#"?'<a href="'+escapeHtml(profileUrl)+'" target="_blank" rel="noopener noreferrer">Abrir ficha provincial oficial 2025 ↗</a>':"");}
+function renderProfiles(){const root=document.getElementById("profile-grid");root.setAttribute("aria-busy","false");if(profilesLoadError){root.innerHTML='<div class="empty">No se pudo cargar el dataset provincial. Consultá el informe original del INDEC.</div>';return;}const query=normalizeText(document.getElementById("profile-search").value);const region=document.getElementById("profile-region").value;const filtered=[...provincialProfiles].filter(p=>(region==="Todas"||p.region===region)&&normalizeText(p.province).includes(query)).sort((a,b)=>b.exportsUsdMillions-a.exportsUsdMillions);const max=Math.max(...provincialProfiles.map(p=>p.exportsUsdMillions),1);document.getElementById("profile-count").textContent=filtered.length+" de "+provincialProfiles.length+" jurisdicciones";const format=n=>new Intl.NumberFormat("es-AR",{minimumFractionDigits:1,maximumFractionDigits:1}).format(n);const money=n=>new Intl.NumberFormat("es-AR").format(n);const opexUrl=profilesMetadata?safeUrl(profilesMetadata.sourceUrl):"#";root.innerHTML=filtered.length?filtered.map((p,i)=>{const profileUrl=safeUrl(p.profileUrl);const growthClass=p.yearOnYearPct>=0?"positive":"negative";const growth=(p.yearOnYearPct>=0?"+":"")+format(p.yearOnYearPct)+"%";const share=format(p.nationalSharePct)+"%";const width=Math.max(1,(p.exportsUsdMillions/max)*100);return '<article class="profile-card"><div class="profile-region">'+escapeHtml(p.region)+' · '+(i+1)+'° en el filtro</div><h3>'+escapeHtml(p.province)+'</h3><div class="profile-value">US$ '+money(p.exportsUsdMillions)+' M</div><div class="profile-caption">Exportaciones de bienes · 2025</div><div class="profile-bar" role="img" aria-label="Valor exportado relativo al máximo del conjunto"><span style="width:'+width.toFixed(2)+'%"></span></div><div class="profile-stats"><span>Variación vs. 2024<strong class="profile-growth '+growthClass+'">'+growth+'</strong></span><span>Participación nacional<strong>'+share+'</strong></span></div><div class="profile-links">'+(profileUrl!=="#"?'<a href="'+escapeHtml(profileUrl)+'" target="_blank" rel="noopener noreferrer">Ficha 2025 ↗</a>':"")+(opexUrl!=="#"?'<a href="'+escapeHtml(opexUrl)+'" target="_blank" rel="noopener noreferrer">INDEC OPEX ↗</a>':"")+'</div></article>';}).join(""):'<div class="empty">No hay jurisdicciones que coincidan con la búsqueda.</div>';}
+function renderProfileInsights(){
+  const root=document.getElementById("profile-insights");
+  if(profilesLoadError||!provincialProfiles.length){
+    root.innerHTML='<div class="empty">Las señales económicas no están disponibles porque no se pudo cargar el dataset provincial.</div>';
+    return;
+  }
+  const number=value=>new Intl.NumberFormat("es-AR",{maximumFractionDigits:1,minimumFractionDigits:1}).format(value);
+  const integer=value=>new Intl.NumberFormat("es-AR").format(value);
+  const leader=[...provincialProfiles].sort((a,b)=>b.exportsUsdMillions-a.exportsUsdMillions)[0];
+  const growth=[...provincialProfiles].sort((a,b)=>b.yearOnYearPct-a.yearOnYearPct)[0];
+  const totals=provincialProfiles.reduce((acc,p)=>{acc[p.region]=(acc[p.region]||0)+p.exportsUsdMillions;return acc;},{});
+  const region=Object.entries(totals).sort((a,b)=>b[1]-a[1])[0];
+  root.innerHTML=
+    '<article class="insight-card"><span>Mayor volumen exportador</span><strong>'+escapeHtml(leader.province)+'</strong><small>US$ '+integer(leader.exportsUsdMillions)+' millones FOB · '+number(leader.nationalSharePct)+'% del total nacional</small></article>'+
+    '<article class="insight-card"><span>Mayor crecimiento interanual</span><strong>'+escapeHtml(growth.province)+' · +'+number(growth.yearOnYearPct)+'%</strong><small>Variación de exportaciones frente a 2024</small></article>'+
+    '<article class="insight-card"><span>Región con mayor exportación</span><strong>'+escapeHtml(region[0])+'</strong><small>US$ '+integer(region[1])+' millones FOB sumados en sus jurisdicciones</small></article>';
+}
+async function loadProfiles(){try{const response=await fetch("../data/provincial-profiles.json",{cache:"no-store"});if(!response.ok)throw new Error("No se pudo cargar el dataset provincial");const data=await response.json();if(!data||!Array.isArray(data.profiles))throw new Error("Formato provincial inválido");profilesMetadata=data;provincialProfiles=data.profiles;profilesLoadError=false;const regions=[...new Set(provincialProfiles.map(p=>p.region))].sort((a,b)=>a.localeCompare(b,"es"));document.getElementById("profile-region").innerHTML='<option value="Todas">Todas las regiones</option>'+regions.map(r=>'<option value="'+escapeHtml(r)+'">'+escapeHtml(r)+'</option>').join("");const briefProvince=document.getElementById("brief-province");briefProvince.innerHTML='<option value="">Seleccioná una jurisdicción</option>'+[...provincialProfiles].sort((a,b)=>a.province.localeCompare(b.province,"es")).map(p=>'<option value="'+escapeHtml(p.province)+'">'+escapeHtml(p.province)+'</option>').join("");}catch(error){profilesLoadError=true;}populateProfileComparisonOptions();renderProfiles();renderProvinceCard();renderProfileInsights();updateProvinceBriefAvailability();}
+function updateProvinceBriefAvailability(){const select=document.getElementById("brief-province");const button=document.getElementById("export-province-brief");button.disabled=profilesLoadError||!select.value||!provincialProfiles.some(p=>p.province===select.value)||!points.length;}
+function populateProfileComparisonOptions(){
+  const options='<option value="">Seleccioná una jurisdicción</option>'+[...provincialProfiles].sort((a,b)=>a.province.localeCompare(b.province,"es")).map(profile=>'<option value="'+escapeHtml(profile.province)+'">'+escapeHtml(profile.province)+'</option>').join("");
+  document.getElementById("comparison-province-a").innerHTML=options;
+  document.getElementById("comparison-province-b").innerHTML=options;
+  updateProfileComparisonAvailability();
+}
+function updateProfileComparisonAvailability(){
+  const first=document.getElementById("comparison-province-a").value;
+  const second=document.getElementById("comparison-province-b").value;
+  const button=document.getElementById("compare-provinces");
+  const result=document.getElementById("profile-comparison-result");
+  button.disabled=profilesLoadError||!first||!second||first===second;
+  result.textContent=!first||!second?"Seleccioná dos jurisdicciones para comparar el mismo período estadístico.":first===second?"Elegí dos jurisdicciones diferentes.":"Comparación lista. Ejecutá el cálculo para ver diferencias descriptivas.";
+}
+function renderProfileComparison(){
+  const root=document.getElementById("profile-comparison-result");
+  const first=provincialProfiles.find(profile=>profile.province===document.getElementById("comparison-province-a").value);
+  const second=provincialProfiles.find(profile=>profile.province===document.getElementById("comparison-province-b").value);
+  try{
+    if(!window.MapaFederalProfileComparison)throw new Error("El comparador no está disponible.");
+    const result=window.MapaFederalProfileComparison.compareProfiles(first,second,profilesMetadata);
+    const integer=value=>new Intl.NumberFormat("es-AR",{maximumFractionDigits:0}).format(value);
+    const decimal=value=>new Intl.NumberFormat("es-AR",{minimumFractionDigits:1,maximumFractionDigits:1}).format(value);
+    const signed=(value,digits)=>((value>0?"+":value<0?"−":"")+new Intl.NumberFormat("es-AR",{minimumFractionDigits:digits,maximumFractionDigits:digits}).format(Math.abs(value)));
+    const rows=[
+      ["Exportaciones de bienes (millones de USD FOB)","US$ "+integer(result.first.exportsUsdMillions),"US$ "+integer(result.second.exportsUsdMillions),"US$ "+signed(result.differences.exportsUsdMillions,0)],
+      ["Variación interanual",signed(result.first.yearOnYearPct,1)+"%",signed(result.second.yearOnYearPct,1)+"%",signed(result.differences.yearOnYearPct,1)+" p.p."],
+      ["Participación nacional",decimal(result.first.nationalSharePct)+"%",decimal(result.second.nationalSharePct)+"%",signed(result.differences.nationalSharePct,1)+" p.p."]
+    ];
+    const source=safeUrl(result.sourceUrl);
+    root.innerHTML='<div class="comparison-table-wrap"><table class="comparison-table"><thead><tr><th>Indicador</th><th>'+escapeHtml(result.first.province)+'</th><th>'+escapeHtml(result.second.province)+'</th><th>Diferencia (A - B)</th></tr></thead><tbody>'+rows.map(row=>'<tr>'+row.map(cell=>'<td>'+escapeHtml(cell)+'</td>').join("")+'</tr>').join("")+'</tbody></table></div><div class="comparison-provenance"><p><strong>Período:</strong> '+escapeHtml(result.period)+' · <strong>Unidad:</strong> '+escapeHtml(result.unit)+'</p><p><strong>Fuente:</strong> '+escapeHtml(result.publisher)+' · <a href="'+escapeHtml(source)+'" target="_blank" rel="noopener noreferrer">Consultar OPEX oficial ↗</a> · <strong>Publicación:</strong> '+escapeHtml(result.published)+'</p><p><strong>Verificación:</strong> <span>Verificado</span> · '+escapeHtml(result.verification.checkedAt)+'</p><p><strong>Alcance de la verificación:</strong> '+escapeHtml(result.verification.scope)+'</p><p>Diferencia calculada como primera jurisdicción menos segunda. Es una comparación descriptiva de exportaciones de bienes, no un ranking de atractivo inversor ni una medida del PBG.</p></div>';
+  }catch(error){root.textContent=error.message||"No se pudo generar la comparación con los datos disponibles.";}
+}
+document.getElementById("comparison-province-a").addEventListener("change",updateProfileComparisonAvailability);
+document.getElementById("comparison-province-b").addEventListener("change",updateProfileComparisonAvailability);
+document.getElementById("compare-provinces").addEventListener("click",renderProfileComparison);
+document.getElementById("profile-search").addEventListener("input",renderProfiles);
+document.getElementById("profile-region").addEventListener("change",renderProfiles);
+const POI_PAGE_SIZE=20;let poiPage=1;function renderPOI(){const query=normalizeText(document.getElementById("poi-search").value);const province=document.getElementById("poi-province").value;const type=document.getElementById("poi-type").value;const terms=query.split(/\s+/).filter(Boolean);const arr=points.filter(p=>(province==="Todas"||p.province===province)&&(type==="Todos"||p.type===type)&&matchesSector(p,activeSector)&&terms.every(term=>normalizeText([p.name,p.province,p.type,p.note].join(" ")).includes(term)));const pageCount=Math.max(1,Math.ceil(arr.length/POI_PAGE_SIZE));poiPage=Math.min(Math.max(1,poiPage),pageCount);const first=(poiPage-1)*POI_PAGE_SIZE;const pageItems=arr.slice(first,first+POI_PAGE_SIZE);document.getElementById("poi-count").textContent=arr.length+" de "+points.length+" nodos encontrados";document.getElementById("poi-body").innerHTML=pageItems.map(p=>{const index=points.indexOf(p);const url=safeUrl(p.source);const source=url!=="#"?'<a href="'+escapeHtml(url)+'" target="_blank" rel="noopener noreferrer">Fuente ↗</a>':"<span>Sin enlace</span>";return "<tr><td><button type=\"button\" class=\"poi-focus\" data-point-index=\""+index+"\">"+escapeHtml(p.name)+"</button></td><td>"+escapeHtml(p.province)+"</td><td><span class=\"type\">"+escapeHtml(p.type)+"</span></td><td>"+source+"</td></tr>";}).join("")||'<tr><td colspan="4">No se encontraron puntos.</td></tr>';document.getElementById("poi-page-status").textContent=arr.length?("Mostrando "+(first+1)+"–"+Math.min(first+POI_PAGE_SIZE,arr.length)+" de "+arr.length+" · Página "+poiPage+" de "+pageCount):"Sin resultados";document.getElementById("poi-prev").disabled=poiPage<=1;document.getElementById("poi-next").disabled=poiPage>=pageCount;renderProvinceCard();}
+document.getElementById("poi-search").addEventListener("input",()=>{poiPage=1;renderPOI();});
+document.getElementById("poi-prev").addEventListener("click",()=>{poiPage=Math.max(1,poiPage-1);renderPOI();});
+document.getElementById("poi-next").addEventListener("click",()=>{poiPage+=1;renderPOI();});
+document.getElementById("poi-province").addEventListener("change",event=>{poiPage=1;activeProvince=event.target.value;document.getElementById("map-province-filter").value=activeProvince;drawMap();renderPOI();});
+document.getElementById("poi-type").addEventListener("change",event=>{poiPage=1;activeType=event.target.value;document.querySelectorAll("#filters .filter").forEach(item=>{const active=item.dataset.type===activeType;item.classList.toggle("active",active);item.setAttribute("aria-pressed",String(active));});drawMap();renderPOI();});
+document.getElementById("poi-body").addEventListener("click",event=>{const button=event.target.closest("[data-point-index]");if(!button)return;const p=points[Number(button.dataset.pointIndex)];if(!p)return;activeType="Todos";activeProvince="Todas";activeSector="Todos";document.getElementById("map-province-filter").value="Todas";document.getElementById("poi-province").value="Todas";document.getElementById("poi-type").value="Todos";document.querySelectorAll("#filters .filter").forEach(item=>{const active=item.dataset.type==="Todos";item.classList.toggle("active",active);item.setAttribute("aria-pressed",String(active));});document.querySelectorAll("#sector-filters .filter").forEach(item=>{const active=item.dataset.sector==="Todos";item.classList.toggle("active",active);item.setAttribute("aria-pressed",String(active));});drawMap();if(mapAvailable)map.setView(p.coords,8);showPoint(p);});
+function filterNewsItems(items,filters){
+ const terms=normalizeText(filters.query||"").split(/\s+/).filter(Boolean);
+ return [...items].sort((a,b)=>b.date.localeCompare(a.date)).filter(item=>{
+  const jurisdictions=Array.isArray(item.jurisdictions)?item.jurisdictions:[];
+  const haystack=normalizeText([item.title,item.summary,item.source,item.category,...jurisdictions].join(" "));
+  return (filters.category==="Todas"||item.category===filters.category)
+   &&(filters.jurisdiction==="all"||jurisdictions.includes(filters.jurisdiction))
+   &&terms.every(term=>haystack.includes(term));
+ });
+}
+function populateNewsJurisdictionFilter(){
+ const select=document.getElementById("news-jurisdiction");
+ const selected=select.value||"all";
+ const jurisdictions=[...new Set(newsItems.flatMap(item=>Array.isArray(item.jurisdictions)?item.jurisdictions:[]))].sort((a,b)=>a.localeCompare(b,"es"));
+ select.innerHTML='<option value="all">Todas las jurisdicciones</option>'+jurisdictions.map(value=>'<option value="'+escapeHtml(value)+'">'+escapeHtml(value)+'</option>').join("");
+ select.value=jurisdictions.includes(selected)?selected:"all";
+}
+function renderNews(){
+ const root=document.getElementById("news-grid");
+ root.setAttribute("aria-busy","false");
+ const query=normalizeText(document.getElementById("news-search").value);
+ const category=document.getElementById("news-category").value;
+ const jurisdiction=document.getElementById("news-jurisdiction").value;
+ if(newsLoadError){root.innerHTML='<div class="empty">No se pudo cargar el archivo editorial. Revisá data/news.json.</div>';return;}
+ const filtered=filterNewsItems(newsItems,{query,category,jurisdiction});
+ root.innerHTML=filtered.length?filtered.map(item=>{
+  const url=safeUrl(item.url);
+  const link=url!=="#"?'<a href="'+escapeHtml(url)+'" target="_blank" rel="noopener noreferrer">Leer en '+escapeHtml(item.source)+' ↗</a>':'<span>Fuente no disponible</span>';
+  const verification=item.verification||{};
+  const checked=verification.checkedAt?new Date(verification.checkedAt+"T12:00:00").toLocaleDateString("es-AR"):"";
+  const verificationLabel=verification.status==="editorial_reviewed"?"Revisión editorial registrada: "+checked:verification.status==="outdated"?"Verificación desactualizada":verification.status==="not_verified"?"No verificada":"Pendiente de revisión";
+  const periodLabel=item.period?"Período de referencia: "+item.period:"Período de referencia: no informado por la fuente";
+  const geographyLabel=item.geographyStatus==="explicit"
+   ?'<strong>Jurisdicciones mencionadas:</strong> '+escapeHtml(item.jurisdictions.join(", "))
+   :'Jurisdicción provincial no especificada';
+  const related=Array.isArray(item.relatedSources)?item.relatedSources.filter(source=>source&&typeof source.label==="string"&&safeUrl(source.url)!=="#").map(source=>'<a class="news-related-link" href="'+escapeHtml(safeUrl(source.url))+'" target="_blank" rel="noopener noreferrer">'+escapeHtml(source.label)+' ↗</a>').join(""):"";
+  const relatedBlock=related?'<div class="news-related"><span class="news-provenance">Fuentes complementarias</span>'+related+'</div>':"";
+  return '<article class="news-card"><div class="news-meta"><span>'+escapeHtml(item.category)+'</span><time datetime="'+escapeHtml(item.date)+'">'+new Date(item.date+"T12:00:00").toLocaleDateString("es-AR")+'</time></div><h3>'+escapeHtml(item.title)+'</h3><p>'+escapeHtml(item.summary)+'</p><p class="news-provenance">'+escapeHtml(periodLabel)+' · '+escapeHtml(verificationLabel)+'</p><p class="news-provenance">'+geographyLabel+'</p>'+link+relatedBlock+'</article>';
+ }).join(""):'<div class="empty">No hay noticias que coincidan con el filtro.</div>';
+}
+async function loadNews(){try{const response=await fetch("../data/news.json",{cache:"no-store"});if(!response.ok)throw new Error("No se pudo cargar el archivo editorial");const data=await response.json();if(!Array.isArray(data))throw new Error("Formato de noticias inválido");newsItems=data;newsLoadError=false;populateNewsJurisdictionFilter();}catch(error){newsLoadError=true;}renderNews();}
+document.getElementById("news-search").addEventListener("input",renderNews);
+document.getElementById("news-category").addEventListener("change",renderNews);
+document.getElementById("news-jurisdiction").addEventListener("change",renderNews);
+async function loadPoints(){try{const response=await fetch("../data/strategic-nodes.json",{cache:"no-store"});if(!response.ok)throw new Error("No se pudo cargar el catálogo");const loaded=await response.json();if(!Array.isArray(loaded))throw new Error("Formato de catálogo inválido");points=loaded.filter(p=>p&&typeof p.name==="string"&&typeof p.province==="string"&&typeof p.type==="string"&&Array.isArray(p.coords)&&p.coords.length===2&&p.coords.every(Number.isFinite)&&p.coords[0]>=-55.2&&p.coords[0]<=-21.7&&p.coords[1]>=-73.6&&p.coords[1]<=-53.5);populateProvinceFilters();drawMap();renderPOI();updateProvinceBriefAvailability();}catch(error){document.getElementById("map-count").textContent="Datos no disponibles";document.getElementById("result").innerHTML="<strong>No se pudo cargar el catálogo</strong>Revisá data/strategic-nodes.json o intentá nuevamente.";document.getElementById("poi-body").innerHTML='<tr><td colspan="4">No se pudo cargar el catálogo de nodos.</td></tr>';}}
+function csvCell(value){
+  const text=String(value??"");
+  const safe=typeof value==="string"&&/^[\s\uFEFF]*[=+\-@]/.test(text)?"'"+text:text;
+  return '"'+safe.replace(/"/g,'""')+'"';
+}
+function downloadCsv(filename,headers,rows,statusId){
+  const status=document.getElementById(statusId);
+  if(!rows.length){status.textContent="No hay resultados para exportar.";return;}
+  const csv="\uFEFF"+[headers,...rows].map(row=>row.map(csvCell).join(";")).join("\r\n");
+  const blob=new Blob([csv],{type:"text/csv;charset=utf-8"});
+  const objectUrl=URL.createObjectURL(blob);
+  const link=document.createElement("a");
+  link.href=objectUrl;link.download=filename;
+  document.body.appendChild(link);link.click();link.remove();
+  window.setTimeout(()=>URL.revokeObjectURL(objectUrl),1000);
+  status.textContent=rows.length+" registros exportados.";
+}
+function exportVisibleNodes(){
+  const query=normalizeText(document.getElementById("poi-search").value);
+  const province=document.getElementById("poi-province").value;
+  const type=document.getElementById("poi-type").value;
+  const terms=query.split(/\s+/).filter(Boolean);
+  const filtered=points.filter(p=>(province==="Todas"||p.province===province)&&(type==="Todos"||p.type===type)&&matchesSector(p,activeSector)&&terms.every(term=>normalizeText([p.name,p.province,p.type,p.note].join(" ")).includes(term)));
+  const rows=filtered.map(p=>[p.name,p.province,p.type,p.note,p.coords[0],p.coords[1],p.source,p.coordinateSource||""]);
+  downloadCsv("mapa-federal-nodos.csv",["Nodo","Provincia","Categoría","Descripción","Latitud","Longitud","Fuente institucional","Fuente de coordenadas"],rows,"nodes-export-status");
+}
+function exportVisibleProfiles(){
+  const query=normalizeText(document.getElementById("profile-search").value);
+  const region=document.getElementById("profile-region").value;
+  const filtered=[...provincialProfiles].filter(p=>(region==="Todas"||p.region===region)&&normalizeText(p.province).includes(query)).sort((a,b)=>b.exportsUsdMillions-a.exportsUsdMillions);
+  const verification=profilesMetadata?.verification||{};
+  const verificationStatus=({verified:"Verificado",not_verified:"No verificado",outdated:"Desactualizado"})[verification.status]||"No informado";
+  const profilePeriodNote="El año de edición de la ficha no garantiza que todos sus indicadores correspondan a ese período; consultar el período individual en el PDF.";
+  const rows=filtered.map(p=>[p.province,p.region,profilesMetadata?.period||"",p.exportsUsdMillions,p.yearOnYearPct,p.nationalSharePct,profilesMetadata?.profileYear||"",profilePeriodNote,p.profileUrl,profilesMetadata?.published||"",profilesMetadata?.publisher||"",verificationStatus,verification.checkedAt||"",verification.scope||"",profilesMetadata?.sourceUrl||""]);
+  downloadCsv("mapa-federal-perfiles-provinciales.csv",["Provincia","Región","Período OPEX","Exportaciones USD millones FOB","Variación interanual %","Participación nacional %","Año de edición de ficha complementaria","Nota sobre período de ficha complementaria","Ficha provincial","Publicación de la fuente estadística","Organismo publicador estadístico","Estado de verificación estadística","Fecha de verificación estadística","Alcance de verificación estadística","Fuente estadística"],rows,"profiles-export-status");
+}
+function exportProvinceBrief(){
+  const status=document.getElementById("brief-export-status");
+  const province=document.getElementById("brief-province").value;
+  const profile=provincialProfiles.find(p=>p.province===province);
+  if(!province||!profile||!points.length){status.textContent="La ficha no está disponible: revisá los datos provinciales y geográficos.";return;}
+  const subset=points.filter(p=>p.province===province).sort((a,b)=>a.type.localeCompare(b.type,"es")||a.name.localeCompare(b.name,"es"));
+  const clean=value=>String(value??"").replace(/\r?\n/g," ").trim();
+  const number=value=>new Intl.NumberFormat("es-AR",{minimumFractionDigits:1,maximumFractionDigits:1}).format(value);
+  const integer=value=>new Intl.NumberFormat("es-AR").format(value);
+  const variation=(profile.yearOnYearPct>=0?"+":"")+number(profile.yearOnYearPct)+"%";
+  const generated=new Date().toLocaleDateString("es-AR");
+  const lines=[
+    "# Ficha de prospección territorial — "+clean(province),
+    "",
+    "Generada: "+generated,
+    "Región: "+clean(profile.region),
+    "",
+    "## Indicadores de exportaciones",
+    "",
+    "- Período: "+clean(profilesMetadata?.period||"No informado"),
+    "- Publicación de la fuente: "+clean(profilesMetadata?.published||"No informada"),
+    "- Estado de verificación: "+(profilesMetadata?.verification?.status==="verified"?"Verificado contra fuente oficial":profilesMetadata?.verification?.status==="outdated"?"Verificación desactualizada":"No verificado"),
+    "- Verificación realizada: "+clean(profilesMetadata?.verification?.checkedAt||"No informada"),
+    "- Alcance de verificación: "+clean(profilesMetadata?.verification?.scope||"No informado"),
+    "- Exportaciones de bienes: US$ "+integer(profile.exportsUsdMillions)+" millones FOB",
+    "- Variación interanual: "+variation,
+    "- Participación nacional: "+number(profile.nationalSharePct)+"%",
+    "- Fuente estadística: "+clean(profilesMetadata?.publisher||"INDEC")+" — "+clean(profilesMetadata?.sourceUrl||""),
+    "- Ficha provincial complementaria: "+clean(profile.profileUrl||"No disponible"),
+    "- Año de edición de ficha complementaria: "+clean(profilesMetadata?.profileYear||"No informado"),
+    "- Organismo de ficha complementaria: "+clean(profilesMetadata?.profilePublisher||"No informado"),
+    "- Nota sobre período de la ficha complementaria: El año de edición de la ficha no garantiza que todos sus indicadores correspondan a ese período; consultar el período individual en el PDF.",
+    "- Índice de fichas provinciales: "+clean(profilesMetadata?.profileIndexUrl||"No disponible"),
+    "",
+    "## Infraestructura registrada en Mapa Federal",
+    "",
+    "Nodos registrados en esta jurisdicción: "+subset.length+". El catálogo es una selección inicial, no un inventario exhaustivo.",
+    "",
+    ...subset.flatMap(p=>[
+      "### "+clean(p.name),
+      "",
+      "- Categoría: "+clean(p.type),
+      "- Descripción: "+clean(p.note),
+      "- Coordenadas de referencia: "+p.coords[0]+", "+p.coords[1],
+      "- Fuente institucional: "+clean(p.source),
+      "- Fuente de coordenadas: "+clean(p.coordinateSource||"No declarada por separado; tratar la ubicación como orientativa."),
+      ""
+    ]),
+    "## Alcance y advertencias",
+    "",
+    "Las exportaciones de bienes no equivalen al PBG, al empleo ni al tamaño total del mercado provincial. Los nodos no constituyen un registro exhaustivo y sus coordenadas no deben usarse para navegación ni planificación operativa. Verificá condiciones, servicios y períodos en las fuentes originales antes de tomar decisiones.",
+    "",
+    "## Fuentes generales",
+    "",
+    "- INDEC OPEX: "+clean(profilesMetadata?.sourceUrl||"No disponible"),
+    "- Panel de Indicadores Provinciales: "+clean(profilesMetadata?.profileIndexUrl||"No disponible"),
+    "",
+    "Documento generado localmente por Mapa Federal. No contiene recomendaciones automáticas ni datos de empresas no verificadas."
+  ];
+  const content=lines.join("\n");
+  const slug=province.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+  const blob=new Blob([content+"\n"],{type:"text/markdown;charset=utf-8"});
+  const objectUrl=URL.createObjectURL(blob);
+  const link=document.createElement("a");
+  link.href=objectUrl;link.download="mapa-federal-ficha-prospeccion-"+slug+".md";
+  document.body.appendChild(link);link.click();link.remove();
+  window.setTimeout(()=>URL.revokeObjectURL(objectUrl),1000);
+  status.textContent="Ficha generada: "+subset.length+" nodos registrados y fuentes incluidas.";
+}
+document.getElementById("brief-province").addEventListener("change",updateProvinceBriefAvailability);
+document.getElementById("export-province-brief").addEventListener("click",exportProvinceBrief);
+document.getElementById("export-nodes").addEventListener("click",exportVisibleNodes);
+document.getElementById("export-profiles").addEventListener("click",exportVisibleProfiles);
+
+
+function filterInvestmentOpportunities(records,filters){
+  const terms=normalizeText(filters.query||"").split(/\s+/).filter(Boolean);
+  return records.filter(opportunity=>{
+    const jurisdiction=opportunity.scope==="national"?"Nacional":(opportunity.jurisdiction||"");
+    const haystack=normalizeText([opportunity.name,opportunity.sector,jurisdiction,opportunity.location,opportunity.description,opportunity.sourceName,opportunity.sourceUrl,opportunity.stage].join(" "));
+    return (filters.scope==="all"||opportunity.scope===filters.scope)
+      &&(filters.sector==="all"||opportunity.sector===filters.sector)
+      &&(filters.jurisdiction==="all"||jurisdiction===filters.jurisdiction)
+      &&(!filters.stage||filters.stage==="all"||opportunity.stage===filters.stage)
+      &&(filters.status==="all"||opportunity.opportunityStatus===filters.status)
+      &&terms.every(term=>haystack.includes(term));
+  });
+}
+function investmentStageLabel(stage){
+  return ({
+    announced:"Anunciado",
+    feasibility:"Factibilidad",
+    preparation:"En preparación",
+    under_construction:"En construcción",
+    operational:"En operación",
+    completed:"Finalizado",
+    cancelled:"Cancelado",
+    unknown:"Etapa no informada"
+  })[stage]||"Etapa no informada";
+}
+function investmentStatusLabel(status){
+  return ({open:"Abierta según fuente",unknown:"Disponibilidad no confirmada",closed:"Cerrada",expired:"Vencida"})[status]||"Estado no informado";
+}
+function renderInvestmentFinder(){
+  const root=document.getElementById("investment-grid");
+  const count=document.getElementById("investment-count");
+  root.setAttribute("aria-busy","false");
+  if(investmentLoadError){root.innerHTML='<div class="investment-empty">No se pudo cargar el catálogo documental. Revisá data/investment-opportunities.json.</div>';count.textContent="—";return;}
+  const filters={
+    query:document.getElementById("investment-search").value,
+    sector:document.getElementById("investment-sector").value,
+    scope:document.getElementById("investment-scope").value,
+    jurisdiction:document.getElementById("investment-jurisdiction").value,
+    stage:document.getElementById("investment-stage").value,
+    status:document.getElementById("investment-status").value
+  };
+  const filtered=filterInvestmentOpportunities(investmentOpportunities,filters);
+  count.textContent=filtered.length+" / "+investmentOpportunities.length;
+  if(!filtered.length){root.innerHTML='<div class="investment-empty">No hay registros que coincidan con los filtros.</div>';return;}
+  root.innerHTML=filtered.map(opportunity=>{
+    const scope=opportunity.scope==="national"?"Alcance nacional":"Alcance provincial";
+    const jurisdiction=opportunity.scope==="national"?"Nacional":(opportunity.jurisdiction||"No informada");
+    const status=investmentStatusLabel(opportunity.opportunityStatus);
+    const statusClass=opportunity.opportunityStatus==="unknown"?" unknown":"";
+    const verification=opportunity.verification||{};
+    const verificationLabel=verification.status==="verified"?"Fuente normativa verificada":verification.status==="outdated"?"Verificación desactualizada":verification.status==="not_verified"?"Fuente no verificada":"Verificación pendiente";
+    const stage=investmentStageLabel(opportunity.stage);
+    const amount=opportunity.amount&&Number.isFinite(opportunity.amount.value)?new Intl.NumberFormat("es-AR",{maximumFractionDigits:2}).format(opportunity.amount.value)+" "+escapeHtml(opportunity.amount.currency||"")+(opportunity.amount.basis?" · "+escapeHtml(opportunity.amount.basis):""):"Monto no informado por la fuente";
+    const validity=(opportunity.validFrom||"Inicio no informado")+" — "+(opportunity.validUntil||"Sin fecha de cierre informada");
+    const source=safeUrl(opportunity.sourceUrl);
+    const sourceLink=source!=="#"?'<a class="investment-source" href="'+escapeHtml(source)+'" target="_blank" rel="noopener noreferrer">Consultar fuente oficial ↗</a>':'<span class="investment-source">Fuente no disponible</span>';
+    const published=opportunity.sourcePublishedAt||"No informada";
+    const checked=verification.checkedAt||"No informada";
+    const period=opportunity.period||"No informado por la fuente";
+    return '<article class="investment-card"><div class="investment-badges"><span class="investment-badge">'+escapeHtml(scope)+'</span><span class="investment-badge'+statusClass+'">'+escapeHtml(status)+'</span></div><h3>'+escapeHtml(opportunity.name)+'</h3><p>'+escapeHtml(opportunity.description)+'</p><div class="investment-meta"><div><strong>Sector</strong><span>'+escapeHtml(opportunity.sector)+'</span></div><div><strong>Jurisdicción</strong><span>'+escapeHtml(jurisdiction)+'</span></div><div><strong>Etapa</strong><span>'+escapeHtml(stage)+'</span></div><div><strong>Monto publicado</strong><span>'+amount+'</span></div><div><strong>Vigencia</strong><span>'+escapeHtml(validity)+'</span></div><div><strong>Publicación de la fuente</strong><span>'+escapeHtml(published)+'</span></div></div><div class="investment-provenance"><p><strong>Fuente:</strong> '+escapeHtml(opportunity.sourceName)+'</p><p><strong>Período:</strong> '+escapeHtml(period)+'</p><p><strong>Verificación:</strong> '+escapeHtml(verificationLabel)+' · '+escapeHtml(checked)+'</p><p><strong>Alcance de la verificación:</strong> '+escapeHtml(verification.scope||"No informado")+'</p>'+sourceLink+'</div></article>';
+  }).join("");
+}
+async function loadInvestmentFinder(){
+  try{
+    const response=await fetch("../data/investment-opportunities.json",{cache:"no-store"});
+    if(!response.ok)throw new Error("No se pudo cargar Investment Finder");
+    const data=await response.json();
+    if(data.schemaVersion!==2||!Array.isArray(data.opportunities))throw new Error("Contrato de Investment Finder inválido");
+    investmentMetadata=data;
+    investmentOpportunities=data.opportunities;
+    const sectors=[...new Set(investmentOpportunities.map(item=>item.sector).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
+    const jurisdictions=[...new Set(investmentOpportunities.map(item=>item.scope==="national"?"Nacional":item.jurisdiction).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
+    const stages=[...new Set(investmentOpportunities.map(item=>item.stage).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
+    document.getElementById("investment-sector").innerHTML='<option value="all">Todos los sectores</option>'+sectors.map(value=>'<option value="'+escapeHtml(value)+'">'+escapeHtml(value)+'</option>').join("");
+    document.getElementById("investment-jurisdiction").innerHTML='<option value="all">Todas las jurisdicciones</option>'+jurisdictions.map(value=>'<option value="'+escapeHtml(value)+'">'+escapeHtml(value)+'</option>').join("");
+    document.getElementById("investment-stage").innerHTML='<option value="all">Todas las etapas</option>'+stages.map(value=>'<option value="'+escapeHtml(value)+'">'+escapeHtml(investmentStageLabel(value))+'</option>').join("");
+    investmentLoadError=false;
+  }catch(error){investmentLoadError=true;}
+  renderInvestmentFinder();
+}
+["investment-search"].forEach(id=>document.getElementById(id).addEventListener("input",renderInvestmentFinder));
+["investment-sector","investment-scope","investment-jurisdiction","investment-stage","investment-status"].forEach(id=>document.getElementById(id).addEventListener("change",renderInvestmentFinder));
+
+async function loadModules(){
+  const root=document.getElementById("ai-module-grid");
+  const note=document.getElementById("ai-roadmap-note");
+  try{
+    const response=await fetch("../data/ai-modules.json",{cache:"no-store"});
+    if(!response.ok) throw new Error("No se pudo cargar el manifiesto de módulos");
+    const data=await response.json();
+    if(!Array.isArray(data.modules)||data.modules.length!==6) throw new Error("Manifiesto incompleto");
+    root.innerHTML=data.modules.map((module,index)=>{
+      const deps=module.dependencies.map(item=>escapeHtml(item)).join(" · ");
+      return '<article class="ai-item"><div class="module-index">0'+(index+1)+'</div><h3>'+escapeHtml(module.name)+'</h3><p>'+escapeHtml(module.description)+'</p><span class="status">'+escapeHtml(module.statusLabel)+'</span><details style="margin-top:12px"><summary style="cursor:pointer;color:#E2C783;font-size:10px">Estado y próximo paso</summary><p style="margin-top:9px">'+escapeHtml(module.currentCapability)+'</p><p><strong style="color:#E2C783">Próximo paso:</strong> '+escapeHtml(module.nextStep)+'</p><p><strong style="color:#E2C783">Dependencias:</strong> '+deps+'</p></details></article>';
+    }).join("");
+    note.textContent="Hoja de ruta actualizada: "+data.updatedAt+". Estados documentados en data/ai-modules.json.";
+  }catch(error){
+    root.innerHTML='<div class="empty">No se pudo cargar la hoja de ruta. Consultá data/ai-modules.json.</div>';
+    note.textContent="La hoja de ruta no está disponible en este momento.";
+  }
+}
+
+loadPoints();
+loadNews();
+loadProfiles();
+loadInvestmentFinder();
+loadModules();
+</script>
+</body></html>
