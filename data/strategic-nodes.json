@@ -834,5 +834,29 @@
     "note": "Área industrial identificada por el Municipio de Escobar. Coordenada orientativa publicada por el directorio CIPO; verificar ubicación y situación operativa antes de decisiones comerciales.",
     "source": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
     "coordinateSource": "Directorio CIPO: https://parquesindustriales.com.ar/parque?id=49080"
+  },
+  {
+    "name": "Bioparque Temaikèn",
+    "province": "Buenos Aires",
+    "type": "Turismo",
+    "coords": [
+      -34.3654319,
+      -58.8034404
+    ],
+    "note": "Atractivo turístico y educativo de Belén de Escobar: bioparque de Fundación Temaikèn con ambientes de biodiversidad, acuario, espacios de aves y propuestas de conservación. Dirección oficial: Ruta Provincial 25, km 1. Coordenada de referencia del acceso; no representa el perímetro del predio.",
+    "source": "https://www.temaiken.org.ar/bioparque",
+    "coordinateSource": "https://ar.near-place.com/bioparque-temaiken-ruta-25-km-1-belen-de-escobar"
+  },
+  {
+    "name": "Munchi’s — sucursal Temaikèn",
+    "province": "Buenos Aires",
+    "type": "Turismo",
+    "coords": [
+      -34.360458,
+      -58.800937
+    ],
+    "note": "Parada gastronómica y recreativa asociada al circuito turístico de Temaikèn, con heladería artesanal. La marca identifica oficialmente una sucursal «Temaikèn» en Av. Sarmiento, Belén de Escobar. Punto de referencia comercial; no representa el perímetro del establecimiento.",
+    "source": "https://www.munchis.com.ar/locales",
+    "coordinateSource": "https://ar.near-place.com/munchis-av-sarmiento-belen-de-escobar"
   }
 ]
