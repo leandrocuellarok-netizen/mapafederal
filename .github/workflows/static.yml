@@ -82,7 +82,21 @@ jobs:
           assert.throws(() => compareProfiles(buenosAires, cordoba, { ...metadata, verification: { ...metadata.verification, checkedAt: tomorrow } }), /futura/);
           assert.throws(() => compareProfiles({ ...buenosAires, exportsUsdMillions: NaN }, cordoba, metadata), /no finito/);
           assert.throws(() => compareProfiles(buenosAires, cordoba, { ...metadata, sourceUrl: "http://example.org/data" }), /HTTPS/);
-          console.log("Federal Reports: comparación homogénea, diferencias y rechazos de seguridad aprobados.");
+          const exportTable = require("./assets/profile-comparison.js").toExportTable(result);
+          assert.equal(exportTable.rows.length, 3);
+          assert.ok(exportTable.headers.includes("Período"));
+          assert.ok(exportTable.headers.includes("URL de fuente"));
+          assert.ok(exportTable.headers.includes("Fecha de verificación"));
+          assert.deepEqual(exportTable.rows[0].slice(1, 6), ["Buenos Aires", 31684, "Córdoba", 10913, 20771]);
+          assert.equal(exportTable.rows[0][8], "2025");
+          assert.equal(exportTable.rows[0][9], "INDEC");
+          assert.equal(exportTable.rows[0][12], "verified");
+          assert.equal(exportTable.rows[0][13], "2026-11-21");
+          assert.equal(exportTable.rows[1][7], "puntos porcentuales");
+          assert.equal(exportTable.rows[2][7], "puntos porcentuales");
+          assert.throws(() => require("./assets/profile-comparison.js").toExportTable({ ...result, verification: { ...result.verification, status: "outdated" } }), /verificación/);
+          assert.throws(() => require("./assets/profile-comparison.js").toExportTable({ ...result, sourceUrl: "http://example.org/data" }), /HTTPS/);
+          console.log("Federal Reports: comparación homogénea, diferencias, exportación trazable y rechazos de seguridad aprobados.");
           NODE
           python - <<'PY'
           from pathlib import Path
@@ -96,6 +110,10 @@ jobs:
           assert 'id="comparison-province-a"' in html and 'id="comparison-province-b"' in html
           assert './assets/profile-comparison.js' in html
           assert 'MapaFederalProfileComparison.compareProfiles' in html
+          assert 'MapaFederalProfileComparison.toExportTable(lastProfileComparison)' in html
+          assert 'id="export-profile-comparison"' in html
+          assert 'id="profile-comparison-export-status"' in html
+          assert '"Exportar comparación CSV":"Export comparison CSV"' in translations
           assert '"Compará dos jurisdicciones":"Compare two jurisdictions"' in translations
           assert '"millones de USD FOB":"millions of FOB USD"' in translations
           assert 'were checked against table 1' in translations
