@@ -226,13 +226,68 @@ jobs:
           logo = Path("assets/mapa-federal.svg")
           root = ET.parse(logo).getroot()
           ns = {"svg": "http://www.w3.org/2000/svg"}
-          assert root.attrib.get("viewBox") == "0 0 500 500"
-          assert root.find(".//svg:clipPath[@id='argentina']", ns) is not None, "Falta la silueta continental argentina"
-          assert root.find(".//svg:path[@d]", ns) is not None
+          assert root.attrib.get("viewBox") == "0 0 1055 1491"
+          assert root.attrib.get("aria-label") == "Mapa Federal"
+          paths = root.findall(".//svg:path", ns)
+          assert len(paths) == 5, "El mapa de Argentina debe conservar sus cinco trazados"
+          fills = {path.attrib.get("fill") for path in paths}
+          assert {"#07502B", "#A65A18"}.issubset(fills), "Falta la paleta verde y ocre del mapa"
+          assert root.find(".//svg:rect", ns) is not None, "Falta el fondo del SVG"
           html = Path("index.html").read_text(encoding="utf-8")
+          nodes_html = Path("nodos-estrategicos/index.html").read_text(encoding="utf-8")
           assert html.count("./assets/mapa-federal.svg") >= 2, "El logo debe aparecer en navegación y portada"
-          assert "Silueta de Argentina con los colores celeste y blanco" in html
-          print("Logo SVG válido: silueta argentina, bandera, navegación y portada enlazadas.")
+          for page in (html, nodes_html):
+              assert "Silueta de Argentina en verde y ocre" in page
+              assert "aspect-ratio:auto" in page, "El logo vertical no debe forzarse a formato cuadrado"
+          print("Logo SVG válido: silueta argentina, trazados, paleta y proporción accesible comprobados.")
+          PY
+      - name: Validate Escobar local profile and provenance
+        run: |
+          node --check assets/escobar-profile.js
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from urllib.parse import urlparse
+          territory = json.loads(Path("data/escobar-territory.json").read_text(encoding="utf-8"))
+          economy = json.loads(Path("data/escobar-economic-profile.json").read_text(encoding="utf-8"))
+          nodes = json.loads(Path("data/strategic-nodes.json").read_text(encoding="utf-8"))
+          html = Path("index.html").read_text(encoding="utf-8")
+          assert len(territory["localities"]) == 7
+          assert sum(item["officiallyRecognizedNeighborhoods"] for item in territory["localities"]) == 246
+          assert territory["sourcePublishedAt"] == "2026-09-25"
+          assert territory["status"] == "operativo" and territory["validityPeriod"]
+          assert territory["verification"]["checkedAt"] == "2026-11-23"
+          assert len(territory["serviceDirectories"]) == 3
+          allowed = {"operativo", "anunciado", "histórico", "pendiente", "no verificado"}
+          for item in territory["serviceDirectories"]:
+              parsed = urlparse(item["sourceUrl"])
+              assert parsed.scheme == "https" and parsed.netloc
+              assert item["status"] in allowed
+              assert item["verification"]["checkedAt"] == "2026-11-23"
+              assert item["verification"]["scope"]
+          indicators = economy["indicators"]
+          assert indicators["referenceYear"] == 2026
+          assert indicators["industrialEstablishments"]["value"] == 382
+          assert indicators["commercialEstablishments"]["value"] == 6438
+          assert indicators["industrialEstablishments"]["previousYearComparison"] == {"year": 2024, "value": 314}
+          assert indicators["commercialEstablishments"]["previousYearComparison"] == {"year": 2024, "value": 5284}
+          assert economy["previousPageSnapshot"]["status"] == "histórico"
+          assert economy["previousPageSnapshot"]["industrialEstablishments2024"] == 516
+          assert economy["previousPageSnapshot"]["commercialEstablishments2024"] == 7356
+          assert economy["infrastructureProjects"][0]["status"] == "anunciado"
+          assert economy["companyDirectory"]["status"] == "pendiente"
+          for item in economy["industrialAreas"] + economy["companyCases"] + economy["infrastructureProjects"]:
+              assert item["status"] in allowed
+              parsed = urlparse(item["sourceUrl"])
+              assert parsed.scheme == "https" and parsed.netloc
+          local_nodes = [item for item in nodes if item.get("district") == "Partido de Escobar"]
+          assert len(local_nodes) == 5
+          assert {item["locality"] for item in local_nodes} == {"Belén de Escobar", "Garín"}
+          assert 'id="escobar"' in html
+          assert './assets/escobar-profile.js' in html
+          assert 'id="escobar-localities"' in html and 'id="escobar-map-nodes"' in html
+          assert 'href="#escobar"' in html
+          print("Escobar: 7 localidades, 246 barrios, indicadores 2026, estados documentales, directorios y 5 referencias cartográficas validados.")
           PY
       - name: Validate geographic and editorial JSON
         run: |

@@ -12,7 +12,7 @@
   "verification": {
     "status": "verified",
     "checkedAt": "2026-11-23",
-    "scope": "Se verificó en la publicación municipal del 25/09/2026 la existencia de siete localidades y el desglose de 246 barrios por localidad. La fuente de Escobar 360° se utiliza como contraste adicional de la división territorial del Presupuesto Participativo 2026."
+    "scope": "Se verificó la publicación municipal del 2026-09-25: siete localidades y desglose de 246 barrios. Los conteos son territoriales, no demográficos, y no sustituyen planos catastrales. Los directorios de servicios se verificaron en línea el 2026-11-23; no se realizó verificación presencial."
   },
   "localities": [
     {
@@ -49,6 +49,59 @@
       "id": "24-de-febrero",
       "name": "24 de Febrero",
       "officiallyRecognizedNeighborhoods": 9
+    }
+  ],
+  "validityPeriod": "Reconocimiento oficial de los barrios mediante la Ordenanza 6515, promulgada el 2026-09-25; vigente a la fecha de consulta y sujeto a modificaciones normativas posteriores.",
+  "status": "operativo",
+  "sourcePublicationNote": "La publicación municipal está fechada el 2026-09-25.",
+  "serviceDirectories": [
+    {
+      "id": "guardias-emergencias",
+      "name": "Guardias y emergencias",
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/guardias/",
+      "sourcePublishedAt": null,
+      "sourcePublicationNote": "La página no indica fecha de publicación o edición.",
+      "validityPeriod": "Directorio consultado el 2026-11-23; horarios y prestaciones sujetos a actualización.",
+      "status": "operativo",
+      "summary": "El Municipio informa guardias 24 horas en todas las localidades y SAME 107. En Garín, la ficha incluye el CAPS Juan Carlos Selles en el barrio 24 de Febrero.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-23",
+        "scope": "Se comprobó el contenido publicado: guardias 24 horas declaradas en todas las localidades, SAME 107 y CAPS Juan Carlos Selles en barrio 24 de Febrero, Garín. Verificación web; no acredita funcionamiento presencial de cada servicio."
+      }
+    },
+    {
+      "id": "mercado-popular",
+      "name": "Mercado Popular de Escobar",
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/mercado-popular/",
+      "sourcePublishedAt": null,
+      "sourcePublicationNote": "La página no indica fecha de publicación o edición.",
+      "validityPeriod": "Cronograma consultado el 2026-11-23; itinerarios y horarios sujetos a cambios.",
+      "status": "operativo",
+      "summary": "El cronograma municipal consultado incluye recorridos en las siete localidades, de lunes a sábado.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-23",
+        "scope": "Se verificó que la página publica recorridos para Belén de Escobar, Garín, Ingeniero Maschwitz, Maquinista Savio, Matheu, Loma Verde y 24 de Febrero. Verificación web; no se constató cada jornada en terreno."
+      }
+    },
+    {
+      "id": "ferias-mercados",
+      "name": "Ferias y mercados",
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/ferias/",
+      "sourcePublishedAt": null,
+      "sourcePublicationNote": "La página no indica fecha de publicación o edición.",
+      "validityPeriod": "Directorio consultado el 2026-11-23; horarios sujetos a cambios.",
+      "status": "operativo",
+      "summary": "La página publica direcciones y horarios para mercados y ferias, especialmente en Belén de Escobar e Ingeniero Maschwitz. Confirmar antes de concurrir.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-23",
+        "scope": "Se verificó la presencia de direcciones y horarios para espacios de Belén de Escobar e Ingeniero Maschwitz. No se extrapolan esos horarios a las demás localidades ni se verificó presencialmente su funcionamiento."
+      }
     }
   ]
 }

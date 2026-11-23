@@ -4,38 +4,58 @@
   "jurisdiction": "Partido de Escobar",
   "province": "Buenos Aires",
   "country": "Argentina",
-  "scope": "Perfil económico distrital y nodos industriales documentados; no constituye un censo actualizado ni un inventario exhaustivo de empresas.",
+  "scope": "Perfil económico distrital basado en la página institucional municipal consultada el 2026-11-23. Los indicadores son cifras de padrón publicadas para 2026, no un censo en tiempo real ni un inventario exhaustivo de empresas o predios.",
   "indicators": {
-    "referenceYear": 2024,
+    "referenceYear": 2026,
     "industrialEstablishments": {
-      "value": 516,
+      "value": 382,
       "unit": "establecimientos",
       "comparison": {
         "year": 2016,
-        "value": 370
+        "value": 188
       },
-      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/"
+      "previousYearComparison": {
+        "year": 2024,
+        "value": 314
+      },
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
+      "sourcePublishedAt": null,
+      "status": "operativo",
+      "validityPeriod": "Indicador rotulado 2026; la fuente no publica fecha exacta de corte."
     },
     "commercialEstablishments": {
-      "value": 7356,
+      "value": 6438,
       "unit": "establecimientos",
       "comparison": {
         "year": 2016,
-        "value": 5499
+        "value": 2405
       },
-      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/"
+      "previousYearComparison": {
+        "year": 2024,
+        "value": 5284
+      },
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
+      "sourcePublishedAt": null,
+      "status": "operativo",
+      "validityPeriod": "Indicador rotulado 2026; la fuente no publica fecha exacta de corte."
     },
     "industrialRegisterGrowth": {
-      "value": 39.4,
+      "value": 103.2,
       "unit": "porcentaje",
-      "period": "2016-2024",
-      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/"
+      "period": "2016-2026",
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
+      "sourcePublishedAt": null,
+      "status": "operativo",
+      "validityPeriod": "Crecimiento del padrón informado por el Municipio para 2016-2026."
     },
     "commercialRegisterGrowth": {
-      "value": 33.7,
+      "value": 167.7,
       "unit": "porcentaje",
-      "period": "2016-2024",
-      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/"
+      "period": "2016-2026",
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
+      "sourcePublishedAt": null,
+      "status": "operativo",
+      "validityPeriod": "Crecimiento del padrón informado por el Municipio para 2016-2026."
     }
   },
   "industrialAreas": [
@@ -43,26 +63,30 @@
       "id": "parque-industrial-garin",
       "name": "Parque Industrial Garín",
       "locality": "Garín",
-      "status": "documented",
-      "description": "Área industrial consolidada del distrito; el Municipio la describe como polo de empresas, inversión y empleo.",
+      "status": "operativo",
+      "description": "El Municipio lo describe como uno de los parques más consolidados del distrito, con décadas de historia y presencia de empresas regionales.",
       "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
+      "sourcePublishedAt": null,
+      "validityPeriod": "Área industrial descrita en la página municipal consultada el 2026-11-23; la fuente no informa disponibilidad de lotes o naves.",
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-23",
-        "scope": "Identificación y caracterización general en página institucional municipal; no se registran parcelas, coordenadas ni disponibilidad de naves."
+        "scope": "Se verificó la caracterización institucional del parque. No se verificaron parcelas, ocupación, servicios disponibles ni disponibilidad comercial."
       }
     },
     {
       "id": "parque-industrial-loma-verde",
       "name": "Parque Industrial de Loma Verde",
       "locality": "Loma Verde",
-      "status": "documented",
-      "description": "Área industrial en expansión; el Municipio informa ampliación de zonificación en 2024 para radicación de empresas de categoría 2.",
+      "status": "operativo",
+      "description": "El Municipio informa un área en crecimiento, vinculada a desarrollos del plástico y la construcción; en 2024 se amplió su zonificación para radicar empresas de categoría 2.",
       "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
+      "sourcePublishedAt": null,
+      "validityPeriod": "Área industrial descrita en la página municipal consultada el 2026-11-23; la fuente no informa disponibilidad de lotes o naves.",
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-23",
-        "scope": "Identificación y caracterización general en página institucional municipal; no se registran parcelas, coordenadas ni disponibilidad de naves."
+        "scope": "Se verificó la descripción institucional y la referencia a la ampliación de zonificación en 2024. No se verificaron parcelas, permisos individuales ni disponibilidad comercial."
       }
     }
   ],
@@ -81,18 +105,21 @@
     {
       "name": "Danone Specialized Nutrition",
       "locality": "Garín",
-      "status": "operating_site_reported",
+      "status": "histórico",
+      "reportedStatus": "operativo",
       "evidenceDate": "2026-08-05",
-      "description": "El Municipio informó una visita institucional a la planta ubicada en el parque industrial de Garín.",
-      "sourceUrl": "https://www.escobar.gob.ar/noticias/el-municipio-y-la-provincia-destacaron-el-desarrollo-de-escobar-en-una/"
+      "description": "El Municipio informó una visita institucional a la planta ubicada en el parque industrial de Garín. La evidencia acredita presencia en esa fecha, no confirma por sí sola el estado operativo actual.",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/el-municipio-y-la-provincia-destacaron-el-desarrollo-de-escobar-en-una/",
+      "validityPeriod": "Evidencia documental al 2026-08-05; estado posterior pendiente de verificación."
     },
     {
       "name": "Grupo Addnice",
       "locality": "Garín",
-      "status": "announced_project",
+      "status": "anunciado",
       "evidenceDate": "2026-11-04",
       "description": "Proyecto anunciado para trasladar su planta a Garín durante 2027; no registrar como planta ya operativa.",
-      "sourceUrl": "https://www.escobar.gob.ar/noticias/garin-sumara-una-nueva-planta-industrial-y-fortalecera-su-perfil-produ/"
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/garin-sumara-una-nueva-planta-industrial-y-fortalecera-su-perfil-produ/",
+      "validityPeriod": "Proyecto anunciado para 2027; no hay evidencia de operación al 2026-11-23."
     }
   ],
   "sourcePublisher": "Municipalidad de Escobar",
@@ -100,6 +127,56 @@
   "verification": {
     "status": "verified",
     "checkedAt": "2026-11-23",
-    "scope": "Se contrastaron las cifras del perfil económico municipal, las dos áreas industriales y los casos empresariales con publicaciones institucionales enlazadas. Las cifras corresponden al año de referencia 2024; los casos empresariales conservan su estado y fecha documental."
+    "scope": "Se releyó la página institucional municipal rotulada Indicadores 2026, se verificaron los valores 382 y 6.438, sus comparaciones 2016/2024, los dos parques industriales, el proyecto portuario anunciado y el listado de empresas. Se detectó una serie distinta respecto del snapshot anterior del mismo URL; ambas versiones quedan separadas y no comparadas. Las páginas no informan fecha explícita de publicación ni corte metodológico."
+  },
+  "sourcePublicationNote": "La página no indica fecha de publicación; el bloque consultado está rotulado «Indicadores 2026».",
+  "validityPeriod": "Indicadores municipales rotulados 2026, con comparaciones publicadas para 2016 y 2024. La fuente no informa fecha exacta de corte ni metodología del padrón.",
+  "status": "operativo",
+  "previousPageSnapshot": {
+    "capturedAt": "2026-11-23",
+    "status": "histórico",
+    "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
+    "industrialEstablishments2024": 516,
+    "commercialEstablishments2024": 7356,
+    "industrialEstablishments2016": 370,
+    "commercialEstablishments2016": 5499,
+    "note": "El snapshot anterior del mismo URL, conservado en la versión previa del dataset, mostraba 516 establecimientos industriales y 7.356 comerciales para 2024, con bases 2016 de 370 y 5.499. La página municipal consultada ahora muestra otra serie: 382 y 6.438 para 2026, con comparaciones 2024 de 314 y 5.284 y bases 2016 de 188 y 2.405. La fuente no explica la diferencia. Se conserva este antecedente como histórico y no se mezclan ambas series."
+  },
+  "infrastructureProjects": [
+    {
+      "id": "nuevo-puerto-multiproposito",
+      "name": "Proyecto de nuevo puerto multipropósito y terminal cerealera",
+      "locality": "Partido de Escobar",
+      "status": "anunciado",
+      "description": "La Municipalidad presenta dos terminales portuarias financiadas con capital privado: una multipropósito, orientada principalmente a contenedores, y otra cerealera.",
+      "investmentLabel": "Más de US$ 600 millones",
+      "employmentLabel": "Aproximadamente 3.000 empleos directos (estimación municipal)",
+      "terminalCount": 2,
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
+      "sourcePublishedAt": null,
+      "sourcePublicationNote": "La página no indica fecha de publicación; describe el proyecto como anunciado.",
+      "validityPeriod": "Proyecto anunciado en la página institucional consultada el 2026-11-23; no se informa fecha de inicio ni de entrada en operación.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-23",
+        "scope": "La fuente municipal publica el anuncio, el tipo de terminales y estimaciones de inversión y empleo. No se verificaron obras, permisos, contratos, vacantes ni fecha de puesta en marcha."
+      }
+    }
+  ],
+  "companyDirectory": {
+    "name": "Empresas que eligen Escobar",
+    "status": "pendiente",
+    "description": "Listado institucional de marcas y empresas; la página no asigna una planta o domicilio a cada nombre ni confirma por sí sola su operación actual en el partido.",
+    "sourceName": "Municipalidad de Escobar",
+    "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La página no indica fecha de publicación o actualización del listado.",
+    "validityPeriod": "Listado visible en la página consultada el 2026-11-23; ubicación y estado de cada empresa pendientes de verificación individual.",
+    "verification": {
+      "status": "verified",
+      "checkedAt": "2026-11-23",
+      "scope": "Se comprobó que la página presenta un listado institucional de empresas. No se verificaron domicilios, plantas activas, relaciones comerciales ni vacantes de cada marca."
+    }
   }
 }

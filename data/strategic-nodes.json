@@ -808,7 +808,9 @@
       -58.79507
     ],
     "note": "Cabecera del Partido de Escobar. Punto de referencia urbano; no representa el límite administrativo del partido.",
-    "source": "https://mapcarta.com/es/19217836"
+    "source": "https://mapcarta.com/es/19217836",
+    "district": "Partido de Escobar",
+    "locality": "Belén de Escobar"
   },
   {
     "name": "Garín — centro de localidad",
@@ -819,7 +821,9 @@
       -58.74076
     ],
     "note": "Localidad del Partido de Escobar. Punto de referencia urbano; no representa el límite administrativo de Garín.",
-    "source": "https://mapcarta.com/es/19213366"
+    "source": "https://mapcarta.com/es/19213366",
+    "district": "Partido de Escobar",
+    "locality": "Garín"
   },
   {
     "name": "Parque Industrial Garín",
@@ -831,7 +835,9 @@
     ],
     "note": "Área industrial identificada por el Municipio de Escobar. Coordenada orientativa publicada por el directorio CIPO; verificar ubicación y situación operativa antes de decisiones comerciales.",
     "source": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
-    "coordinateSource": "https://parquesindustriales.com.ar/parque?id=49080"
+    "coordinateSource": "https://parquesindustriales.com.ar/parque?id=49080",
+    "district": "Partido de Escobar",
+    "locality": "Garín"
   },
   {
     "name": "Bioparque Temaikèn",
@@ -843,7 +849,9 @@
     ],
     "note": "Atractivo turístico y educativo de Belén de Escobar: bioparque de Fundación Temaikèn con ambientes de biodiversidad, acuario, espacios de aves y propuestas de conservación. Dirección oficial: Ruta Provincial 25, km 1. Coordenada de referencia del acceso; no representa el perímetro del predio.",
     "source": "https://www.temaiken.org.ar/bioparque",
-    "coordinateSource": "https://ar.near-place.com/bioparque-temaiken-ruta-25-km-1-belen-de-escobar"
+    "coordinateSource": "https://ar.near-place.com/bioparque-temaiken-ruta-25-km-1-belen-de-escobar",
+    "district": "Partido de Escobar",
+    "locality": "Belén de Escobar"
   },
   {
     "name": "Munchi’s — sucursal Temaikèn",
@@ -855,6 +863,8 @@
     ],
     "note": "Parada gastronómica y recreativa asociada al circuito turístico de Temaikèn, con heladería artesanal. La marca identifica oficialmente una sucursal «Temaikèn» en Av. Sarmiento, Belén de Escobar. Punto de referencia comercial; no representa el perímetro del establecimiento.",
     "source": "https://www.munchis.com.ar/locales",
-    "coordinateSource": "https://ar.near-place.com/munchis-av-sarmiento-belen-de-escobar"
+    "coordinateSource": "https://ar.near-place.com/munchis-av-sarmiento-belen-de-escobar",
+    "district": "Partido de Escobar",
+    "locality": "Belén de Escobar"
   }
 ]
