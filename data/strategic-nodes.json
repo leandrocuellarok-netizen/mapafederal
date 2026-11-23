@@ -798,5 +798,41 @@
     "note": "Depósito epitermal de baja sulfuración de oro y plata, en el Macizo del Deseado. Pan American Silver informa que la extracción y el procesamiento finalizaron a fines de 2022 y que la operación está en cuidado y mantenimiento, con plan de cierre en marcha. Recursos al 30/06/2026: 6,6 Moz de plata medidos e indicados y 1,8 Moz inferidos; las reservas históricas publicadas por la compañía tienen fecha 30/06/2022 y no deben presentarse como reservas actuales.",
     "source": "https://panamericansilver.com/es/operations/silver-segment/manantial-espejo/",
     "coordinateSource": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp585.html"
+  },
+  {
+    "name": "Belén de Escobar — centro de localidad",
+    "province": "Buenos Aires",
+    "type": "Ciudad",
+    "coords": [
+      -34.34532,
+      -58.79507
+    ],
+    "note": "Cabecera del Partido de Escobar. Punto de referencia urbano; no representa el límite administrativo del partido.",
+    "source": "https://mapcarta.com/es/19217836",
+    "coordinateSource": "OpenStreetMap, vía Mapcarta; coordenada de referencia."
+  },
+  {
+    "name": "Garín — centro de localidad",
+    "province": "Buenos Aires",
+    "type": "Ciudad",
+    "coords": [
+      -34.42411,
+      -58.74076
+    ],
+    "note": "Localidad del Partido de Escobar. Punto de referencia urbano; no representa el límite administrativo de Garín.",
+    "source": "https://mapcarta.com/es/19213366",
+    "coordinateSource": "OpenStreetMap, vía Mapcarta; coordenada de referencia."
+  },
+  {
+    "name": "Parque Industrial Garín",
+    "province": "Buenos Aires",
+    "type": "Industria",
+    "coords": [
+      -34.441866,
+      -58.713917
+    ],
+    "note": "Área industrial identificada por el Municipio de Escobar. Coordenada orientativa publicada por el directorio CIPO; verificar ubicación y situación operativa antes de decisiones comerciales.",
+    "source": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
+    "coordinateSource": "Directorio CIPO: https://parquesindustriales.com.ar/parque?id=49080"
   }
 ]
