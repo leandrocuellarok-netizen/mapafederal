@@ -229,6 +229,14 @@ La sección de módulos se alimenta de `data/ai-modules.json` y sus criterios t�
 
 INDEC publicó el OPEX del primer semestre de 2026 el 2 de septiembre de 2026, con resultados regionales. Ese período parcial debe mantenerse separado del OPEX anual 2025 que alimenta las fichas provinciales. La página de INDEC anuncia el próximo informe anual 2026 para el 9 de marzo de 2027: [Origen provincial de las exportaciones](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-79).
 
+## Event Intelligence: primer registro territorial de Escobar
+
+El catálogo `data/events.json` incorpora un primer evento histórico documentado del partido de Escobar: la 5.ª Feria Japonesa Bazaa, realizada el 15 de noviembre de 2026 en el Polo de Educación Superior de Escobar, Ingeniero Maschwitz. La ficha conserva la publicación municipal del 16/11/2026, horario anunciado, sede, período y verificación del 23/11/2026. Se marca como `completed`: no representa una agenda activa ni disponibilidad futura.
+
+Fuente primaria: [Municipalidad de Escobar — 5.ª Feria Japonesa](https://www.escobar.gob.ar/noticias/este-domingo-llega-a-escobar-la-5-edicion-de-la-feria-japonesa/).
+
+Los próximos registros deben seguir el mismo criterio. No se cargan eventos futuros sin fecha, organizador y fuente pública verificables. La fecha de la 63.ª Fiesta Nacional de la Flor presenta una diferencia entre la noticia municipal de anuncio (3–12 de octubre) y la ficha actual de agenda (2–12 de octubre); no se normaliza esa discrepancia sin confirmación del organizador.
+
 ## Interfaz bilingüe (español / inglés)
 
 La interfaz incorpora un selector ES / EN en la navegación. El idioma predeterminado es español; la preferencia elegida se conserva localmente en el navegador y el atributo `lang` del documento se actualiza al cambiar de idioma. El catálogo reutilizable está en `assets/i18n.js` y expone `window.MapaFederalI18n.setLanguage("es"|"en")` y `getLanguage()` para futuras vistas y componentes.
