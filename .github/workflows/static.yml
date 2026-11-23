@@ -795,7 +795,7 @@ jobs:
           const ush = filter(news, { ...base, jurisdiction: "Tierra del Fuego" });
           if (ush.length !== 1 || !ush[0].title.startsWith("Ushuaia:")) throw new Error("No se localizó Ushuaia en Tierra del Fuego.");
           const chubut = filter(news, { ...base, jurisdiction: "Chubut" });
-          if (chubut.length !== 1 || !chubut[0].title.startsWith("Chubut:")) throw new Error("No se localizó Chubut.");
+          if (chubut.length !== 2 || !chubut.some(item => item.title.startsWith("Proyecto Navidad:")) || !chubut.some(item => item.title.startsWith("Chubut:"))) throw new Error("No se localizaron las noticias verificadas de Chubut.");
           const buenosAires = filter(news, { ...base, jurisdiction: "Buenos Aires" });
           if (!buenosAires.some(item => item.title.startsWith("Toyota anunció"))) throw new Error("No se localizó Zárate en Buenos Aires.");
           if (filter(news, { ...base, jurisdiction: "CABA" }).length !== 1) throw new Error("CABA y provincia de Buenos Aires no se distinguen.");
