@@ -1012,11 +1012,13 @@ jobs:
           grep -q 'id="brief-province"' index.html
           grep -q 'id="export-province-brief"' index.html
           grep -q 'function exportProvinceBrief' index.html
-          grep -q 'Seis módulos, estados transparentes.' index.html
-          test "$(grep -o 'id="ai-module-grid"' index.html | wc -l)" -eq 1
-          ! grep -q 'Cinco módulos proyectados' index.html
-          grep -q 'data/ai-modules.json' index.html
-          grep -q 'async function loadModules()' index.html
+          grep -q 'href="./nodos-estrategicos/"' index.html
+          grep -q 'href="./radar-ia/"' index.html
+          grep -q 'href="./investment-finder/"' index.html
+          grep -q 'id="homepage-scope"' index.html
+          grep -q '.poi,.news,.investment{display:none!important}' index.html
+          ! grep -q 'Seis módulos, estados transparentes.' index.html
+          ! grep -q 'id="ai-module-grid"' index.html
           grep -q 'docs/intelligence-modules-roadmap.md' README.md
 
 
