@@ -203,7 +203,7 @@ Las funciones comprobables actuales son el mapa, el directorio de nodos, los per
 - `index.html`: interfaz y lógica cliente.
 - `data/strategic-nodes.json`: catálogo geográfico.
 - `data/news.json`: noticias curadas.
-- `data/events.json`: contrato versionado de Event Intelligence; permanece vacío hasta disponer de eventos confirmados por sus organizadores.
+- `data/events.json`: catálogo versionado de Event Intelligence; contiene un registro histórico verificado (5.ª Feria Japonesa Bazaa, 15/11/2026, Ingeniero Maschwitz), marcado como completado. No es una agenda integrada ni confirma eventos futuros.
 - `data/investment-opportunities.json`: catálogo documental versionado de Investment Finder; contiene registros nacionales del RIMI y del Programa KIT 4.0. Ambos conservan disponibilidad desconocida hasta confirmar sus condiciones operativas, sin presentarse como convocatorias abiertas.
 - Leaflet 1.9.4: visualización geográfica.
 - OpenStreetMap: teselas, sujetas a disponibilidad y política de uso.
