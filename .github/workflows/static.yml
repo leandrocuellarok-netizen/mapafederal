@@ -405,7 +405,7 @@ jobs:
           example_news_id = stable_news_id(example_news_url)
           assert example_news_id == "news-dominio-oficial-o-medio-example-noticia"
           assert f'"id": "{example_news_id}"' in readme, "El ejemplo de README debe incluir el ID determinista de su URL"
-          assert "ID interno determinista" in readme, "README debe explicar cómo generar el ID de noticia"
+          assert "identificador interno determinista" in readme, "README debe explicar cómo generar el ID de noticia"
 
           news_urls = set()
           news_titles = set()
