@@ -38,7 +38,21 @@ function renderProfile(territory,economy){
    +'<p class="escobar-meta">Publicación: '+escapeHtml(date(item.sourcePublishedAt))+' · Vigencia: '+escapeHtml(item.validityPeriod||"No indicada")+' · Verificación: '+escapeHtml(date(item.verification&&item.verification.checkedAt))+'</p><p class="escobar-meta">Alcance: '+escapeHtml(item.verification&&item.verification.scope||"No informado")+'</p>'
    +(links?'<p>'+links+'</p>':"")+'</div>';
  }).join("");
- el("escobar-services").innerHTML=services||'<p class="escobar-meta">No hay directorios municipales cargados.</p>';
+ const health=territory.healthFacilitiesDirectory;
+ const facilities=(health&&Array.isArray(health.facilities)?health.facilities:[]).map(item=>{
+  const place=item.locality+(item.neighborhood?" · B° "+item.neighborhood:"");
+  const servicesList=Array.isArray(item.services)?item.services.join(" · "):"";
+  return '<div class="escobar-item escobar-health-facility"><span class="escobar-status">'+escapeHtml(statusLabel(health.status))+'</span><h4>'+escapeHtml(item.name)+'</h4><p class="escobar-meta">'+escapeHtml(place)+' · '+escapeHtml(item.category)+'</p>'
+   +(item.address?'<p>Ubicación publicada: '+escapeHtml(item.address)+'</p>':"")
+   +(item.addressNote?'<p class="escobar-meta">'+escapeHtml(item.addressNote)+' '+sourceLink(item.addressSourceUrl,"Directorio complementario ↗")+'</p>':"")
+   +'<p><strong>'+escapeHtml(item.serviceHours||"Horario no publicado")+'</strong></p>'
+   +(servicesList?'<p>'+escapeHtml(servicesList)+'</p>':"")
+   +(item.phone?'<p class="escobar-meta">Teléfono: '+escapeHtml(item.phone)+'</p>':"")
+   +(item.serviceNote?'<p class="escobar-meta">'+escapeHtml(item.serviceNote)+' '+sourceLink(item.serviceNoteSourceUrl,"Ficha municipal complementaria ↗")+'</p>':"")
+   +'</div>';
+ }).join("");
+ const healthHtml=health?'<h4>'+escapeHtml(health.name)+'</h4><p>'+escapeHtml(health.summary)+'</p><p class="escobar-meta">'+escapeHtml(health.localityCoverageNote)+'</p>'+facilities+'<p class="escobar-meta">Publicación: '+escapeHtml(date(health.sourcePublishedAt))+' · Vigencia: '+escapeHtml(health.validityPeriod)+' · Verificación: '+escapeHtml(date(health.verification&&health.verification.checkedAt))+' · '+escapeHtml(health.verification&&health.verification.scope||"")+'</p><p>'+sourceLink(health.sourceUrl,"Guardias y emergencias ↗")+' '+sourceLink(health.additionalDirectoryUrl,"Directorio completo de centros de salud ↗")+'</p>':"";
+ el("escobar-services").innerHTML=(services||'<p class="escobar-meta">No hay directorios municipales cargados.</p>')+healthHtml;
  const snapshot=economy.previousPageSnapshot;
  el("escobar-provenance").innerHTML=
   '<p><strong>Barrios:</strong> '+escapeHtml(territory.sourceName)+' · Publicación: '+escapeHtml(date(territory.sourcePublishedAt))+' · Vigencia: '+escapeHtml(territory.validityPeriod||"No indicada")+' · Estado: '+escapeHtml(statusLabel(territory.status))+' · Verificación: '+escapeHtml(date(territory.verification&&territory.verification.checkedAt))+'. '+escapeHtml(territory.verification&&territory.verification.scope||"")+' '+sourceLink(territory.sourceUrl,"Fuente territorial ↗")+'</p>'+
