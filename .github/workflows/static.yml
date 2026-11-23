@@ -299,6 +299,7 @@ jobs:
           assert "territory.healthFacilitiesDirectory" in profile_js
           assert "escobar-health-facility" in profile_js
           assert "health.localityCoverageNote" in profile_js
+          assert "filter(item=>!healthIds.has(item.id))" in profile_js
           indicators = economy["indicators"]
           assert indicators["referenceYear"] == 2026
           assert indicators["industrialEstablishments"]["value"] == 382
