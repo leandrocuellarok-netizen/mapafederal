@@ -281,8 +281,20 @@ jobs:
               parsed = urlparse(item["sourceUrl"])
               assert parsed.scheme == "https" and parsed.netloc
           local_nodes = [item for item in nodes if item.get("district") == "Partido de Escobar"]
-          assert len(local_nodes) == 5
-          assert {item["locality"] for item in local_nodes} == {"Belén de Escobar", "Garín"}
+          assert len(local_nodes) == 9
+          assert {item["locality"] for item in local_nodes} == {"Belén de Escobar", "Garín", "Ingeniero Maschwitz", "Loma Verde", "Matheu", "Maquinista Savio"}
+          expected_references = {
+              "Centro de Ingeniero Maschwitz — referencia urbana": [-34.38913, -58.7379],
+              "Centro de Loma Verde — referencia urbana": [-34.33058, -58.84454],
+              "Centro de Matheu — referencia urbana": [-34.38182, -58.82509],
+              "Maquinista Savio — referencia sector este": [-34.40066, -58.77637],
+          }
+          for name, coords in expected_references.items():
+              item = next((entry for entry in local_nodes if entry["name"] == name), None)
+              assert item and item["coords"] == coords
+              assert item.get("coordinateSource", "").startswith("https://")
+              assert "no representa el límite administrativo" in item["note"]
+          assert "sector este" in next(item for item in local_nodes if item["name"] == "Maquinista Savio — referencia sector este")["note"]
           for item in local_nodes:
               assert item.get("sourceName") and item.get("sourcePublicationNote")
               assert item.get("validityPeriod") and item.get("status") in allowed
@@ -294,7 +306,7 @@ jobs:
           assert './assets/escobar-profile.js' in html
           assert 'id="escobar-localities"' in html and 'id="escobar-map-nodes"' in html
           assert 'href="#escobar"' in html
-          print("Escobar: 7 localidades, 246 barrios, indicadores 2026, estados documentales, directorios y 5 referencias cartográficas validados.")
+          print("Escobar: 7 localidades, 246 barrios, indicadores 2026, estados documentales, directorios y 9 referencias cartográficas en 6 localidades validados.")
           PY
       - name: Validate geographic and editorial JSON
         run: |
