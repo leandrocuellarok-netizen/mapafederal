@@ -205,9 +205,13 @@ Las funciones comprobables actuales son el mapa, el directorio de nodos, los per
 
 Fuentes primarias: [Municipalidad de Escobar — reconocimiento oficial de los 246 barrios](https://www.escobar.gob.ar/identidad-memoria-y-futuro-con-la-firma-de-una-ordenanza-historica-escobar-reconocio-oficialmente-sus-246-barrios/) · [Escobar 360° — Presupuesto Participativo 2026](https://escobar360.escobar.gob.ar/servicio.aspx?ser_id=3032).
 
+La ficha de servicios incorpora el CAPS Juan Carlos Selles: el directorio municipal lo ubica bajo Garín, en Pablo Marín, barrio 24 de Febrero, con guardia clínica diaria de 24 horas y teléfono 11 2150-0302. La página no informa fecha de edición. El enlace de llegada abre una búsqueda textual de Google Maps, no una coordenada oficial; por eso no se agregó un punto al mapa.
+
 ## Perfil económico de Escobar
 
-`data/escobar-economic-profile.json` reúne un perfil económico distrital con indicadores de referencia 2024 publicados por la Municipalidad: 516 establecimientos industriales y 7.356 comerciales. El Municipio informa variaciones del padrón de +39,4% y +33,7%, respectivamente, respecto de 2016. Estos valores se presentan como cifras institucionales de referencia, no como un relevamiento actualizado a 2026.
+`data/escobar-economic-profile.json` registra los indicadores que la página municipal rotula 2026: 382 establecimientos industriales y 6.438 comerciales. La misma serie publica bases 2016 de 188 y 2.405, respectivamente, y variaciones informadas de +103,2% y +167,7%; para 2024 muestra 314 establecimientos industriales y 5.284 comerciales. La fuente no informa fecha exacta de corte ni metodología del padrón.
+
+Se conserva por separado `previousPageSnapshot`: una captura anterior del mismo URL mostraba para 2024 516 establecimientos industriales y 7.356 comerciales, y bases 2016 de 370 y 5.499. La Municipalidad no explica la diferencia entre las dos series. El snapshot se mantiene como antecedente histórico y no se combina con los indicadores actuales ni se interpreta como altas, bajas o crecimiento comprobado.
 
 El archivo identifica el Parque Industrial Garín y el Parque Industrial de Loma Verde, y documenta sectores productivos mencionados por el Municipio. Incluye dos casos empresariales con distinto estado: Danone Specialized Nutrition, cuya planta en Garín fue visitada por autoridades en agosto de 2026, y Grupo Addnice, cuyo traslado de planta a Garín fue anunciado como proyecto para 2027. Un anuncio no equivale a una instalación ya operativa.
 

@@ -72,6 +72,28 @@
       }
     },
     {
+      "id": "caps-juan-carlos-selles",
+      "name": "CAPS Juan Carlos Selles — B° 24 de Febrero",
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/guardias/",
+      "sourcePublishedAt": null,
+      "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-23.",
+      "locality": "Garín",
+      "neighborhood": "24 de Febrero",
+      "address": "Pablo Marín, B° 24 de Febrero, Garín",
+      "serviceHours": "Todos los días, las 24 horas",
+      "phone": "11 2150-0302",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pablo+Mar%C3%ADn%2C+B%C2%B0+24+de+Febrero%2C+Gar%C3%ADn%2C+Escobar%2C+Buenos+Aires",
+      "status": "operativo",
+      "summary": "CAPS municipal con guardia clínica. El directorio municipal lo lista bajo Garín y precisa su ubicación en el barrio 24 de Febrero. Se registra como servicio, no como punto cartográfico.",
+      "validityPeriod": "Ficha municipal consultada el 2026-11-23; horarios y prestaciones sujetos a actualización.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-23",
+        "scope": "Se comprobó en el directorio municipal la ubicación textual Pablo Marín, B° 24 de Febrero, Garín, la guardia clínica diaria de 24 horas y el teléfono 11 2150-0302. El enlace Cómo llegar abre una búsqueda textual de Google Maps y no aporta coordenadas oficiales. Verificación web, no presencial."
+      }
+    },
+    {
       "id": "mercado-popular",
       "name": "Mercado Popular de Escobar",
       "sourceName": "Municipalidad de Escobar",

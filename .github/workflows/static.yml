@@ -257,7 +257,7 @@ jobs:
           assert territory["sourcePublishedAt"] == "2026-09-25"
           assert territory["status"] == "operativo" and territory["validityPeriod"]
           assert territory["verification"]["checkedAt"] == "2026-11-23"
-          assert len(territory["serviceDirectories"]) == 3
+          assert len(territory["serviceDirectories"]) == 4
           allowed = {"operativo", "anunciado", "histórico", "pendiente", "no verificado"}
           for item in territory["serviceDirectories"]:
               parsed = urlparse(item["sourceUrl"])
@@ -265,6 +265,20 @@ jobs:
               assert item["status"] in allowed
               assert item["verification"]["checkedAt"] == "2026-11-23"
               assert item["verification"]["scope"]
+          caps = next((item for item in territory["serviceDirectories"] if item.get("id") == "caps-juan-carlos-selles"), None)
+          assert caps is not None
+          assert caps["locality"] == "Garín" and caps["neighborhood"] == "24 de Febrero"
+          assert caps["address"] == "Pablo Marín, B° 24 de Febrero, Garín"
+          assert caps["serviceHours"] == "Todos los días, las 24 horas"
+          assert caps["phone"] == "11 2150-0302"
+          assert caps["status"] == "operativo"
+          assert caps["verification"]["checkedAt"] == "2026-11-23"
+          assert "no aporta coordenadas oficiales" in caps["verification"]["scope"]
+          parsed_map = urlparse(caps["mapUrl"])
+          assert parsed_map.scheme == "https" and parsed_map.netloc == "www.google.com"
+          profile_js = Path("assets/escobar-profile.js").read_text(encoding="utf-8")
+          assert 'sourceLink(item.mapUrl,"Cómo llegar ↗")' in profile_js
+          assert "item.serviceHours" in profile_js
           indicators = economy["indicators"]
           assert indicators["referenceYear"] == 2026
           assert indicators["industrialEstablishments"]["value"] == 382
