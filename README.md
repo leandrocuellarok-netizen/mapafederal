@@ -10,6 +10,7 @@ Plataforma web estática en evolución para explorar infraestructura, nodos terr
 - Catálogo externo de 69 nodos estratégicos en `data/strategic-nodes.json`, con presencia en las 23 provincias y la Ciudad Autónoma de Buenos Aires, referencias de fuente y advertencias sobre coordenadas aproximadas.
 - Perfiles de exportaciones provinciales 2025 en `data/provincial-profiles.json`, basados en el informe OPEX del INDEC y enlazados con las fichas oficiales 2025 del Ministerio de Economía.
 - Filtros del mapa por categoría y provincia; búsqueda por varios términos sin depender de tildes.
+- Filtros sectoriales para los ocho sectores enumerados por el Consulado argentino en San Pablo: forestoindustria, turismo, infraestructura, minería, tecnología, siderurgia, energía y petróleo y gas. Los nodos se muestran como referencias territoriales, no como proyectos ni oportunidades de inversión confirmados; los sectores sin nodos etiquetados quedan expresamente sin resultados.
 - Buscador por nombre, provincia y tipo de nodo.
 - Directorio tabular filtrable por provincia y categoría, sincronizado con los filtros del mapa; sus accesos centran el punto seleccionado y muestran su ficha.
 - Degradación controlada: si Leaflet o la cartografía externa no cargan, el directorio y las noticias siguen disponibles.
@@ -17,6 +18,10 @@ Plataforma web estática en evolución para explorar infraestructura, nodos terr
 - Diseño adaptable, navegación por anclas y avisos de estado.
 - Fichas territoriales Markdown por jurisdicción con período, fecha de publicación y estado/alcance de verificación del dataset OPEX.
 - Validación automática de los archivos JSON antes de desplegar en GitHub Pages.
+
+## Sectores estratégicos de inversión
+
+La interfaz incorpora los ocho sectores enumerados por el [Consulado General y Centro de Promoción de Argentina en San Pablo](https://cpabl.cancilleria.gob.ar/es/7-argentina-como-destino-de-inversi%C3%B3n), con fecha de actualización indicada por la fuente: 14/05/2026. Los filtros sectoriales muestran nodos geográficos que funcionan como referencias de contexto cuando la asociación es razonable a partir de la descripción disponible. No acreditan proyectos, explotaciones, inversiones, elegibilidad para el RIGI ni disponibilidad de predios. Los sectores sin nodos etiquetados se muestran sin resultados para no inventar localizaciones.
 
 ## Datos geográficos: alcance y calidad
 
