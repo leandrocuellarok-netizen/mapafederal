@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Principios que sirven de transparencia institucional para municipios en Provincia de Buenos Aires</title>
+  <style>
+    :root {
+      --primary: #0f3d5e;
+      --secondary: #1e6091;
+      --accent: #2a7b88;
+      --bg: #f4f7fa;
+      --card-bg: #ffffff;
+      --text: #1f2933;
+      --muted: #52606d;
+      --border: #d9e2ec;
+      --badge-bg: #e6f0f8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(15, 61, 94, 0.08);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #ffffff;
+      padding: 2.5rem 2rem;
+    }
+
+    header .kicker {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      opacity: 0.9;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.92;
+      max-width: 780px;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #f8fafc;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .search-input {
+      flex: 1 1 280px;
+      padding: 0.55rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .btn {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 0.55rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: var(--secondary);
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      color: var(--primary);
+      border-bottom: 2px solid var(--badge-bg);
+      padding-bottom: 0.45rem;
+      margin-bottom: 1.15rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      background: #ffffff;
+    }
+
+    .card h3 {
+      font-size: 1.02rem;
+      color: var(--secondary);
+      margin-bottom: 0.35rem;
+    }
+
+    .card p {
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.5rem;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.75rem 0.85rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--badge-bg);
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    tr:hover td {
+      background: #fafcff;
+    }
+
+    a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #f1f5f9;
+      color: var(--muted);
+      padding: 1.25rem 2rem;
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .container { box-shadow: none; border: none; }
+      .toolbar { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="kicker">Marco Normativo e Institucional · República Argentina · Provincia de Buenos Aires</div>
+      <h1>Principios que sirven de transparencia institucional para municipios en Provincia de Buenos Aires</h1>
+      <p>Compendio integrado de principios rectores, instrumentos constitucionales y convencionales, legislación nacional, normativa bonaerense y organismos de control aplicables a la gestión municipal.</p>
+    </header>
+
+    <div class="toolbar">
+      <input id="filterInput" class="search-input" type="text" placeholder="Filtrar normas, principios u organismos..." aria-label="Filtrar normas" />
+      <button class="btn" type="button" onclick="window.print()">Imprimir / Guardar PDF</button>
+    </div>
+
+    <main id="contentArea">
+      <section data-searchable>
+        <h2>1. Principios Rectores de la Transparencia Institucional Municipal</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Publicidad y Máxima Divulgación</h3>
+            <p>La información pública municipal se presume abierta y accesible, con excepciones taxativas, oportunas y de interpretación restrictiva.</p>
+          </div>
+          <div class="card">
+            <h3>Integridad, Ética y Prevención de Conflictos</h3>
+            <p>Deber de probidad, abstención ante intereses contrapuestos, régimen de obsequios y declaraciones juradas patrimoniales públicas.</p>
+          </div>
+          <div class="card">
+            <h3>Trazabilidad Presupuestaria y Contable</h3>
+            <p>Registro integrado, devengado y auditado de ingresos, gastos, ejecución presupuestaria y patrimonio público.</p>
+          </div>
+          <div class="card">
+            <h3>Control Externo y Rendición de Cuentas</h3>
+            <p>Sometimiento periódico de las cuentas municipales al control de legalidad y gestión ante el órgano constitucional competente.</p>
+          </div>
+          <div class="card">
+            <h3>Concurrencia, Publicidad y Eficiencia Contractual</h3>
+            <p>Selección objetiva de contratistas, trazabilidad de compras y obras públicas y prevención de desvíos o colusión.</p>
+          </div>
+          <div class="card">
+            <h3>Debido Procedimiento Administrativo</h3>
+            <p>Motivación de los actos administrativos, derecho a ser oído, vista de actuaciones y revisión judicial efectiva.</p>
+          </div>
+          <div class="card">
+            <h3>Modernización Estatal y Tutela de Datos</h3>
+            <p>Digitalización, interoperabilidad y gobierno abierto resguardando la privacidad y protección de datos personales.</p>
+          </div>
+          <div class="card">
+            <h3>Responsabilidad Funcional, Estatal y Penal</h3>
+            <p>Exigibilidad de responsabilidades administrativas, patrimoniales del Estado, penales de funcionarios y penal empresaria.</p>
+          </div>
+        </div>
+      </section>
+
+      <section data-searchable>
+        <h2>2. Constitución y Tratados Internacionales</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Instrumento</th>
+              <th>Eje de Transparencia e Integridad</th>
+              <th>Enlace Oficial</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Constitución Nacional</td>
+              <td>República representativa, publicidad de los actos de gobierno, autonomía y jerarquía constitucional de tratados de DD. HH.</td>
+              <td><a href="https://www.argentina.gob.ar/normativa/nacional/ley-24430-804/texto?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver texto</a></td>
+            </tr>
+            <tr>
+              <td>Convención Americana sobre Derechos Humanos</td>
+              <td>Libertad de buscar y difundir información, garantías judiciales y protección judicial efectiva.</td>
+              <td><a href="https://www.oas.org/dil/esp/1969_Convenci%C3%B3n_Americana_sobre_Derechos_Humanos.pdf?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver documento</a></td>
+            </tr>
+            <tr>
+              <td>Pacto Internacional de Derechos Civiles y Políticos</td>
+              <td>Derecho a la información pública, participación en asuntos públicos y debido proceso legal.</td>
+              <td><a href="https://www.ohchr.org/es/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver instrumento</a></td>
+            </tr>
+            <tr>
+              <td>Convención Interamericana contra la Corrupción</td>
+              <td>Prevención de conflictos de intereses, declaraciones de bienes, contrataciones transparentes y cooperación jurídica.</td>
+              <td><a href="https://www.oas.org/juridico/spanish/tratados/b-58.html?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver tratado</a></td>
+            </tr>
+            <tr>
+              <td>Convención de Naciones Unidas contra la Corrupción</td>
+              <td>Políticas anticorrupción preventivas, contratación pública, gestión de bienes públicos, participación ciudadana y recuperación de activos.</td>
+              <td><a href="https://www.unodc.org/unodc/en/corruption/uncac.html?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver convención</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section data-searchable>
+        <h2>3. Legislación Nacional</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Norma</th>
+              <th>Alcance y Aporte a la Transparencia</th>
+              <th>Enlace Oficial</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ley 27.275 - Acceso a la Información Pública</td>
+              <td>Estándar rector de acceso a información pública, plazos, gratuidad, informalidad y transparencia activa.</td>
+              <td><a href="https://www.argentina.gob.ar/normativa/nacional/265949/actualizacion?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 25.188 - Ética en la Función Pública</td>
+              <td>Deberes y pautas de comportamiento ético, incompatibilidades, conflictos de intereses y régimen de declaraciones juradas.</td>
+              <td><a href="https://www.argentina.gob.ar/normativa/nacional/60847?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 24.156 - Administración Financiera</td>
+              <td>Sistemas presupuestario, de crédito público, de tesorería y de contabilidad gubernamental, y control interno/externo.</td>
+              <td><a href="https://www.argentina.gob.ar/normativa/nacional/---554/actualizacion?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 25.152 - Administración de Recursos Públicos</td>
+              <td>Solvencia fiscal, reglas presupuestarias, transparencia de la ejecución y responsabilidad en la gestión de recursos.</td>
+              <td><a href="https://www.argentina.gob.ar/normativa/nacional/ley-25152-60039?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 25.326 - Protección de Datos Personales</td>
+              <td>Regulación del tratamiento de datos personales y hábeas data, equilibrando apertura de datos con privacidad.</td>
+              <td><a href="https://www.argentina.gob.ar/normativa/nacional/64790?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 25.246 - Prevención del Lavado de Activos</td>
+              <td>Prevención del lavado de activos y financiación del terrorismo, deberes de información y sujetos obligados.</td>
+              <td><a href="https://www.argentina.gob.ar/normativa/nacional/62977/actualizacion?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 26.944 - Responsabilidad del Estado</td>
+              <td>Regulación objetiva y directa de la responsabilidad estatal por actividad e inactividad ilegítima o legítima.</td>
+              <td><a href="https://www.argentina.gob.ar/normativa/nacional/ley-26944-233216?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 19.549 - Procedimientos Administrativos</td>
+              <td>Requisitos esenciales del acto administrativo (causa, motivación, finalidad), debido proceso adjetivo y recursos.</td>
+              <td><a href="https://www.argentina.gob.ar/normativa/nacional/22363/actualizacion?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Decreto 1023/2001 - Contrataciones Públicas</td>
+              <td>Régimen general de contrataciones del sector público nacional, publicidad, concurrencia, igualdad y eficiencia.</td>
+              <td><a href="https://www.argentina.gob.ar/normativa/nacional/decreto-1023-2001-68396?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 11.179 - Código Penal</td>
+              <td>Tipificación de delitos contra la administración pública (peculado, cohecho, negociaciones incompatibles, exacciones, malversación).</td>
+              <td><a href="https://www.argentina.gob.ar/normativa/nacional/ley-11179-16546/actualizacion?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 27.401 - Responsabilidad Penal Empresaria</td>
+              <td>Responsabilidad penal de personas jurídicas por delitos de corrupción y programas de integridad empresarial.</td>
+              <td><a href="https://www.argentina.gob.ar/normativa/nacional/ley-27401-296846?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section data-searchable>
+        <h2>4. Provincia de Buenos Aires</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Norma</th>
+              <th>Aplicación y Relevancia Municipal Bonaerense</th>
+              <th>Enlace Oficial</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Constitución de la Provincia de Buenos Aires</td>
+              <td>Régimen municipal (arts. 190–197), autonomía/competencias locales y Tribunal de Cuentas.</td>
+              <td><a href="https://normas.gba.gob.ar/?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver portal normativo</a></td>
+            </tr>
+            <tr>
+              <td>Decreto-Ley 6769/58 - Ley Orgánica de las Municipalidades</td>
+              <td>Organización institucional de los municipios bonaerenses, competencias del Departamento Ejecutivo y Deliberativo, presupuesto y cuentas.</td>
+              <td><a href="https://normas.gba.gob.ar/ar-b/decreto-ley/1958/6769/1719?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 10.869 - Tribunal de Cuentas</td>
+              <td>Organización y competencia del Honorable Tribunal de Cuentas (HTC) para el examen y juicio de cuentas municipales.</td>
+              <td><a href="https://normas.gba.gob.ar/ar-b/ley/1989/10869/5961?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 12.475 - Acceso a Documentos Administrativos</td>
+              <td>Garantía de acceso de los habitantes a documentos administrativos en el ámbito provincial y municipal.</td>
+              <td><a href="https://normas.gba.gob.ar/ar-b/ley/2000/12475/4391?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Decreto 2549/04 - Acceso a Documentos</td>
+              <td>Reglamentación operativa del acceso a documentos administrativos en la Provincia de Buenos Aires.</td>
+              <td><a href="https://normas.gba.gob.ar/ar-b/decreto/2004/2549/47965?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Decreto 2980/00 - RAFAM</td>
+              <td>Sistema de Administración Financiera y Administración Municipal (RAFAM) para gestión presupuestaria, contable y de tesorería.</td>
+              <td><a href="https://normas.gba.gob.ar/ar-b/decreto/2000/2980/55152?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 15.000 - Declaraciones Juradas Patrimoniales</td>
+              <td>Régimen de declaraciones juradas patrimoniales e intereses para funcionarios públicos provinciales y municipales.</td>
+              <td><a href="https://normas.gba.gob.ar/ar-b/ley/2018/15000/2459?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 12.008 - Código Contencioso Administrativo</td>
+              <td>Control judicial de la actuación administrativa provincial y municipal y protección de derechos e intereses públicos.</td>
+              <td><a href="https://normas.gba.gob.ar/ar-b/ley/1997/12008/4818?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Decreto-Ley 7647/70 - Procedimiento Administrativo</td>
+              <td>Trámite administrativo general en la Provincia de Buenos Aires, garantías procedimentales y régimen recursivo.</td>
+              <td><a href="https://normas.gba.gob.ar/ar-b/decreto-ley/1970/7647/1476?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 13.767 - Administración Financiera Provincial</td>
+              <td>Principios y sistemas de administración financiera del sector público bonaerense y su relación de coordinación/referencia.</td>
+              <td><a href="https://normas.gba.gob.ar/ar-b/ley/2007/13767/3116?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 13.981 - Contrataciones Provinciales</td>
+              <td>Régimen de contrataciones del Estado provincial y pautas de publicidad, transparencia y selección en compras públicas.</td>
+              <td><a href="https://normas.gba.gob.ar/ar-b/ley/2009/13981/2884?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 6021 - Obras Públicas</td>
+              <td>Régimen legal de ejecución de obras públicas en la Provincia de Buenos Aires, licitación, certificaciones y control.</td>
+              <td><a href="https://normas.gba.gob.ar/ar-b/ley/1959/6021/9249?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 14.828 - Modernización del Estado</td>
+              <td>Plan de Modernización del Estado bonaerense, gobierno abierto, gestión documental digital y mejora de servicios.</td>
+              <td><a href="https://normas.gba.gob.ar/ar-b/ley/2016/14828/2575?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+            </tr>
+            <tr>
+              <td>Ley 11.922 - Código Procesal Penal Bonaerense</td>
+              <td>Investigación y juzgamiento de delitos penales en la jurisdicción bonaerense, incluyendo ilícitos contra la administración pública.</td>
+              <td><a href="https://normas.gba.gob.ar/ar-b/ley/1997/11922/4602?utm_source=chatgpt.com" target="_blank" rel="noopener">Ver norma</a></td>
+        
+
+
