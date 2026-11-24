@@ -629,18 +629,22 @@
       "sourceName": "El Cronista",
       "sourceUrl": "https://www.cronista.com/negocios/llegan-dos-nuevos-shoppings-a-una-de-las-zonas-estrella-del-gba-y-ponen-la-mira-en-la-costa-atlantica/",
       "sourcePublishedAt": "2026-11-13",
-      "period": "Proyecto en desarrollo según publicaciones del 29/10 y 13/11/2026. El Cronista informó apertura prevista para el 24/11; LA NACION publicó una ventana de fines de 2026 o comienzos de 2027. Al 24/11 no se verificó apertura efectiva.",
+      "period": "Proyecto en desarrollo según publicaciones del 29/10, 13/11 y 16/11/2026. El Cronista informó apertura prevista para el 24/11; El Día de Escobar la estimó para fines de 2026 o comienzos de 2027. Al 24/11 no se verificó apertura efectiva.",
       "description": "Centro comercial de aproximadamente 8.000 m² en Loma Verde, con ocho espacios gastronómicos, gimnasio, bowling, entretenimiento y un centro de salud anexo. El Cronista atribuyó al desarrollo una inversión de USD 6 millones; LA NACION informó una cifra superior a USD 1 millón para QUO y el centro de salud, sin una base comparable claramente desglosada. Se omite el monto por discrepancia no resuelta. El proyecto se registra como desarrollo inmobiliario, no como oferta de participación de capital a terceros.",
       "relatedSources": [
         {
           "label": "LA NACION — cuatro desarrollos comerciales en Escobar, 29/10/2026",
           "url": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/"
+        },
+        {
+          "label": "El Día de Escobar — cinco centros comerciales en desarrollo (16/11/2026)",
+          "url": "https://eldiadeescobar.com.ar/boom-de-inversiones-los-cinco-centros-comerciales-que-se-vienen-en-escobar/"
         }
       ],
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-24",
-        "scope": "Se contrastaron El Cronista (13/11/2026) y LA NACION (29/10/2026). Se verifican ubicación general, componentes comerciales y estado de desarrollo informado. Las fuentes difieren en el monto atribuido al conjunto y en la fecha de apertura prevista; no se registra monto ni se afirma que haya abierto el 24/11. No se verificó disponibilidad de locales, contratos de alquiler ni acceso de terceros al capital."
+        "scope": "Se contrastaron El Cronista (13/11/2026), LA NACION (29/10/2026) y El Día de Escobar (16/11/2026). Se verifican ubicación general y componentes del proyecto. Las fuentes difieren en el monto atribuido al conjunto y en la ventana de apertura; no se registra monto ni se afirma que haya abierto el 24/11. No se verificó disponibilidad de locales, contratos de alquiler, habilitación ni acceso de terceros al capital."
       }
     },
     {
