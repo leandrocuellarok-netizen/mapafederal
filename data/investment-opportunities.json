@@ -160,6 +160,34 @@
       }
     },
     {
+      "id": "escobar-licitacion-67-2026-servicio-desagote",
+      "name": "Escobar — LP 67/2026: servicio de desagote en distintas dependencias",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Servicios públicos / mantenimiento / desagote",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Belén de Escobar, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "unknown",
+      "opportunityStatus": "closed",
+      "amount": {
+        "value": 288950000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial con IVA incluido; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validFrom": "2026-11-06",
+      "validUntil": "2026-11-20",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14496/descargar",
+      "sourcePublishedAt": "2026-11-06",
+      "period": "Llamado publicado el 06/11/2026; consultas 12–13/11/2026; venta del pliego 16–17/11/2026; apertura prevista para el 20/11/2026 a las 10:00. Resultado no verificado al 24/11/2026.",
+      "description": "Licitación pública municipal para contratar el servicio de desagote en distintas dependencias. El Boletín Oficial bonaerense publicó un presupuesto oficial de ARS 288.950.000 IVA incluido, con apertura prevista en Belén de Escobar. La fecha de apertura pasó; no se incorporan acta, ofertas, adjudicatario, contrato ni prestación porque no se verificaron.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial provincial, edición del 06/11/2026, sección 14496, LP 67/2026: objeto, presupuesto oficial IVA incluido, valor del pliego, lugar y cronograma de consultas, venta y apertura. No se verificaron acta de apertura, ofertas, adjudicación, contrato ni prestación."
+      }
+    },
+    {
       "id": "escobar-licitacion-69-2026-mobiliario-urbano",
       "name": "Escobar — LP 69/2026: adquisición de mobiliario urbano",
       "recordType": "tender",
