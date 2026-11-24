@@ -122,6 +122,54 @@
       "validityPeriod": "Proyecto anunciado para 2027; no hay evidencia de operación al 2026-11-23."
     },
     {
+      "name": "Ecosan",
+      "locality": "Loma Verde",
+      "localities": [
+        "Loma Verde"
+      ],
+      "status": "operativo",
+      "evidenceDate": "2026-11-16",
+      "sourceName": "Municipalidad de Escobar",
+      "sourceType": "Fuente primaria municipal; cifra de empleo atribuida al Municipio",
+      "sourcePublishedAt": "2026-11-16",
+      "sourcePublicationNote": "La publicación municipal informa una visita a la planta el 16/11/2026. La fecha corresponde a la noticia y no certifica un estado permanente.",
+      "description": "La Municipalidad informó que la planta de Ecosan en Loma Verde está dedicada a la construcción modular industrializada y que emplea a más de 180 personas, con prioridad en la contratación de habitantes de Escobar. La misma publicación describe proyectos de viviendas, edificios residenciales y establecimientos comerciales. El Municipio visitó la planta el 16/11/2026. La cifra de empleo es un dato publicado por el Municipio, no una auditoría de nómina ni un conteo de puestos nuevos. LA NACION informó que la planta fue inaugurada en abril de 2025. No se infieren vacantes, salarios, turnos ni capacidad productiva disponible.",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/sujarchuk-y-katopodis-visitaron-importantes-obras-de-infraestructura-e/",
+      "validityPeriod": "Evidencia municipal de actividad y empleo referida al 16/11/2026; no confirma continuidad posterior ni equivale a una inspección presencial independiente.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Se verificó la publicación municipal del 16/11/2026 y se contrastó con la publicación institucional de ECOSAN del 25/08/2026 y LA NACION del 18/04/2025. Las fuentes ubican la planta en Loma Verde y describen actividad industrial modular; LA NACION informa su inauguración. La cifra de más de 180 personas se atribuye exclusivamente al Municipio: no se obtuvo nómina independiente ni se interpreta como altas o vacantes. Verificación documental, sin inspección presencial propia."
+      },
+      "officialSources": [
+        {
+          "sourceName": "ECOSAN S.A.",
+          "label": "ECOSAN — Premio LIDE Sostenibilidad 2026 (25/08/2026)",
+          "url": "https://www.ecosan.com.ar/2026/08/25/ecosan-recibio-el-premio-lide-sostenibilidad-2026/",
+          "sourcePublishedAt": "2026-08-25",
+          "sourcePublicationNote": "La publicación institucional menciona la planta industrial de Loma Verde y su generación de energía solar; no es un registro de producción diaria.",
+          "validityPeriod": "Información corporativa publicada el 25/08/2026.",
+          "verification": {
+            "status": "verified",
+            "checkedAt": "2026-11-24",
+            "scope": "La página oficial de ECOSAN identifica la planta de Loma Verde como uno de sus hitos industriales y describe generación solar. Se usa como fuente corporativa complementaria; no acredita por sí sola operación diaria ni dotación de personal."
+          }
+        }
+      ],
+      "relatedSources": [
+        {
+          "sourceName": "LA NACION",
+          "sourcePublishedAt": "2025-04-18",
+          "label": "LA NACION — inauguración de la planta de Loma Verde (18/04/2025)",
+          "url": "https://www.lanacion.com.ar/economia/negocios/ecosan-inaugura-una-nueva-planta-para-triplicar-la-produccion-nid18042025/",
+          "verification": {
+            "checkedAt": "2026-11-24",
+            "scope": "La nota informa la inauguración de la planta de Ecosan en Loma Verde el 18/04/2025. Se utiliza como antecedente histórico de puesta en marcha, no como verificación del estado diario actual."
+          }
+        }
+      ]
+    },
+    {
       "name": "Hönecker Chocolates",
       "locality": "Garín; Ingeniero Maschwitz; Belén de Escobar",
       "localities": [
