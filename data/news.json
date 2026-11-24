@@ -1,5 +1,55 @@
 [
   {
+    "title": "Amazon anunció la adquisición de tecnología de optimización de chips de IA de Decart",
+    "date": "2026-11-23",
+    "category": "Tecnología",
+    "summary": "Amazon anunció la adquisición de la tecnología de optimización de chips de la startup Decart y la incorporación de sus fundadores, investigadores e ingenieros. La solución busca acelerar la inferencia y facilitar el uso de chips de distintos proveedores. Reuters indicó que los términos económicos no fueron divulgados y que el cierre está sujeto a condiciones habituales, incluidas autorizaciones regulatorias. Es una señal competitiva sobre eficiencia de cómputo, no una inversión anunciada en Argentina.",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
+    "period": "Anuncio de adquisición publicado el 23/11/2026; cierre sujeto a condiciones habituales y regulatorias.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión del reporte de Reuters del 23/11/2026. Se verificaron el anuncio de adquisición tecnológica, la incorporación del equipo y que los términos no fueron divulgados; no se incorpora como hecho el valor aproximado atribuido a otras publicaciones."
+    },
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "id": "news-www-reuters-com-business-retail-consumer-amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23"
+  },
+  {
+    "title": "Escobar: las ordenanzas fiscales 2027 avanzaron en el HCD y esperan la Asamblea de Mayores Contribuyentes",
+    "date": "2026-11-20",
+    "category": "Regulación",
+    "summary": "El paquete Fiscal y Tributario 2027 recibió aprobación del Concejo Deliberante en su 12.ª sesión ordinaria, pero todavía requiere tratamiento en la Asamblea de Concejales y Mayores Contribuyentes, informada para el 27/11/2026 a las 18:00. El proyecto incluye la eliminación propuesta de 52 conceptos tributarios y un presupuesto municipal proyectado de ARS 410.000 millones. Hasta la sanción definitiva, no debe presentarse como régimen vigente.",
+    "source": "Poder Local",
+    "url": "https://poderlocal.com.ar/2026/11/20/escobar-las-tasas-municipales-de-2027-aumentaran-64-por-encima-de-la-inflacion/",
+    "period": "Ejercicio fiscal 2027; aprobación en HCD informada el 16/11/2026 y Asamblea prevista para el 27/11/2026.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Contraste editorial entre Poder Local (20/11/2026), El Diario de Escobar (16/11/2026) y el anuncio oficial municipal del 02/11/2026. El estado legislativo posterior al HCD se apoya en fuentes periodísticas locales; no se localizó aún la ordenanza promulgada ni el acta definitiva de la Asamblea. No se presenta como norma vigente."
+    },
+    "jurisdictions": [
+      "Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Partido de Escobar, Provincia de Buenos Aires"
+    ],
+    "relatedSources": [
+      {
+        "label": "El Diario de Escobar — aprobación en el HCD y etapa pendiente",
+        "url": "https://eldiariodeescobar.com.ar/article/el-concejo-deliberante-de-escobar-aprobo-la-fiscal-y-tributaria-2027-y-creo-un-fondo-para-entidades-de-bien-publico"
+      },
+      {
+        "label": "Municipalidad de Escobar — proyecto de Presupuesto 2027",
+        "url": "https://www.escobar.gob.ar/noticias/presupuesto-2027-con-la-supresion-de-otros-52-tributos-ariel-sujarchuk/"
+      }
+    ],
+    "id": "news-poderlocal-com-ar-2026-11-20-escobar-las-tasas-municipales-de-2027-aumentaran-64-por-encima-de-la-inflacion"
+  },
+  {
     "title": "Ushuaia: llaman a licitación para un nuevo muelle de catamaranes",
     "date": "2026-11-20",
     "category": "Infraestructura",
