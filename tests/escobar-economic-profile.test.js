@@ -56,6 +56,7 @@ assert.equal(ecosan.coords, undefined, "No inventar coordenadas de la planta");
 const ecosanOfficial = ecosan.officialSources.find(source => source.sourceName === "ECOSAN S.A.");
 assert.ok(ecosanOfficial, "Falta la fuente institucional de ECOSAN");
 assert.equal(ecosanOfficial.sourcePublishedAt, "2026-08-25");
+assert.match(ecosanOfficial.sourcePublicationNote, /ruta.*2026\/08\/25/i, "La fecha de la fuente corporativa debe quedar atribuida al permalink");
 assert.equal(new URL(ecosanOfficial.url).protocol, "https:");
 assert.match(ecosanOfficial.verification.scope, /no acredita por sí sola operación diaria/i);
 const ecosanOpening = ecosan.relatedSources.find(source => source.sourceName === "LA NACION");
