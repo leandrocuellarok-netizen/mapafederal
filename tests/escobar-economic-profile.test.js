@@ -94,7 +94,7 @@ for (const [index, expected] of expectedParticipation.entries()) {
     assert.match(record.verification.scope, /no acredita DIA/i);
     assert.equal(new URL(record.url).protocol, "https:");
   }
-  assert.match(source.label, new RegExp(expected.label.replace(/[.*+?^${}()|[\]\\]/g, "\\console.log("Escobar: casos Hönecker y Ecosan, fuentes y límites de verificación comprobados.");")));
+  assert.ok(source.label.includes(expected.label), "El enlace ambiental debe identificar el expediente esperado");
 }
 const profileRenderer = fs.readFileSync("assets/escobar-profile.js", "utf8");
 assert.match(profileRenderer, /source\.participationPeriod/);
