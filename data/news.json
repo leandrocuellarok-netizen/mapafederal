@@ -741,6 +741,33 @@
     "id": "news-www-salesforce-com-mx-news-press-releases-2026-10-09-salesforce-y-la-provincia-de-buenos-aires-firman-una-alianza-estrategica"
   },
   {
+    "id": "news-www-argentina-gob-ar-normativa-nacional-norma-430491-texto",
+    "title": "Argentina estableció requisitos eléctricos para grandes demandas de datos e inteligencia artificial",
+    "date": "2026-09-25",
+    "category": "Regulación",
+    "summary": "La Resolución 264/2026 creó el régimen XDEM para nuevas demandas o ampliaciones de gran escala en el Mercado Eléctrico Mayorista, incluidas las vinculadas al procesamiento de datos e IA. Para XDEM-Datos exige cubrir al menos el 80% del consumo mensual con contratos de nueva generación y respaldar el 115% de la demanda máxima con potencia firme; el umbral general se define por el 0,5% de la demanda media del MEM. La norma incide en abastecimiento, conexión y costos de proyectos intensivos en cómputo; no anuncia una inversión ni identifica una localización concreta.",
+    "source": "Secretaría de Energía — Ministerio de Economía / Argentina.gob.ar",
+    "url": "https://www.argentina.gob.ar/normativa/nacional/norma-430491/texto",
+    "period": "Resolución 264/2026, sancionada el 24/09/2026 y publicada en el Boletín Oficial el 25/09/2026.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Argentina",
+    "sector": "Energía / infraestructura digital / centros de datos / inteligencia artificial / regulación",
+    "territorialRelevance": "Alta para proyectos de centros de datos y grandes cargas en todo el país: condiciona planes de abastecimiento, respaldo firme y conexión eléctrica. No identifica proyectos ni localizaciones particulares.",
+    "relatedSources": [
+      {
+        "label": "Secretaría de Energía — explicación oficial del régimen XDEM (25/09/2026)",
+        "url": "https://www.argentina.gob.ar/noticias/el-gobierno-nacional-dispuso-que-los-proyectos-con-grandes-consumos-electricos-deberan"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión del texto oficial de la Resolución 264/2026, sancionada el 24/09 y publicada el 25/09/2026. Se verificaron el umbral del 0,5% de la demanda media del MEM, la cobertura mínima del 80% con nueva generación y el respaldo firme del 115% para XDEM-Datos. No se atribuye el régimen a un proyecto o jurisdicción subnacional concreta."
+    }
+  },
+  {
     "id": "news-www-boletinoficial-gob-ar-detalleaviso-primera-347836-20260923",
     "title": "Ministerio de Justicia creó una mesa estratégica para elaborar una estrategia de IA en la Justicia",
     "date": "2026-09-23",

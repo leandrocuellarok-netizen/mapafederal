@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 24/11/2026 a las 15:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 24/11/2026 a las 16:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,10 +8,10 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 36 registros |
-| Investment Finder | 42 registros |
+| Radar IA | 37 registros |
+| Investment Finder | 43 registros |
 | Oportunidades abiertas | 12 |
-| Disponibilidad desconocida | 27 |
+| Disponibilidad desconocida | 28 |
 | Cerradas | 3 |
 | Event Intelligence | 3 registros |
 | Nodos estratégicos | 86 |
@@ -33,6 +33,8 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - Proyectos comerciales e industriales de Loma Verde, Ingeniero Maschwitz y Garín se mantienen como anunciados o en construcción, sin inferir apertura, empleo ejecutado ni disponibilidad de capital a terceros.
 
 ### Provincia y escala nacional
+- Pampa AI S.A.U. (Pampa Energía): constitución societaria publicada el 17/11/2026, con objeto de centros de datos, cómputo de alto rendimiento e infraestructura energética. Se incorpora a Investment Finder en etapa de preparación y disponibilidad desconocida. Los ARS 30 millones son capital social, no capex; no se informan ubicación del centro, clientes, contratos ni decisión final de inversión.
+- Resolución 264/2026: el régimen XDEM alcanza grandes demandas, incluidas instalaciones de procesamiento de datos e IA; para XDEM-Datos exige cobertura contractual de al menos 80% del consumo mensual con nueva generación y potencia firme equivalente al 115% de la demanda máxima. Es regulación nacional, no una inversión anunciada.
 - Se incorporaron cinco licitaciones de Lomas de Zamora, Quilmes y Banco Provincia desde el Boletín Oficial bonaerense del 18/11. Tres están abiertas según sus cronogramas; dos permanecen desconocidas por fecha futura o inicio de disponibilidad no informado.
 - Argentina LNG, Toyota Zárate, RIMI, KIT 4.0 y proyectos industriales permanecen diferenciados entre anuncio, norma, programa y ejecución. No se presentan montos anunciados como inversión desembolsada.
 - Event Intelligence conserva la Ronda RIGI del 02/12 y agrega la Ronda de Negocios de Energía y Minería PBA del 01/12. En ambas se documentan plazos de inscripción cerrados cuando corresponde.

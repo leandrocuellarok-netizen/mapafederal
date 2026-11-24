@@ -199,7 +199,7 @@ La página independiente de Investment Finder permite exportar a CSV únicamente
 
 La interfaz presenta los seis módulos desde un único manifiesto: `data/ai-modules.json`. Federal Reports permanece en piloto funcional; Federal AI Assistant, Investment Finder, Territorial Monitor, Event Intelligence y Executive Travel AI permanecen planificados. Los estados, capacidades actuales, dependencias y próximos pasos se mantienen en ese archivo y no deben duplicarse como una segunda lista independiente en la interfaz.
 
-Las funciones comprobables actuales son el mapa, el directorio de nodos, los perfiles OPEX, las noticias curadas, el catálogo documental filtrable de Investment Finder y las exportaciones CSV/Markdown. `data/events.json` contiene únicamente el contrato de datos validado para Event Intelligence y no tiene eventos cargados; no existe una agenda integrada. El buscador no es un modelo de IA y la sección de módulos no implica integraciones en producción.
+Las funciones comprobables actuales son el mapa, el directorio de nodos, los perfiles OPEX, las noticias curadas, el catálogo documental filtrable de Investment Finder y las exportaciones CSV/Markdown. `data/events.json` contiene tres registros documentales validados: un evento histórico completado y dos eventos futuros. No existe una agenda integrada; los registros no confirman cupos ni inscripción vigente. El buscador no es un modelo de IA y la sección de módulos no implica integraciones en producción.
 
 ## Base territorial de Escobar
 

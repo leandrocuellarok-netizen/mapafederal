@@ -1207,6 +1207,30 @@
         "scope": "Se contrastó el anuncio municipal del 27/12/2024 con los dos expedientes oficiales del Ministerio de Ambiente bonaerense. Ambos portales indican prefactibilidad y aclaran que los EsIA son anteproyectos sujetos a pre-evaluación; no equivalen a una DIA ni a autorización de obra. La inversión superior a USD 600 millones y los aproximadamente 3.000 empleos son cifras anunciadas/estimadas por el Municipio, no montos desembolsados ni puestos verificados. No se comprobó financiamiento, contrato de construcción, inicio de obras ni participación de capital disponible a terceros."
       },
       "stageLabel": "Prefactibilidad ambiental"
+    },
+    {
+      "id": "pampa-ai-centros-datos-computo-ia-2026",
+      "name": "Pampa Energía — Pampa AI S.A.U.: vehículo societario para infraestructura digital y cómputo de IA",
+      "recordType": "investment_project",
+      "scope": "national",
+      "sector": "Energía / infraestructura digital / centros de datos / cómputo de IA",
+      "jurisdiction": null,
+      "location": "Sede social en CABA; ubicación de eventuales centros de datos no informada.",
+      "stage": "preparation",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-11-17",
+      "validUntil": null,
+      "sourceName": "Boletín Oficial de la República Argentina — Segunda Sección",
+      "sourceUrl": "https://otslist.boletinoficial.gob.ar/ots/download/ad94959c79069757719afce7c6f1b312d02faf30c60701d390ae708fc27a3202/0/",
+      "sourcePublishedAt": "2026-11-17",
+      "period": "Constitución por escritura pública del 26/10/2026; publicación en el Boletín Oficial el 17/11/2026. El edicto no informa cronograma de inversión, construcción ni puesta en marcha.",
+      "description": "El Boletín Oficial publicó la constitución de Pampa AI S.A.U., cuyo accionista único es Pampa Energía S.A. El objeto social comprende desarrollar y operar centros de datos y centros de cómputo de alto rendimiento para IA y cloud, comercializar hardware y capacidad de cómputo, y desarrollar o adquirir infraestructura energética. El capital social inicial de ARS 30 millones corresponde a la sociedad constituida y no es el presupuesto de un centro de datos. El edicto no identifica emplazamiento, clientes, contratos de capacidad, inversión en activos ni decisión final de inversión. Se registra como proyecto en preparación para seguimiento, no como oportunidad de capital abierta a terceros.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificada la constitución societaria y el objeto estatutario en la Segunda Sección del Boletín Oficial N.º 36.034, publicada el 17/11/2026. Se confirmó accionista único, sede social, capital social y actividades autorizadas. No se verificaron emplazamiento, contratos, inversión en activos, permisos, obra ni cronograma de operación."
+      }
     }
   ]
 }
