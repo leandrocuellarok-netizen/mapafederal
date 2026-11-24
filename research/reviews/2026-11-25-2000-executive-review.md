@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 24/11/2026 a las 19:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 24/11/2026 a las 20:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,12 +8,12 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 40 registros |
+| Radar IA | 41 registros |
 | Investment Finder | 51 registros |
 | Oportunidades abiertas | 20 |
 | Disponibilidad desconocida | 28 |
 | Cerradas | 3 |
-| Event Intelligence | 3 registros |
+| Event Intelligence | 4 registros |
 | Nodos estratégicos | 86 |
 | Módulos documentados | 6 |
 | Módulos en piloto | 1 |
@@ -69,6 +69,14 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - El Decreto bonaerense 742/2026 y los lineamientos del MPF deben leerse según sus ámbitos de competencia, sin extrapolación.
 - El curso bonaerense de IA para pymes tiene un último encuentro anunciado para el 26/11 a las 14:00; la página no confirma inscripción vigente.
 - La FCA del Reino Unido publicó el 24/11 expectativas para agentes de IA en servicios financieros: pagos, promociones, intermediación crediticia y asesoramiento pueden requerir autorización; las firmas reguladas mantienen responsabilidad, controles y supervisión. Es una referencia británica, no una obligación argentina. Fuente: https://www.fca.org.uk/firms/innovation/ai-approach/agentic-ai.
+
+## Actualización del ciclo 20:00 — 24/11/2026
+
+- Radar IA: no se encontró una nueva señal tecnológica o regulatoria de IA con evidencia primaria suficientemente diferenciada respecto de los registros ya incorporados. Se agregó una noticia económica local sobre la Ronda de Negocios Escobar 2026, realizada el 24/11 en Espacio Mendoza, Ingeniero Maschwitz. La Provincia de Buenos Aires confirma oficialmente fecha y sede; Zona Norte Diario reporta 277 empresas y entidades inscriptas, 72 de Escobar, más de 350 asistentes y 33 ramas productivas. Las cifras de participación quedan atribuidas a la cobertura local; no se infieren contratos, ventas ni inversiones cerradas. La agenda oficial consigna 8:30 y el portal de inscripción 11:30; el catálogo omite la hora por discrepancia. Fuentes: https://gba.gob.ar/produccion/ronda_de_negocios ; https://www.zonanortediario.com.ar/24/11/2026/mas-de-270-empresas-y-entidades-participaron-de-una-nueva-ronda-de-negocios-en-escobar/ .
+- Event Intelligence: pasa de 3 a 4 registros, con dos eventos históricos completados y dos futuros confirmados. Se incorpora la Ronda de Negocios Escobar 2026 con alcance local, sector multisectorial y atribución separada de datos oficiales y periodísticos. No se presenta como convocatoria abierta ni se afirma que haya producido negocios cerrados.
+- Investment Finder: sin nuevas oportunidades. Se mantienen 51 registros: 20 abiertos, 28 con disponibilidad desconocida y 3 cerrados. La ronda empresarial no se clasifica como inversión ni licitación; los proyectos de El Dorado y Feria de la Familia ya figuraban en construcción, con montos anunciados no equiparados a gasto ejecutado. Los accesos directos al Boletín Oficial para LP 74 y LP 75 devolvieron timeout en esta consulta; se conservan los registros y cronogramas previamente documentados, sin afirmar una nueva circular.
+- Control de calidad: se inspeccionó el fallo del workflow 45502207803. El job validate se detuvo en Validate geographic and editorial JSON porque el ID del registro Zscaler no coincidía con el identificador determinista derivado de su URL. Se corrigió el ID sin alterar su contenido editorial. Los JSON de noticias, eventos y módulos se parsearon antes de publicar; se comprobaron IDs y URLs únicos, HTTPS y los estados contractuales. El nuevo workflow disparado por esta actualización debe confirmarse antes de declarar publicación exitosa.
+- Contrato enterprise: sin cambios. freeFormReports=false, customAnalyses=by_request, predictiveClaimsRequireValidation=true, clientDataPublic=false. La arquitectura sigue siendo blueprint; Federal Reports es el único piloto y los demás módulos siguen planificados.
 
 ## Estado de producto y contrato enterprise
 - Se documentan seis módulos: Federal AI Assistant, Investment Finder, Territorial Monitor, Event Intelligence, Federal Reports y Executive Travel AI.
