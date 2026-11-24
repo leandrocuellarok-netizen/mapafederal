@@ -346,7 +346,7 @@
         "verification": {
           "status": "verified",
           "checkedAt": "2026-11-24",
-          "scope": "Se comprobó la ficha de UDP Dr. Carlos Guevara (Cervantes 635, Belén de Escobar) en Guardias y farmacias y se comparó con Teléfonos útiles e IOMA/PAMI, que presentan listados de 11 registros sin esta ficha. Se verifica la discrepancia entre publicaciones, no la operación presencial del establecimiento. Queda pendiente de conciliación."
+          "scope": "Se comprobó la ficha de UDP Dr. Carlos Guevara (Cervantes 635, Belén de Escobar) en Guardias y farmacias y se comparó con Teléfonos útiles e IOMA/PAMI, que presentan listados de 11 registros sin esta ficha. Se verifica la discrepancia entre publicaciones, no la operación del establecimiento. No se realizó comprobación presencial; el registro queda pendiente de conciliación."
         }
       }
     ]
