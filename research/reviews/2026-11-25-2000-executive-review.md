@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 24/11/2026 a las 14:20 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 24/11/2026 a las 15:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,7 +8,7 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 35 registros |
+| Radar IA | 36 registros |
 | Investment Finder | 42 registros |
 | Oportunidades abiertas | 12 |
 | Disponibilidad desconocida | 27 |
@@ -43,6 +43,7 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - La Resolución PGN 64/2026 tiene alcance institucional propio del Ministerio Público Fiscal y no se extiende automáticamente a todo el Estado.
 - El Decreto bonaerense 742/2026 y los lineamientos del MPF deben leerse según sus ámbitos de competencia, sin extrapolación.
 - El curso bonaerense de IA para pymes tiene un último encuentro anunciado para el 26/11 a las 14:00; la página no confirma inscripción vigente.
+- La FCA del Reino Unido publicó el 24/11 expectativas para agentes de IA en servicios financieros: pagos, promociones, intermediación crediticia y asesoramiento pueden requerir autorización; las firmas reguladas mantienen responsabilidad, controles y supervisión. Es una referencia británica, no una obligación argentina. Fuente: https://www.fca.org.uk/firms/innovation/ai-approach/agentic-ai.
 
 ## Estado de producto y contrato enterprise
 - Se documentan seis módulos: Federal AI Assistant, Investment Finder, Territorial Monitor, Event Intelligence, Federal Reports y Executive Travel AI.
