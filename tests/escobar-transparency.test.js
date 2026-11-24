@@ -66,4 +66,80 @@ assert.match(profile, /environmentalDatasets/);
 assert.match(profile, /escobar-environmental-dataset/);
 assert.match(profile, /GeoJSON original/);
 
-console.log("Escobar transparencia: portales oficiales, 53 datasets, 15 categorías, 8 formatos y referencia ambiental con CRS explícito, cautela sobre Economía y Finanzas y siete localidades validados.");
+
+// EPSG:22185 preflight: Gauss-Kruger Faja 5, POSGAR 94, WGS84 ellipsoid.
+// The municipal GeoJSON is read as conventional GIS XY: easting, northing.
+// This test validates the projection math and one source sample; it does not
+// certify every feature or authorize map integration without a boundary overlay.
+const crsA = 6378137;
+const crsF = 1 / 298.257223563;
+const crsE2 = crsF * (2 - crsF);
+const crsEp2 = crsE2 / (1 - crsE2);
+function crsMeridionalArc(phi) {
+  const e4 = crsE2 * crsE2;
+  const e6 = e4 * crsE2;
+  return crsA * (
+    (1 - crsE2 / 4 - 3 * e4 / 64 - 5 * e6 / 256) * phi
+    - (3 * crsE2 / 8 + 3 * e4 / 32 + 45 * e6 / 1024) * Math.sin(2 * phi)
+    + (15 * e4 / 256 + 45 * e6 / 1024) * Math.sin(4 * phi)
+    - (35 * e6 / 3072) * Math.sin(6 * phi)
+  );
+}
+function forwardFaja5(latitude, longitude) {
+  const phi = latitude * Math.PI / 180;
+  const lambda = longitude * Math.PI / 180;
+  const lambda0 = -60 * Math.PI / 180;
+  const n = crsA / Math.sqrt(1 - crsE2 * Math.sin(phi) ** 2);
+  const t = Math.tan(phi) ** 2;
+  const c = crsEp2 * Math.cos(phi) ** 2;
+  const aa = (lambda - lambda0) * Math.cos(phi);
+  const easting = 5500000 + n * (
+    aa + (1 - t + c) * aa ** 3 / 6
+    + (5 - 18 * t + t ** 2 + 72 * c - 58 * crsEp2) * aa ** 5 / 120
+  );
+  const northing = crsMeridionalArc(phi) - crsMeridionalArc(-Math.PI / 2)
+    + n * Math.tan(phi) * (
+      aa ** 2 / 2
+      + (5 - t + 9 * c + 4 * c ** 2) * aa ** 4 / 24
+      + (61 - 58 * t + t ** 2 + 600 * c - 330 * crsEp2) * aa ** 6 / 720
+    );
+  return [easting, northing];
+}
+function inverseFaja5(easting, northing) {
+  const m = crsMeridionalArc(-Math.PI / 2) + northing;
+  const e1 = (1 - Math.sqrt(1 - crsE2)) / (1 + Math.sqrt(1 - crsE2));
+  const mu = m / (crsA * (1 - crsE2 / 4 - 3 * crsE2 ** 2 / 64 - 5 * crsE2 ** 3 / 256));
+  const j1 = 3 * e1 / 2 - 27 * e1 ** 3 / 32;
+  const j2 = 21 * e1 ** 2 / 16 - 55 * e1 ** 4 / 32;
+  const j3 = 151 * e1 ** 3 / 96;
+  const j4 = 1097 * e1 ** 4 / 512;
+  const phi1 = mu + j1 * Math.sin(2 * mu) + j2 * Math.sin(4 * mu)
+    + j3 * Math.sin(6 * mu) + j4 * Math.sin(8 * mu);
+  const n1 = crsA / Math.sqrt(1 - crsE2 * Math.sin(phi1) ** 2);
+  const r1 = crsA * (1 - crsE2) / (1 - crsE2 * Math.sin(phi1) ** 2) ** 1.5;
+  const t1 = Math.tan(phi1) ** 2;
+  const c1 = crsEp2 * Math.cos(phi1) ** 2;
+  const d = (easting - 5500000) / n1;
+  const latitude = phi1 - (n1 * Math.tan(phi1) / r1) * (
+    d ** 2 / 2
+    - (5 + 3 * t1 + 10 * c1 - 4 * c1 ** 2 - 9 * crsEp2) * d ** 4 / 24
+    + (61 + 90 * t1 + 298 * c1 + 45 * t1 ** 2 - 252 * crsEp2 - 3 * c1 ** 2) * d ** 6 / 720
+  );
+  const longitude = -60 * Math.PI / 180 + (
+    d - (1 + 2 * t1 + c1) * d ** 3 / 6
+    + (5 - 2 * c1 + 28 * t1 - 3 * c1 ** 2 + 8 * crsEp2 + 24 * t1 ** 2) * d ** 5 / 120
+  ) / Math.cos(phi1);
+  return [latitude * 180 / Math.PI, longitude * 180 / Math.PI];
+}
+const independentCrsReference = forwardFaja5(-31.215, -60.005);
+assert.ok(Math.abs(independentCrsReference[0] - 5499523.55) < 0.01);
+assert.ok(Math.abs(independentCrsReference[1] - 6547154.06) < 0.01);
+const firstWatercourseCoordinate = [5618351.79, 6209937.59];
+const firstWatercourseWgs84 = inverseFaja5(...firstWatercourseCoordinate);
+assert.ok(Math.abs(firstWatercourseWgs84[0] - (-34.2489963047)) < 1e-7);
+assert.ok(Math.abs(firstWatercourseWgs84[1] - (-58.7152043478)) < 1e-7);
+const roundTripWatercourse = forwardFaja5(...firstWatercourseWgs84);
+assert.ok(Math.abs(roundTripWatercourse[0] - firstWatercourseCoordinate[0]) < 0.01);
+assert.ok(Math.abs(roundTripWatercourse[1] - firstWatercourseCoordinate[1]) < 0.01);
+
+console.log("Escobar transparencia: fuentes, siete localidades, directorios, metadatos ambientales y preflight reproducible EPSG:22185 validados; integración geométrica completa sigue pendiente.");
