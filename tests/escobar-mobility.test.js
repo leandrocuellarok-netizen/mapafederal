@@ -37,6 +37,48 @@ assert.equal(bridge.verification.checkedAt, "2026-11-23");
 assert.match(bridge.verification.scope, /No se realizó comprobación presencial/i);
 assert.equal(new URL(bridge.sourceUrl).protocol, "https:");
 
+const announcedRoutes = mobility.announcedRoutes;
+assert.ok(Array.isArray(announcedRoutes), "Falta el registro de ramales anunciados");
+assert.equal(announcedRoutes.length, 2, "Deben registrarse los dos ramales anunciados en noviembre de 2026");
+
+const route503 = announcedRoutes.find(item => item.id === "linea-503-ramal-h-escobar-matheu-2026");
+assert.ok(route503, "Falta la línea 503, ramal H");
+assert.equal(route503.line, "503");
+assert.equal(route503.branch, "H");
+assert.equal(route503.operator, "Línea Sesenta S.A.");
+assert.deepEqual(route503.localities, ["Belén de Escobar", "Matheu"]);
+assert.equal(route503.sourcePublishedAt, "2026-11-03");
+assert.equal(route503.status, "anunciado");
+assert.equal(route503.operationalStatus, "no verificado");
+assert.ok(route503.routeOutbound.includes("Estación ferroviaria de Matheu"));
+assert.ok(route503.routeReturn.includes("Terminal de colectivos de Belén de Escobar"));
+assert.match(route503.verification.scope, /sin fecha exacta/i);
+assert.match(route503.verification.scope, /no se encontró confirmación municipal o del operador/i);
+assert.equal(new URL(route503.sourceUrl).protocol, "https:");
+assert.equal(route503.schedule, undefined, "No se deben inventar horarios");
+
+const route506 = announcedRoutes.find(item => item.id === "linea-506-ramal-b-escobar-loma-verde-2026");
+assert.ok(route506, "Falta la línea 506, ramal B");
+assert.equal(route506.line, "506");
+assert.equal(route506.branch, "B");
+assert.equal(route506.operator, "Micro Ómnibus Tigre S.A. (M.O.T.S.A.)");
+assert.deepEqual(route506.localities, ["Belén de Escobar", "Loma Verde"]);
+assert.equal(route506.sourcePublishedAt, "2026-11-03");
+assert.equal(route506.status, "anunciado");
+assert.equal(route506.operationalStatus, "no verificado");
+assert.ok(route506.destination.includes("Mercado Libre"));
+assert.ok(route506.routeOutbound.includes("Km 59 de Panamericana"));
+assert.ok(route506.routeReturn.includes("Puente Loma Verde"));
+assert.match(route506.verification.scope, /no se localizó una confirmación posterior del Municipio o de M\.O\.T\.S\.A\./i);
+assert.equal(route506.schedule, undefined, "No se deben importar horarios de fuentes secundarias como oficiales");
+assert.equal(route506.secondaryReports.length, 1);
+assert.equal(route506.secondaryReports[0].sourceName, "El Diario de Escobar");
+assert.equal(route506.secondaryReports[0].sourcePublishedAt, "2026-11-18");
+assert.match(route506.secondaryReports[0].claim, /no sustituye una confirmación/i);
+for (const url of [route506.sourceUrl, ...route506.secondaryReports.map(item => item.sourceUrl)]) {
+  assert.equal(new URL(url).protocol, "https:");
+}
+
 const profile = fs.readFileSync("assets/escobar-profile.js", "utf8");
 assert.match(profile, /mobility\.interlocalConnections/);
 assert.match(profile, /mobility\.intermodalAssessment/);
