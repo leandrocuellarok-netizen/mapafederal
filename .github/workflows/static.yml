@@ -389,6 +389,11 @@ jobs:
           assert economy["previousPageSnapshot"]["industrialEstablishments2024"] == 516
           assert economy["previousPageSnapshot"]["commercialEstablishments2024"] == 7356
           assert economy["infrastructureProjects"][0]["status"] == "anunciado"
+          port = economy["infrastructureProjects"][0]
+          assert port["sourcePublishedAt"] == "2024-12-27"
+          assert "prefactibilidad" in port["description"].lower()
+          assert len(port["relatedSources"]) == 2
+          assert all(urlparse(source["url"]).scheme == "https" for source in port["relatedSources"])
           assert economy["companyDirectory"]["status"] == "pendiente"
           for item in economy["industrialAreas"] + economy["companyCases"] + economy["infrastructureProjects"]:
               assert item["status"] in allowed
@@ -881,7 +886,7 @@ jobs:
           opportunity_ids = set()
           opportunity_types = {"project", "public_program", "tender", "incentive", "investment_project"}
           opportunity_scopes = {"national", "provincial", "municipal"}
-          municipal_jurisdictions = {"Partido de Escobar, Provincia de Buenos Aires"}
+          municipal_jurisdictions = {"Partido de Escobar, Provincia de Buenos Aires", "Partido de Berazategui, Provincia de Buenos Aires", "Partido de San Fernando, Provincia de Buenos Aires", "Partido de Luján, Provincia de Buenos Aires", "Partido del Pilar, Provincia de Buenos Aires"}
           opportunity_stages = {"announced", "feasibility", "preparation", "under_construction", "operational", "completed", "cancelled", "unknown"}
           opportunity_statuses = {"open", "closed", "suspended", "unknown"}
           verification_statuses = {"verified", "not_verified", "outdated"}

@@ -378,6 +378,34 @@
       }
     },
     {
+      "id": "puerto-la-plata-dragado-mantenimiento-licitacion-privada-2026",
+      "name": "Puerto La Plata — licitación privada para dragado de mantenimiento",
+      "recordType": "tender",
+      "scope": "provincial",
+      "sector": "Infraestructura portuaria / dragado / obras marítimas",
+      "jurisdiction": "Buenos Aires",
+      "location": "Puerto La Plata, Ensenada, Partido de Ensenada, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 1375000,
+        "currency": "USD",
+        "basis": "Presupuesto oficial publicado: USD 1.375.000 más IVA. No equivale a adjudicación ni gasto ejecutado."
+      },
+      "validFrom": "2026-11-18",
+      "validUntil": "2026-12-16",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Consorcio de Gestión del Puerto La Plata",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14517/ver",
+      "sourcePublishedAt": "2026-11-18",
+      "period": "Consultas aclaratorias hasta 02/12/2026; visita límite 09/12/2026; presentación de ofertas hasta 16/12/2026 a las 10:00; apertura 16/12/2026 a las 10:30. Plazo de obra: 60 días corridos. Pliego sin costo. El aviso identifica el procedimiento como licitación privada.",
+      "description": "El Consorcio de Gestión del Puerto La Plata convoca una licitación privada para el dragado de mantenimiento de los canales de acceso y del vaso portuario. El presupuesto oficial es USD 1.375.000 más IVA y el plazo de obra, 60 días corridos. El aviso fija consultas, visita y presentación de ofertas. Como el procedimiento es privado y el extracto no identifica el universo de invitados ni las condiciones de elegibilidad, la disponibilidad permanece desconocida; no se presenta como convocatoria abierta a cualquier proveedor.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 18/11/2026: objeto, presupuesto, plazo de obra, consultas, visita, fecha límite de ofertas y apertura. El aviso denomina el procedimiento licitación privada. No se verificaron el pliego completo, invitaciones, elegibilidad individual, circulares posteriores ni adjudicación; por eso opportunityStatus permanece unknown."
+      }
+    },
+    {
       "id": "toyota-zarate-planta-vehiculos-electrificados-2026",
       "name": "Toyota — nueva planta de vehículos electrificados en Zárate",
       "recordType": "investment_project",
@@ -965,6 +993,44 @@
         "status": "verified",
         "checkedAt": "2026-11-23",
         "scope": "Contraste del portal oficial del Programa KIT 4.0, la Resolución 8/2026 en texto actualizado, la Resolución 343/2026 (publicada el 2026-09-01) y la Disposición 106/2026 (publicada el 2026-09-25). Se verificaron las bases, el procedimiento y las modificaciones del catálogo; no se confirmó el saldo del cupo de ARS 9.000 millones ni la disponibilidad actual de cada kit y de al menos tres proveedores habilitados. Por eso opportunityStatus permanece unknown."
+      }
+    },
+    {
+      "id": "escobar-puertos-tme-prefactibilidad-2026",
+      "name": "Escobar — Terminal Marítima Escobar: proyecto portuario multipropósito y cerealero",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Infraestructura portuaria / logística / comercio exterior / energía y tecnología",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Río Paraná de las Palmas, km 70 y km 77, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "feasibility",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 600000000,
+        "currency": "USD",
+        "basis": "La Municipalidad anunció el 27/12/2024 una inversión privada superior a USD 600 millones para el conjunto de las dos terminales. Es una cifra anunciada, no inversión desembolsada ni compromiso financiero verificado."
+      },
+      "validFrom": "2024-12-27",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/anuncian-oficialmente-la-construccion-de-un-nuevo-puerto-exportador-en-escobar/",
+      "sourcePublishedAt": "2024-12-27",
+      "period": "Anuncio municipal del 27/12/2024. Participación pública provincial: puerto multipropósito 10/11–10/12/2025 y puerto cerealero 30/10–29/11/2025. Al 24/11/2026, el portal provincial clasifica ambos expedientes como prefactibilidad: los EsIA fueron presentados a nivel de anteproyecto y quedan sujetos a pre-evaluación. No se acredita una DIA ni inicio de obra.",
+      "description": "Terminal Marítima Escobar S.A. propone dos instalaciones sobre el Paraná de las Palmas: un puerto multipropósito en el km 77 y una terminal cerealera en el km 70, con acceso vial proyectado. El Municipio anunció inversión privada superior a USD 600 millones y alrededor de 3.000 empleos directos estimados. El Ministerio de Ambiente bonaerense aclara que ambos estudios se presentaron como anteproyectos en etapa de prefactibilidad y deben pasar por pre-evaluación; podrían o no avanzar a una EIA completa para una eventual Declaración de Impacto Ambiental. No se verifican DIA, inicio de obra, desembolsos ni disponibilidad de participación de capital para terceros.",
+      "relatedSources": [
+        {
+          "label": "Ministerio de Ambiente PBA — Puerto Multipropósito Escobar: prefactibilidad ambiental (consulta 24/11/2026)",
+          "url": "https://participacionpublica.ambiente.gba.gob.ar/participacion/resumen/PUERTO-MULTIPROP%C3%93SITO-ESCOBAR"
+        },
+        {
+          "label": "Ministerio de Ambiente PBA — Puerto Cerealero Escobar: prefactibilidad ambiental (consulta 24/11/2026)",
+          "url": "https://participacionpublica.ambiente.gba.gob.ar/participacion/resumen/PUERTO-CEREALERO-ESCOBAR"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Se contrastó el anuncio municipal del 27/12/2024 con los dos expedientes oficiales del Ministerio de Ambiente bonaerense. Ambos portales indican prefactibilidad y aclaran que los EsIA son anteproyectos sujetos a pre-evaluación; no equivalen a una DIA ni a autorización de obra. La inversión superior a USD 600 millones y los aproximadamente 3.000 empleos son cifras anunciadas/estimadas por el Municipio, no montos desembolsados ni puestos verificados. No se comprobó financiamiento, contrato de construcción, inicio de obras ni participación de capital disponible a terceros."
       }
     }
   ]

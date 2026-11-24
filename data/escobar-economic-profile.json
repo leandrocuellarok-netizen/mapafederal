@@ -257,20 +257,34 @@
       "name": "Proyecto de nuevo puerto multipropósito y terminal cerealera",
       "locality": "Partido de Escobar",
       "status": "anunciado",
-      "description": "La Municipalidad presenta dos terminales portuarias financiadas con capital privado: una multipropósito, orientada principalmente a contenedores, y otra cerealera.",
+      "description": "La Municipalidad anunció dos terminales portuarias privadas sobre el Paraná de las Palmas: una multipropósito en el km 77 y otra cerealera en el km 70. El Ministerio de Ambiente bonaerense mantiene ambos expedientes en prefactibilidad: los estudios fueron presentados como anteproyectos y quedan sujetos a pre-evaluación; todavía no se acredita una Declaración de Impacto Ambiental ni el inicio de obras.",
       "investmentLabel": "Más de US$ 600 millones",
       "employmentLabel": "Aproximadamente 3.000 empleos directos (estimación municipal)",
       "terminalCount": 2,
       "sourceName": "Municipalidad de Escobar",
-      "sourceUrl": "https://www.escobar.gob.ar/municipio/escobar-tierra-de-inversiones/",
-      "sourcePublishedAt": null,
-      "sourcePublicationNote": "La página no indica fecha de publicación; describe el proyecto como anunciado.",
-      "validityPeriod": "Proyecto anunciado en la página institucional consultada el 2026-11-23; no se informa fecha de inicio ni de entrada en operación.",
+      "sourceUrl": "https://www.escobar.gob.ar/anuncian-oficialmente-la-construccion-de-un-nuevo-puerto-exportador-en-escobar/",
+      "sourcePublishedAt": "2024-12-27",
+      "sourcePublicationNote": "Publicación municipal fechada el 27/12/2024.",
+      "validityPeriod": "Anuncio municipal del 27/12/2024; estado ambiental consultado el 24/11/2026. Ambos expedientes provinciales permanecen en prefactibilidad; no se informa fecha confirmada de inicio ni de entrada en operación.",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-23",
-        "scope": "La fuente municipal publica el anuncio, el tipo de terminales y estimaciones de inversión y empleo. No se verificaron obras, permisos, contratos, vacantes ni fecha de puesta en marcha."
-      }
+        "checkedAt": "2026-11-24",
+        "scope": "Se verificó el anuncio municipal y los dos expedientes del Ministerio de Ambiente bonaerense. Los portales provinciales aclaran que los EsIA son anteproyectos en prefactibilidad, sujetos a pre-evaluación y a una eventual EIA posterior para obtener una DIA. No se verificó DIA, contrato de construcción, financiamiento desembolsado ni inicio de obras. Las cifras de inversión y empleo se atribuyen al anuncio municipal."
+      },
+      "relatedSources": [
+        {
+          "sourceName": "Ministerio de Ambiente de la Provincia de Buenos Aires",
+          "label": "Puerto Multipropósito Escobar — estado de prefactibilidad",
+          "url": "https://participacionpublica.ambiente.gba.gob.ar/participacion/resumen/PUERTO-MULTIPROP%C3%93SITO-ESCOBAR",
+          "sourcePublishedAt": "2025-11-10"
+        },
+        {
+          "sourceName": "Ministerio de Ambiente de la Provincia de Buenos Aires",
+          "label": "Puerto Cerealero Escobar — estado de prefactibilidad",
+          "url": "https://participacionpublica.ambiente.gba.gob.ar/participacion/resumen/PUERTO-CEREALERO-ESCOBAR",
+          "sourcePublishedAt": "2025-10-30"
+        }
+      ]
     }
   ],
   "companyDirectory": {
