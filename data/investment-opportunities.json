@@ -574,6 +574,44 @@
         "checkedAt": "2026-11-24",
         "scope": "Contraste del anuncio municipal del 03/11/2026 con el EIAS BESS MAS 022/25 alojado en el portal de participación pública del Ministerio de Ambiente bonaerense, fechado el 16/09/2025 (https://participacionpublica.ambiente.gba.gob.ar/adjunto/viewpdf/Planta-almacenamiento-BESS-MASCHWITZ-33-kV-y-LMT-de-vinculaci%C3%B3n.pdf). Se verificaron proponente, articulación técnica, potencia declarada de 40 MW, autonomía de cinco horas, conexión 33 kV y trabajos preliminares anunciados. La fuente municipal identifica Ingeniero Maschwitz/Escobar; el EIAS identifica Dique Luján/Tigre. La jurisdicción municipal queda expresamente sin resolver. No se verificaron monto, Declaración de Impacto Ambiental final, licencia municipal de construcción, habilitación operativa, avance posterior ni fecha de puesta en servicio."
       }
+    },
+    {
+      "id": "argentina-lng-ypf-eni-xrg-rigi-2026",
+      "name": "Argentina LNG — proyecto integrado de YPF, Eni y XRG",
+      "recordType": "investment_project",
+      "scope": "national",
+      "sector": "Energía / gas natural / GNL / infraestructura de exportación",
+      "jurisdiction": "Neuquén y Río Negro, Argentina",
+      "location": "Vaca Muerta (Neuquén); infraestructura de transporte y dos unidades FLNG previstas offshore de Río Negro",
+      "stage": "announced",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 50750000000,
+        "currency": "USD",
+        "basis": "Inversión total esperada anunciada hasta 2050; se informaron USD 25.000 millones para 2027–2030. No equivale a gasto ejecutado ni a capital abierto a terceros."
+      },
+      "validFrom": "2026-11-20",
+      "validUntil": null,
+      "sourceName": "Reuters (20/11/2026), contrastado con Eni y YPF",
+      "sourceUrl": "https://www.reuters.com/business/energy/argentina-approves-incentive-scheme-508-billion-lng-project-2026-11-20/",
+      "relatedSources": [
+        {
+          "label": "Eni — solicitud de adhesión al RIGI y alcance técnico del proyecto (14/08/2026)",
+          "url": "https://www.eni.com/en-IT/media/press-release/2026/08/argentina-lng-submits-application-for-rigi-approval.html"
+        },
+        {
+          "label": "YPF — sitio oficial del proyecto Argentina LNG",
+          "url": "https://argentina-lng.ypf.com/"
+        }
+      ],
+      "sourcePublishedAt": "2026-11-20",
+      "period": "El 20/11/2026 se informó la aprobación anunciada del ingreso al RIGI. La decisión final de inversión fue anunciada para el 30/11/2026. Al 24/11 no se verificó FID ni resolución de adhesión publicada en el Boletín Oficial.",
+      "description": "Proyecto integrado promovido por YPF, Eni y XRG para desarrollar producción de gas en Vaca Muerta, transporte, procesamiento y exportación de GNL. Reuters informó el 20/11/2026 que el ministro de Economía anunció la aprobación de ingreso al RIGI y una inversión total esperada de USD 50.750 millones hasta 2050, con USD 25.000 millones previstos entre 2027 y 2030. La comunicación oficial de Eni del 14/08/2026 describe dos unidades flotantes FLNG con capacidad conjunta de 12 millones de toneladas anuales, previstas offshore de Río Negro, y una solicitud al RIGI orientada a alcanzar la decisión final de inversión. Al 24/11 la FID todavía no se había verificado; no registrar como obra ejecutada, desembolso realizado ni oportunidad de capital abierta a terceros.",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-24",
+        "scope": "Contraste de la cobertura Reuters del anuncio ministerial del 20/11/2026 con la comunicación primaria de Eni del 14/08/2026 y el sitio oficial de YPF. Se verificaron promotores, cadena de valor, capacidad objetivo y magnitudes anunciadas. No se localizó en esta revisión la resolución de adhesión al RIGI ni se verificó la decisión final de inversión; los montos son expectativas anunciadas, no ejecución."
+      }
     }
   ]
 }
