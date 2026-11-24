@@ -57,41 +57,42 @@
   "serviceDirectories": [
     {
       "id": "guardias-emergencias",
-      "name": "Guardias y emergencias",
+      "name": "Guardias y farmacias de turno",
       "sourceName": "Municipalidad de Escobar",
-      "sourceUrl": "https://www.escobar.gob.ar/municipio/guardias/",
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/guardias-y-farmacias/",
       "sourcePublishedAt": null,
-      "sourcePublicationNote": "La página no indica fecha de publicación o edición.",
-      "validityPeriod": "Directorio consultado el 2026-11-23; horarios y prestaciones sujetos a actualización.",
+      "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24.",
+      "validityPeriod": "Directorio consultado el 2026-11-24; guardias, prestaciones, horarios y contactos sujetos a actualización.",
       "status": "operativo",
-      "summary": "El Municipio informa guardias 24 horas en todas las localidades y SAME 107. En Garín, la ficha incluye el CAPS Juan Carlos Selles en el barrio 24 de Febrero.",
+      "summary": "El Municipio publica guardias y SAME 107. La página Guardias y farmacias muestra una ficha adicional para UDP Dr. Carlos Guevara que no aparece en los directorios municipales de 11 registros; la diferencia queda pendiente de conciliación.",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-23",
-        "scope": "Se comprobó el contenido publicado: guardias 24 horas declaradas en todas las localidades, SAME 107 y CAPS Juan Carlos Selles en barrio 24 de Febrero, Garín. Verificación web; no acredita funcionamiento presencial de cada servicio."
+        "checkedAt": "2026-11-24",
+        "scope": "Se consultaron en línea las páginas municipales Guardias y farmacias, Teléfonos útiles, Centros de Salud y las cartillas IOMA/PAMI. Guardias y farmacias muestra una ficha para UDP Dr. Carlos Guevara que no aparece en los listados de 11 registros de Teléfonos útiles e IOMA/PAMI; por eso se conserva como discrepancia pendiente y no se suma al inventario consolidado de 11 fichas. Para el CAPS Juan Carlos Selles, las páginas generales actuales lo ubican en Fonavi, Garín, mientras IOMA/PAMI aún indican B° 24 de Febrero. Los teléfonos publicados también difieren: (0348) 449-3444 en Teléfonos útiles y 11 2150-0302 en IOMA/PAMI; no se consolida un teléfono único. No se realizó comprobación presencial."
       }
     },
     {
       "id": "caps-juan-carlos-selles",
-      "name": "CAPS Juan Carlos Selles — B° 24 de Febrero",
+      "name": "CAPS Juan Carlos Selles",
       "sourceName": "Municipalidad de Escobar",
-      "sourceUrl": "https://www.escobar.gob.ar/municipio/guardias/",
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/guardias-y-farmacias/",
       "sourcePublishedAt": null,
-      "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-23.",
+      "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24.",
       "locality": "Garín",
-      "neighborhood": "24 de Febrero",
-      "address": "Pablo Marín, B° 24 de Febrero, Garín",
+      "address": "Pablo Marín s/n, entre Islas Malvinas e Hipólito Yrigoyen (Fonavi), Garín",
       "serviceHours": "Todos los días, las 24 horas",
-      "phone": "11 2150-0302",
-      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pablo+Mar%C3%ADn%2C+B%C2%B0+24+de+Febrero%2C+Gar%C3%ADn%2C+Escobar%2C+Buenos+Aires",
+      "phone": null,
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pablo%20Mar%C3%ADn%20s%2Fn%2C%20entre%20Islas%20Malvinas%20e%20Hip%C3%B3lito%20Yrigoyen%20(Fonavi)%2C%20Gar%C3%ADn%2C%20Escobar%2C%20Buenos%20Aires%2C%20Argentina",
       "status": "operativo",
-      "summary": "CAPS municipal con guardia clínica. El directorio municipal lo lista bajo Garín y precisa su ubicación en el barrio 24 de Febrero. Se registra como servicio, no como punto cartográfico.",
-      "validityPeriod": "Ficha municipal consultada el 2026-11-23; horarios y prestaciones sujetos a actualización.",
+      "summary": "CAPS municipal con guardia clínica y pediátrica. El directorio general lo ubica en Fonavi, Garín; las fichas IOMA/PAMI conservan una referencia barrial distinta (B° 24 de Febrero). No se asigna barrio ni teléfono único por discrepancia documental.",
+      "validityPeriod": "Ficha municipal consultada el 2026-11-24; horario y prestaciones sujetos a actualización.",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-23",
-        "scope": "Se comprobó en el directorio municipal la ubicación textual Pablo Marín, B° 24 de Febrero, Garín, la guardia clínica diaria de 24 horas y el teléfono 11 2150-0302. El enlace Cómo llegar abre una búsqueda textual de Google Maps y no aporta coordenadas oficiales. Verificación web, no presencial."
-      }
+        "checkedAt": "2026-11-24",
+        "scope": "Se comprobó la ficha de Guardias y farmacias y el directorio Teléfonos útiles, que ubican el centro en Pablo Marín s/n, entre Islas Malvinas e Hipólito Yrigoyen (Fonavi), Garín. Las cartillas IOMA/PAMI aún lo identifican como B° 24 de Febrero y publican un teléfono diferente. No se asigna barrio ni teléfono único; verificación web, no presencial."
+      },
+      "serviceNote": "Las páginas municipales no coinciden: Guardias y Teléfonos útiles ubican el CAPS en Fonavi, Garín; las fichas IOMA/PAMI aún indican B° 24 de Febrero. Teléfonos útiles publica (0348) 449-3444, mientras IOMA/PAMI muestran 11 2150-0302. Se omiten barrio y teléfono único hasta resolver ambas discrepancias.",
+      "serviceNoteSourceUrl": "https://www.escobar.gob.ar/municipio/prestaciones-ioma/"
     },
     {
       "id": "mercado-popular",
@@ -129,19 +130,20 @@
   "healthFacilitiesDirectory": {
     "name": "Guardias y urgencias por localidad",
     "sourceName": "Municipalidad de Escobar",
-    "sourceUrl": "https://www.escobar.gob.ar/municipio/guardias/",
+    "sourceUrl": "https://www.escobar.gob.ar/municipio/guardias-y-farmacias/",
     "sourcePublishedAt": null,
-    "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-23.",
+    "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24.",
     "validFrom": null,
-    "validityPeriod": "Directorio municipal consultado el 2026-11-23; guardias, prestaciones y teléfonos sujetos a actualización.",
+    "validityPeriod": "Directorios municipales consultados el 2026-11-24; guardias, prestaciones, horarios y teléfonos sujetos a actualización.",
     "status": "operativo",
-    "summary": "Once establecimientos y puestos de atención con guardia o atención urgente nominalmente publicados para seis localidades. No es un inventario exhaustivo de todos los centros de salud.",
-    "localityCoverageNote": "La página declara guardias de 24 horas en todas las localidades, pero el listado nominal muestra seis. El CAPS Juan Carlos Selles figura bajo Garín y se ubica en el barrio 24 de Febrero; no se reasigna a la localidad 24 de Febrero. No se encontró una ficha nominal separada para esa localidad.",
+    "summary": "El directorio consolidado conserva once fichas nominales de guardias y puestos de atención en seis localidades. La página Guardias y farmacias incluye una ficha adicional para UDP Dr. Carlos Guevara que no aparece en Teléfonos útiles ni en las cartillas IOMA/PAMI; queda registrada como pendiente de conciliación y no se suma al inventario.",
+    "localityCoverageNote": "La página presenta filtros para seis localidades: Belén de Escobar, Garín, Ingeniero Maschwitz, Maquinista Savio, Matheu y Loma Verde; no muestra una ficha separada para 24 de Febrero como localidad. El CAPS Juan Carlos Selles figura bajo Garín: las páginas generales lo ubican en Fonavi y las cartillas IOMA/PAMI aún lo asocian a B° 24 de Febrero, por lo que no se asigna barrio. La UDP Dr. Carlos Guevara aparece en una sola de las páginas consultadas y queda pendiente de conciliación.",
     "additionalDirectoryUrl": "https://www.escobar.gob.ar/centros-de-salud/",
     "additionalDirectoryName": "Centros de salud municipales",
     "verification": {
-      "checkedAt": "2026-11-23",
-      "scope": "Se verificaron en línea nombres, localidades, ubicaciones, prestaciones y horarios publicados en la página municipal de Guardias y emergencias. No se realizó comprobación presencial. Se registran expresamente las discrepancias entre páginas municipales sobre la dirección del Hospital Horacio López y el horario odontológico de la UDP Susana Lara."
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "scope": "Se consultaron en línea las páginas municipales Guardias y farmacias, Teléfonos útiles, Centros de Salud y las cartillas IOMA/PAMI. Guardias y farmacias muestra una ficha para UDP Dr. Carlos Guevara que no aparece en los listados de 11 registros de Teléfonos útiles e IOMA/PAMI; por eso se conserva como discrepancia pendiente y no se suma al inventario consolidado de 11 fichas. Para el CAPS Juan Carlos Selles, las páginas generales actuales lo ubican en Fonavi, Garín, mientras IOMA/PAMI aún indican B° 24 de Febrero. Los teléfonos publicados también difieren: (0348) 449-3444 en Teléfonos útiles y 11 2150-0302 en IOMA/PAMI; no se consolida un teléfono único. No se realizó comprobación presencial."
     },
     "facilities": [
       {
@@ -221,14 +223,27 @@
         "id": "caps-juan-carlos-selles",
         "name": "CAPS Juan Carlos Selles",
         "locality": "Garín",
-        "neighborhood": "24 de Febrero",
         "category": "CAPS",
-        "address": "Pablo Marín, B° 24 de Febrero",
+        "address": "Pablo Marín s/n, entre Islas Malvinas e Hipólito Yrigoyen (Fonavi), Garín",
         "serviceHours": "Todos los días, las 24 horas",
         "services": [
-          "Guardia clínica"
+          "Guardia clínica y pediátrica"
         ],
-        "phone": "11 2150-0302"
+        "phone": null,
+        "sourceUrl": "https://www.escobar.gob.ar/municipio/guardias-y-farmacias/",
+        "sourcePublishedAt": null,
+        "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24.",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pablo%20Mar%C3%ADn%20s%2Fn%2C%20entre%20Islas%20Malvinas%20e%20Hip%C3%B3lito%20Yrigoyen%20(Fonavi)%2C%20Gar%C3%ADn%2C%20Escobar%2C%20Buenos%20Aires%2C%20Argentina",
+        "status": "operativo",
+        "summary": "CAPS municipal con guardia clínica y pediátrica. El directorio general lo ubica en Fonavi, Garín; las fichas IOMA/PAMI conservan una referencia barrial distinta (B° 24 de Febrero). No se asigna barrio ni teléfono único por discrepancia documental.",
+        "validityPeriod": "Ficha municipal consultada el 2026-11-24; horario y prestaciones sujetos a actualización.",
+        "verification": {
+          "status": "verified",
+          "checkedAt": "2026-11-24",
+          "scope": "Se comprobó la ficha de Guardias y farmacias y el directorio Teléfonos útiles, que ubican el centro en Pablo Marín s/n, entre Islas Malvinas e Hipólito Yrigoyen (Fonavi), Garín. Las cartillas IOMA/PAMI aún lo identifican como B° 24 de Febrero y publican un teléfono diferente. No se asigna barrio ni teléfono único; verificación web, no presencial."
+        },
+        "serviceNote": "Las páginas municipales no coinciden: Guardias y Teléfonos útiles ubican el CAPS en Fonavi, Garín; las fichas IOMA/PAMI aún indican B° 24 de Febrero. Teléfonos útiles publica (0348) 449-3444, mientras IOMA/PAMI muestran 11 2150-0302. Se omiten barrio y teléfono único hasta resolver ambas discrepancias.",
+        "serviceNoteSourceUrl": "https://www.escobar.gob.ar/municipio/prestaciones-ioma/"
       },
       {
         "id": "hospital-horacio-lopez",
@@ -301,6 +316,38 @@
           "Guardia general"
         ],
         "phone": "3484 462-759"
+      }
+    ],
+    "contactDirectoryUrl": "https://www.escobar.gob.ar/municipio/telefonos-utiles/",
+    "contactDirectoryName": "Teléfonos útiles municipales",
+    "pendingDirectoryDiscrepancies": [
+      {
+        "id": "udp-carlos-guevara",
+        "name": "UDP Dr. Carlos Guevara",
+        "locality": "Belén de Escobar",
+        "category": "Unidad de Diagnóstico Precoz",
+        "address": "Cervantes 635",
+        "serviceHours": "Todos los días, las 24 horas",
+        "services": [
+          "Guardia clínica y pediátrica"
+        ],
+        "sourceName": "Municipalidad de Escobar",
+        "sourceUrl": "https://www.escobar.gob.ar/municipio/guardias-y-farmacias/",
+        "sourcePublishedAt": null,
+        "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24.",
+        "validityPeriod": "Ficha visible en Guardias y farmacias al 2026-11-24; horario y prestaciones sujetos a actualización.",
+        "status": "pendiente",
+        "summary": "La página Guardias y farmacias lo lista con guardia clínica y pediátrica las 24 horas. No aparece en los listados de 11 registros de Teléfonos útiles ni en las cartillas IOMA/PAMI; no se incorpora al inventario consolidado hasta reconciliar los directorios.",
+        "comparisonSourceUrls": [
+          "https://www.escobar.gob.ar/municipio/telefonos-utiles/",
+          "https://www.escobar.gob.ar/municipio/prestaciones-ioma/",
+          "https://www.escobar.gob.ar/municipio/prestaciones-pami/"
+        ],
+        "verification": {
+          "status": "verified",
+          "checkedAt": "2026-11-24",
+          "scope": "Se comprobó la ficha de UDP Dr. Carlos Guevara (Cervantes 635, Belén de Escobar) en Guardias y farmacias y se comparó con Teléfonos útiles e IOMA/PAMI, que presentan listados de 11 registros sin esta ficha. Se verifica la discrepancia entre publicaciones, no la operación presencial del establecimiento. Queda pendiente de conciliación."
+        }
       }
     ]
   },
