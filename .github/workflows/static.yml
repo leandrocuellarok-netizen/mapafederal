@@ -874,6 +874,8 @@ jobs:
                   assert opportunity["jurisdiction"] in municipal_jurisdictions, f"Jurisdicción municipal no admitida: {opportunity['id']}"
               location = opportunity["location"]
               assert location is None or (isinstance(location, str) and location.strip()), f"Ubicación inválida: {opportunity['id']}"
+              if opportunity["scope"] == "municipal":
+                  assert isinstance(location, str) and location.strip(), f"Proyecto municipal sin localidad identificada: {opportunity['id']}"
               source_url = urlparse(opportunity["sourceUrl"])
               assert source_url.scheme == "https" and source_url.hostname and source_url.username is None and source_url.password is None, f"Fuente de oportunidad inválida: {opportunity['id']}"
               source_published = date.fromisoformat(opportunity["sourcePublishedAt"])
