@@ -1,5 +1,40 @@
 [
   {
+    "id": "news-www-zonanortediario-com-ar-24-11-2026-mas-de-270-empresas-y-entidades-participaron-de-una-nueva-ronda-de-negocios-en-escobar",
+    "title": "Escobar reunió a 277 empresas y entidades en una ronda multisectorial de negocios",
+    "date": "2026-11-24",
+    "category": "Empresas",
+    "summary": "La cobertura local informó 277 empresas y entidades inscriptas, 72 de Escobar, más de 350 asistentes y 33 ramas productivas en la Ronda de Negocios realizada en Espacio Mendoza, Ingeniero Maschwitz. La Provincia confirma oficialmente la fecha y sede. No se informan contratos cerrados ni inversiones comprometidas.",
+    "source": "Zona Norte Diario Online",
+    "url": "https://www.zonanortediario.com.ar/24/11/2026/mas-de-270-empresas-y-entidades-participaron-de-una-nueva-ronda-de-negocios-en-escobar/",
+    "period": "Evento realizado el 24/11/2026. La agenda oficial de PBA confirma fecha y sede; la cobertura local aporta las cifras de participación, que no se localizaron en un comunicado oficial de resultados al corte.",
+    "jurisdictions": [
+      "Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Espacio Mendoza, Ingeniero Maschwitz, Partido de Escobar, Provincia de Buenos Aires"
+    ],
+    "jurisdictionScope": "Local — Partido de Escobar / Provincia de Buenos Aires",
+    "sector": "PyMEs / industria / comercio / servicios / vinculación empresarial",
+    "territorialRelevance": "Alta para la inteligencia productiva local: la cobertura informa 72 empresas y entidades de Escobar entre 277 inscriptas. No acredita acuerdos comerciales, contratos ni inversiones cerradas.",
+    "relatedSources": [
+      {
+        "label": "Provincia de Buenos Aires — agenda oficial de Rondas de Negocios (evento realizado)",
+        "url": "https://gba.gob.ar/produccion/ronda_de_negocios"
+      },
+      {
+        "label": "Portal de Rondas de Negocios PBA — ficha del evento Escobar 2026",
+        "url": "https://rondadenegocios.mp.gba.gob.ar/"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "La página oficial del Ministerio de Producción de PBA lista la Ronda de Negocios Escobar 2026 entre los eventos realizados el 24/11 y confirma Espacio Mendoza, calle Mendoza esquina Av. Independencia, Ingeniero Maschwitz. Las cifras de 277 empresas/entidades, 72 de Escobar, más de 350 asistentes y 33 ramas productivas provienen de Zona Norte Diario (24/11); no se localizaron en un comunicado oficial de resultados al corte. La agenda oficial consigna 8:30 y el portal de inscripción 11:30; se omite la hora por discrepancia. No se infieren negocios concretados ni inversión comprometida."
+    }
+  },
+  {
     "id": "news-www-fca-org-uk-firms-innovation-ai-approach-agentic-ai",
     "title": "La FCA publicó expectativas regulatorias para la IA agéntica en servicios financieros",
     "date": "2026-11-24",
@@ -321,7 +356,7 @@
     "geographyEvidence": []
   },
   {
-    "id": "news-zscaler-2026-11-20-frontier-model-providers-enterprise-ai-security",
+    "id": "news-zscaler-gcs-web-com-news-releases-news-release-details-zscaler-partners-frontier-model-providers-help-enterprises",
     "title": "Zscaler anunció colaboraciones con Anthropic y Mistral para seguridad de IA empresarial",
     "date": "2026-11-20",
     "category": "Tecnología",
