@@ -519,5 +519,27 @@
       "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
     },
     "id": "news-normas-gba-gob-ar-ar-b-decreto-2026-742-604136"
+  },
+  {
+    "title": "Pampa Energía constituyó Pampa AI para desarrollar infraestructura digital, centros de datos y servicios de cómputo para IA",
+    "date": "2026-11-17",
+    "category": "Empresas",
+    "summary": "El Boletín Oficial publicó la constitución de Pampa AI S.A.U., cuyo accionista único es Pampa Energía. Su objeto social incluye desarrollar y operar centros de datos y centros de cómputo de alto rendimiento destinados a IA y cloud, comercializar capacidad GPU, software y servicios de cómputo, y desarrollar o adquirir infraestructura energética. La sociedad tiene sede en CABA y un capital social de ARS 30 millones. Ese capital es el de la sociedad constituida: no equivale a una inversión anunciada en centros de datos. El edicto no confirma emplazamiento de instalaciones, potencia, contratos, cronograma ni decisión de inversión concreta.",
+    "source": "Boletín Oficial de la República Argentina — Segunda Sección",
+    "url": "https://otslist.boletinoficial.gob.ar/ots/download/ad94959c79069757719afce7c6f1b312d02faf30c60701d390ae708fc27a3202/0/",
+    "period": "Constitución por escritura del 26/10/2026; publicación en Boletín Oficial el 17/11/2026.",
+    "verification": {
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "scope": "Verificada la publicación societaria primaria en el Boletín Oficial de la República Argentina, Segunda Sección, edición 36.034 del 17/11/2026. El registro acredita la constitución y el objeto estatutario; no acredita construcción, operación, capacidad instalada ni inversión en activos de data centers."
+    },
+    "jurisdictions": [
+      "Ciudad Autónoma de Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "El edicto consigna sede social en Maipú 1, Ciudad Autónoma de Buenos Aires, y objeto de actuación en Argentina y el exterior."
+    ],
+    "id": "news-pampa-energia-constitutes-pampa-ai-data-centers-2026"
   }
 ]
