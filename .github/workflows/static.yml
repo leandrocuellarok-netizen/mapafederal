@@ -1038,7 +1038,8 @@ jobs:
           if (chubut.length !== 2 || !chubut.some(item => item.title.startsWith("Proyecto Navidad:")) || !chubut.some(item => item.title.startsWith("Chubut:"))) throw new Error("No se localizaron las noticias verificadas de Chubut.");
           const buenosAires = filter(news, { ...base, jurisdiction: "Buenos Aires" });
           if (!buenosAires.some(item => item.title.startsWith("Toyota anunció"))) throw new Error("No se localizó Zárate en Buenos Aires.");
-          if (filter(news, { ...base, jurisdiction: "CABA" }).length !== 1) throw new Error("CABA y provincia de Buenos Aires no se distinguen.");
+          const caba = filter(news, { ...base, jurisdiction: "CABA" });
+if (caba.length !== 2 || !caba.some(item => item.title.startsWith("Pampa Energía constituyó Pampa AI")) || !caba.some(item => item.title.startsWith("Cuatro emprendimientos fueron distinguidos"))) throw new Error("CABA y provincia de Buenos Aires no se distinguen o faltan registros CABA esperados.");
           if (filter(news, { ...base, jurisdiction: "Entre Ríos" }).length !== 1) throw new Error("No se localizó Concepción del Uruguay.");
           if (filter(news, { ...base, category: "Empresas", jurisdiction: "Tierra del Fuego" }).length !== 0) throw new Error("Los filtros combinados no son restrictivos.");
           console.log("Territorial Monitor: filtro territorial, filtros combinados, registros ambiguos y traducciones comprobados.");
