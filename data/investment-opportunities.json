@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-23",
-  "note": "Catálogo documental con dos registros nacionales: RIMI y Programa KIT 4.0. Las fuentes normativas están verificadas, pero la disponibilidad de ambos permanece desconocida: no se confirmó la operatividad del trámite SGI para RIMI ni el saldo presupuestario y la disponibilidad de kits/proveedores para KIT 4.0. No constituye una recomendación de inversión.",
+  "updatedAt": "2026-11-24",
+  "note": "Catálogo documental. Los estados de disponibilidad se mantienen desconocidos cuando la fuente no confirma apertura o ejecución. No constituye una recomendación de inversión.",
   "opportunities": [
     {
       "id": "rimi-eficiencia-energetica-2026",
@@ -49,6 +49,30 @@
         "status": "verified",
         "checkedAt": "2026-11-23",
         "scope": "Contraste del portal oficial del Programa KIT 4.0, la Resolución 8/2026 en texto actualizado, la Resolución 343/2026 (publicada el 2026-09-01) y la Disposición 106/2026 (publicada el 2026-09-25). Se verificaron las bases, el procedimiento y las modificaciones del catálogo; no se confirmó el saldo del cupo de ARS 9.000 millones ni la disponibilidad actual de cada kit y de al menos tres proveedores habilitados. Por eso opportunityStatus permanece unknown."
+      }
+    },
+    {
+      "id": "grupo-addnice-traslado-planta-garin-2027",
+      "name": "Grupo Addnice — traslado de planta industrial a Garín",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Industria / calzado e indumentaria deportiva",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Garín, predio anteriormente ocupado por Rosen",
+      "stage": "preparation",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-11-04",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/garin-sumara-una-nueva-planta-industrial-y-fortalecera-su-perfil-produ/",
+      "sourcePublishedAt": "2026-11-04",
+      "period": "Proyecto anunciado para traslado durante 2027; no se informa fecha exacta de inicio de operaciones.",
+      "description": "La Municipalidad de Escobar informó que Grupo Addnice proyecta trasladar en 2027 su planta industrial desde Tigre a Garín, en el predio anteriormente ocupado por Rosen. La empresa fabrica y comercializa calzado e indumentaria deportiva. La fuente menciona expansión productiva y vocación de capacitación e incorporación de personal, pero no publica monto de inversión, cronograma detallado, puestos comprometidos ni estado de ejecución. Registrar como proyecto anunciado, no como inversión ejecutada ni como oportunidad abierta a terceros.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado el anuncio institucional municipal y su fecha. No se verificaron monto, permisos, avance de obra, contratación, capacidad productiva ni comienzo efectivo de operaciones; opportunityStatus permanece unknown."
       }
     }
   ]
