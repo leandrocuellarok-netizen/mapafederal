@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 24/11/2026 a las 17:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 24/11/2026 a las 18:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,7 +8,7 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 38 registros |
+| Radar IA | 39 registros |
 | Investment Finder | 51 registros |
 | Oportunidades abiertas | 20 |
 | Disponibilidad desconocida | 28 |
@@ -27,6 +27,14 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - Investment Finder: se añadieron ocho llamados de la edición 24/11/2026 del Boletín Oficial bonaerense: Avellaneda LP 122 (kits escolares, ARS 240,28 M); Esteban Echeverría LP 33 (obra escolar, ARS 367,74 M); Mercedes LP 16 (ómnibus, ARS 320 M); Patagones LP 13 (edificio escolar, ARS 3.157,50 M); Rivadavia LP 3 (concesión de kiosco-bar, sin presupuesto publicado); San Andrés de Giles LP 6 (dos camionetas, ARS 68,11 M); Tandil LP 21-01-26 (excavadora, ARS 294,12 M); y Tres Arroyos LP 18 (carros gastronómicos, sin canon base publicado). Los montos son presupuestos oficiales cuando están informados, no adjudicaciones ni gastos ejecutados. Los ocho estados `open` reflejan cronogramas publicados, no elegibilidad del proveedor.
 - Escobar: la edición 14526 del Boletín Oficial (24/11) no incorpora un nuevo llamado municipal. LP 74 mantiene consultas 26–27/11, venta 30/11–01/12 y apertura 04/12. La LP 75 queda corroborada en la edición 14523 (20/11): consultas 26–27/11, venta 01–02/12, apertura 09/12 a las 12:00 y valor del pliego ARS 30 millones. La venta futura no se considera ya iniciada.
 - Directorio sanitario de Escobar: el trabajo paralelo documentado en el commit `5ba77f70` elevó a 14 las fichas nominales. Se incorporaron el Hospital Papa Francisco y la UDP Dr. Carlos Guevara; la operación actual de la UDP y discrepancias de dirección/teléfono de otros establecimientos permanecen pendientes. No se agregaron coordenadas sin evidencia exacta.
+
+## Actualización del ciclo 18:00 — 24/11/2026
+
+- Radar IA: se incorporó la publicación primaria de Ethereum Foundation del 23/11/2026, “PQAI #0: Preparing Ethereum for a post-quantum, post-AI world”. La Fundación describe la detección acelerada de vulnerabilidades por modelos de IA como un factor de riesgo para el mantenimiento de software y la seguridad criptográfica. Propone firmas basadas en hash para validadores, migración de cuentas, compromisos de datos basados en hash y verificación formal. Las especificaciones iniciales y un primer devnet están en desarrollo; diciembre de 2028 y 2029 son objetivos de planificación, no fechas garantizadas. No se afirma que la IA pueda romper hoy la criptografía de Ethereum ni que la migración esté desplegada. Fuente: https://blog.ethereum.org/2026/11/23/pqai-0.
+- No se incorporaron otras noticias de IA/regulación: las señales recientes ya catalogadas no mostraron cambios verificables adicionales en este corte.
+- Investment Finder: sin nuevas oportunidades añadidas. Se conservan 51 registros (20 abiertas, 28 con disponibilidad desconocida y 3 cerradas). La LP 74/2026 de Escobar fue contrastada en el Boletín Oficial bonaerense, edición 18/11/2026, sección 14517: consultas 26–27/11, venta de pliegos 30/11–01/12, apertura 04/12 a las 10:00 y presupuesto oficial ARS 793.000.000 IVA incluido. No se revisó el pliego completo ni se infiere elegibilidad. Fuente: https://boletinoficial.gba.gob.ar/secciones/14517/ver. La LP 75 permanece en el catálogo con el cronograma ya documentado; la consulta de la edición 14523 presentó timeout y no se atribuye una circular nueva.
+- Red Sostenible para el Desarrollo sigue admitiendo solicitudes hasta el 30/12/2026, según la página municipal consultada; ya estaba registrada y no se duplicó. Fuente: https://www.escobar.gob.ar/noticias/escobar-abrio-la-convocatoria-para-que-empresas-y-comercios-midan-redu/.
+- Actualización territorial concurrente: otro ciclo incorporó al directorio de transparencia de Escobar el dataset municipal “Cursos de Agua del Partido de Escobar”. La ficha declara GeoJSON de 267 KB, versión 1.0, última actualización 31/03/2026, periodicidad anual, licencia ODbL y CRS EPSG:22185. La integración geométrica sigue pendiente; no se dibuja como latitud/longitud ni se interpreta como mapa de riesgo hídrico, caudal o calidad del agua. Commits: `b33b990bc9b0076c6333985792f7011a4676ed3c` (dataset) y `2c815704a303b4570b869fcdbf2672ed79197a89` (registro y estado del ciclo concurrente).
 
 ## Avances verificables
 ### Escobar
