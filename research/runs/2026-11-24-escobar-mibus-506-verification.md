@@ -38,8 +38,8 @@ La Municipalidad de Escobar mantiene el planificador Mi Bus / Escobar 360:
 ## Pruebas y publicación
 
 - El JSON se parseó antes de generar el commit.
-- La prueba específica de movilidad se amplió; el workflow existente ya ejecuta `node tests/escobar-mobility.test.js`.
-- El estado de CI y Pages para el commit nuevo debe comprobarse después del push.
+- La primera ejecución del workflow (45376228874) detectó un error de orden en el test: las aserciones del renderizador referían `profile` antes de su declaración. Se reubicaron después de la lectura del archivo; no era un fallo del dataset ni del renderizador.
+- La prueba específica de movilidad se amplió; el workflow existente ejecuta `node tests/escobar-mobility.test.js`. La corrección queda sujeta a la nueva ejecución completa.
 - No se afirma lectura HTTP independiente de GitHub Pages.
 
 ## Pendientes

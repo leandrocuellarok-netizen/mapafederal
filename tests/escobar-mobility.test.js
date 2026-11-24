@@ -101,10 +101,6 @@ assert.match(planner506.verification.scope, /no.*equivalencia exacta/i);
 for (const url of [planner506.sourceUrl, planner506.catalogUrl]) {
   assert.equal(new URL(url).protocol, "https:");
 }
-assert.match(profile, /mobility\.plannerServices/);
-assert.match(profile, /plannerServicesHtml/);
-assert.match(profile, /Servicios publicados en el planificador Mi Bus/);
-
 for (const url of [route506.sourceUrl, ...route506.secondaryReports.map(item => item.sourceUrl)]) {
   assert.equal(new URL(url).protocol, "https:");
 }
@@ -113,5 +109,8 @@ const profile = fs.readFileSync("assets/escobar-profile.js", "utf8");
 assert.match(profile, /mobility\.interlocalConnections/);
 assert.match(profile, /mobility\.intermodalAssessment/);
 assert.match(profile, /connectionsHtml\+intermodalHtml/);
+assert.match(profile, /mobility\.plannerServices/);
+assert.match(profile, /plannerServicesHtml/);
+assert.match(profile, /Servicios publicados en el planificador Mi Bus/);
 
 console.log("Escobar movilidad: 15 paradas, 3 estaciones, 3 coincidencias sin inferir transbordos, 1 puente con estado actual no verificado y 2 ramales anunciados sin confirmar como operativos.");
