@@ -265,6 +265,36 @@ jobs:
           assert health["verification"]["checkedAt"] == "2026-11-23"
           assert "no se realizó comprobación presencial" in health["verification"]["scope"].lower()
           assert len(health["facilities"]) == 11
+          mobility = territory["mobilityDirectory"]
+          assert mobility["status"] == "pendiente"
+          assert mobility["sourcePublishedAt"] == "2026-02-06"
+          assert len(mobility["stops"]) == 15
+          assert len({item["id"] for item in mobility["stops"]}) == 15
+          expected_stop_counts = {
+              "Belén de Escobar": 3,
+              "Garín": 3,
+              "Ingeniero Maschwitz": 2,
+              "Loma Verde": 1,
+              "Matheu": 2,
+              "Maquinista Savio": 3,
+              "24 de Febrero": 1,
+          }
+          actual_stop_counts = {}
+          for item in mobility["stops"]:
+              actual_stop_counts[item["locality"]] = actual_stop_counts.get(item["locality"], 0) + 1
+              assert item["intersection"] and "coords" not in item
+          assert actual_stop_counts == expected_stop_counts
+          assert mobility["verification"]["checkedAt"] == "2026-11-23"
+          assert "no se verificó presencialmente" in mobility["verification"]["scope"].lower()
+          planner = mobility["planner"]
+          assert planner["status"] == "operativo"
+          dataset = mobility["openDataDataset"]
+          assert dataset["lastUpdatedAt"] == "2026-03-31"
+          assert dataset["license"] == "Open Data Commons Open Database License (ODbL)"
+          assert "no se importó el archivo binario" in dataset["verification"]["scope"].lower()
+          for url in [mobility["sourceUrl"], planner["sourceUrl"], dataset["sourceUrl"]]:
+              parsed = urlparse(url)
+              assert parsed.scheme == "https" and parsed.netloc
           assert {item["locality"] for item in health["facilities"]} == {"Belén de Escobar", "Garín", "Ingeniero Maschwitz", "Maquinista Savio", "Matheu", "Loma Verde"}
           selles = next(item for item in health["facilities"] if item["id"] == "caps-juan-carlos-selles")
           assert selles["locality"] == "Garín" and selles["neighborhood"] == "24 de Febrero"
@@ -340,6 +370,9 @@ jobs:
           assert 'id="escobar"' in html
           assert './assets/escobar-profile.js' in html
           assert 'id="escobar-localities"' in html and 'id="escobar-map-nodes"' in html
+          assert 'id="escobar-mobility"' in html and "Mi Bus · paradas con QR" in html
+          assert "territory.mobilityDirectory" in profile_js and "mobility.stops" in profile_js
+          assert "escobar-mobility-stops" in html and "escobar-mobility-locality" in profile_js
           assert 'href="#escobar"' in html
           print("Escobar: 7 localidades, 246 barrios, indicadores 2026, estados documentales, directorios y 9 referencias cartográficas en 6 localidades validados.")
           PY
