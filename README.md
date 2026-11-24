@@ -263,3 +263,10 @@ Los próximos registros deben seguir el mismo criterio. No se cargan eventos fut
 La interfaz incorpora un selector ES / EN en la navegación. El idioma predeterminado es español; la preferencia elegida se conserva localmente en el navegador y el atributo `lang` del documento se actualiza al cambiar de idioma. El catálogo reutilizable está en `assets/i18n.js` y expone `window.MapaFederalI18n.setLanguage("es"|"en")` y `getLanguage()` para futuras vistas y componentes.
 
 El módulo traduce etiquetas, navegación, textos editoriales de interfaz, controles, mensajes y elementos dinámicos reconocidos por el catálogo. Los nombres propios, topónimos, cifras, titulares originales de fuentes y datos oficiales se conservan para evitar alterar la denominación de origen. Las nuevas cadenas de interfaz deben incorporarse al catálogo inglés y probarse en ambos idiomas. La traducción de resúmenes editoriales y contenidos de datos debe prepararse como contenido localizado revisado, no mediante traducción automática indiscriminada.
+
+
+### Movilidad local de Escobar: cruces documentados
+
+- El cruce nominal entre las 15 paradas QR municipales y las estaciones del ramal Victoria–Capilla del Señor identifica tres localidades con registros de ambos modos: Garín, Maquinista Savio y Matheu. Es una coincidencia a escala de localidad, no una afirmación de proximidad, combinación ni transbordo.
+- El recurso XLSX municipal de líneas y paradas 2026 figura actualizado el 31/03/2026 y bajo licencia ODbL. Su contenido y geometrías no se importaron ni validaron individualmente; por eso no se calculan distancias, rutas ni tiempos.
+- Se documentó el puente peatonal informado por el Municipio el 23/10/2024 entre Nuevo Obejero (Maquinista Savio) y Cri Cri (Garín). Su estado físico actual queda pendiente de comprobación presencial.
