@@ -54,6 +54,25 @@ function renderProfile(territory,economy){
  }).join("");
  const healthHtml=health?'<h4>'+escapeHtml(health.name)+'</h4><p>'+escapeHtml(health.summary)+'</p><p class="escobar-meta">'+escapeHtml(health.localityCoverageNote)+'</p>'+facilities+'<p class="escobar-meta">Publicación: '+escapeHtml(date(health.sourcePublishedAt))+' · Vigencia: '+escapeHtml(health.validityPeriod)+' · Verificación: '+escapeHtml(date(health.verification&&health.verification.checkedAt))+' · '+escapeHtml(health.verification&&health.verification.scope||"")+'</p><p>'+sourceLink(health.sourceUrl,"Guardias y emergencias ↗")+' '+sourceLink(health.additionalDirectoryUrl,"Directorio completo de centros de salud ↗")+'</p>':"";
  el("escobar-services").innerHTML=(services||'<p class="escobar-meta">No hay directorios municipales cargados.</p>')+healthHtml;
+ const mobility=territory.mobilityDirectory;
+ if(mobility){
+  const stops=Array.isArray(mobility.stops)?mobility.stops:[];
+  const stopGroups=(territory.localities||[]).map(locality=>{
+   const entries=stops.filter(item=>item.locality===locality.name);
+   if(!entries.length)return "";
+   return '<section class="escobar-mobility-locality"><h4>'+escapeHtml(locality.name)+' <span>'+escapeHtml(number(entries.length))+' paradas</span></h4><ul>'+entries.map(item=>'<li>'+escapeHtml(item.intersection)+'</li>').join("")+'</ul></section>';
+  }).join("");
+  const planner=mobility.planner||{};
+  const dataset=mobility.openDataDataset||{};
+  el("escobar-mobility").innerHTML=
+   '<p>'+escapeHtml(mobility.summary||"")+'</p>'
+   +'<div class="escobar-mobility-stops">'+stopGroups+'</div>'
+   +'<p class="escobar-meta">Listado publicado: '+escapeHtml(date(mobility.sourcePublishedAt))+' · Estado: '+escapeHtml(statusLabel(mobility.status))+' · Verificación web: '+escapeHtml(date(mobility.verification&&mobility.verification.checkedAt))+'. '+escapeHtml(mobility.verification&&mobility.verification.scope||"")+'</p>'
+   +'<p>'+sourceLink(mobility.sourceUrl,"Noticia municipal y listado de paradas ↗")+' '+sourceLink(planner.sourceUrl,"Abrir planificador Mi Bus ↗")+'</p>'
+   +'<div class="escobar-item"><h4>Datos abiertos de transporte</h4><p>'+escapeHtml(dataset.name||"")+'</p><p class="escobar-meta">Actualización del conjunto: '+escapeHtml(date(dataset.lastUpdatedAt))+' · Periodicidad: '+escapeHtml(dataset.periodicity||"No informada")+' · Licencia: '+escapeHtml(dataset.license||"No informada")+' · Estado de integración: '+escapeHtml(statusLabel(dataset.status))+'</p><p class="escobar-meta">'+escapeHtml(dataset.verification&&dataset.verification.scope||"")+'</p>'+sourceLink(dataset.sourceUrl,"Consultar dataset y descargar recurso XLSX ↗")+'</div>';
+ }else{
+  el("escobar-mobility").innerHTML='<p class="escobar-meta">No hay datos de movilidad cargados.</p>';
+ }
  const snapshot=economy.previousPageSnapshot;
  el("escobar-provenance").innerHTML=
   '<p><strong>Barrios:</strong> '+escapeHtml(territory.sourceName)+' · Publicación: '+escapeHtml(date(territory.sourcePublishedAt))+' · Vigencia: '+escapeHtml(territory.validityPeriod||"No indicada")+' · Estado: '+escapeHtml(statusLabel(territory.status))+' · Verificación: '+escapeHtml(date(territory.verification&&territory.verification.checkedAt))+'. '+escapeHtml(territory.verification&&territory.verification.scope||"")+' '+sourceLink(territory.sourceUrl,"Fuente territorial ↗")+'</p>'+
