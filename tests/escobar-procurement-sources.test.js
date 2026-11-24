@@ -57,4 +57,4 @@ assert.equal(desagote.amount.value, 288950000);
 assert.match(desagote.amount.basis, /no equivale al monto adjudicado/i);
 assert.match(desagote.verification.scope, /No se verificaron acta de apertura, ofertas, adjudicación, contrato ni prestación/i);
 
-console.log("Escobar procurement: cinco licitaciones enlazan a las ediciones oficiales correctas; publicación, verificación y cautela sobre presupuesto/adjudicación comprobadas.");
+console.log("Escobar procurement: seis licitaciones enlazan a sus fuentes oficiales; publicación, verificación y cautela sobre presupuesto/adjudicación comprobadas.");
