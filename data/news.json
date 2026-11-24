@@ -849,5 +849,32 @@
       "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
     },
     "id": "news-normas-gba-gob-ar-ar-b-decreto-2026-742-604136"
+  },
+  {
+    "id": "news-www-argentina-gob-ar-normativa-nacional-norma-426859-texto",
+    "title": "SIGEN aprobó una guía de controles de IA aplicable al Sector Público Nacional",
+    "date": "2026-06-22",
+    "category": "Regulación",
+    "summary": "La Resolución SIGEN 197/2026 aprobó la Guía de Controles de Inteligencia Artificial y estableció su aplicación por todo el Sector Público Nacional definido en el artículo 8 de la Ley 24.156. La medida incorpora la guía al marco de control interno y auditoría para iniciativas de IA. No se extiende automáticamente a provincias ni municipios.",
+    "source": "Sindicatura General de la Nación — Boletín Oficial",
+    "url": "https://www.argentina.gob.ar/normativa/nacional/norma-426859/texto",
+    "period": "Sanción: 16/06/2026. Publicación en el Boletín Oficial: 22/06/2026. Resolución SIGEN 197/2026.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Argentina — Sector Público Nacional (Ley 24.156, artículo 8)",
+    "sector": "Administración pública / control interno / gobernanza de IA",
+    "territorialRelevance": "Alta para entidades del Sector Público Nacional; referencia de control para otras jurisdicciones sin extensión automática.",
+    "relatedSources": [
+      {
+        "label": "SIGEN — noticia institucional sobre la guía (24/06/2026)",
+        "url": "https://www.argentina.gob.ar/noticias/la-sigen-desarrollo-una-guia-para-fortalecer-el-control-de-la-inteligencia-artificial-ia-en"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Contraste de la Resolución 197/2026 en su texto original: los artículos 1 y 2 aprueban la guía y limitan su aplicación al Sector Público Nacional definido en el artículo 8 de la Ley 24.156. Se verificaron fecha de sanción y publicación. El anexo no está publicado en la ficha normativa; no se atribuyen obligaciones específicas no visibles en el texto de la resolución."
+    }
   }
 ]
