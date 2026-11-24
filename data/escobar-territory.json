@@ -463,6 +463,59 @@
           "locality": "Matheu"
         }
       ]
-    }
+    },
+    "intermodalAssessment": {
+      "id": "mibus-mitre-locality-crosscheck",
+      "name": "Cruce territorial entre Mi Bus y Línea Mitre",
+      "sourceName": "Municipalidad de Escobar — Datos Abiertos",
+      "sourceUrl": "https://datos.escobar.gob.ar/dataset/lineas-y-paradas-de-colectivo-del-partido-de-escobar-2026",
+      "sourcePublishedAt": null,
+      "sourcePublicationNote": "El portal no informa fecha de publicación; declara creación el 01/10/2025 y última actualización el 31/03/2026.",
+      "relatedSourceName": "Trenes Argentinos Operaciones",
+      "relatedSourceUrl": "https://www.argentina.gob.ar/sites/default/files/victoria_-_capilla_del_senor_2025-12-22_-_web.pdf",
+      "relatedSourcePublishedAt": null,
+      "relatedSourcePublicationNote": "El PDF ferroviario no informa fecha de publicación; indica vigencia desde el 22/12/2025.",
+      "validityPeriod": "Cruce documental realizado el 23/11/2026 entre la lista municipal de paradas QR y las estaciones nombradas en el diagrama ferroviario. No establece vigencia de horarios ni combinaciones operativas.",
+      "status": "pendiente",
+      "sharedLocalities": [
+        "Garín",
+        "Maquinista Savio",
+        "Matheu"
+      ],
+      "summary": "La lista municipal de 15 paradas QR y el diagrama ferroviario nombran ambos modos en Garín, Maquinista Savio y Matheu. La coincidencia se establece solo a escala de localidad: no demuestra proximidad entre una parada y una estación, conexión peatonal, combinación de líneas ni transbordo.",
+      "verification": {
+        "checkedAt": "2026-11-23",
+        "scope": "Se cruzaron los nombres de localidad de las 15 paradas QR publicadas por el Municipio el 06/02/2026 con las tres estaciones de Escobar que enumera el diagrama oficial del ramal Victoria–Capilla del Señor. El recurso XLSX municipal 2026 declara actualización el 31/03/2026, pero su contenido y geometrías no fueron importados ni revalidados; no se calcularon distancias, rutas ni tiempos. El diagrama ferroviario no se confirmó como horario vigente en tiempo real."
+      }
+    },
+    "interlocalConnections": [
+      {
+        "id": "puente-peatonal-garin-maquinista-savio",
+        "name": "Puente peatonal entre Garín y Maquinista Savio",
+        "type": "Puente peatonal interlocal",
+        "sourceName": "Municipalidad de Escobar",
+        "sourceUrl": "https://www.escobar.gob.ar/un-nuevo-puente-peatonal-ya-comunica-garin-y-maquinista-savio/",
+        "sourcePublishedAt": "2024-10-23",
+        "sourcePublicationNote": "Nota municipal fechada el 23 de octubre de 2024.",
+        "validityPeriod": "La publicación informó la obra terminada en octubre de 2024; la fuente no fija un plazo de vigencia y el estado físico actual no fue comprobado.",
+        "status": "pendiente",
+        "operationalStatus": "no verificado",
+        "location": "Intersección de calle Vicente López con arroyo Garín",
+        "fromLocality": "Maquinista Savio",
+        "fromNeighborhood": "Nuevo Obejero",
+        "toLocality": "Garín",
+        "toNeighborhood": "Cri Cri",
+        "facilitiesAccessible": [
+          "Polo de Seguridad",
+          "Hospital Bicentenario",
+          "Escuela Secundaria Nº 7 de Garín"
+        ],
+        "summary": "La Municipalidad informó que el puente peatonal en Vicente López y arroyo Garín comunica el barrio Nuevo Obejero (Maquinista Savio) con Cri Cri (Garín), y facilita el acceso peatonal al Polo de Seguridad, el Hospital Bicentenario y la Escuela Secundaria Nº 7 de Garín. La nota describe la obra terminada en 2024; su continuidad operativa no fue comprobada en 2026.",
+        "verification": {
+          "checkedAt": "2026-11-23",
+          "scope": "Se verificó la publicación municipal fechada el 23/10/2024, que identifica la ubicación, los dos barrios y los destinos accesibles. No se realizó comprobación presencial ni se confirmó el estado físico actual. No se agregaron coordenadas porque la fuente no publica una georreferencia oficial."
+        }
+      }
+    ]
   }
 }
