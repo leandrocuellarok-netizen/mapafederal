@@ -1115,6 +1115,29 @@
       "scope": "Se consultaron las páginas institucionales de Transparencia municipal, Portal de Datos Abiertos y Solicitar Información Pública. Se registraron las métricas visibles del catálogo y las secciones anunciadas por el Municipio. No se enviaron solicitudes, no se verificó el resultado de los buscadores o descargas dinámicas y no se evaluó exhaustividad, oportunidad ni calidad de los datos publicados."
     },
     "dynamicContentStatus": "pendiente",
+    "territorialBoundaryReference": {
+      "id": "ign-georef-municipal-polygons",
+      "name": "Polígonos municipales oficiales — IGN / Georef",
+      "category": "Ordenamiento territorial",
+      "description": "Referencia de límites municipales para contrastar la red hidrográfica del Partido de Escobar. El IGN publica polígonos municipales y Georef documenta la descarga de geometrías en GeoJSON.",
+      "publisher": "Instituto Geográfico Nacional (IGN) / Servicio Georef — Argentina.gob.ar",
+      "sourceUrl": "https://datos.gob.ar/ar/dataset/ign-unidades-territoriales",
+      "ignDownloadUrl": "https://www.ign.gob.ar/descargas/geodatos/SHAPES/ign_municipio.zip",
+      "resourceUrl": "https://apis.datos.gob.ar/georef/api/v2.0/municipios.geojson",
+      "apiDocsUrl": "https://www.argentina.gob.ar/georef/georef-servicio-de-normalizacion-de-direcciones-y-unidades-territoriales-de-argentina-5",
+      "resourceFormat": "GeoJSON (Georef); Shapefile ZIP (IGN)",
+      "sourceCrs": "EPSG:4326",
+      "metadataPublishedAt": "2017-12-19",
+      "metadataLastUpdatedAt": "2019-07-31",
+      "geometryIntegrationStatus": "pending",
+      "status": "pendiente",
+      "geometryNote": "La ficha IGN describe polígonos municipales; la documentación de Georef indica WGS84 (EPSG:4326) para geometrías descargadas. El GeoJSON enlazado corresponde a la base nacional completa y debe filtrarse para Escobar. No se descargó ni verificó el polígono de Escobar en esta ejecución; no se usa para dibujar ni para certificar la contención de los cursos de agua.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Se consultó la ficha oficial de Unidades Territoriales del IGN y el recurso Municipios en formato SHP; se revisó la documentación oficial de Georef sobre descarga GeoJSON y CRS WGS84 (EPSG:4326), además de la referencia del endpoint de municipios y sus filtros. No se descargó ni procesó la geometría de Escobar."
+      }
+    },
     "environmentalDatasets": [
       {
         "id": "cursos-de-agua-partido-escobar",

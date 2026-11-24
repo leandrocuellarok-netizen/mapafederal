@@ -62,6 +62,23 @@ assert.match(watercourses.geometryNote, /no constituye por sí sola un mapa de r
 for (const url of [watercourses.sourceUrl, watercourses.resourceUrl]) {
   assert.equal(new URL(url).protocol, "https:");
 }
+
+const boundaryReferenceRecord = transparency.territorialBoundaryReference;
+assert.ok(boundaryReferenceRecord, "Falta la referencia oficial de límites municipales");
+assert.equal(boundaryReferenceRecord.status, "pendiente");
+assert.equal(boundaryReferenceRecord.geometryIntegrationStatus, "pending");
+assert.equal(boundaryReferenceRecord.sourceCrs, "EPSG:4326");
+assert.equal(boundaryReferenceRecord.metadataPublishedAt, "2017-12-19");
+assert.equal(boundaryReferenceRecord.metadataLastUpdatedAt, "2019-07-31");
+assert.match(boundaryReferenceRecord.geometryNote, /no se descargó ni verificó/i);
+assert.match(boundaryReferenceRecord.geometryNote, /base nacional completa/i);
+for (const url of [boundaryReferenceRecord.sourceUrl, boundaryReferenceRecord.ignDownloadUrl, boundaryReferenceRecord.resourceUrl, boundaryReferenceRecord.apiDocsUrl]) {
+  assert.equal(new URL(url).protocol, "https:");
+}
+assert.match(profile, /territorialBoundaryReference/);
+assert.match(profile, /boundaryReferenceHtml/);
+assert.match(profile, /GeoJSON Georef/);
+assert.match(profile, /escobar-boundary-reference/);
 assert.match(profile, /environmentalDatasets/);
 assert.match(profile, /escobar-environmental-dataset/);
 assert.match(profile, /GeoJSON original/);
