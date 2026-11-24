@@ -67,7 +67,7 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 1. Verificar circulares y pliegos de LP 74 y LP 75 de Escobar los días 26–27/11; para LP 75, revisar además el valor del pliego ARS 30 millones y su venta 01–02/12.
 2. Confirmar venta de pliegos, recepción y aperturas de LP 71/72, las tres licitaciones de Quilmes y los ocho nuevos llamados del Boletín Oficial 14526; revisar el requisito RUP de Lomas.
 3. Consultar el resultado de LP 61/62/67 y de LP 66/69; no inferir adjudicación.
-4. Seguir la Asamblea de Mayores Contribuyentes de Escobar prevista para el 27/11 a las 18:00. El proyecto Fiscal-Tributario 2027 no es norma vigente hasta completar el procedimiento.
+4. Seguir la Asamblea de Mayores Contribuyentes de Escobar, reportada para el 27/11 a las 18:00. Al corte del 24/11 no se localizó una convocatoria oficial del HCD que confirme esa fecha y hora; mantenerlas como pendientes de corroboración. El proyecto Fiscal-Tributario 2027 no es norma vigente hasta completar el procedimiento.
 5. Confirmar si QUO Loma Verde abrió efectivamente; las fuentes previas discrepan en la fecha.
 6. Seguir los expedientes ambientales del puerto de Escobar y la discrepancia de ubicación de BESS Maschwitz.
 7. Verificar hitos físicos, permisos y empleo real de los proyectos industriales y comerciales; evitar cifras de anuncios como ejecución.
