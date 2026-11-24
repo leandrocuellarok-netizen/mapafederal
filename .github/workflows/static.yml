@@ -356,7 +356,7 @@ jobs:
               parsed = urlparse(item["sourceUrl"])
               assert parsed.scheme == "https" and parsed.netloc
           local_nodes = [item for item in nodes if item.get("district") == "Partido de Escobar"]
-          assert len(local_nodes) == 9
+          assert len(local_nodes) == 14
           assert {item["locality"] for item in local_nodes} == {"Belén de Escobar", "Garín", "Ingeniero Maschwitz", "Loma Verde", "Matheu", "Maquinista Savio"}
           expected_references = {
               "Centro de Ingeniero Maschwitz — referencia urbana": [-34.38913, -58.7379],
@@ -383,12 +383,31 @@ jobs:
           assert 'id="escobar-mobility"' in html and "Mi Bus y ferrocarril" in html
           assert "territory.mobilityDirectory" in profile_js and "mobility.stops" in profile_js
           assert "mobility.railService" in profile_js and "rail.stations" in profile_js
+          rail_infrastructure = mobility["railInfrastructure"]
+          assert len(rail_infrastructure["stations"]) == 5
+          assert rail_infrastructure["status"] == "pendiente"
+          assert rail_infrastructure["operationalStatus"] == "no verificado"
+          assert rail_infrastructure["sourceCrs"] == "EPSG:22185 — POSGAR 94 / Argentina 5"
+          assert rail_infrastructure["coordinateCrs"] == "EPSG:4326 — WGS 84"
+          assert rail_infrastructure["verification"]["checkedAt"] == "2026-11-24"
+          assert "No hubo comprobación presencial" in rail_infrastructure["verification"]["scope"]
+          for url in [rail_infrastructure["sourceUrl"], rail_infrastructure["resourceUrl"]]:
+              parsed = urlparse(url)
+              assert parsed.scheme == "https" and parsed.netloc
+          assert 'data-type="Estación ferroviaria"' in html
+          assert '"Estación ferroviaria":"#547FA5"' in html
+          rail_nodes = [item for item in local_nodes if item["type"] == "Estación ferroviaria"]
+          assert len(rail_nodes) == 5
+          assert {item["locality"] for item in rail_nodes} == {"Belén de Escobar", "Ingeniero Maschwitz", "Garín", "Maquinista Savio", "Matheu"}
           assert "escobar-mobility-stops" in html and "escobar-mobility-locality" in profile_js
+          assert "railInfrastructureHtml" in profile_js
           assert 'href="#escobar"' in html
-          print("Escobar: 7 localidades, 246 barrios, indicadores 2026, estados documentales, directorios y 9 referencias cartográficas en 6 localidades validados.")
+          print("Escobar: 7 localidades, 246 barrios, indicadores 2026, directorios y 14 referencias cartográficas en 6 localidades validados.")
           PY
       - name: Test Escobar intermodal and interlocal mobility evidence
         run: node tests/escobar-mobility.test.js
+      - name: Test Escobar georeferenced railway infrastructure
+        run: node tests/escobar-rail-infrastructure.test.js
       - name: Validate geographic and editorial JSON
         run: |
           python - <<'PY'
@@ -428,7 +447,7 @@ jobs:
           assert isinstance(nodes, list) and nodes, "El catálogo de nodos está vacío"
           assert isinstance(news, list), "El archivo de noticias debe ser una lista"
           names = set()
-          allowed_node_types = {"Ciudad", "Puerto", "Aeropuerto", "Paso fronterizo", "Logística", "Industria", "Turismo", "Recurso mineral"}
+          allowed_node_types = {"Ciudad", "Puerto", "Aeropuerto", "Paso fronterizo", "Logística", "Industria", "Turismo", "Recurso mineral", "Estación ferroviaria"}
           expected_jurisdictions = {
               "CABA", "Buenos Aires", "Catamarca", "Chaco", "Chubut", "Córdoba",
               "Corrientes", "Entre Ríos", "Formosa", "Jujuy", "La Pampa", "La Rioja",
