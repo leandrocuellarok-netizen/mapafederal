@@ -528,9 +528,9 @@
     "url": "https://otslist.boletinoficial.gob.ar/ots/download/ad94959c79069757719afce7c6f1b312d02faf30c60701d390ae708fc27a3202/0/",
     "period": "Constitución por escritura del 26/10/2026; publicación en Boletín Oficial el 17/11/2026.",
     "verification": {
-      "status": "verified",
+      "status": "editorial_reviewed",
       "checkedAt": "2026-11-24",
-      "scope": "Verificada la publicación societaria primaria en el Boletín Oficial de la República Argentina, Segunda Sección, edición 36.034 del 17/11/2026. El registro acredita la constitución y el objeto estatutario; no acredita construcción, operación, capacidad instalada ni inversión en activos de data centers."
+      "scope": "Revisión editorial de la publicación societaria primaria en el Boletín Oficial de la República Argentina, Segunda Sección, edición 36.034 del 17/11/2026. El registro acredita la constitución y el objeto estatutario; no acredita construcción, operación, capacidad instalada ni inversión en activos de data centers."
     },
     "jurisdictions": [
       "CABA"
