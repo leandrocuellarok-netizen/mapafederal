@@ -4,75 +4,521 @@
   "note": "Catálogo documental. Los estados de disponibilidad se mantienen desconocidos cuando la fuente no confirma apertura o ejecución. No constituye una recomendación de inversión. El estado open se reserva para llamados cuyo cronograma oficial de consulta/venta y apertura todavía no venció; unknown indica dudas de elegibilidad o vigencia; closed indica que pasó la fecha de apertura. Los presupuestos oficiales no equivalen a adjudicaciones ni a gasto ejecutado.",
   "opportunities": [
     {
-      "id": "rimi-eficiencia-energetica-2026",
-      "name": "RIMI — inversiones en bienes de alta eficiencia energética",
-      "recordType": "incentive",
-      "scope": "national",
-      "sector": "Industria / eficiencia energética",
-      "jurisdiction": null,
-      "location": null,
-      "stage": "unknown",
-      "opportunityStatus": "unknown",
-      "amount": null,
-      "validFrom": "2026-11-04",
-      "validUntil": null,
-      "sourceName": "Boletín Oficial de la República Argentina — Secretaría de Energía",
-      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/primera/350021/20261104",
-      "sourcePublishedAt": "2026-11-04",
-      "period": "Vigencia normativa desde 2026-11-04; la Resolución SE 311/2026 no fija fecha de cierre.",
-      "description": "La Resolución SE 311/2026 aprueba el listado de bienes de alta eficiencia energética destinados a optimizar, recuperar o reducir el consumo energético en unidades productivas. El encuadramiento requiere cumplir criterios técnicos y presentar una declaración jurada técnica. Las inversiones que no puedan encuadrarse en el listado deben acreditar una reducción cuantificada del consumo mediante informe profesional. Los servicios de ingeniería, instalación, puesta en marcha, programación y capacitación pueden integrar la inversión cuando forman parte de su costo.",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-22",
-        "scope": "Verificada la publicación oficial y la vigencia normativa de la Resolución SE 311/2026. No se verificó la disponibilidad operativa del Sistema de Gestión de Inversiones (SGI), la elegibilidad de una empresa concreta ni la concesión de beneficios; por eso opportunityStatus permanece unknown."
-      }
-    },
-    {
-      "id": "programa-kit-4-0-2026",
-      "name": "Programa KIT 4.0 — cofinanciamiento para digitalización e Industria 4.0",
-      "recordType": "public_program",
-      "scope": "national",
-      "sector": "Industria / transformación digital / Industria 4.0",
-      "jurisdiction": null,
-      "location": null,
-      "stage": "operational",
-      "opportunityStatus": "unknown",
-      "amount": null,
-      "validFrom": "2026-04-27",
-      "validUntil": null,
-      "sourceName": "Argentina.gob.ar — Resolución 8/2026, texto actualizado (Programa KIT 4.0)",
-      "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-8-2026-425190/actualizacion",
-      "sourcePublishedAt": "2026-04-27",
-      "period": "Vigencia normativa desde 2026-04-27; bases modificadas el 2026-09-01 y catálogo actualizado el 2026-09-25. La convocatoria es abierta y continua según las bases, sujeta al cupo y a eventuales suspensiones.",
-      "description": "Programa nacional para PyMEs que incorpora servicios, hardware y software estandarizados para digitalización e Industria 4.0. El portal oficial informa cobertura de hasta el 50% del valor neto del kit, con topes publicados de ARS 20.000.000 para kits avanzados y ARS 15.000.000 para kits básicos, de gestión, comercio y calidad. El beneficio FONPEC se acredita en la cuenta tributaria ARCA del proveedor PEC, no como pago directo a la PyME; la empresa conserva a su cargo el IVA, la contraparte y cualquier saldo no cubierto. La normativa fija un cupo general de ARS 9.000 millones y exige al menos tres proveedores habilitados para que un kit figure disponible. La Disposición 106/2026 incorporó, entre otros, kits de canales y comercio digital, CRM, automatización y analítica e inteligencia artificial comercial. No se confirmó el saldo del cupo ni la disponibilidad de un kit/proveedor concreto; no asumir elegibilidad ni concesión del beneficio.",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-23",
-        "scope": "Contraste del portal oficial del Programa KIT 4.0, la Resolución 8/2026 en texto actualizado, la Resolución 343/2026 (publicada el 2026-09-01) y la Disposición 106/2026 (publicada el 2026-09-25). Se verificaron las bases, el procedimiento y las modificaciones del catálogo; no se confirmó el saldo del cupo de ARS 9.000 millones ni la disponibilidad actual de cada kit y de al menos tres proveedores habilitados. Por eso opportunityStatus permanece unknown."
-      }
-    },
-    {
-      "id": "grupo-addnice-traslado-planta-garin-2027",
-      "name": "Grupo Addnice — traslado de planta industrial a Garín",
-      "recordType": "investment_project",
+      "recordType": "tender",
       "scope": "municipal",
-      "sector": "Industria / calzado e indumentaria deportiva",
-      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
-      "location": "Garín, predio anteriormente ocupado por Rosen",
-      "stage": "preparation",
-      "opportunityStatus": "unknown",
-      "amount": null,
-      "validFrom": "2026-11-04",
-      "validUntil": null,
-      "sourceName": "Municipalidad de Escobar",
-      "sourceUrl": "https://www.escobar.gob.ar/noticias/garin-sumara-una-nueva-planta-industrial-y-fortalecera-su-perfil-produ/",
-      "sourcePublishedAt": "2026-11-04",
-      "period": "Proyecto anunciado para traslado durante 2027; no se informa fecha exacta de inicio de operaciones.",
-      "description": "La Municipalidad de Escobar informó que Grupo Addnice proyecta trasladar en 2027 su planta industrial desde Tigre a Garín, en el predio anteriormente ocupado por Rosen. La empresa fabrica y comercializa calzado e indumentaria deportiva. La fuente menciona expansión productiva y vocación de capacitación e incorporación de personal, pero no publica monto de inversión, cronograma detallado, puestos comprometidos ni estado de ejecución. Registrar como proyecto anunciado, no como inversión ejecutada ni como oportunidad abierta a terceros.",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "id": "berazategui-licitacion-76-2026-alquiler-camiones-batea",
+      "name": "Berazategui — LP 76/2026: alquiler de camiones batea con chofer",
+      "sector": "Transporte / logística / flota pesada",
+      "jurisdiction": "Partido de Berazategui, Provincia de Buenos Aires",
+      "location": "Berazategui, Partido de Berazategui, Provincia de Buenos Aires",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 593190000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial total; no equivale al monto adjudicado ni al gasto ejecutado. La publicación no aclara en el extracto el tratamiento del IVA."
+      },
+      "validUntil": "2026-12-14",
+      "period": "Venta e inspección de pliegos: 24/11–09/12/2026, de 08:00 a 14:00; consultas hasta 10/12; respuestas hasta 11/12; ofertas hasta 14/12 a las 11:30; apertura 14/12/2026 a las 12:00.",
+      "description": "Licitación Pública 76/2026 para el alquiler de tres camiones batea con chofer, combustible y mantenimiento mecánico. Presupuesto oficial total ARS 593.190.000. El pliego se vende e inspecciona del 24 de noviembre al 9 de diciembre; las consultas cierran el 10/12 y las ofertas se reciben hasta el 14/12 a las 11:30. Verificar pliego, requisitos, garantías y circulares antes de participar.",
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-24",
-        "scope": "Verificado el anuncio institucional municipal y su fecha. No se verificaron monto, permisos, avance de obra, contratación, capacidad productiva ni comienzo efectivo de operaciones; opportunityStatus permanece unknown."
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron objeto, municipio, presupuesto y cronograma. No se revisó el pliego completo ni se verificaron requisitos, garantías, ofertas, adjudicación o ejecución. El estado open refleja el período de venta publicado, no la elegibilidad de cualquier proveedor."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "id": "berazategui-licitacion-77-2026-transporte-colonia-verano",
+      "name": "Berazategui — LP 77/2026: micros para traslados de la Colonia de Verano 2027",
+      "sector": "Transporte / servicios sociales / turismo",
+      "jurisdiction": "Partido de Berazategui, Provincia de Buenos Aires",
+      "location": "Berazategui, Partido de Berazategui, Provincia de Buenos Aires",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 675000000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial total; no equivale al monto adjudicado ni al gasto ejecutado. La publicación no aclara en el extracto el tratamiento del IVA."
+      },
+      "validUntil": "2026-12-15",
+      "period": "Venta e inspección de pliegos: 24/11–09/12/2026, de 08:00 a 14:00; consultas hasta 10/12; respuestas hasta 11/12; ofertas hasta 15/12 a las 10:30; apertura 15/12/2026 a las 11:00.",
+      "description": "Licitación Pública 77/2026 para contratar micros destinados al traslado de niños, niñas, adolescentes, personas con discapacidad y adultos mayores a la Colonia de Verano municipal en el Complejo Municipal Los Privilegiados, ejercicio 2027. Presupuesto oficial total ARS 675.000.000. Verificar especificaciones de flota, accesibilidad, seguros, habilitaciones y requisitos en el pliego.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron objeto, municipio, presupuesto y cronograma. No se revisó el pliego completo ni se verificaron requisitos, garantías, ofertas, adjudicación o ejecución. El estado open refleja el período de venta publicado, no la elegibilidad de cualquier proveedor."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "id": "berazategui-licitacion-78-2026-cloro-pozos-cisternas",
+      "name": "Berazategui — LP 78/2026: provisión de cloro para pozos y cisternas",
+      "sector": "Agua y saneamiento / insumos químicos",
+      "jurisdiction": "Partido de Berazategui, Provincia de Buenos Aires",
+      "location": "Berazategui, Partido de Berazategui, Provincia de Buenos Aires",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 1093680000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial total; no equivale al monto adjudicado ni al gasto ejecutado. La publicación no aclara en el extracto el tratamiento del IVA."
+      },
+      "validUntil": "2026-12-15",
+      "period": "Venta e inspección de pliegos: 24/11–09/12/2026, de 08:00 a 14:00; consultas hasta 10/12; respuestas hasta 11/12; ofertas hasta 15/12 a las 11:30; apertura 15/12/2026 a las 12:00.",
+      "description": "Licitación Pública 78/2026 para la provisión de cloro destinado al mantenimiento de pozos de extracción de agua y cisternas del partido de Berazategui. Presupuesto oficial total ARS 1.093.680.000. Verificar concentración, calidad, logística, documentación técnica, garantías y condiciones de entrega en el pliego.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron objeto, municipio, presupuesto y cronograma. No se revisó el pliego completo ni se verificaron requisitos, garantías, ofertas, adjudicación o ejecución. El estado open refleja el período de venta publicado, no la elegibilidad de cualquier proveedor."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "id": "san-fernando-licitacion-38-2026-parque-industrial-obras-civiles",
+      "name": "San Fernando — LP 38/2026: movimiento de suelo, pluviales y pavimentos en Parque Industrial",
+      "sector": "Infraestructura industrial / obra civil",
+      "jurisdiction": "Partido de San Fernando, Provincia de Buenos Aires",
+      "location": "Parque Industrial, Partido de San Fernando, Provincia de Buenos Aires",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 2700000000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial; no equivale al monto adjudicado ni al gasto ejecutado. La publicación no aclara en el extracto el tratamiento del IVA."
+      },
+      "validUntil": "2026-12-15",
+      "period": "Apertura 15/12/2026 a las 09:00 en la Secretaría de Obras e Infraestructura Pública de San Fernando. Valor del pliego: ARS 700.000. La publicación consultada no detalla fechas de consulta o retiro.",
+      "description": "Segundo llamado de la Licitación Pública 38/2026 para movimiento de suelo, desagües pluviales y pavimentos en una calle del Parque Industrial de San Fernando. Obra civil con plazo publicado de nueve meses y presupuesto oficial ARS 2.700.000.000. Confirmar período de retiro, condiciones y alcance técnico en la Secretaría de Obras e Infraestructura Pública.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron objeto, tipo de obra, plazo, presupuesto, valor del pliego y fecha de apertura. El aviso consultado no detalla el período de consulta/retiro; opportunityStatus permanece unknown. No se revisó el pliego completo ni se verificaron requisitos, ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "id": "berazategui-licitacion-79-2026-blindaje-moviles-policiales",
+      "name": "Berazategui — LP 79/2026: blindaje y equipamiento de móviles policiales",
+      "sector": "Seguridad / automotores / blindaje",
+      "jurisdiction": "Partido de Berazategui, Provincia de Buenos Aires",
+      "location": "Berazategui, Partido de Berazategui, Provincia de Buenos Aires",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 230000000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial total; no equivale al monto adjudicado ni al gasto ejecutado. La publicación no aclara en el extracto el tratamiento del IVA."
+      },
+      "validUntil": "2026-12-16",
+      "period": "Venta e inspección de pliegos: 25/11–10/12/2026, de 08:00 a 14:00; consultas hasta 11/12; respuestas hasta 14/12; ofertas hasta 16/12 a las 10:30; apertura 16/12/2026 a las 11:00. La venta comienza el 25/11.",
+      "description": "Licitación Pública 79/2026 para trabajos de blindaje y equipamiento de móviles policiales del distrito de Berazategui. Presupuesto oficial total ARS 230.000.000. La venta de pliegos comienza el 25/11/2026; se mantiene disponibilidad unknown hasta el inicio del período publicado. Verificar especificaciones de blindaje, homologaciones, garantías y requisitos técnicos.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron objeto, municipio, presupuesto y cronograma. La venta de pliegos comienza el 25/11, por lo que no se etiqueta como abierta al momento de esta revisión. No se revisó el pliego completo ni se verificaron requisitos, garantías, ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "id": "lujan-licitacion-1-2026-recoleccion-residuos-servicios-especiales",
+      "name": "Luján — LP 1/2026: recolección, transporte y descarga de residuos domiciliarios",
+      "sector": "Gestión de residuos / servicios urbanos",
+      "jurisdiction": "Partido de Luján, Provincia de Buenos Aires",
+      "location": "Partido de Luján, Provincia de Buenos Aires",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 34730562856.9,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado para el contrato inicial de cinco años; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validUntil": "2026-12-16",
+      "period": "Adquisición de pliegos hasta 09/12/2026 inclusive; presentación de ofertas hasta 16/12/2026 a las 10:30; apertura 16/12/2026 a las 11:00. Contrato inicial previsto por cinco años. Valor del pliego: ARS 30.000.000.",
+      "description": "Licitación Pública 1/2026 para contratar recolección, transporte, descarga de residuos domiciliarios y servicios especiales en la zona céntrica, barrios y localidades del partido de Luján, por un plazo inicial de cinco años. Presupuesto oficial ARS 34.730.562.856,90. El pliego puede adquirirse hasta el 9 de diciembre; verificar capacidad operativa, garantías, requisitos ambientales y condiciones de prestación.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron objeto, jurisdicción, plazo inicial de cinco años, presupuesto, fecha límite de adquisición del pliego, presentación de ofertas y apertura. No se revisó el pliego completo ni se verificaron requisitos, garantías, ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "id": "pilar-licitacion-53-2026-escuela-secundaria-del-viso",
+      "name": "Pilar — LP 53/2026: construcción de la Escuela Secundaria N.º 4 de Del Viso",
+      "sector": "Infraestructura educativa / construcción",
+      "jurisdiction": "Partido del Pilar, Provincia de Buenos Aires",
+      "location": "Del Viso, Partido del Pilar, Provincia de Buenos Aires",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 3098077173.7,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial; no equivale al monto adjudicado ni al gasto ejecutado. La publicación no aclara en el extracto el tratamiento del IVA."
+      },
+      "validUntil": "2026-12-21",
+      "period": "Apertura 21/12/2026 a las 11:00 en la Dirección de Compras de la Municipalidad del Pilar. Valor del pliego publicado: ARS 3.098.077. La publicación consultada no detalla fechas de consulta o venta.",
+      "description": "Licitación Pública 53/2026 para construir la Escuela Secundaria N.º 4 en la localidad de Del Viso, partido del Pilar, a pedido de la Secretaría de Infraestructura municipal. Presupuesto oficial ARS 3.098.077.173,70. El aviso informa apertura y valor del pliego, pero no detalla el período de consulta/venta; confirmar disponibilidad, requisitos y garantías con la Dirección de Compras antes de considerar participación.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron objeto, localidad, presupuesto, valor del pliego y apertura. El aviso consultado no detalla el período de consulta/venta; opportunityStatus permanece unknown. No se revisó el pliego completo ni se verificaron requisitos, ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "id": "pilar-licitacion-54-2026-intervencion-vial-tratado-del-pilar",
+      "name": "Pilar — LP 54/2026: intervención vial en avenida Tratado del Pilar",
+      "sector": "Infraestructura vial / obra pública",
+      "jurisdiction": "Partido del Pilar, Provincia de Buenos Aires",
+      "location": "Partido del Pilar, Provincia de Buenos Aires",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 1483963300,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial; no equivale al monto adjudicado ni al gasto ejecutado. La publicación no aclara en el extracto el tratamiento del IVA."
+      },
+      "validUntil": "2026-12-22",
+      "period": "Apertura 22/12/2026 a las 11:00 en la Dirección de Compras de la Municipalidad del Pilar. Valor del pliego publicado: ARS 1.483.963. La publicación consultada no detalla fechas de consulta o venta.",
+      "description": "Licitación Pública 54/2026 para obras de intervención vial en la avenida Tratado del Pilar, a pedido de la Secretaría de Infraestructura municipal. Presupuesto oficial ARS 1.483.963.300. El aviso informa apertura y valor del pliego, pero no detalla el período de consulta/venta; confirmar disponibilidad, requisitos y garantías con la Dirección de Compras antes de considerar participación.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron objeto, jurisdicción, presupuesto, valor del pliego y apertura. El aviso consultado no detalla el período de consulta/venta; opportunityStatus permanece unknown. No se revisó el pliego completo ni se verificaron requisitos, ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "argentina-lng-ypf-eni-xrg-rigi-2026",
+      "name": "Argentina LNG — proyecto integrado de YPF, Eni y XRG",
+      "recordType": "investment_project",
+      "scope": "national",
+      "sector": "Energía / gas natural / GNL / infraestructura de exportación",
+      "jurisdiction": null,
+      "location": "Vaca Muerta (Neuquén); gasoductos y procesamiento asociados; dos unidades FLNG previstas offshore de Río Negro",
+      "stage": "announced",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 50750000000,
+        "currency": "USD",
+        "basis": "Inversión total esperada anunciada hasta 2050; se informaron USD 25.000 millones para 2027–2030. No equivale a gasto ejecutado ni a capital abierto a terceros."
+      },
+      "validFrom": "2026-11-20",
+      "validUntil": null,
+      "sourceName": "Reuters (20/11/2026), contrastado con Eni y YPF",
+      "sourceUrl": "https://www.reuters.com/business/energy/argentina-approves-incentive-scheme-508-billion-lng-project-2026-11-20/",
+      "relatedSources": [
+        {
+          "label": "Eni — solicitud de adhesión al RIGI y alcance técnico del proyecto (14/08/2026)",
+          "url": "https://www.eni.com/en-IT/media/press-release/2026/08/argentina-lng-submits-application-for-rigi-approval.html"
+        },
+        {
+          "label": "YPF — sitio oficial del proyecto Argentina LNG",
+          "url": "https://argentina-lng.ypf.com/"
+        }
+      ],
+      "sourcePublishedAt": "2026-11-20",
+      "period": "El 20/11/2026 se informó la aprobación anunciada del ingreso al RIGI. La decisión final de inversión fue anunciada para el 30/11/2026. Al 24/11 no se verificó FID ni resolución de adhesión publicada en el Boletín Oficial.",
+      "description": "Proyecto integrado promovido por YPF, Eni y XRG para desarrollar producción de gas en Vaca Muerta, transporte, procesamiento y exportación de GNL. Reuters informó el 20/11/2026 que el ministro de Economía anunció la aprobación de ingreso al RIGI y una inversión total esperada de USD 50.750 millones hasta 2050, con USD 25.000 millones previstos entre 2027 y 2030. La comunicación oficial de Eni del 14/08/2026 describe dos unidades flotantes FLNG con capacidad conjunta de 12 millones de toneladas anuales, previstas offshore de Río Negro, y una solicitud al RIGI orientada a alcanzar la decisión final de inversión. Al 24/11 la FID todavía no se había verificado; no registrar como obra ejecutada, desembolso realizado ni oportunidad de capital abierta a terceros.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificados los anuncios y las características del proyecto contra Reuters, la comunicación primaria de Eni y el sitio oficial de YPF. El estado verified se refiere a la procedencia y los datos publicados, no a la ejecución: no se localizó la resolución formal de adhesión al RIGI ni se verificó la FID; los montos son expectativas anunciadas."
+      }
+    },
+    {
+      "id": "escobar-licitacion-75-2026-control-vectores",
+      "name": "Escobar — LP 75/2026: fumigación y control de vectores",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Servicios ambientales / salud pública / control de vectores",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 1400000000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; la fuente consultada no especifica en el extracto si incluye IVA. No equivale al monto adjudicado."
+      },
+      "validFrom": "2026-11-19",
+      "validUntil": "2026-12-09",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
+      "sourcePublishedAt": "2026-11-19",
+      "period": "Consultas 26–27/11/2026; venta de pliego 1–2/12/2026; apertura 9/12/2026 a las 12:00.",
+      "description": "Licitación de la Secretaría de Hacienda para un servicio de fumigación y control del mosquito transmisor de dengue, Zika y chikungunya en dependencias municipales, vía pública y sectores peri domiciliarios del Partido de Escobar. Presupuesto oficial de ARS 1.400.000.000. Consultas previstas para el 26 y 27 de noviembre, venta de pliego el 1 y 2 de diciembre y apertura el 9/12/2026 a las 12:00.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Enlace de fuente corregido y contrastado contra el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523, donde figuran las LP 71/2026, 72/2026 y 75/2026. Se verificaron objeto, presupuesto, sede y cronograma publicados. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "escobar-licitacion-71-2026-piedra-partida",
+      "name": "Escobar — LP 71/2026: provisión de piedra partida",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Construcción / materiales / infraestructura",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Belén de Escobar, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 644206500,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial con IVA incluido y precio tope; no equivale al monto adjudicado."
+      },
+      "validFrom": "2026-11-19",
+      "validUntil": "2026-12-11",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
+      "sourcePublishedAt": "2026-11-19",
+      "period": "Consultas 1–2/12/2026; venta de pliego 3–4/12/2026; apertura 11/12/2026 a las 11:00.",
+      "description": "Licitación municipal para provisión de piedra partida. Presupuesto oficial de ARS 644.206.500 IVA incluido, señalado como precio tope. La consulta del pliego está prevista para el 1 y 2 de diciembre, la venta para el 3 y 4 de diciembre y la apertura para el 11/12/2026 a las 11:00. Verificar pliego, requisitos y eventuales circulares antes de decidir participar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Enlace de fuente corregido y contrastado contra el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523, donde figuran las LP 71/2026, 72/2026 y 75/2026. Se verificaron objeto, presupuesto, sede y cronograma publicados. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "escobar-licitacion-72-2026-cascote",
+      "name": "Escobar — LP 72/2026: provisión de cascote",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Construcción / materiales / infraestructura",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Belén de Escobar, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 700500000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial con IVA incluido y precio tope; no equivale al monto adjudicado."
+      },
+      "validFrom": "2026-11-19",
+      "validUntil": "2026-12-11",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
+      "sourcePublishedAt": "2026-11-19",
+      "period": "Consultas 1–2/12/2026; venta de pliego 3–4/12/2026; apertura 11/12/2026 a las 10:00.",
+      "description": "Licitación municipal para provisión de cascote. Presupuesto oficial de ARS 700.500.000 IVA incluido, señalado como precio tope. Consultas previstas para el 1 y 2 de diciembre, venta del pliego para el 3 y 4 de diciembre y apertura el 11/12/2026 a las 10:00. Verificar pliego, requisitos y eventuales circulares antes de decidir participar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Enlace de fuente corregido y contrastado contra el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523, donde figuran las LP 71/2026, 72/2026 y 75/2026. Se verificaron objeto, presupuesto, sede y cronograma publicados. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "escobar-licitacion-74-2026-polideportivo-maschwitz-pista-atletismo",
+      "name": "Escobar — LP 74/2026: cancha de fútbol y pista de atletismo del Polideportivo Ingeniero Maschwitz",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Obra pública / infraestructura deportiva",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Ingeniero Maschwitz, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 793000000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial con IVA incluido; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validFrom": "2026-11-18",
+      "validUntil": "2026-12-04",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14517/ver",
+      "sourcePublishedAt": "2026-11-18",
+      "period": "Consultas 26–27/11/2026; venta de pliego 30/11 y 01/12/2026; apertura 04/12/2026 a las 10:00.",
+      "description": "Licitación Pública 74/2026 para la construcción de una cancha de fútbol y una pista de atletismo en el Polideportivo Ingeniero Maschwitz. Presupuesto oficial de ARS 793.000.000 IVA incluido. Las consultas están previstas para el 26 y 27 de noviembre, la venta del pliego para el 30 de noviembre y el 1 de diciembre, y la apertura para el 4 de diciembre de 2026 a las 10:00 en Belén de Escobar. Verificar pliego, requisitos, garantías y eventuales circulares antes de decidir participar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 18/11/2026, sección 14517, anuncio municipal de la LP 74/2026. Se contrastaron objeto, jurisdicción, presupuesto y cronograma. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "toyota-zarate-planta-vehiculos-electrificados-2026",
+      "name": "Toyota — nueva planta de vehículos electrificados en Zárate",
+      "recordType": "investment_project",
+      "scope": "provincial",
+      "sector": "Automotriz / movilidad electrificada / manufactura / proveedores industriales",
+      "jurisdiction": "Buenos Aires",
+      "location": "Zárate, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 1300000000,
+        "currency": "USD",
+        "basis": "Inversión anunciada de más de USD 1.300 millones; el monto corresponde al proyecto y no es capital disponible para terceros."
+      },
+      "validFrom": "2026-11-16",
+      "validUntil": null,
+      "sourceName": "Presidencia de la Nación — Argentina.gob.ar",
+      "sourceUrl": "https://www.argentina.gob.ar/noticias/toyota-anuncio-una-inversion-de-mas-de-usd-1300-millones-para-construir-una-nueva-planta-en",
+      "sourcePublishedAt": "2026-11-16",
+      "period": "Proyecto anunciado el 16/11/2026; inicio de operación previsto para 2030.",
+      "description": "Toyota presentó un proyecto de inversión de más de USD 1.300 millones para construir una nueva planta en Zárate, Provincia de Buenos Aires, en el marco del RIGI. La planta se destinaría a vehículos electrificados y comenzaría a operar en 2030 con la producción de la pick-up híbrida Tacoma. La fuente oficial señala que el proyecto impulsaría proveedores locales y regionales. No se publicaron contratos de abastecimiento ni un calendario de obra detallado; tampoco se verificó aprobación definitiva del proyecto dentro del RIGI.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado el anuncio oficial, monto superior a USD 1.300 millones, localización en Zárate, destino productivo y fecha prevista de operación 2030. No se verificó aprobación definitiva del RIGI, inicio de obra, volumen de empleo ni adjudicación de contratos a proveedores."
+      }
+    },
+    {
+      "id": "escobar-feria-familia-segunda-etapa-2026",
+      "name": "Escobar — segunda etapa de puesta en valor de la Feria de la Familia",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Infraestructura pública / equipamiento comercial / economía popular",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Maquinista Savio, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "under_construction",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-11-16",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/sujarchuk-y-katopodis-visitaron-importantes-obras-de-infraestructura-e/",
+      "sourcePublishedAt": "2026-11-16",
+      "period": "Inicio de la segunda etapa informado el 16/11/2026; la fuente no publica fecha de finalización.",
+      "description": "La Municipalidad informó el inicio de la segunda etapa de la puesta en valor de la Feria de la Familia en Maquinista Savio. El proyecto contempla 346 puestos, un módulo sanitario accesible, plaza blanda, espacios recreativos, accesos peatonales, iluminación y parquización. La fuente señala una inversión total superior a ARS 4.500 millones y busca mejorar las condiciones de trabajo de casi 700 familias. Se registra como proyecto público en ejecución, no como licitación abierta. El campo amount queda nulo porque la fuente expresa un umbral superior y no un monto exacto certificado.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado el anuncio institucional municipal, la localidad, el inicio de la segunda etapa y los componentes informados. No se verificaron certificaciones de obra, pagos, avance físico independiente, contratos ni fecha de finalización."
+      }
+    },
+    {
+      "id": "escobar-el-dorado-pavimentacion-integral-maschwitz-2026",
+      "name": "Escobar — pavimentación integral del barrio El Dorado",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Obra pública / infraestructura vial / conectividad",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Ingeniero Maschwitz, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "under_construction",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-11-16",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/sujarchuk-y-katopodis-visitaron-importantes-obras-de-infraestructura-e/",
+      "sourcePublishedAt": "2026-11-16",
+      "period": "Inicio de obra informado el 16/11/2026; la fuente no publica fecha de finalización.",
+      "description": "La Municipalidad informó el inicio de la pavimentación integral de más de 23 cuadras en el barrio El Dorado, Ingeniero Maschwitz, con pavimento de hormigón, veredas y cordón cuneta. El anuncio estima una inversión cercana a ARS 7.000 millones y señala que la obra permitirá una salida más directa hacia Tigre. Se registra como proyecto público en ejecución, no como licitación abierta. El campo amount queda nulo porque el monto publicado es aproximado y no una certificación de inversión ejecutada.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado el anuncio institucional municipal, la localidad, el alcance de más de 23 cuadras y el inicio informado. No se verificaron contratos, certificaciones, pagos, avance físico independiente ni fecha de finalización."
+      }
+    },
+    {
+      "id": "escobar-quo-loma-verde-centro-comercial-2026",
+      "name": "Escobar — QUO Loma Verde: centro comercial, gastronomía y servicios",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Real estate comercial / gastronomía / entretenimiento / salud / servicios",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Loma Verde, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "under_construction",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-11-13",
+      "validUntil": null,
+      "sourceName": "El Cronista",
+      "sourceUrl": "https://www.cronista.com/negocios/llegan-dos-nuevos-shoppings-a-una-de-las-zonas-estrella-del-gba-y-ponen-la-mira-en-la-costa-atlantica/",
+      "sourcePublishedAt": "2026-11-13",
+      "period": "Proyecto en desarrollo según publicaciones del 29/10, 13/11 y 16/11/2026. El Cronista informó apertura prevista para el 24/11; El Día de Escobar la estimó para fines de 2026 o comienzos de 2027. Al 24/11 no se verificó apertura efectiva.",
+      "description": "Centro comercial de aproximadamente 8.000 m² en Loma Verde, con ocho espacios gastronómicos, gimnasio, bowling, entretenimiento y un centro de salud anexo. El Cronista atribuyó al desarrollo una inversión de USD 6 millones; LA NACION informó una cifra superior a USD 1 millón para QUO y el centro de salud, sin una base comparable claramente desglosada. Se omite el monto por discrepancia no resuelta. El proyecto se registra como desarrollo inmobiliario, no como oferta de participación de capital a terceros.",
+      "relatedSources": [
+        {
+          "label": "LA NACION — cuatro desarrollos comerciales en Escobar, 29/10/2026",
+          "url": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/"
+        },
+        {
+          "label": "El Día de Escobar — cinco centros comerciales en desarrollo (16/11/2026)",
+          "url": "https://eldiadeescobar.com.ar/boom-de-inversiones-los-cinco-centros-comerciales-que-se-vienen-en-escobar/"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Se contrastaron El Cronista (13/11/2026), LA NACION (29/10/2026) y El Día de Escobar (16/11/2026). Se verifican ubicación general y componentes del proyecto. Las fuentes difieren en el monto atribuido al conjunto y en la ventana de apertura; no se registra monto ni se afirma que haya abierto el 24/11. No se verificó disponibilidad de locales, contratos de alquiler, habilitación ni acceso de terceros al capital."
+      }
+    },
+    {
+      "id": "escobar-paseo-del-haras-2026",
+      "name": "Escobar — Paseo del Haras y desarrollo residencial Villa del Haras",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Real estate comercial / oficinas / vivienda",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Loma Verde, calle Los Cerros, entorno de Haras Santa María, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "under_construction",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 8500000,
+        "currency": "USD",
+        "basis": "Inversión total informada: USD 2,5 millones para el paseo comercial y USD 6 millones para el componente residencial; cifras reportadas, no capital disponible a terceros."
+      },
+      "validFrom": "2026-11-13",
+      "validUntil": null,
+      "sourceName": "El Cronista",
+      "sourceUrl": "https://www.cronista.com/negocios/llegan-dos-nuevos-shoppings-a-una-de-las-zonas-estrella-del-gba-y-ponen-la-mira-en-la-costa-atlantica/",
+      "sourcePublishedAt": "2026-11-13",
+      "period": "Obra informada con avance cercano al 50% al 29/10/2026; no se publicó una fecha firme de apertura o entrega en las fuentes consultadas.",
+      "description": "Desarrollo de SkyTerra en Loma Verde. El paseo comercial contempla 50 locales y 14 oficinas; el componente residencial incluye 60 townhouses. El Cronista informó una inversión de USD 2,5 millones para el sector comercial y USD 6 millones para las viviendas. LA NACION corroboró el diseño general y el avance de obra informado. Registro de proyecto en construcción; no implica disponibilidad de unidades ni recomendación de inversión.",
+      "relatedSources": [
+        {
+          "label": "LA NACION — cuatro desarrollos comerciales en Escobar, 29/10/2026",
+          "url": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Se contrastaron las publicaciones de El Cronista (13/11/2026) y LA NACION (29/10/2026). La suma de USD 8,5 millones corresponde a los dos componentes informados por separado; no es una valuación independiente ni monto ejecutado. El avance cercano al 50% es el reportado por las fuentes en octubre, no una inspección actual. No se verificó stock comercial, disponibilidad de unidades ni condiciones contractuales."
       }
     },
     {
@@ -160,34 +606,6 @@
       }
     },
     {
-      "id": "escobar-licitacion-67-2026-servicio-desagote",
-      "name": "Escobar — LP 67/2026: servicio de desagote en distintas dependencias",
-      "recordType": "tender",
-      "scope": "municipal",
-      "sector": "Servicios públicos / mantenimiento / desagote",
-      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
-      "location": "Belén de Escobar, Partido de Escobar, Provincia de Buenos Aires",
-      "stage": "unknown",
-      "opportunityStatus": "closed",
-      "amount": {
-        "value": 288950000,
-        "currency": "ARS",
-        "basis": "Presupuesto oficial con IVA incluido; no equivale al monto adjudicado ni al gasto ejecutado."
-      },
-      "validFrom": "2026-11-06",
-      "validUntil": "2026-11-20",
-      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
-      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14496/descargar",
-      "sourcePublishedAt": "2026-11-06",
-      "period": "Llamado publicado el 06/11/2026; consultas 12–13/11/2026; venta del pliego 16–17/11/2026; apertura prevista para el 20/11/2026 a las 10:00. Resultado no verificado al 24/11/2026.",
-      "description": "Licitación pública municipal para contratar el servicio de desagote en distintas dependencias. El Boletín Oficial bonaerense publicó un presupuesto oficial de ARS 288.950.000 IVA incluido, con apertura prevista en Belén de Escobar. La fecha de apertura pasó; no se incorporan acta, ofertas, adjudicatario, contrato ni prestación porque no se verificaron.",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Verificado en el Boletín Oficial provincial, edición del 06/11/2026, sección 14496, LP 67/2026: objeto, presupuesto oficial IVA incluido, valor del pliego, lugar y cronograma de consultas, venta y apertura. No se verificaron acta de apertura, ofertas, adjudicación, contrato ni prestación."
-      }
-    },
-    {
       "id": "escobar-licitacion-69-2026-mobiliario-urbano",
       "name": "Escobar — LP 69/2026: adquisición de mobiliario urbano",
       "recordType": "tender",
@@ -216,87 +634,189 @@
       }
     },
     {
-      "id": "escobar-licitacion-71-2026-piedra-partida",
-      "name": "Escobar — LP 71/2026: provisión de piedra partida",
-      "recordType": "tender",
+      "id": "escobar-red-sostenible-desarrollo-2026",
+      "name": "Escobar — Red Sostenible para el Desarrollo: convocatoria para medir, reducir y compensar huella de carbono",
+      "recordType": "public_program",
       "scope": "municipal",
-      "sector": "Construcción / materiales / infraestructura",
-      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
-      "location": "Belén de Escobar, Partido de Escobar, Provincia de Buenos Aires",
-      "stage": "announced",
-      "opportunityStatus": "open",
-      "amount": {
-        "value": 644206500,
-        "currency": "ARS",
-        "basis": "Presupuesto oficial con IVA incluido y precio tope; no equivale al monto adjudicado."
-      },
-      "validFrom": "2026-11-19",
-      "validUntil": "2026-12-11",
-      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
-      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
-      "sourcePublishedAt": "2026-11-19",
-      "period": "Consultas 1–2/12/2026; venta de pliego 3–4/12/2026; apertura 11/12/2026 a las 11:00.",
-      "description": "Licitación municipal para provisión de piedra partida. Presupuesto oficial de ARS 644.206.500 IVA incluido, señalado como precio tope. La consulta del pliego está prevista para el 1 y 2 de diciembre, la venta para el 3 y 4 de diciembre y la apertura para el 11/12/2026 a las 11:00. Verificar pliego, requisitos y eventuales circulares antes de decidir participar.",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Enlace de fuente corregido y contrastado contra el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523, donde figuran las LP 71/2026, 72/2026 y 75/2026. Se verificaron objeto, presupuesto, sede y cronograma publicados. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
-      }
-    },
-    {
-      "id": "escobar-licitacion-72-2026-cascote",
-      "name": "Escobar — LP 72/2026: provisión de cascote",
-      "recordType": "tender",
-      "scope": "municipal",
-      "sector": "Construcción / materiales / infraestructura",
-      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
-      "location": "Belén de Escobar, Partido de Escobar, Provincia de Buenos Aires",
-      "stage": "announced",
-      "opportunityStatus": "open",
-      "amount": {
-        "value": 700500000,
-        "currency": "ARS",
-        "basis": "Presupuesto oficial con IVA incluido y precio tope; no equivale al monto adjudicado."
-      },
-      "validFrom": "2026-11-19",
-      "validUntil": "2026-12-11",
-      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
-      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
-      "sourcePublishedAt": "2026-11-19",
-      "period": "Consultas 1–2/12/2026; venta de pliego 3–4/12/2026; apertura 11/12/2026 a las 10:00.",
-      "description": "Licitación municipal para provisión de cascote. Presupuesto oficial de ARS 700.500.000 IVA incluido, señalado como precio tope. Consultas previstas para el 1 y 2 de diciembre, venta del pliego para el 3 y 4 de diciembre y apertura el 11/12/2026 a las 10:00. Verificar pliego, requisitos y eventuales circulares antes de decidir participar.",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Enlace de fuente corregido y contrastado contra el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523, donde figuran las LP 71/2026, 72/2026 y 75/2026. Se verificaron objeto, presupuesto, sede y cronograma publicados. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
-      }
-    },
-    {
-      "id": "escobar-licitacion-75-2026-control-vectores",
-      "name": "Escobar — LP 75/2026: fumigación y control de vectores",
-      "recordType": "tender",
-      "scope": "municipal",
-      "sector": "Servicios ambientales / salud pública / control de vectores",
+      "sector": "Sostenibilidad / gestión ambiental / eficiencia empresarial",
       "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
       "location": "Partido de Escobar, Provincia de Buenos Aires",
       "stage": "announced",
       "opportunityStatus": "open",
-      "amount": {
-        "value": 1400000000,
-        "currency": "ARS",
-        "basis": "Presupuesto oficial publicado; la fuente consultada no especifica en el extracto si incluye IVA. No equivale al monto adjudicado."
-      },
-      "validFrom": "2026-11-19",
-      "validUntil": "2026-12-09",
-      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
-      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
-      "sourcePublishedAt": "2026-11-19",
-      "period": "Consultas 26–27/11/2026; venta de pliego 1–2/12/2026; apertura 9/12/2026 a las 12:00.",
-      "description": "Licitación de la Secretaría de Hacienda para un servicio de fumigación y control del mosquito transmisor de dengue, Zika y chikungunya en dependencias municipales, vía pública y sectores peri domiciliarios del Partido de Escobar. Presupuesto oficial de ARS 1.400.000.000. Consultas previstas para el 26 y 27 de noviembre, venta de pliego el 1 y 2 de diciembre y apertura el 9/12/2026 a las 12:00.",
+      "amount": null,
+      "validFrom": "2026-11-10",
+      "validUntil": "2026-12-30",
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/escobar-abrio-la-convocatoria-para-que-empresas-y-comercios-midan-redu/",
+      "sourcePublishedAt": "2026-11-10",
+      "period": "Solicitudes hasta el 30/12/2026; incorporación prevista durante el primer trimestre de 2027.",
+      "description": "Convocatoria municipal dirigida a empresas, industrias, comercios, hoteles, emprendimientos y otras organizaciones radicadas en el Partido de Escobar. El programa propone medir la huella de carbono mediante universidades y metodología ISO; determinar Créditos Equivalentes Sostenibles (CES) para compensar mediante proyectos de triple impacto con beneficios para Escobar; y otorgar el Sello S++ a quienes completen el proceso. Requisitos publicados: pertenecer al partido, realizar la capacitación virtual y trabajar activamente por la sostenibilidad. La inscripción e información se canalizan por Escobar 360. La comunicación no anuncia un subsidio, transferencia monetaria ni monto de financiamiento; no se debe presentar como ayuda económica.",
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-24",
-        "scope": "Enlace de fuente corregido y contrastado contra el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523, donde figuran las LP 71/2026, 72/2026 y 75/2026. Se verificaron objeto, presupuesto, sede y cronograma publicados. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+        "scope": "Verificada la publicación oficial municipal del 10/11/2026: destinatarios, condiciones de participación, metodología general, CES, Sello S++, fecha límite del 30/12/2026 e incorporación prevista para el primer trimestre de 2027. El artículo deriva a Escobar 360; no se verificó una ficha individual de inscripción ni se atribuye al programa financiamiento monetario."
+      }
+    },
+    {
+      "id": "escobar-licitacion-67-2026-servicio-desagote",
+      "name": "Escobar — LP 67/2026: servicio de desagote en distintas dependencias",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Servicios públicos / mantenimiento / desagote",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Belén de Escobar, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "unknown",
+      "opportunityStatus": "closed",
+      "amount": {
+        "value": 288950000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial con IVA incluido; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validFrom": "2026-11-06",
+      "validUntil": "2026-11-20",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14496/descargar",
+      "sourcePublishedAt": "2026-11-06",
+      "period": "Llamado publicado el 06/11/2026; consultas 12–13/11/2026; venta del pliego 16–17/11/2026; apertura prevista para el 20/11/2026 a las 10:00. Resultado no verificado al 24/11/2026.",
+      "description": "Licitación pública municipal para contratar el servicio de desagote en distintas dependencias. El Boletín Oficial bonaerense publicó un presupuesto oficial de ARS 288.950.000 IVA incluido, con apertura prevista en Belén de Escobar. La fecha de apertura pasó; no se incorporan acta, ofertas, adjudicatario, contrato ni prestación porque no se verificaron.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial provincial, edición del 06/11/2026, sección 14496, LP 67/2026: objeto, presupuesto oficial IVA incluido, valor del pliego, lugar y cronograma de consultas, venta y apertura. No se verificaron acta de apertura, ofertas, adjudicación, contrato ni prestación."
+      }
+    },
+    {
+      "id": "rimi-eficiencia-energetica-2026",
+      "name": "RIMI — inversiones en bienes de alta eficiencia energética",
+      "recordType": "incentive",
+      "scope": "national",
+      "sector": "Industria / eficiencia energética",
+      "jurisdiction": null,
+      "location": null,
+      "stage": "unknown",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-11-04",
+      "validUntil": null,
+      "sourceName": "Boletín Oficial de la República Argentina — Secretaría de Energía",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/primera/350021/20261104",
+      "sourcePublishedAt": "2026-11-04",
+      "period": "Vigencia normativa desde 2026-11-04; la Resolución SE 311/2026 no fija fecha de cierre.",
+      "description": "La Resolución SE 311/2026 aprueba el listado de bienes de alta eficiencia energética destinados a optimizar, recuperar o reducir el consumo energético en unidades productivas. El encuadramiento requiere cumplir criterios técnicos y presentar una declaración jurada técnica. Las inversiones que no puedan encuadrarse en el listado deben acreditar una reducción cuantificada del consumo mediante informe profesional. Los servicios de ingeniería, instalación, puesta en marcha, programación y capacitación pueden integrar la inversión cuando forman parte de su costo.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-22",
+        "scope": "Verificada la publicación oficial y la vigencia normativa de la Resolución SE 311/2026. No se verificó la disponibilidad operativa del Sistema de Gestión de Inversiones (SGI), la elegibilidad de una empresa concreta ni la concesión de beneficios; por eso opportunityStatus permanece unknown."
+      }
+    },
+    {
+      "id": "grupo-addnice-traslado-planta-garin-2027",
+      "name": "Grupo Addnice — traslado de planta industrial a Garín",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Industria / calzado e indumentaria deportiva",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Garín, predio anteriormente ocupado por Rosen",
+      "stage": "preparation",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-11-04",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/garin-sumara-una-nueva-planta-industrial-y-fortalecera-su-perfil-produ/",
+      "sourcePublishedAt": "2026-11-04",
+      "period": "Proyecto anunciado para traslado durante 2027; no se informa fecha exacta de inicio de operaciones.",
+      "description": "La Municipalidad de Escobar informó que Grupo Addnice proyecta trasladar en 2027 su planta industrial desde Tigre a Garín, en el predio anteriormente ocupado por Rosen. La empresa fabrica y comercializa calzado e indumentaria deportiva. La fuente menciona expansión productiva y vocación de capacitación e incorporación de personal, pero no publica monto de inversión, cronograma detallado, puestos comprometidos ni estado de ejecución. Registrar como proyecto anunciado, no como inversión ejecutada ni como oportunidad abierta a terceros.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado el anuncio institucional municipal y su fecha. No se verificaron monto, permisos, avance de obra, contratación, capacidad productiva ni comienzo efectivo de operaciones; opportunityStatus permanece unknown."
+      }
+    },
+    {
+      "id": "bess-maschwitz-genneia-edenor-2026",
+      "name": "BESS Maschwitz 33 kV — planta de almacenamiento eléctrico de Genneia y EDENOR",
+      "recordType": "investment_project",
+      "scope": "provincial",
+      "sector": "Energía / almacenamiento eléctrico / infraestructura de red",
+      "jurisdiction": "Buenos Aires",
+      "location": "Dique Luján / entorno de Ingeniero Maschwitz; discrepancia jurisdiccional entre el EIAS (Tigre) y la comunicación municipal (Escobar), pendiente de resolución.",
+      "stage": "preparation",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-11-03",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar; EIAS BESS Maschwitz alojado en el portal de participación pública del Ministerio de Ambiente de la Provincia de Buenos Aires",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/ingeniero-maschwitz-suma-una-nueva-planta-de-almacenamiento-electrico-/",
+      "sourcePublishedAt": "2026-11-03",
+      "period": "Trabajos preliminares informados por el Municipio el 03/11/2026; no se publica fecha confirmada de puesta en servicio.",
+      "description": "Proyecto BESS Maschwitz 33 kV desarrollado por Genneia en articulación técnica con EDENOR, dentro del programa AlmaGBA. La Municipalidad de Escobar informó el inicio de trabajos preliminares para una instalación de 40 MW, con hasta cinco horas continuas de refuerzo y conexión subterránea en 33 kV, orientada a mejorar la confiabilidad del suministro en el nodo regional de Maschwitz y Garín. No se publicó monto de inversión. Existe una discrepancia geográfica que debe conservarse: la comunicación municipal del 03/11/2026 ubica la planta en Ingeniero Maschwitz, Partido de Escobar; el Estudio de Impacto Ambiental y Social EIAS BESS MAS 022/25, fechado el 16/09/2025 y alojado en el portal provincial, identifica el predio como Dique Luján, Partido de Tigre, e incluye coordenadas. Por ello el registro se asigna solo a la Provincia de Buenos Aires y no debe convertirse en un punto municipal del mapa hasta aclarar la jurisdicción. El Municipio informa autorización de la Secretaría de Energía para conexión al sistema, visto bueno ambiental para trabajos preliminares, Prefactibilidad Hídrica y aval antisiniestral; también indica que las obras civiles y la puesta en marcha están sujetas a licencia de construcción y habilitación municipal, y que la Prefactibilidad es previa a la Declaración de Impacto Ambiental final. No se presenta como planta operativa ni como convocatoria abierta a terceros. Se reportaron cuestionamientos vecinales sobre ubicación y seguridad; deben seguirse sin convertir reclamos periodísticos en conclusiones técnicas.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Contraste del anuncio municipal del 03/11/2026 con el EIAS BESS MAS 022/25 alojado en el portal de participación pública del Ministerio de Ambiente bonaerense, fechado el 16/09/2025 (https://participacionpublica.ambiente.gba.gob.ar/adjunto/viewpdf/Planta-almacenamiento-BESS-MASCHWITZ-33-kV-y-LMT-de-vinculaci%C3%B3n.pdf). Se verificaron proponente, articulación técnica, potencia declarada de 40 MW, autonomía de cinco horas, conexión 33 kV y trabajos preliminares anunciados. La fuente municipal identifica Ingeniero Maschwitz/Escobar; el EIAS identifica Dique Luján/Tigre. La jurisdicción municipal queda expresamente sin resolver. No se verificaron monto, Declaración de Impacto Ambiental final, licencia municipal de construcción, habilitación operativa, avance posterior ni fecha de puesta en servicio."
+      }
+    },
+    {
+      "id": "escobar-paseo-loma-verde-2026",
+      "name": "Escobar — Paseo Loma Verde: centro comercial y supermercado",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Real estate comercial / retail / servicios",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Loma Verde, Colectora Oeste y calle Boote, km 55,6 de Panamericana, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "under_construction",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 6000000,
+        "currency": "USD",
+        "basis": "Piso de inversión publicado: más de USD 6 millones entre proyecto y tierra; USD 6 millones se registra como umbral inferior, no como monto exacto."
+      },
+      "validFrom": "2026-10-29",
+      "validUntil": null,
+      "sourceName": "LA NACION",
+      "sourceUrl": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/",
+      "sourcePublishedAt": "2026-10-29",
+      "period": "En construcción al 29/10/2026; apertura proyectada para diciembre de 2026, con alrededor del 70% de los locales previstos para la primera etapa.",
+      "description": "Proyecto comercial en Loma Verde con 42 locales modulares y un módulo para supermercado. LA NACION informó un predio de 7.000 m², aproximadamente 3.000 m² construidos y una inversión superior a USD 6 millones incluyendo tierra y proyecto. La apertura se proyectó para diciembre de 2026. No se verificó el avance posterior, la habilitación ni la ocupación efectiva de locales.",
+      "relatedSources": [
+        {
+          "label": "El Cronista — QUO y Paseo del Haras, 13/11/2026",
+          "url": "https://www.cronista.com/negocios/llegan-dos-nuevos-shoppings-a-una-de-las-zonas-estrella-del-gba-y-ponen-la-mira-en-la-costa-atlantica/"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Revisión de LA NACION (29/10/2026). Se registran como datos publicados el número de locales, superficie, inversión mínima y ventana de apertura. El monto es un piso, no una cifra exacta. No se verificó la habilitación municipal, los contratos de locación ni el estado actual de ocupación."
+      }
+    },
+    {
+      "id": "escobar-black-paseo-comercial-avenida-lagos-2026",
+      "name": "Escobar — Black: centro comercial, entretenimiento y espacios de almacenamiento",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Real estate comercial / entretenimiento / retail / almacenamiento",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Entorno de Avenida de los Lagos y corredor Panamericana km 45, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "under_construction",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 25000000,
+        "currency": "USD",
+        "basis": "Inversión estimada publicada por LA NACION y atribuida a los desarrolladores; no es capital ejecutado ni oferta abierta a terceros."
+      },
+      "validFrom": "2026-10-29",
+      "validUntil": null,
+      "sourceName": "LA NACION",
+      "sourceUrl": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/",
+      "sourcePublishedAt": "2026-10-29",
+      "period": "Proyecto en desarrollo; finalización prevista para 2028 según declaraciones de sus desarrolladores recogidas el 29/10/2026.",
+      "description": "Centro comercial a cielo abierto proyectado en el corredor de Avenida de los Lagos, con 260 locales, salas de cine, gastronomía, gimnasio, coworking y entre 30 y 40 espacios de almacenamiento. LA NACION informó una inversión estimada de USD 25 millones, 9.000 m² y 250 plazas de estacionamiento. La terminación fue proyectada para 2028. La ubicación se mantiene a escala de corredor porque la fuente no permite fijar una parcela o coordenada precisa. No se verificó preventa, habilitación ni disponibilidad comercial actual.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Revisión de LA NACION (29/10/2026), que recoge información y declaraciones de los desarrolladores. El monto, la superficie, la cantidad de locales y el plazo son datos publicados, no auditoría de obra ni confirmación de capital desembolsado. No se infiere dirección catastral ni disponibilidad de unidades."
       }
     },
     {
@@ -424,323 +944,27 @@
       }
     },
     {
-      "id": "toyota-zarate-planta-vehiculos-electrificados-2026",
-      "name": "Toyota — nueva planta de vehículos electrificados en Zárate",
-      "recordType": "investment_project",
-      "scope": "provincial",
-      "sector": "Automotriz / movilidad electrificada / manufactura / proveedores industriales",
-      "jurisdiction": "Buenos Aires",
-      "location": "Zárate, Provincia de Buenos Aires",
-      "stage": "announced",
-      "opportunityStatus": "unknown",
-      "amount": {
-        "value": 1300000000,
-        "currency": "USD",
-        "basis": "Inversión anunciada de más de USD 1.300 millones; el monto corresponde al proyecto y no es capital disponible para terceros."
-      },
-      "validFrom": "2026-11-16",
-      "validUntil": null,
-      "sourceName": "Presidencia de la Nación — Argentina.gob.ar",
-      "sourceUrl": "https://www.argentina.gob.ar/noticias/toyota-anuncio-una-inversion-de-mas-de-usd-1300-millones-para-construir-una-nueva-planta-en",
-      "sourcePublishedAt": "2026-11-16",
-      "period": "Proyecto anunciado el 16/11/2026; inicio de operación previsto para 2030.",
-      "description": "Toyota presentó un proyecto de inversión de más de USD 1.300 millones para construir una nueva planta en Zárate, Provincia de Buenos Aires, en el marco del RIGI. La planta se destinaría a vehículos electrificados y comenzaría a operar en 2030 con la producción de la pick-up híbrida Tacoma. La fuente oficial señala que el proyecto impulsaría proveedores locales y regionales. No se publicaron contratos de abastecimiento ni un calendario de obra detallado; tampoco se verificó aprobación definitiva del proyecto dentro del RIGI.",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Verificado el anuncio oficial, monto superior a USD 1.300 millones, localización en Zárate, destino productivo y fecha prevista de operación 2030. No se verificó aprobación definitiva del RIGI, inicio de obra, volumen de empleo ni adjudicación de contratos a proveedores."
-      }
-    },
-    {
-      "id": "escobar-licitacion-74-2026-polideportivo-maschwitz-pista-atletismo",
-      "name": "Escobar — LP 74/2026: cancha de fútbol y pista de atletismo del Polideportivo Ingeniero Maschwitz",
-      "recordType": "tender",
-      "scope": "municipal",
-      "sector": "Obra pública / infraestructura deportiva",
-      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
-      "location": "Ingeniero Maschwitz, Partido de Escobar, Provincia de Buenos Aires",
-      "stage": "announced",
-      "opportunityStatus": "open",
-      "amount": {
-        "value": 793000000,
-        "currency": "ARS",
-        "basis": "Presupuesto oficial con IVA incluido; no equivale al monto adjudicado ni al gasto ejecutado."
-      },
-      "validFrom": "2026-11-18",
-      "validUntil": "2026-12-04",
-      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
-      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14517/ver",
-      "sourcePublishedAt": "2026-11-18",
-      "period": "Consultas 26–27/11/2026; venta de pliego 30/11 y 01/12/2026; apertura 04/12/2026 a las 10:00.",
-      "description": "Licitación Pública 74/2026 para la construcción de una cancha de fútbol y una pista de atletismo en el Polideportivo Ingeniero Maschwitz. Presupuesto oficial de ARS 793.000.000 IVA incluido. Las consultas están previstas para el 26 y 27 de noviembre, la venta del pliego para el 30 de noviembre y el 1 de diciembre, y la apertura para el 4 de diciembre de 2026 a las 10:00 en Belén de Escobar. Verificar pliego, requisitos, garantías y eventuales circulares antes de decidir participar.",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 18/11/2026, sección 14517, anuncio municipal de la LP 74/2026. Se contrastaron objeto, jurisdicción, presupuesto y cronograma. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
-      }
-    },
-    {
-      "id": "escobar-feria-familia-segunda-etapa-2026",
-      "name": "Escobar — segunda etapa de puesta en valor de la Feria de la Familia",
-      "recordType": "investment_project",
-      "scope": "municipal",
-      "sector": "Infraestructura pública / equipamiento comercial / economía popular",
-      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
-      "location": "Maquinista Savio, Partido de Escobar, Provincia de Buenos Aires",
-      "stage": "under_construction",
-      "opportunityStatus": "unknown",
-      "amount": null,
-      "validFrom": "2026-11-16",
-      "validUntil": null,
-      "sourceName": "Municipalidad de Escobar",
-      "sourceUrl": "https://www.escobar.gob.ar/noticias/sujarchuk-y-katopodis-visitaron-importantes-obras-de-infraestructura-e/",
-      "sourcePublishedAt": "2026-11-16",
-      "period": "Inicio de la segunda etapa informado el 16/11/2026; la fuente no publica fecha de finalización.",
-      "description": "La Municipalidad informó el inicio de la segunda etapa de la puesta en valor de la Feria de la Familia en Maquinista Savio. El proyecto contempla 346 puestos, un módulo sanitario accesible, plaza blanda, espacios recreativos, accesos peatonales, iluminación y parquización. La fuente señala una inversión total superior a ARS 4.500 millones y busca mejorar las condiciones de trabajo de casi 700 familias. Se registra como proyecto público en ejecución, no como licitación abierta. El campo amount queda nulo porque la fuente expresa un umbral superior y no un monto exacto certificado.",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Verificado el anuncio institucional municipal, la localidad, el inicio de la segunda etapa y los componentes informados. No se verificaron certificaciones de obra, pagos, avance físico independiente, contratos ni fecha de finalización."
-      }
-    },
-    {
-      "id": "escobar-el-dorado-pavimentacion-integral-maschwitz-2026",
-      "name": "Escobar — pavimentación integral del barrio El Dorado",
-      "recordType": "investment_project",
-      "scope": "municipal",
-      "sector": "Obra pública / infraestructura vial / conectividad",
-      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
-      "location": "Ingeniero Maschwitz, Partido de Escobar, Provincia de Buenos Aires",
-      "stage": "under_construction",
-      "opportunityStatus": "unknown",
-      "amount": null,
-      "validFrom": "2026-11-16",
-      "validUntil": null,
-      "sourceName": "Municipalidad de Escobar",
-      "sourceUrl": "https://www.escobar.gob.ar/noticias/sujarchuk-y-katopodis-visitaron-importantes-obras-de-infraestructura-e/",
-      "sourcePublishedAt": "2026-11-16",
-      "period": "Inicio de obra informado el 16/11/2026; la fuente no publica fecha de finalización.",
-      "description": "La Municipalidad informó el inicio de la pavimentación integral de más de 23 cuadras en el barrio El Dorado, Ingeniero Maschwitz, con pavimento de hormigón, veredas y cordón cuneta. El anuncio estima una inversión cercana a ARS 7.000 millones y señala que la obra permitirá una salida más directa hacia Tigre. Se registra como proyecto público en ejecución, no como licitación abierta. El campo amount queda nulo porque el monto publicado es aproximado y no una certificación de inversión ejecutada.",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Verificado el anuncio institucional municipal, la localidad, el alcance de más de 23 cuadras y el inicio informado. No se verificaron contratos, certificaciones, pagos, avance físico independiente ni fecha de finalización."
-      }
-    },
-    {
-      "id": "escobar-red-sostenible-desarrollo-2026",
-      "name": "Escobar — Red Sostenible para el Desarrollo: convocatoria para medir, reducir y compensar huella de carbono",
+      "id": "programa-kit-4-0-2026",
+      "name": "Programa KIT 4.0 — cofinanciamiento para digitalización e Industria 4.0",
       "recordType": "public_program",
-      "scope": "municipal",
-      "sector": "Sostenibilidad / gestión ambiental / eficiencia empresarial",
-      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
-      "location": "Partido de Escobar, Provincia de Buenos Aires",
-      "stage": "announced",
-      "opportunityStatus": "open",
-      "amount": null,
-      "validFrom": "2026-11-10",
-      "validUntil": "2026-12-30",
-      "sourceName": "Municipalidad de Escobar",
-      "sourceUrl": "https://www.escobar.gob.ar/noticias/escobar-abrio-la-convocatoria-para-que-empresas-y-comercios-midan-redu/",
-      "sourcePublishedAt": "2026-11-10",
-      "period": "Solicitudes hasta el 30/12/2026; incorporación prevista durante el primer trimestre de 2027.",
-      "description": "Convocatoria municipal dirigida a empresas, industrias, comercios, hoteles, emprendimientos y otras organizaciones radicadas en el Partido de Escobar. El programa propone medir la huella de carbono mediante universidades y metodología ISO; determinar Créditos Equivalentes Sostenibles (CES) para compensar mediante proyectos de triple impacto con beneficios para Escobar; y otorgar el Sello S++ a quienes completen el proceso. Requisitos publicados: pertenecer al partido, realizar la capacitación virtual y trabajar activamente por la sostenibilidad. La inscripción e información se canalizan por Escobar 360. La comunicación no anuncia un subsidio, transferencia monetaria ni monto de financiamiento; no se debe presentar como ayuda económica.",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Verificada la publicación oficial municipal del 10/11/2026: destinatarios, condiciones de participación, metodología general, CES, Sello S++, fecha límite del 30/12/2026 e incorporación prevista para el primer trimestre de 2027. El artículo deriva a Escobar 360; no se verificó una ficha individual de inscripción ni se atribuye al programa financiamiento monetario."
-      }
-    },
-    {
-      "id": "bess-maschwitz-genneia-edenor-2026",
-      "name": "BESS Maschwitz 33 kV — planta de almacenamiento eléctrico de Genneia y EDENOR",
-      "recordType": "investment_project",
-      "scope": "provincial",
-      "sector": "Energía / almacenamiento eléctrico / infraestructura de red",
-      "jurisdiction": "Buenos Aires",
-      "location": "Dique Luján / entorno de Ingeniero Maschwitz; discrepancia jurisdiccional entre el EIAS (Tigre) y la comunicación municipal (Escobar), pendiente de resolución.",
-      "stage": "preparation",
-      "opportunityStatus": "unknown",
-      "amount": null,
-      "validFrom": "2026-11-03",
-      "validUntil": null,
-      "sourceName": "Municipalidad de Escobar; EIAS BESS Maschwitz alojado en el portal de participación pública del Ministerio de Ambiente de la Provincia de Buenos Aires",
-      "sourceUrl": "https://www.escobar.gob.ar/noticias/ingeniero-maschwitz-suma-una-nueva-planta-de-almacenamiento-electrico-/",
-      "sourcePublishedAt": "2026-11-03",
-      "period": "Trabajos preliminares informados por el Municipio el 03/11/2026; no se publica fecha confirmada de puesta en servicio.",
-      "description": "Proyecto BESS Maschwitz 33 kV desarrollado por Genneia en articulación técnica con EDENOR, dentro del programa AlmaGBA. La Municipalidad de Escobar informó el inicio de trabajos preliminares para una instalación de 40 MW, con hasta cinco horas continuas de refuerzo y conexión subterránea en 33 kV, orientada a mejorar la confiabilidad del suministro en el nodo regional de Maschwitz y Garín. No se publicó monto de inversión. Existe una discrepancia geográfica que debe conservarse: la comunicación municipal del 03/11/2026 ubica la planta en Ingeniero Maschwitz, Partido de Escobar; el Estudio de Impacto Ambiental y Social EIAS BESS MAS 022/25, fechado el 16/09/2025 y alojado en el portal provincial, identifica el predio como Dique Luján, Partido de Tigre, e incluye coordenadas. Por ello el registro se asigna solo a la Provincia de Buenos Aires y no debe convertirse en un punto municipal del mapa hasta aclarar la jurisdicción. El Municipio informa autorización de la Secretaría de Energía para conexión al sistema, visto bueno ambiental para trabajos preliminares, Prefactibilidad Hídrica y aval antisiniestral; también indica que las obras civiles y la puesta en marcha están sujetas a licencia de construcción y habilitación municipal, y que la Prefactibilidad es previa a la Declaración de Impacto Ambiental final. No se presenta como planta operativa ni como convocatoria abierta a terceros. Se reportaron cuestionamientos vecinales sobre ubicación y seguridad; deben seguirse sin convertir reclamos periodísticos en conclusiones técnicas.",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Contraste del anuncio municipal del 03/11/2026 con el EIAS BESS MAS 022/25 alojado en el portal de participación pública del Ministerio de Ambiente bonaerense, fechado el 16/09/2025 (https://participacionpublica.ambiente.gba.gob.ar/adjunto/viewpdf/Planta-almacenamiento-BESS-MASCHWITZ-33-kV-y-LMT-de-vinculaci%C3%B3n.pdf). Se verificaron proponente, articulación técnica, potencia declarada de 40 MW, autonomía de cinco horas, conexión 33 kV y trabajos preliminares anunciados. La fuente municipal identifica Ingeniero Maschwitz/Escobar; el EIAS identifica Dique Luján/Tigre. La jurisdicción municipal queda expresamente sin resolver. No se verificaron monto, Declaración de Impacto Ambiental final, licencia municipal de construcción, habilitación operativa, avance posterior ni fecha de puesta en servicio."
-      }
-    },
-    {
-      "id": "argentina-lng-ypf-eni-xrg-rigi-2026",
-      "name": "Argentina LNG — proyecto integrado de YPF, Eni y XRG",
-      "recordType": "investment_project",
       "scope": "national",
-      "sector": "Energía / gas natural / GNL / infraestructura de exportación",
+      "sector": "Industria / transformación digital / Industria 4.0",
       "jurisdiction": null,
-      "location": "Vaca Muerta (Neuquén); gasoductos y procesamiento asociados; dos unidades FLNG previstas offshore de Río Negro",
-      "stage": "announced",
-      "opportunityStatus": "unknown",
-      "amount": {
-        "value": 50750000000,
-        "currency": "USD",
-        "basis": "Inversión total esperada anunciada hasta 2050; se informaron USD 25.000 millones para 2027–2030. No equivale a gasto ejecutado ni a capital abierto a terceros."
-      },
-      "validFrom": "2026-11-20",
-      "validUntil": null,
-      "sourceName": "Reuters (20/11/2026), contrastado con Eni y YPF",
-      "sourceUrl": "https://www.reuters.com/business/energy/argentina-approves-incentive-scheme-508-billion-lng-project-2026-11-20/",
-      "relatedSources": [
-        {
-          "label": "Eni — solicitud de adhesión al RIGI y alcance técnico del proyecto (14/08/2026)",
-          "url": "https://www.eni.com/en-IT/media/press-release/2026/08/argentina-lng-submits-application-for-rigi-approval.html"
-        },
-        {
-          "label": "YPF — sitio oficial del proyecto Argentina LNG",
-          "url": "https://argentina-lng.ypf.com/"
-        }
-      ],
-      "sourcePublishedAt": "2026-11-20",
-      "period": "El 20/11/2026 se informó la aprobación anunciada del ingreso al RIGI. La decisión final de inversión fue anunciada para el 30/11/2026. Al 24/11 no se verificó FID ni resolución de adhesión publicada en el Boletín Oficial.",
-      "description": "Proyecto integrado promovido por YPF, Eni y XRG para desarrollar producción de gas en Vaca Muerta, transporte, procesamiento y exportación de GNL. Reuters informó el 20/11/2026 que el ministro de Economía anunció la aprobación de ingreso al RIGI y una inversión total esperada de USD 50.750 millones hasta 2050, con USD 25.000 millones previstos entre 2027 y 2030. La comunicación oficial de Eni del 14/08/2026 describe dos unidades flotantes FLNG con capacidad conjunta de 12 millones de toneladas anuales, previstas offshore de Río Negro, y una solicitud al RIGI orientada a alcanzar la decisión final de inversión. Al 24/11 la FID todavía no se había verificado; no registrar como obra ejecutada, desembolso realizado ni oportunidad de capital abierta a terceros.",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Verificados los anuncios y las características del proyecto contra Reuters, la comunicación primaria de Eni y el sitio oficial de YPF. El estado verified se refiere a la procedencia y los datos publicados, no a la ejecución: no se localizó la resolución formal de adhesión al RIGI ni se verificó la FID; los montos son expectativas anunciadas."
-      }
-    },
-    {
-      "id": "escobar-quo-loma-verde-centro-comercial-2026",
-      "name": "Escobar — QUO Loma Verde: centro comercial, gastronomía y servicios",
-      "recordType": "investment_project",
-      "scope": "municipal",
-      "sector": "Real estate comercial / gastronomía / entretenimiento / salud / servicios",
-      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
-      "location": "Loma Verde, Partido de Escobar, Provincia de Buenos Aires",
-      "stage": "under_construction",
+      "location": null,
+      "stage": "operational",
       "opportunityStatus": "unknown",
       "amount": null,
-      "validFrom": "2026-11-13",
+      "validFrom": "2026-04-27",
       "validUntil": null,
-      "sourceName": "El Cronista",
-      "sourceUrl": "https://www.cronista.com/negocios/llegan-dos-nuevos-shoppings-a-una-de-las-zonas-estrella-del-gba-y-ponen-la-mira-en-la-costa-atlantica/",
-      "sourcePublishedAt": "2026-11-13",
-      "period": "Proyecto en desarrollo según publicaciones del 29/10, 13/11 y 16/11/2026. El Cronista informó apertura prevista para el 24/11; El Día de Escobar la estimó para fines de 2026 o comienzos de 2027. Al 24/11 no se verificó apertura efectiva.",
-      "description": "Centro comercial de aproximadamente 8.000 m² en Loma Verde, con ocho espacios gastronómicos, gimnasio, bowling, entretenimiento y un centro de salud anexo. El Cronista atribuyó al desarrollo una inversión de USD 6 millones; LA NACION informó una cifra superior a USD 1 millón para QUO y el centro de salud, sin una base comparable claramente desglosada. Se omite el monto por discrepancia no resuelta. El proyecto se registra como desarrollo inmobiliario, no como oferta de participación de capital a terceros.",
-      "relatedSources": [
-        {
-          "label": "LA NACION — cuatro desarrollos comerciales en Escobar, 29/10/2026",
-          "url": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/"
-        },
-        {
-          "label": "El Día de Escobar — cinco centros comerciales en desarrollo (16/11/2026)",
-          "url": "https://eldiadeescobar.com.ar/boom-de-inversiones-los-cinco-centros-comerciales-que-se-vienen-en-escobar/"
-        }
-      ],
+      "sourceName": "Argentina.gob.ar — Resolución 8/2026, texto actualizado (Programa KIT 4.0)",
+      "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-8-2026-425190/actualizacion",
+      "sourcePublishedAt": "2026-04-27",
+      "period": "Vigencia normativa desde 2026-04-27; bases modificadas el 2026-09-01 y catálogo actualizado el 2026-09-25. La convocatoria es abierta y continua según las bases, sujeta al cupo y a eventuales suspensiones.",
+      "description": "Programa nacional para PyMEs que incorpora servicios, hardware y software estandarizados para digitalización e Industria 4.0. El portal oficial informa cobertura de hasta el 50% del valor neto del kit, con topes publicados de ARS 20.000.000 para kits avanzados y ARS 15.000.000 para kits básicos, de gestión, comercio y calidad. El beneficio FONPEC se acredita en la cuenta tributaria ARCA del proveedor PEC, no como pago directo a la PyME; la empresa conserva a su cargo el IVA, la contraparte y cualquier saldo no cubierto. La normativa fija un cupo general de ARS 9.000 millones y exige al menos tres proveedores habilitados para que un kit figure disponible. La Disposición 106/2026 incorporó, entre otros, kits de canales y comercio digital, CRM, automatización y analítica e inteligencia artificial comercial. No se confirmó el saldo del cupo ni la disponibilidad de un kit/proveedor concreto; no asumir elegibilidad ni concesión del beneficio.",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Se contrastaron El Cronista (13/11/2026), LA NACION (29/10/2026) y El Día de Escobar (16/11/2026). Se verifican ubicación general y componentes del proyecto. Las fuentes difieren en el monto atribuido al conjunto y en la ventana de apertura; no se registra monto ni se afirma que haya abierto el 24/11. No se verificó disponibilidad de locales, contratos de alquiler, habilitación ni acceso de terceros al capital."
-      }
-    },
-    {
-      "id": "escobar-paseo-del-haras-2026",
-      "name": "Escobar — Paseo del Haras y desarrollo residencial Villa del Haras",
-      "recordType": "investment_project",
-      "scope": "municipal",
-      "sector": "Real estate comercial / oficinas / vivienda",
-      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
-      "location": "Loma Verde, calle Los Cerros, entorno de Haras Santa María, Partido de Escobar, Provincia de Buenos Aires",
-      "stage": "under_construction",
-      "opportunityStatus": "unknown",
-      "amount": {
-        "value": 8500000,
-        "currency": "USD",
-        "basis": "Inversión total informada: USD 2,5 millones para el paseo comercial y USD 6 millones para el componente residencial; cifras reportadas, no capital disponible a terceros."
-      },
-      "validFrom": "2026-11-13",
-      "validUntil": null,
-      "sourceName": "El Cronista",
-      "sourceUrl": "https://www.cronista.com/negocios/llegan-dos-nuevos-shoppings-a-una-de-las-zonas-estrella-del-gba-y-ponen-la-mira-en-la-costa-atlantica/",
-      "sourcePublishedAt": "2026-11-13",
-      "period": "Obra informada con avance cercano al 50% al 29/10/2026; no se publicó una fecha firme de apertura o entrega en las fuentes consultadas.",
-      "description": "Desarrollo de SkyTerra en Loma Verde. El paseo comercial contempla 50 locales y 14 oficinas; el componente residencial incluye 60 townhouses. El Cronista informó una inversión de USD 2,5 millones para el sector comercial y USD 6 millones para las viviendas. LA NACION corroboró el diseño general y el avance de obra informado. Registro de proyecto en construcción; no implica disponibilidad de unidades ni recomendación de inversión.",
-      "relatedSources": [
-        {
-          "label": "LA NACION — cuatro desarrollos comerciales en Escobar, 29/10/2026",
-          "url": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/"
-        }
-      ],
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Se contrastaron las publicaciones de El Cronista (13/11/2026) y LA NACION (29/10/2026). La suma de USD 8,5 millones corresponde a los dos componentes informados por separado; no es una valuación independiente ni monto ejecutado. El avance cercano al 50% es el reportado por las fuentes en octubre, no una inspección actual. No se verificó stock comercial, disponibilidad de unidades ni condiciones contractuales."
-      }
-    },
-    {
-      "id": "escobar-paseo-loma-verde-2026",
-      "name": "Escobar — Paseo Loma Verde: centro comercial y supermercado",
-      "recordType": "investment_project",
-      "scope": "municipal",
-      "sector": "Real estate comercial / retail / servicios",
-      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
-      "location": "Loma Verde, Colectora Oeste y calle Boote, km 55,6 de Panamericana, Partido de Escobar, Provincia de Buenos Aires",
-      "stage": "under_construction",
-      "opportunityStatus": "unknown",
-      "amount": {
-        "value": 6000000,
-        "currency": "USD",
-        "basis": "Piso de inversión publicado: más de USD 6 millones entre proyecto y tierra; USD 6 millones se registra como umbral inferior, no como monto exacto."
-      },
-      "validFrom": "2026-10-29",
-      "validUntil": null,
-      "sourceName": "LA NACION",
-      "sourceUrl": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/",
-      "sourcePublishedAt": "2026-10-29",
-      "period": "En construcción al 29/10/2026; apertura proyectada para diciembre de 2026, con alrededor del 70% de los locales previstos para la primera etapa.",
-      "description": "Proyecto comercial en Loma Verde con 42 locales modulares y un módulo para supermercado. LA NACION informó un predio de 7.000 m², aproximadamente 3.000 m² construidos y una inversión superior a USD 6 millones incluyendo tierra y proyecto. La apertura se proyectó para diciembre de 2026. No se verificó el avance posterior, la habilitación ni la ocupación efectiva de locales.",
-      "relatedSources": [
-        {
-          "label": "El Cronista — QUO y Paseo del Haras, 13/11/2026",
-          "url": "https://www.cronista.com/negocios/llegan-dos-nuevos-shoppings-a-una-de-las-zonas-estrella-del-gba-y-ponen-la-mira-en-la-costa-atlantica/"
-        }
-      ],
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Revisión de LA NACION (29/10/2026). Se registran como datos publicados el número de locales, superficie, inversión mínima y ventana de apertura. El monto es un piso, no una cifra exacta. No se verificó la habilitación municipal, los contratos de locación ni el estado actual de ocupación."
-      }
-    },
-    {
-      "id": "escobar-black-paseo-comercial-avenida-lagos-2026",
-      "name": "Escobar — Black: centro comercial, entretenimiento y espacios de almacenamiento",
-      "recordType": "investment_project",
-      "scope": "municipal",
-      "sector": "Real estate comercial / entretenimiento / retail / almacenamiento",
-      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
-      "location": "Entorno de Avenida de los Lagos y corredor Panamericana km 45, Partido de Escobar, Provincia de Buenos Aires",
-      "stage": "under_construction",
-      "opportunityStatus": "unknown",
-      "amount": {
-        "value": 25000000,
-        "currency": "USD",
-        "basis": "Inversión estimada publicada por LA NACION y atribuida a los desarrolladores; no es capital ejecutado ni oferta abierta a terceros."
-      },
-      "validFrom": "2026-10-29",
-      "validUntil": null,
-      "sourceName": "LA NACION",
-      "sourceUrl": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/",
-      "sourcePublishedAt": "2026-10-29",
-      "period": "Proyecto en desarrollo; finalización prevista para 2028 según declaraciones de sus desarrolladores recogidas el 29/10/2026.",
-      "description": "Centro comercial a cielo abierto proyectado en el corredor de Avenida de los Lagos, con 260 locales, salas de cine, gastronomía, gimnasio, coworking y entre 30 y 40 espacios de almacenamiento. LA NACION informó una inversión estimada de USD 25 millones, 9.000 m² y 250 plazas de estacionamiento. La terminación fue proyectada para 2028. La ubicación se mantiene a escala de corredor porque la fuente no permite fijar una parcela o coordenada precisa. No se verificó preventa, habilitación ni disponibilidad comercial actual.",
-      "verification": {
-        "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Revisión de LA NACION (29/10/2026), que recoge información y declaraciones de los desarrolladores. El monto, la superficie, la cantidad de locales y el plazo son datos publicados, no auditoría de obra ni confirmación de capital desembolsado. No se infiere dirección catastral ni disponibilidad de unidades."
+        "checkedAt": "2026-11-23",
+        "scope": "Contraste del portal oficial del Programa KIT 4.0, la Resolución 8/2026 en texto actualizado, la Resolución 343/2026 (publicada el 2026-09-01) y la Disposición 106/2026 (publicada el 2026-09-25). Se verificaron las bases, el procedimiento y las modificaciones del catálogo; no se confirmó el saldo del cupo de ARS 9.000 millones ni la disponibilidad actual de cada kit y de al menos tres proveedores habilitados. Por eso opportunityStatus permanece unknown."
       }
     }
   ]
