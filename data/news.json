@@ -460,6 +460,34 @@
     "id": "news-www-argentina-gob-ar-noticias-toyota-anuncio-una-inversion-de-mas-de-usd-1300-millones-para-construir-una-nueva-planta-en"
   },
   {
+    "id": "news-www-escobar-gob-ar-noticias-sujarchuk-y-katopodis-visitaron-importantes-obras-de-infraestructura-e",
+    "title": "Ecosan consolida en Loma Verde una planta de construcción modular industrializada",
+    "date": "2026-11-16",
+    "category": "Empresas",
+    "summary": "La Municipalidad de Escobar informó que la planta de Ecosan en Loma Verde se dedica a la construcción modular industrializada y emplea a más de 180 personas, con prioridad en la contratación de habitantes del distrito. La empresa desarrolla soluciones para viviendas, edificios residenciales y establecimientos comerciales en distintos puntos del país. La cifra de empleo es un dato publicado por el Municipio y no una auditoría de nómina; no se presenta como creación reciente de puestos.",
+    "source": "Municipalidad de Escobar",
+    "url": "https://www.escobar.gob.ar/noticias/sujarchuk-y-katopodis-visitaron-importantes-obras-de-infraestructura-e/",
+    "period": "Visita institucional y descripción de la planta publicadas el 16/11/2026; el dato de empleo corresponde a lo informado por el Municipio en esa fecha.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Se revisó la publicación oficial municipal del 16/11/2026. La ubicación, actividad y cifra de más de 180 personas se atribuyen al Municipio; no se verificó una nómina independiente ni se interpreta el dato como puestos nuevos, vacantes o crecimiento interanual."
+    },
+    "jurisdictions": [
+      "Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Loma Verde, Partido de Escobar, Provincia de Buenos Aires."
+    ],
+    "relatedSources": [
+      {
+        "label": "LA NACION — inauguración de la planta de Ecosan en Loma Verde, 18/04/2025",
+        "url": "https://www.lanacion.com.ar/economia/negocios/ecosan-inaugura-una-nueva-planta-para-triplicar-la-produccion-nid18042025/"
+      }
+    ]
+  },
+  {
     "title": "Escobar publicó cuatro licitaciones, incluidas dos contrataciones de salud digital",
     "date": "2026-11-12",
     "category": "Tecnología",
@@ -588,6 +616,34 @@
       "Chubut y Meseta Central"
     ],
     "id": "news-www-biodiversidadla-org-articulos-nuevo-intento-para-habilitar-la-megamineria-en-la-meseta-chubutense"
+  },
+  {
+    "id": "news-www-lanacion-com-ar-propiedades-la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026",
+    "title": "Escobar suma cuatro desarrollos comerciales en el corredor de Ingeniero Maschwitz y Loma Verde",
+    "date": "2026-10-29",
+    "category": "Empresas",
+    "summary": "LA NACION relevó cuatro proyectos comerciales en el corredor de Escobar: Black, QUO Loma Verde, Paseo del Haras y Paseo Loma Verde. Los desarrollos combinan locales, gastronomía, entretenimiento, salud, oficinas y vivienda. La inversión publicada para Black es de USD 25 millones; para Paseo del Haras se informaron USD 2,5 millones en el paseo comercial y USD 6 millones en el componente residencial; Paseo Loma Verde supera los USD 6 millones. Para QUO las fuentes consultadas difieren en monto y fecha prevista de apertura, por lo que esos datos no se consolidan. Son proyectos reportados, no oportunidades de capital abiertas ni garantía de demanda o rentabilidad.",
+    "source": "LA NACION",
+    "url": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/",
+    "period": "Publicación del 29/10/2026; El Cronista actualizó información de QUO y Paseo del Haras el 13/11/2026. Los estados operativos posteriores no fueron verificados.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Se revisó LA NACION (29/10/2026) y se contrastó con El Cronista (13/11/2026). Se conservan los importes y etapas atribuidos a los desarrolladores; se omiten los datos de QUO no reconciliados. No se afirma que los proyectos estén terminados, abiertos al público o disponibles para inversión de terceros."
+    },
+    "jurisdictions": [
+      "Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Partido de Escobar, Provincia de Buenos Aires: corredor de Ingeniero Maschwitz y Loma Verde."
+    ],
+    "relatedSources": [
+      {
+        "label": "El Cronista — QUO y Paseo del Haras, 13/11/2026",
+        "url": "https://www.cronista.com/negocios/llegan-dos-nuevos-shoppings-a-una-de-las-zonas-estrella-del-gba-y-ponen-la-mira-en-la-costa-atlantica/"
+      }
+    ]
   },
   {
     "title": "Mercado Libre inauguró su mayor centro de almacenamiento argentino en Escobar",
