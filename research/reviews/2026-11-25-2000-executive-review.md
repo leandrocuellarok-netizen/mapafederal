@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 24/11/2026 a las 18:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 24/11/2026 a las 19:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,7 +8,7 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 39 registros |
+| Radar IA | 40 registros |
 | Investment Finder | 51 registros |
 | Oportunidades abiertas | 20 |
 | Disponibilidad desconocida | 28 |
@@ -35,6 +35,14 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - Investment Finder: sin nuevas oportunidades añadidas. Se conservan 51 registros (20 abiertas, 28 con disponibilidad desconocida y 3 cerradas). La LP 74/2026 de Escobar fue contrastada en el Boletín Oficial bonaerense, edición 18/11/2026, sección 14517: consultas 26–27/11, venta de pliegos 30/11–01/12, apertura 04/12 a las 10:00 y presupuesto oficial ARS 793.000.000 IVA incluido. No se revisó el pliego completo ni se infiere elegibilidad. Fuente: https://boletinoficial.gba.gob.ar/secciones/14517/ver. La LP 75 permanece en el catálogo con el cronograma ya documentado; la consulta de la edición 14523 presentó timeout y no se atribuye una circular nueva.
 - Red Sostenible para el Desarrollo sigue admitiendo solicitudes hasta el 30/12/2026, según la página municipal consultada; ya estaba registrada y no se duplicó. Fuente: https://www.escobar.gob.ar/noticias/escobar-abrio-la-convocatoria-para-que-empresas-y-comercios-midan-redu/.
 - Actualización territorial concurrente: otro ciclo incorporó al directorio de transparencia de Escobar el dataset municipal “Cursos de Agua del Partido de Escobar”. La ficha declara GeoJSON de 267 KB, versión 1.0, última actualización 31/03/2026, periodicidad anual, licencia ODbL y CRS EPSG:22185. La integración geométrica sigue pendiente; no se dibuja como latitud/longitud ni se interpreta como mapa de riesgo hídrico, caudal o calidad del agua. Commits: `b33b990bc9b0076c6333985792f7011a4676ed3c` (dataset) y `2c815704a303b4570b869fcdbf2672ed79197a89` (registro y estado del ciclo concurrente).
+
+## Actualización del ciclo 19:00 — 24/11/2026
+
+- Radar IA: se añadió un registro sobre el comunicado de Zscaler del 20/11/2026, que anuncia colaboraciones con Anthropic y Mistral para seguridad de IA empresarial. La empresa declara una integración de Claude Mythos 5.1 en Endpoint AI Security con vista previa limitada prevista y una integración de Mistral en Security for AI para Europa. Se atribuyen las afirmaciones al proveedor; no se infieren resultados independientes, despliegue generalizado ni disponibilidad en Argentina. Fuente: https://zscaler.gcs-web.com/news-releases/news-release-details/zscaler-partners-frontier-model-providers-help-enterprises.
+- Investment Finder: sin nuevas oportunidades incorporadas. Se conservan 51 registros (20 abiertas, 28 con disponibilidad desconocida y 3 cerradas). La edición 14517 del Boletín Oficial bonaerense confirma la apertura de LP 74 de Escobar el 04/12/2026 a las 10:00; la edición 14523 no pudo abrirse por timeout y la consulta directa de 14527 no fue accesible. No se atribuye una circular nueva ni se afirma ausencia exhaustiva de llamados. Fuente LP 74: https://boletinoficial.gba.gob.ar/secciones/14517/ver.
+- La publicación municipal del 16/11 sobre obras de calle Salta en Garín, El Dorado en Ingeniero Maschwitz, Feria de la Familia y Ecosan en Loma Verde fue revisada; los proyectos ya están reflejados o corresponden a obras en ejecución, por lo que no se duplicaron como nuevas oportunidades. Fuente: https://www.escobar.gob.ar/noticias/sujarchuk-y-katopodis-visitaron-importantes-obras-de-infraestructura-e/.
+- Cambio concurrente de infraestructura: el commit `a72467e6cef5362119c34be61882254414a06528` incorporó un preflight reproducible de EPSG:22185 para una coordenada de muestra del GeoJSON de cursos de agua. Valida parámetros y transformación ida/vuelta de esa muestra, no la totalidad de geometrías, topología o contención municipal. No se integró la capa al mapa. El estado combinado consultado no devolvió checks; no se afirma CI exitoso.
+- Catálogos al corte: Radar IA 40; Investment Finder 51; Event Intelligence 3; nodos estratégicos 86. Contrato enterprise sin cambios.
 
 ## Avances verificables
 ### Escobar
