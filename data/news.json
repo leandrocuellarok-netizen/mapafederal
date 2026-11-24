@@ -321,6 +321,28 @@
     "geographyEvidence": []
   },
   {
+    "id": "news-zscaler-2026-11-20-frontier-model-providers-enterprise-ai-security",
+    "title": "Zscaler anunció colaboraciones con Anthropic y Mistral para seguridad de IA empresarial",
+    "date": "2026-11-20",
+    "category": "Tecnología",
+    "summary": "Zscaler anunció colaboraciones con Anthropic y Mistral para reforzar la adopción empresarial de IA y la defensa frente a ataques asistidos por IA. Según la compañía, integró Claude Mythos 5.1 en Endpoint AI Security para correlacionar evidencias de amenazas y rutas de explotación, con una vista previa limitada prevista; además, su solución Security for AI integra Mistral a través de Zero Trust Exchange soberano en Europa. El anuncio describe colaboraciones y capacidades comunicadas por el proveedor: no demuestra despliegue generalizado, resultados independientes ni disponibilidad en Argentina.",
+    "source": "Zscaler, Inc. (comunicado corporativo)",
+    "url": "https://zscaler.gcs-web.com/news-releases/news-release-details/zscaler-partners-frontier-model-providers-help-enterprises",
+    "period": "Anuncio publicado el 20/11/2026. Zscaler anunció una vista previa limitada de la integración con Anthropic y una presentación de nuevas capacidades para el 09/12/2026.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Estados Unidos (empresa anunciante) / Europa (alcance declarado para la integración con Mistral); sin implementación argentina identificada.",
+    "sector": "Ciberseguridad / IA empresarial / agentes autónomos / Zero Trust",
+    "territorialRelevance": "Relevancia comparativa para empresas argentinas que evalúan agentes de IA, control de acceso y protección de datos. El comunicado no acredita clientes, despliegues ni disponibilidad local en Argentina.",
+    "relatedSources": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Se revisó el comunicado corporativo de Zscaler del 20/11/2026. Se atribuyen expresamente al proveedor las colaboraciones con Anthropic y Mistral, la integración de Claude Mythos 5.1, el carácter de vista previa limitada y el alcance europeo de la solución con Mistral. No se infieren resultados de seguridad, adopción comercial generalizada ni disponibilidad en Argentina."
+    }
+  },
+  {
     "title": "Escobar publicó tres licitaciones de suministros y servicios con aperturas en diciembre",
     "date": "2026-11-19",
     "category": "Infraestructura",
