@@ -1141,7 +1141,10 @@ jobs:
           if (stageLabel("announced") !== "Anunciado" || stageLabel("unknown") !== "Etapa no informada") throw new Error("Las etiquetas de etapa no son correctas.");
           if (filter(catalog.opportunities, { ...base, scope: "provincial" }).length !== 0) throw new Error("El filtro provincial incluyó un registro nacional.");
           if (filter(catalog.opportunities, { ...base, jurisdiction: "Buenos Aires" }).length !== 0) throw new Error("El filtro de jurisdicción incluyó un registro nacional.");
-          if (filter(catalog.opportunities, { ...base, query: "boletin oficial" }).length !== 1) throw new Error("La búsqueda no encuentra la fuente documental.");
+          const pampaAI = catalog.opportunities.find(item => item.id === "pampa-ai-centros-datos-computo-ia-2026");
+if (!pampaAI || pampaAI.stage !== "preparation" || pampaAI.opportunityStatus !== "unknown" || pampaAI.amount !== null) throw new Error("Pampa AI debe permanecer como proyecto en preparación, sin capex confirmado y con disponibilidad desconocida.");
+if (filter(catalog.opportunities, { ...base, query: "pampa ai" }).length !== 1) throw new Error("La búsqueda no encuentra el registro Pampa AI.");
+if (filter(catalog.opportunities, { ...base, query: "boletin oficial" }).length !== 2) throw new Error("La búsqueda debe encontrar RIMI y Pampa AI entre los registros nacionales con fuente del Boletín Oficial.");
           for (const field of ["sourceName", "sourceUrl", "sourcePublishedAt", "period", "validFrom", "verification"]) {
             if (!record[field]) throw new Error("El registro carece de trazabilidad: " + field);
           }
