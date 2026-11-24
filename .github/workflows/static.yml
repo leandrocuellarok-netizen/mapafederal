@@ -278,7 +278,7 @@ jobs:
           assert health["sourcePublishedAt"] is None
           assert health["verification"]["checkedAt"] in {"2026-11-23", "2026-11-24"}
           assert "no se realizó comprobación presencial" in health["verification"]["scope"].lower()
-          assert len(health["facilities"]) == 12
+          assert len(health["facilities"]) == 14
           bicentenario = next(item for item in health["facilities"] if item["id"] == "hospital-provincial-bicentenario")
           assert bicentenario["name"] == "Hospital Provincial Bicentenario"
           assert bicentenario["locality"] == "Garín" and bicentenario["address"] == "Libertad 1100"
@@ -298,17 +298,15 @@ jobs:
               assert "discrepancia" in selles["serviceNote"].lower()
           else:
               assert selles["neighborhood"] == "24 de Febrero"
-          if "pendingDirectoryDiscrepancies" in health:
-              pending = health["pendingDirectoryDiscrepancies"]
-              assert len(pending) == 1
-              extra = pending[0]
-              assert extra["id"] == "udp-carlos-guevara"
-              assert extra["locality"] == "Belén de Escobar"
-              assert extra["status"] == "pendiente"
-              assert extra["sourceUrl"] == "https://www.escobar.gob.ar/municipio/guardias-y-farmacias/"
-              assert extra["verification"]["checkedAt"] == "2026-11-24"
-              assert "no se realizó comprobación presencial" in extra["verification"]["scope"].lower()
-              assert all(url.startswith("https://") for url in extra["comparisonSourceUrls"])
+          pending = health.get("pendingDirectoryDiscrepancies", [])
+          assert pending == []
+          guevara = next(item for item in health["facilities"] if item["id"] == "udp-carlos-guevara")
+          assert guevara["locality"] == "Belén de Escobar" and guevara["address"] == "Cervantes 635"
+          assert guevara["status"] == "pendiente" and guevara["phone"] is None
+          assert "guardia y operación actual permanecen pendientes" in guevara["summary"].lower()
+          papa = next(item for item in health["facilities"] if item["id"] == "hospital-salud-mental-papa-francisco")
+          assert papa["locality"] == "Belén de Escobar" and papa["address"] == "Pellegrini y Dr. Travi"
+          assert papa["phone"] == "3484 430-544" and papa["sourcePublishedAt"] is None
           mobility = territory["mobilityDirectory"]
           assert mobility["status"] == "pendiente"
           assert mobility["sourcePublishedAt"] == "2026-02-06"
