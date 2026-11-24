@@ -286,7 +286,7 @@ jobs:
               assert "Pablo Marín s/n" in selles["address"] and "Fonavi" in selles["address"]
               assert selles.get("phone") is None
               assert "24 de Febrero" in selles["serviceNote"]
-              assert "0348 449-3444" in selles["serviceNote"] and "11 2150-0302" in selles["serviceNote"]
+              assert "(0348) 449-3444" in selles["serviceNote"] and "11 2150-0302" in selles["serviceNote"]
               assert "discrepancia" in selles["serviceNote"].lower()
           else:
               assert selles["neighborhood"] == "24 de Febrero"
@@ -343,12 +343,13 @@ jobs:
               assert parsed.scheme == "https" and parsed.netloc
           assert {item["locality"] for item in health["facilities"]} == {"Belén de Escobar", "Garín", "Ingeniero Maschwitz", "Maquinista Savio", "Matheu", "Loma Verde"}
           selles = next(item for item in health["facilities"] if item["id"] == "caps-juan-carlos-selles")
-          assert selles["locality"] == "Garín" and selles["neighborhood"] == "24 de Febrero"
+          assert selles["locality"] == "Garín" and "neighborhood" not in selles
+          assert "Fonavi" in selles["address"]
           lopez = next(item for item in health["facilities"] if item["id"] == "hospital-horacio-lopez")
           assert lopez["address"] is None and "156" in lopez["addressNote"] and "240" in lopez["addressNote"]
           susana = next(item for item in health["facilities"] if item["id"] == "udp-susana-lara")
           assert "16:30" in susana["serviceNote"] and "17 h" in susana["serviceHours"]
-          for url in [health["sourceUrl"], health["additionalDirectoryUrl"]] + [item.get("addressSourceUrl") for item in health["facilities"] if item.get("addressSourceUrl")] + [item.get("serviceNoteSourceUrl") for item in health["facilities"] if item.get("serviceNoteSourceUrl")]:
+          for url in [health["sourceUrl"], health["additionalDirectoryUrl"], health["contactDirectoryUrl"]] + [item.get("addressSourceUrl") for item in health["facilities"] if item.get("addressSourceUrl")] + [item.get("serviceNoteSourceUrl") for item in health["facilities"] if item.get("serviceNoteSourceUrl")] + [url for entry in health.get("pendingDirectoryDiscrepancies", []) for url in [entry["sourceUrl"], *entry["comparisonSourceUrls"]]]:
               parsed = urlparse(url)
               assert parsed.scheme == "https" and parsed.netloc
           allowed = {"operativo", "anunciado", "histórico", "pendiente", "no verificado"}
@@ -356,17 +357,17 @@ jobs:
               parsed = urlparse(item["sourceUrl"])
               assert parsed.scheme == "https" and parsed.netloc
               assert item["status"] in allowed
-              assert item["verification"]["checkedAt"] == "2026-11-23"
+              assert item["verification"]["checkedAt"] in {"2026-11-23", "2026-11-24"}
               assert item["verification"]["scope"]
           caps = next((item for item in territory["serviceDirectories"] if item.get("id") == "caps-juan-carlos-selles"), None)
           assert caps is not None
-          assert caps["locality"] == "Garín" and caps["neighborhood"] == "24 de Febrero"
-          assert caps["address"] == "Pablo Marín, B° 24 de Febrero, Garín"
+          assert caps["locality"] == "Garín" and "neighborhood" not in caps
+          assert "Pablo Marín s/n" in caps["address"] and "Fonavi" in caps["address"]
           assert caps["serviceHours"] == "Todos los días, las 24 horas"
-          assert caps["phone"] == "11 2150-0302"
+          assert caps["phone"] is None
           assert caps["status"] == "operativo"
-          assert caps["verification"]["checkedAt"] == "2026-11-23"
-          assert "no aporta coordenadas oficiales" in caps["verification"]["scope"]
+          assert caps["verification"]["checkedAt"] == "2026-11-24"
+          assert "no se asigna barrio ni teléfono único" in caps["verification"]["scope"].lower()
           parsed_map = urlparse(caps["mapUrl"])
           assert parsed_map.scheme == "https" and parsed_map.netloc == "www.google.com"
           profile_js = Path("assets/escobar-profile.js").read_text(encoding="utf-8")
@@ -375,6 +376,8 @@ jobs:
           assert "territory.healthFacilitiesDirectory" in profile_js
           assert "escobar-health-facility" in profile_js
           assert "health.localityCoverageNote" in profile_js
+          assert "health.pendingDirectoryDiscrepancies" in profile_js
+          assert "health.contactDirectoryUrl" in profile_js
           assert "filter(item=>!healthIds.has(item.id))" in profile_js
           indicators = economy["indicators"]
           assert indicators["referenceYear"] == 2026
