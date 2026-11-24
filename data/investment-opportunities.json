@@ -526,6 +526,54 @@
         "checkedAt": "2026-11-24",
         "scope": "Verificado el anuncio institucional municipal, la localidad, el alcance de más de 23 cuadras y el inicio informado. No se verificaron contratos, certificaciones, pagos, avance físico independiente ni fecha de finalización."
       }
+    },
+    {
+      "id": "escobar-red-sostenible-desarrollo-2026",
+      "name": "Escobar — Red Sostenible para el Desarrollo: convocatoria para medir, reducir y compensar huella de carbono",
+      "recordType": "public_program",
+      "scope": "municipal",
+      "sector": "Sostenibilidad / gestión ambiental / eficiencia empresarial",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": null,
+      "validFrom": "2026-11-10",
+      "validUntil": "2026-12-30",
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/escobar-abrio-la-convocatoria-para-que-empresas-y-comercios-midan-redu/",
+      "sourcePublishedAt": "2026-11-10",
+      "period": "Solicitudes hasta el 30/12/2026; incorporación prevista durante el primer trimestre de 2027.",
+      "description": "Convocatoria municipal dirigida a empresas, industrias, comercios, hoteles, emprendimientos y otras organizaciones radicadas en el Partido de Escobar. El programa propone medir la huella de carbono mediante universidades y metodología ISO; determinar Créditos Equivalentes Sostenibles (CES) para compensar mediante proyectos de triple impacto con beneficios para Escobar; y otorgar el Sello S++ a quienes completen el proceso. Requisitos publicados: pertenecer al partido, realizar la capacitación virtual y trabajar activamente por la sostenibilidad. La inscripción e información se canalizan por Escobar 360. La comunicación no anuncia un subsidio, transferencia monetaria ni monto de financiamiento; no se debe presentar como ayuda económica.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificada la publicación oficial municipal del 10/11/2026: destinatarios, condiciones de participación, metodología general, CES, Sello S++, fecha límite del 30/12/2026 e incorporación prevista para el primer trimestre de 2027. El artículo deriva a Escobar 360; no se verificó una ficha individual de inscripción ni se atribuye al programa financiamiento monetario."
+      }
+    },
+    {
+      "id": "bess-maschwitz-genneia-edenor-2026",
+      "name": "BESS Maschwitz 33 kV — planta de almacenamiento eléctrico de Genneia y EDENOR",
+      "recordType": "investment_project",
+      "scope": "provincial",
+      "sector": "Energía / almacenamiento eléctrico / infraestructura de red",
+      "jurisdiction": "Buenos Aires",
+      "location": "Dique Luján / entorno de Ingeniero Maschwitz; discrepancia jurisdiccional entre el EIAS (Tigre) y la comunicación municipal (Escobar), pendiente de resolución.",
+      "stage": "preparation",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-11-03",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar; EIAS BESS Maschwitz alojado en el portal de participación pública del Ministerio de Ambiente de la Provincia de Buenos Aires",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/ingeniero-maschwitz-suma-una-nueva-planta-de-almacenamiento-electrico-/",
+      "sourcePublishedAt": "2026-11-03",
+      "period": "Trabajos preliminares informados por el Municipio el 03/11/2026; no se publica fecha confirmada de puesta en servicio.",
+      "description": "Proyecto BESS Maschwitz 33 kV desarrollado por Genneia en articulación técnica con EDENOR, dentro del programa AlmaGBA. La Municipalidad de Escobar informó el inicio de trabajos preliminares para una instalación de 40 MW, con hasta cinco horas continuas de refuerzo y conexión subterránea en 33 kV, orientada a mejorar la confiabilidad del suministro en el nodo regional de Maschwitz y Garín. No se publicó monto de inversión. Existe una discrepancia geográfica que debe conservarse: la comunicación municipal del 03/11/2026 ubica la planta en Ingeniero Maschwitz, Partido de Escobar; el Estudio de Impacto Ambiental y Social EIAS BESS MAS 022/25, fechado el 16/09/2025 y alojado en el portal provincial, identifica el predio como Dique Luján, Partido de Tigre, e incluye coordenadas. Por ello el registro se asigna solo a la Provincia de Buenos Aires y no debe convertirse en un punto municipal del mapa hasta aclarar la jurisdicción. El Municipio informa autorización de la Secretaría de Energía para conexión al sistema, visto bueno ambiental para trabajos preliminares, Prefactibilidad Hídrica y aval antisiniestral; también indica que las obras civiles y la puesta en marcha están sujetas a licencia de construcción y habilitación municipal, y que la Prefactibilidad es previa a la Declaración de Impacto Ambiental final. No se presenta como planta operativa ni como convocatoria abierta a terceros. Se reportaron cuestionamientos vecinales sobre ubicación y seguridad; deben seguirse sin convertir reclamos periodísticos en conclusiones técnicas.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Contraste del anuncio municipal del 03/11/2026 con el EIAS BESS MAS 022/25 alojado en el portal de participación pública del Ministerio de Ambiente bonaerense, fechado el 16/09/2025 (https://participacionpublica.ambiente.gba.gob.ar/adjunto/viewpdf/Planta-almacenamiento-BESS-MASCHWITZ-33-kV-y-LMT-de-vinculaci%C3%B3n.pdf). Se verificaron proponente, articulación técnica, potencia declarada de 40 MW, autonomía de cinco horas, conexión 33 kV y trabajos preliminares anunciados. La fuente municipal identifica Ingeniero Maschwitz/Escobar; el EIAS identifica Dique Luján/Tigre. La jurisdicción municipal queda expresamente sin resolver. No se verificaron monto, Declaración de Impacto Ambiental final, licencia municipal de construcción, habilitación operativa, avance posterior ni fecha de puesta en servicio."
+      }
     }
   ]
 }
