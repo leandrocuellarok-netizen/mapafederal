@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "product": "Vilanova AI Solutions x Mapa Federal",
+  "updatedAt": "2026-11-24",
+  "publicMode": {
+    "freeFormReports": false,
+    "customAnalyses": "by_request",
+    "predictiveClaimsRequireValidation": true,
+    "clientDataPublic": false
+  },
+  "products": [
+    {
+      "id": "market-intelligence",
+      "name": "Market Intelligence",
+      "delivery": [
+        "sector reports",
+        "trend briefs",
+        "competitor comparisons",
+        "opportunity maps"
+      ],
+      "commercialModel": "subscription_or_scoped_project"
+    },
+    {
+      "id": "personalized-business-intelligence",
+      "name": "Personalized Business Intelligence",
+      "delivery": [
+        "client-specific monitoring",
+        "alerts",
+        "company and competitor assessments"
+      ],
+      "commercialModel": "onboarding_plus_recurring_service"
+    },
+    {
+      "id": "predictive-business-intelligence",
+      "name": "Predictive Business Intelligence",
+      "delivery": [
+        "validated forecasts",
+        "risk analysis",
+        "scenario simulations"
+      ],
+      "commercialModel": "premium_project_or_subscription"
+    }
+  ],
+  "modules": {
+    "radar-ia": [
+      "industry-monitoring",
+      "competitive-landscape",
+      "market-trends",
+      "regulatory-signals",
+      "marketing-intelligence",
+      "executive-synthesis"
+    ],
+    "investment-finder": [
+      "opportunity-screening",
+      "territorial-attractiveness",
+      "infrastructure-and-supply-chain-context",
+      "competitive-density",
+      "risk-and-scenario-assessment"
+    ],
+    "mapa-federal": [
+      "geographic-intelligence",
+      "provincial-economic-profiles",
+      "sector-taxonomy",
+      "shared-entity-and-source-registry"
+    ]
+  },
+  "forecastingStandards": {
+    "baselineFirst": true,
+    "temporalBacktesting": true,
+    "rollingOriginValidation": true,
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "MAPE_when_appropriate",
+      "calibration",
+      "interval_coverage"
+    ],
+    "uncertaintyRequired": true,
+    "insufficientDataAllowed": true
+  },
+  "evidenceStandards": [
+    "source",
+    "publishedAt",
+    "retrievedAt",
+    "geographicScope",
+    "period",
+    "verificationStatus",
+    "methodology",
+    "limitations"
+  ],
+  "sourcePolicy": [
+    "public",
+    "licensed",
+    "client_authorized"
+  ],
+  "guardrails": [
+    "no_fabricated_data",
+    "no_certain-future-claims",
+    "no_private-account-access-without-authorization",
+    "no_sensitive-personal-profiling",
+    "no_investment-return-guarantees"
+  ],
+  "status": "architecture_blueprint_not_operational_claim"
+}
