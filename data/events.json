@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-11-24",
-  "note": "Catálogo documental de eventos con procedencia y verificación. No es una agenda integrada ni confirma cupos o inscripción. Los registros históricos se conservan como completados. Para la Ronda RIGI del 02/12/2026, la inscripción a reuniones B2B cerró el 16/11; la asistencia a otras actividades se anuncia hasta el 30/11. Para la Ronda de Negocios de Energía y Minería de PBA del 01/12/2026, la inscripción cerró el 13/11; no se presume acceso para nuevas empresas.",
+  "note": "Catálogo documental de eventos con procedencia y verificación. No es una agenda integrada ni confirma cupos o inscripción. Los registros históricos se conservan como completados. Para la Ronda RIGI del 02/12/2026, la inscripción a reuniones B2B cerró el 16/11; la asistencia a otras actividades se anuncia hasta el 30/11. Para la Ronda de Negocios de Energía y Minería de PBA del 01/12/2026, la inscripción cerró el 13/11; no se presume acceso para nuevas empresas. Se agregó la Ronda de Negocios Escobar 2026 (24/11) como evento completado: fecha y sede contrastadas con PBA; cifras de participación atribuidas a cobertura local, sin inferir negocios cerrados ni cupos.",
   "events": [
     {
       "id": "feria-japonesa-bazaa-5-edicion-2026",
@@ -73,6 +73,41 @@
         "status": "verified",
         "checkedAt": "2026-11-24",
         "scope": "Verificada la publicación oficial del 05/11/2026: fecha, sede, sectores, cantidad aproximada de empresas compradoras y plazo de inscripción. La inscripción cerró el 13/11/2026; no se confirma disponibilidad de cupos ni participación de empresas no inscriptas."
+      }
+    },
+    {
+      "id": "ronda-negocios-escobar-2026-11-24",
+      "name": "Ronda de Negocios Escobar 2026 — encuentro multisectorial",
+      "startDate": "2026-11-24",
+      "endDate": null,
+      "time": null,
+      "timeZone": "America/Argentina/Buenos_Aires",
+      "scope": "local",
+      "jurisdiction": "Buenos Aires",
+      "venue": "Espacio Mendoza, calle Mendoza esquina Av. Independencia, Ingeniero Maschwitz, Partido de Escobar, Buenos Aires, Argentina",
+      "organizer": "Ministerio de Producción, Ciencia e Innovación Tecnológica de la Provincia de Buenos Aires; coorganización municipal informada por la cobertura local",
+      "sector": "PyMEs / industria / comercio / servicios / vinculación B2B",
+      "sourceName": "Zona Norte Diario Online; contraste de fecha y sede con Provincia de Buenos Aires",
+      "sourceUrl": "https://www.zonanortediario.com.ar/24/11/2026/mas-de-270-empresas-y-entidades-participaron-de-una-nueva-ronda-de-negocios-en-escobar/",
+      "sourcePublishedAt": "2026-11-24",
+      "period": "Realizada el 24/11/2026. La agenda oficial de PBA consigna 8:30 hs y el portal de Rondas de Negocios muestra 11:30 hs; se omite la hora por discrepancia. La cobertura local informa 277 empresas y entidades inscriptas, 72 de Escobar, más de 350 asistentes y 33 ramas productivas.",
+      "status": "completed",
+      "description": "Encuentro multisectorial de vinculación empresarial. Zona Norte Diario informó 277 empresas y entidades inscriptas de distintos puntos de la Provincia, 72 de Escobar, más de 350 personas y 33 ramas productivas. Las cifras se atribuyen a la cobertura local; no se infieren contratos, ventas ni inversiones cerradas.",
+      "territorialRelevance": "Alta para la inteligencia productiva de Escobar: la cobertura local informa 72 empresas y entidades del partido. No hay evidencia publicada en este corte sobre acuerdos concretados o inversión comprometida.",
+      "relatedSources": [
+        {
+          "label": "Provincia de Buenos Aires — agenda oficial de Rondas de Negocios",
+          "url": "https://gba.gob.ar/produccion/ronda_de_negocios"
+        },
+        {
+          "label": "Portal de Rondas de Negocios PBA — ficha Escobar 2026",
+          "url": "https://rondadenegocios.mp.gba.gob.ar/"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "La página oficial del Ministerio de Producción de PBA confirma que la Ronda de Negocios Escobar 2026 figura entre los eventos realizados el 24/11 y ubica la sede en Espacio Mendoza, calle Mendoza esquina Av. Independencia, Ingeniero Maschwitz. La cobertura de Zona Norte Diario del 24/11 aporta las cifras de participación; no se localizaron en un comunicado oficial de resultados al corte. La agenda oficial consigna 8:30 y el portal de inscripción 11:30; se omite la hora por discrepancia. No se atribuyen negocios concretados ni inversión comprometida."
       }
     }
   ]
