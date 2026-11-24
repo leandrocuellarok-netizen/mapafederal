@@ -474,6 +474,30 @@
         "checkedAt": "2026-11-24",
         "scope": "Verificado el anuncio institucional municipal, la localidad, el inicio de la segunda etapa y los componentes informados. No se verificaron certificaciones de obra, pagos, avance físico independiente, contratos ni fecha de finalización."
       }
+    },
+    {
+      "id": "escobar-el-dorado-pavimentacion-integral-maschwitz-2026",
+      "name": "Escobar — pavimentación integral del barrio El Dorado",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Obra pública / infraestructura vial / conectividad",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Ingeniero Maschwitz, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "in_progress",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-11-16",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/sujarchuk-y-katopodis-visitaron-importantes-obras-de-infraestructura-e/",
+      "sourcePublishedAt": "2026-11-16",
+      "period": "Inicio de obra informado el 16/11/2026; la fuente no publica fecha de finalización.",
+      "description": "La Municipalidad informó el inicio de la pavimentación integral de más de 23 cuadras en el barrio El Dorado, Ingeniero Maschwitz, con pavimento de hormigón, veredas y cordón cuneta. El anuncio estima una inversión cercana a ARS 7.000 millones y señala que la obra permitirá una salida más directa hacia Tigre. Se registra como proyecto público en ejecución, no como licitación abierta. El campo amount queda nulo porque el monto publicado es aproximado y no una certificación de inversión ejecutada.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado el anuncio institucional municipal, la localidad, el alcance de más de 23 cuadras y el inicio informado. No se verificaron contratos, certificaciones, pagos, avance físico independiente ni fecha de finalización."
+      }
     }
   ]
 }
