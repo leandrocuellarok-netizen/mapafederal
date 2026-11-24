@@ -1,27 +1,5 @@
 [
   {
-    "title": "Grupo Addnice proyecta trasladar su planta industrial a Garín en 2027",
-    "date": "2026-11-04",
-    "category": "Empresas",
-    "summary": "La Municipalidad de Escobar informó que Grupo Addnice proyecta trasladar su planta desde Tigre a Garín durante 2027, al predio anteriormente ocupado por Rosen. La empresa fabrica y comercializa calzado e indumentaria deportiva. El anuncio no informa monto de inversión, cronograma detallado ni puestos comprometidos; debe tratarse como proyecto anunciado, no como operación ya iniciada.",
-    "source": "Municipalidad de Escobar",
-    "url": "https://www.escobar.gob.ar/noticias/garin-sumara-una-nueva-planta-industrial-y-fortalecera-su-perfil-produ/",
-    "period": "Traslado proyectado para 2027; sin cronograma exacto publicado.",
-    "verification": {
-      "status": "editorial_reviewed",
-      "checkedAt": "2026-11-24",
-      "scope": "Contraste directo de la publicación institucional municipal del 4 de noviembre de 2026. No se verificaron ejecución, inversión monetaria ni empleo comprometido."
-    },
-    "jurisdictions": [
-      "Buenos Aires"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "Garín, Partido de Escobar, Provincia de Buenos Aires"
-    ],
-    "id": "news-www-escobar-gob-ar-noticias-garin-sumara-una-nueva-planta-industrial-y-fortalecera-su-perfil-produ"
-  },
-  {
     "title": "Argentina aprobó el ingreso al RIGI del proyecto Argentina LNG de YPF, Eni y XRG",
     "date": "2026-11-20",
     "category": "Empresas",
@@ -314,6 +292,28 @@
       "Proyecto Navidad, aproximadamente 40 km al este de Gastre; coordenadas publicadas por SEGEMAR."
     ],
     "id": "news-www-abcdiario-com-ar-petroleo-mineria-santa-cruz-exporto-us2-627-millones-en-minerales-y-chubut-sigue-sin-explotar-uno-de-los-mayores-yacimientos-de-plata-del-mundo"
+  },
+  {
+    "title": "Grupo Addnice proyecta trasladar su planta industrial a Garín en 2027",
+    "date": "2026-11-04",
+    "category": "Empresas",
+    "summary": "La Municipalidad de Escobar informó que Grupo Addnice proyecta trasladar su planta desde Tigre a Garín durante 2027, al predio anteriormente ocupado por Rosen. La empresa fabrica y comercializa calzado e indumentaria deportiva. El anuncio no informa monto de inversión, cronograma detallado ni puestos comprometidos; debe tratarse como proyecto anunciado, no como operación ya iniciada.",
+    "source": "Municipalidad de Escobar",
+    "url": "https://www.escobar.gob.ar/noticias/garin-sumara-una-nueva-planta-industrial-y-fortalecera-su-perfil-produ/",
+    "period": "Traslado proyectado para 2027; sin cronograma exacto publicado.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Contraste directo de la publicación institucional municipal del 4 de noviembre de 2026. No se verificaron ejecución, inversión monetaria ni empleo comprometido."
+    },
+    "jurisdictions": [
+      "Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Garín, Partido de Escobar, Provincia de Buenos Aires"
+    ],
+    "id": "news-www-escobar-gob-ar-noticias-garin-sumara-una-nueva-planta-industrial-y-fortalecera-su-perfil-produ"
   },
   {
     "title": "Chubut: el potencial minero convive con un riesgo social y regulatorio persistente",
