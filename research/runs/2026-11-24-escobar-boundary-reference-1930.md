@@ -59,7 +59,8 @@ No se descargó ni procesó el polígono de Escobar en esta ejecución. No se ag
 - JSON parseado antes de crear los objetos Git.
 - Se comprobó que los cuatro enlaces declarados usan HTTPS.
 - Se añadieron pruebas para impedir que una referencia documental se presente como geometría ya integrada.
-- La validación de sintaxis JavaScript, pruebas completas y despliegue quedan sujetas al workflow disparado por el commit; no se anticipa resultado.
+- El workflow [45502207803](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45502207803), disparado por el commit `c90bccad8cbd7de4b9a1d41c5b5871711268835c`, terminó con fallo en el job `validate`, paso 16 (`Validate geographic and editorial JSON`). El error observado fue `AssertionError: ID de noticia no determinista` para el registro de Zscaler incorporado por el commit concurrente `10f77bb714f6ec1afdea90a8b742952aa9222ea9` en `data/news.json`. Ese archivo no forma parte de este cambio y no se modificó para respetar el alcance de Escobar.
+- El paso 14 (`Test Escobar municipal transparency directory`), que incluye las nuevas aserciones de la referencia IGN/Georef, finalizó con `success`. Los pasos posteriores se omitieron y el job `deploy` quedó `skipped`; por lo tanto, este cambio no está publicado en GitHub Pages.
 
 ## 6. Límites y siguiente evidencia
 
