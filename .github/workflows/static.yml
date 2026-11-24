@@ -387,6 +387,8 @@ jobs:
           assert 'href="#escobar"' in html
           print("Escobar: 7 localidades, 246 barrios, indicadores 2026, estados documentales, directorios y 9 referencias cartográficas en 6 localidades validados.")
           PY
+      - name: Test Escobar intermodal and interlocal mobility evidence
+        run: node tests/escobar-mobility.test.js
       - name: Validate geographic and editorial JSON
         run: |
           python - <<'PY'
