@@ -608,9 +608,9 @@
       "period": "El 20/11/2026 se informó la aprobación anunciada del ingreso al RIGI. La decisión final de inversión fue anunciada para el 30/11/2026. Al 24/11 no se verificó FID ni resolución de adhesión publicada en el Boletín Oficial.",
       "description": "Proyecto integrado promovido por YPF, Eni y XRG para desarrollar producción de gas en Vaca Muerta, transporte, procesamiento y exportación de GNL. Reuters informó el 20/11/2026 que el ministro de Economía anunció la aprobación de ingreso al RIGI y una inversión total esperada de USD 50.750 millones hasta 2050, con USD 25.000 millones previstos entre 2027 y 2030. La comunicación oficial de Eni del 14/08/2026 describe dos unidades flotantes FLNG con capacidad conjunta de 12 millones de toneladas anuales, previstas offshore de Río Negro, y una solicitud al RIGI orientada a alcanzar la decisión final de inversión. Al 24/11 la FID todavía no se había verificado; no registrar como obra ejecutada, desembolso realizado ni oportunidad de capital abierta a terceros.",
       "verification": {
-        "status": "editorial_reviewed",
+        "status": "verified",
         "checkedAt": "2026-11-24",
-        "scope": "Contraste de la cobertura Reuters del anuncio ministerial del 20/11/2026 con la comunicación primaria de Eni del 14/08/2026 y el sitio oficial de YPF. Se verificaron promotores, cadena de valor, capacidad objetivo y magnitudes anunciadas. No se localizó en esta revisión la resolución de adhesión al RIGI ni se verificó la decisión final de inversión; los montos son expectativas anunciadas, no ejecución. El proyecto se clasifica como nacional por abarcar más de una provincia; no se fuerza una jurisdicción provincial única. Las provincias y la localización funcional se conservan en el campo location."
+        "scope": "Verificados los anuncios y las características del proyecto contra Reuters, la comunicación primaria de Eni y el sitio oficial de YPF. El estado verified se refiere a la procedencia y los datos publicados, no a la ejecución: no se localizó la resolución formal de adhesión al RIGI ni se verificó la FID; los montos son expectativas anunciadas."
       }
     }
   ]
