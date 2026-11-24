@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 24/11/2026 a las 14:17 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 24/11/2026 a las 14:20 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -72,7 +72,7 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - Confundir coordinación institucional o lineamientos internos con una ley general de IA.
 - Exponer datos de clientes, licencias o material protegido sin autorización.
 - Presentar modelos predictivos como operativos sin dataset, backtesting, validación, métricas y documentación.
-- GitHub Pages: el commit `64852c8` superó `validate`, pero `deploy` falló por metadatos del artefacto (0 artefactos en el primer intento y 2 duplicados al reintentar). Se elevó la espera de propagación a 15 segundos; el siguiente run debe confirmar si se resuelve.
+- GitHub Pages: el commit `64852c8` superó `validate`, pero `deploy` falló por metadatos del artefacto (0 artefactos en el primer intento y 2 duplicados al reintentar). Se elevó la espera de propagación a 15 segundos; el run `45447213242` completó `validate` y `deploy` con success. Mantener la comprobación en futuras publicaciones.
 
 ## Próximos pasos
 - Mantener el ciclo de verificación con prioridad en Escobar y cobertura nacional.
