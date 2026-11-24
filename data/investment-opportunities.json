@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "updatedAt": "2026-11-24",
-  "note": "Catálogo documental. Los estados de disponibilidad se mantienen desconocidos cuando la fuente no confirma apertura o ejecución. No constituye una recomendación de inversión.",
+  "note": "Catálogo documental. Los estados de disponibilidad se mantienen desconocidos cuando la fuente no confirma apertura o ejecución. No constituye una recomendación de inversión. El estado open se reserva para llamados cuyo cronograma oficial de consulta/venta y apertura todavía no venció; unknown indica dudas de elegibilidad o vigencia; closed indica que pasó la fecha de apertura. Los presupuestos oficiales no equivalen a adjudicaciones ni a gasto ejecutado.",
   "opportunities": [
     {
       "id": "rimi-eficiencia-energetica-2026",
@@ -73,6 +73,326 @@
         "status": "verified",
         "checkedAt": "2026-11-24",
         "scope": "Verificado el anuncio institucional municipal y su fecha. No se verificaron monto, permisos, avance de obra, contratación, capacidad productiva ni comienzo efectivo de operaciones; opportunityStatus permanece unknown."
+      }
+    },
+    {
+      "id": "escobar-licitacion-61-2026-sistema-laboratorio-lis",
+      "name": "Escobar — LP 61/2026 (segundo llamado): sistema de laboratorio LIS",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Salud / software / sistemas de información de laboratorio",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Belén de Escobar, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "unknown",
+      "opportunityStatus": "closed",
+      "amount": {
+        "value": 330000000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial con IVA incluido; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validFrom": "2026-11-12",
+      "validUntil": "2026-11-19",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14505/ver",
+      "sourcePublishedAt": "2026-11-12",
+      "period": "Segundo llamado; venta y consultas de pliego 12–13/11/2026; apertura 19/11/2026 a las 12:00. Resultado no verificado al 24/11/2026.",
+      "description": "Contratación de un Sistema de Laboratorio LIS (Laboratory Information System) para el Municipio de Escobar. El Boletín Oficial publicó el segundo llamado y un presupuesto oficial de ARS 330.000.000 IVA incluido. La apertura estaba prevista para el 19/11/2026 a las 12:00. La fecha ya pasó: este registro conserva el antecedente y no representa una licitación abierta ni confirma adjudicación, contrato o implementación.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial provincial el segundo llamado, objeto, presupuesto, valor del pliego y fecha de apertura. No se verificaron acta de apertura, ofertas, adjudicación, contrato ni puesta en marcha."
+      }
+    },
+    {
+      "id": "escobar-licitacion-62-2026-modulos-ia-sighm",
+      "name": "Escobar — LP 62/2026 (segundo llamado): módulos de IA para el SIGHM",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Salud / software / inteligencia artificial / gestión hospitalaria",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Belén de Escobar, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "unknown",
+      "opportunityStatus": "closed",
+      "amount": {
+        "value": 235000000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial con IVA incluido; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validFrom": "2026-11-12",
+      "validUntil": "2026-11-19",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14505/ver",
+      "sourcePublishedAt": "2026-11-12",
+      "period": "Segundo llamado; venta y consultas de pliego 12–13/11/2026; apertura 19/11/2026 a las 11:00. Resultado no verificado al 24/11/2026.",
+      "description": "Contratación del desarrollo, implementación y mantenimiento de módulos de inteligencia artificial integrados al Sistema de Gestión Hospitalaria Municipal (SIGHM). Presupuesto oficial de ARS 235.000.000 IVA incluido. La apertura estaba prevista para el 19/11/2026 a las 11:00. El plazo ya pasó; el registro no demuestra adjudicación, contratación ni despliegue efectivo de los módulos.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial provincial el segundo llamado, objeto de IA, presupuesto, valor del pliego y fecha de apertura. No se verificaron acta de apertura, ofertas, adjudicación, contrato ni implementación."
+      }
+    },
+    {
+      "id": "escobar-licitacion-66-2026-polideportivo-maschwitz",
+      "name": "Escobar — LP 66/2026: puesta en valor del Polideportivo Maschwitz",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Obra pública / infraestructura deportiva",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Ingeniero Maschwitz, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 578102033.6,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial con IVA incluido; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validFrom": "2026-11-12",
+      "validUntil": "2026-11-30",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14505/ver",
+      "sourcePublishedAt": "2026-11-12",
+      "period": "Consultas 16–17/11/2026; venta de pliego 18–19/11/2026; apertura 30/11/2026 a las 12:00. Al 24/11, las fechas de consulta y venta ya habían pasado.",
+      "description": "Licitación para la obra de puesta en valor del Polideportivo Maschwitz, con presupuesto oficial de ARS 578.102.033,60 IVA incluido. Apertura prevista para el 30/11/2026 a las 12:00. Como las fechas publicadas para consultas y venta de pliego ya pasaron, no se clasifica como abierta: la posibilidad de presentar oferta para empresas que no adquirieron el pliego no está confirmada.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial del 12/11/2026 el objeto, presupuesto, sede, apertura y fechas de consulta/venta. No se verificó si el proceso admite nuevas incorporaciones tras el cierre de venta del pliego, ni acta o adjudicación."
+      }
+    },
+    {
+      "id": "escobar-licitacion-69-2026-mobiliario-urbano",
+      "name": "Escobar — LP 69/2026: adquisición de mobiliario urbano",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Industria / mobiliario urbano / infraestructura pública",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Ingeniero Maschwitz, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 2028843927,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial con IVA incluido; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validFrom": "2026-11-12",
+      "validUntil": "2026-11-30",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14505/ver",
+      "sourcePublishedAt": "2026-11-12",
+      "period": "Consultas 16–17/11/2026; venta de pliego 18–19/11/2026; apertura 30/11/2026 a las 13:00. Al 24/11, las fechas de consulta y venta ya habían pasado.",
+      "description": "Licitación para la adquisición de mobiliario urbano, con presupuesto oficial de ARS 2.028.843.927 IVA incluido. Apertura prevista para el 30/11/2026 a las 13:00 en Ingeniero Maschwitz. Las fechas de consultas y venta de pliego ya pasaron al 24/11; no se confirma que una empresa que no adquirió el pliego pueda incorporarse a esta etapa.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial del 12/11/2026 el objeto, presupuesto, sede, apertura y fechas de consulta/venta. No se verificó la elegibilidad posterior al cierre de venta del pliego ni acta o adjudicación."
+      }
+    },
+    {
+      "id": "escobar-licitacion-71-2026-piedra-partida",
+      "name": "Escobar — LP 71/2026: provisión de piedra partida",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Construcción / materiales / infraestructura",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Belén de Escobar, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 644206500,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial con IVA incluido y precio tope; no equivale al monto adjudicado."
+      },
+      "validFrom": "2026-11-19",
+      "validUntil": "2026-12-11",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14520/ver",
+      "sourcePublishedAt": "2026-11-19",
+      "period": "Consultas 1–2/12/2026; venta de pliego 3–4/12/2026; apertura 11/12/2026 a las 11:00.",
+      "description": "Licitación municipal para provisión de piedra partida. Presupuesto oficial de ARS 644.206.500 IVA incluido, señalado como precio tope. La consulta del pliego está prevista para el 1 y 2 de diciembre, la venta para el 3 y 4 de diciembre y la apertura para el 11/12/2026 a las 11:00. Verificar pliego, requisitos y eventuales circulares antes de decidir participar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial del 19/11/2026 el llamado, presupuesto, condición de precio tope, sede y cronograma. No se revisó el pliego completo ni se verificaron requisitos de inscripción o eventuales aclaratorias posteriores."
+      }
+    },
+    {
+      "id": "escobar-licitacion-72-2026-cascote",
+      "name": "Escobar — LP 72/2026: provisión de cascote",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Construcción / materiales / infraestructura",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Belén de Escobar, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 700500000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial con IVA incluido y precio tope; no equivale al monto adjudicado."
+      },
+      "validFrom": "2026-11-19",
+      "validUntil": "2026-12-11",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14520/ver",
+      "sourcePublishedAt": "2026-11-19",
+      "period": "Consultas 1–2/12/2026; venta de pliego 3–4/12/2026; apertura 11/12/2026 a las 10:00.",
+      "description": "Licitación municipal para provisión de cascote. Presupuesto oficial de ARS 700.500.000 IVA incluido, señalado como precio tope. Consultas previstas para el 1 y 2 de diciembre, venta del pliego para el 3 y 4 de diciembre y apertura el 11/12/2026 a las 10:00. Verificar pliego, requisitos y eventuales circulares antes de decidir participar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial del 19/11/2026 el llamado, presupuesto, condición de precio tope, sede y cronograma. No se revisó el pliego completo ni se verificaron requisitos de inscripción o eventuales aclaratorias posteriores."
+      }
+    },
+    {
+      "id": "escobar-licitacion-75-2026-control-vectores",
+      "name": "Escobar — LP 75/2026: fumigación y control de vectores",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Servicios ambientales / salud pública / control de vectores",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 1400000000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; la fuente consultada no especifica en el extracto si incluye IVA. No equivale al monto adjudicado."
+      },
+      "validFrom": "2026-11-19",
+      "validUntil": "2026-12-09",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14520/ver",
+      "sourcePublishedAt": "2026-11-19",
+      "period": "Consultas 26–27/11/2026; venta de pliego 1–2/12/2026; apertura 9/12/2026 a las 12:00.",
+      "description": "Licitación de la Secretaría de Hacienda para un servicio de fumigación y control del mosquito transmisor de dengue, Zika y chikungunya en dependencias municipales, vía pública y sectores peri domiciliarios del Partido de Escobar. Presupuesto oficial de ARS 1.400.000.000. Consultas previstas para el 26 y 27 de noviembre, venta de pliego el 1 y 2 de diciembre y apertura el 9/12/2026 a las 12:00.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial del 19/11/2026 el objeto, presupuesto, dependencia licitante y cronograma. La inscripción/venta todavía no había comenzado al 24/11; revisar pliego y eventuales circulares."
+      }
+    },
+    {
+      "id": "mercado-libre-centro-logistico-escobar-2026",
+      "name": "Mercado Libre y Plaza Logística — centro de almacenamiento de Escobar",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Logística / comercio electrónico / almacenamiento",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "operational",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 115000000,
+        "currency": "USD",
+        "basis": "Inversión conjunta anunciada por Mercado Libre y Plaza Logística; no es capital disponible para terceros."
+      },
+      "validFrom": "2026-10-28",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/mercado-libre-ya-funciona-en-escobar-inversion-de-115-millones-de-dola/",
+      "sourcePublishedAt": "2026-10-28",
+      "period": "Inaugurado el 28/10/2026; primera etapa habilitada; ampliación prevista para marzo de 2027 y funcionamiento progresivo pleno durante 2028.",
+      "description": "Mercado Libre inauguró en Escobar su centro de almacenamiento más grande de Argentina, desarrollado con Plaza Logística mediante una inversión conjunta de USD 115 millones. La primera etapa habilitó 40.000 m²; para marzo de 2027 se prevé incorporar otros 60.000 m² y completar progresivamente el funcionamiento durante 2028. El complejo tendrá capacidad para procesar hasta 130.000 productos diarios y almacenar más de dos millones de artículos voluminosos. La fuente informó 96 trabajadores incorporados en la primera etapa, 48 residentes de Escobar, y proyectó más de 1.300 puestos directos para 2028. Registro de proyecto empresarial, no oferta de inversión.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificada la inauguración y los datos publicados por la Municipalidad el 28/10/2026. Los más de 1.300 empleos son una proyección para 2028, no puestos actuales; no se ofrece participación de capital a terceros."
+      }
+    },
+    {
+      "id": "mapei-expansion-industrial-escobar-2026",
+      "name": "Mapei — ampliación industrial anunciada en Escobar",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Química / materiales para la construcción",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-09-03",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/en-el-dia-de-la-industria-se-anunciaron-nuevas-inversiones-en-escobar/",
+      "sourcePublishedAt": "2026-09-03",
+      "period": "Anuncio municipal del 03/09/2026; la fuente no informa cronograma de ejecución.",
+      "description": "La Municipalidad informó que Mapei anunció un nuevo depósito de 3.600 m², una línea automática de envasado, encajonado y paletizado, ampliación de oficinas y nueva maquinaria. No se publicó monto de inversión, fecha de finalización ni empleo comprometido.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado el anuncio municipal y sus componentes declarados. No se verificaron permisos, monto, avance físico, fecha de operación ni empleo realizado; se conserva como proyecto anunciado."
+      }
+    },
+    {
+      "id": "biogenesis-bago-expansion-garin-2026",
+      "name": "Biogénesis Bagó — nueva planta de antígeno rábico y bioseguridad en Garín",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Biotecnología / salud animal",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Garín, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-09-03",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/en-el-dia-de-la-industria-se-anunciaron-nuevas-inversiones-en-escobar/",
+      "sourcePublishedAt": "2026-09-03",
+      "period": "Anuncio municipal del 03/09/2026; la fuente no informa cronograma de ejecución.",
+      "description": "La Municipalidad informó inversiones de Biogénesis Bagó en infraestructura, una nueva planta de antígeno rábico y adecuaciones de bioseguridad en su establecimiento de Garín. No se publicó monto de inversión, fecha de puesta en marcha ni empleo comprometido.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado el anuncio municipal y la referencia al establecimiento de Garín. No se verificaron permisos, monto, avance físico, fecha de operación ni empleo realizado; se conserva como proyecto anunciado."
+      }
+    },
+    {
+      "id": "finadiet-nuevo-laboratorio-escobar-2026",
+      "name": "Finadiet — nuevo laboratorio farmacéutico anunciado en Escobar",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Farmacéutica / laboratorios",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-09-03",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/en-el-dia-de-la-industria-se-anunciaron-nuevas-inversiones-en-escobar/",
+      "sourcePublishedAt": "2026-09-03",
+      "period": "Anuncio municipal del 03/09/2026; inauguración sin fecha consignada en la fuente.",
+      "description": "La Municipalidad informó el proyecto de un laboratorio de 7.600 m² que, una vez inaugurado, permitiría duplicar la capacidad productiva mensual de Finadiet y generar más de 150 puestos de trabajo altamente calificados. La cifra de empleo es una proyección condicionada a la inauguración; no se publicó monto de inversión ni fecha de apertura.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado el anuncio municipal, superficie y proyecciones declaradas. No se verificaron avance físico, permisos, monto, fecha de inauguración ni empleos efectivamente creados."
+      }
+    },
+    {
+      "id": "yazaki-ampliacion-industrial-escobar-2026",
+      "name": "Yazaki — ampliación de fábrica para producción vinculada a Toyota",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Automotriz / componentes y cableados",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-09-03",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/en-el-dia-de-la-industria-se-anunciaron-nuevas-inversiones-en-escobar/",
+      "sourcePublishedAt": "2026-09-03",
+      "period": "Anuncio municipal del 03/09/2026; la fuente no informa cronograma de ejecución.",
+      "description": "La Municipalidad informó una inversión de Yazaki para ampliar su fábrica en más de 3.000 m² y acondicionarla para la producción de la nueva Toyota. No se publicó monto de inversión, fecha de finalización ni empleo comprometido.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado el anuncio municipal y la superficie declarada. No se verificaron permisos, monto, avance físico, fecha de operación ni empleo realizado; se conserva como proyecto anunciado."
       }
     }
   ]
