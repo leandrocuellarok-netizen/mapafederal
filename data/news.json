@@ -1,5 +1,23 @@
 [
   {
+    "title": "Applied Digital anunció un contrato de capacidad para centros de datos de IA por USD 5.400 millones",
+    "date": "2026-11-23",
+    "category": "Tecnología",
+    "summary": "Reuters informó que Applied Digital arrendó 150 MW de capacidad crítica de TI a un hyperscaler de grado de inversión no identificado. La empresa estima USD 5.400 millones de ingresos contractuales durante el plazo base de 18 años; las opciones de renovación podrían extender el contrato hasta 33 años y USD 12.700 millones. La entrega de capacidad se espera desde el primer semestre de 2028, sujeta a hitos de desarrollo, acuerdos de servicios públicos y aprobaciones regulatorias. Son ingresos contractuales previstos, no inversión desembolsada ni capacidad ya entregada. El artículo no identifica la ubicación del centro de datos; no se atribuye a Argentina ni se incorpora como oportunidad local.",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/business/applied-digital-signs-54-billion-ai-data-center-lease-with-hyperscaler-2026-11-23/",
+    "period": "Anuncio publicado el 23/11/2026; inicio de entrega previsto para el primer semestre de 2028, sujeto a hitos de desarrollo, acuerdos de servicios públicos y aprobaciones regulatorias.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión del artículo de Reuters publicado el 23/11/2026. Se contrastaron capacidad contratada (150 MW), plazo base (18 años), ingresos contractuales esperados (USD 5.400 millones), opciones de renovación y condiciones previas a la entrega. El cliente y la ubicación del centro de datos no se identifican en la nota; no se infiere jurisdicción ni desembolso de inversión."
+    },
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "id": "news-www-reuters-com-business-applied-digital-signs-54-billion-ai-data-center-lease-with-hyperscaler-2026-11-23"
+  },
+  {
     "title": "Amazon anunció la adquisición de tecnología de optimización de chips de IA de Decart",
     "date": "2026-11-23",
     "category": "Tecnología",
