@@ -67,13 +67,13 @@
       "description": "Descubrimiento y organización de eventos por sector y localización.",
       "status": "planned",
       "statusLabel": "Planificado · requiere fuentes de organizadores",
-      "currentCapability": "Existe un contrato JSON versionado y validado en data/events.json con un registro histórico completado (Feria Japonesa Bazaa, 15/11/2026) y dos eventos futuros confirmados: Ronda de Negocios de Energía y Minería de PBA (01/12/2026, inscripción cerrada el 13/11) y Ronda RIGI (02/12/2026, inscripción B2B cerrada el 16/11). No hay agenda integrada, ingesta automática ni confirmación de cupos.",
+      "currentCapability": "Existe un contrato JSON versionado y validado en data/events.json con dos registros históricos completados (Feria Japonesa Bazaa, 15/11/2026; Ronda de Negocios Escobar, 24/11/2026) y dos eventos futuros confirmados: Ronda de Negocios de Energía y Minería de PBA (01/12/2026, inscripción cerrada el 13/11) y Ronda RIGI (02/12/2026, inscripción B2B cerrada el 16/11). No hay agenda integrada, ingesta automática ni confirmación de cupos.",
       "dependencies": [
         "data/events.json",
         "Fuentes oficiales de organizadores y recintos",
         "Reglas para cancelar/actualizar eventos"
       ],
-      "nextStep": "Seleccionar fuentes oficiales y autorizadas, definir frecuencia y responsables de revisión antes de cargar eventos.",
+      "nextStep": "Seleccionar fuentes oficiales y autorizadas, definir frecuencia y responsables de revisión; conciliar discrepancias de horarios y conservar la atribución de cifras cuando provengan de cobertura periodística.",
       "acceptanceCriteria": [
         "Cada evento conserva fecha, fuente oficial, período y estado",
         "Se registra la fecha y el alcance de la verificación",
