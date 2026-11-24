@@ -581,8 +581,8 @@
       "recordType": "investment_project",
       "scope": "national",
       "sector": "Energía / gas natural / GNL / infraestructura de exportación",
-      "jurisdiction": "Neuquén y Río Negro, Argentina",
-      "location": "Vaca Muerta (Neuquén); infraestructura de transporte y dos unidades FLNG previstas offshore de Río Negro",
+      "jurisdiction": null,
+      "location": "Vaca Muerta (Neuquén); gasoductos y procesamiento asociados; dos unidades FLNG previstas offshore de Río Negro",
       "stage": "announced",
       "opportunityStatus": "unknown",
       "amount": {
@@ -610,7 +610,7 @@
       "verification": {
         "status": "editorial_reviewed",
         "checkedAt": "2026-11-24",
-        "scope": "Contraste de la cobertura Reuters del anuncio ministerial del 20/11/2026 con la comunicación primaria de Eni del 14/08/2026 y el sitio oficial de YPF. Se verificaron promotores, cadena de valor, capacidad objetivo y magnitudes anunciadas. No se localizó en esta revisión la resolución de adhesión al RIGI ni se verificó la decisión final de inversión; los montos son expectativas anunciadas, no ejecución."
+        "scope": "Contraste de la cobertura Reuters del anuncio ministerial del 20/11/2026 con la comunicación primaria de Eni del 14/08/2026 y el sitio oficial de YPF. Se verificaron promotores, cadena de valor, capacidad objetivo y magnitudes anunciadas. No se localizó en esta revisión la resolución de adhesión al RIGI ni se verificó la decisión final de inversión; los montos son expectativas anunciadas, no ejecución. El proyecto se clasifica como nacional por abarcar más de una provincia; no se fuerza una jurisdicción provincial única. Las provincias y la localización funcional se conservan en el campo location."
       }
     }
   ]
