@@ -849,8 +849,9 @@ jobs:
           opportunities = investment_catalog.get("opportunities")
           assert isinstance(opportunities, list), "El catálogo de oportunidades debe contener una lista"
           opportunity_ids = set()
-          opportunity_types = {"project", "public_program", "tender", "incentive"}
-          opportunity_scopes = {"national", "provincial"}
+          opportunity_types = {"project", "public_program", "tender", "incentive", "investment_project"}
+          opportunity_scopes = {"national", "provincial", "municipal"}
+          municipal_jurisdictions = {"Partido de Escobar, Provincia de Buenos Aires"}
           opportunity_stages = {"announced", "feasibility", "preparation", "under_construction", "operational", "completed", "cancelled", "unknown"}
           opportunity_statuses = {"open", "closed", "suspended", "unknown"}
           verification_statuses = {"verified", "not_verified", "outdated"}
@@ -867,10 +868,14 @@ jobs:
               assert opportunity["opportunityStatus"] in opportunity_statuses, f"Estado de oportunidad no admitido: {opportunity['id']}"
               if opportunity["scope"] == "national":
                   assert opportunity["jurisdiction"] is None, f"Una oportunidad nacional no debe asignarse a una provincia: {opportunity['id']}"
-              else:
+              elif opportunity["scope"] == "provincial":
                   assert opportunity["jurisdiction"] in expected_jurisdictions, f"Jurisdicción provincial no admitida: {opportunity['id']}"
+              else:
+                  assert opportunity["jurisdiction"] in municipal_jurisdictions, f"Jurisdicción municipal no admitida: {opportunity['id']}"
               location = opportunity["location"]
               assert location is None or (isinstance(location, str) and location.strip()), f"Ubicación inválida: {opportunity['id']}"
+              if opportunity["scope"] == "municipal":
+                  assert isinstance(location, str) and location.strip(), f"Proyecto municipal sin localidad identificada: {opportunity['id']}"
               source_url = urlparse(opportunity["sourceUrl"])
               assert source_url.scheme == "https" and source_url.hostname and source_url.username is None and source_url.password is None, f"Fuente de oportunidad inválida: {opportunity['id']}"
               source_published = date.fromisoformat(opportunity["sourcePublishedAt"])
@@ -927,6 +932,10 @@ jobs:
           assert kit40["verification"]["status"] == "verified" and kit40["verification"]["checkedAt"] == "2026-11-23", "Falta la verificación fechada de KIT 4.0"
           assert "no como pago directo a la PyME" in kit40["description"] and "tres proveedores" in kit40["description"], "KIT 4.0 debe explicar el destino del beneficio y la condición de proveedores"
           assert "saldo del cupo" in kit40["verification"]["scope"], "KIT 4.0 debe documentar el límite de la verificación"
+          addnice = next((item for item in opportunities if item["id"] == "grupo-addnice-traslado-planta-garin-2027"), None)
+          assert addnice is not None and addnice["recordType"] == "investment_project", "Falta el proyecto industrial anunciado para Garín"
+          assert addnice["scope"] == "municipal" and addnice["jurisdiction"] == "Partido de Escobar, Provincia de Buenos Aires", "El proyecto de Garín debe conservar su alcance municipal"
+          assert addnice["stage"] == "preparation" and addnice["opportunityStatus"] == "unknown" and addnice["amount"] is None, "El proyecto anunciado no debe presentarse como ejecutado ni con monto confirmado"
 
           # Fixture sintético: valida el contrato sin publicar una oportunidad real.
           sample_opportunity = {
@@ -955,6 +964,8 @@ jobs:
           validate_opportunity(sample_opportunity)
           national_fixture = {**sample_opportunity, "id": "fixture-nacional", "scope": "national", "jurisdiction": None}
           validate_opportunity(national_fixture)
+          municipal_fixture = {**sample_opportunity, "id": "fixture-escobar-municipal", "recordType": "investment_project", "scope": "municipal", "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires", "location": "Garín"}
+          validate_opportunity(municipal_fixture)
           invalid_opportunities = (
               {**sample_opportunity, "sourceUrl": "http://example.org/oportunidad"},
               {**sample_opportunity, "jurisdiction": "Atlantis"},
