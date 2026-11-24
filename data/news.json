@@ -81,6 +81,28 @@
     "geographyEvidence": []
   },
   {
+    "id": "news-blog-ethereum-org-2026-11-23-pqai-0",
+    "title": "La Fundación Ethereum priorizó la seguridad poscuántica ante los nuevos riesgos asociados a la IA",
+    "date": "2026-11-23",
+    "category": "Tecnología",
+    "summary": "La Ethereum Foundation explicó que los modelos de IA están acelerando la detección de vulnerabilidades en software de producción y que esa capacidad exige reforzar la seguridad del protocolo, sin que ello demuestre que la IA pueda romper hoy la criptografía utilizada. La hoja de trabajo propone firmas basadas en hash para validadores, migración de cuentas y compromisos de datos basados en hash, junto con verificación formal. La Fundación informó que ya comenzaron las especificaciones iniciales y la iteración de un primer devnet. En Devcon se mencionó diciembre de 2028 como objetivo y 2029 como plazo interno sujeto a revisión; son metas de planificación, no fechas garantizadas.",
+    "source": "Ethereum Foundation Blog",
+    "url": "https://blog.ethereum.org/2026/11/23/pqai-0",
+    "period": "Publicación: 23/11/2026. Objetivo mencionado en Devcon: diciembre de 2028; plazo interno de la Fundación: 2029, sujeto a revisión en enero.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Global — protocolo y ecosistema Ethereum",
+    "sector": "Ciberseguridad / criptografía poscuántica / infraestructura blockchain / IA aplicada a seguridad",
+    "territorialRelevance": "Relevancia tecnológica global para proveedores de ciberseguridad, infraestructura digital y blockchain; referencia de planificación tecnológica, sin jurisdicción argentina ni impacto local directo demostrado.",
+    "relatedSources": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión de la publicación primaria de Ethereum Foundation del 23/11/2026. Se contrastaron el riesgo atribuido al uso de IA para descubrir vulnerabilidades, las tres líneas técnicas propuestas, el inicio de especificaciones y del primer devnet, y los horizontes de diciembre de 2028/2029. Se conservan como objetivos de planificación; no se afirma que la migración esté desplegada ni que la criptografía actual haya sido vulnerada."
+    }
+  },
+  {
     "title": "Escobar: las ordenanzas fiscales 2027 avanzaron en el HCD y esperan la Asamblea de Mayores Contribuyentes",
     "date": "2026-11-20",
     "category": "Regulación",
