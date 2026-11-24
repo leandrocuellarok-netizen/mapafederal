@@ -45,7 +45,7 @@ assert.equal(ecosan.sourcePublishedAt, "2026-11-16");
 assert.equal(new URL(ecosan.sourceUrl).protocol, "https:");
 assert.equal(ecosan.verification.checkedAt, "2026-11-24");
 assert.match(ecosan.verification.scope, /sin inspección presencial/i);
-assert.match(ecosan.verification.scope, /no se interpreta como altas o vacantes/i);
+assert.match(ecosan.verification.scope, /ni se interpreta como altas o vacantes/i);
 assert.match(ecosan.description, /más de 180 personas/);
 assert.match(ecosan.description, /no una auditoría de nómina/i);
 assert.match(ecosan.description, /No se infieren vacantes/i);
