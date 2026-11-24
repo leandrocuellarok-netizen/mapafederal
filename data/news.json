@@ -229,15 +229,11 @@
     "verification": {
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-24",
-      "scope": "Revisión del reporte de Reuters del 20/11/2026. Se registra la declaración y su posible señal de política industrial; no se encontró texto legal ni se atribuye una consecuencia cuantificada a proyectos concretos."
+      "scope": "Revisión del reporte de Reuters del 20/11/2026. Se registra la declaración y su posible señal de política industrial; no se encontró texto legal ni se atribuye una consecuencia cuantificada a proyectos concretos. La taxonomía territorial del catálogo filtra jurisdicciones argentinas; el país extranjero se explicita en el titular y el resumen, sin forzarlo a una provincia argentina."
     },
-    "jurisdictions": [
-      "Estados Unidos"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "Estados Unidos"
-    ]
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": []
   },
   {
     "title": "Escobar publicó tres licitaciones de suministros y servicios con aperturas en diciembre",
