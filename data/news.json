@@ -668,6 +668,52 @@
     "id": "news-www-escobar-gob-ar-noticias-mercado-libre-ya-funciona-en-escobar-inversion-de-115-millones-de-dola"
   },
   {
+    "title": "ILIA 2026: Argentina se ubicó sexta en el índice latinoamericano de IA",
+    "date": "2026-10-20",
+    "category": "Tecnología",
+    "summary": "El CENIA y la CEPAL presentaron la cuarta edición del ILIA, que evalúa 20 países con 126 subindicadores. Argentina obtuvo 55,6 puntos y quedó sexta, dentro del grupo de países adoptantes. El informe identifica brechas regionales en capacidad de cómputo, adopción empresarial y ejecución de estrategias. En América Latina y el Caribe estima uso de IA en 27,6% de grandes empresas, 12,8% de medianas y 6,8% de pequeñas; son estimaciones regionales, no tasas específicas de Argentina ni estadísticas oficiales observadas. La edición amplía la cobertura y modifica indicadores, por lo que la comparación con 2025 es limitada.",
+    "source": "CENIA y CEPAL",
+    "url": "https://cenia.cl/2026/10/20/ilia-2026-4ta-edicion-revela-que-america-latina-y-el-caribe-se-juegan-su-futuro-en-ia-en-la-colaboracion-regional-para-datos-talento-y-computo/",
+    "period": "Publicación del ILIA 2026 el 20/10/2026; el índice analiza 20 países de América Latina y el Caribe y utiliza 126 subindicadores.",
+    "relatedSources": [
+      {
+        "label": "CEPAL — ficha de publicación ILIA 2026 (20/10/2026)",
+        "url": "https://www.cepal.org/es/publicaciones/90413-indice-latinoamericano-inteligencia-artificial-ilia-2026"
+      }
+    ],
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión de la comunicación oficial del CENIA publicada el 20/10/2026 y de la ficha de publicación de la CEPAL. Se verificaron el alcance de 20 países, 126 subindicadores, la puntuación argentina de 55,6 y su clasificación como adoptante. Los porcentajes de adopción empresarial (27,6%, 12,8%, 6,8%) son regionales y no se atribuyen a Argentina. La edición 2026 incorpora cambios metodológicos; no es una comparación perfectamente homogénea con 2025."
+    },
+    "id": "news-cenia-cl-2026-10-20-ilia-2026-4ta-edicion-revela-que-america-latina-y-el-caribe-se-juegan-su-futuro-en-ia-en-la-colaboracion-regional-para-datos-talento-y-computo"
+  },
+  {
+    "title": "Salesforce y la Provincia de Buenos Aires firmaron un acuerdo marco para explorar iniciativas de IA",
+    "date": "2026-10-09",
+    "category": "Empresas",
+    "summary": "Salesforce y el Gobierno de la Provincia de Buenos Aires firmaron un memorándum de entendimiento para explorar iniciativas de modernización estatal, digitalización de PyMEs y formación en IA. El comunicado corporativo describe tres ejes, incluido acceso a la plataforma Trailhead; no informa presupuesto, cronograma de implementación, contrataciones ni despliegues concretos. Es un marco de cooperación, no evidencia de adopción operativa de agentes ni una licitación. Su relevancia para Escobar es indirecta: el alcance anunciado es provincial y no se verificó una adhesión o implementación específica del municipio.",
+    "source": "Salesforce — comunicado corporativo",
+    "url": "https://www.salesforce.com/mx/news/press-releases/2026/10/09/salesforce-y-la-provincia-de-buenos-aires-firman-una-alianza-estrategica/",
+    "period": "Memorándum de Entendimiento anunciado el 09/10/2026 en el Congreso Federal de Gobierno Digital; sin cronograma público de ejecución.",
+    "jurisdictions": [
+      "Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "El comunicado identifica al Gobierno de la Provincia de Buenos Aires como parte firmante y sitúa la firma en La Plata."
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión del comunicado corporativo de Salesforce del 09/10/2026. Confirma la firma del MoU y sus tres ejes (modernización pública, PyMEs y formación); el documento no publica presupuesto ni cronograma y describe una intención de explorar iniciativas, no contratos ni despliegues. No se verificó adhesión o implementación en Escobar."
+    },
+    "id": "news-www-salesforce-com-mx-news-press-releases-2026-10-09-salesforce-y-la-provincia-de-buenos-aires-firman-una-alianza-estrategica"
+  },
+  {
     "title": "El Ministerio Público Fiscal aprobó lineamientos obligatorios para el uso institucional de IA",
     "date": "2026-09-04",
     "category": "Regulación",
