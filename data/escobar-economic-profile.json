@@ -147,12 +147,12 @@
           "label": "ECOSAN — Premio LIDE Sostenibilidad 2026 (25/08/2026)",
           "url": "https://www.ecosan.com.ar/2026/08/25/ecosan-recibio-el-premio-lide-sostenibilidad-2026/",
           "sourcePublishedAt": "2026-08-25",
-          "sourcePublicationNote": "La publicación institucional menciona la planta industrial de Loma Verde y su generación de energía solar; no es un registro de producción diaria.",
+          "sourcePublicationNote": "La ruta de la página institucional contiene la fecha 2026/08/25; el cuerpo consultado no muestra una fecha editorial separada. La nota menciona la planta de Loma Verde y su generación de energía solar, pero no es un registro de producción diaria.",
           "validityPeriod": "Información corporativa publicada el 25/08/2026.",
           "verification": {
             "status": "verified",
             "checkedAt": "2026-11-24",
-            "scope": "La página oficial de ECOSAN identifica la planta de Loma Verde como uno de sus hitos industriales y describe generación solar. Se usa como fuente corporativa complementaria; no acredita por sí sola operación diaria ni dotación de personal."
+            "scope": "La URL institucional está fechada en su permalink como 25/08/2026 y la página identifica la planta de Loma Verde como uno de los hitos industriales de ECOSAN, además de describir generación solar. Se usa como fuente corporativa complementaria; no acredita por sí sola operación diaria ni dotación de personal."
           }
         }
       ],
