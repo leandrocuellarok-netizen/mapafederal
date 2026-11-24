@@ -78,7 +78,7 @@ assert.match(route506.secondaryReports[0].claim, /no sustituye una confirmación
 
 const plannerServices = mobility.plannerServices;
 assert.ok(Array.isArray(plannerServices), "Falta el registro de servicios publicados en Mi Bus");
-assert.equal(plannerServices.length, 1, "Debe existir una ficha Mi Bus específica para la línea 506");
+assert.equal(plannerServices.length, 2, "Deben existir fichas Mi Bus independientes para las líneas 503 y 506");
 const planner506 = plannerServices.find(item => item.id === "linea-506-estacion-escobar-mercado-libre-mibus-2026");
 assert.ok(planner506, "Falta la ficha oficial de línea 506 Est. Escobar–Mercado Libre");
 assert.equal(planner506.line, "506");
@@ -101,6 +101,30 @@ assert.match(planner506.verification.scope, /no.*equivalencia exacta/i);
 for (const url of [planner506.sourceUrl, planner506.catalogUrl]) {
   assert.equal(new URL(url).protocol, "https:");
 }
+const planner503 = plannerServices.find(item => item.id === "linea-503-san-luis-escobar-mibus-2026");
+assert.ok(planner503, "Falta la ficha de la línea 503 San Luis–Escobar en Mi Bus");
+assert.equal(planner503.line, "503");
+assert.equal(planner503.serviceName, "SAN LUIS - ESCOBAR");
+assert.deepEqual(planner503.localities, [], "No se deben inferir localidades a partir de paradas sin asignación inequívoca");
+assert.match(planner503.localityScopeNote, /no permite asignar/i);
+assert.equal(planner503.listedStopsCount, 29);
+assert.equal(planner503.firstListedStop, "SAN VICENTE E ISLANDIA");
+assert.equal(planner503.lastListedStop, "DR. TRAVI Y RIVADAVIA");
+assert.equal(planner503.sourcePublishedAt, null);
+assert.equal(planner503.status, "no verificado");
+assert.equal(planner503.operationalStatus, "no verificado");
+assert.equal(planner503.publicationStatus, "listado en el planificador municipal");
+assert.equal(planner503.relatedAnnouncementId, route503.id);
+assert.match(planner503.announcementRelation, /no identifica el ramal H/i);
+assert.match(planner503.announcementRelation, /no permite verificar equivalencia/i);
+assert.equal(planner503.verification.status, "verified");
+assert.equal(planner503.verification.checkedAt, "2026-11-24");
+assert.match(planner503.verification.scope, /29 paradas/i);
+assert.match(planner503.verification.scope, /no identifica ramal H/i);
+assert.match(planner503.verification.scope, /no.*circulación en tiempo real/i);
+for (const url of [planner503.sourceUrl, planner503.catalogUrl]) {
+  assert.equal(new URL(url).protocol, "https:");
+}
 for (const url of [route506.sourceUrl, ...route506.secondaryReports.map(item => item.sourceUrl)]) {
   assert.equal(new URL(url).protocol, "https:");
 }
@@ -113,4 +137,4 @@ assert.match(profile, /mobility\.plannerServices/);
 assert.match(profile, /plannerServicesHtml/);
 assert.match(profile, /Servicios publicados en el planificador Mi Bus/);
 
-console.log("Escobar movilidad: 15 paradas, 3 estaciones, 3 coincidencias sin inferir transbordos, 1 puente con estado actual no verificado y 2 ramales anunciados sin confirmar como operativos.");
+console.log("Escobar movilidad: 15 paradas, 3 estaciones, 3 coincidencias sin inferir transbordos, 1 puente con estado actual no verificado, 2 ramales anunciados y 2 fichas Mi Bus independientes.");
