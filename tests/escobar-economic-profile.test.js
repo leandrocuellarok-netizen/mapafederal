@@ -104,4 +104,32 @@ assert.match(finderRenderer, /opportunity\.stageLabel\|\|investmentStageLabel/);
 assert.match(finderRenderer, /relatedSourcesHtml/);
 assert.match(finderRenderer, /source\.participationPeriod/);
 
+
+const market = economy.commercialPrograms.find(entry => entry.id === "mercado-popular-escobar");
+assert.ok(market, "Falta el Mercado Popular de Escobar");
+assert.equal(market.status, "pendiente");
+assert.equal(market.publicationStatus, "Publicado en el directorio municipal");
+assert.equal(market.operationalStatus, "no verificado");
+assert.equal(market.sourcePublishedAt, null, "No inventar fecha de publicación del directorio");
+assert.equal(market.verification.status, "verified");
+assert.equal(market.verification.checkedAt, "2026-11-24");
+assert.equal(market.schedule.length, 15);
+assert.deepEqual(market.localityCoverage, ["Belén de Escobar", "Garín", "Ingeniero Maschwitz", "Maquinista Savio", "Matheu", "Loma Verde", "24 de Febrero"]);
+for (const entry of market.schedule) {
+  assert.ok(market.localityCoverage.includes(entry.locality));
+  assert.ok(entry.day && entry.location && entry.hours);
+  assert.equal(new URL(market.sourceUrl).protocol, "https:");
+}
+const market24 = market.schedule.find(entry => entry.locality === "24 de Febrero");
+assert.ok(market24, "Falta el recorrido publicado para 24 de Febrero");
+assert.equal(market24.day, "Martes");
+assert.equal(market24.location, "Pablo Marín e Islas Malvinas");
+assert.equal(market24.hours, "09:00–14:00");
+assert.match(market.sourcePublicationNote, /no indica fecha de publicación/i);
+assert.match(market.validityPeriod, /confirmar antes de concurrir/i);
+assert.match(market.verification.scope, /no se realizó verificación presencial/i);
+assert.equal(market.coords, undefined, "No inventar coordenadas de las paradas itinerantes");
+const marketRenderer = fs.readFileSync("assets/escobar-profile.js", "utf8");
+assert.match(marketRenderer, /economy\.commercialPrograms/);
+assert.match(marketRenderer, /Ver cronograma municipal por localidad/);
 console.log("Escobar: empresas, proyecto portuario, expedientes ambientales, períodos de participación y etiquetas de prefactibilidad comprobados.");

@@ -325,5 +325,143 @@
       "checkedAt": "2026-11-23",
       "scope": "Se comprobó que la página presenta un listado institucional de empresas. No se verificaron domicilios, plantas activas, relaciones comerciales ni vacantes de cada marca."
     }
-  }
+  },
+  "commercialPrograms": [
+    {
+      "id": "mercado-popular-escobar",
+      "name": "Mercado Popular de Escobar — recorrido itinerante",
+      "status": "pendiente",
+      "publicationStatus": "Publicado en el directorio municipal",
+      "operationalStatus": "no verificado",
+      "description": "Programa municipal itinerante de venta directa de productos frescos en distintos barrios del Partido de Escobar. La página institucional publica un cronograma por localidad, día, punto de encuentro y franja horaria.",
+      "localityCoverage": [
+        "Belén de Escobar",
+        "Garín",
+        "Ingeniero Maschwitz",
+        "Maquinista Savio",
+        "Matheu",
+        "Loma Verde",
+        "24 de Febrero"
+      ],
+      "schedule": [
+        {
+          "id": "mercado-popular-belen-lunes",
+          "locality": "Belén de Escobar",
+          "day": "Lunes",
+          "location": "Villa Bourdet, Escuela 4, Villa Marconi, Stone, San Marcos y San Luis",
+          "hours": "08:00–17:00"
+        },
+        {
+          "id": "mercado-popular-belen-martes",
+          "locality": "Belén de Escobar",
+          "day": "Martes",
+          "location": "Los Robles, P. Unidas, Bardessono y Lambertuchi",
+          "hours": "14:00–16:00"
+        },
+        {
+          "id": "mercado-popular-belen-miercoles",
+          "locality": "Belén de Escobar",
+          "day": "Miércoles",
+          "location": "La Victoria, Dacunto y Mirador",
+          "hours": "14:00–16:00"
+        },
+        {
+          "id": "mercado-popular-belen-jueves",
+          "locality": "Belén de Escobar",
+          "day": "Jueves",
+          "location": "La Chechela, Villa Bote, El Matadero, Donatelli y Las Lomas",
+          "hours": "14:00–17:00",
+          "frequency": "Cada 14 días"
+        },
+        {
+          "id": "mercado-popular-belen-viernes",
+          "locality": "Belén de Escobar",
+          "day": "Viernes",
+          "location": "Villa Vallier, El Candil, Los Cuatro Vientos y Villa Alegre",
+          "hours": "08:00–17:00"
+        },
+        {
+          "id": "mercado-popular-garin-martes",
+          "locality": "Garín",
+          "day": "Martes",
+          "location": "Barrio Cabot — San Javier y calle 14",
+          "hours": "09:00–14:00"
+        },
+        {
+          "id": "mercado-popular-garin-viernes",
+          "locality": "Garín",
+          "day": "Viernes",
+          "location": "Lamberti y Belgrano",
+          "hours": "09:00–14:00"
+        },
+        {
+          "id": "mercado-popular-maschwitz-martes",
+          "locality": "Ingeniero Maschwitz",
+          "day": "Martes",
+          "location": "Plaza de la Rotonda — Lambaré y Carriego",
+          "hours": "14:00–17:00"
+        },
+        {
+          "id": "mercado-popular-maschwitz-miercoles",
+          "locality": "Ingeniero Maschwitz",
+          "day": "Miércoles",
+          "location": "Plaza de la Rotonda — Lambaré y Carriego",
+          "hours": "09:00–14:00"
+        },
+        {
+          "id": "mercado-popular-maschwitz-sabado",
+          "locality": "Ingeniero Maschwitz",
+          "day": "Sábado",
+          "location": "Polideportivo de Maschwitz — El Dorado y Villanueva",
+          "hours": "09:00–14:00",
+          "frequency": "Cada 14 días"
+        },
+        {
+          "id": "mercado-popular-savio-miercoles",
+          "locality": "Maquinista Savio",
+          "day": "Miércoles",
+          "location": "Barrio Amancay — Maipú y El Colibrí",
+          "hours": "14:00–17:00"
+        },
+        {
+          "id": "mercado-popular-matheu-lunes",
+          "locality": "Matheu",
+          "day": "Lunes",
+          "location": "Canesi 290",
+          "hours": "09:00–14:00"
+        },
+        {
+          "id": "mercado-popular-matheu-jueves",
+          "locality": "Matheu",
+          "day": "Jueves",
+          "location": "Canesi 290",
+          "hours": "09:00–14:00"
+        },
+        {
+          "id": "mercado-popular-loma-verde-sabado",
+          "locality": "Loma Verde",
+          "day": "Sábado",
+          "location": "Los Cerros y Colectora Oeste",
+          "hours": "09:00–14:00"
+        },
+        {
+          "id": "mercado-popular-24f-martes",
+          "locality": "24 de Febrero",
+          "day": "Martes",
+          "location": "Pablo Marín e Islas Malvinas",
+          "hours": "09:00–14:00"
+        }
+      ],
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/municipio/mercado-popular/",
+      "sourcePublishedAt": null,
+      "sourcePublicationNote": "La página institucional no indica fecha de publicación ni de actualización; se consultó el 2026-11-24.",
+      "validityPeriod": "Cronograma visible en el directorio municipal consultado el 2026-11-24. La fuente no informa fecha de actualización ni vigencia formal; confirmar antes de concurrir.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Se verificaron en la página municipal la denominación del programa, modalidad itinerante, localidades, días, puntos de encuentro y franjas horarias publicadas. La fuente no consigna fecha de edición. No se realizó verificación presencial ni se confirmó que cada puesto funcione efectivamente en el día y horario anunciado; el estado operativo permanece no verificado."
+      }
+    }
+  ]
 }
