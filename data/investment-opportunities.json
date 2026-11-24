@@ -228,6 +228,222 @@
       }
     },
     {
+      "id": "avellaneda-licitacion-122-2026-kits-escolares",
+      "name": "Avellaneda — LP 122/2026: provisión de kits escolares",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "sector": "Educación / suministros escolares",
+      "jurisdiction": "Partido de Avellaneda, Provincia de Buenos Aires",
+      "location": "Avellaneda, Partido de Avellaneda, Provincia de Buenos Aires",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 240277500,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validUntil": "2026-12-18",
+      "period": "Apertura: 18/12/2026 a las 10:00. Valor del pliego: ARS 120.138,75. Consulta y adquisición en Jefatura de Compras y Suministros, Güemes 835, 2.º piso, Avellaneda, de 08:00 a 15:30; el extracto no fija fecha final de adquisición.",
+      "description": "Licitación Pública 122/2026 para provisión de kits escolares destinados a jardines maternales, jardines de infantes y centros educativos municipales. Presupuesto oficial ARS 240.277.500. Consultar el pliego completo para requisitos, garantías, cantidades y fecha límite de adquisición antes de decidir participar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron número, objeto, presupuesto, valor del pliego y apertura. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "esteban-echeverria-licitacion-33-2026-escuela-secundaria-26",
+      "name": "Esteban Echeverría — LP 33/2026: obras en la Escuela Secundaria N.º 26 de Canning",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "sector": "Obra pública / infraestructura educativa",
+      "jurisdiction": "Partido de Esteban Echeverría, Provincia de Buenos Aires",
+      "location": "Canning, Partido de Esteban Echeverría, Provincia de Buenos Aires",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 367735031.76,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validUntil": "2026-12-21",
+      "period": "Apertura: 21/12/2026 a las 10:00. Valor del pliego: ARS 736.000. Venta y consulta en Dirección General de Compras y Suministros, S.T. de Santamarina 455, 1.º piso, Monte Grande, días hábiles de 07:00 a 13:00, hasta dos días hábiles antes de la apertura.",
+      "description": "Licitación Pública 33/2026 para provisión de materiales y mano de obra para instalación sanitaria y eléctrica, cielorrasos y pintura exterior e interior de la Escuela Secundaria N.º 26, Etapa XII, en Mariano Castex 1492, Canning. El llamado se enmarca en el Programa de Infraestructura Escolar. Verificar pliego, requisitos, garantías y circulares.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron número, objeto, ubicación, presupuesto, valor del pliego y apertura. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "mercedes-licitacion-16-2026-adquisicion-omnibus",
+      "name": "Mercedes — LP 16/2026: adquisición de ómnibus para transporte comunal",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "sector": "Transporte público / movilidad / vehículos",
+      "jurisdiction": "Partido de Mercedes, Provincia de Buenos Aires",
+      "location": "Mercedes, Partido de Mercedes, Provincia de Buenos Aires",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 320000000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validUntil": "2026-12-15",
+      "period": "Pliego disponible para consulta y adquisición del 18/11 al 11/12/2026 inclusive. Valor del pliego: ARS 100.000. Apertura: 15/12/2026 a las 10:00 en Av. 29 N.º 575, Mercedes.",
+      "description": "Licitación Pública 16/2026 para adquisición de ómnibus destinados al transporte comunal. El pliego se consulta en el sitio oficial municipal y puede adquirirse hasta el 11 de diciembre. Verificar especificaciones técnicas, cantidades, garantías y condiciones de entrega.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron objeto, presupuesto, valor y período de adquisición del pliego y fecha de apertura. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "patagones-licitacion-13-2026-edificio-eest1-etapa1",
+      "name": "Patagones — LP 13/2026: nuevo edificio de la EEST N.º 1, etapa 1",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "sector": "Obra pública / infraestructura educativa",
+      "jurisdiction": "Partido de Patagones, Provincia de Buenos Aires",
+      "location": "Carmen de Patagones, Partido de Patagones, Provincia de Buenos Aires",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 3157504917.53,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validUntil": "2026-12-10",
+      "period": "Presentación de ofertas hasta el 10/12/2026 a las 09:00; apertura el mismo día a las 10:00. Valor del pliego: ARS 200.000. Pliego disponible en Dirección de Compras, Comodoro Rivadavia 193, Carmen de Patagones.",
+      "description": "Licitación Pública 13/2026 para ejecutar la etapa 1 del nuevo edificio de la Escuela de Educación Secundaria Técnica N.º 1 Ing. Mario Rovere, en Carmen de Patagones. Presupuesto oficial ARS 3.157.504.917,53. Verificar documentación técnica, garantías y condiciones de presentación en el pliego.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron objeto, jurisdicción, presupuesto, valor del pliego, fecha límite de ofertas y apertura. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "rivadavia-licitacion-3-2026-concesion-kiosco-bar-parque-municipal",
+      "name": "Rivadavia — LP 3/2026: concesión de kiosco-bar en el Parque Municipal 17 de Octubre",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "sector": "Comercio / gastronomía / concesiones municipales",
+      "jurisdiction": "Partido de Rivadavia, Provincia de Buenos Aires",
+      "location": "América, Partido de Rivadavia, Provincia de Buenos Aires",
+      "opportunityStatus": "open",
+      "amount": null,
+      "validUntil": "2026-12-17",
+      "period": "Concesión de uso y explotación del kiosco-bar ubicado en el quincho del Parque Municipal 17 de Octubre. Valor del pliego: ARS 12.000. Apertura: 17/12/2026 a las 10:00 en la Oficina de Compras. El presupuesto o canon base no se informa en el extracto.",
+      "description": "Licitación Pública 3/2026 para concesionar el uso y explotación de un kiosco-bar en el Parque Municipal 17 de Octubre, en América. La fuente no publica presupuesto, canon mínimo ni condiciones económicas completas; no se estima un monto. Consultar el pliego antes de evaluar la concesión.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron objeto, ubicación, valor del pliego y apertura. El extracto no informa presupuesto/canon base; no se inventa. No se revisó el pliego completo."
+      }
+    },
+    {
+      "id": "san-andres-de-giles-licitacion-6-2026-pickups",
+      "name": "San Andrés de Giles — LP 6/2026: compra de dos camionetas 0 km",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "sector": "Automotores / flota municipal / transporte",
+      "jurisdiction": "Partido de San Andrés de Giles, Provincia de Buenos Aires",
+      "location": "San Andrés de Giles, Partido de San Andrés de Giles, Provincia de Buenos Aires",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 68113800,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validUntil": "2026-12-09",
+      "period": "Apertura: 09/12/2026 a las 11:00. Valor del pliego: ARS 68.113,80. Adquisición y consultas en Oficina de Compras, Moreno 338, San Andrés de Giles, de 07:30 a 13:30. Ofertas hasta la fecha y hora de apertura.",
+      "description": "Licitación Pública 6/2026 para la compra de dos camionetas 0 km. Presupuesto oficial ARS 68.113.800. Verificar pliego, especificaciones de las unidades, garantías y condiciones de entrega antes de participar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron objeto, presupuesto, valor del pliego, lugar de consulta y apertura. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "tandil-licitacion-21-01-26-excavadora-hidraulica-oruga",
+      "name": "Tandil — LP 21-01-26: adquisición de excavadora hidráulica sobre oruga",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "sector": "Maquinaria pesada / obras públicas / infraestructura",
+      "jurisdiction": "Partido de Tandil, Provincia de Buenos Aires",
+      "location": "Tandil, Partido de Tandil, Provincia de Buenos Aires",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 294123375,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validUntil": "2026-12-10",
+      "period": "Recepción y apertura de ofertas: 10/12/2026 a las 10:00. Solicitud de legajos por el canal indicado en el Boletín Oficial y consulta del pliego en el portal de autogestión municipal.",
+      "description": "Licitación Pública 21-01-26 para adquisición de una excavadora hidráulica sobre oruga. Presupuesto oficial ARS 294.123.375. La fuente remite a la plataforma municipal para consultar el pliego y solicitar legajos; no informa el valor del pliego en el extracto.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron objeto, presupuesto, canal de consulta, expediente y fecha límite/apertura. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "tres-arroyos-licitacion-18-2026-concesion-carros-gastronomicos",
+      "name": "Tres Arroyos — LP 18/2026: concesión de carros gastronómicos en espacios públicos",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "sourcePublishedAt": "2026-11-24",
+      "sector": "Comercio / gastronomía / concesiones de espacios públicos",
+      "jurisdiction": "Partido de Tres Arroyos, Provincia de Buenos Aires",
+      "location": "Tres Arroyos, Partido de Tres Arroyos, Provincia de Buenos Aires",
+      "opportunityStatus": "open",
+      "amount": null,
+      "validUntil": "2026-12-10",
+      "period": "Concesión de carros gastronómicos en espacios públicos de la ciudad cabecera. Apertura: 10/12/2026 a las 10:00. Valor del pliego: ARS 10.000. Consulta y venta en Departamento de Compras y Suministros, Av. Rivadavia 1, hasta el 09/12/2026 en horario administrativo. No se publica canon base en el extracto.",
+      "description": "Licitación Pública 18/2026 para la explotación de carros gastronómicos en espacios públicos de Tres Arroyos. El extracto informa valor del pliego y cronograma, pero no publica canon base ni presupuesto; no se estima un monto. Consultar el pliego completo para conocer espacios, condiciones y obligaciones del concesionario.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 24/11/2026, sección 14526. Se contrastaron objeto, fecha de apertura, valor del pliego y período de consulta/venta. El extracto no informa canon base; no se inventa. No se revisó el pliego completo."
+      }
+    },
+    {
       "id": "argentina-lng-ypf-eni-xrg-rigi-2026",
       "name": "Argentina LNG — proyecto integrado de YPF, Eni y XRG",
       "recordType": "investment_project",
