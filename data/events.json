@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23",
-  "note": "Catálogo documental de eventos con procedencia y verificación. No es una agenda integrada ni confirma eventos futuros. Los registros históricos se conservan como completados.",
+  "updatedAt": "2026-11-24",
+  "note": "Catálogo documental de eventos con procedencia y verificación. No es una agenda integrada ni confirma eventos futuros más allá de la fuente. Los registros históricos se conservan como completados. Para la Ronda RIGI, la inscripción a reuniones B2B cerró el 16/11/2026; la asistencia a otras actividades se anuncia hasta el 30/11/2026.",
   "events": [
     {
       "id": "feria-japonesa-bazaa-5-edicion-2026",
@@ -25,6 +25,29 @@
         "status": "verified",
         "checkedAt": "2026-11-23",
         "scope": "Se verificaron en la publicación municipal la fecha del evento, sede, horario, carácter gratuito y contenidos anunciados. La fuente fue publicada el 16/11/2026, un día después del evento; el estado completed es histórico y no implica disponibilidad actual."
+      }
+    },
+    {
+      "id": "ronda-negocios-rigi-energia-hidrocarburos-2026-12-02",
+      "name": "Segunda Ronda de Negocios RIGI — Hidrocarburos y Energía",
+      "startDate": "2026-12-02",
+      "endDate": null,
+      "time": null,
+      "timeZone": "America/Argentina/Buenos_Aires",
+      "scope": "national",
+      "jurisdiction": null,
+      "venue": "Lugar a designar por el Ministerio de Economía; sede no publicada al 24/11/2026.",
+      "organizer": "Ministerio de Economía de la Nación",
+      "sector": "Hidrocarburos y energía / proveedores industriales",
+      "sourceName": "Ministerio de Economía — Argentina.gob.ar",
+      "sourceUrl": "https://www.argentina.gob.ar/noticias/ya-esta-abierta-la-inscripcion-para-la-segunda-ronda-de-negocios-rigi-con-foco-en",
+      "sourcePublishedAt": "2026-11-11",
+      "period": "Inscripción a reuniones B2B: 06–16/11/2026 (cerrada). Inscripción para asistir a otras actividades: hasta el 30/11/2026 inclusive.",
+      "status": "confirmed",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "La fuente oficial confirma fecha 02/12/2026, alcance sectorial, lugar aún a designar y plazos diferenciados. No se confirma disponibilidad de cupos B2B después del 16/11."
       }
     }
   ]
