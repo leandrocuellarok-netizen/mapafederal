@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23",
+  "updatedAt": "2026-11-24",
   "jurisdiction": "Partido de Escobar",
   "province": "Buenos Aires",
   "country": "Argentina",
@@ -603,5 +603,106 @@
         }
       ]
     }
+  },
+  "transparencyDirectory": {
+    "id": "transparencia-municipal-escobar",
+    "name": "Transparencia municipal y datos abiertos",
+    "sourceName": "Municipalidad de Escobar",
+    "sourceUrl": "https://www.escobar.gob.ar/transparencia/",
+    "openDataUrl": "https://datos.escobar.gob.ar/",
+    "informationRequestUrl": "https://datos.escobar.gob.ar/solicitar-informacion",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Las páginas institucionales consultadas no indican fecha de publicación o edición; verificación web realizada el 2026-11-24.",
+    "validityPeriod": "Estado de los portales y métricas visibles consultados el 2026-11-24. Los catálogos y contenidos dinámicos pueden cambiar.",
+    "status": "operativo",
+    "summary": "El Municipio mantiene un portal de transparencia con accesos a decretos, presupuestos y ordenanzas, licitaciones, Boletín Oficial, proveedores y recursos de integridad; además publica un portal de datos abiertos y un formulario para solicitar información pública.",
+    "openDataSnapshot": {
+      "checkedAt": "2026-11-24",
+      "publishedDatasets": 53,
+      "thematicCategories": 15,
+      "availableFormats": 8,
+      "categoryCounts": [
+        {
+          "name": "Ambiente y Biodiversidad",
+          "datasets": 7
+        },
+        {
+          "name": "Cultura",
+          "datasets": 1
+        },
+        {
+          "name": "Deporte",
+          "datasets": 1
+        },
+        {
+          "name": "Derechos Humanos",
+          "datasets": 3
+        },
+        {
+          "name": "Economía y Finanzas",
+          "datasets": 0
+        },
+        {
+          "name": "Educación",
+          "datasets": 1
+        },
+        {
+          "name": "Hábitat, Vivienda y Desarrollo Social",
+          "datasets": 3
+        },
+        {
+          "name": "Infraestructura y Servicios Públicos",
+          "datasets": 10
+        },
+        {
+          "name": "Monitoreo Institucional",
+          "datasets": 7
+        },
+        {
+          "name": "Movilidad y tránsito",
+          "datasets": 9
+        },
+        {
+          "name": "Ordenamiento Territorial",
+          "datasets": 1
+        },
+        {
+          "name": "Participación Ciudadana",
+          "datasets": 2
+        },
+        {
+          "name": "Riesgo Climático y Gestión de Emergencias",
+          "datasets": 3
+        },
+        {
+          "name": "Salud",
+          "datasets": 4
+        },
+        {
+          "name": "Seguridad",
+          "datasets": 1
+        }
+      ],
+      "note": "La categoría Economía y Finanzas mostraba cero datasets en este catálogo al momento de la consulta. Esto no demuestra ausencia de información financiera municipal: el portal de transparencia presenta una sección separada de presupuestos y ordenanzas. La página mostraba indicadores de carga para listados dinámicos, que no se validaron registro por registro."
+    },
+    "publishedFunctions": [
+      "Buscador de decretos del Departamento Ejecutivo",
+      "Sección de presupuestos y ordenanzas por año",
+      "Buscador de licitaciones públicas",
+      "Boletín Oficial",
+      "Registro e información para proveedores",
+      "Canal de denuncias contra el soborno, política antisoborno y Código de Ética y Conducta",
+      "Solicitud de información pública sobre documentos, actos administrativos, datos estadísticos y presupuestarios, información territorial y ambiental y políticas públicas"
+    ],
+    "contact": {
+      "email": "datos@escobar.gob.ar",
+      "address": "J. M. Estrada 599, Belén de Escobar"
+    },
+    "verification": {
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "scope": "Se consultaron las páginas institucionales de Transparencia municipal, Portal de Datos Abiertos y Solicitar Información Pública. Se registraron las métricas visibles del catálogo y las secciones anunciadas por el Municipio. No se enviaron solicitudes, no se verificó el resultado de los buscadores o descargas dinámicas y no se evaluó exhaustividad, oportunidad ni calidad de los datos publicados."
+    },
+    "dynamicContentStatus": "pendiente"
   }
 }
