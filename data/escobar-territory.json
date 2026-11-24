@@ -64,11 +64,11 @@
       "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24.",
       "validityPeriod": "Directorio consultado el 2026-11-24; guardias, prestaciones, horarios y contactos sujetos a actualización.",
       "status": "operativo",
-      "summary": "El Municipio publica guardias y SAME 107. La página Guardias y farmacias muestra una ficha adicional para UDP Dr. Carlos Guevara que no aparece en los directorios municipales de 11 registros; la diferencia queda pendiente de conciliación.",
+      "summary": "El Municipio publica guardias y SAME 107. Guardias y farmacias muestra 12 establecimientos; Teléfonos útiles lista 11 guardias, IOMA 11 y PAMI 8. La diferencia queda documentada y no se toma como equivalencia de cobertura.",
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-24",
-        "scope": "Se consultaron en línea las páginas municipales Guardias y farmacias, Teléfonos útiles, Centros de Salud y las cartillas IOMA/PAMI. Guardias y farmacias muestra una ficha para UDP Dr. Carlos Guevara que no aparece en los listados de 11 registros de Teléfonos útiles e IOMA/PAMI; por eso se conserva como discrepancia pendiente y no se suma al inventario consolidado de 11 fichas. Para el CAPS Juan Carlos Selles, las páginas generales actuales lo ubican en Fonavi, Garín, mientras IOMA/PAMI aún indican B° 24 de Febrero. Los teléfonos publicados también difieren: (0348) 449-3444 en Teléfonos útiles y 11 2150-0302 en IOMA/PAMI; no se consolida un teléfono único. No se realizó comprobación presencial."
+        "scope": "Se consultaron en línea las páginas municipales Guardias y farmacias, Teléfonos útiles, Centros de Salud y las cartillas IOMA/PAMI. Guardias y farmacias muestra 12 establecimientos; Teléfonos útiles lista 11 guardias, la cartilla IOMA 11 y la cartilla PAMI 8. UDP Dr. Carlos Guevara aparece en Guardias y farmacias, pero no en los otros tres listados; por eso se conserva como discrepancia pendiente y no se suma al inventario consolidado. Para CAPS Juan Carlos Selles, las páginas generales actuales lo ubican en Fonavi, Garín, mientras IOMA/PAMI aún indican B° 24 de Febrero. Los teléfonos también difieren: (0348) 449-3444 en Teléfonos útiles y 11 2150-0302 en IOMA/PAMI; no se consolida un teléfono único. No se realizó comprobación presencial."
       }
     },
     {
@@ -143,7 +143,7 @@
     "verification": {
       "status": "verified",
       "checkedAt": "2026-11-24",
-      "scope": "Se consultaron en línea las páginas municipales Guardias y farmacias, Teléfonos útiles, Centros de Salud y las cartillas IOMA/PAMI. Guardias y farmacias muestra una ficha para UDP Dr. Carlos Guevara que no aparece en los listados de 11 registros de Teléfonos útiles e IOMA/PAMI; por eso se conserva como discrepancia pendiente y no se suma al inventario consolidado de 11 fichas. Para el CAPS Juan Carlos Selles, las páginas generales actuales lo ubican en Fonavi, Garín, mientras IOMA/PAMI aún indican B° 24 de Febrero. Los teléfonos publicados también difieren: (0348) 449-3444 en Teléfonos útiles y 11 2150-0302 en IOMA/PAMI; no se consolida un teléfono único. No se realizó comprobación presencial."
+      "scope": "Se consultaron en línea las páginas municipales Guardias y farmacias, Teléfonos útiles, Centros de Salud y las cartillas IOMA/PAMI. Guardias y farmacias muestra 12 establecimientos; Teléfonos útiles lista 11 guardias, la cartilla IOMA 11 y la cartilla PAMI 8. UDP Dr. Carlos Guevara aparece en Guardias y farmacias, pero no en los otros tres listados; por eso se conserva como discrepancia pendiente y no se suma al inventario consolidado. Para CAPS Juan Carlos Selles, las páginas generales actuales lo ubican en Fonavi, Garín, mientras IOMA/PAMI aún indican B° 24 de Febrero. Los teléfonos también difieren: (0348) 449-3444 en Teléfonos útiles y 11 2150-0302 en IOMA/PAMI; no se consolida un teléfono único. No se realizó comprobación presencial."
     },
     "facilities": [
       {
@@ -337,7 +337,7 @@
         "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24.",
         "validityPeriod": "Ficha visible en Guardias y farmacias al 2026-11-24; horario y prestaciones sujetos a actualización.",
         "status": "pendiente",
-        "summary": "La página Guardias y farmacias lo lista con guardia clínica y pediátrica las 24 horas. No aparece en los listados de 11 registros de Teléfonos útiles ni en las cartillas IOMA/PAMI; no se incorpora al inventario consolidado hasta reconciliar los directorios.",
+        "summary": "La página Guardias y farmacias lo lista con guardia clínica y pediátrica las 24 horas. No aparece en Teléfonos útiles ni en las cartillas IOMA/PAMI; los listados consultados muestran 11, 11 y 8 guardias, respectivamente. No se incorpora al inventario consolidado hasta reconciliar las páginas.",
         "comparisonSourceUrls": [
           "https://www.escobar.gob.ar/municipio/telefonos-utiles/",
           "https://www.escobar.gob.ar/municipio/prestaciones-ioma/",
@@ -346,7 +346,7 @@
         "verification": {
           "status": "verified",
           "checkedAt": "2026-11-24",
-          "scope": "Se comprobó la ficha de UDP Dr. Carlos Guevara (Cervantes 635, Belén de Escobar) en Guardias y farmacias y se comparó con Teléfonos útiles e IOMA/PAMI, que presentan listados de 11 registros sin esta ficha. Se verifica la discrepancia entre publicaciones, no la operación del establecimiento. No se realizó comprobación presencial; el registro queda pendiente de conciliación."
+          "scope": "Se comprobó la ficha de UDP Dr. Carlos Guevara (Cervantes 635, Belén de Escobar) en Guardias y farmacias y se comparó con Teléfonos útiles (11 guardias), la cartilla IOMA (11) y la cartilla PAMI (8), que no incluyen esta ficha. Se verifica la discrepancia entre publicaciones, no la operación del establecimiento. No se realizó comprobación presencial; el registro queda pendiente de conciliación."
         }
       }
     ]
