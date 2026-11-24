@@ -1,27 +1,5 @@
 [
   {
-    "title": "knowmad mood adquirió la consultora argentina Danwor y amplió su negocio de Data & AI",
-    "date": "2026-11-17",
-    "category": "Tecnología",
-    "summary": "La tecnológica española anunció la adquisición del 100% de Danwor, consultora con sede en Buenos Aires especializada en Data & Analytics, planificación empresarial e IA aplicada. La compañía argentina cuenta con más de 70 profesionales y alrededor de 40 clientes internacionales, y trabaja con tecnologías SAP, Databricks y Google Cloud. La operación muestra una vía concreta de internacionalización para capacidades argentinas de datos e IA; no se publica el precio en el comunicado corporativo ni se verificó la integración posterior.",
-    "source": "knowmad mood — comunicado corporativo",
-    "url": "https://www.knowmadmood.com/es/novedades/notas-de-prensa/knowmad-mood-adquiere-danwor-data-ai",
-    "period": "Adquisición anunciada el 17/11/2026; el comunicado no consigna precio ni fecha de cierre registral.",
-    "jurisdictions": [
-      "CABA"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "Danwor tiene sede en Buenos Aires, Ciudad Autónoma de Buenos Aires; la empresa adquirente knowmad mood es española."
-    ],
-    "verification": {
-      "status": "editorial_reviewed",
-      "checkedAt": "2026-11-24",
-      "scope": "Contraste con el comunicado corporativo original publicado el 17/11/2026. Confirma la adquisición del 100%, el perfil de servicios y los datos generales de plantilla/clientes; no publica precio ni términos económicos y no acredita la integración posterior ni resultados."
-    },
-    "id": "news-www-knowmadmood-com-es-novedades-notas-de-prensa-knowmad-mood-adquiere-danwor-data-ai"
-  },
-  {
     "title": "Ushuaia: llaman a licitación para un nuevo muelle de catamaranes",
     "date": "2026-11-20",
     "category": "Infraestructura",
@@ -248,6 +226,28 @@
     "id": "news-www-argentina-gob-ar-noticias-la-demanda-de-carnes-diferenciadas-abre-oportunidades-para-agregar-valor"
   },
   {
+    "title": "knowmad mood adquirió la consultora argentina Danwor y amplió su negocio de Data & AI",
+    "date": "2026-11-17",
+    "category": "Tecnología",
+    "summary": "La tecnológica española anunció la adquisición del 100% de Danwor, consultora con sede en Buenos Aires especializada en Data & Analytics, planificación empresarial e IA aplicada. La compañía argentina cuenta con más de 70 profesionales y alrededor de 40 clientes internacionales, y trabaja con tecnologías SAP, Databricks y Google Cloud. La operación muestra una vía concreta de internacionalización para capacidades argentinas de datos e IA; no se publica el precio en el comunicado corporativo ni se verificó la integración posterior.",
+    "source": "knowmad mood — comunicado corporativo",
+    "url": "https://www.knowmadmood.com/es/novedades/notas-de-prensa/knowmad-mood-adquiere-danwor-data-ai",
+    "period": "Adquisición anunciada el 17/11/2026; el comunicado no consigna precio ni fecha de cierre registral.",
+    "jurisdictions": [
+      "CABA"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Danwor tiene sede en Buenos Aires, Ciudad Autónoma de Buenos Aires; la empresa adquirente knowmad mood es española."
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Contraste con el comunicado corporativo original publicado el 17/11/2026. Confirma la adquisición del 100%, el perfil de servicios y los datos generales de plantilla/clientes; no publica precio ni términos económicos y no acredita la integración posterior ni resultados."
+    },
+    "id": "news-www-knowmadmood-com-es-novedades-notas-de-prensa-knowmad-mood-adquiere-danwor-data-ai"
+  },
+  {
     "title": "Argentina Alimenta reunió a productores y compradores de 25 países",
     "date": "2026-11-17",
     "category": "Comercio",
@@ -264,6 +264,28 @@
     "geographyStatus": "not_specified",
     "geographyEvidence": [],
     "id": "news-www-argentina-gob-ar-noticias-la-secretaria-general-de-la-presidencia-recorrio-la-feria-argentina-alimenta"
+  },
+  {
+    "title": "Pampa Energía constituyó Pampa AI para desarrollar infraestructura digital, centros de datos y servicios de cómputo para IA",
+    "date": "2026-11-17",
+    "category": "Empresas",
+    "summary": "El Boletín Oficial publicó la constitución de Pampa AI S.A.U., cuyo accionista único es Pampa Energía. Su objeto social incluye desarrollar y operar centros de datos y centros de cómputo de alto rendimiento destinados a IA y cloud, comercializar capacidad GPU, software y servicios de cómputo, y desarrollar o adquirir infraestructura energética. La sociedad tiene sede en CABA y un capital social de ARS 30 millones. Ese capital es el de la sociedad constituida: no equivale a una inversión anunciada en centros de datos. El edicto no confirma emplazamiento de instalaciones, potencia, contratos, cronograma ni decisión de inversión concreta.",
+    "source": "Boletín Oficial de la República Argentina — Segunda Sección",
+    "url": "https://otslist.boletinoficial.gob.ar/ots/download/ad94959c79069757719afce7c6f1b312d02faf30c60701d390ae708fc27a3202/0/",
+    "period": "Constitución por escritura del 26/10/2026; publicación en Boletín Oficial el 17/11/2026.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión editorial de la publicación societaria primaria en el Boletín Oficial de la República Argentina, Segunda Sección, edición 36.034 del 17/11/2026. El registro acredita la constitución y el objeto estatutario; no acredita construcción, operación, capacidad instalada ni inversión en activos de data centers."
+    },
+    "jurisdictions": [
+      "CABA"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "El edicto consigna la sede social de Pampa AI S.A.U. en Maipú 1, Ciudad Autónoma de Buenos Aires; su objeto estatutario contempla actividades en Argentina y el exterior."
+    ],
+    "id": "news-otslist-boletinoficial-gob-ar-ots-download-ad94959c79069757719afce7c6f1b312d02faf30c60701d390ae708fc27a3202-0"
   },
   {
     "title": "Metrotel y Kyndryl anunciaron una colaboración para infraestructura digital empresarial",
@@ -518,27 +540,5 @@
       "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
     },
     "id": "news-normas-gba-gob-ar-ar-b-decreto-2026-742-604136"
-  },
-  {
-    "title": "Pampa Energía constituyó Pampa AI para desarrollar infraestructura digital, centros de datos y servicios de cómputo para IA",
-    "date": "2026-11-17",
-    "category": "Empresas",
-    "summary": "El Boletín Oficial publicó la constitución de Pampa AI S.A.U., cuyo accionista único es Pampa Energía. Su objeto social incluye desarrollar y operar centros de datos y centros de cómputo de alto rendimiento destinados a IA y cloud, comercializar capacidad GPU, software y servicios de cómputo, y desarrollar o adquirir infraestructura energética. La sociedad tiene sede en CABA y un capital social de ARS 30 millones. Ese capital es el de la sociedad constituida: no equivale a una inversión anunciada en centros de datos. El edicto no confirma emplazamiento de instalaciones, potencia, contratos, cronograma ni decisión de inversión concreta.",
-    "source": "Boletín Oficial de la República Argentina — Segunda Sección",
-    "url": "https://otslist.boletinoficial.gob.ar/ots/download/ad94959c79069757719afce7c6f1b312d02faf30c60701d390ae708fc27a3202/0/",
-    "period": "Constitución por escritura del 26/10/2026; publicación en Boletín Oficial el 17/11/2026.",
-    "verification": {
-      "status": "editorial_reviewed",
-      "checkedAt": "2026-11-24",
-      "scope": "Revisión editorial de la publicación societaria primaria en el Boletín Oficial de la República Argentina, Segunda Sección, edición 36.034 del 17/11/2026. El registro acredita la constitución y el objeto estatutario; no acredita construcción, operación, capacidad instalada ni inversión en activos de data centers."
-    },
-    "jurisdictions": [
-      "CABA"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "El edicto consigna la sede social de Pampa AI S.A.U. en Maipú 1, Ciudad Autónoma de Buenos Aires; su objeto estatutario contempla actividades en Argentina y el exterior."
-    ],
-    "id": "news-otslist-boletinoficial-gob-ar-ots-download-ad94959c79069757719afce7c6f1b312d02faf30c60701d390ae708fc27a3202-0"
   }
 ]
