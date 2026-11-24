@@ -36,6 +36,24 @@
     "id": "news-www-reuters-com-business-retail-consumer-amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23"
   },
   {
+    "id": "news-theverge-com-ai-artificial-intelligence-1039874-walmart-agent-gateway-meta-muse-black-friday-2026-11-23",
+    "title": "Walmart desplegó su Agent Gateway con Meta Muse para compras delegadas con límites de gasto",
+    "date": "2026-11-23",
+    "category": "Tecnología",
+    "summary": "The Verge informó que Walmart puso en marcha una implementación de su Agent Gateway con el agente Muse de Meta para buscar productos, armar carritos y completar compras dentro de la conversación. Los perfiles de agente permiten fijar límites de gasto, aprobar operaciones y revisar el historial de compras. Walmart sostiene que el gateway limita la información compartida con el agente. La nota recibió dos actualizaciones el mismo día: la última indicó que el despliegue no se demoraba y comenzaría el 23/11. Es un lanzamiento progresivo, no evidencia de disponibilidad universal ni de acceso desde Argentina.",
+    "source": "The Verge",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+    "period": "Anuncio y despliegue informados el 23/11/2026; la publicación recoge dos actualizaciones sobre la fecha de lanzamiento.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión de la nota de The Verge del 23/11/2026, incluida su actualización final, que atribuye a Walmart la confirmación de que el despliegue no se demoraba. Se verificaron las funciones descritas de Agent Profiles, límites de gasto, aprobación y registro de compras. No se afirma disponibilidad universal ni acceso en Argentina; el alcance comercial puede variar durante el rollout."
+    },
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": []
+  },
+  {
     "title": "Escobar: las ordenanzas fiscales 2027 avanzaron en el HCD y esperan la Asamblea de Mayores Contribuyentes",
     "date": "2026-11-20",
     "category": "Regulación",
@@ -310,6 +328,38 @@
     "geographyStatus": "not_specified",
     "geographyEvidence": [],
     "id": "news-www-argentina-gob-ar-noticias-la-demanda-de-carnes-diferenciadas-abre-oportunidades-para-agregar-valor"
+  },
+  {
+    "id": "news-eldiadeescobar-com-ar-una-empresa-escobarense-cerro-cinco-sucursales-y-una-fabrica-por-la-crisis-2026-11-18",
+    "title": "Hönecker redujo su operación: desactivó la planta de Garín y frenó una nueva fábrica en Escobar",
+    "date": "2026-11-18",
+    "category": "Empresas",
+    "summary": "El Día de Escobar informó que Hönecker desactivó su planta de Garín, cerró cinco locales comerciales y postergó proyectos de crecimiento en el distrito. La empresa mantiene activa su planta de Ingeniero Maschwitz. Su fundador declaró que la producción de alfajores cayó un 30%; se registra como una declaración empresarial recogida por el medio, no como una serie estadística independiente. El proyecto de una nueva fábrica en Belén de Escobar no llegó a concretarse y el terreno de calle Capello fue puesto en venta. La fuente no detalla la situación laboral individual de las personas que trabajaban en la planta cerrada.",
+    "source": "El Día de Escobar",
+    "url": "https://eldiadeescobar.com.ar/una-empresa-escobarense-cerro-cinco-sucursales-y-una-fabrica-por-la-crisis/",
+    "period": "Situación informada el 18/11/2026; recontrastada con publicaciones de El Cronista (23/11) e iProfesional (24/11).",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Se revisó la nota local de El Día de Escobar, que recoge declaraciones del fundador, y se contrastaron los hechos centrales con El Cronista e iProfesional. Se verifican el cierre de la planta de Garín, la continuidad de la planta de Ingeniero Maschwitz, el freno del proyecto fabril en Belén de Escobar y la puesta en venta del terreno. La caída del 30% es una declaración atribuida al empresario; no se infieren despidos individuales ni cierre total de la compañía."
+    },
+    "jurisdictions": [
+      "Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Partido de Escobar, Provincia de Buenos Aires: Garín, Ingeniero Maschwitz y Belén de Escobar."
+    ],
+    "relatedSources": [
+      {
+        "label": "El Cronista — cobertura del 23/11/2026",
+        "url": "https://www.cronista.com/negocios/una-conocida-marca-de-alfajores-en-su-hora-mas-amarga-de-7000-unidades-por-hora-al-frenazo-de-su-gran-sueno/"
+      },
+      {
+        "label": "iProfesional — cobertura del 24/11/2026",
+        "url": "https://www.iprofesional.com/actualidad/469574-reconocida-marca-de-alfajores-cerro-cinco-locales-y-una-fabrica"
+      }
+    ]
   },
   {
     "title": "knowmad mood adquirió la consultora argentina Danwor y amplió su negocio de Data & AI",
