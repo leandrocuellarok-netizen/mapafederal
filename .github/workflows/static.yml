@@ -291,7 +291,7 @@ jobs:
           dataset = mobility["openDataDataset"]
           assert dataset["lastUpdatedAt"] == "2026-03-31"
           assert dataset["license"] == "Open Data Commons Open Database License (ODbL)"
-          assert "no se importó el archivo binario" in dataset["verification"]["scope"].lower()
+          assert "archivo binario no se importó" in dataset["verification"]["scope"].lower()
           for url in [mobility["sourceUrl"], planner["sourceUrl"], dataset["sourceUrl"]]:
               parsed = urlparse(url)
               assert parsed.scheme == "https" and parsed.netloc
