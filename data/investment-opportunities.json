@@ -422,6 +422,58 @@
         "checkedAt": "2026-11-24",
         "scope": "Verificado el anuncio oficial, monto superior a USD 1.300 millones, localización en Zárate, destino productivo y fecha prevista de operación 2030. No se verificó aprobación definitiva del RIGI, inicio de obra, volumen de empleo ni adjudicación de contratos a proveedores."
       }
+    },
+    {
+      "id": "escobar-licitacion-74-2026-polideportivo-maschwitz-pista-atletismo",
+      "name": "Escobar — LP 74/2026: cancha de fútbol y pista de atletismo del Polideportivo Ingeniero Maschwitz",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Obra pública / infraestructura deportiva",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Ingeniero Maschwitz, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 793000000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial con IVA incluido; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validFrom": "2026-11-18",
+      "validUntil": "2026-12-04",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14517/ver",
+      "sourcePublishedAt": "2026-11-18",
+      "period": "Consultas 26–27/11/2026; venta de pliego 30/11 y 01/12/2026; apertura 04/12/2026 a las 10:00.",
+      "description": "Licitación Pública 74/2026 para la construcción de una cancha de fútbol y una pista de atletismo en el Polideportivo Ingeniero Maschwitz. Presupuesto oficial de ARS 793.000.000 IVA incluido. Las consultas están previstas para el 26 y 27 de noviembre, la venta del pliego para el 30 de noviembre y el 1 de diciembre, y la apertura para el 4 de diciembre de 2026 a las 10:00 en Belén de Escobar. Verificar pliego, requisitos, garantías y eventuales circulares antes de decidir participar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 18/11/2026, sección 14517, anuncio municipal de la LP 74/2026. Se contrastaron objeto, jurisdicción, presupuesto y cronograma. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "escobar-feria-familia-segunda-etapa-2026",
+      "name": "Escobar — segunda etapa de puesta en valor de la Feria de la Familia",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Infraestructura pública / equipamiento comercial / economía popular",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Maquinista Savio, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "in_progress",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-11-16",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/sujarchuk-y-katopodis-visitaron-importantes-obras-de-infraestructura-e/",
+      "sourcePublishedAt": "2026-11-16",
+      "period": "Inicio de la segunda etapa informado el 16/11/2026; la fuente no publica fecha de finalización.",
+      "description": "La Municipalidad informó el inicio de la segunda etapa de la puesta en valor de la Feria de la Familia en Maquinista Savio. El proyecto contempla 346 puestos, un módulo sanitario accesible, plaza blanda, espacios recreativos, accesos peatonales, iluminación y parquización. La fuente señala una inversión total superior a ARS 4.500 millones y busca mejorar las condiciones de trabajo de casi 700 familias. Se registra como proyecto público en ejecución, no como licitación abierta. El campo amount queda nulo porque la fuente expresa un umbral superior y no un monto exacto certificado.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado el anuncio institucional municipal, la localidad, el inicio de la segunda etapa y los componentes informados. No se verificaron certificaciones de obra, pagos, avance físico independiente, contratos ni fecha de finalización."
+      }
     }
   ]
 }
