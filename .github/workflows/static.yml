@@ -1306,6 +1306,9 @@ jobs:
           print("SEO/GEO: metadatos, Schema.org, FAQ retirada, robots, sitemap de cuatro páginas y nuevo emblema argentino validados.")
           PY
 
+      - name: Test Escobar procurement source links
+        run: node tests/escobar-procurement-sources.test.js
+
   deploy:
     needs: validate
     environment:
