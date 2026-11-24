@@ -75,6 +75,36 @@ assert.equal(route506.secondaryReports.length, 1);
 assert.equal(route506.secondaryReports[0].sourceName, "El Diario de Escobar");
 assert.equal(route506.secondaryReports[0].sourcePublishedAt, "2026-11-18");
 assert.match(route506.secondaryReports[0].claim, /no sustituye una confirmación/i);
+
+const plannerServices = mobility.plannerServices;
+assert.ok(Array.isArray(plannerServices), "Falta el registro de servicios publicados en Mi Bus");
+assert.equal(plannerServices.length, 1, "Debe existir una ficha Mi Bus específica para la línea 506");
+const planner506 = plannerServices.find(item => item.id === "linea-506-estacion-escobar-mercado-libre-mibus-2026");
+assert.ok(planner506, "Falta la ficha oficial de línea 506 Est. Escobar–Mercado Libre");
+assert.equal(planner506.line, "506");
+assert.equal(planner506.serviceName, "EST. ESCOBAR - MERCADO LIBRE");
+assert.deepEqual(planner506.localities, ["Belén de Escobar", "Loma Verde"]);
+assert.equal(planner506.listedStopsCount, 23);
+assert.equal(planner506.firstListedStop, "TERMINAL ESCOBAR");
+assert.equal(planner506.lastListedStop, "COL. ESTE (MERCADO LIBRE)");
+assert.equal(planner506.sourcePublishedAt, null);
+assert.equal(planner506.status, "no verificado");
+assert.equal(planner506.publicationStatus, "listado en el planificador municipal");
+assert.equal(planner506.operationalStatus, "no verificado");
+assert.equal(planner506.relatedAnnouncementId, route506.id);
+assert.match(planner506.announcementRelation, /no identifica el ramal B/i);
+assert.equal(planner506.verification.status, "verified");
+assert.equal(planner506.verification.checkedAt, "2026-11-24");
+assert.match(planner506.verification.scope, /23 paradas/i);
+assert.match(planner506.verification.scope, /no confirma circulación en tiempo real/i);
+assert.match(planner506.verification.scope, /no.*equivalencia exacta/i);
+for (const url of [planner506.sourceUrl, planner506.catalogUrl]) {
+  assert.equal(new URL(url).protocol, "https:");
+}
+assert.match(profile, /mobility\.plannerServices/);
+assert.match(profile, /plannerServicesHtml/);
+assert.match(profile, /Servicios publicados en el planificador Mi Bus/);
+
 for (const url of [route506.sourceUrl, ...route506.secondaryReports.map(item => item.sourceUrl)]) {
   assert.equal(new URL(url).protocol, "https:");
 }

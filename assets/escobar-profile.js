@@ -83,6 +83,11 @@ function renderProfile(territory,economy){
   const dataset=mobility.openDataDataset||{};
   const rail=mobility.railService||{};
   const announcedRoutes=Array.isArray(mobility.announcedRoutes)?mobility.announcedRoutes:[];
+  const plannerServices=Array.isArray(mobility.plannerServices)?mobility.plannerServices:[];
+  const plannerServicesHtml=plannerServices.length
+   ?'<div class="escobar-item"><h4>Servicios publicados en el planificador Mi Bus</h4><p>La ficha oficial acredita que la ruta figura en el planificador municipal; no confirma circulación en tiempo real ni la equivalencia con un ramal anunciado.</p></div>'+plannerServices.map(item=>'<div class="escobar-item"><span class="escobar-status">'+escapeHtml(statusLabel(item.status))+'</span><h4>'+escapeHtml(item.name||"")+'</h4><p>'+escapeHtml(item.summary||"")+'</p><p class="escobar-meta">Localidades: '+escapeHtml((item.localities||[]).join(", "))+' · Paradas listadas: '+escapeHtml(number(item.listedStopsCount||0))+' · Desde: '+escapeHtml(item.firstListedStop||"No indicado")+' · Hasta: '+escapeHtml(item.lastListedStop||"No indicado")+'</p><p class="escobar-meta">Estado de circulación efectiva: '+escapeHtml(statusLabel(item.operationalStatus))+' · Publicación: '+escapeHtml(date(item.sourcePublishedAt))+' · Vigencia: '+escapeHtml(item.validityPeriod||"No indicada")+'</p><p class="escobar-meta">'+escapeHtml(item.announcementRelation||"")+'</p><p class="escobar-meta">Verificación: '+escapeHtml(date(item.verification&&item.verification.checkedAt))+' · '+escapeHtml(item.verification&&item.verification.scope||"")+'</p><p>'+sourceLink(item.sourceUrl,"Ficha de la línea en Mi Bus ↗")+' '+sourceLink(item.catalogUrl,"Catálogo Mi Bus ↗")+'</p></div>').join("")
+   :"";
+
   const announcedRoutesHtml=announcedRoutes.length
    ?'<div class="escobar-item"><h4>Ramales de colectivos anunciados</h4><p>Los trazados reflejan la comunicación municipal. No se presume operación vigente sin confirmación primaria posterior.</p></div>'+announcedRoutes.map(item=>{
      const outbound=Array.isArray(item.routeOutbound)?item.routeOutbound.join(" → "):"No publicado";
@@ -112,7 +117,7 @@ function renderProfile(territory,economy){
    +'<p class="escobar-meta">Listado publicado: '+escapeHtml(date(mobility.sourcePublishedAt))+' · Estado: '+escapeHtml(statusLabel(mobility.status))+' · Verificación web: '+escapeHtml(date(mobility.verification&&mobility.verification.checkedAt))+'. '+escapeHtml(mobility.verification&&mobility.verification.scope||"")+'</p>'
    +'<p>'+sourceLink(mobility.sourceUrl,"Noticia municipal y listado de paradas ↗")+' '+sourceLink(planner.sourceUrl,"Abrir planificador Mi Bus ↗")+'</p>'
    +'<div class="escobar-item"><h4>Datos abiertos de transporte</h4><p>'+escapeHtml(dataset.name||"")+'</p><p class="escobar-meta">Actualización del conjunto: '+escapeHtml(date(dataset.lastUpdatedAt))+' · Periodicidad: '+escapeHtml(dataset.periodicity||"No informada")+' · Licencia: '+escapeHtml(dataset.license||"No informada")+' · Estado de integración: '+escapeHtml(statusLabel(dataset.status))+'</p><p class="escobar-meta">'+escapeHtml(dataset.verification&&dataset.verification.scope||"")+'</p>'+sourceLink(dataset.sourceUrl,"Consultar dataset y descargar recurso XLSX ↗")+'</div>'
-   +announcedRoutesHtml+railHtml+railInfrastructureHtml+connectionsHtml+intermodalHtml;
+   +plannerServicesHtml+announcedRoutesHtml+railHtml+railInfrastructureHtml+connectionsHtml+intermodalHtml;
  }else{
   el("escobar-mobility").innerHTML='<p class="escobar-meta">No hay datos de movilidad cargados.</p>';
  }
