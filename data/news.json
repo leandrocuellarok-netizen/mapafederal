@@ -1,5 +1,28 @@
 [
   {
+    "title": "knowmad mood adquirió la consultora argentina Danwor y amplió su negocio de Data & AI",
+    "date": "2026-11-17",
+    "category": "Tecnología / Empresas",
+    "summary": "La tecnológica española anunció la adquisición del 100% de Danwor, consultora con sede en Buenos Aires especializada en Data & Analytics, planificación empresarial e IA aplicada. La compañía argentina cuenta con más de 70 profesionales y alrededor de 40 clientes internacionales, y trabaja con tecnologías SAP, Databricks y Google Cloud. La operación muestra una vía concreta de internacionalización para capacidades argentinas de datos e IA; no se publica el precio en el comunicado corporativo ni se verificó la integración posterior.",
+    "source": "knowmad mood — comunicado corporativo",
+    "url": "https://www.knowmadmood.com/es/novedades/notas-de-prensa/knowmad-mood-adquiere-danwor-data-ai",
+    "period": "Adquisición anunciada el 17/11/2026; el comunicado no consigna precio ni fecha de cierre registral.",
+    "jurisdictions": [
+      "Argentina",
+      "España"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Danwor tiene sede en Buenos Aires; la compradora knowmad mood es una multinacional tecnológica española."
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Contraste con el comunicado corporativo original publicado el 17/11/2026. Confirma la adquisición del 100%, el perfil de servicios y los datos generales de plantilla/clientes; no publica precio ni términos económicos y no acredita la integración posterior ni resultados."
+    },
+    "id": "news-knowmad-mood-acquisition-danwor-2026"
+  },
+  {
     "title": "Ushuaia: llaman a licitación para un nuevo muelle de catamaranes",
     "date": "2026-11-20",
     "category": "Infraestructura",
