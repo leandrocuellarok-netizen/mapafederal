@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-11-24",
-  "note": "Catálogo documental de eventos con procedencia y verificación. No es una agenda integrada ni confirma eventos futuros más allá de la fuente. Los registros históricos se conservan como completados. Para la Ronda RIGI, la inscripción a reuniones B2B cerró el 16/11/2026; la asistencia a otras actividades se anuncia hasta el 30/11/2026.",
+  "note": "Catálogo documental de eventos con procedencia y verificación. No es una agenda integrada ni confirma cupos o inscripción. Los registros históricos se conservan como completados. Para la Ronda RIGI del 02/12/2026, la inscripción a reuniones B2B cerró el 16/11; la asistencia a otras actividades se anuncia hasta el 30/11. Para la Ronda de Negocios de Energía y Minería de PBA del 01/12/2026, la inscripción cerró el 13/11; no se presume acceso para nuevas empresas.",
   "events": [
     {
       "id": "feria-japonesa-bazaa-5-edicion-2026",
@@ -48,6 +48,31 @@
         "status": "verified",
         "checkedAt": "2026-11-24",
         "scope": "La fuente oficial confirma fecha 02/12/2026, alcance sectorial, lugar aún a designar y plazos diferenciados. No se confirma disponibilidad de cupos B2B después del 16/11."
+      }
+    },
+    {
+      "id": "ronda-negocios-energia-mineria-pba-2026-12-01",
+      "name": "2.ª Ronda de Negocios de Energía y Minería de la Provincia de Buenos Aires",
+      "startDate": "2026-12-01",
+      "endDate": null,
+      "time": null,
+      "timeZone": "America/Argentina/Buenos_Aires",
+      "scope": "regional",
+      "jurisdiction": "Buenos Aires",
+      "venue": "Teatro Argentino, La Plata, Provincia de Buenos Aires, Argentina",
+      "organizer": "Ministerio de Producción, Ciencia e Innovación Tecnológica de la Provincia de Buenos Aires",
+      "sector": "Energía / minería / proveedores industriales / negocios B2B",
+      "sourceName": "Provincia de Buenos Aires — Ministerio de Producción, Ciencia e Innovación Tecnológica",
+      "sourceUrl": "https://www.gba.gob.ar/produccion/noticias/la_provincia_invita_pymes_la_2%C2%B0_ronda_de_negocios_de_energ%C3%ADa_y_miner%C3%ADa",
+      "sourcePublishedAt": "2026-11-05",
+      "period": "Evento previsto para el 01/12/2026 en el Teatro Argentino de La Plata. La convocatoria informó inscripción gratuita para pymes bonaerenses hasta el 13/11/2026; ese plazo está cerrado al 24/11. La Provincia anunció cerca de 50 empresas compradoras. No se confirma acceso para nuevas firmas.",
+      "status": "confirmed",
+      "description": "Encuentro de vinculación comercial entre pymes proveedoras bonaerenses y empresas compradoras de petróleo, gas, electricidad y minería. La Provincia informó cerca de 50 compradoras confirmadas. El registro sirve como inteligencia de mercado; la inscripción cerró el 13/11/2026 y no se presume disponibilidad de cupos.",
+      "territorialRelevance": "Alta para proveedores bonaerenses de energía y minería; evento provincial en La Plata, con inscripción cerrada y sin acceso de nuevas empresas confirmado.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificada la publicación oficial del 05/11/2026: fecha, sede, sectores, cantidad aproximada de empresas compradoras y plazo de inscripción. La inscripción cerró el 13/11/2026; no se confirma disponibilidad de cupos ni participación de empresas no inscriptas."
       }
     }
   ]

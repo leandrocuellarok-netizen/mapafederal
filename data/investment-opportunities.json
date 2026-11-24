@@ -406,6 +406,152 @@
       }
     },
     {
+      "id": "lomas-zamora-licitacion-114-2026-indumentaria-ambiente",
+      "name": "Lomas de Zamora — LP 114/2026: indumentaria de trabajo de verano para personal de Ambiente",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Indumentaria de trabajo / abastecimiento público / servicios ambientales",
+      "jurisdiction": "Partido de Lomas de Zamora, Provincia de Buenos Aires",
+      "location": "Lomas de Zamora, Provincia de Buenos Aires",
+      "stage": "announced",
+      "stageLabel": "Llamado publicado",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 457457200,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; el aviso no aclara si incluye IVA. No equivale al monto adjudicado."
+      },
+      "validFrom": "2026-11-25",
+      "validUntil": null,
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14517/ver",
+      "sourcePublishedAt": "2026-11-18",
+      "period": "Venta de pliegos 25–26/11/2026; apertura 04/12/2026 a las 11:30. Valor del pliego: ARS 343.206. Las firmas no inscriptas en el Registro Único y Permanente de Proveedores municipal deben completar el trámite antes de la apertura. El aviso no consigna fecha límite de recepción de ofertas.",
+      "description": "Adquisición de indumentaria de trabajo de verano para personal operativo de la Secretaría de Ambiente. El presupuesto oficial publicado es ARS 457.457.200 y el pliego cuesta ARS 343.206. La venta comienza el 25/11; las firmas que no estén inscriptas en el RUP municipal deben completar el registro antes de la apertura. No se verificó el pliego completo ni la elegibilidad de proveedores.",
+      "territorialRelevance": "Alta para proveedores de indumentaria laboral y abastecimiento público de Lomas de Zamora; la inscripción en el RUP municipal es una condición de acceso relevante.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición 18/11/2026, sección oficial, página 80: objeto, presupuesto, valor del pliego, venta 25–26/11, apertura 04/12 a las 11:30 y requisito de inscripción en el RUP municipal. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o contrato."
+      }
+    },
+    {
+      "id": "quilmes-licitacion-54-2026-conectividad-solano-etapa-iii",
+      "name": "Quilmes — LP 54/2026: consolidación de conectividad en barrios de Solano, etapa III",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Telecomunicaciones / infraestructura de conectividad / obra pública",
+      "jurisdiction": "Partido de Quilmes, Provincia de Buenos Aires",
+      "location": "San Francisco Solano, Partido de Quilmes, Provincia de Buenos Aires",
+      "stage": "announced",
+      "stageLabel": "Llamado publicado",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 4111141944.71,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; el aviso no aclara si incluye IVA. No equivale al monto adjudicado."
+      },
+      "validFrom": "2026-11-17",
+      "validUntil": "2026-12-03",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14517/ver",
+      "sourcePublishedAt": "2026-11-18",
+      "period": "Pliego disponible desde 17/11/2026; retiro hasta 02/12; recepción de ofertas hasta 03/12; apertura 04/12/2026 a las 10:00. Valor del pliego: ARS 20.555.710. Consultas hasta 48 horas antes de la apertura.",
+      "description": "Obra de consolidación de conectividad en distintos barrios de Solano, etapa III. Presupuesto oficial ARS 4.111.141.944,71 y pliego ARS 20.555.710. El aviso fija retiro hasta el 02/12, ofertas hasta el 03/12 y apertura el 04/12 a las 10:00. No se revisó el pliego completo ni se verificó elegibilidad técnica, garantías, ofertas o adjudicación.",
+      "territorialRelevance": "Alta para contratistas y proveedores de infraestructura de conectividad con capacidad de operar en Quilmes; no se extrapola como obra de Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición 18/11/2026, sección oficial, página 80: objeto, presupuesto, valor del pliego, disponibilidad desde 17/11, retiro, recepción de ofertas y apertura. No se revisó el pliego completo ni se verificaron elegibilidad técnica, garantías, ofertas o adjudicación."
+      }
+    },
+    {
+      "id": "quilmes-licitacion-55-2026-peatonal-rivadavia",
+      "name": "Quilmes — LP 55/2026: puesta en valor de Peatonal Rivadavia",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Obra urbana / espacio público / construcción",
+      "jurisdiction": "Partido de Quilmes, Provincia de Buenos Aires",
+      "location": "Peatonal Rivadavia, Quilmes, Provincia de Buenos Aires",
+      "stage": "announced",
+      "stageLabel": "Llamado publicado",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 316335413.44,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; el aviso no aclara si incluye IVA. No equivale al monto adjudicado."
+      },
+      "validFrom": "2026-11-17",
+      "validUntil": "2026-12-03",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14517/ver",
+      "sourcePublishedAt": "2026-11-18",
+      "period": "Pliego disponible desde 17/11/2026; retiro hasta 02/12; recepción de ofertas hasta 03/12; apertura 04/12/2026 a las 11:00. Valor del pliego: ARS 2.000.000. Consultas hasta 48 horas antes de la apertura.",
+      "description": "Obra de puesta en valor de Peatonal Rivadavia. Presupuesto oficial ARS 316.335.413,44 y pliego ARS 2.000.000. El aviso fija retiro hasta el 02/12, recepción de ofertas hasta el 03/12 y apertura el 04/12 a las 11:00. No se revisó el pliego completo ni se verificó elegibilidad técnica, garantías, ofertas o adjudicación.",
+      "territorialRelevance": "Alta para empresas de obra urbana, construcción y equipamiento del espacio público con capacidad de contratación municipal en Quilmes.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición 18/11/2026, sección oficial, página 80: objeto, presupuesto, valor del pliego, disponibilidad desde 17/11, retiro, recepción de ofertas y apertura. No se revisó el pliego completo ni se verificaron elegibilidad técnica, garantías, ofertas o adjudicación."
+      }
+    },
+    {
+      "id": "quilmes-licitacion-56-2026-centro-atletismo",
+      "name": "Quilmes — LP 56/2026: Centro Municipal de Iniciación y Desarrollo Deportivo en Atletismo",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Infraestructura deportiva / obra pública / construcción",
+      "jurisdiction": "Partido de Quilmes, Provincia de Buenos Aires",
+      "location": "Quilmes, Provincia de Buenos Aires",
+      "stage": "announced",
+      "stageLabel": "Llamado publicado",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 3001601217.92,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; el aviso no aclara si incluye IVA. No equivale al monto adjudicado."
+      },
+      "validFrom": "2026-11-17",
+      "validUntil": "2026-12-10",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14517/ver",
+      "sourcePublishedAt": "2026-11-18",
+      "period": "Pliego disponible desde 17/11/2026; retiro hasta 09/12; recepción de ofertas hasta 10/12; apertura 11/12/2026 a las 10:00. Valor del pliego: ARS 15.008.006. Consultas hasta 48 horas antes de la apertura.",
+      "description": "Llamado para el Centro Municipal de Iniciación y Desarrollo Deportivo en Atletismo. Presupuesto oficial ARS 3.001.601.217,92 y pliego ARS 15.008.006. El aviso fija retiro hasta el 09/12, recepción de ofertas hasta el 10/12 y apertura el 11/12 a las 10:00. No se revisó el pliego completo ni se verificó elegibilidad técnica, garantías, ofertas o adjudicación.",
+      "territorialRelevance": "Alta para constructoras y proveedores de infraestructura deportiva con capacidad de contratación municipal en Quilmes.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición 18/11/2026, sección oficial, páginas 80–81: objeto, presupuesto, valor del pliego, disponibilidad desde 17/11, retiro, recepción de ofertas y apertura. No se revisó el pliego completo ni se verificaron elegibilidad técnica, garantías, ofertas o adjudicación."
+      }
+    },
+    {
+      "id": "banco-provincia-licitacion-ee-453-cc-sistemas-alarmas-2026",
+      "name": "Banco Provincia — LP EE-453-CC: mantenimiento de sistemas de alarmas",
+      "recordType": "tender",
+      "scope": "provincial",
+      "sector": "Seguridad electrónica / mantenimiento de alarmas / servicios técnicos",
+      "jurisdiction": "Buenos Aires",
+      "location": null,
+      "stage": "announced",
+      "stageLabel": "Llamado publicado",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": null,
+      "validUntil": null,
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14517/ver",
+      "sourcePublishedAt": "2026-11-18",
+      "period": "Consultas hasta 27/11/2026; apertura 04/12/2026 a las 11:30 en CABA; valor del pliego ARS 838.500; adquisición indicada a través del portal de transparencia del Banco Provincia. El aviso no consigna fecha inicial de disponibilidad ni presupuesto oficial.",
+      "description": "Abono de mantenimiento preventivo, correctivo y trabajos eventuales de los sistemas de alarmas propios del Banco Provincia en distintas localizaciones. El aviso fija consultas hasta el 27/11, apertura el 04/12 a las 11:30 y pliego de ARS 838.500. No informa presupuesto oficial ni fecha inicial de disponibilidad del pliego; por eso la disponibilidad se mantiene desconocida.",
+      "territorialRelevance": "Provincial, con sede de apertura en CABA y alcance sobre localizaciones del Banco Provincia; oportunidad potencial para prestadores de seguridad electrónica, sujeta al pliego y a requisitos no revisados.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición 18/11/2026, sección oficial, página 81: objeto, modalidad, fecha límite de consultas, apertura y valor del pliego. No se informa presupuesto ni fecha inicial de disponibilidad; no se revisó el pliego completo ni la elegibilidad."
+      }
+    },
+    {
       "id": "toyota-zarate-planta-vehiculos-electrificados-2026",
       "name": "Toyota — nueva planta de vehículos electrificados en Zárate",
       "recordType": "investment_project",

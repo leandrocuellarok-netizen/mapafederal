@@ -714,6 +714,27 @@
     "id": "news-www-salesforce-com-mx-news-press-releases-2026-10-09-salesforce-y-la-provincia-de-buenos-aires-firman-una-alianza-estrategica"
   },
   {
+    "id": "news-www-boletinoficial-gob-ar-detalleaviso-primera-347836-20260923",
+    "title": "Ministerio de Justicia creó una mesa estratégica para elaborar una estrategia de IA en la Justicia",
+    "date": "2026-09-23",
+    "category": "Regulación",
+    "summary": "La Resolución 469/2026 creó la Mesa Estratégica de Inteligencia Artificial en la Justicia (MEIAJ) para relevar iniciativas, proponer prioridades, pilotos, capacitación e indicadores y elaborar una estrategia institucional. El artículo 7 aclara que no establece un régimen general de regulación de IA; exige observar las normas vigentes sobre datos personales, seguridad, propiedad intelectual, transparencia y tutela de derechos, y promueve supervisión humana, trazabilidad y evaluación de riesgos. El plazo de 90 días corre desde la primera reunión, cuya fecha no se consigna.",
+    "source": "Boletín Oficial de la República Argentina — Ministerio de Justicia",
+    "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/347836/20260923",
+    "period": "Resolución 469/2026, dictada el 21/09/2026 y publicada el 23/09/2026. La propuesta preliminar debe elevarse dentro de 90 días desde la primera reunión de la MEIAJ; la fecha de esa reunión no está consignada.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Nacional",
+    "sector": "Justicia / administración pública / gobernanza de IA",
+    "territorialRelevance": "Alta como señal de coordinación institucional nacional; no acredita implementación en provincias o municipios ni crea un régimen general de IA.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión de la Resolución 469/2026 en el Boletín Oficial del 23/09/2026. Se verificaron la creación y funciones de la MEIAJ, el artículo 7 y el plazo de 90 días desde la primera reunión. El propio texto aclara que no crea un régimen general de regulación de IA. No se verificó la fecha de la primera reunión ni la presentación de la estrategia."
+    }
+  },
+  {
     "title": "El Ministerio Público Fiscal aprobó lineamientos obligatorios para el uso institucional de IA",
     "date": "2026-09-04",
     "category": "Regulación",

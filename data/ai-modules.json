@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23",
+  "updatedAt": "2026-11-24",
   "note": "Los estados describen capacidades disponibles en el repositorio, no promesas de desarrollo ni integraciones externas.",
   "modules": [
     {
@@ -67,7 +67,7 @@
       "description": "Descubrimiento y organización de eventos por sector y localización.",
       "status": "planned",
       "statusLabel": "Planificado · requiere fuentes de organizadores",
-      "currentCapability": "Existe un contrato JSON versionado y validado en data/events.json con un primer registro histórico verificado: la 5.ª Feria Japonesa Bazaa de Ingeniero Maschwitz (15/11/2026), marcada como completada. No hay agenda integrada ni confirmación de eventos futuros.",
+      "currentCapability": "Existe un contrato JSON versionado y validado en data/events.json con un registro histórico completado (Feria Japonesa Bazaa, 15/11/2026) y dos eventos futuros confirmados: Ronda de Negocios de Energía y Minería de PBA (01/12/2026, inscripción cerrada el 13/11) y Ronda RIGI (02/12/2026, inscripción B2B cerrada el 16/11). No hay agenda integrada, ingesta automática ni confirmación de cupos.",
       "dependencies": [
         "data/events.json",
         "Fuentes oficiales de organizadores y recintos",
