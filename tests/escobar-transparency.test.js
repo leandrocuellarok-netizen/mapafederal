@@ -41,4 +41,29 @@ assert.match(profile, /transparency\.verification/);
 assert.match(html, /id="escobar-transparency"/);
 assert.match(html, /Transparencia municipal y datos públicos/);
 
-console.log("Escobar transparencia: portales oficiales, 53 datasets, 15 categorías, 8 formatos, cautela sobre Economía y Finanzas y siete localidades validados.");
+
+const watercourses = transparency.environmentalDatasets.find(item => item.id === "cursos-de-agua-partido-escobar");
+assert.ok(watercourses, "Falta la capa oficial de cursos de agua de Escobar");
+assert.equal(watercourses.status, "pendiente", "La publicación del dataset no equivale a una capa ya integrada al mapa");
+assert.equal(watercourses.sourcePublishedAt, null, "No inventar fecha de publicación");
+assert.equal(watercourses.createdAt, "2025-10-01");
+assert.equal(watercourses.lastUpdatedAt, "2026-03-31");
+assert.equal(watercourses.version, "1.0");
+assert.equal(watercourses.periodicity, "Anual");
+assert.equal(watercourses.license, "Open Data Commons Open Database License (ODbL)");
+assert.equal(watercourses.sourceCrs, "EPSG:22185");
+assert.equal(watercourses.geometryIntegrationStatus, "pending");
+assert.equal(watercourses.verification.status, "verified");
+assert.equal(watercourses.verification.checkedAt, "2026-11-24");
+assert.match(watercourses.verification.scope, /FeatureCollection/i);
+assert.match(watercourses.verification.scope, /EPSG:22185/);
+assert.match(watercourses.geometryNote, /no deben interpretarse como longitud\/latitud/i);
+assert.match(watercourses.geometryNote, /no constituye por sí sola un mapa de riesgo hídrico/i);
+for (const url of [watercourses.sourceUrl, watercourses.resourceUrl]) {
+  assert.equal(new URL(url).protocol, "https:");
+}
+assert.match(profile, /environmentalDatasets/);
+assert.match(profile, /escobar-environmental-dataset/);
+assert.match(profile, /GeoJSON original/);
+
+console.log("Escobar transparencia: portales oficiales, 53 datasets, 15 categorías, 8 formatos y referencia ambiental con CRS explícito, cautela sobre Economía y Finanzas y siete localidades validados.");

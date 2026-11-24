@@ -1114,6 +1114,37 @@
       "checkedAt": "2026-11-24",
       "scope": "Se consultaron las páginas institucionales de Transparencia municipal, Portal de Datos Abiertos y Solicitar Información Pública. Se registraron las métricas visibles del catálogo y las secciones anunciadas por el Municipio. No se enviaron solicitudes, no se verificó el resultado de los buscadores o descargas dinámicas y no se evaluó exhaustividad, oportunidad ni calidad de los datos publicados."
     },
-    "dynamicContentStatus": "pendiente"
+    "dynamicContentStatus": "pendiente",
+    "environmentalDatasets": [
+      {
+        "id": "cursos-de-agua-partido-escobar",
+        "name": "Cursos de Agua del Partido de Escobar",
+        "category": "Ambiente y Biodiversidad",
+        "description": "Red hidrográfica del Partido de Escobar que incluye ríos, arroyos y cursos de agua permanentes e intermitentes. El portal la presenta como una capa base para gestión ambiental, ordenamiento territorial, análisis de riesgo hídrico y planificación de infraestructura.",
+        "sourceName": "Estrategia Ambiental y datos — cartografía base hidrográfica utilizada por el Municipio de Escobar; el recurso incluye atributos que identifican IGN como fuente en registros.",
+        "sourceUrl": "https://datos.escobar.gob.ar/dataset/cursos-de-agua-del-partido-de-escobar",
+        "resourceUrl": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/cursos-de-agua-del-partido-de-escobar/cursos_agua.geojson",
+        "resourceName": "cursos_agua.geojson",
+        "resourceSize": "267 KB",
+        "resourceFormat": "GeoJSON",
+        "sourcePublishedAt": null,
+        "sourcePublicationNote": "La ficha no informa fecha de publicación. Declara creación 01/10/2025 y última actualización 31/03/2026.",
+        "createdAt": "2025-10-01",
+        "lastUpdatedAt": "2026-03-31",
+        "version": "1.0",
+        "periodicity": "Anual",
+        "license": "Open Data Commons Open Database License (ODbL)",
+        "sourceCrs": "EPSG:22185",
+        "geometryIntegrationStatus": "pending",
+        "geometryNote": "El GeoJSON declara coordenadas proyectadas en EPSG:22185. No deben interpretarse como longitud/latitud ni dibujarse directamente en el mapa. La capa no constituye por sí sola un mapa de riesgo hídrico, medición de caudal, evidencia de calidad del agua ni confirmación de navegabilidad actual.",
+        "status": "pendiente",
+        "validityPeriod": "Versión 1.0; el portal declara última actualización el 31/03/2026 y periodicidad anual. No se verificó una versión posterior.",
+        "verification": {
+          "status": "verified",
+          "checkedAt": "2026-11-24",
+          "scope": "Se consultó la ficha oficial y se abrió el recurso GeoJSON. Se comprobó que es una FeatureCollection, que declara CRS EPSG:22185 y que incluye atributos tipo, nombre, régimen, navegabilidad y fuente. La ficha declara versión 1.0, periodicidad anual, creación 01/10/2025, actualización 31/03/2026 y licencia ODbL. No se transformó ni validó la geometría en terreno; la fuente no permite inferir por sí sola riesgo hídrico, caudal, calidad del agua ni navegabilidad actual."
+        }
+      }
+    ]
   }
 }

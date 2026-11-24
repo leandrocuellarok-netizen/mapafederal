@@ -98,6 +98,12 @@ function renderProfile(territory,economy){
   const categories=(snapshot.categoryCounts||[]).slice().sort((a,b)=>b.datasets-a.datasets).filter(item=>item.datasets>0).slice(0,5);
   const categorySummary=categories.map(item=>escapeHtml(item.name)+" ("+escapeHtml(number(item.datasets))+")").join(" · ");
   const functions=(transparency.publishedFunctions||[]).map(item=>"<li>"+escapeHtml(item)+"</li>").join("");
+
+   const environmentalDatasetsHtml=(transparency.environmentalDatasets||[]).map(item=>{
+    const metadata=[item.category,item.resourceFormat,item.sourceCrs?("CRS "+item.sourceCrs):"",item.license].filter(Boolean).join(" · ");
+    return '<div class="escobar-item escobar-environmental-dataset"><span class="escobar-status">'+escapeHtml(statusLabel(item.status))+'</span><h4>'+escapeHtml(item.name)+'</h4><p>'+escapeHtml(item.description)+'</p><p class="escobar-meta">Versión: '+escapeHtml(item.version||"No indicada")+' · Actualización del dataset: '+escapeHtml(date(item.lastUpdatedAt))+' · Periodicidad: '+escapeHtml(item.periodicity||"No indicada")+'</p><p class="escobar-meta">'+escapeHtml(metadata)+'</p><p class="escobar-meta">'+escapeHtml(item.geometryNote||"")+'</p><p>'+sourceLink(item.sourceUrl,"Ficha municipal ↗")+' '+sourceLink(item.resourceUrl,"GeoJSON original ↗")+'</p><p class="escobar-meta">Verificación: '+escapeHtml(date(item.verification&&item.verification.checkedAt))+' · '+escapeHtml(item.verification&&item.verification.scope||"")+'</p></div>';
+   }).join("");
+
   transparencyTarget.innerHTML='<div class="escobar-item"><span class="escobar-status">'+escapeHtml(statusLabel(transparency.status))+'</span><h4>'+escapeHtml(transparency.name)+'</h4><p>'+escapeHtml(transparency.summary)+'</p>'
    +'<p class="escobar-meta">Portal de datos abiertos: '+escapeHtml(number(snapshot.publishedDatasets||0))+' datasets · '+escapeHtml(number(snapshot.thematicCategories||0))+' categorías · '+escapeHtml(number(snapshot.availableFormats||0))+' formatos · Consulta: '+escapeHtml(date(snapshot.checkedAt))+'</p>'
    +'<p class="escobar-meta">Categorías con más registros: '+categorySummary+'</p>'
@@ -106,7 +112,7 @@ function renderProfile(territory,economy){
    +'<p class="escobar-meta">Publicación: '+escapeHtml(date(transparency.sourcePublishedAt))+' · Vigencia: '+escapeHtml(transparency.validityPeriod)+' · Verificación: '+escapeHtml(date(transparency.verification&&transparency.verification.checkedAt))+'</p>'
    +'<p class="escobar-meta">Alcance: '+escapeHtml(transparency.verification&&transparency.verification.scope||"")+'</p>'
    +'<p>'+sourceLink(transparency.sourceUrl,"Transparencia municipal ↗")+' '+sourceLink(transparency.openDataUrl,"Datos abiertos ↗")+' '+sourceLink(transparency.informationRequestUrl,"Solicitar información pública ↗")+'</p>'
-   +'<p class="escobar-meta">Contacto de datos abiertos: '+escapeHtml(transparency.contact&&transparency.contact.email||"No indicado")+' · '+escapeHtml(transparency.contact&&transparency.contact.address||"")+'</p></div>';
+   +'<p class="escobar-meta">Contacto de datos abiertos: '+escapeHtml(transparency.contact&&transparency.contact.email||"No indicado")+' · '+escapeHtml(transparency.contact&&transparency.contact.address||"")+'</p></div>'+environmentalDatasetsHtml;
  }
  const mobility=territory.mobilityDirectory;
  if(mobility){
