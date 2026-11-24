@@ -38,15 +38,15 @@
       for(const field of ["id","name","recordType","scope","sector","stage","opportunityStatus","sourceName","sourceUrl","sourcePublishedAt","period","description"]){
         if(typeof item[field]!=="string"||!item[field].trim())throw new TypeError("Falta "+field+" en el registro "+(item.id||index)+".");
       }
-      if(!["project","public_program","tender","incentive"].includes(item.recordType))throw new TypeError("Tipo de registro no admitido: "+item.id);
-      if(!["national","provincial"].includes(item.scope))throw new TypeError("Alcance no admitido: "+item.id);
+      if(!["project","public_program","tender","incentive","investment_project"].includes(item.recordType))throw new TypeError("Tipo de registro no admitido: "+item.id);
+      if(!["national","provincial","municipal"].includes(item.scope))throw new TypeError("Alcance no admitido: "+item.id);
       if(!Object.prototype.hasOwnProperty.call(opportunityLabels,item.opportunityStatus))throw new TypeError("Estado de oportunidad no admitido: "+item.id);
       if(!isIsoDate(item.sourcePublishedAt)||item.sourcePublishedAt>today())throw new TypeError("Fecha de publicación inválida: "+item.id);
       let source;
       try{source=new URL(item.sourceUrl);}catch(_){throw new TypeError("URL de fuente inválida: "+item.id);}
       if(source.protocol!=="https:"||!source.hostname||source.username||source.password)throw new TypeError("La fuente debe usar HTTPS y no incluir credenciales: "+item.id);
       if(item.scope==="national"&&item.jurisdiction!==null)throw new TypeError("Un registro nacional no debe asignarse a una jurisdicción: "+item.id);
-      if(item.scope==="provincial"&&(typeof item.jurisdiction!=="string"||!item.jurisdiction.trim()))throw new TypeError("Falta la jurisdicción provincial: "+item.id);
+      if(["provincial","municipal"].includes(item.scope)&&(typeof item.jurisdiction!=="string"||!item.jurisdiction.trim()))throw new TypeError("Falta la jurisdicción provincial o municipal: "+item.id);
       for(const field of ["validFrom","validUntil"]){
         if(item[field]!==null&&item[field]!==undefined&&!isIsoDate(item[field]))throw new TypeError("Fecha de vigencia inválida ("+field+"): "+item.id);
       }

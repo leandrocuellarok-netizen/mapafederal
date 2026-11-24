@@ -176,6 +176,17 @@ jobs:
           const table = toExportTable(catalog.opportunities, catalog);
           assert.equal(table.rows.length, catalog.opportunities.length);
           const column = name => table.headers.indexOf(name);
+          const addnice = catalog.opportunities.find(item => item.id === "grupo-addnice-traslado-planta-garin-2027");
+          assert.ok(addnice, "Falta el proyecto municipal de Garín");
+          const addniceRow = toExportTable([addnice], catalog).rows[0];
+          assert.equal(addniceRow[column("Tipo de registro")], "investment_project");
+          assert.equal(addniceRow[column("Alcance")], "municipal");
+          assert.equal(addniceRow[column("Estado de oportunidad (código)")], "unknown");
+          assert.equal(addniceRow[column("Fecha de publicación de la fuente")], "2026-11-04");
+          assert.equal(addniceRow[column("Monto publicado")], "");
+          const finderPage = fs.readFileSync("investment-finder/index.html", "utf8");
+          assert.ok(finderPage.includes('<option value="municipal">Municipal</option>'));
+          assert.ok(finderPage.includes('opportunity.scope==="municipal"?"Alcance municipal"'));
           assert.ok(column("URL de la fuente") >= 0);
           assert.ok(column("Período") >= 0);
           assert.ok(column("Fecha de publicación de la fuente") >= 0);
