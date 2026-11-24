@@ -1,5 +1,32 @@
 [
   {
+    "id": "news-www-fca-org-uk-firms-innovation-ai-approach-agentic-ai",
+    "title": "La FCA publicó expectativas regulatorias para la IA agéntica en servicios financieros",
+    "date": "2026-11-24",
+    "category": "Regulación",
+    "summary": "La Financial Conduct Authority publicó expectativas para firmas, proveedores tecnológicos y plataformas que desplieguen agentes de IA en servicios financieros. Pide evaluar las actividades que realizan: pagos, promociones financieras, intermediación crediticia o asesoramiento pueden requerir autorización. Las firmas reguladas conservan responsabilidad por el cumplimiento y deben comprender la autonomía, los riesgos, los controles y la resiliencia operativa de sus sistemas; también se esperan advertencias claras y salvaguardas. Es una orientación del supervisor británico dentro del marco del Reino Unido, no una ley general nueva ni una obligación aplicable automáticamente en Argentina.",
+    "source": "Financial Conduct Authority (FCA)",
+    "url": "https://www.fca.org.uk/firms/innovation/ai-approach/agentic-ai",
+    "period": "Publicación y actualización inicial: 24/11/2026; la FCA anuncia que actualizará periódicamente sus expectativas.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "United Kingdom",
+    "sector": "Servicios financieros / IA agéntica / regulación y compliance",
+    "territorialRelevance": "Relevancia directa para empresas que desplieguen agentes en servicios financieros británicos; referencia comparativa para proveedores argentinos, sin efecto normativo automático en Argentina.",
+    "relatedSources": [
+      {
+        "label": "Reuters — advertencia de la FCA y lanzamiento de Meta Muse en el Reino Unido (24/11/2026)",
+        "url": "https://www.reuters.com/business/finance/ai-agents-could-trigger-financial-regulation-tech-firms-uk-watchdog-says-2026-11-24/"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión de la página oficial de la FCA, publicada y actualizada el 24/11/2026. Se contrastaron las expectativas sobre alcance de actividades, autorización, responsabilidad de firmas, supervisión, resiliencia operativa y salvaguardas. La clasificación territorial argentina permanece sin jurisdicción para no forzar el Reino Unido dentro del filtro provincial; el alcance extranjero se conserva en jurisdictionScope. Reuters (24/11/2026) se utiliza como contexto complementario sobre el lanzamiento británico de Meta Muse."
+    }
+  },
+  {
     "title": "Applied Digital anunció un contrato de capacidad para centros de datos de IA por USD 5.400 millones",
     "date": "2026-11-23",
     "category": "Tecnología",
