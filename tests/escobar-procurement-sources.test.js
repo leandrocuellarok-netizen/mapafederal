@@ -2,6 +2,11 @@ const assert = require("node:assert/strict");
 const catalog = require("../data/investment-opportunities.json");
 
 const expected = {
+  "escobar-licitacion-67-2026-servicio-desagote": {
+    url: "https://boletinoficial.gba.gob.ar/secciones/14496/descargar",
+    published: "2026-11-06",
+    scopePattern: /Verificado en el Boletín Oficial provincial/i
+  },
   "escobar-licitacion-66-2026-polideportivo-maschwitz": {
     url: "https://boletinoficial.gba.gob.ar/secciones/14508/ver",
     published: "2026-11-12"
@@ -33,7 +38,7 @@ for (const [id, expectedSource] of Object.entries(expected)) {
   assert.equal(item.sourcePublishedAt, expectedSource.published);
   assert.equal(item.verification.status, "verified");
   assert.equal(item.verification.checkedAt, "2026-11-24");
-  assert.match(item.verification.scope, /enlace de fuente corregido/i);
+  assert.match(item.verification.scope, expectedSource.scopePattern || /enlace de fuente corregido/i);
   assert.match(item.amount.basis, /no equivale/i);
   assert.equal(new URL(item.sourceUrl).protocol, "https:");
 }
@@ -42,5 +47,14 @@ const polideportivo = catalog.opportunities.find(item => item.id === "escobar-li
 const mobiliario = catalog.opportunities.find(item => item.id === "escobar-licitacion-69-2026-mobiliario-urbano");
 assert.equal(polideportivo.opportunityStatus, "unknown");
 assert.equal(mobiliario.opportunityStatus, "unknown");
+
+const desagote = catalog.opportunities.find(item => item.id === "escobar-licitacion-67-2026-servicio-desagote");
+assert.ok(desagote, "Falta la LP 67/2026 de servicio de desagote.");
+assert.equal(desagote.stage, "unknown", "No se debe inferir adjudicación ni ejecución.");
+assert.equal(desagote.opportunityStatus, "closed", "La apertura del 20/11/2026 ya pasó.");
+assert.equal(desagote.validUntil, "2026-11-20");
+assert.equal(desagote.amount.value, 288950000);
+assert.match(desagote.amount.basis, /no equivale al monto adjudicado/i);
+assert.match(desagote.verification.scope, /No se verificaron acta de apertura, ofertas, adjudicación, contrato ni prestación/i);
 
 console.log("Escobar procurement: cinco licitaciones enlazan a las ediciones oficiales correctas; publicación, verificación y cautela sobre presupuesto/adjudicación comprobadas.");
