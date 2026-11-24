@@ -394,6 +394,34 @@
         "checkedAt": "2026-11-24",
         "scope": "Verificado el anuncio municipal y la superficie declarada. No se verificaron permisos, monto, avance físico, fecha de operación ni empleo realizado; se conserva como proyecto anunciado."
       }
+    },
+    {
+      "id": "toyota-zarate-planta-vehiculos-electrificados-2026",
+      "name": "Toyota — nueva planta de vehículos electrificados en Zárate",
+      "recordType": "investment_project",
+      "scope": "provincial",
+      "sector": "Automotriz / movilidad electrificada / manufactura / proveedores industriales",
+      "jurisdiction": "Buenos Aires",
+      "location": "Zárate, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 1300000000,
+        "currency": "USD",
+        "basis": "Inversión anunciada de más de USD 1.300 millones; el monto corresponde al proyecto y no es capital disponible para terceros."
+      },
+      "validFrom": "2026-11-16",
+      "validUntil": null,
+      "sourceName": "Presidencia de la Nación — Argentina.gob.ar",
+      "sourceUrl": "https://www.argentina.gob.ar/noticias/toyota-anuncio-una-inversion-de-mas-de-usd-1300-millones-para-construir-una-nueva-planta-en",
+      "sourcePublishedAt": "2026-11-16",
+      "period": "Proyecto anunciado el 16/11/2026; inicio de operación previsto para 2030.",
+      "description": "Toyota presentó un proyecto de inversión de más de USD 1.300 millones para construir una nueva planta en Zárate, Provincia de Buenos Aires, en el marco del RIGI. La planta se destinaría a vehículos electrificados y comenzaría a operar en 2030 con la producción de la pick-up híbrida Tacoma. La fuente oficial señala que el proyecto impulsaría proveedores locales y regionales. No se publicaron contratos de abastecimiento ni un calendario de obra detallado; tampoco se verificó aprobación definitiva del proyecto dentro del RIGI.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado el anuncio oficial, monto superior a USD 1.300 millones, localización en Zárate, destino productivo y fecha prevista de operación 2030. No se verificó aprobación definitiva del RIGI, inicio de obra, volumen de empleo ni adjudicación de contratos a proveedores."
+      }
     }
   ]
 }
