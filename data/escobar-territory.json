@@ -602,7 +602,102 @@
           ]
         }
       ]
-    }
+    },
+    "announcedRoutes": [
+      {
+        "id": "linea-503-ramal-h-escobar-matheu-2026",
+        "name": "Línea 503 — ramal H: Belén de Escobar–estación Matheu",
+        "line": "503",
+        "branch": "H",
+        "operator": "Línea Sesenta S.A.",
+        "origin": "Terminal de colectivos de Belén de Escobar",
+        "destination": "Estación ferroviaria de Matheu",
+        "localities": [
+          "Belén de Escobar",
+          "Matheu"
+        ],
+        "routeOutbound": [
+          "Terminal de colectivos de Belén de Escobar",
+          "Av. 25 de Mayo",
+          "Colectora Este",
+          "Av. de los Inmigrantes",
+          "Del Caballito Blanco",
+          "Nazarre",
+          "Belgrano",
+          "Salvador Melo",
+          "Estación ferroviaria de Matheu"
+        ],
+        "routeReturn": [
+          "Estación ferroviaria de Matheu",
+          "Nazarre",
+          "Del Caballito Blanco",
+          "Av. de los Inmigrantes",
+          "Colectora Oeste",
+          "Dr. Travi",
+          "Av. 25 de Mayo",
+          "Terminal de colectivos de Belén de Escobar"
+        ],
+        "sourceName": "Municipalidad de Escobar",
+        "sourceUrl": "https://www.escobar.gob.ar/noticias/transporte-publico-escobar-suma-dos-nuevos-ramales-y-mas-colectivos-0-/",
+        "sourcePublishedAt": "2026-11-03",
+        "period": "Anuncio municipal del 03/11/2026; inicio previsto «durante la próxima semana», sin fecha exacta publicada.",
+        "validityPeriod": "Anuncio del 03/11/2026. Al 24/11/2026 no se encontró confirmación primaria posterior del inicio efectivo, horarios, frecuencias o paradas intermedias.",
+        "status": "anunciado",
+        "operationalStatus": "no verificado",
+        "summary": "La Municipalidad anunció el ramal H de la línea 503, operado por Línea Sesenta S.A., entre la terminal de colectivos de Belén de Escobar y la estación ferroviaria de Matheu. El artículo publica los trazados de ida y vuelta, pero no detalla horarios, frecuencias ni paradas intermedias.",
+        "verification": {
+          "checkedAt": "2026-11-24",
+          "scope": "Se verificó la publicación municipal del 03/11/2026, el operador, la línea, el ramal, origen, destino y trazados de ida y vuelta. La fuente anunció el inicio durante la semana siguiente sin fecha exacta. No se encontró confirmación municipal o del operador posterior que acredite inicio efectivo; no se publican horarios, frecuencias ni paradas intermedias y no se afirma operación vigente."
+        }
+      },
+      {
+        "id": "linea-506-ramal-b-escobar-loma-verde-2026",
+        "name": "Línea 506 — ramal B: Belén de Escobar–Parque Industrial Loma Verde",
+        "line": "506",
+        "branch": "B",
+        "operator": "Micro Ómnibus Tigre S.A. (M.O.T.S.A.)",
+        "origin": "Terminal de colectivos de Belén de Escobar",
+        "destination": "Parque Industrial de Loma Verde y centro de almacenamiento de Mercado Libre",
+        "localities": [
+          "Belén de Escobar",
+          "Loma Verde"
+        ],
+        "routeOutbound": [
+          "Terminal de colectivos de Belén de Escobar",
+          "Av. 25 de Mayo",
+          "Colectora Este",
+          "Km 59 de Panamericana"
+        ],
+        "routeReturn": [
+          "Km 59 de Panamericana",
+          "Puente Loma Verde",
+          "Colectora Oeste",
+          "Dr. Travi",
+          "Av. 25 de Mayo",
+          "Terminal de colectivos de Belén de Escobar"
+        ],
+        "sourceName": "Municipalidad de Escobar",
+        "sourceUrl": "https://www.escobar.gob.ar/noticias/transporte-publico-escobar-suma-dos-nuevos-ramales-y-mas-colectivos-0-/",
+        "sourcePublishedAt": "2026-11-03",
+        "period": "Anuncio municipal del 03/11/2026; inicio previsto «durante la próxima semana», sin fecha exacta publicada.",
+        "validityPeriod": "Anuncio del 03/11/2026. Al 24/11/2026 existen reportes periodísticos posteriores sobre el inicio, pero no se localizó confirmación primaria del Municipio o del operador.",
+        "status": "anunciado",
+        "operationalStatus": "no verificado",
+        "summary": "La Municipalidad anunció el ramal B de la línea 506, operado por M.O.T.S.A., entre la terminal de Belén de Escobar y el sector del Parque Industrial de Loma Verde y el centro de almacenamiento de Mercado Libre, con referencia de llegada al km 59 de Panamericana. No se incorporan horarios ni paradas no publicados por la fuente primaria.",
+        "secondaryReports": [
+          {
+            "sourceName": "El Diario de Escobar",
+            "sourceUrl": "https://eldiariodeescobar.com.ar/article/ya-funciona-el-ramal-de-la-506-que-conecta-escobar-con-mercado-libre-y-el-parque-industrial-de-loma-verde",
+            "sourcePublishedAt": "2026-11-18",
+            "claim": "La publicación afirma que el ramal B ya estaba en funcionamiento y reproduce horarios. Es evidencia periodística secundaria; no sustituye una confirmación del Municipio o del operador."
+          }
+        ],
+        "verification": {
+          "checkedAt": "2026-11-24",
+          "scope": "Se verificó la publicación municipal del 03/11/2026, el operador, la línea, el ramal, origen, destino y trazados de ida y vuelta. El Diario de Escobar publicó el 18/11/2026 que el ramal ya funcionaba, pero no se localizó una confirmación posterior del Municipio o de M.O.T.S.A.; por eso el estado operativo permanece no verificado. No se importan los horarios publicados por prensa secundaria como horarios oficiales."
+        }
+      }
+    ]
   },
   "transparencyDirectory": {
     "id": "transparencia-municipal-escobar",
