@@ -201,7 +201,7 @@ La página independiente de Investment Finder permite exportar a CSV únicamente
 
 La interfaz presenta los seis módulos desde un único manifiesto: `data/ai-modules.json`. Federal Reports permanece en piloto funcional; Federal AI Assistant, Investment Finder, Territorial Monitor, Event Intelligence y Executive Travel AI permanecen planificados. Los estados, capacidades actuales, dependencias y próximos pasos se mantienen en ese archivo y no deben duplicarse como una segunda lista independiente en la interfaz.
 
-Las funciones comprobables actuales son el mapa, el directorio de nodos, los perfiles OPEX, las noticias curadas, el catálogo documental filtrable de Investment Finder y las exportaciones CSV/Markdown. `data/events.json` contiene tres registros documentales validados: un evento histórico completado y dos eventos futuros. No existe una agenda integrada; los registros no confirman cupos ni inscripción vigente. El buscador no es un modelo de IA y la sección de módulos no implica integraciones en producción.
+Las funciones comprobables actuales son el mapa, el directorio de nodos, los perfiles OPEX, las noticias curadas, el catálogo documental filtrable de Investment Finder y las exportaciones CSV/Markdown. `data/events.json` contiene cuatro registros documentales validados: dos eventos históricos completados y dos eventos futuros. No existe una agenda integrada; los registros no confirman cupos ni inscripción vigente. El buscador no es un modelo de IA y la sección de módulos no implica integraciones en producción.
 
 ## Base territorial de Escobar
 
@@ -254,9 +254,9 @@ La sección de módulos se alimenta de `data/ai-modules.json` y sus criterios t�
 
 INDEC publicó el OPEX del primer semestre de 2026 el 2 de septiembre de 2026, con resultados regionales. Ese período parcial debe mantenerse separado del OPEX anual 2025 que alimenta las fichas provinciales. La página de INDEC anuncia el próximo informe anual 2026 para el 9 de marzo de 2027: [Origen provincial de las exportaciones](https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-2-79).
 
-## Event Intelligence: primer registro territorial de Escobar
+## Event Intelligence: actividad empresarial y territorial de Escobar
 
-El catálogo `data/events.json` incorpora un primer evento histórico documentado del partido de Escobar: la 5.ª Feria Japonesa Bazaa, realizada el 15 de noviembre de 2026 en el Polo de Educación Superior de Escobar, Ingeniero Maschwitz. La ficha conserva la publicación municipal del 16/11/2026, horario anunciado, sede, período y verificación del 23/11/2026. Se marca como `completed`: no representa una agenda activa ni disponibilidad futura.
+El catálogo `data/events.json` conserva dos eventos históricos documentados del partido de Escobar: la 5.ª Feria Japonesa Bazaa (15/11/2026) y la Ronda de Negocios Escobar 2026 (24/11/2026), realizada en Espacio Mendoza, Ingeniero Maschwitz. Para la Ronda, la fecha y sede se contrastaron con la agenda oficial de PBA; las cifras de participación (277 empresas y entidades, 72 de Escobar, más de 350 asistentes y 33 ramas productivas) se atribuyen a la cobertura de Zona Norte Diario. No se infieren acuerdos comerciales ni inversiones cerradas. La ficha omite la hora por discrepancia entre la agenda oficial y el portal de inscripción. Ambos registros se marcan como `completed`: no representan una agenda activa ni disponibilidad futura.
 
 Fuente primaria: [Municipalidad de Escobar — 5.ª Feria Japonesa](https://www.escobar.gob.ar/noticias/este-domingo-llega-a-escobar-la-5-edicion-de-la-feria-japonesa/).
 
