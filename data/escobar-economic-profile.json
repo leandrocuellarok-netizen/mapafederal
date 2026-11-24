@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23",
+  "updatedAt": "2026-11-24",
   "jurisdiction": "Partido de Escobar",
   "province": "Buenos Aires",
   "country": "Argentina",
@@ -120,6 +120,67 @@
       "description": "Proyecto anunciado para trasladar su planta a Garín durante 2027; no registrar como planta ya operativa.",
       "sourceUrl": "https://www.escobar.gob.ar/noticias/garin-sumara-una-nueva-planta-industrial-y-fortalecera-su-perfil-produ/",
       "validityPeriod": "Proyecto anunciado para 2027; no hay evidencia de operación al 2026-11-23."
+    },
+    {
+      "name": "Hönecker Chocolates",
+      "locality": "Garín; Ingeniero Maschwitz; Belén de Escobar",
+      "localities": [
+        "Garín",
+        "Ingeniero Maschwitz",
+        "Belén de Escobar"
+      ],
+      "status": "histórico",
+      "currentStatus": "no verificado",
+      "evidenceDate": "2026-11-18",
+      "sourceName": "El Día de Escobar",
+      "sourceType": "Medio periodístico; recoge declaraciones del fundador",
+      "sourcePublishedAt": "2026-11-18",
+      "sourcePublicationNote": "La nota local muestra fecha de publicación 18/11/2026; las publicaciones posteriores de iProfesional y 0223 recogen declaraciones atribuidas al fundador.",
+      "description": "El Día de Escobar informó que Hönecker desactivó la planta que tenía en Garín, cerró cinco locales comerciales y dejó sin concretar el proyecto de una nueva fábrica en Belén de Escobar; el fundador dijo que el terreno de calle Capello estaba en venta. La nota también recoge su declaración de que producía un 30% menos de alfajores. iProfesional describió como activa la planta de Ingeniero Maschwitz, pero su operación actual no se verificó directamente. No se infieren despidos ni la situación laboral individual de quienes trabajaban en Garín.",
+      "sourceUrl": "https://eldiadeescobar.com.ar/una-empresa-escobarense-cerro-cinco-sucursales-y-una-fabrica-por-la-crisis/",
+      "validityPeriod": "Evidencia publicada entre el 2026-11-18 y el 2026-11-24; no constituye un monitoreo posterior del estado industrial.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Se revisó la nota local del 18/11/2026 y se contrastó con iProfesional (24/11) y 0223 (23/11). Las publicaciones recogen declaraciones atribuidas al fundador; la coincidencia no constituye auditoría ni confirmación independiente de la empresa. Se documenta la desactivación reportada de la planta de Garín y el proyecto de nueva planta no concretado en Belén de Escobar. La planta de Ingeniero Maschwitz se describe como activa en esas publicaciones, pero no se verificó directamente su operación actual. No se infieren despidos ni la situación laboral individual de los trabajadores mencionados."
+      },
+      "officialSources": [
+        {
+          "sourceName": "Hönecker Chocolates",
+          "label": "Tienda online de la empresa — consulta 24/11/2026",
+          "url": "https://tienda.honeckerchocolates.com.ar/",
+          "sourcePublishedAt": null,
+          "sourcePublicationNote": "El catálogo no indica fecha de publicación o actualización.",
+          "validityPeriod": "Consulta puntual del catálogo el 2026-11-24; no acredita stock permanente, locales físicos ni operación industrial.",
+          "verification": {
+            "status": "verified",
+            "checkedAt": "2026-11-24",
+            "scope": "Se observó un catálogo online y datos de contacto de la tienda. Algunos productos aparecen sin stock. La presencia digital no acredita operación de plantas ni disponibilidad comercial presencial."
+          }
+        }
+      ],
+      "relatedSources": [
+        {
+          "sourceName": "iProfesional",
+          "sourcePublishedAt": "2026-11-24",
+          "label": "iProfesional — 24/11/2026",
+          "url": "https://www.iprofesional.com/actualidad/469574-reconocida-marca-de-alfajores-cerro-cinco-locales-y-una-fabrica",
+          "verification": {
+            "checkedAt": "2026-11-24",
+            "scope": "Publicación que recoge declaraciones del fundador; no es confirmación independiente de la empresa."
+          }
+        },
+        {
+          "sourceName": "0223",
+          "sourcePublishedAt": "2026-11-23",
+          "label": "0223 — 23/11/2026",
+          "url": "https://www.0223.com.ar/nota/2026-11-23-11-23-0-conmocion-una-historica-marca-de-alfajores-cerro-cinco-sucursales-por-la-fuerte-caida-en-las-ventas",
+          "verification": {
+            "checkedAt": "2026-11-24",
+            "scope": "Publicación que recoge declaraciones atribuidas al fundador; no confirma individualmente la situación laboral ni la operación actual."
+          }
+        }
+      ]
     }
   ],
   "sourcePublisher": "Municipalidad de Escobar",

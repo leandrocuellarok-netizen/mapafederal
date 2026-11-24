@@ -443,6 +443,8 @@ jobs:
           assert 'href="#escobar"' in html
           print("Escobar: 7 localidades, 246 barrios, indicadores 2026, directorios y 14 referencias cartográficas en 6 localidades validados.")
           PY
+      - name: Test Escobar economic profile and company evidence
+        run: node tests/escobar-economic-profile.test.js
       - name: Test Escobar intermodal and interlocal mobility evidence
         run: node tests/escobar-mobility.test.js
       - name: Test Escobar georeferenced railway infrastructure
