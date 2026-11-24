@@ -1169,5 +1169,200 @@
         }
       }
     ]
+  },
+  "participatoryBudget2026": {
+    "name": "Presupuesto Participativo 2026 — proyectos publicados bajo 24 de Febrero",
+    "locality": "24 de Febrero",
+    "status": "pendiente",
+    "stageLabel": "CONECTA muestra etapa 4 de 5 y «votación abierta»; el plazo publicado en otra noticia municipal venció el 25/09/2026.",
+    "announcedVotingDeadline": "2026-09-25",
+    "localityProjectCount": 14,
+    "districtProjectCount": 219,
+    "budgetPerLocality": {
+      "value": 450000000,
+      "currency": "ARS",
+      "basis": "Monto anunciado por el Municipio para financiar los proyectos seleccionados en cada localidad; no equivale a gasto ejecutado."
+    },
+    "institutionalFundCapPerLocality": {
+      "value": 45000000,
+      "currency": "ARS",
+      "basis": "Hasta este monto por localidad para proyectos de fortalecimiento institucional de entidades sin fines de lucro."
+    },
+    "voterPointsPerCategory": 100,
+    "projectPointNote": "El puntaje asignado a cada proyecto en CONECTA se presenta como referencia de su costo. La noticia municipal del 03/09/2026 informa que cada votante dispone de hasta 100 puntos por categoría. Son magnitudes distintas y no deben confundirse.",
+    "localityClassificationNote": "Los 14 proyectos aparecen bajo el encabezado 24 de Febrero. Algunos títulos conservan las referencias «Presidente Perón» y «Garín Centro» tal como las publica el Municipio; no se infiere equivalencia territorial ni se reinterpretan límites.",
+    "statusNote": "La página CONECTA consultada el 24/11/2026 sigue indicando «votación abierta» (etapa 4/5), pero la noticia municipal del 16/09/2026 informó que el plazo se extendía hasta el viernes 25/09/2026. No se localizó una prórroga posterior ni resultados oficiales en las páginas municipales consultadas. Por la contradicción, el estado de votación y selección queda pendiente de conciliación; no se presenta como convocatoria abierta ni como obra adjudicada o ejecutada.",
+    "votingPortalUrl": "https://escobar360.escobar.gob.ar/servicio.aspx?ser_id=3028",
+    "votingPortalAccessNote": "La ficha del servicio Escobar 360° indica que requiere iniciar sesión. No se inició sesión ni se emitió voto; la página pública no permitió verificar el estado transaccional del formulario.",
+    "sourceName": "Municipalidad de Escobar",
+    "sourceUrl": "https://www.escobar.gob.ar/conecta/",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La página CONECTA no indica fecha de publicación o actualización; se consultó el 24/11/2026.",
+    "relatedSources": [
+      {
+        "label": "Municipalidad de Escobar — extensión del plazo de votación (16/09/2026)",
+        "url": "https://www.escobar.gob.ar/noticias/el-presupuesto-participativo-2026-extiende-su-votacion-hasta-el-vierne/",
+        "sourcePublishedAt": "2026-09-16"
+      },
+      {
+        "label": "Municipalidad de Escobar — reglas de distribución de puntos (03/09/2026)",
+        "url": "https://www.escobar.gob.ar/noticias/presupuesto-participativo-2026-un-nuevo-y-mejor-sistema-para-que-los-v/",
+        "sourcePublishedAt": "2026-09-03"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "scope": "La página municipal CONECTA muestra 14 proyectos bajo 24 de Febrero, 219 proyectos en siete localidades, etapa 4/5 con votación abierta, $450.000.000 por localidad y hasta $45.000.000 para entidades sin fines de lucro. La noticia municipal del 16/09/2026 informa que la votación se extendía hasta el 25/09/2026; la noticia del 03/09/2026 distingue hasta 100 puntos por categoría para cada votante. La ficha de Escobar 360° exige iniciar sesión. No se encontró en las páginas municipales consultadas una prórroga posterior, resultados finales, adjudicación ni ejecución de estos 14 proyectos. La contradicción entre la fecha límite publicada y el estado visible en CONECTA se conserva como pendiente."
+    },
+    "resultsStatus": "pendiente",
+    "projects": [
+      {
+        "id": "24f-veredas-constituyentes",
+        "name": "24 de Febrero Veredas",
+        "sourceArea": "24 de Febrero",
+        "type": "Veredas",
+        "category": "Infraestructura",
+        "description": "Construcción de veredas sobre Avenida Constituyentes entre Islas Malvinas y Patricias Argentinas.",
+        "costPoints": 15,
+        "selectionStatus": "pendiente"
+      },
+      {
+        "id": "24f-refugios-presidente-peron",
+        "name": "Presidente Perón Refugio de Pasajeros",
+        "sourceArea": "Presidente Perón",
+        "type": "Refugio de Pasajeros",
+        "category": "Infraestructura",
+        "description": "Provisión y colocación de refugios de pasajeros sobre: Colectora Oeste y Av. Constituyentes; Los Olmos y Av. Centenario; Av. Centenario y Los Olmos.",
+        "costPoints": 15,
+        "selectionStatus": "pendiente"
+      },
+      {
+        "id": "24f-la-arboleda-corredor-urbano",
+        "name": "La Arboleda Corredor Urbano",
+        "sourceArea": "La Arboleda",
+        "type": "Corredor Urbano",
+        "category": "Infraestructura",
+        "description": "Estabilizado de suelo y construcción de veredas sobre calle Isla Nueva entre 1° de Julio y Centenario.",
+        "costPoints": 50,
+        "selectionStatus": "pendiente"
+      },
+      {
+        "id": "24f-corredor-comercial",
+        "name": "24 de Febrero Corredor Urbano",
+        "sourceArea": "24 de Febrero",
+        "type": "Corredor Urbano",
+        "category": "Infraestructura",
+        "description": "Puesta en valor de zona comercial con reparación de veredas existentes y colocación de mobiliario urbano e iluminación.",
+        "costPoints": 45,
+        "selectionStatus": "pendiente"
+      },
+      {
+        "id": "24f-garin-centro-horacio-dupuy",
+        "name": "Garín Centro Reforma Edilicia",
+        "sourceArea": "Garín Centro",
+        "type": "Reforma Edilicia",
+        "category": "Infraestructura",
+        "description": "Reforma y ampliación del Hospital Dr. Horacio Dupuy de Garín.",
+        "costPoints": 35,
+        "selectionStatus": "pendiente"
+      },
+      {
+        "id": "24f-sala-velatoria",
+        "name": "24 de Febrero Reforma Edilicia",
+        "sourceArea": "24 de Febrero",
+        "type": "Reforma Edilicia",
+        "category": "Infraestructura",
+        "description": "Mejora integral de la sala velatoria del Barrio 24 de Febrero.",
+        "costPoints": 45,
+        "selectionStatus": "pendiente"
+      },
+      {
+        "id": "24f-plazoletas-cancha",
+        "name": "24 de Febrero Plazas",
+        "sourceArea": "24 de Febrero",
+        "type": "Plazas",
+        "category": "Espacio Público y Deportes",
+        "description": "Intervención de plazoletas internas Barrio 24 de Febrero. Creación de una cancha para niños/as de 5 a 10 años con cerco perimetral, equipamiento urbano e iluminación.",
+        "costPoints": 50,
+        "selectionStatus": "pendiente"
+      },
+      {
+        "id": "24f-plaza-presidente-peron",
+        "name": "Presidente Perón Plazas",
+        "sourceArea": "Presidente Perón",
+        "type": "Plazas",
+        "category": "Espacio Público y Deportes",
+        "description": "Cerco perimetral para el cierre completo de la plaza ubicada en calle Los Olmos y 17 de Octubre.",
+        "costPoints": 15,
+        "selectionStatus": "pendiente"
+      },
+      {
+        "id": "24f-adultos-mayores",
+        "name": "24 de Febrero Adultos/as mayores",
+        "sourceArea": "24 de Febrero",
+        "type": "Adultos/as mayores",
+        "category": "Fortalecimiento Institucional",
+        "beneficiary": "Centro de Jubilados/as y Pensionados/as de 24 de Febrero",
+        "description": "Compra de materiales de construcción.",
+        "costPoints": 20,
+        "selectionStatus": "pendiente"
+      },
+      {
+        "id": "24f-capilla-guadalupe",
+        "name": "24 de Febrero Culto",
+        "sourceArea": "24 de Febrero",
+        "type": "Culto",
+        "category": "Fortalecimiento Institucional",
+        "beneficiary": "Amigos/as de la Capilla Nuestra Señora de Guadalupe",
+        "description": "Compra de materiales de construcción para la mejora de la capilla.",
+        "costPoints": 20,
+        "selectionStatus": "pendiente"
+      },
+      {
+        "id": "24f-secundaria-25",
+        "name": "24 de Febrero Educación",
+        "sourceArea": "24 de Febrero",
+        "type": "Educación",
+        "category": "Fortalecimiento Institucional",
+        "beneficiary": "Escuela de Educación Secundaria N°25",
+        "description": "Compra de mobiliario y equipamiento para mejorar el espacio recreativo destinado a los estudiantes.",
+        "costPoints": 20,
+        "selectionStatus": "pendiente"
+      },
+      {
+        "id": "24f-jardin-906",
+        "name": "24 de Febrero Educación",
+        "sourceArea": "24 de Febrero",
+        "type": "Educación",
+        "category": "Fortalecimiento Institucional",
+        "beneficiary": "Jardín de Infantes N°906",
+        "description": "Compra de materiales para el cerramiento de un espacio de usos múltiples y/o incorporación de equipo de sonido y proyector.",
+        "costPoints": 20,
+        "selectionStatus": "pendiente"
+      },
+      {
+        "id": "24f-caps-selles",
+        "name": "24 de Febrero Salud",
+        "sourceArea": "24 de Febrero",
+        "type": "Salud",
+        "category": "Fortalecimiento Institucional",
+        "beneficiary": "Cooperadora del Centro de Atención Primaria de la Salud Selles",
+        "description": "Compra de equipamiento para fortalecer la atención y el funcionamiento del centro de salud, incluyendo un desfibrilador y/o una máquina cortadora de telas.",
+        "costPoints": 20,
+        "selectionStatus": "pendiente"
+      },
+      {
+        "id": "24f-capilla-rosario-san-nicolas",
+        "name": "Presidente Perón Culto",
+        "sourceArea": "Presidente Perón",
+        "type": "Culto",
+        "category": "Fortalecimiento Institucional",
+        "beneficiary": "Amigos/as de la Capilla Nuestra Señora del Rosario de San Nicolás",
+        "description": "Compra de materiales de construcción para realizar trabajos de revoque y mejoras en la capilla.",
+        "costPoints": 20,
+        "selectionStatus": "pendiente"
+      }
+    ]
   }
 }

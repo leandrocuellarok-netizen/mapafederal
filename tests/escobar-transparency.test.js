@@ -159,4 +159,38 @@ const roundTripWatercourse = forwardFaja5(...firstWatercourseWgs84);
 assert.ok(Math.abs(roundTripWatercourse[0] - firstWatercourseCoordinate[0]) < 0.01);
 assert.ok(Math.abs(roundTripWatercourse[1] - firstWatercourseCoordinate[1]) < 0.01);
 
+
+const participatoryBudget = territory.participatoryBudget2026;
+assert.ok(participatoryBudget, "Falta el registro del Presupuesto Participativo 2026");
+assert.equal(participatoryBudget.locality, "24 de Febrero");
+assert.equal(participatoryBudget.status, "pendiente", "La discrepancia entre CONECTA y el plazo publicado debe quedar pendiente");
+assert.equal(participatoryBudget.announcedVotingDeadline, "2026-09-25");
+assert.equal(participatoryBudget.localityProjectCount, 14);
+assert.equal(participatoryBudget.districtProjectCount, 219);
+assert.equal(participatoryBudget.budgetPerLocality.value, 450000000);
+assert.equal(participatoryBudget.institutionalFundCapPerLocality.value, 45000000);
+assert.equal(participatoryBudget.voterPointsPerCategory, 100);
+assert.equal(participatoryBudget.projects.length, 14);
+assert.equal(new Set(participatoryBudget.projects.map(item => item.id)).size, 14);
+assert.equal(participatoryBudget.projects.filter(item => item.category === "Infraestructura").length, 6);
+assert.equal(participatoryBudget.projects.filter(item => item.category === "Espacio Público y Deportes").length, 2);
+assert.equal(participatoryBudget.projects.filter(item => item.category === "Fortalecimiento Institucional").length, 6);
+assert.ok(participatoryBudget.projects.every(item => item.costPoints > 0 && item.selectionStatus === "pendiente" && item.description));
+assert.ok(participatoryBudget.projects.some(item => item.sourceArea === "Garín Centro"));
+assert.ok(participatoryBudget.projects.some(item => item.sourceArea === "Presidente Perón"));
+assert.match(participatoryBudget.statusNote, /votación abierta/i);
+assert.match(participatoryBudget.statusNote, /25\/09\/2026/);
+assert.match(participatoryBudget.statusNote, /no se presenta como convocatoria abierta/i);
+assert.match(participatoryBudget.projectPointNote, /100 puntos por categoría/i);
+assert.match(participatoryBudget.localityClassificationNote, /no se infiere equivalencia territorial/i);
+assert.equal(participatoryBudget.sourcePublishedAt, null);
+assert.equal(participatoryBudget.verification.checkedAt, "2026-11-24");
+for (const url of [participatoryBudget.sourceUrl, participatoryBudget.votingPortalUrl, ...participatoryBudget.relatedSources.map(item => item.url)]) {
+  assert.equal(new URL(url).protocol, "https:");
+}
+assert.match(profile, /participatoryBudget2026/);
+assert.match(profile, /costPoints/);
+assert.match(profile, /puntos de costo/);
+assert.match(profile, /pendiente de conciliación/);
+
 console.log("Escobar transparencia: fuentes, siete localidades, directorios, metadatos ambientales y preflight reproducible EPSG:22185 validados; integración geométrica completa sigue pendiente.");
