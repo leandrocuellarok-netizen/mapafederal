@@ -84,4 +84,4 @@ assert.match(profile, /mobility\.interlocalConnections/);
 assert.match(profile, /mobility\.intermodalAssessment/);
 assert.match(profile, /connectionsHtml\+intermodalHtml/);
 
-console.log("Escobar movilidad: 15 paradas, 3 estaciones, 3 coincidencias territoriales sin inferir transbordos y 1 conexión peatonal con estado actual no verificado.");
+console.log("Escobar movilidad: 15 paradas, 3 estaciones, 3 coincidencias sin inferir transbordos, 1 puente con estado actual no verificado y 2 ramales anunciados sin confirmar como operativos.");
