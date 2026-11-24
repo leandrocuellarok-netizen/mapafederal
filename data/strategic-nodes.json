@@ -1024,5 +1024,140 @@
       "checkedAt": "2026-11-23",
       "scope": "La Municipalidad reconoce Maquinista Savio entre las siete localidades. La ficha cartográfica identifica este punto como Maquinista F. Savio Este, dentro del Partido de Escobar; se registra únicamente como referencia del sector este, no como centro ni límite. Verificación web, no presencial."
     }
+  },
+  {
+    "name": "Estación ferroviaria — Belén de Escobar",
+    "province": "Buenos Aires",
+    "type": "Estación ferroviaria",
+    "coords": [
+      -34.3496035,
+      -58.7951081
+    ],
+    "note": "Ubicación puntual de estación incluida en el GeoJSON municipal 2026. Coordenada transformada de EPSG:22185 (POSGAR 94 / Argentina 5) a EPSG:4326 (WGS 84). El registro no confirma servicio de pasajeros, horarios ni funcionamiento actual; no representa límites administrativos.",
+    "source": "https://datos.escobar.gob.ar/dataset/estaciones-de-ferrocarril-del-partido-de-escobar",
+    "coordinateSource": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/estaciones-de-ferrocarril-del-partido-de-escobar/estaciones_ferrocarril.geojson",
+    "district": "Partido de Escobar",
+    "locality": "Belén de Escobar",
+    "sourceName": "Portal Datos Abiertos de la Municipalidad de Escobar",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La ficha no informa fecha de publicación; registra creación 2025-10-01 y última actualización 2026-03-31.",
+    "coordinateSourceName": "GeoJSON municipal de estaciones; CRS original EPSG:22185 — POSGAR 94 / Argentina 5",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "Recurso estaciones_ferrocarril.geojson, versión 1.0; última actualización 2026-03-31; licencia ODbL.",
+    "validityPeriod": "Georreferencia publicada en el conjunto 2026; no prueba operación ferroviaria actual.",
+    "status": "pendiente",
+    "verification": {
+      "checkedAt": "2026-11-24",
+      "scope": "Se leyó el GeoJSON municipal de cinco estaciones y se transformaron las coordenadas proyectadas a WGS 84 con pyproj 3.7.2. Verificación documental; no presencial. No se infiere servicio de pasajeros ni horario vigente."
+    },
+    "sourceRecordId": "est-belen-de-escobar"
+  },
+  {
+    "name": "Estación ferroviaria — Ingeniero Maschwitz",
+    "province": "Buenos Aires",
+    "type": "Estación ferroviaria",
+    "coords": [
+      -34.3829731,
+      -58.7363527
+    ],
+    "note": "Ubicación puntual de estación incluida en el GeoJSON municipal 2026. Coordenada transformada de EPSG:22185 (POSGAR 94 / Argentina 5) a EPSG:4326 (WGS 84). El registro no confirma servicio de pasajeros, horarios ni funcionamiento actual; no representa límites administrativos.",
+    "source": "https://datos.escobar.gob.ar/dataset/estaciones-de-ferrocarril-del-partido-de-escobar",
+    "coordinateSource": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/estaciones-de-ferrocarril-del-partido-de-escobar/estaciones_ferrocarril.geojson",
+    "district": "Partido de Escobar",
+    "locality": "Ingeniero Maschwitz",
+    "sourceName": "Portal Datos Abiertos de la Municipalidad de Escobar",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La ficha no informa fecha de publicación; registra creación 2025-10-01 y última actualización 2026-03-31.",
+    "coordinateSourceName": "GeoJSON municipal de estaciones; CRS original EPSG:22185 — POSGAR 94 / Argentina 5",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "Recurso estaciones_ferrocarril.geojson, versión 1.0; última actualización 2026-03-31; licencia ODbL.",
+    "validityPeriod": "Georreferencia publicada en el conjunto 2026; no prueba operación ferroviaria actual.",
+    "status": "pendiente",
+    "verification": {
+      "checkedAt": "2026-11-24",
+      "scope": "Se leyó el GeoJSON municipal de cinco estaciones y se transformaron las coordenadas proyectadas a WGS 84 con pyproj 3.7.2. Verificación documental; no presencial. No se infiere servicio de pasajeros ni horario vigente."
+    },
+    "sourceRecordId": "est-ingeniero-maschwitz"
+  },
+  {
+    "name": "Estación ferroviaria — Garín",
+    "province": "Buenos Aires",
+    "type": "Estación ferroviaria",
+    "coords": [
+      -34.4214475,
+      -58.7366306
+    ],
+    "note": "Ubicación puntual de estación incluida en el GeoJSON municipal 2026. Coordenada transformada de EPSG:22185 (POSGAR 94 / Argentina 5) a EPSG:4326 (WGS 84). El registro no confirma servicio de pasajeros, horarios ni funcionamiento actual; no representa límites administrativos.",
+    "source": "https://datos.escobar.gob.ar/dataset/estaciones-de-ferrocarril-del-partido-de-escobar",
+    "coordinateSource": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/estaciones-de-ferrocarril-del-partido-de-escobar/estaciones_ferrocarril.geojson",
+    "district": "Partido de Escobar",
+    "locality": "Garín",
+    "sourceName": "Portal Datos Abiertos de la Municipalidad de Escobar",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La ficha no informa fecha de publicación; registra creación 2025-10-01 y última actualización 2026-03-31.",
+    "coordinateSourceName": "GeoJSON municipal de estaciones; CRS original EPSG:22185 — POSGAR 94 / Argentina 5",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "Recurso estaciones_ferrocarril.geojson, versión 1.0; última actualización 2026-03-31; licencia ODbL.",
+    "validityPeriod": "Georreferencia publicada en el conjunto 2026; no prueba operación ferroviaria actual.",
+    "status": "pendiente",
+    "verification": {
+      "checkedAt": "2026-11-24",
+      "scope": "Se leyó el GeoJSON municipal de cinco estaciones y se transformaron las coordenadas proyectadas a WGS 84 con pyproj 3.7.2. Verificación documental; no presencial. No se infiere servicio de pasajeros ni horario vigente."
+    },
+    "sourceRecordId": "est-garin"
+  },
+  {
+    "name": "Estación ferroviaria — Maquinista Savio",
+    "province": "Buenos Aires",
+    "type": "Estación ferroviaria",
+    "coords": [
+      -34.406303,
+      -58.7735311
+    ],
+    "note": "Ubicación puntual de estación incluida en el GeoJSON municipal 2026. Coordenada transformada de EPSG:22185 (POSGAR 94 / Argentina 5) a EPSG:4326 (WGS 84). El registro no confirma servicio de pasajeros, horarios ni funcionamiento actual; no representa límites administrativos.",
+    "source": "https://datos.escobar.gob.ar/dataset/estaciones-de-ferrocarril-del-partido-de-escobar",
+    "coordinateSource": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/estaciones-de-ferrocarril-del-partido-de-escobar/estaciones_ferrocarril.geojson",
+    "district": "Partido de Escobar",
+    "locality": "Maquinista Savio",
+    "sourceName": "Portal Datos Abiertos de la Municipalidad de Escobar",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La ficha no informa fecha de publicación; registra creación 2025-10-01 y última actualización 2026-03-31.",
+    "coordinateSourceName": "GeoJSON municipal de estaciones; CRS original EPSG:22185 — POSGAR 94 / Argentina 5",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "Recurso estaciones_ferrocarril.geojson, versión 1.0; última actualización 2026-03-31; licencia ODbL.",
+    "validityPeriod": "Georreferencia publicada en el conjunto 2026; no prueba operación ferroviaria actual.",
+    "status": "pendiente",
+    "verification": {
+      "checkedAt": "2026-11-24",
+      "scope": "Se leyó el GeoJSON municipal de cinco estaciones y se transformaron las coordenadas proyectadas a WGS 84 con pyproj 3.7.2. Verificación documental; no presencial. No se infiere servicio de pasajeros ni horario vigente."
+    },
+    "sourceRecordId": "est-maquinista-savio"
+  },
+  {
+    "name": "Estación ferroviaria — Matheu",
+    "province": "Buenos Aires",
+    "type": "Estación ferroviaria",
+    "coords": [
+      -34.3828759,
+      -58.8294423
+    ],
+    "note": "Ubicación puntual de estación incluida en el GeoJSON municipal 2026. Coordenada transformada de EPSG:22185 (POSGAR 94 / Argentina 5) a EPSG:4326 (WGS 84). El registro no confirma servicio de pasajeros, horarios ni funcionamiento actual; no representa límites administrativos.",
+    "source": "https://datos.escobar.gob.ar/dataset/estaciones-de-ferrocarril-del-partido-de-escobar",
+    "coordinateSource": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/estaciones-de-ferrocarril-del-partido-de-escobar/estaciones_ferrocarril.geojson",
+    "district": "Partido de Escobar",
+    "locality": "Matheu",
+    "sourceName": "Portal Datos Abiertos de la Municipalidad de Escobar",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La ficha no informa fecha de publicación; registra creación 2025-10-01 y última actualización 2026-03-31.",
+    "coordinateSourceName": "GeoJSON municipal de estaciones; CRS original EPSG:22185 — POSGAR 94 / Argentina 5",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "Recurso estaciones_ferrocarril.geojson, versión 1.0; última actualización 2026-03-31; licencia ODbL.",
+    "validityPeriod": "Georreferencia publicada en el conjunto 2026; no prueba operación ferroviaria actual.",
+    "status": "pendiente",
+    "verification": {
+      "checkedAt": "2026-11-24",
+      "scope": "Se leyó el GeoJSON municipal de cinco estaciones y se transformaron las coordenadas proyectadas a WGS 84 con pyproj 3.7.2. Verificación documental; no presencial. No se infiere servicio de pasajeros ni horario vigente."
+    },
+    "sourceRecordId": "est-matheu"
   }
 ]
