@@ -1096,7 +1096,7 @@ jobs:
           if (start < 0 || end < 0) throw new Error("No se encontró el filtro reutilizable de Investment Finder.");
           const normalizeText = value => String(value ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("es").trim();
           const filter = vm.runInNewContext("(" + html.slice(start, end) + ")", { normalizeText });
-          const record = catalog.opportunities[0];
+          const record = catalog.opportunities.find(item => item.id === "rimi-eficiencia-energetica-2026");
           if (!record || record.opportunityStatus !== "unknown") throw new Error("El registro documental RIMI debe conservar disponibilidad desconocida.");
           const base = { query: "eficiencia energética", sector: "all", scope: "national", jurisdiction: "Nacional", status: "unknown", verification: "all" };
           const kit40Record = catalog.opportunities.find(item => item.id === "programa-kit-4-0-2026");
