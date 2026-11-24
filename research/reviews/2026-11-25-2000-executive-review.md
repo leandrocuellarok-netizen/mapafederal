@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 24/11/2026 a las 16:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 24/11/2026 a las 17:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,9 +8,9 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 37 registros |
-| Investment Finder | 43 registros |
-| Oportunidades abiertas | 12 |
+| Radar IA | 38 registros |
+| Investment Finder | 51 registros |
+| Oportunidades abiertas | 20 |
 | Disponibilidad desconocida | 28 |
 | Cerradas | 3 |
 | Event Intelligence | 3 registros |
@@ -20,6 +20,13 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 | Módulos planificados | 5 |
 
 El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 71, LP 72, LP 74, LP 75 y Red Sostenible. El estado `open` significa que el cronograma oficial de consulta/venta y apertura no venció; no garantiza elegibilidad técnica ni disponibilidad de cupos.
+
+## Actualización del ciclo 17:00 — 24/11/2026
+
+- Radar IA: se añadió la Resolución SIGEN 197/2026 como referencia regulatoria previamente ausente. Fue sancionada el 16/06 y publicada el 22/06; el artículo 2 limita la aplicación de la Guía al Sector Público Nacional definido en el artículo 8 de la Ley 24.156. No se presenta como obligación para provincias o municipios. No se identificó en este corte una nueva noticia tecnológica o regulatoria argentina publicada el 24/11 que justificara otra incorporación.
+- Investment Finder: se añadieron ocho llamados de la edición 24/11/2026 del Boletín Oficial bonaerense: Avellaneda LP 122 (kits escolares, ARS 240,28 M); Esteban Echeverría LP 33 (obra escolar, ARS 367,74 M); Mercedes LP 16 (ómnibus, ARS 320 M); Patagones LP 13 (edificio escolar, ARS 3.157,50 M); Rivadavia LP 3 (concesión de kiosco-bar, sin presupuesto publicado); San Andrés de Giles LP 6 (dos camionetas, ARS 68,11 M); Tandil LP 21-01-26 (excavadora, ARS 294,12 M); y Tres Arroyos LP 18 (carros gastronómicos, sin canon base publicado). Los montos son presupuestos oficiales cuando están informados, no adjudicaciones ni gastos ejecutados. Los ocho estados `open` reflejan cronogramas publicados, no elegibilidad del proveedor.
+- Escobar: la edición 14526 del Boletín Oficial (24/11) no incorpora un nuevo llamado municipal. LP 74 mantiene consultas 26–27/11, venta 30/11–01/12 y apertura 04/12. La LP 75 queda corroborada en la edición 14523 (20/11): consultas 26–27/11, venta 01–02/12, apertura 09/12 a las 12:00 y valor del pliego ARS 30 millones. La venta futura no se considera ya iniciada.
+- Directorio sanitario de Escobar: el trabajo paralelo documentado en el commit `5ba77f70` elevó a 14 las fichas nominales. Se incorporaron el Hospital Papa Francisco y la UDP Dr. Carlos Guevara; la operación actual de la UDP y discrepancias de dirección/teléfono de otros establecimientos permanecen pendientes. No se agregaron coordenadas sin evidencia exacta.
 
 ## Avances verificables
 ### Escobar
@@ -57,8 +64,8 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - `clientDataPublic=false`: los datos de clientes no se publican.
 
 ## Pendientes críticos para la revisión final
-1. Verificar circulares, pliegos y eventuales modificaciones de LP 74 y LP 75 de Escobar los días 26–27/11.
-2. Confirmar venta de pliegos, recepción y aperturas de LP 71/72 y las tres licitaciones de Quilmes; revisar el requisito RUP de Lomas.
+1. Verificar circulares y pliegos de LP 74 y LP 75 de Escobar los días 26–27/11; para LP 75, revisar además el valor del pliego ARS 30 millones y su venta 01–02/12.
+2. Confirmar venta de pliegos, recepción y aperturas de LP 71/72, las tres licitaciones de Quilmes y los ocho nuevos llamados del Boletín Oficial 14526; revisar el requisito RUP de Lomas.
 3. Consultar el resultado de LP 61/62/67 y de LP 66/69; no inferir adjudicación.
 4. Seguir la Asamblea de Mayores Contribuyentes de Escobar prevista para el 27/11 a las 18:00. El proyecto Fiscal-Tributario 2027 no es norma vigente hasta completar el procedimiento.
 5. Confirmar si QUO Loma Verde abrió efectivamente; las fuentes previas discrepan en la fecha.
