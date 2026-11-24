@@ -303,5 +303,127 @@
         "phone": "3484 462-759"
       }
     ]
+  },
+  "mobilityDirectory": {
+    "id": "mibus-qr-stops",
+    "name": "Mi Bus — paradas con códigos QR",
+    "sourceName": "Municipalidad de Escobar",
+    "sourceUrl": "https://www.escobar.gob.ar/noticias/movilidad-inteligente-escobar-suma-codigos-qr-de-mi-bus-en-15-paradas-/",
+    "sourcePublishedAt": "2026-02-06",
+    "sourcePublicationNote": "Noticia municipal publicada el 6 de febrero de 2026.",
+    "validityPeriod": "Listado de 15 ubicaciones donde el Municipio informó la instalación de códigos QR en febrero de 2026. La permanencia física de cada código no fue comprobada en noviembre de 2026.",
+    "status": "pendiente",
+    "summary": "La publicación municipal indica que los QR permiten consultar líneas, llegadas estimadas, frecuencias y recorridos. Para planificar viajes con origen, destino y combinaciones, el Municipio remite al planificador Mi Bus.",
+    "verification": {
+      "checkedAt": "2026-11-23",
+      "scope": "Se contrastaron las 15 intersecciones con la publicación municipal y se comprobó que el planificador Mi Bus carga un buscador de origen/destino y un listado de líneas. No se verificó presencialmente que cada QR siga instalado ni se confirmaron horarios, frecuencias u operación de cada servicio."
+    },
+    "planner": {
+      "name": "Mi Bus — planificador de transporte",
+      "sourceName": "Municipalidad de Escobar / Escobar 360",
+      "sourceUrl": "https://mibus.escobar.gob.ar/",
+      "sourcePublishedAt": null,
+      "validityPeriod": "Consulta dinámica del planificador; recorridos, frecuencias y horarios pueden cambiar.",
+      "status": "operativo",
+      "verification": {
+        "checkedAt": "2026-11-23",
+        "scope": "Se comprobó que la página carga un buscador de origen y destino y muestra un catálogo de líneas. No se ejecutó un cálculo de viaje ni se verificaron horarios o frecuencias en terreno."
+      }
+    },
+    "openDataDataset": {
+      "name": "Líneas y Paradas de Colectivo del Partido de Escobar 2026",
+      "sourceName": "Municipalidad de Escobar — Movilidad y tránsito",
+      "sourceUrl": "https://datos.escobar.gob.ar/dataset/lineas-y-paradas-de-colectivo-del-partido-de-escobar-2026",
+      "sourcePublishedAt": null,
+      "createdAt": "2025-10-01",
+      "lastUpdatedAt": "2026-03-31",
+      "version": "1.0",
+      "periodicity": "Anual",
+      "license": "Open Data Commons Open Database License (ODbL)",
+      "resourceName": "lineas_paradas_colectivo_escobar_2026.xlsx",
+      "status": "pendiente",
+      "validityPeriod": "Dataset de referencia 2026; el portal declara última actualización el 31 de marzo de 2026.",
+      "verification": {
+        "checkedAt": "2026-11-23",
+        "scope": "Se verificaron en el portal municipal los metadatos del conjunto, el nombre del recurso XLSX, la periodicidad anual y la licencia ODbL. El archivo binario no se importó ni se revalidaron individualmente sus geometrías, recorridos o paradas."
+      }
+    },
+    "stops": [
+      {
+        "id": "matheu-islas-malvinas-sarmiento",
+        "locality": "Matheu",
+        "intersection": "Islas Malvinas y Av. Sarmiento"
+      },
+      {
+        "id": "garin-belgrano-plaza",
+        "locality": "Garín",
+        "intersection": "Av. Belgrano entre Padre Perna y Concejal Larroca (plaza Garín)"
+      },
+      {
+        "id": "garin-bourdet-cabot",
+        "locality": "Garín",
+        "intersection": "Cayetano Bourdet y Nicanor Cabot"
+      },
+      {
+        "id": "garin-fructuoso-pueyrredon",
+        "locality": "Garín",
+        "intersection": "Fructuoso Díaz y Pueyrredón"
+      },
+      {
+        "id": "belen-25-mayo-alberdi",
+        "locality": "Belén de Escobar",
+        "intersection": "Av. 25 de Mayo y Alberdi"
+      },
+      {
+        "id": "belen-25-mayo-independencia",
+        "locality": "Belén de Escobar",
+        "intersection": "Av. 25 de Mayo e Independencia"
+      },
+      {
+        "id": "belen-travi-mitre",
+        "locality": "Belén de Escobar",
+        "intersection": "Dr. Travi y Mitre"
+      },
+      {
+        "id": "24feb-pablo-marin-patricias",
+        "locality": "24 de Febrero",
+        "intersection": "Pablo Marín y Patricias Argentinas"
+      },
+      {
+        "id": "maschwitz-plata-villanueva",
+        "locality": "Ingeniero Maschwitz",
+        "intersection": "La Plata y Av. Villanueva"
+      },
+      {
+        "id": "maschwitz-carriego-lambare",
+        "locality": "Ingeniero Maschwitz",
+        "intersection": "Evaristo Carriego y Lambaré"
+      },
+      {
+        "id": "matheu-nazarre-melo",
+        "locality": "Matheu",
+        "intersection": "Av. Domingo Nazarre y Melo"
+      },
+      {
+        "id": "savio-constitucion-independencia",
+        "locality": "Maquinista Savio",
+        "intersection": "Av. Constitución e Independencia"
+      },
+      {
+        "id": "savio-constitucion-juanxxiii",
+        "locality": "Maquinista Savio",
+        "intersection": "Av. Constitución y Juan XXIII"
+      },
+      {
+        "id": "savio-constitucion-9dejulio",
+        "locality": "Maquinista Savio",
+        "intersection": "Av. Constitución y 9 de Julio"
+      },
+      {
+        "id": "lomaverde-colectora-loslaureles",
+        "locality": "Loma Verde",
+        "intersection": "Colectora Oeste y Los Laureles"
+      }
+    ]
   }
 }
