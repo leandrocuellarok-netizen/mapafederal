@@ -274,15 +274,39 @@
       "relatedSources": [
         {
           "sourceName": "Ministerio de Ambiente de la Provincia de Buenos Aires",
-          "label": "Puerto Multipropósito Escobar — estado de prefactibilidad",
+          "label": "Puerto Multipropósito Escobar — prefactibilidad ambiental",
           "url": "https://participacionpublica.ambiente.gba.gob.ar/participacion/resumen/PUERTO-MULTIPROP%C3%93SITO-ESCOBAR",
-          "sourcePublishedAt": "2025-11-10"
+          "sourcePublishedAt": null,
+          "sourcePublicationNote": "El portal no consigna una fecha de publicación. El inicio del período de participación pública no debe confundirse con la fecha de publicación de la ficha.",
+          "participationPeriod": {
+            "start": "2025-11-10",
+            "end": "2025-12-10"
+          },
+          "validityPeriod": "Participación pública: 2025-11-10 a 2025-12-10. Consulta del 24/11/2026: el expediente continúa identificado como prefactibilidad; esta etapa no acredita una Declaración de Impacto Ambiental ni autorización de obra.",
+          "status": "pendiente",
+          "verification": {
+            "status": "verified",
+            "checkedAt": "2026-11-24",
+            "scope": "La ficha identifica a Terminal Marítima Escobar S.A. y muestra el tipo de trámite como Declaración de Impacto Ambiental, pero su aclaratoria oficial determina que el EsIA presentado es un anteproyecto en prefactibilidad. El expediente queda sujeto a pre-evaluación; luego podría o no pasar a una EIA completa. Antes de ejecutar la obra debe presentarse un nuevo EsIA y abrirse otra instancia de participación pública. La consulta del 24/11/2026 no acredita DIA ni autorización de obra."
+          }
         },
         {
           "sourceName": "Ministerio de Ambiente de la Provincia de Buenos Aires",
-          "label": "Puerto Cerealero Escobar — estado de prefactibilidad",
+          "label": "Puerto Cerealero Escobar — prefactibilidad ambiental",
           "url": "https://participacionpublica.ambiente.gba.gob.ar/participacion/resumen/PUERTO-CEREALERO-ESCOBAR",
-          "sourcePublishedAt": "2025-10-30"
+          "sourcePublishedAt": null,
+          "sourcePublicationNote": "El portal no consigna una fecha de publicación. El inicio del período de participación pública no debe confundirse con la fecha de publicación de la ficha.",
+          "participationPeriod": {
+            "start": "2025-10-30",
+            "end": "2025-11-29"
+          },
+          "validityPeriod": "Participación pública: 2025-10-30 a 2025-11-29. Consulta del 24/11/2026: el expediente continúa identificado como prefactibilidad; esta etapa no acredita una Declaración de Impacto Ambiental ni autorización de obra.",
+          "status": "pendiente",
+          "verification": {
+            "status": "verified",
+            "checkedAt": "2026-11-24",
+            "scope": "La ficha identifica a Terminal Marítima Escobar S.A. y muestra el tipo de trámite como Declaración de Impacto Ambiental, pero su aclaratoria oficial determina que el EsIA presentado es un anteproyecto en prefactibilidad. El expediente queda sujeto a pre-evaluación; luego podría o no pasar a una EIA completa. Antes de ejecutar la obra debe presentarse nueva documentación ambiental para almacenamiento de granos y para las estructuras portuarias, con otra instancia de participación pública. La consulta del 24/11/2026 no acredita DIA ni autorización de obra."
+          }
         }
       ]
     }

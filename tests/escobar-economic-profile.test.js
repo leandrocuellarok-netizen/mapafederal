@@ -64,4 +64,44 @@ assert.ok(ecosanOpening, "Falta el antecedente de inauguración");
 assert.equal(ecosanOpening.sourcePublishedAt, "2025-04-18");
 assert.equal(new URL(ecosanOpening.url).protocol, "https:");
 
-console.log("Escobar: casos Hönecker y Ecosan, fuentes y límites de verificación comprobados.");
+
+const portProfile = economy.infrastructureProjects.find(entry => entry.id === "nuevo-puerto-multiproposito");
+assert.ok(portProfile, "Falta el proyecto portuario de Escobar");
+assert.equal(portProfile.status, "anunciado", "El puerto no debe figurar como operativo");
+assert.equal(portProfile.verification.checkedAt, "2026-11-24");
+const opportunities = JSON.parse(fs.readFileSync("data/investment-opportunities.json", "utf8")).opportunities;
+const portOpportunity = opportunities.find(entry => entry.id === "escobar-puertos-tme-prefactibilidad-2026");
+assert.ok(portOpportunity, "Falta el registro del proyecto portuario en Investment Finder");
+assert.equal(portOpportunity.stage, "feasibility");
+assert.equal(portOpportunity.stageLabel, "Prefactibilidad ambiental");
+assert.equal(portOpportunity.opportunityStatus, "unknown", "No ofrecer participación a terceros sin confirmación");
+const expectedParticipation = [
+  { label: "Puerto Multipropósito Escobar", start: "2025-11-10", end: "2025-12-10" },
+  { label: "Puerto Cerealero Escobar", start: "2025-10-30", end: "2025-11-29" }
+];
+for (const [index, expected] of expectedParticipation.entries()) {
+  const source = portProfile.relatedSources[index];
+  const finderSource = portOpportunity.relatedSources[index];
+  for (const record of [source, finderSource]) {
+    assert.equal(record.sourceName, "Ministerio de Ambiente de la Provincia de Buenos Aires");
+    assert.equal(record.sourcePublishedAt, null, "No convertir el inicio de participación pública en fecha de publicación");
+    assert.match(record.sourcePublicationNote, /no consigna una fecha de publicación/i);
+    assert.deepEqual(record.participationPeriod, { start: expected.start, end: expected.end });
+    assert.equal(record.status, "pendiente", "El expediente continúa en prefactibilidad");
+    assert.equal(record.verification.status, "verified");
+    assert.equal(record.verification.checkedAt, "2026-11-24");
+    assert.match(record.verification.scope, /anteproyecto en prefactibilidad/i);
+    assert.match(record.verification.scope, /no acredita DIA/i);
+    assert.equal(new URL(record.url).protocol, "https:");
+  }
+  assert.match(source.label, new RegExp(expected.label.replace(/[.*+?^${}()|[\]\\]/g, "\\console.log("Escobar: casos Hönecker y Ecosan, fuentes y límites de verificación comprobados.");")));
+}
+const profileRenderer = fs.readFileSync("assets/escobar-profile.js", "utf8");
+assert.match(profileRenderer, /source\.participationPeriod/);
+assert.match(profileRenderer, /source\.verification\.checkedAt/);
+const finderRenderer = fs.readFileSync("investment-finder/index.html", "utf8");
+assert.match(finderRenderer, /opportunity\.stageLabel\|\|investmentStageLabel/);
+assert.match(finderRenderer, /relatedSourcesHtml/);
+assert.match(finderRenderer, /source\.participationPeriod/);
+
+console.log("Escobar: empresas, proyecto portuario, expedientes ambientales, períodos de participación y etiquetas de prefactibilidad comprobados.");

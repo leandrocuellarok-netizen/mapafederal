@@ -25,7 +25,22 @@ function renderProfile(territory,economy){
  ].join("");
  el("escobar-localities").innerHTML=localities.map(item=>'<article class="escobar-locality"><h4>'+escapeHtml(item.name)+'</h4><strong>'+escapeHtml(number(item.officiallyRecognizedNeighborhoods))+'</strong><span>barrios reconocidos</span></article>').join("");
  const parks=(economy.industrialAreas||[]).map(item=>'<div class="escobar-item"><span class="escobar-status">'+escapeHtml(statusLabel(item.status))+'</span><h4>'+escapeHtml(item.name)+'</h4><p>'+escapeHtml(item.description)+'</p><p class="escobar-meta">Localidad: '+escapeHtml(item.locality)+' · Vigencia: '+escapeHtml(item.validityPeriod||"No indicada")+'</p>'+sourceLink(item.sourceUrl,"Fuente municipal ↗")+'</div>').join("");
- const projects=(economy.infrastructureProjects||[]).map(item=>{const related=(item.relatedSources||[]).map(source=>sourceLink(source.url,source.label||source.sourceName||"Fuente complementaria ↗")).filter(Boolean).join(" · ");const relatedHtml=related?'<p class="escobar-meta">Fuentes ambientales y complementarias: '+related+'</p>':"";return '<div class="escobar-item"><span class="escobar-status">'+escapeHtml(statusLabel(item.status))+'</span><h4>'+escapeHtml(item.name)+'</h4><p>'+escapeHtml(item.description)+'</p><p><strong>'+escapeHtml(item.investmentLabel||"Inversión no informada")+'</strong></p><p>'+escapeHtml(item.employmentLabel||"Empleo estimado no informado")+'</p><p class="escobar-meta">Vigencia: '+escapeHtml(item.validityPeriod||"No indicada")+'</p><p class="escobar-meta">Verificación: '+escapeHtml(date(item.verification&&item.verification.checkedAt))+' · '+escapeHtml(item.verification&&item.verification.scope||"Alcance no informado")+'</p>'+sourceLink(item.sourceUrl,"Anuncio municipal ↗")+relatedHtml+'</div>';}).join("");
+  const projects=(economy.infrastructureProjects||[]).map(item=>{
+   const related=(item.relatedSources||[]).map(source=>{
+    const link=sourceLink(source.url,source.label||source.sourceName||"Fuente complementaria ↗");
+    if(!link)return "";
+    const metadata=[
+     source.sourcePublicationNote||"Publicación: no indicada por la fuente",
+     source.participationPeriod?"Participación pública: "+date(source.participationPeriod.start)+" al "+date(source.participationPeriod.end):"",
+     source.validityPeriod||"",
+     source.status?"Estado del expediente: "+statusLabel(source.status):"",
+     source.verification?"Verificación: "+date(source.verification.checkedAt)+" · "+(source.verification.scope||"Alcance no informado"):""
+    ].filter(Boolean).map(value=>'<p class="escobar-meta">'+escapeHtml(value)+'</p>').join("");
+    return '<div class="escobar-source-record">'+link+metadata+'</div>';
+   }).join("");
+   const relatedHtml=related?'<h5>Expedientes ambientales y participación pública</h5>'+related:"";
+   return '<div class="escobar-item"><span class="escobar-status">'+escapeHtml(statusLabel(item.status))+'</span><h4>'+escapeHtml(item.name)+'</h4><p>'+escapeHtml(item.description)+'</p><p><strong>'+escapeHtml(item.investmentLabel||"Inversión no informada")+'</strong></p><p>'+escapeHtml(item.employmentLabel||"Empleo estimado no informado")+'</p><p class="escobar-meta">Vigencia: '+escapeHtml(item.validityPeriod||"No indicada")+'</p><p class="escobar-meta">Verificación: '+escapeHtml(date(item.verification&&item.verification.checkedAt))+' · '+escapeHtml(item.verification&&item.verification.scope||"Alcance no informado")+'</p>'+sourceLink(item.sourceUrl,"Anuncio municipal ↗")+relatedHtml+'</div>';
+  }).join("");
  const cases=(economy.companyCases||[]).map(item=>{
   const mainLabel=item.sourceName?item.sourceName+" ↗":"Evidencia municipal ↗";
   const officialLinks=(item.officialSources||[]).map(source=>sourceLink(source.url,source.label||source.sourceName||"Fuente oficial ↗")).filter(Boolean).join(" · ");

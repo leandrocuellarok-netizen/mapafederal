@@ -1019,19 +1019,48 @@
       "description": "Terminal Marítima Escobar S.A. propone dos instalaciones sobre el Paraná de las Palmas: un puerto multipropósito en el km 77 y una terminal cerealera en el km 70, con acceso vial proyectado. El Municipio anunció inversión privada superior a USD 600 millones y alrededor de 3.000 empleos directos estimados. El Ministerio de Ambiente bonaerense aclara que ambos estudios se presentaron como anteproyectos en etapa de prefactibilidad y deben pasar por pre-evaluación; podrían o no avanzar a una EIA completa para una eventual Declaración de Impacto Ambiental. No se verifican DIA, inicio de obra, desembolsos ni disponibilidad de participación de capital para terceros.",
       "relatedSources": [
         {
-          "label": "Ministerio de Ambiente PBA — Puerto Multipropósito Escobar: prefactibilidad ambiental (consulta 24/11/2026)",
-          "url": "https://participacionpublica.ambiente.gba.gob.ar/participacion/resumen/PUERTO-MULTIPROP%C3%93SITO-ESCOBAR"
+          "label": "Puerto Multipropósito Escobar — prefactibilidad ambiental",
+          "url": "https://participacionpublica.ambiente.gba.gob.ar/participacion/resumen/PUERTO-MULTIPROP%C3%93SITO-ESCOBAR",
+          "sourceName": "Ministerio de Ambiente de la Provincia de Buenos Aires",
+          "sourcePublishedAt": null,
+          "sourcePublicationNote": "El portal no consigna una fecha de publicación. El inicio del período de participación pública no debe confundirse con la fecha de publicación de la ficha.",
+          "participationPeriod": {
+            "start": "2025-11-10",
+            "end": "2025-12-10"
+          },
+          "validityPeriod": "Participación pública: 2025-11-10 a 2025-12-10. Consulta del 24/11/2026: el expediente continúa identificado como prefactibilidad; esta etapa no acredita una Declaración de Impacto Ambiental ni autorización de obra.",
+          "status": "pendiente",
+          "verification": {
+            "status": "verified",
+            "checkedAt": "2026-11-24",
+            "scope": "La ficha identifica a Terminal Marítima Escobar S.A. y muestra el tipo de trámite como Declaración de Impacto Ambiental, pero su aclaratoria oficial determina que el EsIA presentado es un anteproyecto en prefactibilidad. El expediente queda sujeto a pre-evaluación; luego podría o no pasar a una EIA completa. Antes de ejecutar la obra debe presentarse un nuevo EsIA y abrirse otra instancia de participación pública. La consulta del 24/11/2026 no acredita DIA ni autorización de obra."
+          }
         },
         {
-          "label": "Ministerio de Ambiente PBA — Puerto Cerealero Escobar: prefactibilidad ambiental (consulta 24/11/2026)",
-          "url": "https://participacionpublica.ambiente.gba.gob.ar/participacion/resumen/PUERTO-CEREALERO-ESCOBAR"
+          "label": "Puerto Cerealero Escobar — prefactibilidad ambiental",
+          "url": "https://participacionpublica.ambiente.gba.gob.ar/participacion/resumen/PUERTO-CEREALERO-ESCOBAR",
+          "sourceName": "Ministerio de Ambiente de la Provincia de Buenos Aires",
+          "sourcePublishedAt": null,
+          "sourcePublicationNote": "El portal no consigna una fecha de publicación. El inicio del período de participación pública no debe confundirse con la fecha de publicación de la ficha.",
+          "participationPeriod": {
+            "start": "2025-10-30",
+            "end": "2025-11-29"
+          },
+          "validityPeriod": "Participación pública: 2025-10-30 a 2025-11-29. Consulta del 24/11/2026: el expediente continúa identificado como prefactibilidad; esta etapa no acredita una Declaración de Impacto Ambiental ni autorización de obra.",
+          "status": "pendiente",
+          "verification": {
+            "status": "verified",
+            "checkedAt": "2026-11-24",
+            "scope": "La ficha identifica a Terminal Marítima Escobar S.A. y muestra el tipo de trámite como Declaración de Impacto Ambiental, pero su aclaratoria oficial determina que el EsIA presentado es un anteproyecto en prefactibilidad. El expediente queda sujeto a pre-evaluación; luego podría o no pasar a una EIA completa. Antes de ejecutar la obra debe presentarse nueva documentación ambiental para almacenamiento de granos y para las estructuras portuarias, con otra instancia de participación pública. La consulta del 24/11/2026 no acredita DIA ni autorización de obra."
+          }
         }
       ],
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-24",
         "scope": "Se contrastó el anuncio municipal del 27/12/2024 con los dos expedientes oficiales del Ministerio de Ambiente bonaerense. Ambos portales indican prefactibilidad y aclaran que los EsIA son anteproyectos sujetos a pre-evaluación; no equivalen a una DIA ni a autorización de obra. La inversión superior a USD 600 millones y los aproximadamente 3.000 empleos son cifras anunciadas/estimadas por el Municipio, no montos desembolsados ni puestos verificados. No se comprobó financiamiento, contrato de construcción, inicio de obras ni participación de capital disponible a terceros."
-      }
+      },
+      "stageLabel": "Prefactibilidad ambiental"
     }
   ]
 }

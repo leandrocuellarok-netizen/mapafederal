@@ -363,7 +363,7 @@ function filterInvestmentOpportunities(records,filters){
   const terms=normalizeText(filters.query||"").split(/\s+/).filter(Boolean);
   return records.filter(opportunity=>{
     const jurisdiction=opportunity.scope==="national"?"Nacional":(opportunity.jurisdiction||"");
-    const haystack=normalizeText([opportunity.name,opportunity.sector,jurisdiction,opportunity.location,opportunity.description,opportunity.sourceName,opportunity.sourceUrl,opportunity.stage].join(" "));
+    const haystack=normalizeText([opportunity.name,opportunity.sector,jurisdiction,opportunity.location,opportunity.description,opportunity.sourceName,opportunity.sourceUrl,opportunity.stage,opportunity.stageLabel].join(" "));
     return (filters.scope==="all"||opportunity.scope===filters.scope)
       &&(filters.sector==="all"||opportunity.sector===filters.sector)
       &&(filters.jurisdiction==="all"||jurisdiction===filters.jurisdiction)
@@ -414,7 +414,7 @@ function renderInvestmentFinder(){
     const statusClass=opportunity.opportunityStatus==="unknown"?" unknown":"";
     const verification=opportunity.verification||{};
     const verificationLabel=verification.status==="verified"?"Fuente normativa verificada":verification.status==="outdated"?"Verificación desactualizada":verification.status==="not_verified"?"Fuente no verificada":"Verificación pendiente";
-    const stage=investmentStageLabel(opportunity.stage);
+    const stage=opportunity.stageLabel||investmentStageLabel(opportunity.stage);
     const amount=opportunity.amount&&Number.isFinite(opportunity.amount.value)?new Intl.NumberFormat("es-AR",{maximumFractionDigits:2}).format(opportunity.amount.value)+" "+escapeHtml(opportunity.amount.currency||"")+(opportunity.amount.basis?" · "+escapeHtml(opportunity.amount.basis):""):"Monto no informado por la fuente";
     const validity=(opportunity.validFrom||"Inicio no informado")+" — "+(opportunity.validUntil||"Sin fecha de cierre informada");
     const source=safeUrl(opportunity.sourceUrl);
@@ -422,7 +422,19 @@ function renderInvestmentFinder(){
     const published=opportunity.sourcePublishedAt||"No informada";
     const checked=verification.checkedAt||"No informada";
     const period=opportunity.period||"No informado por la fuente";
-    return '<article class="investment-card"><div class="investment-badges"><span class="investment-badge">'+escapeHtml(scope)+'</span><span class="investment-badge'+statusClass+'">'+escapeHtml(status)+'</span></div><h3>'+escapeHtml(opportunity.name)+'</h3><p>'+escapeHtml(opportunity.description)+'</p><div class="investment-meta"><div><strong>Sector</strong><span>'+escapeHtml(opportunity.sector)+'</span></div><div><strong>Jurisdicción</strong><span>'+escapeHtml(jurisdiction)+'</span></div><div><strong>Etapa</strong><span>'+escapeHtml(stage)+'</span></div><div><strong>Monto publicado</strong><span>'+amount+'</span></div><div><strong>Vigencia</strong><span>'+escapeHtml(validity)+'</span></div><div><strong>Publicación de la fuente</strong><span>'+escapeHtml(published)+'</span></div></div><div class="investment-provenance"><p><strong>Fuente:</strong> '+escapeHtml(opportunity.sourceName)+'</p><p><strong>Período:</strong> '+escapeHtml(period)+'</p><p><strong>Verificación:</strong> '+escapeHtml(verificationLabel)+' · '+escapeHtml(checked)+'</p><p><strong>Alcance de la verificación:</strong> '+escapeHtml(verification.scope||"No informado")+'</p>'+sourceLink+'</div></article>';
+    const relatedSourcesHtml=Array.isArray(opportunity.relatedSources)?opportunity.relatedSources.map(source=>{
+      const url=safeUrl(source.url);
+      if(url==="#")return "";
+      const metadata=[
+        source.sourcePublicationNote||"Publicación: no indicada por la fuente",
+        source.participationPeriod?"Participación pública: "+source.participationPeriod.start+" al "+source.participationPeriod.end:"",
+        source.validityPeriod||"",
+        source.status?("Estado del expediente: "+source.status):"",
+        source.verification?("Verificación: "+(source.verification.checkedAt||"No informada")+" · "+(source.verification.scope||"Alcance no informado")):""
+      ].filter(Boolean).map(value=>'<p>'+escapeHtml(value)+'</p>').join("");
+      return '<div class="investment-related-source"><a class="investment-source" href="'+escapeHtml(url)+'" target="_blank" rel="noopener noreferrer">'+escapeHtml(source.label||source.sourceName||"Fuente complementaria")+' ↗</a>'+metadata+'</div>';
+    }).join(""):"";
+    return '<article class="investment-card"><div class="investment-badges"><span class="investment-badge">'+escapeHtml(scope)+'</span><span class="investment-badge'+statusClass+'">'+escapeHtml(status)+'</span></div><h3>'+escapeHtml(opportunity.name)+'</h3><p>'+escapeHtml(opportunity.description)+'</p><div class="investment-meta"><div><strong>Sector</strong><span>'+escapeHtml(opportunity.sector)+'</span></div><div><strong>Jurisdicción</strong><span>'+escapeHtml(jurisdiction)+'</span></div><div><strong>Etapa</strong><span>'+escapeHtml(stage)+'</span></div><div><strong>Monto publicado</strong><span>'+amount+'</span></div><div><strong>Vigencia</strong><span>'+escapeHtml(validity)+'</span></div><div><strong>Publicación de la fuente</strong><span>'+escapeHtml(published)+'</span></div></div><div class="investment-provenance"><p><strong>Fuente:</strong> '+escapeHtml(opportunity.sourceName)+'</p><p><strong>Período:</strong> '+escapeHtml(period)+'</p><p><strong>Verificación:</strong> '+escapeHtml(verificationLabel)+' · '+escapeHtml(checked)+'</p><p><strong>Alcance de la verificación:</strong> '+escapeHtml(verification.scope||"No informado")+'</p>'+sourceLink+(relatedSourcesHtml?'<div class="investment-related-sources"><strong>Expedientes ambientales complementarios</strong>'+relatedSourcesHtml+'</div>':"")+'</div></article>';
   }).join("");
 }
 function exportVisibleInvestmentOpportunities(){
