@@ -57,18 +57,18 @@ La descarga GeoJSON de «Reservas Naturales Municipales del Partido de Escobar»
 
 No se modificó `.github/workflows/static.yml`: el workflow ya ejecuta `tests/escobar-transparency.test.js`.
 
-## 6. Validación prevista
+## 6. Validación y publicación observadas
 
-El test de transparencia valida que:
-- el dataset y su procedencia existan;
-- la fecha de publicación no se invente;
-- se conserven versión, periodicidad, licencia y última actualización;
-- el CRS sea EPSG:22185;
-- la integración al mapa siga pendiente;
-- el renderizador exponga la ficha y el GeoJSON original;
-- las limitaciones sobre geometría y riesgo hídrico permanezcan visibles.
-
-La validación y el despliegue quedan sujetos al resultado observado de GitHub Actions después del commit. No se anticipa éxito de CI ni de Pages.
+- Commit de datos, interfaz, prueba y README: `b33b990bc9b0076c6333985792f7011a4676ed3c`.
+- [GitHub Actions run 45482131850](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45482131850): conclusión `success`.
+- Job `validate`: success.
+- Prueba `Test Escobar municipal transparency directory`: success, incluidos los nuevos controles del dataset y del CRS.
+- Comprobación de sintaxis JavaScript, perfil local, punto de entrada público, SEO/GEO y fuentes de contrataciones: success.
+- Job `deploy`: success.
+- El artefacto `github-pages` se cargó correctamente (ID 14961689231).
+- `actions/deploy-pages` creó el despliegue para el commit `b33b990bc9b0076c6333985792f7011a4676ed3c` e informó `Reported success!`.
+- URL configurada por Pages: https://leandrocuellarok-netizen.github.io/mapafederal/
+- Se intentó abrir la URL pública desde la consulta web independiente, pero esa herramienta no pudo acceder al sitio. Por eso se informa el resultado de Pages, sin afirmar una comprobación HTTP independiente del contenido servido.
 
 ## 7. Próxima evidencia necesaria
 
