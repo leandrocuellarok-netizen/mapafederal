@@ -278,7 +278,15 @@ jobs:
           assert health["sourcePublishedAt"] is None
           assert health["verification"]["checkedAt"] in {"2026-11-23", "2026-11-24"}
           assert "no se realizó comprobación presencial" in health["verification"]["scope"].lower()
-          assert len(health["facilities"]) == 11
+          assert len(health["facilities"]) == 12
+          bicentenario = next(item for item in health["facilities"] if item["id"] == "hospital-provincial-bicentenario")
+          assert bicentenario["name"] == "Hospital Provincial Bicentenario"
+          assert bicentenario["locality"] == "Garín" and bicentenario["address"] == "Libertad 1100"
+          assert bicentenario["status"] == "operativo" and bicentenario["phone"] is None
+          assert bicentenario["sourcePublishedAt"] is None
+          assert bicentenario["verification"]["checkedAt"] == "2026-11-24"
+          assert "sin comprobación presencial" in bicentenario["verification"]["scope"].lower()
+          assert all(url.startswith("https://") for url in [bicentenario["sourceUrl"]] + [source["url"] for source in bicentenario["relatedSources"]])
           selles = next(item for item in health["facilities"] if item["id"] == "caps-juan-carlos-selles")
           assert selles["locality"] == "Garín"
           if "serviceNote" in selles:
@@ -458,6 +466,8 @@ jobs:
         run: |
           node --check assets/escobar-profile.js
           node tests/escobar-transparency.test.js
+      - name: Test Escobar health facility directory
+        run: node tests/escobar-health-facilities.test.js
 
       - name: Validate geographic and editorial JSON
         run: |

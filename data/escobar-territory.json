@@ -136,14 +136,14 @@
     "validFrom": null,
     "validityPeriod": "Directorios municipales consultados el 2026-11-24; guardias, prestaciones, horarios y teléfonos sujetos a actualización.",
     "status": "operativo",
-    "summary": "El directorio consolidado conserva once fichas nominales de guardias y puestos de atención en seis localidades. La página Guardias y farmacias incluye una ficha adicional para UDP Dr. Carlos Guevara que no aparece en Teléfonos útiles ni en las cartillas IOMA/PAMI; queda registrada como pendiente de conciliación y no se suma al inventario.",
-    "localityCoverageNote": "La página presenta filtros para seis localidades: Belén de Escobar, Garín, Ingeniero Maschwitz, Maquinista Savio, Matheu y Loma Verde; no muestra una ficha separada para 24 de Febrero como localidad. El CAPS Juan Carlos Selles figura bajo Garín: las páginas generales lo ubican en Fonavi y las cartillas IOMA/PAMI aún lo asocian a B° 24 de Febrero, por lo que no se asigna barrio. La UDP Dr. Carlos Guevara aparece en una sola de las páginas consultadas y queda pendiente de conciliación.",
+    "summary": "El directorio consolidado conserva doce fichas nominales de establecimientos de salud en seis localidades, incluyendo hospitales, guardias y puestos de atención. La página Guardias y farmacias incluye una ficha adicional para UDP Dr. Carlos Guevara que no aparece en Teléfonos útiles ni en las cartillas IOMA/PAMI; queda pendiente de conciliación y no se suma al inventario consolidado.",
+    "localityCoverageNote": "La página presenta filtros para seis localidades: Belén de Escobar, Garín, Ingeniero Maschwitz, Maquinista Savio, Matheu y Loma Verde; no muestra una ficha separada para 24 de Febrero como localidad. El CAPS Juan Carlos Selles figura bajo Garín: las páginas generales lo ubican en Fonavi y las cartillas IOMA/PAMI aún lo asocian a B° 24 de Febrero, por lo que no se asigna barrio. La UDP Dr. Carlos Guevara aparece en una sola de las páginas consultadas y queda pendiente de conciliación. El Hospital Provincial Bicentenario se incorpora en Garín con dirección Libertad 1100, contrastada en el directorio general y en las cartillas PAMI/IOMA. Sus horarios y prestaciones se muestran diferenciados por cobertura.",
     "additionalDirectoryUrl": "https://www.escobar.gob.ar/centros-de-salud/",
     "additionalDirectoryName": "Centros de salud municipales",
     "verification": {
       "status": "verified",
       "checkedAt": "2026-11-24",
-      "scope": "Se consultaron en línea las páginas municipales Guardias y farmacias, Teléfonos útiles, Centros de Salud y las cartillas IOMA/PAMI. Guardias y farmacias muestra 12 establecimientos; Teléfonos útiles lista 11 guardias, la cartilla IOMA 11 y la cartilla PAMI 8. UDP Dr. Carlos Guevara aparece en Guardias y farmacias, pero no en los otros tres listados; por eso se conserva como discrepancia pendiente y no se suma al inventario consolidado. Para CAPS Juan Carlos Selles, las páginas generales actuales lo ubican en Fonavi, Garín, mientras IOMA/PAMI aún indican B° 24 de Febrero. Los teléfonos también difieren: (0348) 449-3444 en Teléfonos útiles y 11 2150-0302 en IOMA/PAMI; no se consolida un teléfono único. No se realizó comprobación presencial."
+      "scope": "Se consultaron en línea las páginas municipales Guardias y farmacias, Teléfonos útiles, Centros de Salud y las cartillas IOMA/PAMI. Guardias y farmacias muestra 12 establecimientos; Teléfonos útiles lista 11 guardias, la cartilla IOMA 11 y la cartilla PAMI 8. UDP Dr. Carlos Guevara aparece en Guardias y farmacias, pero no en los otros tres listados; por eso se conserva como discrepancia pendiente y no se suma al inventario consolidado. Para CAPS Juan Carlos Selles, las páginas generales actuales lo ubican en Fonavi, Garín, mientras IOMA/PAMI aún indican B° 24 de Febrero. Los teléfonos también difieren: (0348) 449-3444 en Teléfonos útiles y 11 2150-0302 en IOMA/PAMI; no se consolida un teléfono único. No se realizó comprobación presencial. Se incorporó el Hospital Provincial Bicentenario a partir de tres fichas municipales: Centros de salud, PAMI e IOMA. Se contrastaron localidad, dirección, prestaciones y horarios por cobertura; no se realizó comprobación presencial."
     },
     "facilities": [
       {
@@ -218,6 +218,63 @@
           "Internación"
         ],
         "phone": "3484 262-859"
+      },
+      {
+        "id": "hospital-provincial-bicentenario",
+        "name": "Hospital Provincial Bicentenario",
+        "locality": "Garín",
+        "category": "Hospital provincial",
+        "address": "Libertad 1100",
+        "serviceHours": "Hospital abierto las 24 horas según cartilla PAMI; consultorios PAMI: lunes a viernes de 8 a 18 h; consultorios IOMA: lunes a sábados de 8 a 16 h.",
+        "services": [
+          "Cardiología",
+          "Cirugía general",
+          "Cuidados paliativos",
+          "Dermatología",
+          "Diabetología",
+          "Fonoaudiología",
+          "Gastroenterología",
+          "Ginecología",
+          "Hematología",
+          "Nefrología",
+          "Neurología",
+          "Nutrición",
+          "Otorrinolaringología",
+          "Prequirúrgicos cardiológicos",
+          "Reumatología",
+          "Traumatología",
+          "Urología",
+          "Vascular periférico"
+        ],
+        "phone": null,
+        "sourceName": "Municipalidad de Escobar",
+        "sourceUrl": "https://www.escobar.gob.ar/municipio/centros-de-salud/",
+        "sourcePublishedAt": null,
+        "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24.",
+        "relatedSources": [
+          {
+            "sourceName": "Municipalidad de Escobar — Prestaciones para afiliados a PAMI",
+            "label": "Cartilla PAMI",
+            "url": "https://www.escobar.gob.ar/municipio/prestaciones-pami/",
+            "sourcePublishedAt": null,
+            "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24."
+          },
+          {
+            "sourceName": "Municipalidad de Escobar — Prestaciones para afiliados a IOMA",
+            "label": "Cartilla IOMA",
+            "url": "https://www.escobar.gob.ar/municipio/prestaciones-ioma/",
+            "sourcePublishedAt": null,
+            "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24."
+          }
+        ],
+        "validityPeriod": "Directorios municipales y cartillas por cobertura consultados el 2026-11-24; prestaciones y horarios sujetos a actualización.",
+        "status": "operativo",
+        "serviceNote": "La cartilla PAMI publica hospital abierto las 24 horas, imágenes las 24 horas y consultorios de lunes a viernes de 8 a 18 h. La cartilla IOMA publica consultorios de lunes a sábados de 8 a 16 h. Son horarios informados por cada cobertura y no deben generalizarse a toda la población. No se publica un teléfono específico para esta ficha.",
+        "verification": {
+          "status": "verified",
+          "checkedAt": "2026-11-24",
+          "scope": "Se contrastó el Hospital Provincial Bicentenario en tres páginas municipales: Centros de salud, prestaciones PAMI y prestaciones IOMA. Las tres identifican Libertad 1100, Garín. La cartilla PAMI informa hospital abierto 24 horas, imágenes 24 horas y consultorios de lunes a viernes de 8 a 18; la cartilla IOMA publica consultorios de lunes a sábados de 8 a 16 y especialidades. Se conserva la diferencia de horarios por cobertura. No se encontró teléfono específico en estas fichas. Verificación documental, sin comprobación presencial."
+        }
       },
       {
         "id": "caps-juan-carlos-selles",

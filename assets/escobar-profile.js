@@ -73,13 +73,15 @@ function renderProfile(territory,economy){
  const facilities=(health&&Array.isArray(health.facilities)?health.facilities:[]).map(item=>{
   const place=item.locality+(item.neighborhood?" · B° "+item.neighborhood:"");
   const servicesList=Array.isArray(item.services)?item.services.join(" · "):"";
-  return '<div class="escobar-item escobar-health-facility"><span class="escobar-status">'+escapeHtml(statusLabel(health.status))+'</span><h4>'+escapeHtml(item.name)+'</h4><p class="escobar-meta">'+escapeHtml(place)+' · '+escapeHtml(item.category)+'</p>'
+  const facilitySources=[item.sourceUrl?sourceLink(item.sourceUrl,item.sourceLabel||"Directorio municipal ↗"):"",...(item.relatedSources||[]).map(source=>sourceLink(source.url,source.label||source.sourceName||"Fuente complementaria ↗"))].filter(Boolean).join(" ");
+  return '<div class="escobar-item escobar-health-facility"><span class="escobar-status">'+escapeHtml(statusLabel(item.status||health.status))+'</span><h4>'+escapeHtml(item.name)+'</h4><p class="escobar-meta">'+escapeHtml(place)+' · '+escapeHtml(item.category)+'</p>'
    +(item.address?'<p>Ubicación publicada: '+escapeHtml(item.address)+'</p>':"")
    +(item.addressNote?'<p class="escobar-meta">'+escapeHtml(item.addressNote)+' '+sourceLink(item.addressSourceUrl,"Directorio complementario ↗")+'</p>':"")
    +'<p><strong>'+escapeHtml(item.serviceHours||"Horario no publicado")+'</strong></p>'
    +(servicesList?'<p>'+escapeHtml(servicesList)+'</p>':"")
    +(item.phone?'<p class="escobar-meta">Teléfono: '+escapeHtml(item.phone)+'</p>':"")
-   +(item.serviceNote?'<p class="escobar-meta">'+escapeHtml(item.serviceNote)+' '+sourceLink(item.serviceNoteSourceUrl,"Ficha municipal complementaria ↗")+'</p>':"")
+   +(item.serviceNote?'<p class="escobar-meta">'+escapeHtml(item.serviceNote)+' '+(item.serviceNoteSourceUrl?sourceLink(item.serviceNoteSourceUrl,"Ficha municipal complementaria ↗"):"")+'</p>':"")
+   +(facilitySources?'<p>'+facilitySources+'</p>':"")
    +'</div>';
  }).join("");
  const pendingDiscrepancies=(health&&Array.isArray(health.pendingDirectoryDiscrepancies)?health.pendingDirectoryDiscrepancies:[]).map(item=>{
