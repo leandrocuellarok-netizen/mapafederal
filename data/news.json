@@ -8,12 +8,11 @@
     "url": "https://www.knowmadmood.com/es/novedades/notas-de-prensa/knowmad-mood-adquiere-danwor-data-ai",
     "period": "Adquisición anunciada el 17/11/2026; el comunicado no consigna precio ni fecha de cierre registral.",
     "jurisdictions": [
-      "Argentina",
-      "España"
+      "CABA"
     ],
     "geographyStatus": "explicit",
     "geographyEvidence": [
-      "Danwor tiene sede en Buenos Aires; la compradora knowmad mood es una multinacional tecnológica española."
+      "Danwor tiene sede en Buenos Aires, Ciudad Autónoma de Buenos Aires; la empresa adquirente knowmad mood es española."
     ],
     "verification": {
       "status": "editorial_reviewed",
@@ -534,11 +533,11 @@
       "scope": "Verificada la publicación societaria primaria en el Boletín Oficial de la República Argentina, Segunda Sección, edición 36.034 del 17/11/2026. El registro acredita la constitución y el objeto estatutario; no acredita construcción, operación, capacidad instalada ni inversión en activos de data centers."
     },
     "jurisdictions": [
-      "Ciudad Autónoma de Buenos Aires"
+      "CABA"
     ],
     "geographyStatus": "explicit",
     "geographyEvidence": [
-      "El edicto consigna sede social en Maipú 1, Ciudad Autónoma de Buenos Aires, y objeto de actuación en Argentina y el exterior."
+      "El edicto consigna la sede social de Pampa AI S.A.U. en Maipú 1, Ciudad Autónoma de Buenos Aires; su objeto estatutario contempla actividades en Argentina y el exterior."
     ],
     "id": "news-otslist-boletinoficial-gob-ar-ots-download-ad94959c79069757719afce7c6f1b312d02faf30c60701d390ae708fc27a3202-0"
   }
