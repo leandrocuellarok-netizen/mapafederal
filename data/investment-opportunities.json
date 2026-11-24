@@ -612,6 +612,132 @@
         "checkedAt": "2026-11-24",
         "scope": "Verificados los anuncios y las características del proyecto contra Reuters, la comunicación primaria de Eni y el sitio oficial de YPF. El estado verified se refiere a la procedencia y los datos publicados, no a la ejecución: no se localizó la resolución formal de adhesión al RIGI ni se verificó la FID; los montos son expectativas anunciadas."
       }
+    },
+    {
+      "id": "escobar-quo-loma-verde-centro-comercial-2026",
+      "name": "Escobar — QUO Loma Verde: centro comercial, gastronomía y servicios",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Real estate comercial / gastronomía / entretenimiento / salud / servicios",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Loma Verde, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "under_construction",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-11-13",
+      "validUntil": null,
+      "sourceName": "El Cronista",
+      "sourceUrl": "https://www.cronista.com/negocios/llegan-dos-nuevos-shoppings-a-una-de-las-zonas-estrella-del-gba-y-ponen-la-mira-en-la-costa-atlantica/",
+      "sourcePublishedAt": "2026-11-13",
+      "period": "Proyecto en desarrollo según publicaciones del 29/10 y 13/11/2026. El Cronista informó apertura prevista para el 24/11; LA NACION publicó una ventana de fines de 2026 o comienzos de 2027. Al 24/11 no se verificó apertura efectiva.",
+      "description": "Centro comercial de aproximadamente 8.000 m² en Loma Verde, con ocho espacios gastronómicos, gimnasio, bowling, entretenimiento y un centro de salud anexo. El Cronista atribuyó al desarrollo una inversión de USD 6 millones; LA NACION informó una cifra superior a USD 1 millón para QUO y el centro de salud, sin una base comparable claramente desglosada. Se omite el monto por discrepancia no resuelta. El proyecto se registra como desarrollo inmobiliario, no como oferta de participación de capital a terceros.",
+      "relatedSources": [
+        {
+          "label": "LA NACION — cuatro desarrollos comerciales en Escobar, 29/10/2026",
+          "url": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Se contrastaron El Cronista (13/11/2026) y LA NACION (29/10/2026). Se verifican ubicación general, componentes comerciales y estado de desarrollo informado. Las fuentes difieren en el monto atribuido al conjunto y en la fecha de apertura prevista; no se registra monto ni se afirma que haya abierto el 24/11. No se verificó disponibilidad de locales, contratos de alquiler ni acceso de terceros al capital."
+      }
+    },
+    {
+      "id": "escobar-paseo-del-haras-2026",
+      "name": "Escobar — Paseo del Haras y desarrollo residencial Villa del Haras",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Real estate comercial / oficinas / vivienda",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Loma Verde, calle Los Cerros, entorno de Haras Santa María, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "under_construction",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 8500000,
+        "currency": "USD",
+        "basis": "Inversión total informada: USD 2,5 millones para el paseo comercial y USD 6 millones para el componente residencial; cifras reportadas, no capital disponible a terceros."
+      },
+      "validFrom": "2026-11-13",
+      "validUntil": null,
+      "sourceName": "El Cronista",
+      "sourceUrl": "https://www.cronista.com/negocios/llegan-dos-nuevos-shoppings-a-una-de-las-zonas-estrella-del-gba-y-ponen-la-mira-en-la-costa-atlantica/",
+      "sourcePublishedAt": "2026-11-13",
+      "period": "Obra informada con avance cercano al 50% al 29/10/2026; no se publicó una fecha firme de apertura o entrega en las fuentes consultadas.",
+      "description": "Desarrollo de SkyTerra en Loma Verde. El paseo comercial contempla 50 locales y 14 oficinas; el componente residencial incluye 60 townhouses. El Cronista informó una inversión de USD 2,5 millones para el sector comercial y USD 6 millones para las viviendas. LA NACION corroboró el diseño general y el avance de obra informado. Registro de proyecto en construcción; no implica disponibilidad de unidades ni recomendación de inversión.",
+      "relatedSources": [
+        {
+          "label": "LA NACION — cuatro desarrollos comerciales en Escobar, 29/10/2026",
+          "url": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Se contrastaron las publicaciones de El Cronista (13/11/2026) y LA NACION (29/10/2026). La suma de USD 8,5 millones corresponde a los dos componentes informados por separado; no es una valuación independiente ni monto ejecutado. El avance cercano al 50% es el reportado por las fuentes en octubre, no una inspección actual. No se verificó stock comercial, disponibilidad de unidades ni condiciones contractuales."
+      }
+    },
+    {
+      "id": "escobar-paseo-loma-verde-2026",
+      "name": "Escobar — Paseo Loma Verde: centro comercial y supermercado",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Real estate comercial / retail / servicios",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Loma Verde, Colectora Oeste y calle Boote, km 55,6 de Panamericana, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "under_construction",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 6000000,
+        "currency": "USD",
+        "basis": "Piso de inversión publicado: más de USD 6 millones entre proyecto y tierra; USD 6 millones se registra como umbral inferior, no como monto exacto."
+      },
+      "validFrom": "2026-10-29",
+      "validUntil": null,
+      "sourceName": "LA NACION",
+      "sourceUrl": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/",
+      "sourcePublishedAt": "2026-10-29",
+      "period": "En construcción al 29/10/2026; apertura proyectada para diciembre de 2026, con alrededor del 70% de los locales previstos para la primera etapa.",
+      "description": "Proyecto comercial en Loma Verde con 42 locales modulares y un módulo para supermercado. LA NACION informó un predio de 7.000 m², aproximadamente 3.000 m² construidos y una inversión superior a USD 6 millones incluyendo tierra y proyecto. La apertura se proyectó para diciembre de 2026. No se verificó el avance posterior, la habilitación ni la ocupación efectiva de locales.",
+      "relatedSources": [
+        {
+          "label": "El Cronista — QUO y Paseo del Haras, 13/11/2026",
+          "url": "https://www.cronista.com/negocios/llegan-dos-nuevos-shoppings-a-una-de-las-zonas-estrella-del-gba-y-ponen-la-mira-en-la-costa-atlantica/"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Revisión de LA NACION (29/10/2026). Se registran como datos publicados el número de locales, superficie, inversión mínima y ventana de apertura. El monto es un piso, no una cifra exacta. No se verificó la habilitación municipal, los contratos de locación ni el estado actual de ocupación."
+      }
+    },
+    {
+      "id": "escobar-black-paseo-comercial-avenida-lagos-2026",
+      "name": "Escobar — Black: centro comercial, entretenimiento y espacios de almacenamiento",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Real estate comercial / entretenimiento / retail / almacenamiento",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Entorno de Avenida de los Lagos y corredor Panamericana km 45, Partido de Escobar, Provincia de Buenos Aires",
+      "stage": "under_construction",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 25000000,
+        "currency": "USD",
+        "basis": "Inversión estimada publicada por LA NACION y atribuida a los desarrolladores; no es capital ejecutado ni oferta abierta a terceros."
+      },
+      "validFrom": "2026-10-29",
+      "validUntil": null,
+      "sourceName": "LA NACION",
+      "sourceUrl": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/",
+      "sourcePublishedAt": "2026-10-29",
+      "period": "Proyecto en desarrollo; finalización prevista para 2028 según declaraciones de sus desarrolladores recogidas el 29/10/2026.",
+      "description": "Centro comercial a cielo abierto proyectado en el corredor de Avenida de los Lagos, con 260 locales, salas de cine, gastronomía, gimnasio, coworking y entre 30 y 40 espacios de almacenamiento. LA NACION informó una inversión estimada de USD 25 millones, 9.000 m² y 250 plazas de estacionamiento. La terminación fue proyectada para 2028. La ubicación se mantiene a escala de corredor porque la fuente no permite fijar una parcela o coordenada precisa. No se verificó preventa, habilitación ni disponibilidad comercial actual.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Revisión de LA NACION (29/10/2026), que recoge información y declaraciones de los desarrolladores. El monto, la superficie, la cantidad de locales y el plazo son datos publicados, no auditoría de obra ni confirmación de capital desembolsado. No se infiere dirección catastral ni disponibilidad de unidades."
+      }
     }
   ]
 }
