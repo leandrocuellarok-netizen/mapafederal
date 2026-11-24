@@ -516,6 +516,92 @@
           "scope": "Se verificó la publicación municipal fechada el 23/10/2024, que identifica la ubicación, los dos barrios y los destinos accesibles. No se realizó comprobación presencial ni se confirmó el estado físico actual. No se agregaron coordenadas porque la fuente no publica una georreferencia oficial."
         }
       }
-    ]
+    ],
+    "railInfrastructure": {
+      "id": "municipal-rail-stations-geojson",
+      "name": "Estaciones ferroviarias — infraestructura georreferenciada",
+      "sourceName": "Portal Datos Abiertos de la Municipalidad de Escobar; fuente declarada: relevamiento propio municipal / información base de organismos ferroviarios nacionales",
+      "sourceOrganization": "No disponible en la ficha del dataset",
+      "sourceUrl": "https://datos.escobar.gob.ar/dataset/estaciones-de-ferrocarril-del-partido-de-escobar",
+      "resourceUrl": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/estaciones-de-ferrocarril-del-partido-de-escobar/estaciones_ferrocarril.geojson",
+      "sourcePublishedAt": null,
+      "sourcePublicationNote": "La ficha no informa fecha de publicación; registra creación 2025-10-01 y última actualización 2026-03-31.",
+      "createdAt": "2025-10-01",
+      "lastUpdatedAt": "2026-03-31",
+      "version": "1.0",
+      "periodicity": "Anual",
+      "license": "Open Data Commons Open Database License (ODbL)",
+      "resourceName": "estaciones_ferrocarril.geojson",
+      "resourceFormat": "GeoJSON",
+      "sourceCrs": "EPSG:22185 — POSGAR 94 / Argentina 5",
+      "coordinateCrs": "EPSG:4326 — WGS 84",
+      "coordinateTransformation": "Coordenadas originales X,Y transformadas a latitud,longitud con pyproj 3.7.2; el mapa almacena [latitud, longitud].",
+      "validityPeriod": "Recurso geográfico versión 1.0, con última actualización declarada el 2026-03-31. Describe puntos de infraestructura; no acredita prestación ferroviaria vigente.",
+      "status": "pendiente",
+      "operationalStatus": "no verificado",
+      "summary": "El GeoJSON municipal publica cinco puntos de estación en Belén de Escobar, Ingeniero Maschwitz, Garín, Maquinista Savio y Matheu. La ubicación cartográfica no confirma servicio de pasajeros, horarios ni funcionamiento actual.",
+      "coverageNote": "El recurso geográfico registra cinco estaciones. El diagrama horario oficial consultado para el ramal Victoria–Capilla del Señor enumera tres estaciones de Escobar: Garín, Maquinista Savio y Matheu. Son fuentes de distinto alcance; la diferencia no permite inferir si hay o no servicio vigente en Belén de Escobar o Ingeniero Maschwitz.",
+      "verification": {
+        "checkedAt": "2026-11-24",
+        "scope": "Se leyó el GeoJSON publicado por el portal municipal: cinco entidades puntuales y CRS declarado EPSG:22185 (POSGAR 94 / Argentina 5). Se transformaron sus pares X,Y a EPSG:4326 (WGS 84) con pyproj 3.7.2 para representarlos en el mapa. La ficha declara actualización 2026-03-31 y licencia ODbL. No hubo comprobación presencial ni verificación de servicios, horarios o circulación actual."
+      },
+      "stations": [
+        {
+          "id": "est-belen-de-escobar",
+          "stationName": "Belén de Escobar",
+          "publishedName": "Est. Belén de Escobar",
+          "locality": "Belén de Escobar",
+          "mapNodeName": "Estación ferroviaria — Belén de Escobar",
+          "coords": [
+            -34.3496035,
+            -58.7951081
+          ]
+        },
+        {
+          "id": "est-ingeniero-maschwitz",
+          "stationName": "Ingeniero Maschwitz",
+          "publishedName": "Est. Ing. Maschwitz",
+          "locality": "Ingeniero Maschwitz",
+          "mapNodeName": "Estación ferroviaria — Ingeniero Maschwitz",
+          "coords": [
+            -34.3829731,
+            -58.7363527
+          ]
+        },
+        {
+          "id": "est-garin",
+          "stationName": "Garín",
+          "publishedName": "Est. Garín",
+          "locality": "Garín",
+          "mapNodeName": "Estación ferroviaria — Garín",
+          "coords": [
+            -34.4214475,
+            -58.7366306
+          ]
+        },
+        {
+          "id": "est-maquinista-savio",
+          "stationName": "Maquinista Savio",
+          "publishedName": "Est. Maq. Savio",
+          "locality": "Maquinista Savio",
+          "mapNodeName": "Estación ferroviaria — Maquinista Savio",
+          "coords": [
+            -34.406303,
+            -58.7735311
+          ]
+        },
+        {
+          "id": "est-matheu",
+          "stationName": "Matheu",
+          "publishedName": "Est. Matheu",
+          "locality": "Matheu",
+          "mapNodeName": "Estación ferroviaria — Matheu",
+          "coords": [
+            -34.3828759,
+            -58.8294423
+          ]
+        }
+      ]
+    }
   }
 }
