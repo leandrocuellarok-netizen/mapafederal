@@ -271,11 +271,36 @@ jobs:
           assert len(territory["serviceDirectories"]) == 4
           health = territory["healthFacilitiesDirectory"]
           assert health["status"] == "operativo"
-          assert health["sourceUrl"] == "https://www.escobar.gob.ar/municipio/guardias/"
+          assert health["sourceUrl"] in {
+              "https://www.escobar.gob.ar/municipio/guardias/",
+              "https://www.escobar.gob.ar/municipio/guardias-y-farmacias/"
+          }
           assert health["sourcePublishedAt"] is None
-          assert health["verification"]["checkedAt"] == "2026-11-23"
+          assert health["verification"]["checkedAt"] in {"2026-11-23", "2026-11-24"}
           assert "no se realizó comprobación presencial" in health["verification"]["scope"].lower()
           assert len(health["facilities"]) == 11
+          selles = next(item for item in health["facilities"] if item["id"] == "caps-juan-carlos-selles")
+          assert selles["locality"] == "Garín"
+          if "serviceNote" in selles:
+              assert "neighborhood" not in selles
+              assert "Pablo Marín s/n" in selles["address"] and "Fonavi" in selles["address"]
+              assert selles.get("phone") is None
+              assert "24 de Febrero" in selles["serviceNote"]
+              assert "0348 449-3444" in selles["serviceNote"] and "11 2150-0302" in selles["serviceNote"]
+              assert "discrepancia" in selles["serviceNote"].lower()
+          else:
+              assert selles["neighborhood"] == "24 de Febrero"
+          if "pendingDirectoryDiscrepancies" in health:
+              pending = health["pendingDirectoryDiscrepancies"]
+              assert len(pending) == 1
+              extra = pending[0]
+              assert extra["id"] == "udp-carlos-guevara"
+              assert extra["locality"] == "Belén de Escobar"
+              assert extra["status"] == "pendiente"
+              assert extra["sourceUrl"] == "https://www.escobar.gob.ar/municipio/guardias-y-farmacias/"
+              assert extra["verification"]["checkedAt"] == "2026-11-24"
+              assert "no se realizó comprobación presencial" in extra["verification"]["scope"].lower()
+              assert all(url.startswith("https://") for url in extra["comparisonSourceUrls"])
           mobility = territory["mobilityDirectory"]
           assert mobility["status"] == "pendiente"
           assert mobility["sourcePublishedAt"] == "2026-02-06"
