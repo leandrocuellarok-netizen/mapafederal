@@ -54,6 +54,23 @@ function renderProfile(territory,economy){
  }).join("");
  const healthHtml=health?'<h4>'+escapeHtml(health.name)+'</h4><p>'+escapeHtml(health.summary)+'</p><p class="escobar-meta">'+escapeHtml(health.localityCoverageNote)+'</p>'+facilities+'<p class="escobar-meta">Publicación: '+escapeHtml(date(health.sourcePublishedAt))+' · Vigencia: '+escapeHtml(health.validityPeriod)+' · Verificación: '+escapeHtml(date(health.verification&&health.verification.checkedAt))+' · '+escapeHtml(health.verification&&health.verification.scope||"")+'</p><p>'+sourceLink(health.sourceUrl,"Guardias y emergencias ↗")+' '+sourceLink(health.additionalDirectoryUrl,"Directorio completo de centros de salud ↗")+'</p>':"";
  el("escobar-services").innerHTML=(services||'<p class="escobar-meta">No hay directorios municipales cargados.</p>')+healthHtml;
+ const transparency=territory.transparencyDirectory;
+ const transparencyTarget=el("escobar-transparency");
+ if(transparency&&transparencyTarget){
+  const snapshot=transparency.openDataSnapshot||{};
+  const categories=(snapshot.categoryCounts||[]).slice().sort((a,b)=>b.datasets-a.datasets).filter(item=>item.datasets>0).slice(0,5);
+  const categorySummary=categories.map(item=>escapeHtml(item.name)+" ("+escapeHtml(number(item.datasets))+")").join(" · ");
+  const functions=(transparency.publishedFunctions||[]).map(item=>"<li>"+escapeHtml(item)+"</li>").join("");
+  transparencyTarget.innerHTML='<div class="escobar-item"><span class="escobar-status">'+escapeHtml(statusLabel(transparency.status))+'</span><h4>'+escapeHtml(transparency.name)+'</h4><p>'+escapeHtml(transparency.summary)+'</p>'
+   +'<p class="escobar-meta">Portal de datos abiertos: '+escapeHtml(number(snapshot.publishedDatasets||0))+' datasets · '+escapeHtml(number(snapshot.thematicCategories||0))+' categorías · '+escapeHtml(number(snapshot.availableFormats||0))+' formatos · Consulta: '+escapeHtml(date(snapshot.checkedAt))+'</p>'
+   +'<p class="escobar-meta">Categorías con más registros: '+categorySummary+'</p>'
+   +'<p class="escobar-meta">'+escapeHtml(snapshot.note||"")+'</p>'
+   +'<details><summary>Secciones institucionales publicadas</summary><ul>'+functions+'</ul></details>'
+   +'<p class="escobar-meta">Publicación: '+escapeHtml(date(transparency.sourcePublishedAt))+' · Vigencia: '+escapeHtml(transparency.validityPeriod)+' · Verificación: '+escapeHtml(date(transparency.verification&&transparency.verification.checkedAt))+'</p>'
+   +'<p class="escobar-meta">Alcance: '+escapeHtml(transparency.verification&&transparency.verification.scope||"")+'</p>'
+   +'<p>'+sourceLink(transparency.sourceUrl,"Transparencia municipal ↗")+' '+sourceLink(transparency.openDataUrl,"Datos abiertos ↗")+' '+sourceLink(transparency.informationRequestUrl,"Solicitar información pública ↗")+'</p>'
+   +'<p class="escobar-meta">Contacto de datos abiertos: '+escapeHtml(transparency.contact&&transparency.contact.email||"No indicado")+' · '+escapeHtml(transparency.contact&&transparency.contact.address||"")+'</p></div>';
+ }
  const mobility=territory.mobilityDirectory;
  if(mobility){
   const stops=Array.isArray(mobility.stops)?mobility.stops:[];
