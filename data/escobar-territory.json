@@ -700,6 +700,35 @@
     ],
     "plannerServices": [
       {
+        "id": "linea-503-san-luis-escobar-mibus-2026",
+        "name": "Línea 503 — San Luis–Escobar (ficha del planificador)",
+        "line": "503",
+        "serviceName": "SAN LUIS - ESCOBAR",
+        "localities": [],
+        "localityScopeNote": "La ficha no permite asignar el recorrido a una de las siete localidades de forma inequívoca.",
+        "listedStopsCount": 29,
+        "firstListedStop": "SAN VICENTE E ISLANDIA",
+        "lastListedStop": "DR. TRAVI Y RIVADAVIA",
+        "sourceName": "Municipalidad de Escobar — Escobar 360 / Mi Bus",
+        "sourceUrl": "https://mibus.escobar.gob.ar/routes/21/escobar_7/escobar_15",
+        "catalogUrl": "https://mibus.escobar.gob.ar/",
+        "sourcePublishedAt": null,
+        "sourcePublicationNote": "La ficha dinámica del planificador no informa fecha de publicación o actualización.",
+        "period": "Ficha visible en el planificador municipal consultado el 2026-11-24.",
+        "validityPeriod": "Registro visible en la consulta del 2026-11-24; el planificador no informa fecha de publicación/actualización ni garantiza circulación en tiempo real.",
+        "status": "no verificado",
+        "publicationStatus": "listado en el planificador municipal",
+        "operationalStatus": "no verificado",
+        "relatedAnnouncementId": "linea-503-ramal-h-escobar-matheu-2026",
+        "announcementRelation": "El planificador muestra una ficha de la línea 503 denominada «SAN LUIS - ESCOBAR», con 29 paradas; no identifica el ramal H ni el destino estación Matheu. No permite verificar equivalencia con el ramal H anunciado.",
+        "summary": "El catálogo de Mi Bus lista la línea 503 como «SAN LUIS - ESCOBAR» y su ficha enumera 29 paradas. El registro se conserva separado del ramal H anunciado porque la ficha no identifica ese ramal ni su destino.",
+        "verification": {
+          "status": "verified",
+          "checkedAt": "2026-11-24",
+          "scope": "Se comprobó el listado de líneas de Mi Bus y la ficha de la línea 503, titulada «SAN LUIS - ESCOBAR», que enumera 29 paradas desde SAN VICENTE E ISLANDIA hasta DR. TRAVI Y RIVADAVIA. La ficha no identifica ramal H ni destino estación Matheu; por ello se verifica la presencia de esta ficha en el planificador, no la equivalencia con el ramal anunciado, ni horarios, frecuencias o circulación en tiempo real."
+        }
+      },
+      {
         "id": "linea-506-estacion-escobar-mercado-libre-mibus-2026",
         "name": "Línea 506 — Est. Escobar–Mercado Libre",
         "line": "506",
