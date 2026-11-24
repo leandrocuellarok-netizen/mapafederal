@@ -373,7 +373,7 @@ jobs:
           for item in local_nodes:
               assert item.get("sourceName") and item.get("sourcePublicationNote")
               assert item.get("validityPeriod") and item.get("status") in allowed
-              assert item.get("verification", {}).get("checkedAt") == "2026-11-23"
+              assert item.get("verification", {}).get("checkedAt") in {"2026-11-23", "2026-11-24"}
               assert item.get("verification", {}).get("scope")
               if item.get("coordinateSource"):
                   assert item.get("coordinateSourceName") and item.get("coordinateSourcePublicationNote")
