@@ -233,17 +233,13 @@
     "source": "knowmad mood — comunicado corporativo",
     "url": "https://www.knowmadmood.com/es/novedades/notas-de-prensa/knowmad-mood-adquiere-danwor-data-ai",
     "period": "Adquisición anunciada el 17/11/2026; el comunicado no consigna precio ni fecha de cierre registral.",
-    "jurisdictions": [
-      "CABA"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "Danwor tiene sede en Buenos Aires, Ciudad Autónoma de Buenos Aires; la empresa adquirente knowmad mood es española."
-    ],
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
     "verification": {
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-24",
-      "scope": "Contraste con el comunicado corporativo original publicado el 17/11/2026. Confirma la adquisición del 100%, el perfil de servicios y los datos generales de plantilla/clientes; no publica precio ni términos económicos y no acredita la integración posterior ni resultados."
+      "scope": "Contraste con el comunicado corporativo original publicado el 17/11/2026. Confirma la adquisición del 100%, el perfil de servicios y los datos generales de plantilla/clientes; no publica precio ni términos económicos y no acredita la integración posterior ni resultados. La referencia a sede en Buenos Aires no se asigna a CABA ni a la provincia porque el comunicado no permite resolver inequívocamente esa jurisdicción."
     },
     "id": "news-www-knowmadmood-com-es-novedades-notas-de-prensa-knowmad-mood-adquiere-danwor-data-ai"
   },
