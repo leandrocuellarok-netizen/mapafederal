@@ -408,6 +408,11 @@ jobs:
         run: node tests/escobar-mobility.test.js
       - name: Test Escobar georeferenced railway infrastructure
         run: node tests/escobar-rail-infrastructure.test.js
+      - name: Test Escobar municipal transparency directory
+        run: |
+          node --check assets/escobar-profile.js
+          node tests/escobar-transparency.test.js
+
       - name: Validate geographic and editorial JSON
         run: |
           python - <<'PY'
