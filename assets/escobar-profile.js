@@ -82,6 +82,16 @@ function renderProfile(territory,economy){
   const planner=mobility.planner||{};
   const dataset=mobility.openDataDataset||{};
   const rail=mobility.railService||{};
+  const announcedRoutes=Array.isArray(mobility.announcedRoutes)?mobility.announcedRoutes:[];
+  const announcedRoutesHtml=announcedRoutes.length
+   ?'<div class="escobar-item"><h4>Ramales de colectivos anunciados</h4><p>Los trazados reflejan la comunicación municipal. No se presume operación vigente sin confirmación primaria posterior.</p></div>'+announcedRoutes.map(item=>{
+     const outbound=Array.isArray(item.routeOutbound)?item.routeOutbound.join(" → "):"No publicado";
+     const inbound=Array.isArray(item.routeReturn)?item.routeReturn.join(" → "):"No publicado";
+     const secondary=(Array.isArray(item.secondaryReports)?item.secondaryReports:[]).map(report=>sourceLink(report.sourceUrl,report.sourceName+" · "+date(report.sourcePublishedAt)+" ↗")).join(" ");
+     return '<div class="escobar-item"><span class="escobar-status">'+escapeHtml(statusLabel(item.status))+'</span><h4>'+escapeHtml(item.name||"")+'</h4><p>'+escapeHtml(item.summary||"")+'</p><p class="escobar-meta">Operador: '+escapeHtml(item.operator||"No indicado")+' · Origen: '+escapeHtml(item.origin||"No indicado")+' · Destino: '+escapeHtml(item.destination||"No indicado")+'</p><p class="escobar-meta">Localidades: '+escapeHtml((item.localities||[]).join(", "))+'</p><details><summary>Recorrido anunciado</summary><p>Ida: '+escapeHtml(outbound)+'</p><p>Vuelta: '+escapeHtml(inbound)+'</p></details><p class="escobar-meta">Publicación: '+escapeHtml(date(item.sourcePublishedAt))+' · Período: '+escapeHtml(item.period||"No indicado")+' · Vigencia: '+escapeHtml(item.validityPeriod||"No indicada")+'</p><p class="escobar-meta">Estado operativo: '+escapeHtml(statusLabel(item.operationalStatus))+' · Verificación: '+escapeHtml(date(item.verification&&item.verification.checkedAt))+' · '+escapeHtml(item.verification&&item.verification.scope||"")+'</p><p>'+sourceLink(item.sourceUrl,"Anuncio municipal ↗")+'</p>'+(secondary?'<p class="escobar-meta">Reportes secundarios, no oficiales: '+secondary+'</p>':"")+'</div>';
+    }).join("")
+   :"";
+
   const railStations=(Array.isArray(rail.stations)?rail.stations:[]).map(item=>'<li>'+escapeHtml(item.stationName)+' · '+escapeHtml(item.locality)+'</li>').join("");
   const infrastructure=mobility.railInfrastructure||{};
   const infrastructureStations=Array.isArray(infrastructure.stations)?infrastructure.stations:[];
@@ -102,7 +112,7 @@ function renderProfile(territory,economy){
    +'<p class="escobar-meta">Listado publicado: '+escapeHtml(date(mobility.sourcePublishedAt))+' · Estado: '+escapeHtml(statusLabel(mobility.status))+' · Verificación web: '+escapeHtml(date(mobility.verification&&mobility.verification.checkedAt))+'. '+escapeHtml(mobility.verification&&mobility.verification.scope||"")+'</p>'
    +'<p>'+sourceLink(mobility.sourceUrl,"Noticia municipal y listado de paradas ↗")+' '+sourceLink(planner.sourceUrl,"Abrir planificador Mi Bus ↗")+'</p>'
    +'<div class="escobar-item"><h4>Datos abiertos de transporte</h4><p>'+escapeHtml(dataset.name||"")+'</p><p class="escobar-meta">Actualización del conjunto: '+escapeHtml(date(dataset.lastUpdatedAt))+' · Periodicidad: '+escapeHtml(dataset.periodicity||"No informada")+' · Licencia: '+escapeHtml(dataset.license||"No informada")+' · Estado de integración: '+escapeHtml(statusLabel(dataset.status))+'</p><p class="escobar-meta">'+escapeHtml(dataset.verification&&dataset.verification.scope||"")+'</p>'+sourceLink(dataset.sourceUrl,"Consultar dataset y descargar recurso XLSX ↗")+'</div>'
-   +railHtml+railInfrastructureHtml+connectionsHtml+intermodalHtml;
+   +announcedRoutesHtml+railHtml+railInfrastructureHtml+connectionsHtml+intermodalHtml;
  }else{
   el("escobar-mobility").innerHTML='<p class="escobar-meta">No hay datos de movilidad cargados.</p>';
  }
