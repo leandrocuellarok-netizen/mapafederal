@@ -43,3 +43,12 @@ Los rótulos «Garín Centro» y «Presidente Perón» se conservaron exactament
 1. Obtener confirmación oficial posterior al 25/09/2026 sobre cierre de votación y resultados.
 2. Verificar qué proyectos fueron seleccionados, financiados, contratados o ejecutados, manteniendo esos hitos separados.
 3. No agregar marcadores cartográficos: la página no proporciona coordenadas verificadas de cada intervención.
+
+
+## Cierre de validación y publicación
+- El primer workflow del commit de datos `f9b19b917b1ccd964e0ca7b12f3f60440135dab7` falló en la comprobación sintáctica de `assets/escobar-profile.js`. No se publicó esa versión.
+- Se corrigió el render en `7dbe74516fb45161872ea96f509817138a00a28e`; el cambio reemplaza el bloque de salida defectuoso y conecta el módulo al panel de transparencia.
+- Workflow final: [45511171522](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45511171522), commit `7dbe74516fb45161872ea96f509817138a00a28e`.
+- Validación: **success**. Pasaron la validación del perfil local, el test de transparencia municipal, la comprobación de sintaxis JavaScript y el resto de controles del workflow.
+- GitHub Pages: job de despliegue **success**. La apertura independiente de la URL publicada no fue posible desde la herramienta de consulta web; no se afirma verificación HTTP independiente del renderizado.
+- Estado final del módulo: datos y visualización validados por CI y despliegue de Pages informado como exitoso. La discrepancia administrativa sobre la votación y los resultados de los proyectos continúa pendiente.
