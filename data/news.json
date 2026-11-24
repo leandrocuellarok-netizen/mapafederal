@@ -1,21 +1,71 @@
 [
   {
-    "title": "Argentina aprobó el ingreso al RIGI del proyecto Argentina LNG de YPF, Eni y XRG",
+    "title": "Ushuaia: llaman a licitación para un nuevo muelle de catamaranes",
     "date": "2026-11-20",
-    "category": "Empresas",
-    "summary": "El Gobierno aprobó la incorporación al RIGI del proyecto de gas natural licuado impulsado por YPF, Eni y XRG. Reuters informó una inversión estimada de US$25.000 millones entre 2027 y 2030 y un total de US$50.750 millones hacia 2050, con capacidad prevista para exportar 12 millones de toneladas anuales. La aprobación regulatoria no equivale al inicio de operaciones ni debe confundirse con la decisión final de inversión.",
-    "source": "Reuters",
-    "url": "https://www.reuters.com/business/energy/argentina-approves-incentive-scheme-508-billion-lng-project-2026-11-20/",
+    "category": "Infraestructura",
+    "summary": "La ANPYN aprobó el llamado a licitación para construir un muelle de 120 metros, con presupuesto estimado de ARS 12.580 millones y un plazo de obra de un año. La intervención apunta a ampliar capacidad y ordenar el embarque turístico; el artículo indica que la licitación se publicaría en los días siguientes.",
+    "source": "Agencia Nacional de Puertos y Navegación",
+    "url": "https://www.argentina.gob.ar/noticias/anpyn-llama-licitacion-para-la-construccion-de-un-nuevo-muelle-de-catamaranes-en-el-puerto",
     "period": "No consignado en el registro editorial",
     "verification": {
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
     },
-    "jurisdictions": [],
-    "geographyStatus": "not_specified",
-    "geographyEvidence": [],
-    "id": "news-www-reuters-com-business-energy-argentina-approves-incentive-scheme-508-billion-lng-project-2026-11-20"
+    "jurisdictions": [
+      "Tierra del Fuego"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Ushuaia (Tierra del Fuego)"
+    ],
+    "id": "news-www-argentina-gob-ar-noticias-anpyn-llama-licitacion-para-la-construccion-de-un-nuevo-muelle-de-catamaranes-en-el-puerto"
+  },
+  {
+    "title": "INTI, Würth Elektronik y Electrocomponentes impulsaron jornadas sobre compatibilidad electromagnética",
+    "date": "2026-11-20",
+    "category": "Tecnología",
+    "summary": "Las jornadas EMC Days se realizaron en Buenos Aires y Córdoba. El encuentro reunió a empresas y especialistas para abordar ensayos, simulación y prevención de interferencias electromagnéticas, una capacidad relevante para el desarrollo de equipos y procesos industriales.",
+    "source": "INTI — Argentina.gob.ar",
+    "url": "https://www.argentina.gob.ar/noticias/argentina-fue-sede-de-un-encuentro-internacional-sobre-compatibilidad-electromagnetica",
+    "period": "No consignado en el registro editorial",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-21",
+      "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
+    },
+    "jurisdictions": [
+      "Buenos Aires",
+      "Córdoba"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Provincia de Buenos Aires",
+      "Ciudad de Córdoba (Córdoba)"
+    ],
+    "id": "news-www-argentina-gob-ar-noticias-argentina-fue-sede-de-un-encuentro-internacional-sobre-compatibilidad-electromagnetica"
+  },
+  {
+    "title": "BioArgentina 2026 reunió en Bariloche a empresas, investigadores y emprendedores",
+    "date": "2026-11-20",
+    "category": "Tecnología",
+    "summary": "La XIII edición del encuentro anual de la Cámara Argentina de Biotecnología abordó aplicaciones y oportunidades de la biotecnología en salud, agro e industria. La agenda puso el foco en la articulación entre empresas, sistema científico-tecnológico y sector público para impulsar innovación, inversión y desarrollo productivo.",
+    "source": "Secretaría de Innovación, Ciencia y Tecnología",
+    "url": "https://www.argentina.gob.ar/noticias/biotecnologia-argentina-innovacion-para-el-desarrollo-productivo",
+    "period": "No consignado en el registro editorial",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-21",
+      "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
+    },
+    "jurisdictions": [
+      "Río Negro"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "San Carlos de Bariloche (Río Negro)"
+    ],
+    "id": "news-www-argentina-gob-ar-noticias-biotecnologia-argentina-innovacion-para-el-desarrollo-productivo"
   },
   {
     "title": "Cuatro emprendimientos fueron distinguidos en la final nacional 2026",
@@ -42,28 +92,6 @@
       "Misiones"
     ],
     "id": "news-www-argentina-gob-ar-noticias-el-gobierno-nacional-anuncio-los-cuatro-ganadores-del-concurso-emprendimiento-argentino"
-  },
-  {
-    "title": "Ushuaia: llaman a licitación para un nuevo muelle de catamaranes",
-    "date": "2026-11-20",
-    "category": "Infraestructura",
-    "summary": "La ANPYN aprobó el llamado a licitación para construir un muelle de 120 metros, con presupuesto estimado de ARS 12.580 millones y un plazo de obra de un año. La intervención apunta a ampliar capacidad y ordenar el embarque turístico; el artículo indica que la licitación se publicaría en los días siguientes.",
-    "source": "Agencia Nacional de Puertos y Navegación",
-    "url": "https://www.argentina.gob.ar/noticias/anpyn-llama-licitacion-para-la-construccion-de-un-nuevo-muelle-de-catamaranes-en-el-puerto",
-    "period": "No consignado en el registro editorial",
-    "verification": {
-      "status": "editorial_reviewed",
-      "checkedAt": "2026-11-21",
-      "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
-    },
-    "jurisdictions": [
-      "Tierra del Fuego"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "Ushuaia (Tierra del Fuego)"
-    ],
-    "id": "news-www-argentina-gob-ar-noticias-anpyn-llama-licitacion-para-la-construccion-de-un-nuevo-muelle-de-catamaranes-en-el-puerto"
   },
   {
     "title": "El Proyecto KT+ presentó resultados de asistencia técnica a pymes de distintas regiones",
@@ -122,50 +150,44 @@
     "id": "news-www-argentina-gob-ar-noticias-mas-de-40-casos-de-innovacion-en-la-3deg-jornada-de-transformacion-digital-e-industria-40"
   },
   {
-    "title": "BioArgentina 2026 reunió en Bariloche a empresas, investigadores y emprendedores",
+    "title": "Argentina aprobó el ingreso al RIGI del proyecto Argentina LNG de YPF, Eni y XRG",
     "date": "2026-11-20",
-    "category": "Tecnología",
-    "summary": "La XIII edición del encuentro anual de la Cámara Argentina de Biotecnología abordó aplicaciones y oportunidades de la biotecnología en salud, agro e industria. La agenda puso el foco en la articulación entre empresas, sistema científico-tecnológico y sector público para impulsar innovación, inversión y desarrollo productivo.",
-    "source": "Secretaría de Innovación, Ciencia y Tecnología",
-    "url": "https://www.argentina.gob.ar/noticias/biotecnologia-argentina-innovacion-para-el-desarrollo-productivo",
+    "category": "Empresas",
+    "summary": "El Gobierno aprobó la incorporación al RIGI del proyecto de gas natural licuado impulsado por YPF, Eni y XRG. Reuters informó una inversión estimada de US$25.000 millones entre 2027 y 2030 y un total de US$50.750 millones hacia 2050, con capacidad prevista para exportar 12 millones de toneladas anuales. La aprobación regulatoria no equivale al inicio de operaciones ni debe confundirse con la decisión final de inversión.",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/business/energy/argentina-approves-incentive-scheme-508-billion-lng-project-2026-11-20/",
     "period": "No consignado en el registro editorial",
     "verification": {
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-21",
       "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
     },
-    "jurisdictions": [
-      "Río Negro"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "San Carlos de Bariloche (Río Negro)"
-    ],
-    "id": "news-www-argentina-gob-ar-noticias-biotecnologia-argentina-innovacion-para-el-desarrollo-productivo"
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "id": "news-www-reuters-com-business-energy-argentina-approves-incentive-scheme-508-billion-lng-project-2026-11-20"
   },
   {
-    "title": "INTI, Würth Elektronik y Electrocomponentes impulsaron jornadas sobre compatibilidad electromagnética",
-    "date": "2026-11-20",
-    "category": "Tecnología",
-    "summary": "Las jornadas EMC Days se realizaron en Buenos Aires y Córdoba. El encuentro reunió a empresas y especialistas para abordar ensayos, simulación y prevención de interferencias electromagnéticas, una capacidad relevante para el desarrollo de equipos y procesos industriales.",
-    "source": "INTI — Argentina.gob.ar",
-    "url": "https://www.argentina.gob.ar/noticias/argentina-fue-sede-de-un-encuentro-internacional-sobre-compatibilidad-electromagnetica",
-    "period": "No consignado en el registro editorial",
-    "verification": {
-      "status": "editorial_reviewed",
-      "checkedAt": "2026-11-21",
-      "scope": "Revisión editorial documentada en README.md el 2026-11-21; no equivale a una comprobación de vigencia en tiempo real."
-    },
+    "title": "Escobar publicó tres licitaciones de suministros y servicios con aperturas en diciembre",
+    "date": "2026-11-19",
+    "category": "Infraestructura",
+    "summary": "El Boletín Oficial bonaerense publicó las LP 71/26 (piedra partida, presupuesto oficial ARS 644,2 millones), 72/26 (cascote, ARS 700,5 millones) y 75/26 (fumigación y control de vectores, ARS 1.400 millones). Las LP 71 y 72 abren el 11 de diciembre; consultas 1–2/12 y venta de pliegos 3–4/12. La LP 75 abre el 9/12; consultas 26–27/11 y venta 1–2/12. Presupuestos oficiales, no adjudicaciones.",
+    "source": "Boletín Oficial de la Provincia de Buenos Aires",
+    "url": "https://boletinoficial.gba.gob.ar/secciones/14520/ver",
+    "period": "Convocatorias publicadas el 19/11/2026; cronogramas de diciembre de 2026.",
     "jurisdictions": [
-      "Buenos Aires",
-      "Córdoba"
+      "Buenos Aires"
     ],
     "geographyStatus": "explicit",
     "geographyEvidence": [
-      "Provincia de Buenos Aires",
-      "Ciudad de Córdoba (Córdoba)"
+      "Municipalidad de Escobar; aperturas en Belén de Escobar y contratación para el Partido de Escobar."
     ],
-    "id": "news-www-argentina-gob-ar-noticias-argentina-fue-sede-de-un-encuentro-internacional-sobre-compatibilidad-electromagnetica"
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
+    },
+    "id": "news-boletinoficial-gba-gob-ar-secciones-14520-ver"
   },
   {
     "title": "El superávit comercial llegó a USD 3.394 millones en octubre",
@@ -222,6 +244,24 @@
     "id": "news-www-argentina-gob-ar-noticias-la-secretaria-general-de-la-presidencia-recorrio-la-feria-argentina-alimenta"
   },
   {
+    "title": "Metrotel y Kyndryl anunciaron una colaboración para infraestructura digital empresarial",
+    "date": "2026-11-16",
+    "category": "Tecnología",
+    "summary": "La alianza comercial combina conectividad de alta disponibilidad y servicios de nube de Metrotel con infraestructura de data center y servicios profesionales de TI de Kyndryl para clientes corporativos en Argentina. El comunicado no informa monto, volumen de clientes, inversión comprometida ni cronograma de despliegue: es un acuerdo comercial anunciado, no una licitación ni una inversión cuantificada.",
+    "source": "Metrotel",
+    "url": "https://metrotel.com.ar/prensa/metrotel-y-kyndryl-fortalecen-la-infraestructura-digital-empresarial-en-argentina/",
+    "period": "Comunicado corporativo del 16/11/2026.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
+    },
+    "id": "news-metrotel-com-ar-prensa-metrotel-y-kyndryl-fortalecen-la-infraestructura-digital-empresarial-en-argentina"
+  },
+  {
     "title": "Toyota anunció un proyecto de inversión superior a USD 1.300 millones en Zárate",
     "date": "2026-11-16",
     "category": "Empresas",
@@ -242,6 +282,28 @@
       "Zárate (provincia de Buenos Aires)"
     ],
     "id": "news-www-argentina-gob-ar-noticias-toyota-anuncio-una-inversion-de-mas-de-usd-1300-millones-para-construir-una-nueva-planta-en"
+  },
+  {
+    "title": "Escobar publicó cuatro licitaciones, incluidas dos contrataciones de salud digital",
+    "date": "2026-11-12",
+    "category": "Tecnología",
+    "summary": "El Boletín Oficial publicó los segundos llamados LP 61/26 (sistema de laboratorio LIS, presupuesto oficial ARS 330 millones) y LP 62/26 (módulos de IA integrados al SIGHM, ARS 235 millones), ambos con apertura el 19/11. También convocó LP 66/26 (puesta en valor del Polideportivo Maschwitz, ARS 578,1 millones) y LP 69/26 (mobiliario urbano, ARS 2.028,8 millones), con apertura el 30/11. Al 24/11, la venta y consulta de pliegos de estas últimas ya habían vencido. No se verificaron adjudicaciones ni contratos.",
+    "source": "Boletín Oficial de la Provincia de Buenos Aires",
+    "url": "https://boletinoficial.gba.gob.ar/secciones/14505/ver",
+    "period": "Convocatorias publicadas el 12/11/2026; aperturas previstas para 19 y 30/11/2026.",
+    "jurisdictions": [
+      "Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Municipalidad de Escobar; contrataciones con sede en Belén de Escobar e Ingeniero Maschwitz."
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
+    },
+    "id": "news-boletinoficial-gba-gob-ar-secciones-14505-ver"
   },
   {
     "title": "La segunda Ronda de Negocios RIGI se realizará el 2 de diciembre con foco en energía e hidrocarburos",
@@ -350,5 +412,89 @@
       "Chubut y Meseta Central"
     ],
     "id": "news-www-biodiversidadla-org-articulos-nuevo-intento-para-habilitar-la-megamineria-en-la-meseta-chubutense"
+  },
+  {
+    "title": "Mercado Libre inauguró su mayor centro de almacenamiento argentino en Escobar",
+    "date": "2026-10-28",
+    "category": "Empresas",
+    "summary": "Mercado Libre inauguró junto a Plaza Logística un centro de almacenamiento en Escobar mediante una inversión conjunta de USD 115 millones. La primera etapa habilitó 40.000 m²; otros 60.000 m² están previstos para marzo de 2027 y el funcionamiento pleno será progresivo durante 2028. La fuente municipal informó 96 incorporaciones iniciales, 48 residentes de Escobar, y proyectó más de 1.300 empleos directos para 2028; esa cifra no es empleo actual.",
+    "source": "Municipalidad de Escobar",
+    "url": "https://www.escobar.gob.ar/noticias/mercado-libre-ya-funciona-en-escobar-inversion-de-115-millones-de-dola/",
+    "period": "Inauguración 28/10/2026; expansión prevista hasta 2028.",
+    "jurisdictions": [
+      "Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "La fuente municipal ubica el centro de almacenamiento en el Partido de Escobar, Provincia de Buenos Aires."
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
+    },
+    "id": "news-www-escobar-gob-ar-noticias-mercado-libre-ya-funciona-en-escobar-inversion-de-115-millones-de-dola"
+  },
+  {
+    "title": "El Ministerio Público Fiscal aprobó lineamientos obligatorios para el uso institucional de IA",
+    "date": "2026-09-04",
+    "category": "Regulación",
+    "summary": "La Resolución PGN 64/2026 estableció lineamientos obligatorios para el uso, diseño, desarrollo y adquisición de IA dentro del Ministerio Público Fiscal de la Nación. Entre otras medidas, prohíbe transitoriamente ingresar información reservada, actuaciones de causas en trámite y datos personales o sensibles en herramientas públicas de IA; prevé evaluación de riesgos, supervisión humana, auditoría y capacitación. Su alcance es el MPF, no todo el Estado argentino.",
+    "source": "Ministerio Público Fiscal de la Nación — Fiscales.gob.ar",
+    "url": "https://www.fiscales.gob.ar/procuracion-general/el-ministerio-publico-fiscal-aprobo-los-lineamientos-institucionales-para-el-uso-e-implementacion-de-inteligencia-artificial/",
+    "period": "Resolución PGN 64/2026; publicación 04/09/2026.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
+    },
+    "id": "news-www-fiscales-gob-ar-procuracion-general-el-ministerio-publico-fiscal-aprobo-los-lineamientos-institucionales-para-el-uso-e-implementacion-de-inteligencia-artificial"
+  },
+  {
+    "title": "Escobar anunció ampliaciones industriales en química, biotecnología, farmacéutica y automotriz",
+    "date": "2026-09-03",
+    "category": "Empresas",
+    "summary": "En el Día de la Industria, la Municipalidad informó proyectos de Mapei (depósito de 3.600 m² y automatización), Biogénesis Bagó (infraestructura, planta de antígeno rábico y bioseguridad en Garín), Finadiet (laboratorio de 7.600 m² y más de 150 empleos proyectados al inaugurarse) y Yazaki (ampliación fabril superior a 3.000 m² para producción vinculada a Toyota). Son anuncios municipales: no se publicaron montos ni se verificó su avance. Mercado Libre, mencionado en el mismo acto, fue inaugurado el 28/10/2026.",
+    "source": "Municipalidad de Escobar",
+    "url": "https://www.escobar.gob.ar/noticias/en-el-dia-de-la-industria-se-anunciaron-nuevas-inversiones-en-escobar/",
+    "period": "Anuncios del 03/09/2026; estados de ejecución posteriores no consignados en esta fuente.",
+    "jurisdictions": [
+      "Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Proyectos empresariales anunciados para el Partido de Escobar; Biogénesis Bagó menciona expresamente su establecimiento de Garín."
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
+    },
+    "id": "news-www-escobar-gob-ar-noticias-en-el-dia-de-la-industria-se-anunciaron-nuevas-inversiones-en-escobar"
+  },
+  {
+    "title": "Buenos Aires aprobó un marco provincial para el desarrollo y uso de inteligencia artificial en el Estado",
+    "date": "2026-07-14",
+    "category": "Regulación",
+    "summary": "El Decreto 742/2026 aprobó el Marco Provincial para el Desarrollo, Uso y Gobernanza de IA en la administración pública bonaerense y creó un Registro de Inteligencia Artificial. Exige intervención de la Subsecretaría de Gobierno Digital en desarrollos, usos, contrataciones y renovaciones provinciales. Invita a los municipios a adherir voluntariamente: no implica que Escobar haya adherido. El anexo establece trazabilidad, protección de datos, supervisión humana, evaluación de riesgos y formación.",
+    "source": "Sistema de Información Normativa y Documental — Provincia de Buenos Aires",
+    "url": "https://normas.gba.gob.ar/ar-b/decreto/2026/742/604136",
+    "period": "Decreto promulgado el 06/07/2026 y publicado el 14/07/2026.",
+    "jurisdictions": [
+      "Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Decreto provincial 742/2026, aplicable a la Administración Pública de la Provincia de Buenos Aires; adhesión municipal voluntaria."
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
+    },
+    "id": "news-normas-gba-gob-ar-ar-b-decreto-2026-742-604136"
   }
 ]
