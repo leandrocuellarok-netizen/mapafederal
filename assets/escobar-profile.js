@@ -64,12 +64,16 @@ function renderProfile(territory,economy){
   }).join("");
   const planner=mobility.planner||{};
   const dataset=mobility.openDataDataset||{};
+  const rail=mobility.railService||{};
+  const railStations=(Array.isArray(rail.stations)?rail.stations:[]).map(item=>'<li>'+escapeHtml(item.stationName)+' · '+escapeHtml(item.locality)+'</li>').join("");
+  const railHtml=rail.name?'<div class="escobar-item"><span class="escobar-status">'+escapeHtml(statusLabel(rail.status))+'</span><h4>'+escapeHtml(rail.name)+'</h4><p>'+escapeHtml(rail.summary||"")+'</p><ul>'+railStations+'</ul><p class="escobar-meta">'+escapeHtml(rail.coverageNote||"")+'</p><p class="escobar-meta">Publicación: '+escapeHtml(date(rail.sourcePublishedAt))+' · '+escapeHtml(rail.sourcePublicationNote||"")+' · Vigencia indicada: '+escapeHtml(date(rail.effectiveFrom))+'</p><p class="escobar-meta">Estado de circulación: '+escapeHtml(statusLabel(rail.operationalStatus))+' · Verificación: '+escapeHtml(date(rail.verification&&rail.verification.checkedAt))+' · '+escapeHtml(rail.verification&&rail.verification.scope||"")+'</p><p>'+sourceLink(rail.sourceUrl,"Ficha oficial de horarios ↗")+' '+sourceLink(rail.timetableUrl,"Consultar diagrama publicado ↗")+'</p></div>':"";
   el("escobar-mobility").innerHTML=
    '<p>'+escapeHtml(mobility.summary||"")+'</p>'
    +'<div class="escobar-mobility-stops">'+stopGroups+'</div>'
    +'<p class="escobar-meta">Listado publicado: '+escapeHtml(date(mobility.sourcePublishedAt))+' · Estado: '+escapeHtml(statusLabel(mobility.status))+' · Verificación web: '+escapeHtml(date(mobility.verification&&mobility.verification.checkedAt))+'. '+escapeHtml(mobility.verification&&mobility.verification.scope||"")+'</p>'
    +'<p>'+sourceLink(mobility.sourceUrl,"Noticia municipal y listado de paradas ↗")+' '+sourceLink(planner.sourceUrl,"Abrir planificador Mi Bus ↗")+'</p>'
-   +'<div class="escobar-item"><h4>Datos abiertos de transporte</h4><p>'+escapeHtml(dataset.name||"")+'</p><p class="escobar-meta">Actualización del conjunto: '+escapeHtml(date(dataset.lastUpdatedAt))+' · Periodicidad: '+escapeHtml(dataset.periodicity||"No informada")+' · Licencia: '+escapeHtml(dataset.license||"No informada")+' · Estado de integración: '+escapeHtml(statusLabel(dataset.status))+'</p><p class="escobar-meta">'+escapeHtml(dataset.verification&&dataset.verification.scope||"")+'</p>'+sourceLink(dataset.sourceUrl,"Consultar dataset y descargar recurso XLSX ↗")+'</div>';
+   +'<div class="escobar-item"><h4>Datos abiertos de transporte</h4><p>'+escapeHtml(dataset.name||"")+'</p><p class="escobar-meta">Actualización del conjunto: '+escapeHtml(date(dataset.lastUpdatedAt))+' · Periodicidad: '+escapeHtml(dataset.periodicity||"No informada")+' · Licencia: '+escapeHtml(dataset.license||"No informada")+' · Estado de integración: '+escapeHtml(statusLabel(dataset.status))+'</p><p class="escobar-meta">'+escapeHtml(dataset.verification&&dataset.verification.scope||"")+'</p>'+sourceLink(dataset.sourceUrl,"Consultar dataset y descargar recurso XLSX ↗")+'</div>'
+   +railHtml;
  }else{
   el("escobar-mobility").innerHTML='<p class="escobar-meta">No hay datos de movilidad cargados.</p>';
  }

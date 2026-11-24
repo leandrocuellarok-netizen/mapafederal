@@ -424,6 +424,45 @@
         "locality": "Loma Verde",
         "intersection": "Colectora Oeste y Los Laureles"
       }
-    ]
+    ],
+    "railService": {
+      "id": "mitre-victoria-capilla",
+      "name": "Línea Mitre — ramal Victoria–Capilla del Señor",
+      "sourceName": "Trenes Argentinos Operaciones",
+      "sourceUrl": "https://www.argentina.gob.ar/transporte/trenes-argentinos/horarios-tarifas-y-recorridos/areametropolitana/lineamitre/victoria-capilla-del-senor",
+      "timetableUrl": "https://www.argentina.gob.ar/sites/default/files/victoria_-_capilla_del_senor_2025-12-22_-_web.pdf",
+      "sourcePublishedAt": null,
+      "sourcePublicationNote": "El PDF no indica fecha de publicación; el documento indica «Vigente desde el 22/12/25».",
+      "effectiveFrom": "2025-12-22",
+      "validityPeriod": "Diagrama especial por obras publicado con vigencia indicada desde el 22/12/2025. No se presume que siga vigente si el operador publica una actualización.",
+      "status": "pendiente",
+      "operationalStatus": "no verificado",
+      "summary": "El PDF oficial enumera estaciones del ramal Victoria–Capilla del Señor y muestra servicios todos los días bajo un diagrama especial por obras. Dentro del Partido de Escobar identifica Garín, Maquinista Savio y Matheu.",
+      "coverageNote": "La cobertura se limita a las estaciones que aparecen en este PDF. No permite concluir que las otras localidades carezcan de otros medios de transporte ni de conectividad ferroviaria por otros recorridos.",
+      "verification": {
+        "checkedAt": "2026-11-23",
+        "scope": "Se revisó la ficha oficial de horarios y el PDF enlazado. El documento indica «Todos los días» y «Diagrama especial por obras», con vigencia desde 2025-12-22. La consulta confirma el horario publicado, no la circulación en tiempo real, la frecuencia actual ni la ausencia de cancelaciones. Consultar la app o los canales oficiales antes de viajar."
+      },
+      "stations": [
+        {
+          "id": "mitre-garin",
+          "stationName": "Garín",
+          "publishedName": "Garín",
+          "locality": "Garín"
+        },
+        {
+          "id": "mitre-maquinista-savio",
+          "stationName": "Maquinista Savio",
+          "publishedName": "Maq. Savio",
+          "locality": "Maquinista Savio"
+        },
+        {
+          "id": "mitre-matheu",
+          "stationName": "Matheu",
+          "publishedName": "Matheu",
+          "locality": "Matheu"
+        }
+      ]
+    }
   }
 }
