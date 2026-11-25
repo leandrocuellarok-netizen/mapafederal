@@ -8,15 +8,9 @@
     "source": "Reuters",
     "url": "https://www.reuters.com/world/india/indias-wipro-uks-bp-sign-partnership-to-take-over-some-finance-ops-2026-11-25/",
     "period": "Anuncio publicado el 25/11/2026. El nuevo modelo operativo se espera para 2027, sujeto a condiciones aplicables.",
-    "jurisdictions": [
-      "India",
-      "Hungría",
-      "Malasia"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "Reuters identifica operaciones y empleados en India, Hungría y Malasia; Wipro es una compañía india y BP tiene sede corporativa en el Reino Unido."
-    ],
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
     "jurisdictionScope": "Operaciones afectadas en India, Hungría y Malasia; compañías matrices de India y Reino Unido.",
     "sector": "Servicios empresariales / finanzas corporativas / outsourcing / inteligencia artificial / automatización / energía",
     "territorialRelevance": "Caso internacional de transformación de operaciones financieras y servicios empresariales mediante IA y automatización. Es una referencia comparativa para proveedores de BPO, software, consultoría y capacitación laboral; no se identificó una implementación en Argentina ni en Escobar.",
@@ -112,13 +106,9 @@
     "source": "Five9, Inc. — Form 8-K presentado ante la Securities and Exchange Commission",
     "url": "https://www.sec.gov/Archives/edgar/data/1288847/000119312526475778/d433495d8k.htm",
     "period": "Fecha del informe y cierre de la operación: 24/11/2026. Precio informado: USD 325 millones en efectivo, sujeto a ajustes contractuales.",
-    "jurisdictions": [
-      "Estados Unidos"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "El Form 8-K identifica a Five9 como emisor y confirma la fusión de Level AI como subsidiaria de propiedad total; el registro se presenta ante la SEC de Estados Unidos."
-    ],
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
     "jurisdictionScope": "Estados Unidos — operación societaria informada ante la SEC. Five9 declara actividad internacional; no se verificó un despliegue específico de Level AI en Argentina.",
     "sector": "Tecnología / inteligencia artificial empresarial / experiencia del cliente / contact centers / software / fusiones y adquisiciones",
     "territorialRelevance": "Señal de consolidación del mercado de IA aplicada a atención al cliente y automatización de contact centers. Puede servir como referencia competitiva para proveedores de software, integradores y empresas de servicios; no acredita inversión, contratación ni despliegue en Argentina o Escobar.",
