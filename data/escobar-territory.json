@@ -1362,6 +1362,40 @@
           },
           "areaDiscrepancyNote": "Las fuentes citan 23 ha (230.000 m²) y 42,124 ha para la misma reserva. El TDR de ComiLu no explica el método ni el ámbito medido. No se obtuvo el texto íntegro de la ordenanza ni una geometría oficial que permita conciliar las cifras. No se adopta ninguna cifra como límite cartográfico."
         }
+      },
+      {
+        "id": "zonas-anegamiento-tormentas-2025-partido-escobar",
+        "name": "Zonas de Anegamiento Detectadas a partir de Tormentas 2025 – Partido de Escobar",
+        "category": "Riesgo Climático y Gestión de Emergencias",
+        "description": "Identificación de zonas con presencia temporal de agua superficial mediante MNDWI aplicado a imágenes satelitales de eventos de tormentas ocurridos durante 2025. Es un registro retrospectivo de detección en imágenes, no un pronóstico ni una delimitación general de riesgo de inundación.",
+        "sourceName": "Estrategia Ambiental y datos — Municipalidad de Escobar",
+        "sourceUrl": "https://datos.escobar.gob.ar/dataset/zonas-de-anegamiento-detectadas-a-partir-de-tormentas-2025-partido-de-escobar",
+        "resourceUrl": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/zonas-de-anegamiento-detectadas-a-partir-de-tormentas-2025-partido-de-escobar/zonas_anegamientos_2025.geojson",
+        "resourceName": "zonas_anegamientos_2025.geojson",
+        "resourceSize": "806 KB",
+        "resourceFormat": "GeoJSON",
+        "sourcePublishedAt": null,
+        "sourcePublicationNote": "La ficha no informa fecha de publicación. Declara creación 01/10/2025 y última actualización 31/03/2026. Consultada el 25/11/2026.",
+        "createdAt": "2025-10-01",
+        "lastUpdatedAt": "2026-03-31",
+        "version": "1.0",
+        "periodicity": "Anual",
+        "license": "Open Data Commons Open Database License (ODbL)",
+        "territorialScope": "Partido de Escobar",
+        "localityDetail": "No especificada por la fuente; no se asigna a ninguna de las siete localidades.",
+        "observationPeriod": "Eventos de tormentas ocurridos durante 2025",
+        "observationPeriodStatus": "histórico",
+        "sourceMethod": "Índice Normalizado de Diferencia de Agua (MNDWI) aplicado a imágenes COPERNICUS/S2_SR_HARMONIZED.",
+        "sourceCrs": "No declarado en el GeoJSON",
+        "geometryIntegrationStatus": "pending",
+        "geometryNote": "El recurso GeoJSON se abrió como application/json y presenta una FeatureCollection. Las coordenadas observadas tienen magnitudes incompatibles con longitud/latitud WGS84 en grados (por ejemplo, X=5615569.59 e Y=6210297.90). El encabezado no incluye un miembro crs; no se asigna un EPSG por inferencia. No transformar ni dibujar hasta obtener CRS y método de referencia confirmados por el publicador. La ficha describe presencia temporal de agua superficial detectada en imágenes de tormentas de 2025; no acredita profundidad, duración, probabilidad, período de retorno, riesgo predial actual ni pronóstico.",
+        "status": "pendiente",
+        "validityPeriod": "Dataset versión 1.0 con última actualización declarada el 31/03/2026 y periodicidad anual. El período de observación corresponde a tormentas de 2025; no se verificó una edición posterior.",
+        "verification": {
+          "status": "verified",
+          "checkedAt": "2026-11-25",
+          "scope": "Se consultó la ficha municipal y se abrió el enlace Descargar del GeoJSON. El navegador devolvió contenido application/json con tipo FeatureCollection; las entidades visibles son polígonos y exponen atributos Id y gridcode en los ejemplos inspeccionados. La ficha identifica MNDWI e imágenes COPERNICUS/S2_SR_HARMONIZED de tormentas de 2025, versión 1.0, creación 01/10/2025, actualización 31/03/2026 y licencia ODbL. El GeoJSON no declara CRS ni localidad por entidad. No se realizó transformación, superposición con límites municipales, validación de cada geometría ni análisis de riesgo."
+        }
       }
     ]
   },
