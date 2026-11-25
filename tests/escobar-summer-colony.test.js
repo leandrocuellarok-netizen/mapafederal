@@ -6,8 +6,8 @@ const event = catalog.events.find(item => item.id === "colonia-verano-escobar-20
 
 assert.ok(event, "Falta la Colonia de Verano 2027 de Escobar");
 assert.equal(catalog.updatedAt, "2026-11-25");
-assert.equal(catalog.events.length, 6);
-assert.equal(new Set(catalog.events.map(item => item.id)).size, 6);
+assert.equal(catalog.events.length, 7);
+assert.equal(new Set(catalog.events.map(item => item.id)).size, 7);
 assert.equal(event.name, "Colonia de Verano 2027 — Partido de Escobar");
 assert.equal(event.startDate, "2027-01-04");
 assert.equal(event.endDate, "2027-01-28");
