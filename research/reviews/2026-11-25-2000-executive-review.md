@@ -685,3 +685,7 @@ El workflow #45692405744 confirmó que la normalización de jurisdicciones nacio
 
 ### Tercera corrección de CI — 17:13 ART
 El workflow #45692550405 pasó la validación del perfil Escobar y el exportador, pero el test específico del directorio sanitario conservaba dos aserciones con redacción anterior sobre el CAPS Selles. Se actualizaron ambas aserciones a la formulación vigente, sin cambiar datos, direcciones, teléfonos ni clasificación territorial. Nuevo workflow pendiente.
+
+
+### Cuarta corrección de CI — 17:14 ART
+La validación editorial detectó que los dos IDs nuevos de Radar IA no respetaban la convención determinista derivada de la URL. Se regeneraron los IDs a partir del hostname y la ruta de cada fuente primaria y se actualizó el test de regresión. Los titulares, fechas, fuentes y contenidos no cambiaron.

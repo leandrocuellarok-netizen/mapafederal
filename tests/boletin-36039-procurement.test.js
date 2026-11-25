@@ -39,7 +39,7 @@ const uba=catalog.opportunities.find(x=>x.id==="uba-licitacion-001-26-concesion-
 assert.match(uba.period,/1\.500 viandas.*50 períodos/i);
 const unm=catalog.opportunities.find(x=>x.id==="unm-licitacion-privada-05-2026-puesta-en-valor-aula-j004");
 assert.equal(unm.amount.value,32717096.87);
-assert.ok(news.some(x=>x.id==="news-cloudera-digital-sovereignty-private-ai-2026-11-24"&&x.date==="2026-11-24"));
-assert.ok(news.some(x=>x.id==="news-coforge-nuuron-agentic-vulnerability-remediation-2026-11-25"&&x.date==="2026-11-25"));
+assert.ok(news.some(x=>x.id==="news-www-cloudera-com-about-news-and-blogs-press-releases-2026-11-24-cloudera-launches-digital-sovereignty-solution-that-gives-enterprises-control-of-data-and-ai-across-the-entire-lifecycle-html"&&x.date==="2026-11-24"));
+assert.ok(news.some(x=>x.id==="news-news-coforge-com-newsroom-press-release-coforge-nuuron-expands-agentic-capabilities-to-accelerate-vulnerability-remediation-and-mitigate-cyber-risks-at-enterprise-scale"&&x.date==="2026-11-25"));
 assert.equal(new Set(catalog.opportunities.map(x=>x.id)).size,catalog.opportunities.length);
 console.log("BORA 36.039: 37 oportunidades nacionales, dos alertas de circular y LP 68/26 de Escobar; fuentes, fechas y estados conservadores comprobados.");
