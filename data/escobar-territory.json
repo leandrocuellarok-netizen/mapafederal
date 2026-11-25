@@ -741,8 +741,8 @@
     "status": "pendiente",
     "summary": "La publicación municipal indica que los QR permiten consultar líneas, llegadas estimadas, frecuencias y recorridos. Para planificar viajes con origen, destino y combinaciones, el Municipio remite al planificador Mi Bus.",
     "verification": {
-      "checkedAt": "2026-11-25",
-      "scope": "Revalidación focal del 25/11/2026: se consultó la ficha oficial Mi Bus y los horarios de la línea 506 Est. Escobar–Mercado Libre. No se revalidaron en esta ejecución el recurso XLSX de datos abiertos, la operación ferroviaria ni el estado físico de las 15 paradas QR y el puente peatonal."
+      "checkedAt": "2026-11-23",
+      "scope": "Se contrastaron las 15 intersecciones con la publicación municipal y se comprobó que el planificador Mi Bus carga un buscador de origen/destino y un listado de líneas. No se verificó presencialmente que cada QR siga instalado ni se confirmaron horarios, frecuencias u operación de cada servicio."
     },
     "planner": {
       "name": "Mi Bus — planificador de transporte",
