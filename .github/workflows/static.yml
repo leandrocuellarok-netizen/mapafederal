@@ -255,6 +255,7 @@ jobs:
       - name: Validate Escobar local profile and provenance
         run: |
           node --check assets/escobar-profile.js
+          node --check assets/foco-escobar.js
           python - <<'PY'
           import json
           from pathlib import Path
@@ -459,7 +460,7 @@ jobs:
           rail_nodes = [item for item in local_nodes if item["type"] == "Estación ferroviaria"]
           assert len(rail_nodes) == 5
           assert {item["locality"] for item in rail_nodes} == {"Belén de Escobar", "Ingeniero Maschwitz", "Garín", "Maquinista Savio", "Matheu"}
-          assert "escobar-mobility-stops" in html and "escobar-mobility-locality" in profile_js
+          assert "escobar-mobility-stops" in escobar_html and "escobar-mobility-locality" in profile_js
           assert "railInfrastructureHtml" in profile_js
           assert 'href="./foco-escobar/"' in html
           print("Foco Escobar: observatorio independiente, siete localidades, 246 barrios, indicadores, directorios y 14 referencias cartográficas validados.")
