@@ -410,5 +410,6 @@ El catálogo de oportunidades conserva 23 registros de Escobar: 5 abiertos (LP 7
 - Las páginas index.html, radar-ia/index.html e investment-finder/index.html conservan sus enlaces/rutas y referencias a los catálogos correspondientes.
 - Workflow #633 (run ID 45636669506), sobre el commit 98850aeec827f02a5c5fe1e9b479421e22c2ab05, tuvo validate=success y deploy=success. Ese run validó el cambio de URL canónica y los tests de procedencia de la colonia. El commit de datos de este ciclo es posterior y su nuevo workflow debe confirmarse por separado; no se declara aún el despliegue de este ciclo.
 - Commit Radar IA: 54361cb20dcd1e9e80d797bc0675c119cc0c9acb.
+- Registro completo: [ciclo 12:03](../runs/2026-11-25-gbie-cycle-1203.md).
 - Pendientes: resultado CI/Pages del commit de este ciclo; inspección visual independiente; reintentar sección 14523; obtener actas de apertura/adjudicación; confirmar formulario y cupos por sede de Escobar 360; resolver la jurisdicción parcelaria del BESS sin georreferenciarlo.
 - No se modificaron Investment Finder, Event Intelligence, arquitectura, contrato enterprise, módulos, nodos ni reglas de acceso público.
