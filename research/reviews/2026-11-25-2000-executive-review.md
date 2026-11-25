@@ -693,3 +693,7 @@ La validación editorial detectó que los dos IDs nuevos de Radar IA no respetab
 
 ### Quinta corrección de CI — 17:15 ART
 El workflow #45692949602 avanzó hasta la prueba de fuentes municipales y detectó que el test de LP 66/2026 esperaba 12/11 para `sourcePublishedAt`, aunque la URL principal del registro es la edición 14508 del 13/11. La edición 14505 del 12/11 se conserva como fuente complementaria y `validFrom` sigue reflejando la primera publicación. Se corrigió únicamente la expectativa del test.
+
+
+### Sexta corrección de CI — 17:16 ART
+El workflow #45693147512 superó la validación del perfil, el directorio sanitario y el catálogo editorial. La prueba municipal detectó que LP 66/2026 usaba una fecha de verificación esperada por defecto 24/11, mientras la ficha estaba correctamente revalidada el 25/11. Se explicitó la fecha en el test, sin cambiar el dato.
