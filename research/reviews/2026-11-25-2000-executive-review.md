@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 09:56 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 12:03 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,12 +8,12 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 57 registros |
-| Investment Finder | 73 registros |
-| Oportunidades abiertas | 35 |
-| Disponibilidad desconocida | 33 |
-| Cerradas | 5 |
-| Event Intelligence | 4 registros |
+| Radar IA | 59 registros |
+| Investment Finder | 90 registros |
+| Oportunidades abiertas | 48 |
+| Disponibilidad desconocida | 36 |
+| Cerradas | 6 |
+| Event Intelligence | 5 registros |
 | Nodos estratégicos | 86 |
 | Módulos documentados | 6 |
 | Módulos en piloto | 1 |
@@ -376,3 +376,38 @@ El catálogo de oportunidades conserva 23 registros de Escobar: 5 abiertos (LP 7
 ### Confirmación de publicación — ciclo 10:58
 - Workflow #628 (`45631057702`), sobre `ee14978b0f3ae6d16b44b190aa20d26da3ee73ff`: validación y despliegue de GitHub Pages completados con éxito. Se resolvieron el ID BIS no determinista, cuatro jurisdicciones provinciales inconsistentes, la whitelist de Merlo y la duplicación Reuters detectada al normalizar su URL.
 - El catálogo final del ciclo queda en 58 noticias y 90 oportunidades (48 abiertas, 36 desconocidas, 6 cerradas). La revisión visual independiente del sitio no fue posible con el navegador de verificación; el estado de publicación se sustenta en el workflow exitoso.
+
+
+## Actualización del ciclo 12:03 — 25/11/2026
+
+### Inspección previa y estado acumulado
+- Rama main; HEAD antes de editar: 87b24730c8e47a46ae087ccc6d5ed011ca282001 — registro de validación y publicación de la Colonia de Verano 2027 de Escobar.
+- Se revisaron commits recientes, arquitectura maestra docs/VILANOVA_AI_SOLUTIONS_MAPA_FEDERAL_MASTER_ARCHITECTURE.md, contrato data/enterprise-intelligence.json, manifiesto de módulos, catálogos Radar IA, Investment Finder y Event Intelligence, páginas y workflow.
+- Contrato sin cambios: freeFormReports=false, customAnalyses=by_request, predictiveClaimsRequireValidation=true, clientDataPublic=false.
+- Baseline: Radar IA 58; Investment Finder 90 (48 abiertas, 36 desconocidas, 6 cerradas); Event Intelligence 5; 86 nodos; 1 módulo piloto y 5 planificados.
+
+### Radar IA
+- Se añadió una noticia regulatoria, con fuente primaria del BOE: Real Decreto 1032/2026 de España, publicado el 21/11/2026 y vigente desde el 22/11/2026.
+- La norma fija requisitos de acceso y conexión eléctrica para centros de datos con potencia de acceso igual o superior a 10 MW; contempla criterios de energía renovable, eficiencia energética e hídrica, transparencia y salvaguardas de soberanía digital para sistemas públicos de categoría ALTA. Durante la transición al etiquetado europeo establece valores PUE ≤1,25 y WUE ≤0,1 con plazos de adaptación. No se presenta como regulación general de IA ni como norma aplicable en Argentina.
+- Catálogo: 58 → 59. ID determinista: news-www-boe-es-eli-es-rd-2026-11-20-1032.
+- Fuente primaria: https://www.boe.es/eli/es/rd/2026/11/20/1032
+- Fuente explicativa complementaria: https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html
+
+### Investment Finder y Escobar
+- Sin altas nuevas: se mantienen 90 oportunidades (48 open, 36 unknown, 6 closed).
+- Escobar conserva 23 registros municipales: 5 abiertos (LP 71, LP 72, LP 74, LP 75 y Red Sostenible), 15 desconocidos y 3 cerrados. El BESS Maschwitz sigue como registro provincial separado, con jurisdicción parcelaria sin resolver y disponibilidad desconocida.
+- Se revisó la edición bonaerense 14529 del 25/11: corresponde a la sección judicial; no aportó una nueva contratación municipal de Escobar. La sección 14523 siguió con timeout. Los avisos municipales LP 67/26 y LP 68/26 indican apertura el 20/11; sus ventanas de presentación vencieron. LP 67 ya figura cerrada; no se incorporó LP 68 como oportunidad activa ni se infirió adjudicación.
+- Fuentes: https://boletinoficial.gba.gob.ar/secciones/14529/ver ; https://www.escobar.gob.ar/pliego-licitacion-publica-no67-26/ ; https://www.escobar.gob.ar/pliego-licitacion-publica-no68-26/
+
+### Event Intelligence y cambios concurrentes
+- No se duplicó la Colonia de Verano 2027 incorporada concurrentemente antes de este ciclo. El registro existente conserva actividades del 04/01 al 28/01/2027 e inscripción general anunciada del 24/11 al 04/12/2026.
+- Se abrió directamente la URL canónica municipal y se confirmaron modalidades, sedes, horarios y el acceso estacional a piletas durante enero y febrero, con cupos limitados y requisito de socio/validación biométrica. No se confirmó cupo individual ni se creó un registro separado para piletas.
+- Fuente: https://www.escobar.gob.ar/noticias/escobar-abre-la-inscripcion-para-la-colonia-de-verano-2027-y-anuncia-l/
+
+### Validación, publicación y bloqueos
+- El JSON de Radar IA se parseó y se validaron 59 registros, IDs deterministas, URLs únicas, fechas no futuras, categorías, geografía explícita/no especificada y estados de verificación. Se comprobó HTTPS para fuente primaria y complementaria.
+- Las páginas index.html, radar-ia/index.html e investment-finder/index.html conservan sus enlaces/rutas y referencias a los catálogos correspondientes.
+- Workflow #633 (run ID 45636669506), sobre el commit 98850aeec827f02a5c5fe1e9b479421e22c2ab05, tuvo validate=success y deploy=success. Ese run validó el cambio de URL canónica y los tests de procedencia de la colonia. El commit de datos de este ciclo es posterior y su nuevo workflow debe confirmarse por separado; no se declara aún el despliegue de este ciclo.
+- Commit Radar IA: 54361cb20dcd1e9e80d797bc0675c119cc0c9acb.
+- Pendientes: resultado CI/Pages del commit de este ciclo; inspección visual independiente; reintentar sección 14523; obtener actas de apertura/adjudicación; confirmar formulario y cupos por sede de Escobar 360; resolver la jurisdicción parcelaria del BESS sin georreferenciarlo.
+- No se modificaron Investment Finder, Event Intelligence, arquitectura, contrato enterprise, módulos, nodos ni reglas de acceso público.
