@@ -242,7 +242,7 @@ assert.equal(reserves.documentedFacility.address, "Sucre 1550 (PES), Ingeniero M
 assert.equal(reserves.documentedFacility.areaHa, 23);
 assert.equal(reserves.documentedFacility.ordinance, "5767/19");
 assert.equal(reserves.documentedFacility.hours, "De 9 a 17 h");
-assert.equal(reserves.documentedFacility.days, "No especificados en la ficha municipal actual consultada el 25/11/2026");
+assert.equal(reserves.documentedFacility.days, "No especificados en la ficha municipal actual; las fuentes municipales antiguas discrepan.");
 assert.equal(reserves.documentedFacility.admission, "Gratuita");
 assert.equal(reserves.documentedFacility.status, "pendiente");
 assert.equal(reserves.documentedFacility.operationalStatus, "no verificado");
@@ -250,6 +250,23 @@ assert.equal(reserves.documentedFacility.sourcePublishedAt, null);
 assert.equal(reserves.documentedFacility.verification.checkedAt, "2026-11-25");
 assert.match(reserves.documentedFacility.statusNote, /no confirma apertura en tiempo real/i);
 assert.match(reserves.documentedFacility.statusNote, /martes a domingos/i);
+assert.match(reserves.documentedFacility.statusNote, /miércoles a domingos/i);
+assert.match(reserves.documentedFacility.statusNote, /no se fija un calendario vigente/i);
+assert.equal(reserves.documentedFacility.areaEvidence.length, 2);
+const ordinanceAreaEvidence = reserves.documentedFacility.areaEvidence.find(item => item.id === "ordenanza-5767-resumen-eia-2022");
+assert.equal(ordinanceAreaEvidence.areaM2, 230000);
+assert.equal(ordinanceAreaEvidence.areaHa, 23);
+assert.match(ordinanceAreaEvidence.note, /parcela 426a/i);
+const comiluAreaEvidence = reserves.documentedFacility.areaEvidence.find(item => item.id === "comilu-tdr-2024");
+assert.equal(comiluAreaEvidence.areaHa, 42.124);
+assert.match(comiluAreaEvidence.note, /no explica el método de medición/i);
+assert.match(reserves.documentedFacility.areaDiscrepancyNote, /no se adopta ninguna cifra como límite cartográfico/i);
+assert.equal(reserves.documentedFacility.cadastralReference.jurisdiction, "Partido 118 (Escobar)");
+assert.equal(reserves.documentedFacility.cadastralReference.circumscription, "IV");
+assert.equal(reserves.documentedFacility.cadastralReference.parcel, "426a");
+assert.equal(reserves.documentedFacility.cadastralReference.northBoundaryDescription, "Arroyo Escobar");
+assert.equal(reserves.documentedFacility.cadastralReference.areaInOrdinanceSummaryM2, 230000);
+for (const claim of reserves.documentedFacility.areaEvidence) assert.equal(new URL(claim.sourceUrl).protocol, "https:");
 for (const url of [reserves.sourceUrl, reserves.documentedFacility.sourceUrl, ...reserves.documentedFacility.relatedSources.map(item => item.url)]) {
   assert.equal(new URL(url).protocol, "https:");
 }
@@ -257,4 +274,8 @@ assert.match(profile, /item\.resourceChecks/);
 assert.match(profile, /item\.documentedFacility/);
 assert.match(profile, /escobar-environmental-facility/);
 assert.match(profile, /Ficha municipal de la reserva/);
+assert.match(profile, /areaEvidenceBlock/);
+assert.match(profile, /areaDiscrepancyNote/);
+assert.match(profile, /cadastralReference/);
+assert.match(profile, /Contraste documental de superficie y parcela/);
 
