@@ -380,7 +380,7 @@ jobs:
           assert caps["phone"] is None
           assert caps["status"] == "operativo"
           assert caps["verification"]["checkedAt"] == "2026-11-25"
-          assert "no se asigna barrio ni teléfono único" in caps["verification"]["scope"].lower()
+          assert "ni asignar un barrio definitivo" in caps["verification"]["scope"].lower()
           parsed_map = urlparse(caps["mapUrl"])
           assert parsed_map.scheme == "https" and parsed_map.netloc == "www.google.com"
           profile_js = Path("assets/foco-escobar.js").read_text(encoding="utf-8")

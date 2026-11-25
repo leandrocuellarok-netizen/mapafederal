@@ -677,3 +677,7 @@ Corte provisional 16:59 ART. El balance de las 20:00 requiere una última compro
 
 ### Nota de calidad 17:00 ART
 El primer CI de esta ejecución detectó una incompatibilidad de esquema en el exportador CSV: los registros con alcance nacional deben llevar `jurisdiction=null`, aunque el aviso identifique una sede local. Se corrigieron las fichas afectadas conservando el dato geográfico en `location`, y se endureció el test de regresión. El nuevo CI y Pages deben confirmarse antes de considerar publicada la actualización.
+
+
+### Segunda corrección de CI — 17:11 ART
+El workflow #45692405744 confirmó que la normalización de jurisdicciones nacionales resolvió el fallo del exportador CSV. La validación del perfil Escobar detectó luego una aserción textual desactualizada sobre el CAPS Selles: se actualizó el test para coincidir con la formulación vigente (“ni asignar un barrio definitivo”), sin cambiar la evidencia territorial. Nuevo workflow pendiente de resultado.
