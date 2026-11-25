@@ -52,10 +52,18 @@ assert.equal(health.pendingDirectoryDiscrepancies.length, 0, "La discrepancia de
 
 const selles = health.facilities.find(item => item.id === "caps-juan-carlos-selles");
 assert.equal(selles.phone, null, "No consolidar teléfonos oficiales contradictorios");
+assert.equal(selles.address, "Pablo Marín s/n, entre Islas Malvinas e Hipólito Yrigoyen, Garín");
+assert.ok(!selles.mapUrl.includes("Fonavi"), "El buscador cartográfico no debe fijar un barrio controvertido");
 assert.match(selles.addressNote, /Fonavi/);
 assert.match(selles.addressNote, /24 de Febrero/);
+assert.match(selles.verification.scope, /Cartilla de salud/);
+assert.match(selles.serviceNote, /Cartilla de salud/);
 assert.match(selles.serviceNote, /11 2150-0302/);
 assert.match(selles.serviceNote, /449-3444/);
+const sellesHealthCard = selles.relatedSources.find(source => source.url === "https://www.escobar.gob.ar/municipio/prestaciones-con-o-sin-obra-social/");
+assert.ok(sellesHealthCard, "Falta la Cartilla de salud municipal");
+assert.equal(sellesHealthCard.sourcePublishedAt, null, "No inventar fecha de publicación");
+assert.equal(sellesHealthCard.verification.checkedAt, "2026-11-24");
 
 const lopez = health.facilities.find(item => item.id === "hospital-horacio-lopez");
 assert.equal(lopez.address, null, "No seleccionar una dirección entre las fuentes municipales contradictorias");

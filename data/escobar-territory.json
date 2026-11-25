@@ -375,29 +375,29 @@
         "name": "CAPS Juan Carlos Selles",
         "locality": "Garín",
         "category": "CAPS",
-        "address": "Pablo Marín s/n, entre Islas Malvinas e Hipólito Yrigoyen (Fonavi), Garín",
+        "address": "Pablo Marín s/n, entre Islas Malvinas e Hipólito Yrigoyen, Garín",
         "serviceHours": "Todos los días, las 24 horas",
         "services": [
           "Guardia clínica (Guardias y emergencias)",
-          "Guardia general (cartillas IOMA/PAMI)"
+          "Guardia general (Cartilla de salud, IOMA y PAMI)"
         ],
         "phone": null,
         "sourceUrl": "https://www.escobar.gob.ar/municipio/guardias/",
         "sourcePublishedAt": null,
         "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24.",
-        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pablo%20Mar%C3%ADn%20s%2Fn%2C%20entre%20Islas%20Malvinas%20e%20Hip%C3%B3lito%20Yrigoyen%20(Fonavi)%2C%20Gar%C3%ADn%2C%20Escobar%2C%20Buenos%20Aires%2C%20Argentina",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pablo%20Mar%C3%ADn%20entre%20Islas%20Malvinas%20e%20Hip%C3%B3lito%20Yrigoyen%2C%20Gar%C3%ADn%2C%20Escobar%2C%20Buenos%20Aires%2C%20Argentina",
         "status": "operativo",
-        "summary": "CAPS municipal con guardia clínica. Las fuentes oficiales discrepan sobre la referencia barrial y el teléfono; se conserva Garín como localidad, sin asignar barrio ni teléfono único.",
+        "summary": "CAPS municipal con guardia clínica. La Cartilla de salud y Guardias y emergencias lo ubican en B° 24 de Febrero, Garín; Centros de salud solo consigna la intersección y Teléfonos útiles conserva la referencia Fonavi. Se mantiene Garín como localidad, sin consolidar barrio ni teléfono único.",
         "validityPeriod": "Directorios municipales consultados el 2026-11-24; horarios, prestaciones y contactos sujetos a actualización.",
         "verification": {
           "status": "verified",
           "checkedAt": "2026-11-24",
-          "scope": "Se contrastaron Guardias y emergencias (B° 24 de Febrero y teléfono 11 2150-0302), IOMA y PAMI (misma referencia y teléfono), Teléfonos útiles (Fonavi y (0348) 449-3444) y Centros de salud (Pablo Marín entre Islas Malvinas e Hipólito Yrigoyen, sin barrio ni teléfono). Se conserva la localidad Garín, pero no se asigna barrio ni teléfono único. Verificación documental, sin comprobación presencial."
+          "scope": "Se contrastaron Guardias y emergencias (B° 24 de Febrero, Garín y teléfono 11 2150-0302), Cartilla de salud (B° 24 de Febrero, Garín; guardia general las 24 horas), IOMA y PAMI (misma referencia y teléfono), Teléfonos útiles (Fonavi y 0348 449-3444) y Centros de salud (Pablo Marín entre Islas Malvinas e Hipólito Yrigoyen, Garín, sin barrio ni teléfono). Se conserva Garín como localidad; no se asigna barrio ni teléfono único. Verificación documental, sin comprobación presencial."
         },
-        "serviceNote": "La discrepancia documental continúa: Guardias y emergencias, IOMA y PAMI publican B° 24 de Febrero y 11 2150-0302; Teléfonos útiles publica Fonavi y (0348) 449-3444; Centros de salud solo indica las calles. No se consolida barrio ni teléfono hasta que las fichas municipales coincidan.",
-        "serviceNoteSourceUrl": "https://www.escobar.gob.ar/municipio/telefonos-utiles/",
-        "addressNote": "La referencia barrial difiere entre fuentes municipales: Teléfonos útiles indica Fonavi; Guardias y emergencias, IOMA y PAMI indican B° 24 de Febrero; Centros de salud solo consigna las calles. No se asigna un barrio definitivo.",
-        "addressSourceUrl": "https://www.escobar.gob.ar/municipio/telefonos-utiles/",
+        "serviceNote": "La Cartilla de salud, Guardias y emergencias e IOMA/PAMI publican B° 24 de Febrero y 11 2150-0302; Teléfonos útiles conserva Fonavi y 0348 449-3444; Centros de salud solo consigna las calles. Se mantiene el horario de guardia publicado, pero no se consolida un barrio ni un teléfono único.",
+        "serviceNoteSourceUrl": "https://www.escobar.gob.ar/municipio/prestaciones-con-o-sin-obra-social/",
+        "addressNote": "La Cartilla de salud y Guardias y emergencias publican B° 24 de Febrero, Garín; Teléfonos útiles conserva Fonavi; Centros de salud solo consigna las calles. No se asigna un barrio definitivo.",
+        "addressSourceUrl": "https://www.escobar.gob.ar/municipio/centros-de-salud/",
         "sourceName": "Municipalidad de Escobar",
         "relatedSources": [
           {
@@ -434,6 +434,20 @@
             "url": "https://www.escobar.gob.ar/municipio/prestaciones-pami/",
             "sourcePublishedAt": null,
             "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24."
+          },
+          {
+            "sourceName": "Municipalidad de Escobar — Cartilla de salud",
+            "label": "Cartilla de salud (con o sin obra social)",
+            "url": "https://www.escobar.gob.ar/municipio/prestaciones-con-o-sin-obra-social/",
+            "sourcePublishedAt": null,
+            "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24.",
+            "sourceType": "Cartilla municipal de salud",
+            "validityPeriod": "Directorio consultado el 2026-11-24; ubicación, prestaciones y horarios sujetos a actualización.",
+            "verification": {
+              "status": "verified",
+              "checkedAt": "2026-11-24",
+              "scope": "La ficha identifica al CAPS Juan Carlos Selles en Pablo Marín, B° 24 de Febrero, Garín; informa guardia general todos los días, las 24 horas, y teléfono 11 2150-0302. No resuelve la discrepancia con la referencia Fonavi de Teléfonos útiles."
+            }
           }
         ]
       },
