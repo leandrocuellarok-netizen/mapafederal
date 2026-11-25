@@ -38,8 +38,10 @@ La referencia de calle es una declaración municipal. No se obtuvo número de pu
 - Primer workflow: run `45540286692` (run #532), asociado al commit anterior; `validate` falló en `Test Escobar economic profile and company evidence` y `deploy` fue omitido.
 - Causa observada: el cambio de `location` había reemplazado una frase de control que la prueba existente exige para conservar la advertencia de contradicción parcelaria. No falló la evidencia nueva; falló la preservación literal del guardarraíl textual.
 - Corrección: se restauró explícitamente la frase `la localización parcelaria permanece en contradicción documental y no debe georreferenciarse`; se mantienen las aserciones nuevas sobre calle Brasil y su atribución municipal.
-- Commit correctivo y nuevo workflow: pendientes.
-- Comprobación HTTP independiente de la página: no disponible en esta ejecución por fallo de resolución DNS del entorno; no se afirma verificación visual.
+- Commit correctivo: `ec0d1ff2951e720c73f5f1ef213d2efb5891a372` — “Preserve BESS parcel contradiction guardrail”.
+- Workflow correctivo: run `45540387288` (run #533), asociado al commit correctivo; `validate: success` y `deploy: success`. La prueba `Test Escobar economic profile and company evidence` y el resto de los pasos de validación finalizaron correctamente.
+- GitHub Pages: el paso `Deploy to GitHub Pages` finalizó en `success` para el commit correctivo.
+- Comprobación HTTP independiente: no disponible; el navegador de consulta no pudo abrir GitHub Pages y el entorno de ejecución devolvió fallo de resolución DNS. Se confirma el pipeline, no una inspección visual independiente.
 
 ## Pendientes
 
@@ -47,3 +49,10 @@ La referencia de calle es una declaración municipal. No se obtuvo número de pu
 2. Conseguir aclaración catastral o administrativa sobre partido, circunscripción, sección, parcela y partida.
 3. Verificar la Declaración de Impacto Ambiental final, la licencia municipal de construcción y la habilitación de funcionamiento por separado.
 4. Mantener el registro en alcance provincial y sin marcador mientras no se resuelva la jurisdicción parcelaria.
+
+
+## Resultado de cierre
+
+- La referencia territorial del corredor de calle Brasil quedó incorporada como declaración municipal atribuida.
+- La discrepancia parcelaria Tigre/Escobar se mantiene visible; no se asignó el proyecto a una jurisdicción municipal ni se agregó un punto.
+- La primera ejecución de validación detectó una regresión textual en el guardarraíl de contradicción; se corrigió sin relajar la prueba. La ejecución posterior validó y desplegó correctamente.
