@@ -202,7 +202,7 @@ La página independiente de Investment Finder permite exportar a CSV únicamente
 
 La interfaz presenta los seis módulos desde un único manifiesto: `data/ai-modules.json`. Federal Reports permanece en piloto funcional; Federal AI Assistant, Investment Finder, Territorial Monitor, Event Intelligence y Executive Travel AI permanecen planificados. Los estados, capacidades actuales, dependencias y próximos pasos se mantienen en ese archivo y no deben duplicarse como una segunda lista independiente en la interfaz.
 
-Las funciones comprobables actuales son el mapa, el directorio de nodos, los perfiles OPEX, las noticias curadas, el catálogo documental filtrable de Investment Finder y las exportaciones CSV/Markdown. `data/events.json` contiene cuatro registros documentales validados: dos eventos históricos completados y dos eventos futuros. No existe una agenda integrada; los registros no confirman cupos ni inscripción vigente. El buscador no es un modelo de IA y la sección de módulos no implica integraciones en producción.
+Las funciones comprobables actuales son el mapa, el directorio de nodos, los perfiles OPEX, las noticias curadas, el catálogo documental filtrable de Investment Finder y las exportaciones CSV/Markdown. `data/events.json` contiene cinco registros documentales validados: dos eventos históricos completados y tres eventos futuros confirmados. No existe una agenda integrada; los registros no confirman cupos ni el estado de la inscripción individual. El buscador no es un modelo de IA y la sección de módulos no implica integraciones en producción.
 
 ## Base territorial de Escobar
 
@@ -231,7 +231,7 @@ Fuentes primarias: [Municipalidad de Escobar — Escobar, tierra de inversiones]
 - `assets/foco-escobar.js`: renderizado de los datos territoriales, económicos, de servicios, transparencia y movilidad de Escobar.
 - `data/strategic-nodes.json`: catálogo geográfico.
 - `data/news.json`: noticias curadas.
-- `data/events.json`: catálogo versionado de Event Intelligence; contiene cuatro registros documentales validados: dos eventos históricos completados y dos eventos futuros confirmados. No es una agenda integrada ni confirma cupos o inscripción vigente.
+- `data/events.json`: catálogo versionado de Event Intelligence; contiene cinco registros documentales validados: dos eventos históricos completados y tres eventos futuros confirmados. No es una agenda integrada ni confirma cupos ni el estado de la inscripción individual.
 - `data/investment-opportunities.json`: catálogo documental versionado de Investment Finder; contiene registros nacionales del RIMI y del Programa KIT 4.0. Ambos conservan disponibilidad desconocida hasta confirmar sus condiciones operativas, sin presentarse como convocatorias abiertas.
 - Leaflet 1.9.4: visualización geográfica.
 - OpenStreetMap: teselas, sujetas a disponibilidad y política de uso.
@@ -259,7 +259,7 @@ INDEC publicó el OPEX del primer semestre de 2026 el 2 de septiembre de 2026, c
 
 ## Event Intelligence: actividad empresarial y territorial de Escobar
 
-El catálogo `data/events.json` conserva dos eventos históricos documentados del partido de Escobar: la 5.ª Feria Japonesa Bazaa (15/11/2026) y la Ronda de Negocios Escobar 2026 (24/11/2026), realizada en Espacio Mendoza, Ingeniero Maschwitz. Para la Ronda, la fecha y sede se contrastaron con la agenda oficial de PBA; las cifras de participación (277 empresas y entidades, 72 de Escobar, más de 350 asistentes y 33 ramas productivas) se atribuyen a la cobertura de Zona Norte Diario. No se infieren acuerdos comerciales ni inversiones cerradas. La ficha omite la hora por discrepancia entre la agenda oficial y el portal de inscripción. Ambos registros se marcan como `completed`: no representan una agenda activa ni disponibilidad futura.
+El catálogo `data/events.json` conserva dos eventos históricos documentados del partido de Escobar: la 5.ª Feria Japonesa Bazaa (15/11/2026) y la Ronda de Negocios Escobar 2026 (24/11/2026), realizada en Espacio Mendoza, Ingeniero Maschwitz. Para la Ronda, la fecha y sede se contrastaron con la agenda oficial de PBA; las cifras de participación (277 empresas y entidades, 72 de Escobar, más de 350 asistentes y 33 ramas productivas) se atribuyen a la cobertura de Zona Norte Diario. No se infieren acuerdos comerciales ni inversiones cerradas. La ficha omite la hora por discrepancia entre la agenda oficial y el portal de inscripción. Ambos registros se marcan como `completed`: no representan una agenda activa ni disponibilidad futura. También se registra la Colonia de Verano 2027, publicada por el Municipio el 16/11/2026: actividades del 04 al 28/01/2027 e inscripción general anunciada del 24/11 al 04/12/2026. La fuente identifica polideportivos municipales, Club Italiano (Loma Verde) y YMCAHUASI (Matheu); el registro es documental y no confirma cupos ni inscripción individual.
 
 Fuente primaria: [Municipalidad de Escobar — 5.ª Feria Japonesa](https://www.escobar.gob.ar/noticias/este-domingo-llega-a-escobar-la-5-edicion-de-la-feria-japonesa/).
 

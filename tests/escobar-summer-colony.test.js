@@ -1,0 +1,51 @@
+const assert = require("node:assert/strict");
+const fs = require("node:fs");
+
+const catalog = JSON.parse(fs.readFileSync("data/events.json", "utf8"));
+const event = catalog.events.find(item => item.id === "colonia-verano-escobar-2027");
+
+assert.ok(event, "Falta la Colonia de Verano 2027 de Escobar");
+assert.equal(catalog.updatedAt, "2026-11-25");
+assert.equal(catalog.events.length, 5);
+assert.equal(new Set(catalog.events.map(item => item.id)).size, 5);
+assert.equal(event.name, "Colonia de Verano 2027 — Partido de Escobar");
+assert.equal(event.startDate, "2027-01-04");
+assert.equal(event.endDate, "2027-01-28");
+assert.equal(event.time, null, "No se debe inventar un horario único para modalidades con turnos diferentes");
+assert.equal(event.timeZone, "America/Argentina/Buenos_Aires");
+assert.equal(event.scope, "local");
+assert.equal(event.jurisdiction, "Buenos Aires");
+assert.equal(event.organizer, "Municipalidad de Escobar");
+assert.equal(event.sourceName, "Municipalidad de Escobar");
+assert.equal(event.sourcePublishedAt, "2026-11-16");
+assert.equal(event.status, "confirmed");
+assert.equal(event.verification.status, "verified");
+assert.equal(event.verification.checkedAt, "2026-11-25");
+assert.equal(new URL(event.sourceUrl).protocol, "https:");
+assert.match(event.period, /24\/11\/2026–04\/12\/2026/);
+assert.match(event.period, /04\/01\/2027–28\/01\/2027/);
+assert.match(event.venue, /Loma Verde/);
+assert.match(event.venue, /Matheu/);
+assert.match(event.venue, /Polideportivo Luis Monti/);
+assert.match(event.description, /propuesta gratuita/i);
+assert.match(event.description, /bono contribución de ARS 5\.000 es voluntario/i);
+assert.match(event.description, /verificación biométrica/i);
+assert.match(event.description, /08:00 a 12:00/);
+assert.match(event.description, /13:00 a 17:00/);
+assert.match(event.territorialRelevance, /no ofrece una nómina completa/i);
+assert.match(event.verification.scope, /HTTP 403/);
+assert.match(event.verification.scope, /No se verificó el estado actual del formulario/i);
+assert.ok(Array.isArray(event.relatedSources) && event.relatedSources.length === 1);
+assert.equal(new URL(event.relatedSources[0].url).protocol, "https:");
+assert.equal(event.coords, undefined, "No se agregan coordenadas sin evidencia cartográfica");
+assert.equal(event.lat, undefined);
+assert.equal(event.long, undefined);
+
+const readme = fs.readFileSync("README.md", "utf8");
+const roadmap = fs.readFileSync("docs/intelligence-modules-roadmap.md", "utf8");
+assert.match(readme, /cinco registros documentales validados/);
+assert.match(readme, /Colonia de Verano 2027/);
+assert.match(roadmap, /cinco registros documentales verificados/);
+assert.doesNotMatch(roadmap, /el catálogo permanece vacío/);
+
+console.log("Escobar Event Intelligence: Colonia de Verano 2027, fechas, inscripción, sedes, gratuidad, trazabilidad, ausencia de cupos confirmados y falta de georreferencias comprobados.");

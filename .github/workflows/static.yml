@@ -482,6 +482,9 @@ jobs:
       - name: Test Escobar early-childhood directory and source reconciliation
         run: node tests/escobar-early-childhood.test.js
 
+      - name: Test Escobar summer colony event provenance
+        run: node tests/escobar-summer-colony.test.js
+
       - name: Validate geographic and editorial JSON
         run: |
           python - <<'PY'

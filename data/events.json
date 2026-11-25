@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24",
-  "note": "Catálogo documental de eventos con procedencia y verificación. No es una agenda integrada ni confirma cupos o inscripción. Los registros históricos se conservan como completados. Para la Ronda RIGI del 02/12/2026, la inscripción a reuniones B2B cerró el 16/11; la asistencia a otras actividades se anuncia hasta el 30/11. Para la Ronda de Negocios de Energía y Minería de PBA del 01/12/2026, la inscripción cerró el 13/11; no se presume acceso para nuevas empresas. Se agregó la Ronda de Negocios Escobar 2026 (24/11) como evento completado: fecha y sede contrastadas con PBA; cifras de participación atribuidas a cobertura local, sin inferir negocios cerrados ni cupos.",
+  "updatedAt": "2026-11-25",
+  "note": "Catálogo documental de eventos con procedencia y verificación. No es una agenda integrada ni confirma cupos o inscripción. Los registros históricos se conservan como completados. Para la Ronda RIGI del 02/12/2026, la inscripción a reuniones B2B cerró el 16/11; la asistencia a otras actividades se anuncia hasta el 30/11. Para la Ronda de Negocios de Energía y Minería de PBA del 01/12/2026, la inscripción cerró el 13/11; no se presume acceso para nuevas empresas. Se agregó la Ronda de Negocios Escobar 2026 (24/11) como evento completado: fecha y sede contrastadas con PBA; cifras de participación atribuidas a cobertura local, sin inferir negocios cerrados ni cupos. Se agregó la Colonia de Verano 2027 de Escobar como evento futuro confirmado: publicación municipal del 16/11/2026, inscripción general anunciada del 24/11 al 04/12 y actividades del 04/01 al 28/01/2027. El registro es documental; no confirma cupos ni el estado del formulario o de una inscripción individual.",
   "events": [
     {
       "id": "feria-japonesa-bazaa-5-edicion-2026",
@@ -108,6 +108,37 @@
         "status": "verified",
         "checkedAt": "2026-11-24",
         "scope": "La página oficial del Ministerio de Producción de PBA confirma que la Ronda de Negocios Escobar 2026 figura entre los eventos realizados el 24/11 y ubica la sede en Espacio Mendoza, calle Mendoza esquina Av. Independencia, Ingeniero Maschwitz. La cobertura de Zona Norte Diario del 24/11 aporta las cifras de participación; no se localizaron en un comunicado oficial de resultados al corte. La agenda oficial consigna 8:30 y el portal de inscripción 11:30; se omite la hora por discrepancia. No se atribuyen negocios concretados ni inversión comprometida."
+      }
+    },
+    {
+      "id": "colonia-verano-escobar-2027",
+      "name": "Colonia de Verano 2027 — Partido de Escobar",
+      "startDate": "2027-01-04",
+      "endDate": "2027-01-28",
+      "time": null,
+      "timeZone": "America/Argentina/Buenos_Aires",
+      "scope": "local",
+      "jurisdiction": "Buenos Aires",
+      "venue": "Polideportivos municipales del Partido de Escobar; Club Italiano (Los Italianos y La Escondida, Loma Verde) para adultos mayores; Club de Amigos YMCAHUASI (España 177, Matheu) para personas con discapacidad de 14 años en adelante; inscripción presencial de las modalidades integradas en el Polideportivo Luis Monti, Belén de Escobar.",
+      "organizer": "Municipalidad de Escobar",
+      "sector": "Deporte / recreación / inclusión / comunidad",
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/escobar-abre-la-inscripcion-para-la-colonia-de-verano-2027-y-anuncia-los-horarios-de-las-piletas-municipales/",
+      "sourcePublishedAt": "2026-11-16",
+      "period": "Inscripción prioritaria para socios: 17/11/2026–23/11/2026 (finalizada). Inscripción general: 24/11/2026–04/12/2026. Actividades: 04/01/2027–28/01/2027.",
+      "status": "confirmed",
+      "description": "La Municipalidad presenta una propuesta gratuita de actividades recreativas y deportivas para chicos y chicas de 5 a 13 años, adolescentes de 14 a 17, adultos mayores y personas con discapacidad. Para niñas, niños y adolescentes se anuncian dos turnos, de 08:00 a 12:00 y de 13:00 a 17:00, en todos los polideportivos municipales. La colonia para adultos mayores se desarrollará de 09:00 a 12:00 en el Club Italiano, Loma Verde. La Colonia Integrada para personas con discapacidad de 5 a 13 años se realizará junto a los demás grupos en todos los polideportivos; para personas de 14 años en adelante, la sede anunciada es YMCAHUASI, Matheu. La inscripción general para chicos y adolescentes se anunció del 24/11 al 04/12/2026: preinscripción en Escobar 360 con verificación biométrica y confirmación presencial en el polideportivo elegido. Para adultos mayores, la inscripción será presencial en cualquiera de las sedes deportivas; para ambas modalidades integradas, en el Polideportivo Luis Monti, de lunes a viernes de 10:00 a 18:00 y sábados de 09:00 a 12:00. La propuesta se anuncia como gratuita; el bono contribución de ARS 5.000 es voluntario.",
+      "territorialRelevance": "Programa municipal de alcance distrital, con actividades en polideportivos del Partido y sedes específicas en Loma Verde y Matheu. La publicación no ofrece una nómina completa de polideportivos, cupos por sede ni confirmación individual de inscripción.",
+      "relatedSources": [
+        {
+          "label": "Municipalidad de Escobar — índice de noticias (confirma título y fecha de publicación)",
+          "url": "https://www.escobar.gob.ar/noticias-columnas/"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se contrastó el texto indexado de la publicación municipal fechada el 16/11/2026 con el índice oficial de noticias, que muestra el mismo título y fecha. La fuente anuncia actividades del 04/01 al 28/01/2027, inscripción general del 24/11 al 04/12/2026, modalidades, sedes y requisitos. La apertura general está dentro del período publicado al 25/11/2026. La consulta directa del artículo devolvió HTTP 403; por ello la comprobación se limita al contenido indexado y al índice municipal. No se verificó el estado actual del formulario de Escobar 360, cupos por sede ni inscripción individual."
       }
     }
   ]
