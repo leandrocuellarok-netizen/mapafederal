@@ -77,23 +77,23 @@
       "sourceName": "Municipalidad de Escobar",
       "sourceUrl": "https://www.escobar.gob.ar/municipio/guardias/",
       "sourcePublishedAt": null,
-      "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24.",
+      "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-25.",
       "locality": "Garín",
       "address": "Pablo Marín 24, Garín",
       "serviceHours": "Guardia general: todos los días, las 24 h. Atención CAPS: lunes a viernes de 7 a 14 h. Vacunatorio: lunes a viernes de 8 a 13 h.",
       "phone": null,
       "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pablo%20Mar%C3%ADn%2024%2C%20Gar%C3%ADn%2C%20Escobar%2C%20Buenos%20Aires%2C%20Argentina",
       "status": "operativo",
-      "summary": "CAPS municipal ubicado en Pablo Marín 24, Garín. La Cartilla de salud separa guardia general de 24 horas, atención CAPS de lunes a viernes de 7 a 14 y vacunatorio de 8 a 13. La referencia barrial difiere entre secciones y directorios; se conserva Garín sin asignar un barrio definitivo ni un teléfono único.",
-      "validityPeriod": "Ficha municipal consultada el 2026-11-24; horario y prestaciones sujetos a actualización.",
+      "summary": "CAPS municipal listado en Pablo Marín 24, Garín. La Cartilla de salud separa guardia general de 24 horas, atención CAPS de lunes a viernes de 7 a 14 y vacunatorio de 8 a 13. Los filtros de Cartilla y Centros de salud enumeran seis localidades y omiten 24 de Febrero, aunque el bloque de Guardias identifica B° 24 de Febrero, Garín. Se conserva Garín como localidad de la ficha, sin inferir ausencia de atención en 24 de Febrero ni asignar un barrio definitivo.",
+      "validityPeriod": "Ficha municipal consultada el 2026-11-25; horario y prestaciones sujetos a actualización.",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "La Cartilla de salud, en su sección de Guardias, identifica B° 24 de Febrero, Garín, y guardia general las 24 horas; en la ficha CAPS indica Pablo Marín 24, Garín, atención de lunes a viernes de 7 a 14, vacunatorio de 8 a 13 y teléfono 11 2150-0302, sin repetir el barrio. Guardias y emergencias coincide en B° 24 de Febrero y 11 2150-0302. IOMA/PAMI repiten esa referencia y teléfono. Teléfonos útiles conserva Fonavi y 0348 449-3444; Centros de salud indica la intersección sin barrio ni teléfono. Se conserva Garín como localidad. No se asigna barrio ni teléfono único. Verificación documental, sin comprobación presencial."
+        "checkedAt": "2026-11-25",
+        "scope": "La Cartilla de salud, en su sección de Guardias, identifica B° 24 de Febrero, Garín, y guardia general las 24 horas; en la ficha CAPS indica Pablo Marín 24, Garín, atención de lunes a viernes de 7 a 14, vacunatorio de 8 a 13 y teléfono 11 2150-0302, sin repetir el barrio. Guardias y emergencias coincide en B° 24 de Febrero y 11 2150-0302. IOMA/PAMI repiten esa referencia y teléfono; Teléfonos útiles conserva Fonavi y 0348 449-3444. Centros de salud indica Ing. Pablo Marín entre Islas Malvinas e Hipólito Yrigoyen, Garín, sin barrio ni teléfono. Reconsulta documental 25/11/2026: los filtros de Cartilla de salud y Centros de salud enumeran seis localidades y omiten 24 de Febrero; en Guardias el CAPS figura como B° 24 de Febrero, Garín, y en Centros de salud bajo Garín. Se conserva Garín como localidad de la ficha, sin trasladarla a la localidad 24 de Febrero ni asignar un barrio definitivo. La omisión del filtro no acredita ausencia de servicios en 24 de Febrero. Teléfonos útiles, IOMA y PAMI se mantienen como contrastes documentales del corte 24/11; no se reabrieron en esta ejecución. Verificación documental, sin comprobación presencial."
       },
-      "serviceNote": "La Cartilla de salud separa guardia general las 24 horas de atención CAPS (lunes a viernes de 7 a 14) y vacunatorio (lunes a viernes de 8 a 13). En su sección de Guardias indica B° 24 de Febrero; la ficha CAPS da Pablo Marín 24, Garín, sin barrio. Guardias y emergencias e IOMA/PAMI publican 11 2150-0302; Teléfonos útiles conserva (0348) 449-3444. No se consolida un teléfono único.",
+      "serviceNote": "La Cartilla de salud separa guardia general las 24 horas de atención CAPS (lunes a viernes de 7 a 14) y vacunatorio (lunes a viernes de 8 a 13). En Guardias indica B° 24 de Febrero, Garín; la ficha CAPS da Pablo Marín 24, Garín, sin repetir el barrio. Centros de salud ubica el CAPS bajo Garín y publica la referencia Ing. Pablo Marín entre Islas Malvinas e Hipólito Yrigoyen. Los filtros de ambas páginas enumeran seis localidades y omiten 24 de Febrero; esa omisión no demuestra ausencia de servicios en la localidad. Guardias y emergencias e IOMA/PAMI publican 11 2150-0302; Teléfonos útiles conserva (0348) 449-3444. No se consolida un teléfono único.",
       "serviceNoteSourceUrl": "https://www.escobar.gob.ar/municipio/prestaciones-con-o-sin-obra-social/",
-      "addressNote": "La Cartilla de salud da Pablo Marín 24, Garín, y en la sección de Guardias menciona B° 24 de Febrero; Centros de salud indica la intersección sin barrio; Teléfonos útiles conserva Fonavi. No se asigna un barrio definitivo."
+      "addressNote": "La Cartilla de salud da Pablo Marín 24, Garín, y en Guardias menciona B° 24 de Febrero, Garín; Centros de salud indica Ing. Pablo Marín entre Islas Malvinas e Hipólito Yrigoyen, Garín, sin barrio. Teléfonos útiles conserva Fonavi. Los filtros de Cartilla y Centros de salud omiten 24 de Febrero, aunque Guardias usa esa referencia barrial. No se asigna un barrio definitivo ni se infiere ausencia de servicios en la localidad 24 de Febrero."
     },
     {
       "id": "mercado-popular",
@@ -542,19 +542,19 @@
         "phone": null,
         "sourceUrl": "https://www.escobar.gob.ar/municipio/guardias/",
         "sourcePublishedAt": null,
-        "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24.",
+        "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-25.",
         "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pablo%20Mar%C3%ADn%2024%2C%20Gar%C3%ADn%2C%20Escobar%2C%20Buenos%20Aires%2C%20Argentina",
         "status": "operativo",
-        "summary": "CAPS municipal ubicado en Pablo Marín 24, Garín. La Cartilla de salud separa guardia general de 24 horas, atención CAPS de lunes a viernes de 7 a 14 y vacunatorio de 8 a 13. La referencia barrial difiere entre secciones y directorios; se conserva Garín sin asignar un barrio definitivo ni un teléfono único.",
-        "validityPeriod": "Directorios municipales consultados el 2026-11-24; horarios, prestaciones y contactos sujetos a actualización.",
+        "summary": "CAPS municipal listado en Pablo Marín 24, Garín. La Cartilla de salud separa guardia general de 24 horas, atención CAPS de lunes a viernes de 7 a 14 y vacunatorio de 8 a 13. Los filtros de Cartilla y Centros de salud enumeran seis localidades y omiten 24 de Febrero, aunque el bloque de Guardias identifica B° 24 de Febrero, Garín. Se conserva Garín como localidad de la ficha, sin inferir ausencia de atención en 24 de Febrero ni asignar un barrio definitivo.",
+        "validityPeriod": "Directorios municipales consultados el 2026-11-25; horarios, prestaciones y contactos sujetos a actualización.",
         "verification": {
           "status": "verified",
-          "checkedAt": "2026-11-24",
-          "scope": "La Cartilla de salud, en su sección de Guardias, identifica B° 24 de Febrero, Garín, y guardia general las 24 horas; en la ficha CAPS indica Pablo Marín 24, Garín, atención de lunes a viernes de 7 a 14, vacunatorio de 8 a 13 y teléfono 11 2150-0302, sin repetir el barrio. Guardias y emergencias coincide en B° 24 de Febrero y 11 2150-0302. IOMA/PAMI repiten esa referencia y teléfono. Teléfonos útiles conserva Fonavi y 0348 449-3444; Centros de salud indica la intersección sin barrio ni teléfono. Se conserva Garín como localidad. No se asigna barrio ni teléfono único. Verificación documental, sin comprobación presencial."
+          "checkedAt": "2026-11-25",
+          "scope": "La Cartilla de salud, en su sección de Guardias, identifica B° 24 de Febrero, Garín, y guardia general las 24 horas; en la ficha CAPS indica Pablo Marín 24, Garín, atención de lunes a viernes de 7 a 14, vacunatorio de 8 a 13 y teléfono 11 2150-0302, sin repetir el barrio. Guardias y emergencias coincide en B° 24 de Febrero y 11 2150-0302. IOMA/PAMI repiten esa referencia y teléfono; Teléfonos útiles conserva Fonavi y 0348 449-3444. Centros de salud indica Ing. Pablo Marín entre Islas Malvinas e Hipólito Yrigoyen, Garín, sin barrio ni teléfono. Reconsulta documental 25/11/2026: los filtros de Cartilla de salud y Centros de salud enumeran seis localidades y omiten 24 de Febrero; en Guardias el CAPS figura como B° 24 de Febrero, Garín, y en Centros de salud bajo Garín. Se conserva Garín como localidad de la ficha, sin trasladarla a la localidad 24 de Febrero ni asignar un barrio definitivo. La omisión del filtro no acredita ausencia de servicios en 24 de Febrero. Teléfonos útiles, IOMA y PAMI se mantienen como contrastes documentales del corte 24/11; no se reabrieron en esta ejecución. Verificación documental, sin comprobación presencial."
         },
-        "serviceNote": "La Cartilla de salud separa guardia general las 24 horas de atención CAPS (lunes a viernes de 7 a 14) y vacunatorio (lunes a viernes de 8 a 13). En su sección de Guardias indica B° 24 de Febrero; la ficha CAPS da Pablo Marín 24, Garín, sin barrio. Guardias y emergencias e IOMA/PAMI publican 11 2150-0302; Teléfonos útiles conserva (0348) 449-3444. No se consolida un teléfono único.",
+        "serviceNote": "La Cartilla de salud separa guardia general las 24 horas de atención CAPS (lunes a viernes de 7 a 14) y vacunatorio (lunes a viernes de 8 a 13). En Guardias indica B° 24 de Febrero, Garín; la ficha CAPS da Pablo Marín 24, Garín, sin repetir el barrio. Centros de salud ubica el CAPS bajo Garín y publica la referencia Ing. Pablo Marín entre Islas Malvinas e Hipólito Yrigoyen. Los filtros de ambas páginas enumeran seis localidades y omiten 24 de Febrero; esa omisión no demuestra ausencia de servicios en la localidad. Guardias y emergencias e IOMA/PAMI publican 11 2150-0302; Teléfonos útiles conserva (0348) 449-3444. No se consolida un teléfono único.",
         "serviceNoteSourceUrl": "https://www.escobar.gob.ar/municipio/prestaciones-con-o-sin-obra-social/",
-        "addressNote": "La Cartilla de salud da Pablo Marín 24, Garín, y en la sección de Guardias menciona B° 24 de Febrero; Centros de salud indica la intersección sin barrio; Teléfonos útiles conserva Fonavi. No se asigna un barrio definitivo.",
+        "addressNote": "La Cartilla de salud da Pablo Marín 24, Garín, y en Guardias menciona B° 24 de Febrero, Garín; Centros de salud indica Ing. Pablo Marín entre Islas Malvinas e Hipólito Yrigoyen, Garín, sin barrio. Teléfonos útiles conserva Fonavi. Los filtros de Cartilla y Centros de salud omiten 24 de Febrero, aunque Guardias usa esa referencia barrial. No se asigna un barrio definitivo ni se infiere ausencia de servicios en la localidad 24 de Febrero.",
         "addressSourceUrl": "https://www.escobar.gob.ar/municipio/prestaciones-con-o-sin-obra-social/",
         "sourceName": "Municipalidad de Escobar",
         "relatedSources": [
@@ -577,7 +577,7 @@
             "label": "Centros de salud",
             "url": "https://www.escobar.gob.ar/municipio/centros-de-salud/",
             "sourcePublishedAt": null,
-            "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24."
+            "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-25."
           },
           {
             "sourceName": "Municipalidad de Escobar — Prestaciones IOMA",
@@ -598,13 +598,13 @@
             "label": "Cartilla de salud (con o sin obra social)",
             "url": "https://www.escobar.gob.ar/municipio/prestaciones-con-o-sin-obra-social/",
             "sourcePublishedAt": null,
-            "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-24.",
+            "sourcePublicationNote": "La página no indica fecha de publicación o edición; consultada el 2026-11-25.",
             "sourceType": "Cartilla municipal de salud",
-            "validityPeriod": "Directorio consultado el 2026-11-24; ubicación, prestaciones y horarios sujetos a actualización.",
+            "validityPeriod": "Cartilla municipal consultada el 2026-11-25; ubicación, prestaciones y horarios sujetos a actualización.",
             "verification": {
               "status": "verified",
-              "checkedAt": "2026-11-24",
-              "scope": "La ficha identifica al CAPS Juan Carlos Selles en Pablo Marín, B° 24 de Febrero, Garín; informa guardia general todos los días, las 24 horas, y teléfono 11 2150-0302. No resuelve la discrepancia con la referencia Fonavi de Teléfonos útiles."
+              "checkedAt": "2026-11-25",
+              "scope": "Reconsulta del 25/11/2026: la interfaz de filtros enumera seis localidades y omite 24 de Febrero; el bloque Guardias identifica el CAPS como B° 24 de Febrero, Garín, mientras la ficha CAPS da Pablo Marín 24, Garín. No resuelve la equivalencia entre localidad y barrio ni acredita ausencia de servicios en 24 de Febrero."
             }
           }
         ]
