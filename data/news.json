@@ -1054,6 +1054,37 @@
     ]
   },
   {
+    "id": "news-www-federalreserve-gov-publications-files-financial-stability-report-20261113-pdf",
+    "title": "La Reserva Federal documentó el rápido crecimiento de la deuda y los compromisos financieros ligados a la infraestructura de IA",
+    "date": "2026-11-13",
+    "category": "Economía",
+    "summary": "El Financial Stability Report de noviembre de 2026 documenta más de USD 680.000 millones en emisiones de deuda para infraestructura de cómputo avanzado hasta octubre, alrededor de cinco veces las emisiones de 2023, y más de USD 1,1 billones de deuda pública relacionada en circulación. También identifica leases aún no iniciados por más de USD 1 billón y otros compromisos y garantías por más de USD 2 billones, valores no descontados. En una encuesta de la Reserva Federal de Nueva York, 87% de 23 contactos de mercado citó la IA como posible shock para la estabilidad financiera: ese porcentaje refleja respuestas de los consultados, no una opinión institucional del Board ni un pronóstico.",
+    "source": "Board of Governors of the Federal Reserve System",
+    "url": "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf",
+    "period": "Financial Stability Report de noviembre de 2026; datos disponibles al 28/10/2026; emisiones de deuda hasta octubre; encuesta de contactos de mercado realizada en septiembre y octubre.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Estados Unidos — evaluación de estabilidad financiera del Board y encuesta de 23 contactos de mercado de la Reserva Federal de Nueva York; no implica exposición de entidades argentinas.",
+    "sector": "Inteligencia artificial / centros de datos / infraestructura de cómputo / deuda corporativa / mercados financieros / ciberseguridad",
+    "territorialRelevance": "Señal comparativa para analizar costo de capital, apalancamiento y sostenibilidad de inversiones en centros de datos y cómputo. No acredita exposición de bancos argentinos ni inversiones locales; tampoco declara una crisis ni anticipa un colapso.",
+    "relatedSources": [
+      {
+        "label": "Federal Reserve — Financial Stability Report, página de publicación",
+        "url": "https://www.federalreserve.gov/publications/financial-stability-report.htm"
+      },
+      {
+        "label": "Reuters — AI rockets to top of worries about financial system in latest Fed survey (13/11/2026)",
+        "url": "https://www.reuters.com/business/finance/ai-rockets-to-top-worries-about-financial-system-in-latest-fed-survey-2026-11-13/"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se revisó el PDF oficial de la Reserva Federal y su página de publicación. Se comprobaron el corte de información al 28/10/2026, las emisiones de deuda superiores a USD 680.000 millones, la deuda pública relacionada superior a USD 1,1 billones y las obligaciones futuras no descontadas. El 87% corresponde a una encuesta de 23 contactos de mercado realizada por personal de la Reserva Federal de Nueva York; no es la opinión del Board. El informe es una evaluación de vulnerabilidades, no una norma ni una predicción."
+    }
+  },
+  {
     "title": "Escobar publicó cuatro licitaciones, incluidas dos contrataciones de salud digital",
     "date": "2026-11-12",
     "category": "Tecnología",
@@ -1074,6 +1105,33 @@
       "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
     },
     "id": "news-boletinoficial-gba-gob-ar-secciones-14505-ver"
+  },
+  {
+    "id": "news-www-federalreserve-gov-econres-feds-artificial-intelligence-and-the-us-economy-current-evidence-htm",
+    "title": "La Reserva Federal encontró que la adopción empresarial de IA crece, pero sus efectos agregados siguen siendo limitados",
+    "date": "2026-11-12",
+    "category": "Economía",
+    "summary": "El trabajo FEDS 2026-074 reúne evidencia sobre inversión en centros de datos y adopción de herramientas de IA en hogares y empresas de Estados Unidos. Sus autores señalan que la adopción crece, pero la mayoría de las empresas todavía no utiliza IA de forma intensiva o no la usa; los efectos observados sobre empleo y productividad agregada siguen siendo pequeños y mixtos. También registran alzas de precios en insumos directos para centros de datos, como chips de memoria. Es investigación de los autores, preliminar y no necesariamente representativa de la posición institucional del Board.",
+    "source": "Board of Governors of the Federal Reserve System — Finance and Economics Discussion Series",
+    "url": "https://www.federalreserve.gov/econres/feds/artificial-intelligence-and-the-us-economy-current-evidence.htm",
+    "period": "Documento de noviembre de 2026; página oficial actualizada el 12/11/2026. El abstract no fija un período único para todas las series.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Estados Unidos — investigación macroeconómica del Board of Governors; no describe adopción ni productividad en Argentina.",
+    "sector": "Inteligencia artificial / macroeconomía / centros de datos / semiconductores / empleo / productividad",
+    "territorialRelevance": "Aporta un punto de comparación para evaluar afirmaciones comerciales sobre adopción, productividad y demanda de infraestructura de IA. No deben extrapolarse los resultados de Estados Unidos a Argentina ni presentarse como causalidad universal.",
+    "relatedSources": [
+      {
+        "label": "FEDS 2026-074 — DOI",
+        "url": "https://doi.org/10.17016/FEDS.2026.074"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se revisó la página oficial del FEDS y su resumen: autores, número 2026-074, DOI, alcance y resultados descriptivos. La propia página aclara que las conclusiones son de los autores y no indican necesariamente la posición del Board of Governors. No se revisó el documento completo; el registro se limita al contenido del abstract."
+    }
   },
   {
     "title": "La segunda Ronda de Negocios RIGI se realizará el 2 de diciembre con foco en energía e hidrocarburos",
