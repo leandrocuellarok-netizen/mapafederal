@@ -222,3 +222,39 @@ for (const url of [parks.sourceUrl, parks.resourceUrl]) {
   assert.equal(new URL(url).protocol, "https:");
 }
 
+const reserves = transparency.environmentalDatasets.find(item => item.id === "reservas-naturales-municipales-partido-escobar");
+assert.ok(reserves, "Falta la ficha municipal de reservas naturales de Escobar");
+assert.equal(reserves.status, "pendiente", "La ficha del dataset no equivale a una capa geográfica disponible");
+assert.equal(reserves.sourcePublishedAt, null, "No inventar fecha de publicación");
+assert.equal(reserves.createdAt, "2025-10-01");
+assert.equal(reserves.lastUpdatedAt, "2026-03-31");
+assert.equal(reserves.version, "1.0");
+assert.equal(reserves.periodicity, "Anual");
+assert.equal(reserves.license, "Open Data Commons Open Database License (ODbL)");
+assert.equal(reserves.resourceChecks[0].result, "http_404");
+assert.equal(reserves.resourceChecks[1].result, "unsupported_content_type");
+assert.equal(reserves.geometryIntegrationStatus, "pending");
+assert.equal(reserves.sourceCrs, undefined, "No inferir CRS de recursos que no pudieron inspeccionarse");
+assert.equal(reserves.resourceUrl, undefined, "No mostrar como descargable un GeoJSON que respondió 404");
+assert.match(reserves.geometryNote, /no se transforma ni dibuja/i);
+assert.equal(reserves.documentedFacility.locality, "Ingeniero Maschwitz");
+assert.equal(reserves.documentedFacility.address, "Sucre 1550 (PES), Ingeniero Maschwitz");
+assert.equal(reserves.documentedFacility.areaHa, 23);
+assert.equal(reserves.documentedFacility.ordinance, "5767/19");
+assert.equal(reserves.documentedFacility.hours, "De 9 a 17 h");
+assert.equal(reserves.documentedFacility.days, "No especificados en la ficha municipal actual consultada el 25/11/2026");
+assert.equal(reserves.documentedFacility.admission, "Gratuita");
+assert.equal(reserves.documentedFacility.status, "pendiente");
+assert.equal(reserves.documentedFacility.operationalStatus, "no verificado");
+assert.equal(reserves.documentedFacility.sourcePublishedAt, null);
+assert.equal(reserves.documentedFacility.verification.checkedAt, "2026-11-25");
+assert.match(reserves.documentedFacility.statusNote, /no confirma apertura en tiempo real/i);
+assert.match(reserves.documentedFacility.statusNote, /martes a domingos/i);
+for (const url of [reserves.sourceUrl, reserves.documentedFacility.sourceUrl, ...reserves.documentedFacility.relatedSources.map(item => item.url)]) {
+  assert.equal(new URL(url).protocol, "https:");
+}
+assert.match(profile, /item\.resourceChecks/);
+assert.match(profile, /item\.documentedFacility/);
+assert.match(profile, /escobar-environmental-facility/);
+assert.match(profile, /Ficha municipal de la reserva/);
+

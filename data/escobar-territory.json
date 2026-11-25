@@ -1128,7 +1128,7 @@
     "verification": {
       "status": "verified",
       "checkedAt": "2026-11-25",
-      "scope": "Se consultaron Transparencia municipal, Portal de Datos Abiertos y Solicitar Información Pública. El catálogo mostraba 53 datasets en 15 categorías. Se abrió la ficha municipal de Plazas y Parques y su GeoJSON original, verificando 46 polígonos y CRS EPSG:22185. No se enviaron solicitudes ni se evaluaron los buscadores dinámicos, la exhaustividad del catálogo o el mantenimiento y acceso efectivo a cada espacio verde."
+      "scope": "Se consultaron Transparencia municipal, Portal de Datos Abiertos y Solicitar Información Pública. El catálogo mostraba 53 datasets en 15 categorías. Se abrió la ficha municipal de Plazas y Parques y su GeoJSON original, verificando 46 polígonos y CRS EPSG:22185. No se enviaron solicitudes ni se evaluaron los buscadores dinámicos, la exhaustividad del catálogo o el mantenimiento y acceso efectivo a cada espacio verde. También se consultó la ficha municipal de Reservas Naturales: el GeoJSON enlazado devolvió HTTP 404 y el Shapefile no pudo inspeccionarse porque la herramienta rechazó su tipo MIME application/vnd.shp; esto último no se clasifica como recurso roto. La ficha municipal de la Reserva Natural Educativa de Ingeniero Maschwitz publica Sucre 1550 (PES), 23 hectáreas, horario de 9 a 17 h, entrada gratuita y Ordenanza 5767/19. No se verificó apertura en tiempo real ni días de atención."
     },
     "dynamicContentStatus": "pendiente",
     "territorialBoundaryReference": {
@@ -1224,7 +1224,85 @@
           "checkedAt": "2026-11-25",
           "scope": "Se consultó la ficha municipal y se abrió el GeoJSON original. Se comprobó FeatureCollection, 46 features de geometría Polygon, CRS EPSG:22185 y las etiquetas literales del atributo Localidad. La ficha declara creación 01/10/2025, última actualización 31/03/2026, versión 1.0, periodicidad anual y licencia ODbL. No se transformaron coordenadas ni se integró la capa al mapa; no se verificaron en terreno el acceso, mantenimiento, horarios o uso efectivo."
         }
+      },
+    {
+      "id": "reservas-naturales-municipales-partido-escobar",
+      "name": "Reservas Naturales Municipales del Partido de Escobar",
+      "category": "Ambiente y Biodiversidad",
+      "description": "El portal municipal publica una ficha de delimitación geográfica de las reservas naturales municipales. La capa no se integra al mapa mientras no se recupere una geometría legible y verificable. La Municipalidad documenta por separado la Reserva Natural Educativa de Ingeniero Maschwitz.",
+      "sourceName": "Estrategia Ambiental y datos — Municipalidad de Escobar",
+      "sourceUrl": "https://datos.escobar.gob.ar/dataset/reservas-naturales-municipales-del-partido-de-escobar",
+      "resourceName": "reservas_naturales_escobar.geojson",
+      "resourceFormat": "GeoJSON + Shapefile",
+      "sourcePublishedAt": null,
+      "sourcePublicationNote": "La ficha no informa fecha de publicación. Declara creación 01/10/2025, última actualización 31/03/2026, versión 1.0 y periodicidad anual. Consultada el 25/11/2026.",
+      "createdAt": "2025-10-01",
+      "lastUpdatedAt": "2026-03-31",
+      "version": "1.0",
+      "periodicity": "Anual",
+      "license": "Open Data Commons Open Database License (ODbL)",
+      "resourceChecks": [
+        {
+          "format": "GeoJSON",
+          "fileName": "reservas_naturales_escobar.geojson",
+          "url": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/reservas-naturales-municipales-del-partido-de-escobar/reservas_naturales_escobar.geojson",
+          "checkedAt": "2026-11-25",
+          "result": "http_404",
+          "resultLabel": "HTTP 404",
+          "note": "El enlace Descargar de la ficha devolvió 404; no se obtuvo geometría."
+        },
+        {
+          "format": "Shapefile",
+          "fileName": "reservas_naturales_escobar.shp",
+          "url": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/reservas-naturales-municipales-del-partido-de-escobar/reservas_naturales_escobar.shp",
+          "checkedAt": "2026-11-25",
+          "result": "unsupported_content_type",
+          "resultLabel": "No inspeccionable (400)",
+          "note": "La herramienta de consulta rechazó el tipo MIME application/vnd.shp; no es una confirmación de 404 ni permite comprobar la integridad del archivo."
+        }
+      ],
+      "geometryIntegrationStatus": "pending",
+      "geometryNote": "La ficha no declara un CRS verificable en el contenido accesible. No se pudo inspeccionar el GeoJSON y el Shapefile no pudo procesarse. No se transforma ni dibuja ninguna geometría y no se genera un marcador.",
+      "status": "pendiente",
+      "validityPeriod": "Versión 1.0; la ficha municipal declara actualización 31/03/2026 y periodicidad anual. La disponibilidad de los recursos se comprobó el 25/11/2026.",
+      "documentedFacility": {
+        "name": "Reserva Natural Educativa de Ingeniero Maschwitz",
+        "locality": "Ingeniero Maschwitz",
+        "address": "Sucre 1550 (PES), Ingeniero Maschwitz",
+        "areaHa": 23,
+        "ordinance": "5767/19",
+        "admission": "Gratuita",
+        "hours": "De 9 a 17 h",
+        "days": "No especificados en la ficha municipal actual consultada el 25/11/2026",
+        "publishedStatus": "La ficha municipal publica horario y entrada gratuita.",
+        "status": "pendiente",
+        "operationalStatus": "no verificado",
+        "statusNote": "La página municipal actual describe una reserva protegida y publica dirección, horario, superficie y entrada gratuita. No confirma apertura en tiempo real ni días de atención. Una página municipal anterior indexada informa martes a domingos, pero el acceso directo devolvió 403; no se adopta ese calendario como vigente.",
+        "sourceName": "Municipalidad de Escobar",
+        "sourceUrl": "https://www.escobar.gob.ar/municipio/sostenible/reserva-natural-educativa/",
+        "sourcePublishedAt": null,
+        "sourcePublicationNote": "La página consultada no informa fecha de publicación o edición; verificada el 25/11/2026.",
+        "relatedSources": [
+          {
+            "label": "Ficha municipal anterior (horario por días; acceso directo 403)",
+            "url": "https://www.escobar.gob.ar/reserva-municipal-ing-maschwitz/",
+            "sourcePublishedAt": null,
+            "verificationNote": "El índice de búsqueda muestra martes a domingos, de 09 a 17 h; el acceso directo devolvió 403 en esta consulta."
+          },
+          {
+            "label": "Ordenanzas ambientales municipales (índice que incluye 5767/19)",
+            "url": "https://www.escobar.gob.ar/municipio/sostenible/ordenanzas-ambientales/",
+            "sourcePublishedAt": null,
+            "verificationNote": "La página lista la Ordenanza 5767/19 dentro de un conjunto de normas; no sustituye el texto completo de la ordenanza."
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "checkedAt": "2026-11-25",
+          "scope": "Se consultó la ficha municipal actual: dirección, 23 hectáreas, horario de 9 a 17 h, entrada gratuita y Ordenanza 5767/19. La ficha no indica fecha de publicación ni días de atención. No se realizó inspección presencial ni se verificó apertura en tiempo real. La ficha municipal anterior indexada indica martes a domingos, pero el acceso directo devolvió 403."
+        }
       }
+    }
     ]
   },
   "participatoryBudget2026": {
