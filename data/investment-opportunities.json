@@ -671,8 +671,8 @@
       "description": "Licitación de la Secretaría de Hacienda para un servicio de fumigación y control del mosquito transmisor de dengue, Zika y chikungunya en dependencias municipales, vía pública y sectores peri domiciliarios del Partido de Escobar. Presupuesto oficial ARS 1.400.000.000. El valor del pliego es ARS 30.000.000. Consultas 26 y 27 de noviembre de 2026, de 9:00 a 13:30; venta del pliego 1 y 2 de diciembre, de 9:00 a 13:30; apertura 9 de diciembre de 2026 a las 12:00 en Belén de Escobar. Verificar condiciones, garantías y circulares antes de decidir participar.",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523. Se contrastaron objeto, jurisdicción, presupuesto oficial ARS 1.400.000.000, valor del pliego ARS 30.000.000, sede y horarios de consulta, venta y apertura. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+        "checkedAt": "2026-11-25",
+        "scope": "Recomprobado el 25/11/2026 en el aviso del Boletín Oficial bonaerense. Se mantienen objeto, presupuesto y cronograma publicados; no se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
       }
     },
     {
@@ -699,8 +699,8 @@
       "description": "Licitación municipal para provisión de piedra partida. Presupuesto oficial de ARS 644.206.500 IVA incluido, señalado como precio tope. La consulta del pliego está prevista para el 1 y 2 de diciembre, la venta para el 3 y 4 de diciembre y la apertura para el 11/12/2026 a las 11:00. Verificar pliego, requisitos y eventuales circulares antes de decidir participar.",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Enlace de fuente corregido y contrastado contra el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523, donde figuran las LP 71/2026, 72/2026 y 75/2026. Se verificaron objeto, presupuesto, sede y cronograma publicados. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+        "checkedAt": "2026-11-25",
+        "scope": "Recomprobado el 25/11/2026 en el aviso del Boletín Oficial bonaerense. Se mantienen objeto, presupuesto y cronograma publicados; no se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
       }
     },
     {
@@ -727,8 +727,8 @@
       "description": "Licitación municipal para provisión de cascote. Presupuesto oficial de ARS 700.500.000 IVA incluido, señalado como precio tope. Consultas previstas para el 1 y 2 de diciembre, venta del pliego para el 3 y 4 de diciembre y apertura el 11/12/2026 a las 10:00. Verificar pliego, requisitos y eventuales circulares antes de decidir participar.",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Enlace de fuente corregido y contrastado contra el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523, donde figuran las LP 71/2026, 72/2026 y 75/2026. Se verificaron objeto, presupuesto, sede y cronograma publicados. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+        "checkedAt": "2026-11-25",
+        "scope": "Recomprobado el 25/11/2026 en el aviso del Boletín Oficial bonaerense. Se mantienen objeto, presupuesto y cronograma publicados; no se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
       }
     },
     {
@@ -755,8 +755,8 @@
       "description": "Licitación Pública 74/2026 para la construcción de una cancha de fútbol y una pista de atletismo en el Polideportivo Ingeniero Maschwitz. Presupuesto oficial de ARS 793.000.000 IVA incluido. Las consultas están previstas para el 26 y 27 de noviembre, la venta del pliego para el 30 de noviembre y el 1 de diciembre, y la apertura para el 4 de diciembre de 2026 a las 10:00 en Belén de Escobar. Verificar pliego, requisitos, garantías y eventuales circulares antes de decidir participar.",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 18/11/2026, sección 14517, anuncio municipal de la LP 74/2026. Se contrastaron objeto, jurisdicción, presupuesto y cronograma. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+        "checkedAt": "2026-11-25",
+        "scope": "Recomprobado el 25/11/2026 en el aviso del Boletín Oficial bonaerense. Se mantienen objeto, presupuesto y cronograma publicados; no se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
       }
     },
     {
@@ -1653,6 +1653,31 @@
         "status": "verified",
         "checkedAt": "2026-11-24",
         "scope": "Verificada la constitución societaria y el objeto estatutario en la Segunda Sección del Boletín Oficial N.º 36.034, publicada el 17/11/2026. Se confirmó accionista único, sede social, capital social y actividades autorizadas. No se verificaron emplazamiento, contratos, inversión en activos, permisos, obra ni cronograma de operación."
+      }
+    },
+    {
+      "id": "argentina-fuerza-aerea-licitacion-0140-2026-cloud-pbx",
+      "name": "Argentina — Fuerza Aérea: LP 0140/2026 para plataforma de comunicaciones unificadas en la nube",
+      "recordType": "tender",
+      "scope": "national",
+      "sector": "Tecnología / telecomunicaciones / comunicaciones unificadas / servicios cloud",
+      "jurisdiction": null,
+      "location": "Argentina — contratación nacional mediante COMPR.AR",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": null,
+      "validFrom": "2026-11-18",
+      "validUntil": "2026-11-30",
+      "sourceName": "Boletín Oficial de la República Argentina — Fuerza Aérea Argentina",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2420760/20261118",
+      "sourcePublishedAt": "2026-11-18",
+      "period": "Consultas hasta el 25/11/2026 a las 13:00; retiro del pliego y presentación de ofertas hasta el 30/11/2026 a las 11:00; apertura electrónica el 30/11/2026 a las 11:00, por COMPR.AR.",
+      "description": "Licitación Pública 0140/2026 de la Fuerza Aérea Argentina para contratar el servicio de arrendamiento con mantenimiento de una plataforma de comunicaciones unificadas en la nube (tipo Cloud PBX). El aviso oficial fija consultas hasta el 25/11/2026 a las 13:00 y presentación de ofertas y apertura electrónica hasta/el 30/11/2026 a las 11:00 por COMPR.AR. El aviso no publica presupuesto. Confirmar el pliego completo, requisitos técnicos, garantías, habilitaciones y eventuales circulares antes de considerar una oferta.",
+      "territorialRelevance": "Alcance nacional; posible interés para proveedores de telecomunicaciones, telefonía IP, comunicaciones empresariales y servicios cloud con capacidad para contratar con el Estado. No hay adjudicación ni monto publicado.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Verificado el aviso oficial del Boletín Oficial de la República Argentina, publicado el 18/11/2026. Se comprobaron objeto, organismo, expediente, plataforma de contratación y fechas de consulta, presentación y apertura. No se revisó el pliego completo ni se verificaron elegibilidad de proveedores, garantías, ofertas, adjudicación o ejecución."
       }
     }
   ]
