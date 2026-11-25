@@ -241,9 +241,13 @@ assert.match(redSostenible.description, /cuatro etapas y diez pasos/i);
 assert.match(redSostenible.description, /no publica el monto/i);
 assert.match(redSostenible.verification.scope, /ventaja en licitaciones municipales/i);
 assert.match(redSostenible.verification.scope, /no especifica mecanismo/i);
-assert.equal(redSostenible.relatedSources.length, 1);
+assert.equal(redSostenible.relatedSources.length, 2);
 assert.equal(redSostenible.relatedSources[0].url, "https://www.escobar.gob.ar/municipio/sostenible/redsostenible/");
-assert.match(redSostenible.verification.scope, /no permitió confirmar el formulario individual/i);
+assert.equal(redSostenible.relatedSources[1].url, "https://www.escobar360.escobar.gob.ar/");
+assert.match(redSostenible.relatedSources[1].label, /Escobar 360.*portal público.*acceso.*visible/i);
+assert.match(redSostenible.description, /razón social, CUIT\/CUIL.*nombre y DNI.*declaración jurada/i);
+assert.match(redSostenible.verification.scope, /portada pública de Escobar 360 muestra un acceso/i);
+assert.match(redSostenible.verification.scope, /no expuso el formulario individual/i);
 assert.equal(new URL(redSostenible.sourceUrl).protocol, "https:");
 
 const calleSalta = opportunities.find(entry => entry.id === "escobar-pavimentacion-calle-salta-garin-2026");
