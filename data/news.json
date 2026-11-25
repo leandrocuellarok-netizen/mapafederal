@@ -62,6 +62,33 @@
     }
   },
   {
+    "id": "news-www-reuters-com-business-anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24",
+    "title": "Las acciones de Anthropic cayeron por debajo del precio de su salida a bolsa",
+    "date": "2026-11-24",
+    "category": "Empresas",
+    "summary": "Reuters informó que las acciones de Anthropic cotizaban a USD 76,60, un 12,6% menos, a las 11:17 UTC del 24/11, por debajo del precio de IPO de USD 83. El reporte vincula la reversión con la volatilidad tecnológica y dudas sobre valuaciones y gasto en centros de datos. Anthropic informó que la IPO generó aproximadamente USD 93.500 millones brutos, de los cuales USD 91.600 millones fueron para la empresa; la colocación privada adicional de USD 26.000 millones fue separada. La cotización es una captura temporal, no un precio en tiempo real ni una recomendación de inversión.",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/",
+    "period": "Reporte de mercado publicado el 24/11/2026 a las 11:17 UTC; la IPO cerró el 20/11/2026. La cotización corresponde al momento informado por Reuters.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Estados Unidos — mercado Nasdaq; señal del mercado internacional de empresas de IA.",
+    "sector": "Inteligencia artificial / modelos fundacionales / mercado de capitales / infraestructura de cómputo",
+    "territorialRelevance": "Alta para el seguimiento internacional del financiamiento de IA y de los riesgos de valuación e infraestructura; relevancia indirecta para Argentina y Escobar. No acredita inversión ni implementación local.",
+    "relatedSources": [
+      {
+        "label": "Anthropic — cierre de IPO y colocación privada (20/11/2026)",
+        "url": "https://www.anthropic.com/news/ipo-close"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Reuters (24/11/2026, 11:17 UTC) reporta una cotización de USD 76,60, con caída de 12,6%, por debajo del precio de IPO de USD 83. El comunicado original de Anthropic (20/11/2026) confirma ingresos brutos de IPO por aproximadamente USD 93.500 millones, de los cuales USD 91.600 millones correspondieron a la empresa, y una colocación privada separada de USD 26.000 millones. El precio se conserva como dato temporal atribuido a Reuters; no se infiere rendimiento futuro, causalidad única ni recomendación de inversión."
+    }
+  },
+  {
     "title": "Applied Digital anunció un contrato de capacidad para centros de datos de IA por USD 5.400 millones",
     "date": "2026-11-23",
     "category": "Tecnología",
