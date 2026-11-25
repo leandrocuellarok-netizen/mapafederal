@@ -718,12 +718,12 @@
         }
       ],
       "sourcePublishedAt": "2026-11-20",
-      "period": "El 20/11/2026 se informó la aprobación anunciada del ingreso al RIGI. La decisión final de inversión fue anunciada para el 30/11/2026. Al 24/11 no se verificó FID ni resolución de adhesión publicada en el Boletín Oficial.",
+      "period": "El 20/11/2026 Reuters informó que el ministro de Economía anunció la inclusión del proyecto en el RIGI y comunicó USD 25.000 millones previstos para 2027–2030 y USD 50.750 millones hasta 2050. Eni había informado el 14/08/2026 que la solicitud al RIGI estaba presentada y que la FID se esperaba para fines de 2026. Al 25/11 no se verificó una resolución formal publicada ni una FID; no se presenta el proyecto como obra ejecutada.",
       "description": "Proyecto integrado promovido por YPF, Eni y XRG para desarrollar producción de gas en Vaca Muerta, transporte, procesamiento y exportación de GNL. Reuters informó el 20/11/2026 que el ministro de Economía anunció la aprobación de ingreso al RIGI y una inversión total esperada de USD 50.750 millones hasta 2050, con USD 25.000 millones previstos entre 2027 y 2030. La comunicación oficial de Eni del 14/08/2026 describe dos unidades flotantes FLNG con capacidad conjunta de 12 millones de toneladas anuales, previstas offshore de Río Negro, y una solicitud al RIGI orientada a alcanzar la decisión final de inversión. Al 24/11 la FID todavía no se había verificado; no registrar como obra ejecutada, desembolso realizado ni oportunidad de capital abierta a terceros.",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Verificados los anuncios y las características del proyecto contra Reuters, la comunicación primaria de Eni y el sitio oficial de YPF. El estado verified se refiere a la procedencia y los datos publicados, no a la ejecución: no se localizó la resolución formal de adhesión al RIGI ni se verificó la FID; los montos son expectativas anunciadas."
+        "checkedAt": "2026-11-25",
+        "scope": "Revisión del 25/11/2026: Reuters (20/11) informa el anuncio del ministro de Economía sobre la inclusión del proyecto en el RIGI y las cifras de inversión esperada; Eni (14/08) confirma los promotores, la cadena integrada, 12 MTPA y dos unidades FLNG offshore de Río Negro, además de que la solicitud al RIGI estaba presentada y la FID se esperaba para fines de 2026. El sitio oficial de Argentina LNG/YPF consultado mantiene la publicación de solicitud de agosto. No se localizó en esta consulta una resolución formal de adhesión ni se verificó FID, desembolso, obra o disponibilidad de capital para terceros. Los montos son expectativas anunciadas, no inversión ejecutada."
       }
     },
     {
@@ -1307,15 +1307,15 @@
       "sector": "Agroindustria / alimentos frescos / logística de abastecimiento",
       "jurisdiction": null,
       "location": "Destinos de las Zonas Navales 73, 75 y 76; las localidades de entrega no se detallan en el aviso.",
-      "opportunityStatus": "open",
+      "opportunityStatus": "closed",
       "amount": null,
-      "period": "Retiro del pliego y presentación de ofertas hasta el 25/11/2026 a las 09:00; consultas hasta el 18/11/2026 a las 12:00; apertura electrónica el 25/11/2026 a las 09:00, por COMPR.AR. El período de consultas ya venció.",
-      "description": "Licitación Pública 0569/2026 de la Armada Argentina para la adquisición de frutas y verduras destinadas a unidades con asiento en las Zonas Navales 73, 75 y 76, con suministro a cargo de la Intendencia Naval Puerto Belgrano. El aviso no publica presupuesto ni detalla las localidades de entrega. Revisar el pliego en COMPR.AR para confirmar cantidades, calidad, logística y requisitos.",
+      "period": "Retiro del pliego y presentación de ofertas hasta el 25/11/2026 a las 09:00; consultas hasta el 18/11/2026 a las 12:00; apertura electrónica prevista para el 25/11/2026 a las 09:00 por COMPR.AR. Reconsulta a las 09:02 ART: el plazo ya había vencido.",
+      "description": "Licitación Pública 0569/2026 de la Armada Argentina para la adquisición de frutas y verduras destinadas a unidades con asiento en las Zonas Navales 73, 75 y 76, con suministro a cargo de la Intendencia Naval Puerto Belgrano. El aviso no publica presupuesto ni detalla las localidades de entrega. El plazo de presentación de ofertas y apertura venció el 25/11/2026 a las 09:00 ART. No se verificaron acta, ofertas, adjudicación ni ejecución.",
       "territorialRelevance": "Alcance nacional; puede interesar a proveedores agroalimentarios y operadores de logística de alimentos. No se identifican localidades de entrega ni presupuesto en el aviso.",
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-25",
-        "scope": "Verificado el aviso oficial del Boletín Oficial de la República Argentina, publicado el 11/11/2026. Se comprobaron organismo, UOC, objeto, expediente y fechas de retiro, consultas, presentación y apertura. A las 05:56 ART del 25/11 la fecha límite de ofertas (09:00) seguía pendiente. No se revisó el pliego completo ni se verificaron presupuesto, cantidades, localidades de entrega, ofertas, adjudicación o ejecución."
+        "scope": "Reconsulta del aviso oficial del Boletín Oficial el 25/11/2026 a las 09:02 ART. El aviso fija presentación de ofertas y apertura electrónica para el 25/11/2026 a las 09:00 por COMPR.AR; el plazo había vencido. Se marca closed conforme la regla temporal del catálogo. No se accedió al acta electrónica ni se verificaron ofertas, adjudicación o ejecución."
       }
     },
     {
@@ -1390,15 +1390,15 @@
       "sector": "Defensa / aeronáutica / logística antártica / equipamiento de apoyo",
       "jurisdiction": null,
       "location": "Argentina — contratación nacional por COMPR.AR; el aviso no precisa el lugar de entrega.",
-      "opportunityStatus": "open",
+      "opportunityStatus": "closed",
       "amount": null,
-      "period": "Retiro del pliego y presentación de ofertas hasta el 25/11/2026 a las 09:00; consultas hasta el 19/11/2026 a las 12:00; apertura electrónica el 25/11/2026 a las 09:00, por COMPR.AR. El período de consultas ya venció.",
-      "description": "Licitación Pública 0069/2026 del Ministerio de Defensa para adquirir equipos de apoyo de vuelo destinados al sostén logístico antártico del BAC Petrel. El aviso no publica presupuesto. Al corte de verificación (05:56 ART del 25/11), la recepción de ofertas todavía no había vencido; las consultas cerraron el 19/11. Revisar el pliego y las condiciones vigentes antes de considerar una oferta.",
+      "period": "Retiro del pliego y presentación de ofertas hasta el 25/11/2026 a las 09:00; consultas hasta el 19/11/2026 a las 12:00; apertura electrónica prevista para el 25/11/2026 a las 09:00 por COMPR.AR. Reconsulta a las 09:02 ART: el plazo ya había vencido.",
+      "description": "Licitación Pública 0069/2026 del Ministerio de Defensa para adquirir equipos de apoyo de vuelo destinados al sostén logístico antártico del BAC Petrel. El aviso no publica presupuesto. El plazo de presentación de ofertas y apertura venció el 25/11/2026 a las 09:00 ART. No se verificaron acta de apertura, ofertas, adjudicación ni ejecución.",
       "territorialRelevance": "Alcance nacional; posible interés para proveedores de equipamiento aeronáutico y logística antártica. El aviso no detalla lugar de entrega ni monto presupuestado.",
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-25",
-        "scope": "Verificado el aviso oficial del Boletín Oficial de la República Argentina, publicado el 06/11/2026. Se comprobaron organismo, UOC, objeto, expediente, fechas de retiro, consultas, ofertas y apertura. A las 05:56 ART del 25/11 la fecha límite de ofertas (09:00) seguía pendiente. No se revisó el pliego completo ni se verificaron presupuesto, requisitos, ofertas, adjudicación o ejecución."
+        "scope": "Reconsulta del aviso oficial del Boletín Oficial el 25/11/2026 a las 09:02 ART. El aviso fija presentación de ofertas y apertura electrónica para el 25/11/2026 a las 09:00 por COMPR.AR; el plazo había vencido. Se marca closed conforme la regla temporal del catálogo. No se accedió al acta electrónica ni se verificaron ofertas, adjudicación o ejecución."
       }
     },
     {
@@ -1934,6 +1934,45 @@
         "status": "verified",
         "checkedAt": "2026-11-25",
         "scope": "Se verificó el aviso oficial del Boletín Oficial, edición 24/11/2026, con objeto, organismo, presupuesto oficial, fecha base del presupuesto y cronograma de CONTRAT.AR. La localización se contrastó con la Resolución 31/2019 en Argentina.gob.ar, que ubica La Barrancosa en el Río Santa Cruz, departamento Corpen Aike. No se revisó el pliego técnico completo ni se verificaron adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "neuquen-bajo-del-choique-la-invernada-pluspetrol-gyp-rigi-2026",
+      "name": "Neuquén — Bajo del Choique-La Invernada: proyecto de Pluspetrol y GyP aprobado bajo RIGI",
+      "recordType": "investment_project",
+      "scope": "national",
+      "stage": "announced",
+      "sector": "Energía / petróleo y gas / hidrocarburos no convencionales / infraestructura de procesamiento y transporte",
+      "jurisdiction": "Neuquén",
+      "location": "Área Bajo del Choique-La Invernada, Vaca Muerta, provincia del Neuquén, Argentina",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 12240000000,
+        "currency": "USD",
+        "basis": "Plan de inversión informado por Presidencia de la Nación para el proyecto aprobado bajo RIGI. No equivale a desembolsos ejecutados ni a capital abierto a terceros."
+      },
+      "validFrom": "2026-10-19",
+      "validUntil": null,
+      "sourceName": "Ministerio de Economía — Resolución 1808/2026; Presidencia de la Nación — Bitácora de gestión",
+      "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/norma-431356",
+      "relatedSources": [
+        {
+          "label": "Presidencia de la Nación — Bitácora de gestión (noviembre 2026)",
+          "url": "https://www.argentina.gob.ar/bitacora"
+        },
+        {
+          "label": "Pluspetrol — Operaciones Argentina",
+          "url": "https://www.pluspetrol.net/en/operaciones/argentina"
+        }
+      ],
+      "sourcePublishedAt": "2026-10-19",
+      "period": "La Resolución 1808/2026 fue sancionada el 15/10/2026 y publicada el 19/10/2026; aprobó la adhesión al RIGI como Proyecto de Exportación Estratégica de Largo Plazo. Presidencia informa un plan de inversión de USD 12.240 millones, exportaciones anuales aproximadas de USD 2.300 millones y más de 2.300 empleos; son cifras de proyecto, no resultados. Al 25/11/2026 no se verificaron desembolsos totales ni avance físico integral.",
+      "description": "Proyecto único de exploración, producción, tratamiento y transporte de hidrocarburos en el área Bajo del Choique-La Invernada, Vaca Muerta, Neuquén, a cargo de una unión transitoria de Gas y Petróleo del Neuquén SA y Pluspetrol Cuenca Neuquina SRL. La Resolución 1808/2026 aprobó su adhesión al RIGI como PEELP e incluye nuevos pozos horizontales, cuatro instalaciones de tratamiento, ductos de evacuación y actividades de almacenamiento, transporte y comercialización/exportación de petróleo y gas. Presidencia informa un plan de inversión de USD 12.240 millones. La aprobación del régimen no acredita desembolsos, avance físico ni capital disponible para terceros.",
+      "territorialRelevance": "Proyecto estratégico de Neuquén y Vaca Muerta, con demanda potencial para proveedores de perforación, plantas de tratamiento, ductos, logística, mantenimiento y servicios industriales. La ficha aporta contexto nacional de energía e infraestructura; no se identificó un vínculo operativo directo con Escobar ni una convocatoria abierta de proveedores en las fuentes revisadas.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se revisó el resumen oficial de la Resolución 1808/2026 en Argentina.gob.ar: sancionada el 15/10 y publicada el 19/10/2026, aprueba la adhesión al RIGI como PEELP, identifica a la unión transitoria GyP–Pluspetrol, el sector petróleo y gas y el alcance de exploración, producción, tratamiento, transporte y exportación, incluidas cuatro plantas EPF y ductos. La Bitácora de Presidencia identifica el proyecto en Neuquén y publica el plan de USD 12.240 millones, exportaciones aproximadas de USD 2.300 millones anuales y más de 2.300 empleos. Pluspetrol confirma la presencia del activo en Vaca Muerta. No se interpreta la cifra como gasto ejecutado; no se verificó avance de obra, cronograma de desembolsos ni oportunidad abierta a terceros."
       }
     }
   ]
