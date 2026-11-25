@@ -47,3 +47,16 @@ Se agregó un registro documental a `transparencyDirectory.environmentalDatasets
 3. Definición oficial de `gridcode` y criterios MNDWI.
 4. Validación de geometrías contra una capa oficial de límites del Partido antes de cualquier representación.
 5. Separación explícita entre detección satelital histórica y cartografía oficial de peligrosidad de inundaciones.
+
+## Resultado post-commit
+
+- Commit de datos: [`1aa3ba9`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/1aa3ba939762863a06d38c7d25a1f756565de500).
+- Commit de pruebas: [`e340196`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/e34019608c60d977a9c00ca8e959f2e9c892cce7).
+- Commit inicial del registro: [`a549a0e`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/a549a0ec4582e8fd1443d3660b8a1c55b24fbeec).
+- Se volvió a leer el archivo desde `main`: JSON parseado y registro presente.
+- El archivo de pruebas se volvió a leer y su sintaxis JavaScript se pudo compilar; las aserciones nuevas fueron contrastadas con el registro. No se ejecutó localmente el test Node completo.
+- El workflow `.github/workflows/static.yml` está configurado para ejecutarse en push a `main`. La consulta de estados combinados no devolvió checks y el endpoint disponible de ejecuciones no expuso una ejecución para este commit; por tanto, no se atribuye un resultado de CI ni de GitHub Pages.
+- La apertura independiente de `https://leandrocuellarok-netizen.github.io/mapafederal/foco-escobar/` no estuvo disponible en el navegador de consulta. No se confirma la publicación efectiva.
+
+La actualización documental se mantiene separada del estado de validación: el cambio está en `main`, pero la ejecución del workflow y el despliegue quedan sin confirmar.
+
