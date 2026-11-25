@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 09:14 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 09:56 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,10 +8,10 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 55 registros |
-| Investment Finder | 67 registros |
-| Oportunidades abiertas | 32 |
-| Disponibilidad desconocida | 30 |
+| Radar IA | 57 registros |
+| Investment Finder | 73 registros |
+| Oportunidades abiertas | 35 |
+| Disponibilidad desconocida | 33 |
 | Cerradas | 5 |
 | Event Intelligence | 4 registros |
 | Nodos estratégicos | 86 |
@@ -19,7 +19,7 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 | Módulos en piloto | 1 |
 | Módulos planificados | 5 |
 
-El catálogo de oportunidades conserva 24 registros de Escobar: 5 abiertos (LP 71, LP 72, LP 74, LP 75 y Red Sostenible), 16 con disponibilidad desconocida y 3 cerrados. El estado `open` significa que el cronograma oficial de consulta/venta y apertura no venció; no garantiza elegibilidad técnica ni disponibilidad de cupos.
+El catálogo de oportunidades conserva 23 registros de Escobar: 5 abiertos (LP 71, LP 72, LP 74, LP 75 y Red Sostenible), 15 con disponibilidad desconocida y 3 cerrados. El estado `open` significa que el cronograma oficial de consulta/venta y apertura no venció; no garantiza elegibilidad técnica ni disponibilidad de cupos.
 
 ## Actualización del ciclo 05:56 — 25/11/2026
 
@@ -321,3 +321,17 @@ El catálogo de oportunidades conserva 24 registros de Escobar: 5 abiertos (LP 7
 - GitHub Actions run [45611091493](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45611091493) completó validación y despliegue de Pages con éxito para el commit `cb7c0085`. La corrección posterior de la fuente de Armada LP 0497/2026 quedó en el commit `8a2913c7`; el workflow [45611587764](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45611587764) validó correctamente todos los controles y su despliegue seguía en curso a las 09:14 ART. La URL informada por Pages es https://leandrocuellarok-netizen.github.io/mapafederal/; la herramienta de consulta no pudo abrirla para inspección visual independiente.
 - Commits principales: Investment Finder `cc47d644` y corrección de scope `9fceb95f`; corrección del ID Five9 `cb7c0085`; registro del ciclo `e93c897b` y actualización de su trazabilidad `d97149d5`, `f7a23124`. Registro: [GBIE ciclo 09:02](../runs/2026-11-25-gbie-cycle-0902.md).
 - Próximos pasos: revalidar Armada LP 0497/2026 después de las 10:00 ART; buscar actas de apertura de las dos licitaciones vencidas; seguir la resolución/FID de Argentina LNG; revisar nuevos avisos municipales y provinciales; resolver el alcance territorial de BESS Maschwitz y el CRS del dataset de anegamientos. El balance de las 20:00 continúa provisional.
+
+
+## Actualización del ciclo 09:56 — 25/11/2026
+
+- Radar IA: 55 → 57 registros. Se incorporaron dos señales de Reuters: (1) presión de mercado sobre empresas de chips, servidores y centros de datos por los costos del despliegue de infraestructura y retornos inciertos; las cotizaciones citadas son instantáneas, no pronósticos; (2) registros de financiación de servidores y módulos de IA en China por hasta USD 270 millones, más USD 31 millones en equipos de red. La segunda nota no prueba que los equipos contuvieran chips de exportación prohibida ni cómo ingresaron a China; se preservó la respuesta de Megaspeed. Se actualizó el registro BIS/Federal Register 2026-23999 con la página HTML oficial, que confirma vigencia 23/11/2026 y siete entidades añadidas a la Entity List. La guía FCA sobre IA agéntica ya estaba registrada y no se duplicó.
+- Investment Finder: 67 → 73 oportunidades. La edición 14528 del Boletín Oficial bonaerense (25/11) aportó seis llamados: servidores para la Caja de Retiros de las Policías bonaerenses (disponibilidad unknown por falta de fecha límite en el extracto); acueducto a Parque San Martín, La Plata (ofertas 09/12 11:30; garantía ARS 616,83 M, no presupuesto); luminarias de Merlo LP 60 (presupuesto oficial ARS 524,36 M; ofertas 04/12 10:00); reactivos de hemoterapia con equipo automatizado en General San Martín LP 37 (presupuesto oficial ARS 205,00 M; apertura 10/12); y dos licitaciones del HIGA Pedro Fiorito para hemostasia y áreas especiales (presupuestos estimados ARS 217,26 M y ARS 326,02 M; apertura 01/12, disponibilidad unknown porque el extracto no fija el cierre de ofertas).
+- Cuatro registros existentes se revalidaron sin duplicar: San Fernando LP 38/2026, Pilar LP 53/2026, Pilar LP 54/2026 y Luján LP 1/2026. Se actualizaron fuente a la edición 14528 y fecha/alcance de verificación, sin alterar montos, cronogramas o estados no respaldados por el aviso.
+- Estado general: 35 oportunidades abiertas, 33 con disponibilidad desconocida y 5 cerradas. Escobar conserva 23 registros: 5 abiertos, 15 desconocidos y 3 cerrados. La búsqueda de «Escobar» en la edición 14528 no encontró nuevos llamados municipales; la única coincidencia fue un aviso de transferencia de fondo de comercio en la sección de sociedades, no una oportunidad de inversión o licitación. No se localizó un nuevo anuncio oficial de expansión empresarial en esta ventana.
+- Territorio: se conserva el directorio de siete fichas nominales de CDI incorporado por el cambio concurrente. Persisten la discrepancia municipal de siete versus nueve centros, la diferencia de dirección de Niño Jesús y la descarga GeoJSON HTTP 404; no se agregan puntos ni polígonos ni se infiere CRS.
+- Contrato y módulos: sin cambios. `freeFormReports=false`, `customAnalyses=by_request`, `predictiveClaimsRequireValidation=true`, `clientDataPublic=false`. Federal Reports sigue como único piloto; cinco módulos permanecen planificados.
+- Validación: JSON parseado; 57 IDs de noticias y 73 IDs de oportunidades únicos; URLs HTTPS; estados válidos; importes finitos; páginas principal, Radar IA e Investment Finder referencian los catálogos. No se dispone de working tree local a través del conector.
+- Commits de datos: Radar IA `343d14efd800671e8b12376d156db4059948a96f`; Investment Finder `571bf6cbb9ae39b43ed48d809c5fd40f1e9c5415`. Registro completo: [GBIE ciclo 09:56](../runs/2026-11-25-gbie-cycle-0956.md).
+- El workflow #612 del cambio CDI previo completó validación y despliegue. Las ejecuciones correspondientes a los commits de este ciclo aún deben confirmarse; no se declara publicación de Pages exitosa hasta comprobar sus jobs.
+- Próximos pasos: comprobar CI/Pages de los commits de datos; inspeccionar pliegos y circulares; actualizar estados sólo con evidencia de recepción/apertura/adjudicación; reintentar GeoJSON CDI; seguir buscando llamados y expansiones en Escobar. El balance para las 20:00 continúa provisional.
