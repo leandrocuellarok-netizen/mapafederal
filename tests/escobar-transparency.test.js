@@ -280,3 +280,32 @@ assert.match(profile, /areaDiscrepancyNote/);
 assert.match(profile, /cadastralReference/);
 assert.match(profile, /Contraste documental de superficie y parcela/);
 
+const floodDetection = transparency.environmentalDatasets.find(item => item.id === "zonas-anegamiento-tormentas-2025-partido-escobar");
+assert.ok(floodDetection, "Falta el dataset municipal de zonas de anegamiento detectadas en tormentas de 2025");
+assert.equal(floodDetection.status, "pendiente");
+assert.equal(floodDetection.territorialScope, "Partido de Escobar");
+assert.equal(floodDetection.localityDetail, "No especificada por la fuente; no se asigna a ninguna de las siete localidades.");
+assert.equal(floodDetection.observationPeriod, "Eventos de tormentas ocurridos durante 2025");
+assert.equal(floodDetection.observationPeriodStatus, "histórico");
+assert.equal(floodDetection.sourceMethod, "Índice Normalizado de Diferencia de Agua (MNDWI) aplicado a imágenes COPERNICUS/S2_SR_HARMONIZED.");
+assert.equal(floodDetection.sourceCrs, "No declarado en el GeoJSON");
+assert.equal(floodDetection.geometryIntegrationStatus, "pending");
+assert.equal(floodDetection.sourcePublishedAt, null);
+assert.equal(floodDetection.createdAt, "2025-10-01");
+assert.equal(floodDetection.lastUpdatedAt, "2026-03-31");
+assert.equal(floodDetection.version, "1.0");
+assert.equal(floodDetection.license, "Open Data Commons Open Database License (ODbL)");
+assert.match(floodDetection.geometryNote, /no se asigna un EPSG por inferencia/i);
+assert.match(floodDetection.geometryNote, /no acredita profundidad, duración, probabilidad/i);
+assert.match(floodDetection.verification.scope, /no declara CRS ni localidad por entidad/i);
+assert.equal(floodDetection.verification.checkedAt, "2026-11-25");
+assert.equal(floodDetection.resourceName, "zonas_anegamientos_2025.geojson");
+assert.equal(floodDetection.resourceSize, "806 KB");
+for (const url of [floodDetection.sourceUrl, floodDetection.resourceUrl]) {
+  const parsedUrl = new URL(url);
+  assert.equal(parsedUrl.protocol, "https:");
+  assert.ok(parsedUrl.hostname);
+}
+assert.equal(floodDetection.coords, undefined, "No agregar geometría al mapa sin CRS verificado");
+assert.equal(floodDetection.locality, undefined, "No asignar una localidad que la fuente no especifica");
+
