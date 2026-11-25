@@ -775,3 +775,25 @@ Corte provisional 19:04 ART. El balance de las 20:00 permanece abierto.
 ### Verificación posterior de publicación — 19:09 ART
 
 El workflow #702 (`45710549124`) completó validación y despliegue de GitHub Pages sobre el commit `45fd8999`; los catálogos Radar IA e Investment Finder quedaron incluidos en ese deployment. El workflow #703 validó el registro de ciclo y tenía su deployment en curso; #704 quedó en cola para el balance. No se pudo realizar inspección visual independiente de la web desde el navegador de verificación.
+
+## Cierre final — revisión de las 20:00, corte 20:03 ART
+
+- Radar IA: 70 noticias. Se incorporó la Semana de la IA de Argentina (25–27/11, C3, CABA) con fuente oficial, agenda sectorial y verificación fechada.
+- Investment Finder: 179 oportunidades; 117 abiertas, 55 desconocidas y 7 cerradas. No se agregaron oportunidades en el último corte porque los llamados de la edición nacional del 25/11 ya estaban representados o no tenían documentación suficiente para una nueva ficha. La conciliación de 6 adjudicaciones y 7 dictámenes permanece pendiente.
+- Escobar: 25 registros locales; 5 abiertos, 16 desconocidos y 4 cerrados. Sin nueva licitación municipal confirmada en este corte. Los tres GeoJSON de recolección diferenciada siguen documentados como 404; no se infieren rutas. BESS Maschwitz sigue sin parcela/jurisdicción concluyente.
+- Event Intelligence: 7 registros documentales: 2 completados, 1 en desarrollo y 4 futuros confirmados. El módulo continúa planificado, sin agenda integrada ni ingesta automática.
+- Arquitectura y contrato: Federal Reports es el único piloto funcional y descriptivo; cinco módulos planificados. Se mantienen freeFormReports=false, customAnalyses=by_request, clientDataPublic=false y predictiveClaimsRequireValidation=true. No hay predicciones operativas ni agente en producción.
+- CI y publicación: workflow #716 (45718341506) completó validación y despliegue de GitHub Pages. Las validaciones fallidas anteriores se debieron a expectativas de pruebas/documentación desactualizadas y al ID editorial; fueron corregidas sin relajar controles. La inspección visual manual del sitio no estuvo disponible desde el navegador de verificación.
+- Registro del cierre: [ciclo 20:03](../runs/2026-11-25-gbie-cycle-2003.md).
+
+### Riesgos prioritarios
+
+1. Adjudicaciones y dictámenes aún no conciliados uno por uno.
+2. Oportunidades con disponibilidad desconocida y vencimientos próximos.
+3. Geometrías municipales de residuos inaccesibles; capa hídrica EPSG:22185 sin validación suficiente para mapas de riesgo.
+4. BESS Maschwitz sin localización parcelaria concluyente.
+5. Event Intelligence sigue siendo un catálogo documental, no una agenda operativa.
+
+### Próximos pasos
+
+Conciliar resultados de compras, verificar plazos de diciembre, continuar el radar de Escobar, recuperar fuentes geográficas oficiales y validar demanda para una oferta de capacitación/adopción IA de Vilanova. Mantener los informes personalizados bajo solicitud y no comercializar predicciones sin datos, backtesting y validación.
