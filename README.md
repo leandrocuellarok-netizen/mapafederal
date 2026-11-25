@@ -202,7 +202,7 @@ La página independiente de Investment Finder permite exportar a CSV únicamente
 
 La interfaz presenta los seis módulos desde un único manifiesto: `data/ai-modules.json`. Federal Reports permanece en piloto funcional; Federal AI Assistant, Investment Finder, Territorial Monitor, Event Intelligence y Executive Travel AI permanecen planificados. Los estados, capacidades actuales, dependencias y próximos pasos se mantienen en ese archivo y no deben duplicarse como una segunda lista independiente en la interfaz.
 
-Las funciones comprobables actuales son el mapa, el directorio de nodos, los perfiles OPEX, las noticias curadas, el catálogo documental filtrable de Investment Finder y las exportaciones CSV/Markdown. `data/events.json` contiene seis registros documentales validados: dos eventos históricos completados y cuatro eventos futuros confirmados. No existe una agenda integrada; los registros documentan convocatorias publicadas, pero no confirman cupos disponibles ni inscripción individual. El buscador no es un modelo de IA y la sección de módulos no implica integraciones en producción.
+Las funciones comprobables actuales son el mapa, el directorio de nodos, los perfiles OPEX, las noticias curadas, el catálogo documental filtrable de Investment Finder y las exportaciones CSV/Markdown. `data/events.json` contiene siete registros documentales validados: dos eventos completados, la Semana de la IA en desarrollo (25–27/11/2026) y cuatro eventos futuros confirmados. No existe una agenda integrada; los registros documentan convocatorias publicadas, pero no confirman cupos disponibles ni inscripción individual. El buscador no es un modelo de IA y la sección de módulos no implica integraciones en producción.
 
 ## Base territorial de Escobar
 
@@ -231,7 +231,7 @@ Fuentes primarias: [Municipalidad de Escobar — Escobar, tierra de inversiones]
 - `assets/foco-escobar.js`: renderizado de los datos territoriales, económicos, de servicios, transparencia y movilidad de Escobar.
 - `data/strategic-nodes.json`: catálogo geográfico.
 - `data/news.json`: noticias curadas.
-- `data/events.json`: catálogo versionado de Event Intelligence; contiene seis registros documentales validados: dos eventos históricos completados y cuatro eventos futuros confirmados. No es una agenda integrada ni confirma cupos ni el estado de la inscripción individual.
+- `data/events.json`: catálogo versionado de Event Intelligence; contiene siete registros documentales validados: dos eventos completados, la Semana de la IA en desarrollo (25–27/11/2026) y cuatro eventos futuros confirmados. No es una agenda integrada ni confirma cupos ni el estado de la inscripción individual.
 - `data/investment-opportunities.json`: catálogo documental versionado de Investment Finder; contiene registros nacionales del RIMI y del Programa KIT 4.0. Ambos conservan disponibilidad desconocida hasta confirmar sus condiciones operativas, sin presentarse como convocatorias abiertas.
 - Leaflet 1.9.4: visualización geográfica.
 - OpenStreetMap: teselas, sujetas a disponibilidad y política de uso.
