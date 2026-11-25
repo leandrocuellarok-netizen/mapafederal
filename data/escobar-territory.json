@@ -1183,7 +1183,7 @@
         "verification": {
           "status": "verified",
           "checkedAt": "2026-11-25",
-          "scope": "Se comprobó la ficha municipal Mi Bus de la línea 506 y sus 23 paradas, desde TERMINAL ESCOBAR hasta COL. ESTE (MERCADO LIBRE), y se abrieron los enlaces de horarios de ambas paradas. El 25/11/2026 se mostraron salidas de Terminal Escobar a las 09:00, 12:00 y 17:00 de lunes a viernes, y 12:00 y 17:00 los domingos; en la parada de Mercado Libre, 09:30, 12:30 y 17:30 de lunes a viernes, y 12:30 y 17:30 los domingos. La ficha coincide en línea y destino con el ramal anunciado, pero no identifica explícitamente la letra B. Esto acredita programación publicada, no circulación presencial ni en tiempo real. No se infiere inexistencia de servicio los sábados."
+          "scope": "Se comprobó la ficha municipal Mi Bus de la línea 506 y sus 23 paradas, desde TERMINAL ESCOBAR hasta COL. ESTE (MERCADO LIBRE), y se abrieron los enlaces de horarios de ambas paradas. El 25/11/2026 se mostraron salidas de Terminal Escobar a las 09:00, 12:00 y 17:00 de lunes a viernes, y 12:00 y 17:00 los domingos; en la parada de Mercado Libre, 09:30, 12:30 y 17:30 de lunes a viernes, y 12:30 y 17:30 los domingos. La ficha coincide en línea y destino con el ramal anunciado, pero no identifica explícitamente la letra B. Esto acredita programación publicada, no confirma circulación presencial ni en tiempo real. No se infiere inexistencia de servicio los sábados."
         },
         "officialSchedule": {
           "sourceName": "Municipalidad de Escobar — Escobar 360 / Mi Bus",
