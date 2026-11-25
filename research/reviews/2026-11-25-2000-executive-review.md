@@ -701,3 +701,7 @@ El workflow #45693147512 superó la validación del perfil, el directorio sanita
 
 ### Séptima corrección de CI — 17:17 ART
 El workflow #45693293076 llegó a la prueba de licitaciones de Escobar y detectó que LP 66 heredaba un patrón de verificación genérico que ya no correspondía a su texto actualizado. Se hizo explícito el patrón de revalidación de las ediciones 14505 y 14508. El dato y las fuentes no se modificaron.
+
+
+### Ajuste sintáctico del test LP66 — 17:18 ART
+Se simplificó la expresión regular del test de LP 66 para evitar doble escape de barras; se conserva la comprobación de fecha 25/11 y de las ediciones 14505/14508.
