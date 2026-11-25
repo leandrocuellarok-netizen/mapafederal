@@ -1473,5 +1473,49 @@
       "checkedAt": "2026-11-24",
       "scope": "Contraste de la Resolución 197/2026 en su texto original: los artículos 1 y 2 aprueban la guía y limitan su aplicación al Sector Público Nacional definido en el artículo 8 de la Ley 24.156. Se verificaron fecha de sanción y publicación. El anexo no está publicado en la ficha normativa; no se atribuyen obligaciones específicas no visibles en el texto de la resolución."
     }
+  },
+  {
+    "id": "news-www-reuters-com-business-anthropics-slide-tests-wall-streets-lofty-bets-future-ai-profits-2026-11-25",
+    "title": "La caída bursátil de Anthropic intensifica el escrutinio sobre las valuaciones de IA",
+    "date": "2026-11-25",
+    "category": "Economía",
+    "summary": "Reuters informó que las acciones de Anthropic cotizaban por debajo del precio de salida a bolsa, intensificando el escrutinio de los inversores sobre las valuaciones del sector. El análisis señala que los costos de infraestructura, la depreciación de chips y servidores y la competencia pueden presionar la rentabilidad, incluso cuando crecen las previsiones de ingresos. Es una lectura de mercado basada en precios y estimaciones disponibles al momento del artículo, no una conclusión de que la adopción de IA esté retrocediendo.",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/business/anthropics-slide-tests-wall-streets-lofty-bets-future-ai-profits-2026-11-25/",
+    "period": "Artículo publicado el 25/11/2026 a las 16:13 UTC; las cotizaciones y estimaciones citadas son referencias de mercado al momento de publicación.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Estados Unidos — cotización de Anthropic y compañías del Nasdaq-100; mercados globales — valoración y financiación de empresas de IA.",
+    "sector": "Economía / mercados de capitales / inteligencia artificial / infraestructura cloud / semiconductores",
+    "territorialRelevance": "Señal de riesgo para empresas e inversores argentinos que evalúan gasto en IA, costos de cómputo y modelos de retorno. No representa una oportunidad de inversión local ni permite extrapolar rendimientos.",
+    "relatedSources": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se revisó el artículo original de Reuters publicado el 25/11/2026. Se atribuyen a Reuters los datos de cotización y a sus fuentes las interpretaciones sobre costos, competencia y márgenes. No se formula recomendación bursátil ni se presenta una variación puntual como tendencia permanente."
+    }
+  },
+  {
+    "id": "news-www-reuters-com-technology-nio-says-ai-use-could-lift-gross-margin-by-10-percentage-points-2026-11-25",
+    "title": "Nio afirma que la IA podría elevar su margen bruto en 10 puntos porcentuales a largo plazo",
+    "date": "2026-11-25",
+    "category": "Empresas",
+    "summary": "Reuters reportó que el CEO de Nio, William Li, sostuvo que la aplicación de IA en distintas áreas podría elevar el margen bruto de la empresa en 10 puntos porcentuales a largo plazo. La compañía dijo haber desplegado 7.500 agentes de IA en investigación y desarrollo, fabricación, logística y ventas, y presentó una tercera generación de su World Model. Tanto la mejora de margen como las capacidades anunciadas son afirmaciones corporativas; no se registran como resultados financieros ya alcanzados ni como validación independiente.",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/technology/nio-says-ai-use-could-lift-gross-margin-by-10-percentage-points-2026-11-25/",
+    "period": "Declaraciones reportadas el 25/11/2026 en Guangzhou, China. El artículo no fija un horizonte exacto para la mejora de margen ni aporta una auditoría independiente del despliegue de agentes.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "China — Nio y su jornada tecnológica en Guangzhou; industria automotriz y de vehículos eléctricos.",
+    "sector": "Empresas / automotriz / vehículos eléctricos / IA industrial / manufactura / logística",
+    "territorialRelevance": "Benchmark internacional para fabricantes y proveedores argentinos que estudian automatización transversal. Las métricas anunciadas por la empresa no deben extrapolarse sin datos operativos comparables, costos y medición independiente.",
+    "relatedSources": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se revisó el artículo original de Reuters. La mejora de 10 puntos porcentuales se atribuye al CEO como posibilidad de largo plazo; los 7.500 agentes y la reducción de intervenciones del World Model son afirmaciones de Nio. No se presentan como impacto realizado ni verificado externamente."
+    }
   }
 ]
