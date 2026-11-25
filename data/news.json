@@ -594,10 +594,10 @@
     "title": "España puso en vigor requisitos de sostenibilidad y soberanía digital para centros de datos",
     "date": "2026-11-21",
     "category": "Regulación",
-    "summary": "El Real Decreto 1032/2026, publicado el 21/11 y vigente desde el 22/11, fija requisitos de acceso y conexión eléctrica para centros de datos con potencia de acceso igual o superior a 10 MW. Incluye criterios de energía renovable, eficiencia energética e hídrica y salvaguardas de soberanía digital para sistemas públicos de categoría ALTA. Durante la transición al etiquetado europeo establece umbrales PUE ≤1,25 y WUE ≤0,1, con plazos de adaptación. No es una regulación general de IA.",
+    "summary": "El Real Decreto 1032/2026, publicado el 21/11 y vigente desde el 22/11, fija requisitos de acceso y conexión eléctrica para centros de datos con potencia de acceso igual o superior a 10 MW. Incluye criterios de energía renovable, eficiencia energética e hídrica y salvaguardas de soberanía digital para sistemas públicos de categoría ALTA. Durante la transición al etiquetado europeo establece umbrales PUE ≤1,25 y WUE ≤0,1. El 25/11 Europa Press informó que SpainDC presentó un recurso ante el Tribunal Supremo y pidió suspensión cautelar; no se verificó una resolución que suspenda la norma.",
     "source": "Boletín Oficial del Estado — Real Decreto 1032/2026",
     "url": "https://www.boe.es/eli/es/rd/2026/11/20/1032",
-    "period": "Disposición de 20/11/2026; publicada en BOE núm. 290 el 21/11/2026; entrada en vigor 22/11/2026.",
+    "period": "Disposición de 20/11/2026; publicada en BOE núm. 290 el 21/11/2026; entrada en vigor 22/11/2026. Desarrollo procesal reportado el 25/11: SpainDC informó que presentó recurso el 24/11 y solicitó suspensión cautelar.",
     "jurisdictions": [],
     "geographyStatus": "not_specified",
     "geographyEvidence": [],
@@ -608,12 +608,16 @@
       {
         "label": "MITECO — explicación oficial de los requisitos y umbrales",
         "url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html"
+      },
+      {
+        "label": "Europa Press — SpainDC anuncia recurso y solicitud de suspensión cautelar (25/11/2026)",
+        "url": "https://www.europapress.es/economia/legal-00345/noticia-spaindc-recurre-tribunal-supremo-decreto-centros-datos-pide-suspension-cautelar-20261125100224.html"
       }
     ],
     "verification": {
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-25",
-      "scope": "Se consultó el texto original BOE-A-2026-24439: publicación 21/11/2026 y entrada en vigor 22/11/2026. Se verificaron el umbral de 10 MW de potencia de acceso para las condiciones de conexión; las salvaguardas del artículo 5 para sistemas públicos de categoría ALTA; los criterios de energía renovable, eficiencia energética e hídrica; los valores transitorios PUE ≤1,25 y WUE ≤0,1; y las obligaciones de información para centros de datos con potencia IT igual o superior a 500 kW. Los requisitos de soberanía digital no se presentan como una obligación general para todos los centros ni la norma como regulación general de IA. Su alcance es España; no se atribuye efecto jurídico en Argentina."
+      "scope": "Se consultó el texto original BOE-A-2026-24439: publicación 21/11/2026 y entrada en vigor 22/11/2026. Se verificaron el umbral de 10 MW de potencia de acceso para las condiciones de conexión; las salvaguardas del artículo 5 para sistemas públicos de categoría ALTA; los criterios de energía renovable, eficiencia energética e hídrica; los valores transitorios PUE ≤1,25 y WUE ≤0,1; y las obligaciones de información para centros de datos con potencia IT igual o superior a 500 kW. Los requisitos de soberanía digital no se presentan como una obligación general para todos los centros ni la norma como regulación general de IA. Su alcance es España; no se atribuye efecto jurídico en Argentina. Desarrollo procesal: Europa Press informó el 25/11, citando a SpainDC, que la asociación presentó recurso ante el Tribunal Supremo y pidió suspensión cautelar. No se verificó en un expediente judicial una resolución de admisión ni una medida cautelar concedida; por ello el registro no marca la norma como suspendida y conserva su vigencia publicada en el BOE."
     }
   },
   {
@@ -1319,6 +1323,28 @@
       "Proyecto Navidad, aproximadamente 40 km al este de Gastre; coordenadas publicadas por SEGEMAR."
     ],
     "id": "news-www-abcdiario-com-ar-petroleo-mineria-santa-cruz-exporto-us2-627-millones-en-minerales-y-chubut-sigue-sin-explotar-uno-de-los-mayores-yacimientos-de-plata-del-mundo"
+  },
+  {
+    "id": "news-news-ballotpedia-org-2026-11-06-voters-favored-limiting-data-center-development-in-40-of-41-local-ballot-measures-on-nov-3",
+    "title": "Votantes respaldaron límites al desarrollo de centros de datos en 40 de 41 consultas locales",
+    "date": "2026-11-06",
+    "category": "Regulación",
+    "summary": "Ballotpedia informó que los votantes favorecieron limitar el desarrollo de centros de datos en 40 de 41 consultas locales celebradas el 3/11/2026. El reporte distingue 27 medidas aprobadas que restringen o expresan oposición y 13 medidas favorables al desarrollo que fueron rechazadas; Harwood, Dakota del Norte, fue la única excepción. El conteo reúne decisiones locales de diez estados y no constituye una prohibición federal ni una encuesta nacional.",
+    "source": "Ballotpedia News — análisis de resultados electorales locales",
+    "url": "https://news.ballotpedia.org/2026/11/06/voters-favored-limiting-data-center-development-in-40-of-41-local-ballot-measures-on-nov-3/",
+    "period": "Votación del 03/11/2026; informe publicado el 06/11/2026. El recuento comprende 41 contiendas locales en diez estados; no describe una norma federal ni una encuesta nacional.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Estados Unidos — 41 consultas locales en diez estados; el detalle territorial se conserva en esta descripción porque el filtro geográfico del catálogo está limitado a las 24 jurisdicciones argentinas.",
+    "sector": "Infraestructura digital / centros de datos / energía / agua / uso del suelo / gobernanza local",
+    "territorialRelevance": "Señal comparativa para evaluar proyectos de infraestructura de IA: aceptación comunitaria, demanda eléctrica e hídrica, zonificación y permisos pueden convertirse en riesgos de cronograma y reputación. No se interpreta como rechazo a la IA ni como regla aplicable en Argentina o Escobar.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se consultó el informe original de Ballotpedia publicado el 06/11/2026. Se verificaron el recuento de 40 de 41 contiendas, la distinción entre 27 medidas que limitaron o expresaron oposición y 13 medidas favorables al desarrollo que fueron rechazadas, la excepción de Harwood (Dakota del Norte) y el alcance en diez estados. No se reauditaron individualmente los escrutinios de los 41 comicios; el resultado se atribuye a Ballotpedia y no se presenta como legislación federal."
+    },
+    "relatedSources": []
   },
   {
     "title": "Grupo Addnice proyecta trasladar su planta industrial a Garín en 2027",

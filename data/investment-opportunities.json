@@ -3014,23 +3014,29 @@
       "scope": "national",
       "stage": "announced",
       "validFrom": "2026-11-20",
-      "validUntil": "2026-12-09",
+      "validUntil": null,
       "sourceName": "Boletín Oficial de la República Argentina — Hospital de Alta Complejidad Cuenca Alta Dr. Néstor Carlos Kirchner (SAMIC)",
-      "sourceUrl": "https://www.boletinoficial.gov.ar/detalleAviso/tercera/2420847/20261120",
-      "sourcePublishedAt": "2026-11-20",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421068/20261125",
+      "sourcePublishedAt": "2026-11-25",
       "sector": "Salud / equipamiento médico / ingeniería clínica / ultrasonido",
       "jurisdiction": null,
       "location": "Hospital Cuenca Alta Dr. Néstor Carlos Kirchner, Ruta Provincial 6 y Ruta Nacional 205, Cañuelas, Provincia de Buenos Aires, Argentina.",
       "opportunityStatus": "unknown",
       "amount": null,
-      "period": "Apertura de propuestas el 09/12/2026 a las 10:00 en el Área de Compras y Contrataciones del Hospital. El aviso remite a la institución para alcances y condiciones contractuales y no precisa una fecha/hora independiente de cierre de ofertas.",
+      "period": "Apertura de propuestas el 09/12/2026 a las 10:00 en el Área de Compras y Contrataciones del Hospital, Ruta Provincial 6 y Ruta 205, Cañuelas. El aviso republicado el 25/11 no precisa una fecha/hora independiente de cierre de ofertas; la fecha de apertura no se usa como vencimiento de presentación.",
       "description": "Licitación Pública 088/2026 para adquirir transductores destinados al equipo Clearvue 550 del Área de Ingeniería Clínica del Hospital Cuenca Alta. El aviso no publica presupuesto y remite al hospital para consultar alcances y condiciones.",
       "territorialRelevance": "Contratación hospitalaria localizada en Cañuelas, Provincia de Buenos Aires. Puede interesar a proveedores de transductores y equipamiento de ultrasonido; la disponibilidad permanece desconocida hasta verificar el pliego completo.",
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-25",
-        "scope": "Se revisó el aviso oficial del Boletín Oficial publicado el 20/11/2026 y reimpreso en la edición del 25/11. Se verificaron objeto, expediente, ubicación y apertura 09/12/2026 a las 10:00. No se publica presupuesto ni un plazo separado de presentación."
-      }
+        "scope": "Se revisó el aviso oficial republicado en el Boletín Oficial el 25/11/2026 y se contrastó con la publicación inicial del 20/11. Se verificaron objeto, expediente, ubicación y apertura 09/12/2026 a las 10:00. No se publica presupuesto ni un plazo separado de presentación de ofertas; validUntil queda null y la disponibilidad permanece desconocida."
+      },
+      "relatedSources": [
+        {
+          "label": "Boletín Oficial — publicación inicial del aviso (20/11/2026)",
+          "url": "https://www.boletinoficial.gov.ar/detalleAviso/tercera/2420847/20261120"
+        }
+      ]
     },
     {
       "id": "general-alvarado-licitacion-6-2026-puesta-en-valor-frente-maritimo-miramar",
@@ -5016,6 +5022,63 @@
           "url": "https://www.bancoprovincia.com.ar/transparencia/pages/"
         }
       ]
+    },
+    {
+      "id": "armada-licitacion-0403-2026-electrobombas-sumergibles",
+      "name": "Armada Argentina — LP 0403/2026: adquisición de electrobombas sumergibles para el Comando de la Flota de Mar",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-06",
+      "validUntil": "2026-11-19",
+      "sourceName": "Boletín Oficial de la República Argentina — Armada Argentina",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2420339/20261112",
+      "sourcePublishedAt": "2026-11-12",
+      "sector": "Industria naval / bombas y compresores / equipamiento electromecánico / mantenimiento naval",
+      "jurisdiction": null,
+      "location": "Comando de la Flota de Mar, Argentina — UOC 38/12.",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "period": "El aviso original fijó retiro de pliegos del 06/11/2026 12:00 al 19/11/2026 09:00, consultas hasta el 16/11/2026 09:00 y presentación/apertura el 19/11/2026 09:00. La Circular modificatoria 1, fechada el 17/11 y publicada el 24/11 (reimpresa el 25/11), corrige las especificaciones técnicas de los renglones 1 y 2; no declara una prórroga. El plazo original de ofertas ya pasó y no se confirmó una nueva fecha ni un acta de apertura.",
+      "description": "Licitación Pública 0403/2026 para adquirir electrobombas sumergibles destinadas a unidades dependientes del Comando de la Flota de Mar. La Circular 1 corrige las especificaciones de los renglones 1 y 2: motores trifásicos de 1,8 a 2,4 kW, con 2830 RPM para el renglón 1 y 3350–3550 RPM para el renglón 2, ambos con aislación clase H (180 °C). El aviso no publica presupuesto.",
+      "territorialRelevance": "Proceso de alcance nacional potencialmente relevante para fabricantes y proveedores de bombas y equipamiento electromecánico naval. No se presenta como abierto: el plazo original venció y la circular posterior no informa una extensión; la situación del procedimiento requiere confirmación en COMPR.AR o mediante acta oficial.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se abrieron el aviso original del Boletín Oficial (publicado 12/11/2026) y la Circular modificatoria 1 (publicada 25/11/2026). El aviso original fija presentación y apertura para 19/11/2026 09:00; la circular corrige especificaciones técnicas pero no expresa prórroga. No se localizó en las fuentes consultadas una nueva fecha, acta de apertura ni adjudicación. Por la publicación posterior de la circular y la falta de confirmación del estado en COMPR.AR, la disponibilidad se mantiene desconocida; no se marca como abierta."
+      },
+      "relatedSources": [
+        {
+          "label": "Boletín Oficial — Circular modificatoria 1, publicada el 25/11/2026",
+          "url": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421052/20261125"
+        }
+      ]
+    },
+    {
+      "id": "laguna-paiva-licitacion-2-2026-canos-accesorios-red-agua-potable",
+      "name": "Municipalidad de Laguna Paiva — LP 2/2026: caños y accesorios para recambio de cañería de agua potable",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-20",
+      "validUntil": "2026-12-01",
+      "sourceName": "Boletín Oficial de la República Argentina — Municipalidad de Laguna Paiva",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421053/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Infraestructura hídrica / agua potable / cañerías y accesorios",
+      "jurisdiction": "Municipalidad de Laguna Paiva, Provincia de Santa Fe",
+      "location": "Laguna Paiva, Departamento La Capital, Provincia de Santa Fe, Argentina — tramo entre el predio de bombeo y la cisterna de reserva.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Pliego gratuito en la web municipal, sección Trámites / Licitaciones y Concursos. Presentación de ofertas hasta el 01/12/2026 a las 10:00; apertura el 01/12/2026 a las 11:00 en Av. San Martín 1173, Laguna Paiva. El aviso no publica presupuesto.",
+      "description": "Licitación Pública 2/2026 para adquirir caños y accesorios destinados al recambio de la cañería de agua potable que conecta el predio de bombeo con la cisterna de reserva de Laguna Paiva. Las especificaciones técnicas completas se encuentran en el pliego municipal, disponible gratuitamente según el aviso.",
+      "territorialRelevance": "Oportunidad municipal para proveedores de cañerías, accesorios y suministros de infraestructura de agua potable. Se localiza en Laguna Paiva, Provincia de Santa Fe; no corresponde al Partido de Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se abrió el aviso individual del Boletín Oficial publicado el 25/11/2026. Se verificaron objeto, jurisdicción municipal, pliego gratuito, domicilio de presentación, vencimiento de ofertas 01/12/2026 10:00 y apertura 11:00. No se publica presupuesto; no se infieren cantidades ni monto de inversión."
+      },
+      "relatedSources": []
     }
   ]
 }
