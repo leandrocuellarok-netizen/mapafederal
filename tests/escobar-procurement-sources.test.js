@@ -25,7 +25,8 @@ const expected = {
   },
   "escobar-licitacion-75-2026-control-vectores": {
     url: "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
-    published: "2026-11-19"
+    published: "2026-11-19",
+    scopePattern: /Verificado en el Boletín Oficial bonaerense, edición del 20\\/11\\/2026, sección 14523/i
   }
 };
 
