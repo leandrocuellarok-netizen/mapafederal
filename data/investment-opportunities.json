@@ -1753,14 +1753,20 @@
       "validUntil": "2026-11-30",
       "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
       "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14508/ver",
-      "sourcePublishedAt": "2026-11-12",
-      "period": "Consultas 16–17/11/2026; venta de pliego 18–19/11/2026; apertura 30/11/2026 a las 12:00. Al 24/11, las fechas de consulta y venta ya habían pasado.",
+      "sourcePublishedAt": "2026-11-13",
+      "period": "Consultas 16–17/11/2026; venta del pliego 18–19/11/2026; apertura 30/11/2026 a las 12:00. Revalidación 25/11: las ventanas de consulta y venta ya vencieron; no se localizó circular que las prorrogue ni un plazo independiente de presentación de ofertas.",
       "description": "Licitación para la obra de puesta en valor del Polideportivo Maschwitz, con presupuesto oficial de ARS 578.102.033,60 IVA incluido. Apertura prevista para el 30/11/2026 a las 12:00. Como las fechas publicadas para consultas y venta de pliego ya pasaron, no se clasifica como abierta: la posibilidad de presentar oferta para empresas que no adquirieron el pliego no está confirmada.",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Enlace de fuente corregido y contrastado contra el Boletín Oficial bonaerense, edición del 13/11/2026, sección 14508, donde figuran las LP 66/2026 y 69/2026. Se verificaron objeto, presupuesto, sede y cronograma publicados. No se verificaron acta de apertura, ofertas, adjudicación ni ejecución."
-      }
+        "checkedAt": "2026-11-25",
+        "scope": "Recomprobado el 25/11/2026: las ediciones 14505 (12/11/2026) y 14508 (13/11/2026) respaldan el llamado municipal. Se verificaron objeto, presupuesto, valor del pliego, consultas 16–17/11, venta 18–19/11 y apertura del 30/11. Al corte, las ventanas de consulta y venta concluyeron; no se localizó circular oficial que las prorrogue ni un plazo independiente de presentación de ofertas. Se conserva disponibilidad desconocida y no se infieren ofertas, adjudicación ni ejecución."
+      },
+      "relatedSources": [
+        {
+          "label": "Boletín Oficial bonaerense — primera publicación del llamado municipal, edición 12/11/2026, sección 14505",
+          "url": "https://boletinoficial.gba.gob.ar/secciones/14505/ver"
+        }
+      ]
     },
     {
       "id": "escobar-licitacion-69-2026-mobiliario-urbano",
@@ -1781,14 +1787,20 @@
       "validUntil": "2026-11-30",
       "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
       "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14508/ver",
-      "sourcePublishedAt": "2026-11-12",
-      "period": "Consultas 16–17/11/2026; venta de pliego 18–19/11/2026; apertura 30/11/2026 a las 13:00. Al 24/11, las fechas de consulta y venta ya habían pasado.",
+      "sourcePublishedAt": "2026-11-13",
+      "period": "Consultas 16–17/11/2026; venta del pliego 18–19/11/2026; apertura 30/11/2026 a las 13:00. Revalidación 25/11: las ventanas de consulta y venta ya vencieron; no se localizó circular que las prorrogue ni un plazo independiente de presentación de ofertas.",
       "description": "Licitación para la adquisición de mobiliario urbano, con presupuesto oficial de ARS 2.028.843.927 IVA incluido. Apertura prevista para el 30/11/2026 a las 13:00 en Ingeniero Maschwitz. Las fechas de consultas y venta de pliego ya pasaron al 24/11; no se confirma que una empresa que no adquirió el pliego pueda incorporarse a esta etapa.",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Enlace de fuente corregido y contrastado contra el Boletín Oficial bonaerense, edición del 13/11/2026, sección 14508, donde figuran las LP 66/2026 y 69/2026. Se verificaron objeto, presupuesto, sede y cronograma publicados. No se verificaron acta de apertura, ofertas, adjudicación ni ejecución."
-      }
+        "checkedAt": "2026-11-25",
+        "scope": "Recomprobado el 25/11/2026: las ediciones 14505 (12/11/2026) y 14508 (13/11/2026) respaldan el llamado municipal. Se verificaron objeto, presupuesto, valor del pliego, consultas 16–17/11, venta 18–19/11 y apertura del 30/11. Al corte, las ventanas de consulta y venta concluyeron; no se localizó circular oficial que las prorrogue ni un plazo independiente de presentación de ofertas. Se conserva disponibilidad desconocida y no se infieren ofertas, adjudicación ni ejecución."
+      },
+      "relatedSources": [
+        {
+          "label": "Boletín Oficial bonaerense — primera publicación del llamado municipal, edición 12/11/2026, sección 14505",
+          "url": "https://boletinoficial.gba.gob.ar/secciones/14505/ver"
+        }
+      ]
     },
     {
       "id": "armada-licitacion-0497-2026-infraestructura-tecnologica-hospital-naval",
@@ -3692,6 +3704,270 @@
         "status": "verified",
         "checkedAt": "2026-11-25",
         "scope": "Verificado en el Boletín Oficial bonaerense, edición 30366, sección oficial, página 83. Se comprobaron objeto, presupuesto, valor del pliego, fecha de presentación y apertura, plazo de acceso a documentación y expediente. No se revisó el pliego técnico ni se verificaron oferentes, adjudicación o contrato."
+      }
+    },
+    {
+      "id": "opcg-licitacion-614-1241-lpu26-adquisicion-camiones",
+      "name": "Organismo Provincial de Contrataciones — Proceso 614-1241-LPU26: adquisición de camiones",
+      "recordType": "tender",
+      "scope": "provincial",
+      "stage": "announced",
+      "stageLabel": "Llamado publicado",
+      "validFrom": null,
+      "validUntil": null,
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Organismo Provincial de Contrataciones",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/descargar",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Transporte / flota pesada / bienes de capital",
+      "jurisdiction": "Buenos Aires",
+      "location": null,
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 2583295500.6,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Presentación de ofertas únicamente a través del portal PBAC; apertura 11/12/2026 a las 11:00. El extracto no fija el vencimiento de recepción de ofertas ni la fecha inicial de disponibilidad del pliego.",
+      "description": "Licitación Pública, Proceso de Compra 614-1241-LPU26, para adquisición de camiones. Presupuesto oficial ARS 2.583.295.500,60. El aviso no especifica destino, cantidades ni modelos; es necesario revisar el pliego en PBAC antes de evaluar la participación.",
+      "territorialRelevance": "Contratación provincial con destino no especificado. Puede interesar a fabricantes, concesionarios y proveedores de flota pesada; no se asigna a Escobar ni a otra localidad sin el pliego.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Boletín Oficial bonaerense, edición 30368, sección oficial, página 38. Se verificaron objeto, presupuesto, portal PBAC, apertura 11/12/2026 11:00, resolución autorizante y expediente. El aviso consultado no informa fecha límite de recepción ni fecha inicial de disponibilidad del pliego; por eso la disponibilidad queda desconocida. No se verificaron adjudicación ni ejecución."
+      }
+    },
+    {
+      "id": "puerto-bahia-blanca-licitacion-11-cgpbb-2026-servicio-vigilancia-privada",
+      "name": "Consorcio de Gestión del Puerto de Bahía Blanca — LP 11-CGPBB/2026: servicio de vigilancia privada",
+      "recordType": "tender",
+      "scope": "provincial",
+      "stage": "announced",
+      "stageLabel": "Llamado publicado",
+      "validFrom": "2026-11-25",
+      "validUntil": "2027-01-05",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Consorcio de Gestión del Puerto de Bahía Blanca",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/descargar",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Seguridad privada / vigilancia / servicios portuarios",
+      "jurisdiction": "Buenos Aires",
+      "location": "Consorcio de Gestión del Puerto de Bahía Blanca, Partido de Bahía Blanca, Provincia de Buenos Aires.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Reunión informativa y visita de obra: 03/12/2026 a las 10:00 en la sede del Consorcio. Presentación de ofertas hasta 05/01/2027 a las 10:30; apertura 05/01/2027 a las 11:00. El aviso no publica presupuesto oficial.",
+      "description": "Licitación Pública 11-CGPBB/2026 para servicio de vigilancia privada en el ámbito del Consorcio de Gestión del Puerto de Bahía Blanca. No se publica presupuesto. El portal de licitaciones del Consorcio consultado el 25/11/2026 todavía no mostraba este llamado; la convocatoria y su cronograma se respaldan en el Boletín Oficial.",
+      "territorialRelevance": "Oportunidad para prestadores de seguridad privada y vigilancia con capacidad operativa portuaria. La jurisdicción territorial es Bahía Blanca, no Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Boletín Oficial bonaerense, edición 30368, sección oficial, página 38. Se verificaron objeto, reunión informativa/visita 03/12/2026 10:00, recepción de ofertas hasta 05/01/2027 10:30 y apertura 11:00. Se revisó el portal público de licitaciones del Consorcio el 25/11 y no se encontró allí el nuevo llamado; por eso el Boletín Oficial es la fuente que respalda el registro. No se publica presupuesto y no se verificaron requisitos completos, adjudicación ni ejecución."
+      }
+    },
+    {
+      "id": "general-san-martin-licitacion-36-2026-material-descartable-suturas-textiles",
+      "name": "General San Martín — LP 36/2026: material descartable, suturas e insumos textiles hospitalarios",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "stageLabel": "Llamado publicado",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-09",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de General San Martín",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/descargar",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Salud / insumos hospitalarios / suturas / textiles",
+      "jurisdiction": "Partido de General San Martín, Provincia de Buenos Aires",
+      "location": "Partido de General San Martín, Provincia de Buenos Aires — Dirección de Compras, Belgrano 3747.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 1035667248.48,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Apertura 10/12/2026 a las 10:00. Venta de pliegos desde la publicación hasta un día hábil anterior a la apertura, de 09:00 a 14:00 en la Dirección de Compras municipal. Valor del pliego ARS 1.035.667,24.",
+      "description": "Licitación Pública 36/2026 para material descartable, suturas e insumos textiles hospitalarios. Presupuesto oficial ARS 1.035.667.248,48. La venta de pliegos permanece prevista hasta un día hábil antes de la apertura.",
+      "territorialRelevance": "Oportunidad para proveedores de descartables médicos, suturas, textiles hospitalarios y distribución sanitaria. Corresponde a General San Martín, no a Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Boletín Oficial bonaerense, edición 30368, sección oficial, página 43. Se verificaron objeto, presupuesto, valor del pliego, lugar de consulta/venta, regla de cierre de venta y apertura. No se revisaron especificaciones técnicas, adjudicación ni ejecución."
+      }
+    },
+    {
+      "id": "almirante-brown-licitacion-56-2026-luminarias-led-fotocelulas",
+      "name": "Almirante Brown — LP 56/2026: adquisición de luminarias LED y fotocélulas",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "stageLabel": "Llamado publicado",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-11",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Almirante Brown",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/descargar",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Energía / alumbrado público / luminarias LED / fotocélulas",
+      "jurisdiction": "Partido de Almirante Brown, Provincia de Buenos Aires",
+      "location": "Partido de Almirante Brown, Provincia de Buenos Aires — Dirección General de Compras y Contrataciones, Rosales 1312, Adrogué.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 680000000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Retiro de pliegos hasta 11/12/2026 a las 13:30; apertura 14/12/2026 a las 10:00. Valor del pliego ARS 680.000.",
+      "description": "Licitación Pública 56/2026 para adquirir equipos de alumbrado público, incluidas luminarias LED y fotocélulas, destinados a renovar y ampliar el sistema de iluminación municipal. Presupuesto oficial ARS 680.000.000.",
+      "territorialRelevance": "Oportunidad para fabricantes y distribuidores de luminarias LED, fotocélulas, materiales eléctricos e integradores de alumbrado público. La prestación corresponde a Almirante Brown, no a Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Boletín Oficial bonaerense, edición 30368, sección oficial, página 50. Se verificaron objeto, presupuesto, dirección, fecha límite de retiro del pliego, valor del pliego y apertura. No se revisaron especificaciones técnicas, adjudicación ni ejecución."
+      }
+    },
+    {
+      "id": "almirante-brown-licitacion-57-2026-mezcla-asfaltica-caliente",
+      "name": "Almirante Brown — LP 57/2026: adquisición de mezcla asfáltica en caliente",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "stageLabel": "Llamado publicado",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-11",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Almirante Brown",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/descargar",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Construcción / infraestructura vial / mezclas asfálticas",
+      "jurisdiction": "Partido de Almirante Brown, Provincia de Buenos Aires",
+      "location": "Partido de Almirante Brown, Provincia de Buenos Aires — Dirección General de Compras y Contrataciones, Rosales 1312, Adrogué.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 550122576,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Retiro de pliegos hasta 11/12/2026 a las 13:30; apertura 14/12/2026 a las 12:00. Valor del pliego ARS 550.122,58.",
+      "description": "Licitación Pública 57/2026 para adquisición de mezcla asfáltica en caliente. Presupuesto oficial ARS 550.122.576.",
+      "territorialRelevance": "Oportunidad para plantas asfálticas, proveedores de mezclas y operadores de logística de materiales viales. La contratación es de Almirante Brown, no de Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Boletín Oficial bonaerense, edición 30368, sección oficial, página 50. Se verificaron objeto, presupuesto, dirección, fecha límite de retiro del pliego, valor del pliego y apertura. No se revisaron especificaciones técnicas, adjudicación ni ejecución."
+      }
+    },
+    {
+      "id": "avellaneda-licitacion-125-2026-guardapolvos-mochilas-zapatillas",
+      "name": "Avellaneda — LP 125/2026: provisión de guardapolvos, mochilas y zapatillas",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "stageLabel": "Llamado publicado",
+      "validFrom": null,
+      "validUntil": null,
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Avellaneda",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/descargar",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Educación / indumentaria / suministros escolares",
+      "jurisdiction": "Partido de Avellaneda, Provincia de Buenos Aires",
+      "location": "Partido de Avellaneda, Provincia de Buenos Aires — Jefatura de Compras y Suministros, Güemes 835, 2.º piso.",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 632781200,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Apertura 28/12/2026 a las 11:00. Valor del pliego ARS 316.390,60. Consulta y adquisición en Jefatura de Compras y Suministros, de 08:00 a 15:30; el extracto no informa fecha límite de adquisición ni un plazo independiente de recepción de ofertas.",
+      "description": "Licitación Pública 125/2026 para provisión de guardapolvos, mochilas y zapatillas destinados al programa municipal Punta en Blanco. Presupuesto oficial ARS 632.781.200. La disponibilidad se mantiene desconocida porque el aviso consultado no fija el cierre de adquisición del pliego ni el límite de recepción de ofertas.",
+      "territorialRelevance": "Puede interesar a fabricantes y distribuidores de indumentaria, calzado y kits escolares. La contratación es de Avellaneda, no de Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Boletín Oficial bonaerense, edición 30368, sección oficial, páginas 50–51. Se verificaron objeto, presupuesto, valor del pliego, dependencia de consulta/adquisición, horario y apertura. El extracto no fija vencimiento de adquisición ni recepción de ofertas; por eso no se clasifica como abierta. No se verificaron requisitos completos, adjudicación ni ejecución."
+      }
+    },
+    {
+      "id": "la-matanza-licitacion-129-2026-alquiler-ropa-lavado-planchado",
+      "name": "La Matanza — LP 129/2026: alquiler, lavado y planchado de ropa",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "stageLabel": "Llamado publicado",
+      "validFrom": null,
+      "validUntil": null,
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de La Matanza",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/descargar",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Servicios textiles / lavandería industrial / logística",
+      "jurisdiction": "Partido de La Matanza, Provincia de Buenos Aires",
+      "location": "Partido de La Matanza, Provincia de Buenos Aires — Dirección de Compras, Almafuerte 3050, 2.º piso, San Justo.",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 155922000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Apertura 17/12/2026 a las 11:00. Valor del pliego ARS 156.000. Adquisición en Dirección de Compras, de 08:00 a 14:00; consultas al correo ofertasllamados@lamatanza.gov.ar. El extracto no fija fecha límite de adquisición ni recepción de ofertas.",
+      "description": "Licitación Pública 129/2026 para servicio de alquiler de ropa, lavado y planchado. Presupuesto publicado ARS 155.922.000. Se mantiene disponibilidad desconocida porque el aviso consultado no especifica el plazo de recepción de ofertas ni el cierre de adquisición del pliego.",
+      "territorialRelevance": "Oportunidad potencial para lavanderías industriales, alquiler de ropa laboral, textiles y servicios logísticos. La contratación corresponde a La Matanza, no a Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Boletín Oficial bonaerense, edición 30368, sección oficial, página 52. Se verificaron objeto, presupuesto, valor del pliego, dirección, horario, canal de consultas y apertura. No se informa un límite de recepción de ofertas ni cierre de adquisición; no se marca como abierta. No se revisaron requisitos completos, adjudicación ni ejecución."
+      }
+    },
+    {
+      "id": "banco-provincia-licitacion-ee-443-cc-mobiliario-tapizado-tandems-metalicos",
+      "name": "Banco Provincia — LP EE-443-CC: mobiliario tapizado y tándems metálicos",
+      "recordType": "tender",
+      "scope": "provincial",
+      "stage": "announced",
+      "stageLabel": "Llamado publicado",
+      "validFrom": null,
+      "validUntil": null,
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Banco de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/descargar",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Mobiliario / equipamiento institucional / metalmecánica",
+      "jurisdiction": "Buenos Aires",
+      "location": "Alcance territorial del suministro no especificado; apertura en Guanahani 580, Ciudad Autónoma de Buenos Aires.",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "period": "Modalidad de orden de compra abierta y etapa múltiple. Consultas hasta 30/11/2026; apertura 09/12/2026 a las 12:00; valor del pliego ARS 392.000. Adquisición a través del portal de transparencia del Banco Provincia. El aviso no informa presupuesto oficial ni fecha inicial de disponibilidad.",
+      "description": "Licitación Pública EE-443-CC para adquisición de mobiliario tapizado y tándems metálicos. No se publica presupuesto oficial ni se identifica el alcance territorial de entrega. La disponibilidad permanece desconocida hasta verificar la ficha y las condiciones de acceso al pliego.",
+      "territorialRelevance": "Puede interesar a fabricantes y distribuidores de mobiliario institucional, tapicería y estructuras metálicas. La contratación pertenece al Banco Provincia; la sede de apertura está en CABA y no determina por sí sola el destino de los bienes.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Boletín Oficial bonaerense, edición 30368, sección oficial, página 45. Se verificaron objeto, modalidad, consultas hasta 30/11, apertura 09/12 12:00, valor del pliego y referencia al portal del Banco Provincia. El portal fue abierto, pero solo expuso la pantalla general de acceso para proveedores y no la ficha individual del proceso. No se publica presupuesto ni fecha inicial de disponibilidad; se mantiene estado desconocido. No se verificaron adjudicación ni ejecución."
+      },
+      "relatedSources": [
+        {
+          "label": "Banco Provincia — portal de transparencia y pliegos; acceso general visible, ficha individual no verificada",
+          "url": "https://www.bancoprovincia.com.ar/transparencia/pages/"
+        }
+      ]
+    },
+    {
+      "id": "san-antonio-de-areco-licitacion-8-2026-venta-terrenos-duggan",
+      "name": "San Antonio de Areco — LP 8/2026: venta de terrenos en Duggan",
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "stageLabel": "Llamado publicado",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-22",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de San Antonio de Areco",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/descargar",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Desarrollo inmobiliario / suelo urbano / venta de activos públicos",
+      "jurisdiction": "Partido de San Antonio de Areco, Provincia de Buenos Aires",
+      "location": "Duggan, Partido de San Antonio de Areco, Provincia de Buenos Aires.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Presentación de ofertas hasta 22/12/2026 a las 11:30; apertura 22/12/2026 a las 12:00. El aviso informa un lote estimado de 500 m² con precio base ARS 48.000.000 y seis lotes estimados de 400 m² con precio base ARS 42.000.000 cada uno. No se calcula un monto agregado porque son parcelas separadas.",
+      "description": "Licitación Pública 8/2026 para venta de terrenos en Duggan. El aviso identifica una parcela estimada de 500 m² (base ARS 48 millones) y seis parcelas estimadas de 400 m² (base ARS 42 millones cada una), con nomenclaturas catastrales individuales. No se informan en el extracto zonificación, servicios, restricciones dominiales ni aptitud constructiva.",
+      "territorialRelevance": "Oportunidad de adquisición de suelo público para potenciales compradores y desarrolladores; antes de valorar el activo deben verificarse título, zonificación, servicios, restricciones y condiciones completas del pliego. No corresponde a Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Boletín Oficial bonaerense, edición 30368, sección oficial, página 53. Se verificaron nomenclaturas catastrales, superficies estimadas, precios base por parcela, fecha límite de presentación y apertura. No se verificaron títulos, zonificación, servicios, restricciones, linderos, precio final, adjudicación ni aptitud constructiva."
       }
     }
   ]
