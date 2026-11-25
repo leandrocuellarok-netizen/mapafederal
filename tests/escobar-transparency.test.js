@@ -10,7 +10,7 @@ assert.equal(territory.localities.reduce((sum, item) => sum + item.officiallyRec
 
 assert.equal(transparency.status, "operativo");
 assert.equal(transparency.dynamicContentStatus, "pendiente");
-assert.equal(transparency.verification.checkedAt, "2026-11-24");
+assert.equal(transparency.verification.checkedAt, "2026-11-25");
 assert.equal(transparency.openDataSnapshot.publishedDatasets, 53);
 assert.equal(transparency.openDataSnapshot.thematicCategories, 15);
 assert.equal(transparency.openDataSnapshot.availableFormats, 8);
@@ -194,3 +194,31 @@ assert.match(profile, /puntos de costo/);
 assert.match(profile, /pendiente de conciliación/);
 
 console.log("Escobar transparencia: fuentes, siete localidades, directorios, metadatos ambientales y preflight reproducible EPSG:22185 validados; integración geométrica completa sigue pendiente.");
+
+
+const parks = transparency.environmentalDatasets.find(item => item.id === "plazas-y-parques-partido-escobar");
+assert.ok(parks, "Falta la capa municipal de plazas y parques de Escobar");
+assert.equal(parks.status, "pendiente", "El catálogo del dataset no equivale a una capa integrada al mapa");
+assert.equal(parks.sourcePublishedAt, null, "No inventar fecha de publicación");
+assert.equal(parks.createdAt, "2025-10-01");
+assert.equal(parks.lastUpdatedAt, "2026-03-31");
+assert.equal(parks.version, "1.0");
+assert.equal(parks.periodicity, "Anual");
+assert.equal(parks.license, "Open Data Commons Open Database License (ODbL)");
+assert.equal(parks.sourceCrs, "EPSG:22185");
+assert.equal(parks.geometryType, "Polygon");
+assert.equal(parks.featureCount, 46);
+assert.deepEqual(parks.sourceLocalityLabels, ["24 DE FEBR", "GARIN", "MASCHWITZ", "ESCOBAR", "MATHEU", "MAQ.SAVIO", "ISLAS"]);
+assert.equal(parks.geometryIntegrationStatus, "pending");
+assert.equal(parks.verification.status, "verified");
+assert.equal(parks.verification.checkedAt, "2026-11-25");
+assert.match(parks.localityCoverageNote, /no contiene el literal LOMA VERDE/i);
+assert.match(parks.localityCoverageNote, /no demuestra ausencia de espacios verdes/i);
+assert.match(parks.localityCoverageNote, /ISLAS se conserva/i);
+assert.match(parks.geometryNote, /no son longitud\/latitud/i);
+assert.match(parks.geometryNote, /no deben dibujarse directamente en Leaflet/i);
+assert.match(parks.verification.scope, /46 features de geometría Polygon/i);
+for (const url of [parks.sourceUrl, parks.resourceUrl]) {
+  assert.equal(new URL(url).protocol, "https:");
+}
+

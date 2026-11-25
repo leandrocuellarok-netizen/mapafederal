@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-25",
   "jurisdiction": "Partido de Escobar",
   "province": "Buenos Aires",
   "country": "Argentina",
@@ -1039,12 +1039,12 @@
     "openDataUrl": "https://datos.escobar.gob.ar/",
     "informationRequestUrl": "https://datos.escobar.gob.ar/solicitar-informacion",
     "sourcePublishedAt": null,
-    "sourcePublicationNote": "Las páginas institucionales consultadas no indican fecha de publicación o edición; verificación web realizada el 2026-11-24.",
-    "validityPeriod": "Estado de los portales y métricas visibles consultados el 2026-11-24. Los catálogos y contenidos dinámicos pueden cambiar.",
+    "sourcePublicationNote": "Las páginas institucionales consultadas no indican fecha de publicación o edición; verificación web realizada el 2026-11-25.",
+    "validityPeriod": "Estado de los portales y métricas visibles consultados el 2026-11-25. Los catálogos y contenidos dinámicos pueden cambiar.",
     "status": "operativo",
     "summary": "El Municipio mantiene un portal de transparencia con accesos a decretos, presupuestos y ordenanzas, licitaciones, Boletín Oficial, proveedores y recursos de integridad; además publica un portal de datos abiertos y un formulario para solicitar información pública.",
     "openDataSnapshot": {
-      "checkedAt": "2026-11-24",
+      "checkedAt": "2026-11-25",
       "publishedDatasets": 53,
       "thematicCategories": 15,
       "availableFormats": 8,
@@ -1127,8 +1127,8 @@
     },
     "verification": {
       "status": "verified",
-      "checkedAt": "2026-11-24",
-      "scope": "Se consultaron las páginas institucionales de Transparencia municipal, Portal de Datos Abiertos y Solicitar Información Pública. Se registraron las métricas visibles del catálogo y las secciones anunciadas por el Municipio. No se enviaron solicitudes, no se verificó el resultado de los buscadores o descargas dinámicas y no se evaluó exhaustividad, oportunidad ni calidad de los datos publicados."
+      "checkedAt": "2026-11-25",
+      "scope": "Se consultaron Transparencia municipal, Portal de Datos Abiertos y Solicitar Información Pública. El catálogo mostraba 53 datasets en 15 categorías. Se abrió la ficha municipal de Plazas y Parques y su GeoJSON original, verificando 46 polígonos y CRS EPSG:22185. No se enviaron solicitudes ni se evaluaron los buscadores dinámicos, la exhaustividad del catálogo o el mantenimiento y acceso efectivo a cada espacio verde."
     },
     "dynamicContentStatus": "pendiente",
     "territorialBoundaryReference": {
@@ -1182,6 +1182,47 @@
           "status": "verified",
           "checkedAt": "2026-11-24",
           "scope": "Se consultó la ficha oficial y se abrió el recurso GeoJSON. Se comprobó que es una FeatureCollection, que declara CRS EPSG:22185 y que incluye atributos tipo, nombre, régimen, navegabilidad y fuente. La ficha declara versión 1.0, periodicidad anual, creación 01/10/2025, actualización 31/03/2026 y licencia ODbL. No se transformó ni validó la geometría en terreno; la fuente no permite inferir por sí sola riesgo hídrico, caudal, calidad del agua ni navegabilidad actual."
+        }
+      },
+      {
+        "id": "plazas-y-parques-partido-escobar",
+        "name": "Plazas y Parques del Partido de Escobar",
+        "category": "Ambiente y Biodiversidad",
+        "description": "Localización y delimitación geográfica de las plazas y parques del Partido de Escobar, espacios verdes públicos destinados al uso recreativo, social y ambiental. El conjunto de datos permite identificar la distribución territorial de los principales espacios verdes urbanos y constituye un insumo para el análisis de infraestructura verde, calidad ambiental, bienestar urbano y planificación territorial.",
+        "sourceName": "Estrategia Ambiental y datos — Municipalidad de Escobar",
+        "sourceUrl": "https://datos.escobar.gob.ar/dataset/plazas-y-parques-del-partido-de-escobar",
+        "resourceUrl": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/plazas-y-parques-del-partido-de-escobar/plazas_y_parques.geojson",
+        "resourceName": "plazas_y_parques.geojson",
+        "resourceSize": "32 KB",
+        "resourceFormat": "GeoJSON",
+        "sourcePublishedAt": null,
+        "sourcePublicationNote": "La ficha no informa fecha de publicación. Declara creación 01/10/2025 y última actualización 31/03/2026.",
+        "createdAt": "2025-10-01",
+        "lastUpdatedAt": "2026-03-31",
+        "version": "1.0",
+        "periodicity": "Anual",
+        "license": "Open Data Commons Open Database License (ODbL)",
+        "sourceCrs": "EPSG:22185",
+        "geometryType": "Polygon",
+        "featureCount": 46,
+        "sourceLocalityLabels": [
+          "24 DE FEBR",
+          "GARIN",
+          "MASCHWITZ",
+          "ESCOBAR",
+          "MATHEU",
+          "MAQ.SAVIO",
+          "ISLAS"
+        ],
+        "localityCoverageNote": "El atributo Localidad no contiene el literal LOMA VERDE en los 46 registros examinados. La etiqueta ISLAS se conserva tal como aparece y no se equipara con ninguna de las siete localidades sin una fuente oficial. Esto describe el contenido del archivo; no demuestra ausencia de espacios verdes en Loma Verde. Las etiquetas 24 DE FEBR y MAQ.SAVIO también se conservan literalmente.",
+        "geometryIntegrationStatus": "pending",
+        "geometryNote": "El GeoJSON es una FeatureCollection de 46 polígonos y declara CRS EPSG:22185. Sus coordenadas son proyectadas; no son longitud/latitud y no deben dibujarse directamente en Leaflet. El atributo Localidad contiene abreviaturas y la etiqueta ISLAS, que no se normalizan ni se fuerzan a la taxonomía de siete localidades. Algunos registros usan Nombre=sin_nombre. La delimitación del dataset no acredita límites catastrales, acceso, mantenimiento, horarios ni operación actual de cada espacio.",
+        "status": "pendiente",
+        "validityPeriod": "Versión 1.0; el portal declara última actualización el 31/03/2026 y periodicidad anual. No se verificó una versión posterior.",
+        "verification": {
+          "status": "verified",
+          "checkedAt": "2026-11-25",
+          "scope": "Se consultó la ficha municipal y se abrió el GeoJSON original. Se comprobó FeatureCollection, 46 features de geometría Polygon, CRS EPSG:22185 y las etiquetas literales del atributo Localidad. La ficha declara creación 01/10/2025, última actualización 31/03/2026, versión 1.0, periodicidad anual y licencia ODbL. No se transformaron coordenadas ni se integró la capa al mapa; no se verificaron en terreno el acceso, mantenimiento, horarios o uso efectivo."
         }
       }
     ]

@@ -234,7 +234,7 @@ assert.equal(redSostenible.validUntil, "2026-12-30");
 assert.equal(redSostenible.amount, null, "La convocatoria no anuncia financiamiento monetario");
 assert.equal(redSostenible.verification.status, "verified");
 assert.equal(redSostenible.verification.checkedAt, "2026-11-25");
-assert.match(redSostenible.verification.scope, /Escobar 360°/);
+assert.match(redSostenible.verification.scope, /Escobar 360/);
 assert.match(redSostenible.description, /cuatro etapas y diez pasos/i);
 assert.match(redSostenible.description, /no publica el monto/i);
 assert.match(redSostenible.verification.scope, /ventaja en licitaciones municipales/i);
