@@ -13,7 +13,9 @@ const expected = {
   },
   "escobar-licitacion-69-2026-mobiliario-urbano": {
     url: "https://boletinoficial.gba.gob.ar/secciones/14508/ver",
-    published: "2026-11-12"
+    published: "2026-11-13",
+    checkedAt: "2026-11-25",
+    scopePattern: /ediciones 14505 y 14508.*no se localizó circular/i
   },
   "escobar-licitacion-71-2026-piedra-partida": {
     url: "https://boletinoficial.gba.gob.ar/secciones/14523/descargar",
@@ -68,6 +70,10 @@ assert.match(polideportivo74.description, /Expediente 288\.725\/26/);
 assert.match(polideportivo74.verification.scope, /edición 30368.*no se encontró una modificación/i);
 assert.equal(polideportivo.opportunityStatus, "unknown");
 assert.equal(mobiliario.opportunityStatus, "unknown");
+for (const item of [polideportivo, mobiliario]) {
+  assert.equal(item.relatedSources[0].url, "https://boletinoficial.gba.gob.ar/secciones/14505/ver");
+  assert.match(item.verification.scope, /venta.*18–19\/11\/2026.*no se localizó circular/i);
+}
 
 const piedra=catalog.opportunities.find(x=>x.id==="escobar-licitacion-71-2026-piedra-partida");
 const cascote=catalog.opportunities.find(x=>x.id==="escobar-licitacion-72-2026-cascote");
