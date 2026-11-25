@@ -371,3 +371,8 @@ El catálogo de oportunidades conserva 23 registros de Escobar: 5 abiertos (LP 7
 
 ### Deduplicación editorial del Radar IA
 - Al corregir la URL Reuters a su enlace canónico, se detectó que el artículo ya estaba registrado. Se fusionaron las dos fichas en una sola, conservando el resumen más completo y los campos de sector/relevancia territorial. El total de Radar IA queda en 58 (57 → 58); la única alta nueva de este ciclo es el informe de OpenAI. La declaración de Trump continúa clasificada como señal política no vigente.
+
+
+### Confirmación de publicación — ciclo 10:58
+- Workflow #628 (`45631057702`), sobre `ee14978b0f3ae6d16b44b190aa20d26da3ee73ff`: validación y despliegue de GitHub Pages completados con éxito. Se resolvieron el ID BIS no determinista, cuatro jurisdicciones provinciales inconsistentes, la whitelist de Merlo y la duplicación Reuters detectada al normalizar su URL.
+- El catálogo final del ciclo queda en 58 noticias y 90 oportunidades (48 abiertas, 36 desconocidas, 6 cerradas). La revisión visual independiente del sitio no fue posible con el navegador de verificación; el estado de publicación se sustenta en el workflow exitoso.
