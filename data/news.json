@@ -1,5 +1,27 @@
 [
   {
+    "id": "news-www-lemonde-fr-economie-article-2026-11-25-le-succes-des-ia-chinoises-aupres-des-entreprises-met-les-leaders-anthropic-et-openai-sous-pression-6815050-3234-html",
+    "title": "La adopción empresarial de modelos chinos de IA gana terreno frente a los proveedores estadounidenses",
+    "date": "2026-11-25",
+    "category": "Empresas",
+    "summary": "Le Monde informa que Revolut, Airbnb, Siemens y AstraZeneca usan modelos desarrollados en China en tareas de programación, atención al cliente y operaciones. Cita datos de OpenRouter que sitúan a esos modelos en el 78,4% del uso medido en pasarelas API; el indicador no incluye ChatGPT ni Claude y no representa la cuota total del mercado. Un directivo de Revolut atribuye a esa estrategia ahorros cercanos a diez veces, sin auditoría independiente.",
+    "source": "Le Monde",
+    "url": "https://www.lemonde.fr/economie/article/2026/11/25/le-succes-des-ia-chinoises-aupres-des-entreprises-met-les-leaders-anthropic-et-openai-sous-pression_6815050_3234.html",
+    "period": "Publicado el 25/11/2026. La cifra de OpenRouter mide uso de modelos en pasarelas API, no el conjunto de asistentes ni la cuota total del mercado. La reducción de costos cercana a 10x es una afirmación corporativa citada por el medio, no un resultado auditado.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Tendencia global: modelos desarrollados en China y adopción empresarial reportada en varios mercados; no corresponde asignar una jurisdicción única.",
+    "sector": "IA generativa / modelos de lenguaje / software / servicios financieros / industria / farmacéutica / atención al cliente",
+    "territorialRelevance": "Relevante para Vilanova AI Solutions: refuerza la oportunidad de evaluar carteras multimodelo y enrutamiento por tarea según costo total, rendimiento, latencia, seguridad, privacidad, residencia de datos y licencias. No permite extrapolar el ahorro 10x a pymes argentinas; los pesos abiertos no garantizan por sí solos privacidad ni soberanía.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Revisión editorial del artículo de Le Monde publicado el 25/11/2026. Se comprobaron fecha, titular, ejemplos empresariales y atribuciones. El 78,4% se atribuye a OpenRouter y mide uso en pasarelas API; no incluye ChatGPT ni Claude y no equivale a cuota total de mercado. El ahorro cercano a 10x se atribuye a un directivo de Revolut y no está presentado como auditoría independiente. No se asigna una jurisdicción única ni se extrapolan métricas a Argentina. No se afirma que los modelos de pesos abiertos sean intrínsecamente seguros o privados."
+    },
+    "relatedSources": []
+  },
+  {
     "id": "news-www-reuters-com-business-finance-alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25",
     "title": "Reuters documentó financiamiento respaldado por servidores de IA en China y su vínculo con controles de exportación de cómputo avanzado",
     "date": "2026-11-25",
