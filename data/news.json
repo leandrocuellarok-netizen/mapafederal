@@ -620,6 +620,28 @@
     }
   },
   {
+    "id": "news-www-ecb-europa-eu-press-financial-stability-publications-fsr-html-ecb-fsr202611-e03b919d36-en-html",
+    "title": "El BCE advirtió sobre los riesgos financieros del auge de inversión en infraestructura de IA",
+    "date": "2026-11-18",
+    "category": "Economía",
+    "summary": "El Financial Stability Review de noviembre de 2026 del BCE advierte que la inversión en IA, financiada cada vez más con deuda y compromisos fuera de balance, puede amplificar riesgos de valoración, crédito y liquidez. Con datos hasta junio de 2026, los compromisos de crédito de bancos del área del euro con 165 firmas relevantes de la cadena de IA y sus filiales sumaban €24.300 millones, de los cuales €11.000 millones no estaban desembolsados. El BCE estima que el gasto de capital acumulado de las grandes tecnológicas estadounidenses podría alcanzar USD 5,5 billones hasta 2030; es una proyección basada en estimaciones de analistas, no inversión ejecutada.",
+    "source": "Banco Central Europeo (BCE)",
+    "url": "https://www.ecb.europa.eu/press/financial-stability-publications/fsr/html/ecb.fsr202611~e03b919d36.en.html",
+    "period": "Informe de noviembre de 2026; datos de crédito compilados hasta junio de 2026 y observaciones de mercado hasta el 10/11/2026. La edición consigna fecha 18/11/2026.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Zona del euro y mercados internacionales de la cadena de suministro de IA.",
+    "sector": "Economía / finanzas / infraestructura de IA / centros de datos / semiconductores",
+    "territorialRelevance": "Relevancia indirecta para Argentina y Escobar: aporta contexto sobre costo de capital, concentración y riesgo de financiamiento de la infraestructura de IA. No identifica exposición de empresas argentinas ni inversiones locales.",
+    "relatedSources": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Revisión de la fuente primaria del BCE, Financial Stability Review de noviembre de 2026. Se verificó que los €24.300 millones son compromisos de crédito de bancos del área del euro con 165 firmas y filiales de la cadena IA, con datos hasta junio de 2026; €11.000 millones figuran sin desembolsar. El BCE advierte que faltan datos granulares de exposiciones fuera del área del euro. La proyección de USD 5,5 billones hasta 2030 corresponde a estimaciones de capex de grandes tecnológicas estadounidenses basadas en estimaciones de analistas, no a inversión comprometida ni ejecutada. No se infiere exposición argentina."
+    }
+  },
+  {
     "title": "knowmad mood adquirió la consultora argentina Danwor y amplió su negocio de Data & AI",
     "date": "2026-11-17",
     "category": "Tecnología",
