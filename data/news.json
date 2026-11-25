@@ -1,5 +1,64 @@
 [
   {
+    "id": "news-www-sec-gov-archives-edgar-data-1288847-000119312526475778-d433495d8k-html",
+    "title": "Five9 completó la adquisición de Level AI por USD 325 millones",
+    "date": "2026-11-24",
+    "category": "Empresas",
+    "summary": "Five9 completó el 24/11/2026 la adquisición de Level AI, que pasó a ser una subsidiaria de propiedad total. El Form 8-K presentado ante la SEC informa un precio agregado de USD 325 millones en efectivo, sujeto a ajustes habituales. El comunicado incorporado como Exhibit 99.1 describe aplicaciones de IA para experiencia del cliente: asistencia al desempeño de agentes, automatización de interacciones por voz y canales digitales y análisis de conversaciones. Five9 prevé ofrecerlas como soluciones independientes o dentro de Genius CX; esos beneficios e integración son expectativas corporativas, no resultados comprobados.",
+    "source": "Five9, Inc. — Form 8-K presentado ante la Securities and Exchange Commission",
+    "url": "https://www.sec.gov/Archives/edgar/data/1288847/000119312526475778/d433495d8k.htm",
+    "period": "Fecha del informe y cierre de la operación: 24/11/2026. Precio informado: USD 325 millones en efectivo, sujeto a ajustes contractuales.",
+    "jurisdictions": [
+      "Estados Unidos"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "El Form 8-K identifica a Five9 como emisor y confirma la fusión de Level AI como subsidiaria de propiedad total; el registro se presenta ante la SEC de Estados Unidos."
+    ],
+    "jurisdictionScope": "Estados Unidos — operación societaria informada ante la SEC. Five9 declara actividad internacional; no se verificó un despliegue específico de Level AI en Argentina.",
+    "sector": "Tecnología / inteligencia artificial empresarial / experiencia del cliente / contact centers / software / fusiones y adquisiciones",
+    "territorialRelevance": "Señal de consolidación del mercado de IA aplicada a atención al cliente y automatización de contact centers. Puede servir como referencia competitiva para proveedores de software, integradores y empresas de servicios; no acredita inversión, contratación ni despliegue en Argentina o Escobar.",
+    "relatedSources": [
+      {
+        "label": "Five9 — comunicado de cierre, Exhibit 99.1 presentado ante la SEC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1288847/000119312526475778/d433495dex991.htm"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se abrió el Form 8-K de Five9 ante la SEC, con fecha de informe 24/11/2026: confirma el cierre, la condición de subsidiaria de propiedad total y el precio agregado de USD 325 millones en efectivo sujeto a ajustes. También se abrió el Exhibit 99.1, que describe las aplicaciones de IA para CX y las modalidades de oferta previstas. Las afirmaciones sobre sinergias, adopción y hoja de ruta se mantienen como declaraciones prospectivas de la empresa."
+    }
+  },
+  {
+    "id": "news-www-reuters-com-world-india-indias-wipro-uks-bp-sign-partnership-to-take-over-some-finance-ops-2026-11-25",
+    "title": "Wipro y BP acordaron transferir operaciones financieras a un modelo apoyado en IA y automatización",
+    "date": "2026-11-25",
+    "category": "Empresas",
+    "summary": "Wipro y BP firmaron una alianza para transferir a Wipro operaciones financieras actualmente respaldadas por unos 3.000 empleados en India, Hungría y Malasia. Wipro prevé aplicar inteligencia artificial, automatización y otras tecnologías para mejorar la eficiencia; el nuevo modelo operativo comenzaría en 2027, sujeto a las condiciones aplicables. BP conservaría responsabilidad sobre estándares, controles, datos y gobernanza tecnológica. Reuters no informó precio ni ahorros cuantificados. El anuncio no demuestra resultados ya obtenidos ni una eliminación total de puestos: el acuerdo contempla la transferencia de empleados a Wipro.",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/world/india/indias-wipro-uks-bp-sign-partnership-to-take-over-some-finance-ops-2026-11-25/",
+    "period": "Anuncio publicado el 25/11/2026. El nuevo modelo operativo se espera para 2027, sujeto a condiciones aplicables.",
+    "jurisdictions": [
+      "India",
+      "Hungría",
+      "Malasia"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Reuters identifica operaciones y empleados en India, Hungría y Malasia; Wipro es una compañía india y BP tiene sede corporativa en el Reino Unido."
+    ],
+    "jurisdictionScope": "Operaciones afectadas en India, Hungría y Malasia; compañías matrices de India y Reino Unido.",
+    "sector": "Servicios empresariales / finanzas corporativas / outsourcing / inteligencia artificial / automatización / energía",
+    "territorialRelevance": "Caso internacional de transformación de operaciones financieras y servicios empresariales mediante IA y automatización. Es una referencia comparativa para proveedores de BPO, software, consultoría y capacitación laboral; no se identificó una implementación en Argentina ni en Escobar.",
+    "relatedSources": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se abrió la nota original de Reuters, publicada el 25/11/2026 a las 10:33 UTC. Se verificaron las partes, el alcance aproximado de 3.000 empleados, las jurisdicciones operativas, el uso previsto de IA y automatización, la fecha esperada del nuevo modelo y la responsabilidad de BP sobre datos y gobernanza. La nota no informa precio, ahorros ni resultados de implementación; no se atribuyen."
+    }
+  },
+  {
     "id": "news-www-boletinoficial-gob-ar-detalleaviso-primera-350736-20261125",
     "title": "La AAIP aprobó cláusulas contractuales modelo para transferencias internacionales de datos personales",
     "date": "2026-11-25",
