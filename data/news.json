@@ -1,5 +1,32 @@
 [
   {
+    "id": "news-www-boletinoficial-gob-ar-detalleaviso-primera-350736-20261125",
+    "title": "La AAIP aprobó cláusulas contractuales modelo para transferencias internacionales de datos personales",
+    "date": "2026-11-25",
+    "category": "Regulación",
+    "summary": "La Resolución 188/2026 de la AAIP aprobó las Cláusulas Contractuales Modelo del Comité Consultivo del Convenio 108 para transferencias internacionales de datos personales. Incluye tres relaciones: responsable-responsable, responsable-encargado y encargado-encargado. Entra en vigencia con su publicación. Es un instrumento contractual para flujos transfronterizos; no reemplaza la Ley 25.326 ni constituye una regulación específica de IA. Resulta relevante para proveedores de IA, cloud y software cuando procesan o transfieren datos personales entre jurisdicciones.",
+    "source": "Agencia de Acceso a la Información Pública — Boletín Oficial de la República Argentina",
+    "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/350736/20261125",
+    "period": "Resolución firmada el 20/11/2026; publicada y vigente desde el 25/11/2026. El anexo forma parte integrante de la medida.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Nacional — Argentina; autoridad de aplicación de la Ley 25.326.",
+    "sector": "Regulación / protección de datos personales / transferencias internacionales / servicios digitales / IA y cloud",
+    "territorialRelevance": "Relevante para responsables y encargados que transfieren datos personales al exterior, incluidos proveedores de IA, cloud y software cuando intervienen datos personales. No es una norma específica sobre modelos de IA ni obliga por sí sola a adoptar un único contrato.",
+    "relatedSources": [
+      {
+        "label": "Consejo de Europa — Cláusulas Contractuales Tipo para la Transferencia de Datos Personales (T-PD(2024)3, español)",
+        "url": "https://rm.coe.int/es-t-pd-2024-3-mcc-compiled-es-/4880291e4d"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se contrastó el aviso original del Boletín Oficial, edición 25/11/2026: Resolución AAIP 188/2026, firmada el 20/11, artículos 1 a 3 y vigencia desde la publicación. El texto identifica los tres módulos contractuales y remite al documento T-PD(2024)3 del Consejo de Europa. El acceso directo a la página del Boletín Oficial agotó el tiempo de espera; el resultado indexado del aviso oficial contiene el texto normativo. No se revisó cláusula por cláusula el anexo ni se emite asesoramiento jurídico."
+    }
+  },
+  {
     "id": "news-www-automationanywhere-com-company-press-room-automation-anywhere-completes-boostai-acquisition-challenges-saas-giants-race",
     "title": "Automation Anywhere completó la adquisición de Boost.ai y amplió su oferta de IA conversacional empresarial",
     "date": "2026-11-24",
