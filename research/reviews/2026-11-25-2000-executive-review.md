@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 00:07 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 02:04 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,9 +8,9 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 45 registros |
-| Investment Finder | 56 registros |
-| Oportunidades abiertas | 25 |
+| Radar IA | 48 registros |
+| Investment Finder | 57 registros |
+| Oportunidades abiertas | 26 |
 | Disponibilidad desconocida | 28 |
 | Cerradas | 3 |
 | Event Intelligence | 4 registros |
@@ -207,3 +207,16 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - Workflow final [45543725620](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45543725620), sobre `f3345934`: `validate=success` y `deploy=success`. GitHub Pages confirmó el despliegue en https://leandrocuellarok-netizen.github.io/mapafederal/ .
 - La consulta web independiente de la página no estuvo disponible; se confirma el resultado del pipeline, no una inspección visual completa de cada pantalla.
 - El balance sigue siendo acumulativo y se cerrará con el corte de las 20:00.
+
+
+## Actualización del ciclo 02:04 — 25/11/2026
+
+- Radar IA: 47 → 48 registros. Se incorporó el Financial Stability Review de noviembre de 2026 del Banco Central Europeo, fuente primaria fechada el 18/11. El informe advierte sobre deuda, compromisos fuera de balance, financiamiento circular y concentración en la infraestructura de IA. Con datos hasta junio de 2026, los compromisos crediticios de bancos del área del euro con 165 firmas y filiales de la cadena IA alcanzaban €24.300 millones, con €11.000 millones no desembolsados. La cifra excluye parte de las exposiciones fuera del área del euro. El capex de USD 5,5 billones hasta 2030 es una proyección basada en estimaciones de analistas, no inversión comprometida.
+- Se detectó un reporte del Financial Times sobre un posible Sovereign Tech Equity Fund europeo de hasta €50.000 millones. No se incorporó: la página no pudo abrirse directamente y no se localizó documentación primaria que confirme el diseño específico. Se conserva como señal para seguimiento, no como fondo aprobado, capital comprometido ni convocatoria.
+- Investment Finder: sin nuevas oportunidades añadidas. Se mantienen 57 registros: 26 abiertos, 28 con disponibilidad desconocida y 3 cerrados. Escobar: 24 registros, 5 abiertos, 16 desconocidos y 3 cerrados.
+- Fuerza Aérea Argentina, LP 0140/2026 Cloud PBX: revalidada en el Boletín Oficial nacional. Consultas hasta el 25/11/2026 a las 13:00; retiro del pliego, presentación de ofertas y apertura electrónica hasta/el 30/11/2026 a las 11:00. El aviso no publica presupuesto. Ya estaba en el catálogo y no se duplicó.
+- Escobar: la edición 14527 del Boletín Oficial bonaerense no pudo abrirse por timeout y la búsqueda no produjo un aviso municipal nuevo verificable. No se agregaron oportunidades locales. El aviso de transferencia comercial de Belén incorporado en el ciclo previo se conserva como señal registral, no como inversión ni como comercio operativo confirmado.
+- Se descartó una aparente Licitación Pública 1/26 de Ferrocarriles Argentinos: el índice de búsqueda sugería una actualización de noviembre de 2026, pero la apertura de la página mostró contenido antiguo de la LP 1/25 y fecha de actualización 28/10/2025. La inconsistencia impide incorporarla.
+- El BESS Maschwitz sigue con discrepancia territorial entre el resumen y referencias catastrales del EIAS y el Mapa 9. No se asigna jurisdicción municipal ni coordenadas.
+- Arquitectura y contrato enterprise sin cambios: freeFormReports=false, customAnalyses=by_request, predictiveClaimsRequireValidation=true, clientDataPublic=false. Federal Reports sigue como único piloto descriptivo; cinco módulos permanecen planificados.
+- Pendientes para la revisión final: volver a consultar la edición 14527 y los avisos de Escobar; comprobar circulares y adjudicaciones de licitaciones; verificar la aclaración territorial del BESS; contrastar con documentación oficial cualquier novedad del fondo europeo; confirmar los workflows y la publicación. Esta actualización es provisional, no el balance final de las 20:00.
