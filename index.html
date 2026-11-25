@@ -132,16 +132,33 @@ footer{background:#061b14;color:#d9e2db;padding:30px 0}.foot{display:flex;justif
 </main>
 <section class="enterprise-intelligence" id="inteligencia-empresarial"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Vilanova AI Solutions · Business Intelligence</div><h2>Inteligencia territorial para decisiones empresariales.</h2></div><p>Mapa Federal integra información territorial y económica de Argentina con una arquitectura ampliable de inteligencia de mercado, marketing estratégico y análisis predictivo para empresas.</p></div><div class="enterprise-grid"><article><span>01 / Market Intelligence</span><h3>Comprender el mercado</h3><p>Industrias, empresas, tendencias, demanda, competencia y señales económicas.</p></article><article><span>02 / Personalized BI</span><h3>Monitorear una empresa</h3><p>Perfil comercial, competidores, posicionamiento, comunicación y prioridades estratégicas.</p></article><article><span>03 / Predictive BI</span><h3>Anticipar escenarios</h3><p>Modelos estadísticos y de machine learning, pronósticos y alertas con incertidumbre documentada.</p></article></div><div class="enterprise-foot"><p>Una infraestructura común conecta Radar IA, Nodos Estratégicos e Investment Finder. Los informes y análisis personalizados se realizan bajo solicitud a través de Vilanova AI Solutions.</p><p>La información pública distingue datos verificados, fuentes pendientes, estimaciones e hipótesis. No se publican inferencias sobre empresas como hechos ni se prometen predicciones certeras.</p><a class="enterprise-link" href="https://github.com/leandrocuellarok-netizen/mapafederal/issues/new?title=Consulta%20empresarial%20-%20Vilanova%20AI%20Solutions">Consultar soluciones para empresas ↗</a></div></div></section>
 <footer><div class="wrap foot"><div class="brand"><span class="brandmark">✦</span><span>MAPA FEDERAL</span></div><small>INTELIGENCIA TERRITORIAL PARA EMPRESARIOS Y EJECUTIVOS</small></div></footer>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.3.0/dist/maplibre-gl.css">
+<script type="importmap">{"imports":{"leaflet":"https://unpkg.com/leaflet@1.9.4/dist/leaflet-src.esm.js","maplibre-gl":"https://unpkg.com/maplibre-gl@6.3.0/dist/maplibre-gl.mjs"}}</script>
 <script src="./assets/i18n.js" defer></script>
 <script src="./assets/profile-comparison.js"></script>
-<script>
+<script type="module">
+import * as L from 'leaflet';
+import { maplibreGL } from 'https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.1.4/dist/leaflet-maplibre-gl.mjs';
 let points=[];let lastProfileComparison=null;
 const colors={"Ciudad":"#C7A35B","Puerto":"#337D68","Aeropuerto":"#547FA5","Paso fronterizo":"#547FA5","Logística":"#337D68","Industria":"#9D7040","Turismo":"#9D7040","Estación ferroviaria":"#547FA5"};
 const mapAvailable=typeof L !== "undefined";
 const mapElement=document.getElementById("map");
-const map=mapAvailable?L.map("map",{scrollWheelZoom:false}).setView([-38.4,-63.6],4):null;
-if(mapAvailable){L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"&copy; OpenStreetMap contributors",maxZoom:18}).addTo(map);}else{mapElement.innerHTML='<div class="map-fallback" role="status">La cartografía no está disponible en este momento. El directorio y las fichas de nodos siguen funcionando.</div>';}
+const map=mapAvailable?L.map("map",{scrollWheelZoom:false,minZoom:1,maxBounds:[[-85,-180],[85,180]],maxBoundsViscosity:1}).setView([-38.4,-63.6],4):null;
+let vectorBase=null;
+if(mapAvailable){
+ vectorBase=maplibreGL({style:"https://tiles.openfreemap.org/styles/liberty"}).addTo(map);
+ const attribution=L.control.attribution({prefix:false}).addTo(map);
+ attribution.addAttribution('&copy; <a href="https://openfreemap.org/" target="_blank" rel="noopener">OpenFreeMap</a> · &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>');
+ const glMap=vectorBase.getMaplibreMap();
+ glMap.once("load",()=>{
+  const countryLayers=glMap.getStyle().layers.filter(layer=>layer.type==="symbol"&&layer["source-layer"]==="place"&&/country/i.test(layer.id)&&layer.layout&&layer.layout["text-field"]!==undefined);
+  const malvinasMatch=["any",["==",["get","iso_a2"],"FK"],["==",["get","name_en"],"Falkland Islands"],["==",["get","name"],"Falkland Islands"],["==",["get","name:en"],"Falkland Islands"]];
+  countryLayers.forEach(layer=>{
+   glMap.setLayoutProperty(layer.id,"text-field",["case",malvinasMatch,"Malvinas Argentinas",layer.layout["text-field"]]);
+  });
+  if(!countryLayers.length) console.warn("Mapa Federal: no se encontró la capa vectorial de etiquetas de países para localizar Malvinas.");
+ });
+}else{mapElement.innerHTML='<div class="map-fallback" role="status">La cartografía no está disponible en este momento. El directorio y las fichas de nodos siguen funcionando.</div>';}
 let markers=[];let activeType="Todos";let activeProvince="Todas";let activeSector="Todos";
 const sectorNodeNames={
  "Forestoindustria":[],
