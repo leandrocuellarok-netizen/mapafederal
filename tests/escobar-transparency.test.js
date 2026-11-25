@@ -248,7 +248,7 @@ assert.equal(reserves.documentedFacility.status, "pendiente");
 assert.equal(reserves.documentedFacility.operationalStatus, "no verificado");
 assert.equal(reserves.documentedFacility.sourcePublishedAt, null);
 assert.equal(reserves.documentedFacility.verification.checkedAt, "2026-11-25");
-assert.match(reserves.documentedFacility.statusNote, /no confirma apertura en tiempo real/i);
+assert.match(reserves.documentedFacility.statusNote, /no indica días ni confirma apertura en tiempo real/i);
 assert.match(reserves.documentedFacility.statusNote, /martes a domingos/i);
 assert.match(reserves.documentedFacility.statusNote, /miércoles a domingos/i);
 assert.match(reserves.documentedFacility.statusNote, /no se fija un calendario vigente/i);
