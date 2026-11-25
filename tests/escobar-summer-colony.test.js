@@ -6,8 +6,8 @@ const event = catalog.events.find(item => item.id === "colonia-verano-escobar-20
 
 assert.ok(event, "Falta la Colonia de Verano 2027 de Escobar");
 assert.equal(catalog.updatedAt, "2026-11-25");
-assert.equal(catalog.events.length, 5);
-assert.equal(new Set(catalog.events.map(item => item.id)).size, 5);
+assert.equal(catalog.events.length, 6);
+assert.equal(new Set(catalog.events.map(item => item.id)).size, 6);
 assert.equal(event.name, "Colonia de Verano 2027 — Partido de Escobar");
 assert.equal(event.startDate, "2027-01-04");
 assert.equal(event.endDate, "2027-01-28");
@@ -47,11 +47,42 @@ assert.equal(event.coords, undefined, "No se agregan coordenadas sin evidencia c
 assert.equal(event.lat, undefined);
 assert.equal(event.long, undefined);
 
+const pools = catalog.events.find(item => item.id === "piletas-municipales-escobar-temporada-2027");
+assert.ok(pools, "Falta el registro separado de la temporada de piletas municipales 2027");
+assert.equal(pools.name, "Temporada de piletas municipales 2027 — Partido de Escobar");
+assert.equal(pools.startDate, "2027-01-04");
+assert.equal(pools.endDate, "2027-02-28");
+assert.equal(pools.time, null, "No se debe forzar un horario único para dos calendarios mensuales");
+assert.equal(pools.timeZone, "America/Argentina/Buenos_Aires");
+assert.equal(pools.scope, "local");
+assert.equal(pools.jurisdiction, "Buenos Aires");
+assert.equal(pools.organizer, "Municipalidad de Escobar");
+assert.equal(pools.sourceName, "Municipalidad de Escobar");
+assert.equal(pools.sourcePublishedAt, "2026-11-16");
+assert.equal(pools.sourceUrl, "https://www.escobar.gob.ar/noticias/escobar-abre-la-inscripcion-para-la-colonia-de-verano-2027-y-anuncia-l/");
+assert.equal(pools.status, "confirmed");
+assert.equal(pools.verification.status, "verified");
+assert.equal(pools.verification.checkedAt, "2026-11-25");
+assert.match(pools.period, /04\\/01\\/2027 al 28\\/01\\/2027/);
+assert.match(pools.period, /01\\/02\\/2027 al 28\\/02\\/2027/);
+assert.match(pools.period, /29–31\\/01\\/2027/);
+assert.match(pools.description, /cupos limitados/i);
+assert.match(pools.description, /ser socio de un polideportivo municipal/i);
+assert.match(pools.description, /verificación biométrica/i);
+assert.match(pools.description, /lunes a viernes de 17:30 a 20:00/);
+assert.match(pools.description, /lunes a sábados de 12:00 a 20:00/);
+assert.match(pools.description, /días que serán informados próximamente/i);
+assert.match(pools.territorialRelevance, /no individualiza las piletas/i);
+assert.match(pools.verification.scope, /No se verificó apertura efectiva/i);
+assert.equal(pools.coords, undefined, "No se agregan coordenadas sin evidencia cartográfica");
+assert.equal(pools.lat, undefined);
+assert.equal(pools.long, undefined);
+
 const readme = fs.readFileSync("README.md", "utf8");
 const roadmap = fs.readFileSync("docs/intelligence-modules-roadmap.md", "utf8");
-assert.match(readme, /cinco registros documentales validados/);
+assert.match(readme, /seis registros documentales validados/);
 assert.match(readme, /Colonia de Verano 2027/);
-assert.match(roadmap, /cinco registros documentales verificados/);
+assert.match(roadmap, /seis registros documentales verificados/);
 assert.doesNotMatch(roadmap, /el catálogo permanece vacío/);
 
-console.log("Escobar Event Intelligence: Colonia de Verano 2027, fechas, inscripción, sedes, gratuidad, trazabilidad, ausencia de cupos confirmados y falta de georreferencias comprobados.");
+console.log("Escobar Event Intelligence: Colonia de Verano 2027 y temporada de piletas, fechas, horarios, requisitos de acceso, trazabilidad, ausencia de cupos confirmados y falta de georreferencias comprobados.");

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-11-25",
-  "note": "Catálogo documental de eventos con procedencia y verificación. No es una agenda integrada ni confirma cupos o inscripción. Los registros históricos se conservan como completados. Para la Ronda RIGI del 02/12/2026, la inscripción a reuniones B2B cerró el 16/11; la asistencia a otras actividades se anuncia hasta el 30/11. Para la Ronda de Negocios de Energía y Minería de PBA del 01/12/2026, la inscripción cerró el 13/11; no se presume acceso para nuevas empresas. Se agregó la Ronda de Negocios Escobar 2026 (24/11) como evento completado: fecha y sede contrastadas con PBA; cifras de participación atribuidas a cobertura local, sin inferir negocios cerrados ni cupos. Se agregó la Colonia de Verano 2027 de Escobar como evento futuro confirmado: publicación municipal del 16/11/2026, inscripción general anunciada del 24/11 al 04/12 y actividades del 04/01 al 28/01/2027. El registro es documental; no confirma cupos ni el estado del formulario o de una inscripción individual.",
+  "note": "Catálogo documental de eventos con procedencia y verificación. No es una agenda integrada ni confirma cupos o inscripción. Los registros históricos se conservan como completados. Para la Ronda RIGI del 02/12/2026, la inscripción a reuniones B2B cerró el 16/11; la asistencia a otras actividades se anuncia hasta el 30/11. Para la Ronda de Negocios de Energía y Minería de PBA del 01/12/2026, la inscripción cerró el 13/11; no se presume acceso para nuevas empresas. Se agregó la Ronda de Negocios Escobar 2026 (24/11) como evento completado: fecha y sede contrastadas con PBA; cifras de participación atribuidas a cobertura local, sin inferir negocios cerrados ni cupos. Se agregó la Colonia de Verano 2027 de Escobar como evento futuro confirmado: publicación municipal del 16/11/2026, inscripción general anunciada del 24/11 al 04/12 y actividades del 04/01 al 28/01/2027. El registro es documental; no confirma cupos ni el estado del formulario o de una inscripción individual. Se agregó un registro separado para la temporada de piletas municipales 2027, con los dos períodos y horarios publicados, requisitos de acceso y límites de verificación; no se individualizan sedes ni cupos por pileta.",
   "events": [
     {
       "id": "feria-japonesa-bazaa-5-edicion-2026",
@@ -143,6 +143,31 @@
         "status": "verified",
         "checkedAt": "2026-11-25",
         "scope": "Se abrió y verificó directamente el enlace canónico de la publicación municipal del 16/11/2026; se confirmaron título, fecha, modalidades, sedes, horarios, plazos de inscripción y carácter voluntario del bono contribución. El índice oficial de noticias muestra el mismo título y fecha. Una variante antigua de URL sin el segmento /noticias/ devolvió HTTP 403; se conserva el enlace canónico accesible. La inscripción general anunciada (24/11–04/12/2026) está dentro de su período al 25/11/2026. No se verificó el estado actual del formulario de Escobar 360, cupos por sede ni inscripción individual. La ubicación del Polideportivo Luis Monti en Belén de Escobar y su dirección Av. Tapia de Cruz 1280 se contrastaron por separado con el directorio oficial de Escobar 360, consultado el 25/11/2026; esta referencia solo documenta la ubicación del establecimiento, no los cupos ni la operación del evento."
+      }
+    },
+    {
+      "id": "piletas-municipales-escobar-temporada-2027",
+      "name": "Temporada de piletas municipales 2027 — Partido de Escobar",
+      "startDate": "2027-01-04",
+      "endDate": "2027-02-28",
+      "time": null,
+      "timeZone": "America/Argentina/Buenos_Aires",
+      "scope": "local",
+      "jurisdiction": "Buenos Aires",
+      "venue": "Piletas municipales del Partido de Escobar; la publicación no individualiza cada sede ni su localidad.",
+      "organizer": "Municipalidad de Escobar",
+      "sector": "Deporte / recreación / servicios municipales",
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/escobar-abre-la-inscripcion-para-la-colonia-de-verano-2027-y-anuncia-l/",
+      "sourcePublishedAt": "2026-11-16",
+      "period": "Piletas anunciadas del 04/01/2027 al 28/01/2027 y del 01/02/2027 al 28/02/2027. La publicación no consigna horarios para el 29–31/01/2027. Los horarios de cada período se detallan en la descripción.",
+      "status": "confirmed",
+      "description": "La Municipalidad anuncia piletas municipales con cupos limitados durante enero y febrero. Para acceder se requiere ser socio de un polideportivo municipal y tener al día la verificación biométrica en Escobar 360. Del 4 al 28 de enero funcionarán de lunes a viernes de 17:30 a 20:00, los sábados de 12:00 a 20:00 y los domingos de 10:00 a 20:00. Del 1 al 28 de febrero abrirán de lunes a sábados de 12:00 a 20:00 y los domingos de 10:00 a 20:00. También se anuncian clases de natación de 12:00 a 14:00, en días que serán informados próximamente. La publicación no identifica las piletas por nombre ni localidad y no consigna horarios para el 29–31 de enero.",
+      "territorialRelevance": "Servicio anunciado para el Partido de Escobar. La fuente no individualiza las piletas ni publica cupos por sede; el acceso depende de ser socio de un polideportivo municipal y tener la verificación biométrica vigente. No se infiere disponibilidad efectiva.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se abrió la publicación municipal del 16/11/2026 y se verificaron directamente los dos períodos de habilitación, horarios diferenciados, cupos limitados, requisito de socio y verificación biométrica. La fuente no identifica cada pileta ni su localidad; las clases de natación se anuncian de 12:00 a 14:00, con días a informar. No se verificó apertura efectiva, cupo disponible por sede ni fechas de clases."
       }
     }
   ]
