@@ -35,11 +35,12 @@
 
 ## Validación y publicación
 
-- JSON: parseado antes del commit inicial `6f22fb6168c9621780e0726520d8b5257ece5025`.
-- Workflow #611: falló en la nueva prueba por una aserción que esperaba la palabra «siete», mientras la fuente reproduce literalmente «7 CDI». La prueba se ajustó para comprobar la transcripción exacta; no se modificó el dato fuente.
-- Corrección de prueba: commit pendiente de confirmación.
-- Workflow final y GitHub Pages: pendientes de nueva ejecución.
-- Inspección HTTP independiente de GitHub Pages: no disponible en esta ejecución de investigación.
+- Commit de datos, interfaz, prueba y workflow: [`6f22fb6168c9621780e0726520d8b5257ece5025`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/6f22fb6168c9621780e0726520d8b5257ece5025).
+- Workflow #611: falló en la nueva prueba porque la aserción esperaba la palabra «siete», mientras la ficha municipal reproduce literalmente «Los 7 CDI». No falló la validación JSON, la sintaxis del renderizador ni los controles anteriores.
+- Corrección puntual de la aserción y del registro: [`50669b738d8de2526db67230a5eb8e7f6088bb82`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/50669b738d8de2526db67230a5eb8e7f6088bb82).
+- Workflow [#612](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45615109585): job `validate` exitoso; la nueva prueba CDI pasó; job `deploy` exitoso. GitHub Pages informó despliegue exitoso para el commit `50669b738d8de2526db67230a5eb8e7f6088bb82`.
+- Verificación HTTP independiente: intentada contra `https://leandrocuellarok-netizen.github.io/mapafederal/foco-escobar/`; falló la resolución DNS desde el entorno de consulta. No se afirma inspección visual independiente.
+- Rama: `main`. El conector GitHub no expone un working tree local; no se reporta uno como inspeccionado. No había PR abiertos al inicio de la ejecución.
 
 ## Evidencia necesaria para cerrar la conciliación
 
