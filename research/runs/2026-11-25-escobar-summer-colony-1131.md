@@ -31,6 +31,7 @@ La inscripción prioritaria para socios fue anunciada del 17/11 al 23/11/2026. L
 - La consulta directa del artículo devolvió HTTP 403. Se trata de una restricción de acceso del sitio al navegador de verificación, no de una prueba de enlace roto.
 - No se verificó el estado actual del formulario de Escobar 360, los cupos por sede, la disponibilidad individual ni una inscripción particular.
 - La fuente no publica una nómina completa de todos los polideportivos ni cupos por establecimiento.
+- La sede de inscripción Polideportivo Luis Monti se identifica en Belén de Escobar, Av. Tapia de Cruz 1280, mediante el directorio oficial Escobar 360 consultado el 25/11/2026. Esta fuente complementaria documenta la ubicación del establecimiento, no la disponibilidad del evento.
 - No se añadieron puntos ni polígonos: las sedes y la cobertura general no equivalen a una geometría oficial de las instalaciones.
 
 ## 4. Cambio incorporado
@@ -58,12 +59,16 @@ Se actualizó la fecha y nota del catálogo. Se corrigieron los recuentos del RE
 
 ## 6. Validación y publicación
 
-- El test específico y el workflow global se ejecutarán después del commit.
-- El resultado de GitHub Actions y el despliegue de Pages se consignarán una vez observados.
-- La comprobación HTTP independiente del sitio publicado se intentará por separado; un job de Pages exitoso no equivale a inspección visual independiente.
+- Workflow #630 (run ID 45635849312), sobre el commit `5dd963baafca88976d3a35e609d363633f357feb`: job `validate` = success; test específico de Colonia de Verano 2027 = success; job `deploy` = success. GitHub Actions confirmó el despliegue en Pages.
+- La comprobación HTTP independiente de `https://leandrocuellarok-netizen.github.io/mapafederal/` no pudo completarse con el navegador de verificación; no se afirma inspección visual.
 
 ## 7. Pendientes
 
 1. Confirmar que el formulario de Escobar 360 sigue habilitado y cuáles son los requisitos actuales, sin realizar una inscripción.
 2. Obtener el listado nominal de polideportivos y cupos por sede, si el Municipio los publica.
 3. Mantener diferenciadas las actividades de colonia y el acceso estacional a piletas, que tienen requisitos y períodos propios.
+
+
+## Actualización de procedencia geográfica — 25/11/2026
+
+Se añadió como fuente complementaria el directorio oficial Escobar 360, que identifica el Polideportivo Luis Monti en Belén de Escobar y publica Av. Tapia de Cruz 1280. La dirección se incorpora como dato de ubicación del establecimiento; no se extrapola a cupos, funcionamiento de la colonia ni horarios del evento. El test específico ahora comprueba esta referencia y la segunda fuente oficial.
