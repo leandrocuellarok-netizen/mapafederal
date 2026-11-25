@@ -37,7 +37,7 @@ assert.match(event.description, /08:00 a 12:00/);
 assert.match(event.description, /13:00 a 17:00/);
 assert.match(event.territorialRelevance, /no ofrece una nómina completa/i);
 assert.match(event.verification.scope, /variante antigua de URL.*HTTP 403/);
-assert.match(event.verification.scope, /enlace canónico.*verificó directamente/i);
+assert.match(event.verification.scope, /verificó directamente el enlace canónico/i);
 assert.match(event.verification.scope, /No se verificó el estado actual del formulario/i);
 assert.match(event.verification.scope, /directorio oficial de Escobar 360/i);
 assert.ok(Array.isArray(event.relatedSources) && event.relatedSources.length === 2);
