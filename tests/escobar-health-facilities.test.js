@@ -58,7 +58,7 @@ assert.equal(legacySelles.address, selles.address, "Los dos directorios deben co
 assert.equal(legacySelles.serviceHours, selles.serviceHours, "Los dos directorios deben distinguir guardia, atención y vacunatorio");
 assert.equal(legacySelles.phone, null, "No consolidar teléfonos contradictorios");
 assert.match(legacySelles.verification.scope, /Cartilla de salud/);
-assert.match(legacySelles.verification.scope, /No se asigna barrio ni teléfono único/);
+assert.match(legacySelles.verification.scope, /ni asignar un barrio definitivo/);
 
 assert.equal(selles.address, "Pablo Marín 24, Garín");
 assert.match(selles.serviceHours, /Guardia general: todos los días, las 24 h/);
@@ -68,7 +68,7 @@ assert.ok(selles.mapUrl.includes("Pablo%20Mar%C3%ADn%2024"), "El buscador cartog
 assert.match(selles.addressNote, /Fonavi/);
 assert.match(selles.addressNote, /24 de Febrero/);
 assert.match(selles.verification.scope, /Cartilla de salud/);
-assert.match(selles.verification.scope, /No se asigna barrio ni teléfono único/);
+assert.match(selles.verification.scope, /ni asignar un barrio definitivo/);
 assert.equal(selles.verification.checkedAt, "2026-11-25");
 assert.match(selles.verification.scope, /filtros de Cartilla de salud y Centros de salud enumeran seis localidades y omiten 24 de Febrero/i);
 assert.match(selles.verification.scope, /La omisión del filtro no acredita ausencia de servicios en 24 de Febrero/i);

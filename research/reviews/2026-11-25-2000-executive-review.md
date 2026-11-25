@@ -681,3 +681,7 @@ El primer CI de esta ejecución detectó una incompatibilidad de esquema en el e
 
 ### Segunda corrección de CI — 17:11 ART
 El workflow #45692405744 confirmó que la normalización de jurisdicciones nacionales resolvió el fallo del exportador CSV. La validación del perfil Escobar detectó luego una aserción textual desactualizada sobre el CAPS Selles: se actualizó el test para coincidir con la formulación vigente (“ni asignar un barrio definitivo”), sin cambiar la evidencia territorial. Nuevo workflow pendiente de resultado.
+
+
+### Tercera corrección de CI — 17:13 ART
+El workflow #45692550405 pasó la validación del perfil Escobar y el exportador, pero el test específico del directorio sanitario conservaba dos aserciones con redacción anterior sobre el CAPS Selles. Se actualizaron ambas aserciones a la formulación vigente, sin cambiar datos, direcciones, teléfonos ni clasificación territorial. Nuevo workflow pendiente.
