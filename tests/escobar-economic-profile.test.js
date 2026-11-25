@@ -180,7 +180,7 @@ assert.equal(bisRule.verification.checkedAt, "2026-11-25");
 assert.deepEqual(bisRule.jurisdictions, []);
 assert.equal(bisRule.geographyStatus, "not_specified");
 assert.match(bisRule.verification.scope, /siete entidades/i);
-assert.match(bisRule.verification.scope, /no se fija una fecha efectiva exacta/i);
+assert.match(bisRule.verification.scope, /ni se fija una fecha efectiva exacta/i);
 assert.equal(new URL(bisRule.url).protocol, "https:");
 
 const nestleAi = radarNews.find(entry => entry.id === "news-www-nestle-com-media-news-deep-tech-center-orbe-ai-robotics");
