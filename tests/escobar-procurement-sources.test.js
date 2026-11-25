@@ -10,7 +10,8 @@ const expected = {
   "escobar-licitacion-66-2026-polideportivo-maschwitz": {
     url: "https://boletinoficial.gba.gob.ar/secciones/14508/ver",
     published: "2026-11-13",
-    checkedAt: "2026-11-25"
+    checkedAt: "2026-11-25",
+    scopePattern: /Recomprobado el 25\\/11\\/2026.*ediciones 14505 y 14508/i
   },
   "escobar-licitacion-69-2026-mobiliario-urbano": {
     url: "https://boletinoficial.gba.gob.ar/secciones/14508/ver",

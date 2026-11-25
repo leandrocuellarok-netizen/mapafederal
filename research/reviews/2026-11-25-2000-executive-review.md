@@ -697,3 +697,7 @@ El workflow #45692949602 avanzó hasta la prueba de fuentes municipales y detect
 
 ### Sexta corrección de CI — 17:16 ART
 El workflow #45693147512 superó la validación del perfil, el directorio sanitario y el catálogo editorial. La prueba municipal detectó que LP 66/2026 usaba una fecha de verificación esperada por defecto 24/11, mientras la ficha estaba correctamente revalidada el 25/11. Se explicitó la fecha en el test, sin cambiar el dato.
+
+
+### Séptima corrección de CI — 17:17 ART
+El workflow #45693293076 llegó a la prueba de licitaciones de Escobar y detectó que LP 66 heredaba un patrón de verificación genérico que ya no correspondía a su texto actualizado. Se hizo explícito el patrón de revalidación de las ediciones 14505 y 14508. El dato y las fuentes no se modificaron.
