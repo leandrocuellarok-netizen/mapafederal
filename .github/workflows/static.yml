@@ -121,9 +121,10 @@ jobs:
           federal = next(item for item in modules["modules"] if item["id"] == "federal-reports")
           assert federal["status"] == "pilot"
           assert "comparar dos jurisdicciones" in federal["currentCapability"]
-          inline_scripts = re.findall(r"<script>(.*?)</script>", html, flags=re.S)
+          inline_scripts = re.findall(r'<script(?![^>]*\\bsrc=)(?![^>]*type=["\\']application/ld\\+json["\\'])[^>]*>(.*?)</script>', html, flags=re.I | re.S)
           assert inline_scripts, "No se encontró el JavaScript de la interfaz"
-          subprocess.run(["node", "--check", "-"], input=inline_scripts[-1], text=True, check=True)
+          Path("/tmp/mapafederal-interface.mjs").write_text("\\n".join(inline_scripts), encoding="utf-8")
+          subprocess.run(["node", "--check", "/tmp/mapafederal-interface.mjs"], text=True, check=True)
           print("Interfaz, traducción, estado honesto y sintaxis del JavaScript inline: OK.")
           PY
       - name: Test Federal Reports CSV export safety and provenance
@@ -1059,9 +1060,9 @@ jobs:
           html = Path("index.html").read_text(encoding="utf-8")
           scripts = re.findall(r'<script(?![^>]*\bsrc=)(?![^>]*type=["\']application/ld\+json["\'])[^>]*>(.*?)</script>', html, flags=re.I | re.S)
           assert scripts, "No se encontró JavaScript de aplicación"
-          Path("/tmp/mapafederal-inline.js").write_text("\n".join(scripts), encoding="utf-8")
+          Path("/tmp/mapafederal-inline.mjs").write_text("\n".join(scripts), encoding="utf-8")
           PY
-          node --check /tmp/mapafederal-inline.js
+          node --check /tmp/mapafederal-inline.mjs
       - name: Test Territorial Monitor jurisdiction filtering
         run: |
           node - <<'JS'
