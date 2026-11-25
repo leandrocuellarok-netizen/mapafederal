@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 12:03 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 13:03 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,12 +8,12 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 59 registros |
-| Investment Finder | 90 registros |
-| Oportunidades abiertas | 48 |
+| Radar IA | 61 registros |
+| Investment Finder | 97 registros |
+| Oportunidades abiertas | 55 |
 | Disponibilidad desconocida | 36 |
 | Cerradas | 6 |
-| Event Intelligence | 5 registros |
+| Event Intelligence | 6 registros |
 | Nodos estratégicos | 86 |
 | Módulos documentados | 6 |
 | Módulos en piloto | 1 |
@@ -413,3 +413,54 @@ El catálogo de oportunidades conserva 23 registros de Escobar: 5 abiertos (LP 7
 - Registro completo: [ciclo 12:03](../runs/2026-11-25-gbie-cycle-1203.md).
 - Pendientes: resultado CI/Pages del commit de este ciclo; inspección visual independiente; reintentar sección 14523; obtener actas de apertura/adjudicación; confirmar formulario y cupos por sede de Escobar 360; resolver la jurisdicción parcelaria del BESS sin georreferenciarlo.
 - No se modificaron Investment Finder, Event Intelligence, arquitectura, contrato enterprise, módulos, nodos ni reglas de acceso público.
+
+
+## Actualización del ciclo 13:03 — 25/11/2026
+
+### Inspección previa y estado del repositorio
+- Se inspeccionó `main` antes de editar. HEAD inicial: `b4742927b692c245b28f0d3530811b628045f083` — “Add verified national procurement opportunities from 25 November bulletin” (2026-11-25 15:34:47 UTC / 12:34:47 ART).
+- Se revisaron los últimos ocho commits, el árbol raíz, las páginas principales, los catálogos, el manifiesto de módulos, el contrato enterprise y la arquitectura maestra versión 1.0 (24/11/2026). No había pull requests abiertos.
+- Contrato sin cambios: `freeFormReports=false`, `customAnalyses=by_request`, `predictiveClaimsRequireValidation=true`, `clientDataPublic=false`.
+- Baseline: Radar IA 59; Investment Finder 90 (48 abiertas, 36 desconocidas, 6 cerradas); Event Intelligence 6; 86 nodos estratégicos; 6 módulos, 1 piloto y 5 planificados.
+
+### Radar IA — 59 → 61
+Se incorporaron dos documentos primarios de la Reserva Federal de Estados Unidos:
+1. FEDS 2026-074, “Artificial Intelligence and the U.S. Economy: Current Evidence” (página actualizada 12/11/2026). El resumen indica que la adopción crece, pero la mayoría de las empresas aún no usa IA de forma intensiva o no la usa; los efectos agregados observados sobre empleo y productividad son pequeños y mixtos, mientras suben precios de insumos como chips de memoria. La página aclara que las conclusiones son de los autores y no necesariamente representan al Board.
+2. Financial Stability Report, noviembre 2026 (13/11/2026). El informe registra más de USD 680.000 millones de emisiones de deuda para cómputo avanzado hasta octubre y más de USD 1,1 billones de deuda pública relacionada en circulación; también identifica más de USD 3 billones en obligaciones futuras no descontadas entre leases y otros compromisos. El 87% corresponde a una encuesta de 23 contactos de mercado de la Reserva Federal de Nueva York, no a una opinión del Board ni a un pronóstico.
+- Ambos registros quedan con jurisdicción estadounidense explícita en el campo textual y sin asignación artificial a provincias argentinas. No se verificó una nueva norma argentina de IA en este ciclo.
+- Fuentes primarias: https://www.federalreserve.gov/econres/feds/artificial-intelligence-and-the-us-economy-current-evidence.htm ; https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf
+- Fuente secundaria de contraste: https://www.reuters.com/business/finance/ai-rockets-to-top-worries-about-financial-system-in-latest-fed-survey-2026-11-13/
+
+### Investment Finder — 90 → 97
+Se incorporaron siete contrataciones nacionales publicadas o reinsertadas en el Boletín Oficial del 25/11/2026:
+- CONICET, LP 1/2026, Circular 2: provisión de servidores e implementación; prórroga al 17/12/2026. La circular no informa presupuesto ni hora límite.
+- Casa de Moneda, LP 999: filminas de seguridad para laminado en caliente; apertura 15/12/2026 11:30. Sin presupuesto publicado; el aviso no fija un corte independiente de recepción.
+- ARCA, LP A0PC000000-0011-LPU26: instrumentos fiscales de control; consultas hasta 01/12 y apertura 09/12/2026 16:00. Sin presupuesto.
+- Armada Argentina, LP 0546/2026: descartables para el Hospital Naval Buenos Aires; apertura 09/12/2026 10:00. Sin presupuesto.
+- UTN Facultad Regional San Francisco, LP 1/2026: ampliación de aulas y SUM; presupuesto oficial ARS 1.192.455.468,91 a valores de octubre de 2026; ofertas hasta 03/12/2026 16:00.
+- Universidad Nacional de San Juan, LP 2/2026: ampliación de la Unidad de Bienestar Universitario; presupuesto oficial ARS 533.414.222,72 IVA incluido; ofertas hasta 16/12/2026 09:30.
+- Universidad Nacional de San Juan, LP 3/2026: obra del Parque Solar Islas Malvinas I; presupuesto oficial ARS 468.763.983,06 IVA incluido; ofertas hasta 11/12/2026 09:30.
+- Los tres presupuestos son oficiales, no montos adjudicados ni inversiones ejecutadas. En los otros cuatro avisos no se publica presupuesto. Todos quedan como `open` por cronograma futuro y verificación del aviso; no se verificaron pliegos completos, elegibilidad, ofertas, adjudicaciones ni ejecución.
+- Estado acumulado: 97 oportunidades (55 abiertas, 36 desconocidas, 6 cerradas). Se mantuvieron alcance nacional y jurisdicción nula para organismos nacionales; la localización física se conserva cuando está expresamente indicada.
+- Fuentes oficiales:
+  - https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421069/20261125
+  - https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421063/20261125
+  - https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421067/20261125
+  - https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421072/20261125
+  - https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421102/20261125
+  - https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421103/20261125
+  - https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421104/20261125
+
+### Escobar y Event Intelligence
+- No se incorporaron nuevas oportunidades municipales de Escobar: las páginas directas de LP 66/2026 y LP 69/2026 no fueron accesibles durante la consulta, por lo que no se infirió cronograma ni adjudicación.
+- Se conservan 23 registros municipales de Escobar: 5 abiertos (LP 71, LP 72, LP 74, LP 75 y Red Sostenible), 15 desconocidos y 3 cerrados. BESS Maschwitz sigue como registro provincial separado, con disponibilidad desconocida y jurisdicción parcelaria pendiente.
+- La Ronda de Negocios del 24/11, con 277 empresas inscriptas según coberturas locales, ya está registrada como evento completado; no se identificaron contratos o inversiones concretas derivados del encuentro. Event Intelligence mantiene 6 registros.
+
+### Validación, publicación y bloqueos
+- Se releen y parsean los catálogos: Radar IA 61; Investment Finder 97. Se comprobaron IDs editoriales deterministas, ausencia de duplicados, URLs HTTPS, fechas, jurisdicciones, estados de verificación y condiciones de vigencia. Las páginas `index.html`, `radar-ia/index.html` e `investment-finder/index.html` mantienen sus referencias a ambos JSON; no se modificó HTML.
+- Los workflows sobre los commits de datos ejecutaron validación correctamente:
+  - Run #45651353058, commit Radar IA `8220c2ec04c62001e4debda119a774c41fdd2523`: validate=success; deploy=failed por error HTTP 500 de GitHub Pages al crear el deployment.
+  - Run #45651359646, commit Investment Finder `b4742927b692c245b28f0d3530811b628045f083`: validate=success; deploy=failed por otro error HTTP 500 de GitHub Pages. Los artefactos se subieron correctamente.
+- Se intentó reejecutar el job fallido más reciente, pero la acción de reintento devolvió un error interno. No se declara despliegue exitoso ni inspección visual independiente.
+- El contrato enterprise, la arquitectura, los módulos, los nodos y los controles de acceso público no se modificaron. No se habilitó generación libre de informes ni se presentó ningún modelo predictivo como operativo.
+- Próximos pasos: reintentar Pages cuando se recupere el servicio; revisar los pliegos completos y eventuales circulares; seguir actas y adjudicaciones sin inferencias; reintentar las fichas municipales inaccesibles; resolver la georreferenciación del BESS; consolidar el balance a las 20:00.
