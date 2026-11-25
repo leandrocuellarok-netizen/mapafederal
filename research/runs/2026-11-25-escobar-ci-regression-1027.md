@@ -49,5 +49,11 @@ La corrección no cambia la noticia BIS ni amplía el alcance territorial. El si
 - Los pasos de perfil local de Escobar, perfil económico, movilidad, ferrocarril, transparencia, salud y directorio CDI finalizaron correctamente. En particular, `Test Escobar economic profile and company evidence` pasó después de corregir la aserción obsoleta.
 - El job `validate` volvió a fallar en el paso 17, `Validate geographic and editorial JSON`, por un ID no determinista en la noticia BIS 2026-23999 de `data/news.json`. El job `deploy` quedó omitido.
 - No se corrigió ese registro editorial porque queda fuera del alcance exclusivo de Escobar. No se alteraron `data/news.json` ni otros catálogos nacionales.
-- Último despliegue exitoso observado: workflow #613, sobre el commit `50669b738d8de2526db67230a5eb8e7f6088bb82`; no incluye la corrección de este ciclo.
+- Último despliegue exitoso observado: workflow #613, sobre el commit `e9d0da07094109068851009dc7d79e01afb814b2`; no incluye la corrección de este ciclo.
 - La inspección HTTP independiente del sitio publicado no pudo completarse en este entorno.
+
+## Segunda ejecución del workflow
+
+- Workflow #621: [run 45624720087](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45624720087), sobre el commit `3a25de2025584543b27011eb667eb862e3c14d25`.
+- Los pasos de validación específicos de Escobar volvieron a pasar. El mismo control general falló por el mismo ID no determinista de la noticia BIS en `data/news.json`; `deploy` quedó omitido.
+- La corrección de este ciclo permanece limitada al test y a su registro. El bloqueo editorial global requiere un ajuste fuera de este alcance y no se modificó.
