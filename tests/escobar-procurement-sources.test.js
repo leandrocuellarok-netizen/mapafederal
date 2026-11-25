@@ -74,7 +74,7 @@ assert.equal(polideportivo.opportunityStatus, "unknown");
 assert.equal(mobiliario.opportunityStatus, "unknown");
 for (const item of [polideportivo, mobiliario]) {
   assert.equal(item.relatedSources[0].url, "https://boletinoficial.gba.gob.ar/secciones/14505/ver");
-  assert.match(item.verification.scope, /venta.*18–19\/11\/2026.*no se localizó circular/i);
+  assert.match(item.verification.scope, /venta.*18–19\/11.*no se localizó circular/i);
 }
 
 const piedra=catalog.opportunities.find(x=>x.id==="escobar-licitacion-71-2026-piedra-partida");

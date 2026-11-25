@@ -713,3 +713,7 @@ Se ajustó la expresión regular del test para aceptar la fecha de cada edición
 
 ### Octava corrección de CI — 17:21 ART
 La prueba de LP 69 conservaba un patrón textual demasiado estricto para las referencias a las ediciones 14505 y 14508. Se actualizó para admitir las fechas entre paréntesis sin relajar la comprobación de ausencia de circular de prórroga.
+
+
+### Ajuste de prueba compartida LP 66/69 — 17:22 ART
+Se alineó la expresión de la ventana de venta de pliegos con la redacción exacta de las fichas: “18–19/11”. La prueba continúa exigiendo que no exista circular oficial de prórroga localizada.
