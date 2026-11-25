@@ -1,5 +1,59 @@
 [
   {
+    "id": "news-www-reuters-com-business-finance-alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25",
+    "title": "Reuters documentó financiamiento respaldado por servidores de IA en China y su vínculo con controles de exportación de cómputo avanzado",
+    "date": "2026-11-25",
+    "category": "Regulación",
+    "summary": "Reuters examinó registros de crédito chinos que identifican hasta 764 servidores y módulos de IA valuados en USD 270 millones, más USD 31 millones en equipos de red, vinculados con operaciones de financiación para centros de datos en China. La investigación relaciona empresas de asociados de Alice Huang con el sector y señala que entidades Megaspeed fueron incorporadas por Estados Unidos a la Entity List. Los registros revisados no prueban que los servidores contuvieran chips cuya exportación estuviera prohibida ni cuándo o cómo ingresó el hardware a China. Megaspeed negó irregularidades y afirmó que Huang dejó la compañía en agosto de 2025.",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/business/finance/alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25/",
+    "period": "Investigación publicada el 25/11/2026 a las 06:13 UTC; la regla estadounidense citada entró en vigor el 23/11/2026.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "China — registros de financiación y centro de datos en Shanghái; Estados Unidos — controles de exportación; Malasia, Singapur y Tailandia — entidades incluidas en la Entity List.",
+    "sector": "Inteligencia artificial / centros de datos / hardware / financiación de infraestructura / semiconductores / comercio exterior",
+    "territorialRelevance": "Relevante para el seguimiento de la cadena internacional de hardware y financiación de cómputo avanzado. Para operadores argentinos es un contexto de diligencia sobre procedencia, controles de exportación y dependencias de proveedores; no acredita presencia de chips prohibidos ni una infracción concreta.",
+    "relatedSources": [
+      {
+        "label": "Federal Register — BIS, Additions to the Entity List (vigente desde 23/11/2026)",
+        "url": "https://www.federalregister.gov/public-inspection/2026-23999/additions-to-the-entity-list"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se revisó la investigación de Reuters publicada el 25/11/2026 a las 06:13 UTC y se contrastó la inclusión de siete entidades con la página oficial de inspección pública del Federal Register (FR Doc. 2026-23999), efectiva el 23/11. Reuters indica expresamente que los registros no prueban que los servidores contuvieran chips prohibidos ni cuándo o cómo ingresó el equipo a China. Se conserva la respuesta de Megaspeed: negó irregularidades y dijo que Alice Huang dejó la compañía en agosto de 2025. No se atribuye conducta ilícita como hecho probado."
+    }
+  },
+  {
+    "id": "news-www-reuters-com-business-ai-stocks-slide-fears-over-infrastructure-buildout-costs-2026-11-25",
+    "title": "Los mercados castigaron a empresas de IA ante el costo de la infraestructura y la incertidumbre sobre sus retornos",
+    "date": "2026-11-25",
+    "category": "Economía",
+    "summary": "Reuters informó que las acciones vinculadas con IA extendieron sus caídas el 25/11 mientras los inversores evaluaban el costo del despliegue de infraestructura frente a retornos aún inciertos. La nota reportó una baja del 7,2% de Dell pese a elevar previsiones, una caída del 16,3% de HPE el día anterior, retrocesos de Nvidia y otros proveedores, y un rendimiento cercano al 18% para bonos de CoreWeave con vencimiento en 2031. Son cotizaciones y datos de mercado de ese momento, no un pronóstico ni evidencia de que la demanda de IA haya colapsado.",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/business/ai-stocks-slide-fears-over-infrastructure-buildout-costs-2026-11-25/",
+    "period": "Nota publicada el 25/11/2026 a las 12:17 UTC; las cotizaciones y rendimientos citados son instantáneas de mercado y pueden variar.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Mercados globales; empresas de chips, servidores, centros de datos y proveedores cloud con cotización en Estados Unidos; reporte desde Bengaluru.",
+    "sector": "Economía / mercados financieros / infraestructura de IA / semiconductores / servidores / centros de datos",
+    "territorialRelevance": "Señal de riesgo para evaluar proyectos de centros de datos, nube e infraestructura de IA: el gasto de capital no garantiza retornos ni acceso sostenible a financiación. Relevancia indirecta para Argentina y Escobar; no constituye un anuncio de inversión local ni asesoramiento financiero.",
+    "relatedSources": [
+      {
+        "label": "Reuters — aumento de spreads CDS de empresas ligadas a infraestructura de IA (25/11/2026)",
+        "url": "https://www.reuters.com/business/media-telecom/global-markets-ai-cds-urgent-2026-11-25/"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se revisó la nota original de Reuters publicada el 25/11/2026 a las 12:17 UTC. Se comprobaron las variaciones de mercado citadas para Dell, HPE, Nvidia y otros actores, y el rendimiento reportado de bonos de CoreWeave. Las cifras corresponden a cotizaciones intradía/premercado y no se interpretan como tendencia sostenida, pronóstico ni evidencia de colapso de la demanda."
+    }
+  },
+  {
     "id": "news-www-reuters-com-world-india-indias-wipro-uks-bp-sign-partnership-to-take-over-some-finance-ops-2026-11-25",
     "title": "Wipro y BP acordaron transferir operaciones financieras a un modelo apoyado en IA y automatización",
     "date": "2026-11-25",
@@ -364,10 +418,10 @@
     "title": "Estados Unidos incorporó siete entidades del sudeste asiático a su lista de control de exportaciones de cómputo avanzado",
     "date": "2026-11-23",
     "category": "Regulación",
-    "summary": "El Bureau of Industry and Security (BIS) presentó para inspección pública una regla final que añade siete entidades de Malasia, Singapur y Tailandia a la Entity List. Para ellas, los artículos sujetos a las Export Administration Regulations requieren licencia y las solicitudes se revisan bajo presunción de denegación. El BIS fundamenta la medida en un riesgo significativo de desvío de bienes de cómputo avanzado hacia usos o usuarios no autorizados. La copia consultada fue presentada el 23/11 y tenía publicación programada para el 25/11; conserva marcadores en los campos de fecha y folio, por lo que no se fija aquí una fecha efectiva exacta.",
-    "source": "U.S. Department of Commerce — Bureau of Industry and Security (BIS)",
-    "url": "https://public-inspection.federalregister.gov/2026-23999.pdf",
-    "period": "Regla final presentada para inspección pública el 23/11/2026; publicación programada para el 25/11/2026. La copia consultada conserva marcadores de fecha y folio de publicación.",
+    "summary": "La regla final del BIS incorpora siete entidades de Malasia, Singapur y Tailandia a la Entity List. La página oficial fija su vigencia el 23/11/2026 y establece requisito de licencia para todos los artículos sujetos a las Export Administration Regulations, con presunción de denegación en la revisión. El fundamento declarado es un riesgo significativo de desvío de bienes de cómputo avanzado hacia usos o usuarios no autorizados. La inclusión no equivale por sí sola a una condena penal ni constituye una prohibición general de toda exportación de tecnología.",
+    "source": "U.S. Department of Commerce — Bureau of Industry and Security (BIS) / Federal Register",
+    "url": "https://www.federalregister.gov/public-inspection/2026-23999/additions-to-the-entity-list",
+    "period": "Regla efectiva desde el 23/11/2026; página oficial de inspección pública consultada el 25/11/2026. La copia PDF previa conservaba marcadores de fecha y folio.",
     "jurisdictions": [],
     "geographyStatus": "not_specified",
     "geographyEvidence": [],
@@ -377,8 +431,18 @@
     "verification": {
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-25",
-      "scope": "Se revisó la copia oficial de inspección pública del Federal Register, FR Doc. 2026-23999, Docket 261123-0006. El texto enumera siete entidades en Malasia, Singapur y Tailandia y establece requisito de licencia para todos los artículos sujetos a EAR, con presunción de denegación. El documento indica publicación programada para el 25/11/2026, pero la versión consultada conserva campos de fecha y folio como marcadores; no se declara comprobada la versión final publicada ni se fija una fecha efectiva exacta. El BIS describe un riesgo de desvío; el registro no convierte ese fundamento en una condena penal ni en una constatación independiente de cada operación."
-    }
+      "scope": "Se contrastó la página oficial del Federal Register (FR Doc. 2026-23999), que fija vigencia 23/11/2026 y enumera siete entidades en Malasia, Singapur y Tailandia. Se comprobó el requisito de licencia para todos los artículos sujetos a EAR y la presunción de denegación. La página HTML oficial reemplaza como fuente principal a la copia PDF previa, que conservaba marcadores de fecha y folio. La inclusión en la lista se describe como medida administrativa de control, no como condena penal."
+    },
+    "relatedSources": [
+      {
+        "label": "Copia PDF de inspección pública del Federal Register",
+        "url": "https://public-inspection.federalregister.gov/2026-23999.pdf"
+      },
+      {
+        "label": "Reuters — registros de financiamiento de servidores de IA en China (25/11/2026)",
+        "url": "https://www.reuters.com/business/finance/alice-huang-linked-firms-listed-270-million-ai-servers-china-records-show-2026-11-25/"
+      }
+    ]
   },
   {
     "id": "news-eldiadeescobar-com-ar-maschwitz-marcho-contra-la-instalacion-de-una-planta-de-baterias-de-litio",
