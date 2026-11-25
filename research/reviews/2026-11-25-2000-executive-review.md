@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 02:04 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 02:10 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -220,3 +220,11 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - El BESS Maschwitz sigue con discrepancia territorial entre el resumen y referencias catastrales del EIAS y el Mapa 9. No se asigna jurisdicción municipal ni coordenadas.
 - Arquitectura y contrato enterprise sin cambios: freeFormReports=false, customAnalyses=by_request, predictiveClaimsRequireValidation=true, clientDataPublic=false. Federal Reports sigue como único piloto descriptivo; cinco módulos permanecen planificados.
 - Pendientes para la revisión final: volver a consultar la edición 14527 y los avisos de Escobar; comprobar circulares y adjudicaciones de licitaciones; verificar la aclaración territorial del BESS; contrastar con documentación oficial cualquier novedad del fondo europeo; confirmar los workflows y la publicación. Esta actualización es provisional, no el balance final de las 20:00.
+
+
+### Cierre técnico del ciclo 02:04 — 02:10
+- Commits: Radar IA 3f5077d3c241a059861493a06818939b206194b2; registro 8e430acfcdace9ac527838fe520310c84bf097ac; actualización de balance 5146a4efebedf5dfa9957c70a569d76a28f81eaa.
+- Se releyeron los archivos de datos: 48 noticias y 57 oportunidades. Ambos JSON parsean correctamente; IDs, URLs, fechas, categorías, estados de verificación y enlaces HTTPS del nuevo registro fueron comprobados.
+- Las páginas principales, Radar IA e Investment Finder existen en main y conservan referencias a sus catálogos JSON.
+- El estado combinado del commit final no devolvió checks. No se atribuye CI ni despliegue de GitHub Pages exitosos hasta obtener un resultado explícito.
+- La URL pública de Pages no fue accesible desde el navegador de consulta; no hay inspección visual independiente. El balance permanece provisional para la revisión de las 20:00.
