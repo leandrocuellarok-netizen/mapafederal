@@ -165,6 +165,41 @@
     }
   },
   {
+    "id": "news-eldiadeescobar-com-ar-maschwitz-marcho-contra-la-instalacion-de-una-planta-de-baterias-de-litio",
+    "title": "Vecinos de Ingeniero Maschwitz reclamaron relocalizar el proyecto BESS",
+    "date": "2026-11-22",
+    "category": "Infraestructura",
+    "summary": "La movilización vecinal del 21/11 reunió a residentes que reclamaron trasladar la planta de baterías de Genneia a una zona industrial. Las coberturas locales describen inquietudes por la cercanía a viviendas, seguridad y ambiente; son reclamos, no conclusiones técnicas ni una decisión administrativa. El Municipio había informado trabajos preliminares para un sistema de 40 MW y hasta cinco horas de refuerzo. La jurisdicción del predio sigue sin conciliarse entre la comunicación municipal y el EIAS.",
+    "source": "El Día de Escobar",
+    "url": "https://eldiadeescobar.com.ar/maschwitz-marcho-contra-la-instalacion-de-una-planta-de-baterias-de-litio/",
+    "period": "Movilización vecinal realizada el 21/11/2026; cobertura publicada por El Día de Escobar el 22/11 y por Redacción Norte el 24/11. No se informa una decisión administrativa posterior.",
+    "jurisdictions": [
+      "Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Ingeniero Maschwitz, Partido de Escobar; predio señalado sobre calle Brasil, próximo a la Ruta Provincial 26."
+    ],
+    "jurisdictionScope": "Local — Ingeniero Maschwitz, Partido de Escobar, Provincia de Buenos Aires",
+    "sector": "Energía / almacenamiento eléctrico / infraestructura de red / gestión territorial",
+    "territorialRelevance": "Alta para el seguimiento territorial del proyecto BESS: la movilización plantea un riesgo de aceptación social y exige seguir respuestas, participación y permisos. No acredita daño ambiental, incumplimiento técnico, suspensión ni relocalización.",
+    "relatedSources": [
+      {
+        "label": "Municipalidad de Escobar — características y trabajos preliminares del BESS (03/11/2026)",
+        "url": "https://www.escobar.gob.ar/noticias/ingeniero-maschwitz-suma-una-nueva-planta-de-almacenamiento-electrico-/"
+      },
+      {
+        "label": "Redacción Norte — cobertura complementaria de la movilización (24/11/2026)",
+        "url": "https://www.redaccionnorte.com.ar/maschwitz-se-movilizo-contra-la-instalacion-de-la-planta-de-baterias-de-litio-cientos-de-vecinos-exigieron-su-reubicacion/"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-24",
+      "scope": "Se revisó la cobertura de El Día de Escobar publicada el 22/11 y una cobertura complementaria de Redacción Norte publicada el 24/11: ambas describen una movilización vecinal el 21/11 y reclamos de relocalización. La comunicación municipal del 03/11 confirma el proyecto, 40 MW, hasta cinco horas de refuerzo y trabajos preliminares. Las preocupaciones sobre incendio, gases, evacuación y proximidad residencial se atribuyen a residentes; no se presentan como conclusiones técnicas. Los recuentos de firmas publicados por distintos medios no se reproducen porque no se verificó el registro primario. No se constató suspensión, relocalización, resolución administrativa ni nueva licencia."
+    }
+  },
+  {
     "title": "Escobar: las ordenanzas fiscales 2027 avanzaron en el HCD y esperan la Asamblea de Mayores Contribuyentes",
     "date": "2026-11-20",
     "category": "Regulación",
