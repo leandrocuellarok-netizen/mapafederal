@@ -34,9 +34,12 @@ La referencia de calle es una declaración municipal. No se obtuvo número de pu
 ## Validación, commit y publicación
 
 - Validación previa: JSON parseado; ID único; URL HTTPS; alcance provincial, etapa de preparación, disponibilidad desconocida, monto nulo y ausencia de coordenadas comprobados; prueba dirigida revisada.
-- Commit: pendiente al crear este registro.
-- GitHub Actions y GitHub Pages: pendientes de la ejecución disparada por el commit.
-- Comprobación HTTP independiente de la página: pendiente.
+- Primer commit de datos: `a3c95ced9a97bc247e6644cf03c988265c9e86b0`.
+- Primer workflow: run `45540286692` (run #532), asociado al commit anterior; `validate` falló en `Test Escobar economic profile and company evidence` y `deploy` fue omitido.
+- Causa observada: el cambio de `location` había reemplazado una frase de control que la prueba existente exige para conservar la advertencia de contradicción parcelaria. No falló la evidencia nueva; falló la preservación literal del guardarraíl textual.
+- Corrección: se restauró explícitamente la frase `la localización parcelaria permanece en contradicción documental y no debe georreferenciarse`; se mantienen las aserciones nuevas sobre calle Brasil y su atribución municipal.
+- Commit correctivo y nuevo workflow: pendientes.
+- Comprobación HTTP independiente de la página: no disponible en esta ejecución por fallo de resolución DNS del entorno; no se afirma verificación visual.
 
 ## Pendientes
 
