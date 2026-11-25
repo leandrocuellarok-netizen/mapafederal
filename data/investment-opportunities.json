@@ -4,6 +4,60 @@
   "note": "Catálogo documental. Los estados de disponibilidad se mantienen desconocidos cuando la fuente no confirma apertura o ejecución. No constituye una recomendación de inversión. El estado open se reserva para llamados cuyo cronograma oficial de consulta/venta y apertura todavía no venció; unknown indica dudas de elegibilidad o vigencia; closed indica que pasó la fecha de apertura. Los presupuestos oficiales no equivalen a adjudicaciones ni a gasto ejecutado.",
   "opportunities": [
     {
+      "id": "argentina-casa-moneda-licitacion-1016-licencias-seguridad-informatica",
+      "name": "Casa de Moneda Argentina — LP 1016: licencias de seguridad informática y soporte oficial de hardware y software",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-11",
+      "sourceName": "Boletín Oficial de la República Argentina — Casa de Moneda S.A.U.",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421070/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Tecnología / ciberseguridad / licencias de software / soporte técnico",
+      "jurisdiction": null,
+      "location": "Ciudad Autónoma de Buenos Aires, Argentina — presentación de ofertas y apertura en Av. Antártida Argentina 2085, Gerencia de Compras.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Apertura prevista para el 11/12/2026 a las 12:30. El aviso indica presentación de ofertas en Av. Antártida Argentina 2085, Gerencia de Compras, de 10:00 a 18:00; no detalla una hora límite independiente. Los pliegos pueden consultarse en el sitio de Casa de Moneda o en la sede indicada. Confirmar el plazo y los requisitos en el pliego completo.",
+      "description": "Licitación Pública 1016 de Casa de Moneda S.A.U. para licencias de seguridad informática y soporte técnico oficial de hardware y software. El aviso no publica presupuesto. Antes de considerar una oferta, revisar el pliego completo, licenciamiento, marcas o equivalencias, soporte, garantías, requisitos de proveedor y modalidad exacta de presentación.",
+      "territorialRelevance": "Contratación nacional con presentación y apertura en CABA. Puede interesar a proveedores de ciberseguridad, licencias, integradores y soporte oficial de hardware/software. El aviso no publica presupuesto ni adjudicatario y no acredita elegibilidad de un proveedor específico.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se abrió el aviso original del Boletín Oficial, edición 25/11/2026. Se verificaron organismo, número de licitación, expediente, objeto, lugar de consulta/presentación y fecha y hora de apertura. El aviso no publica presupuesto y no se inspeccionó el pliego completo; no se verifican requisitos de elegibilidad, adjudicación ni ejecución."
+      }
+    },
+    {
+      "id": "belgrano-cargas-concurso-privado-bcyl0244-2026-discos-dvr-ssd",
+      "name": "Belgrano Cargas y Logística — Concurso Privado BCYL0244-2026: discos duros DVR y SSD",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-21",
+      "sourceName": "Boletín Oficial de la República Argentina — Belgrano Cargas y Logística S.A.",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421071/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Tecnología / almacenamiento digital / hardware / infraestructura ferroviaria",
+      "jurisdiction": null,
+      "location": "Argentina — contratación de Belgrano Cargas y Logística S.A.; el aviso no especifica el lugar de entrega.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 12220,
+        "currency": "USD",
+        "basis": "Monto estimado publicado en el aviso, más IVA; no equivale a monto adjudicado ni a gasto ejecutado."
+      },
+      "period": "Consultas hasta el 17/12/2026. Presentación de ofertas hasta el 21/12/2026 a las 23:59, por correo electrónico según el aviso. El pliego y la información se canalizan por COMPR.AR.",
+      "description": "Concurso Privado BCYL N.º 0244-2026 para la provisión de discos duros DVR y discos SSD. El aviso publica un monto estimado de USD 12.220 más IVA. Revisar el pliego en COMPR.AR para confirmar especificaciones, cantidades, compatibilidad, garantías, condiciones de entrega y requisitos de participación. No se verificaron ofertas, adjudicación ni ejecución.",
+      "territorialRelevance": "Oportunidad de provisión para empresas de hardware, almacenamiento digital y componentes tecnológicos que operen en el mercado argentino. El lugar de entrega no está detallado y el monto es estimado, no adjudicado.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se abrió el aviso original del Boletín Oficial, edición 25/11/2026. Se verificaron organismo, objeto, número de concurso, monto estimado de USD 12.220 más IVA, fecha límite de consultas y cierre de ofertas. No se inspeccionó el pliego de COMPR.AR ni se verificaron requisitos, adjudicación o ejecución."
+      }
+    },
+    {
       "id": "fuerza-aerea-licitacion-0173-2026-instalacion-mantenimiento-refrigeracion",
       "name": "Fuerza Aérea Argentina — LP 0173/2026: instalación y mantenimiento integral de equipos de refrigeración",
       "recordType": "tender",
