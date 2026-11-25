@@ -2625,6 +2625,193 @@
         "checkedAt": "2026-11-25",
         "scope": "Verificado en el Boletín Oficial bonaerense, edición 14528 del 25/11/2026. Se comprobaron organismo, objeto, cobertura de doce meses, apertura 01/12/2026 a las 10:00, presupuesto estimado ARS 326.022.100 y canales de consulta del pliego. El extracto no fija fecha/hora límite de presentación de ofertas; no se revisó el pliego ni se verificaron requisitos, adjudicación o ejecución. La jurisdicción se normaliza como Buenos Aires por tratarse de una contratación de alcance provincial; la localidad específica se conserva en el campo location."
       }
+    },
+    {
+      "id": "conicet-licitacion-1-2026-servidores-implementacion",
+      "name": "CONICET — LP 1/2026, Circular 2: provisión de servidores con servicio de implementación",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-17",
+      "sourceName": "Boletín Oficial de la República Argentina — Consejo Nacional de Investigaciones Científicas y Técnicas",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421069/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Tecnología / infraestructura de cómputo / servidores / investigación científica",
+      "jurisdiction": null,
+      "location": "Argentina — contratación nacional de CONICET; la circular no especifica la sede de entrega ni de apertura.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Circular modificatoria con consulta N.º 2, fechada 20/11/2026 y publicada el 25/11/2026: prórroga de la presentación y apertura al 17/12/2026. La circular no informa hora límite ni presupuesto; consultar el pliego y el proceso COMPR.AR 91-0001-LPU26.",
+      "description": "La circular prorroga la Licitación Pública 91-0001-LPU26 para la provisión de servidores con servicio de implementación destinados al CONICET. El aviso de prórroga no publica cantidades, configuración técnica, presupuesto ni hora límite. Revisar el pliego y las circulares para conocer requisitos, garantías, soporte y modalidad de oferta.",
+      "territorialRelevance": "Puede interesar a fabricantes, distribuidores, integradores y proveedores de implementación de infraestructura de cómputo para investigación científica. Es una contratación nacional; no se atribuye una sede local ni se conoce la elegibilidad de proveedores específicos.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se verificó el aviso original del Boletín Oficial, edición 25/11/2026: organismo, LP 1/2026, Circular 2, fecha de circular 20/11, objeto y prórroga al 17/12/2026. No se inspeccionó el pliego completo ni se verificaron presupuesto, configuración técnica, hora límite, ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "casa-moneda-licitacion-999-filminas-seguridad-laminado-caliente",
+      "name": "Casa de Moneda — LP 999: filminas de seguridad para laminado en caliente",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "validUntil": "2026-12-15",
+      "sourceName": "Boletín Oficial de la República Argentina — Casa de Moneda S.A.U.",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421063/20261125",
+      "sourcePublishedAt": "2026-11-24",
+      "sector": "Manufactura / materiales de seguridad / impresión de valores / insumos industriales",
+      "jurisdiction": null,
+      "location": "Av. Antártida Argentina 2085, Ciudad Autónoma de Buenos Aires, Argentina — sede de consulta, presentación y apertura.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Apertura prevista para el 15/12/2026 a las 11:30 en Av. Antártida Argentina 2085, CABA. El aviso indica consulta/retiro de pliegos de 10:00 a 17:00 y presentación de ofertas de 10:00 a 18:00 en la sede, pero no fija un corte separado de recepción; confirmar en el pliego. No publica presupuesto.",
+      "description": "Licitación Pública 999 de Casa de Moneda S.A.U. para adquirir filminas de seguridad destinadas al laminado en caliente. El aviso no publica presupuesto ni cantidades. Revisar el pliego para conocer especificaciones del material, calidad, entregas, garantías y requisitos del proveedor.",
+      "territorialRelevance": "Puede interesar a proveedores de insumos de seguridad, materiales especiales, laminación e impresión de documentos de seguridad. La contratación es nacional y la presentación se realiza en CABA; no se acredita elegibilidad ni adjudicación.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se abrió el aviso oficial del Boletín Oficial, edición 25/11/2026 (e. 24/11 y v. 25/11). Se comprobaron organismo, LP 999, objeto, sede, horarios de consulta y presentación y apertura 15/12/2026 a las 11:30. El aviso no publica presupuesto ni cantidades y no se inspeccionó el pliego completo."
+      }
+    },
+    {
+      "id": "arca-licitacion-a0pc000000-0011-lpu26-instrumentos-fiscales-control",
+      "name": "ARCA — LP A0PC000000-0011-LPU26: provisión de instrumentos fiscales de control",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "validUntil": "2026-12-09",
+      "sourceName": "Boletín Oficial de la República Argentina — Agencia de Recaudación y Control Aduanero",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421067/20261125",
+      "sourcePublishedAt": "2026-11-24",
+      "sector": "Administración tributaria / instrumentos de control fiscal / manufactura y suministros",
+      "jurisdiction": null,
+      "location": "Proceso electrónico en el Portal de Compras ARCA, Argentina; el aviso no identifica una sede física.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Consultas hasta el 01/12/2026 a las 16:00; presentación y apertura de ofertas el 09/12/2026 a las 16:00 por el Portal de Compras ARCA. El pliego no tiene costo.",
+      "description": "Licitación Pública A0PC000000-0011-LPU26 para la provisión de instrumentos fiscales de control para impuestos internos. El aviso no publica presupuesto, cantidades ni especificaciones técnicas; revisar el pliego completo en el portal de compras del organismo.",
+      "territorialRelevance": "Puede interesar a fabricantes, importadores y proveedores de instrumentos de control fiscal, seguridad documental y suministros tributarios. Es una contratación nacional; no se presume elegibilidad ni presupuesto.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se abrió el aviso oficial del Boletín Oficial, edición 25/11/2026 (e. 24/11 y v. 25/11). Se comprobaron organismo, número de proceso, objeto, ausencia de costo del pliego, fecha límite de consultas 01/12/2026 a las 16:00 y apertura 09/12/2026 a las 16:00 por el Portal de Compras ARCA. No se inspeccionó el pliego completo ni se verificaron presupuesto, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "armada-licitacion-0546-2026-descartables-hospital-naval",
+      "name": "Armada Argentina — LP 0546/2026: adquisición de descartables para el Hospital Naval Buenos Aires",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-09",
+      "sourceName": "Boletín Oficial de la República Argentina — Armada Argentina, Hospital Naval Buenos Aires",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421072/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Salud / insumos hospitalarios / descartables médicos / abastecimiento",
+      "jurisdiction": null,
+      "location": "Hospital Naval Buenos Aires Cirujano Mayor Dr. Pedro Mallo; proceso electrónico por COMPR.AR. El aviso no consigna domicilio físico.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Pliego disponible del 25/11/2026 a las 08:00 al 09/12/2026 a las 10:00; consultas hasta el 02/12/2026 a las 10:00; ofertas y apertura el 09/12/2026 a las 10:00. No se publica presupuesto.",
+      "description": "Licitación Pública 0546/2026 para adquirir descartables varios para el Hospital Naval Buenos Aires Cirujano Mayor Dr. Pedro Mallo. El aviso no publica presupuesto ni cantidades; revisar el pliego en COMPR.AR para especificaciones, lotes, registros sanitarios, entrega y garantías.",
+      "territorialRelevance": "Oportunidad de abastecimiento para proveedores de insumos médicos descartables, distribuidores hospitalarios y operadores de logística sanitaria. La compra es nacional y el aviso no acredita elegibilidad ni adjudicación.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se abrió el aviso oficial del Boletín Oficial, edición 25/11/2026. Se comprobaron organismo, UOC, objeto, período de retiro del pliego, fecha límite de consultas 02/12/2026 a las 10:00 y recepción/apertura 09/12/2026 a las 10:00 por COMPR.AR. No se inspeccionó el pliego completo ni se verificaron presupuesto, ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "utn-san-francisco-licitacion-1-2026-ampliacion-aulas-sum",
+      "name": "UTN Facultad Regional San Francisco — LP 1/2026: ampliación de aulas y SUM",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-11",
+      "validUntil": "2026-12-03",
+      "sourceName": "Boletín Oficial de la República Argentina — Universidad Tecnológica Nacional, Facultad Regional San Francisco",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421102/20261125",
+      "sourcePublishedAt": "2026-11-11",
+      "sector": "Construcción / educación superior / infraestructura universitaria / obra civil",
+      "jurisdiction": null,
+      "location": "Facultad Regional San Francisco de la UTN, Av. de la Universidad 501, San Francisco, Provincia de Córdoba, Argentina.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 1192455468.91,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado, a valores de octubre de 2026; no equivale a monto adjudicado ni a gasto ejecutado."
+      },
+      "period": "Recepción de ofertas hasta el 03/12/2026 a las 16:00; apertura a las 17:00. Pliego sin costo. Plazo de ejecución: 210 días corridos. El aviso fue insertado el 11/11/2026 y republicado en la edición del 25/11/2026.",
+      "description": "Licitación Pública 1/2026 de la Facultad Regional San Francisco de la UTN para ampliar aulas y el salón de usos múltiples. El presupuesto oficial es ARS 1.192.455.468,91, a valores de octubre de 2026. Revisar pliego, documentación técnica, cómputo, garantías y requisitos de contratación antes de evaluar una oferta.",
+      "territorialRelevance": "Obra universitaria en San Francisco, Córdoba, que puede interesar a constructoras, estudios de arquitectura, contratistas de instalaciones y proveedores de materiales. El presupuesto es oficial, no adjudicado; no es una obra de Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se abrió el aviso oficial del Boletín Oficial, edición 25/11/2026, y se comprobó el texto del aviso (e. 11/11 y v. 25/11). Se verificaron objeto, presupuesto oficial ARS 1.192.455.468,91 a valores de octubre de 2026, plazo de ejecución 210 días, pliego sin costo, recepción hasta 03/12/2026 a las 16:00 y apertura a las 17:00. No se inspeccionó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "unsj-licitacion-2-2026-ampliacion-bienestar-universitario",
+      "name": "Universidad Nacional de San Juan — LP 2/2026: ampliación de la Unidad de Bienestar Universitario",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-16",
+      "validUntil": "2026-12-16",
+      "sourceName": "Boletín Oficial de la República Argentina — Universidad Nacional de San Juan",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421103/20261125",
+      "sourcePublishedAt": "2026-11-16",
+      "sector": "Construcción / educación superior / infraestructura universitaria / bienestar estudiantil",
+      "jurisdiction": null,
+      "location": "Universidad Nacional de San Juan, Rectorado, Mitre 396 Este, ciudad de San Juan, Provincia de San Juan, Argentina.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 533414222.72,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado, IVA incluido; no equivale a monto adjudicado ni a gasto ejecutado."
+      },
+      "period": "Recepción de sobres hasta el 16/12/2026 a las 09:30; apertura a las 10:00. Presupuesto oficial ARS 533.414.222,72 IVA incluido; plazo de ejecución 300 días corridos; anticipo financiero del 15% contra póliza de garantía; pliego sin costo. El aviso fue insertado el 16/11/2026 y anuncia una segunda publicación el 30/11/2026.",
+      "description": "Licitación Pública 2/2026 de la Universidad Nacional de San Juan para ampliar y construir la planta alta del ala este de la Unidad de Bienestar Universitario. El presupuesto oficial es ARS 533.414.222,72 IVA incluido. Revisar pliego, cómputo, garantías, anticipo y requisitos técnicos antes de evaluar una oferta.",
+      "territorialRelevance": "Obra universitaria en la ciudad de San Juan que puede interesar a empresas constructoras, contratistas de obra pública y proveedores de materiales e instalaciones. El presupuesto oficial no equivale a adjudicación ni gasto ejecutado; no es una oportunidad de Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se abrió el aviso oficial del Boletín Oficial, edición 25/11/2026, y se comprobó el texto del aviso (e. 16/11 y v. 30/11). Se verificaron objeto, presupuesto oficial ARS 533.414.222,72 IVA incluido, garantía de oferta del 1%, plazo de 300 días, anticipo financiero del 15% contra póliza, pliego sin costo, recepción hasta 16/12/2026 a las 09:30 y apertura a las 10:00. No se inspeccionó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "unsj-licitacion-3-2026-parque-solar-islas-malvinas-i",
+      "name": "Universidad Nacional de San Juan — LP 3/2026: obra del Parque Solar Islas Malvinas I",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-24",
+      "validUntil": "2026-12-11",
+      "sourceName": "Boletín Oficial de la República Argentina — Universidad Nacional de San Juan",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421104/20261125",
+      "sourcePublishedAt": "2026-11-24",
+      "sector": "Energía renovable / infraestructura solar / obra universitaria / infraestructura eléctrica",
+      "jurisdiction": null,
+      "location": "Ciudad de San Juan, Provincia de San Juan, Argentina — CUIM, Universidad Nacional de San Juan.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 468763983.06,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado, IVA incluido; no equivale a monto adjudicado ni a gasto ejecutado."
+      },
+      "period": "Recepción de sobres hasta el 11/12/2026 a las 09:30; apertura a las 10:00. Presupuesto oficial ARS 468.763.983,06 IVA incluido; plazo de ejecución 90 días corridos; anticipo financiero del 15% contra póliza de garantía; pliego sin costo. El aviso fue insertado el 24/11/2026 y anuncia una segunda publicación el 30/11/2026.",
+      "description": "Licitación Pública 3/2026 de la Universidad Nacional de San Juan para la obra denominada Parque Solar Islas Malvinas I, en el CUIM-UNSJ. El presupuesto oficial es ARS 468.763.983,06 IVA incluido. El aviso no detalla capacidad instalada ni generación prevista; revisar el pliego para conocer alcance, especificaciones, garantías y requisitos técnicos.",
+      "territorialRelevance": "Obra de infraestructura solar en San Juan, potencialmente relevante para constructoras, contratistas eléctricos y proveedores de equipamiento fotovoltaico. No se infiere capacidad instalada ni generación anual; el presupuesto oficial no equivale a adjudicación ni inversión ejecutada.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se abrió el aviso oficial del Boletín Oficial, edición 25/11/2026, y se comprobó el texto del aviso (e. 24/11 y v. 30/11). Se verificaron objeto, presupuesto oficial ARS 468.763.983,06 IVA incluido, garantía de oferta del 1%, plazo de 90 días, anticipo financiero del 15% contra póliza, pliego sin costo, recepción hasta 11/12/2026 a las 09:30 y apertura a las 10:00. El aviso no informa capacidad instalada ni generación prevista. No se inspeccionó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
     }
   ]
 }
