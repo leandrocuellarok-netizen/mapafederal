@@ -1,36 +1,5 @@
 [
   {
-    "id": "news-www-sec-gov-archives-edgar-data-1288847-000119312526475778-d433495d8k-html",
-    "title": "Five9 completó la adquisición de Level AI por USD 325 millones",
-    "date": "2026-11-24",
-    "category": "Empresas",
-    "summary": "Five9 completó el 24/11/2026 la adquisición de Level AI, que pasó a ser una subsidiaria de propiedad total. El Form 8-K presentado ante la SEC informa un precio agregado de USD 325 millones en efectivo, sujeto a ajustes habituales. El comunicado incorporado como Exhibit 99.1 describe aplicaciones de IA para experiencia del cliente: asistencia al desempeño de agentes, automatización de interacciones por voz y canales digitales y análisis de conversaciones. Five9 prevé ofrecerlas como soluciones independientes o dentro de Genius CX; esos beneficios e integración son expectativas corporativas, no resultados comprobados.",
-    "source": "Five9, Inc. — Form 8-K presentado ante la Securities and Exchange Commission",
-    "url": "https://www.sec.gov/Archives/edgar/data/1288847/000119312526475778/d433495d8k.htm",
-    "period": "Fecha del informe y cierre de la operación: 24/11/2026. Precio informado: USD 325 millones en efectivo, sujeto a ajustes contractuales.",
-    "jurisdictions": [
-      "Estados Unidos"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "El Form 8-K identifica a Five9 como emisor y confirma la fusión de Level AI como subsidiaria de propiedad total; el registro se presenta ante la SEC de Estados Unidos."
-    ],
-    "jurisdictionScope": "Estados Unidos — operación societaria informada ante la SEC. Five9 declara actividad internacional; no se verificó un despliegue específico de Level AI en Argentina.",
-    "sector": "Tecnología / inteligencia artificial empresarial / experiencia del cliente / contact centers / software / fusiones y adquisiciones",
-    "territorialRelevance": "Señal de consolidación del mercado de IA aplicada a atención al cliente y automatización de contact centers. Puede servir como referencia competitiva para proveedores de software, integradores y empresas de servicios; no acredita inversión, contratación ni despliegue en Argentina o Escobar.",
-    "relatedSources": [
-      {
-        "label": "Five9 — comunicado de cierre, Exhibit 99.1 presentado ante la SEC",
-        "url": "https://www.sec.gov/Archives/edgar/data/1288847/000119312526475778/d433495dex991.htm"
-      }
-    ],
-    "verification": {
-      "status": "editorial_reviewed",
-      "checkedAt": "2026-11-25",
-      "scope": "Se abrió el Form 8-K de Five9 ante la SEC, con fecha de informe 24/11/2026: confirma el cierre, la condición de subsidiaria de propiedad total y el precio agregado de USD 325 millones en efectivo sujeto a ajustes. También se abrió el Exhibit 99.1, que describe las aplicaciones de IA para CX y las modalidades de oferta previstas. Las afirmaciones sobre sinergias, adopción y hoja de ruta se mantienen como declaraciones prospectivas de la empresa."
-    }
-  },
-  {
     "id": "news-www-reuters-com-world-india-indias-wipro-uks-bp-sign-partnership-to-take-over-some-finance-ops-2026-11-25",
     "title": "Wipro y BP acordaron transferir operaciones financieras a un modelo apoyado en IA y automatización",
     "date": "2026-11-25",
@@ -132,6 +101,37 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-25",
       "scope": "Se abrió el comunicado original de NEC del 25/11/2026. Se verificaron el objeto del programa, el proyecto inicial de redes 3D Mesh con UAV, los campos tecnológicos mencionados y las fechas de convocatoria, pitch y selección. No se verificaron criterios detallados de admisión, financiación, contratos ni participación de empresas argentinas."
+    }
+  },
+  {
+    "id": "news-www-sec-gov-archives-edgar-data-1288847-000119312526475778-d433495d8k-html",
+    "title": "Five9 completó la adquisición de Level AI por USD 325 millones",
+    "date": "2026-11-24",
+    "category": "Empresas",
+    "summary": "Five9 completó el 24/11/2026 la adquisición de Level AI, que pasó a ser una subsidiaria de propiedad total. El Form 8-K presentado ante la SEC informa un precio agregado de USD 325 millones en efectivo, sujeto a ajustes habituales. El comunicado incorporado como Exhibit 99.1 describe aplicaciones de IA para experiencia del cliente: asistencia al desempeño de agentes, automatización de interacciones por voz y canales digitales y análisis de conversaciones. Five9 prevé ofrecerlas como soluciones independientes o dentro de Genius CX; esos beneficios e integración son expectativas corporativas, no resultados comprobados.",
+    "source": "Five9, Inc. — Form 8-K presentado ante la Securities and Exchange Commission",
+    "url": "https://www.sec.gov/Archives/edgar/data/1288847/000119312526475778/d433495d8k.htm",
+    "period": "Fecha del informe y cierre de la operación: 24/11/2026. Precio informado: USD 325 millones en efectivo, sujeto a ajustes contractuales.",
+    "jurisdictions": [
+      "Estados Unidos"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "El Form 8-K identifica a Five9 como emisor y confirma la fusión de Level AI como subsidiaria de propiedad total; el registro se presenta ante la SEC de Estados Unidos."
+    ],
+    "jurisdictionScope": "Estados Unidos — operación societaria informada ante la SEC. Five9 declara actividad internacional; no se verificó un despliegue específico de Level AI en Argentina.",
+    "sector": "Tecnología / inteligencia artificial empresarial / experiencia del cliente / contact centers / software / fusiones y adquisiciones",
+    "territorialRelevance": "Señal de consolidación del mercado de IA aplicada a atención al cliente y automatización de contact centers. Puede servir como referencia competitiva para proveedores de software, integradores y empresas de servicios; no acredita inversión, contratación ni despliegue en Argentina o Escobar.",
+    "relatedSources": [
+      {
+        "label": "Five9 — comunicado de cierre, Exhibit 99.1 presentado ante la SEC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1288847/000119312526475778/d433495dex991.htm"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se abrió el Form 8-K de Five9 ante la SEC, con fecha de informe 24/11/2026: confirma el cierre, la condición de subsidiaria de propiedad total y el precio agregado de USD 325 millones en efectivo sujeto a ajustes. También se abrió el Exhibit 99.1, que describe las aplicaciones de IA para CX y las modalidades de oferta previstas. Las afirmaciones sobre sinergias, adopción y hoja de ruta se mantienen como declaraciones prospectivas de la empresa."
     }
   },
   {
