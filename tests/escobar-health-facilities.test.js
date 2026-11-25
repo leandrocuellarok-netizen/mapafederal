@@ -52,6 +52,13 @@ assert.equal(health.pendingDirectoryDiscrepancies.length, 0, "La discrepancia de
 
 const selles = health.facilities.find(item => item.id === "caps-juan-carlos-selles");
 assert.equal(selles.phone, null, "No consolidar teléfonos oficiales contradictorios");
+const legacySelles = territory.serviceDirectories.find(item => item.id === "caps-juan-carlos-selles");
+assert.ok(legacySelles, "Falta la ficha heredada de Selles en serviceDirectories");
+assert.equal(legacySelles.address, selles.address, "Los dos directorios deben compartir la dirección documentada");
+assert.equal(legacySelles.serviceHours, selles.serviceHours, "Los dos directorios deben distinguir guardia, atención y vacunatorio");
+assert.equal(legacySelles.phone, null, "No consolidar teléfonos contradictorios");
+assert.match(legacySelles.verification.scope, /Cartilla de salud/);
+
 assert.equal(selles.address, "Pablo Marín 24, Garín");
 assert.match(selles.serviceHours, /Guardia general: todos los días, las 24 h/);
 assert.match(selles.serviceHours, /lunes a viernes de 7 a 14 h/);

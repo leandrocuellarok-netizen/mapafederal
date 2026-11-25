@@ -52,3 +52,8 @@ La primera ejecución asociada al commit `15f5ac63e73a09638f2ff47d482d7dddfde0d7
 
 
 La segunda ejecución de validación, [45519127776](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45519127776), confirmó que la dirección y los horarios nuevos pasaban las aserciones previas, pero detectó una segunda expectativa textual heredada: exigía la palabra «discrepancia» en `serviceNote`. El dato ya explicaba la falta de teléfono único; se ajustó el test para comprobar ese significado concreto en lugar de exigir una palabra específica. La siguiente ejecución debe confirmar el test de perfil y el directorio sanitario antes de evaluar el validador general.
+
+
+## Sincronización del directorio heredado
+
+La inspección del segundo fallo mostró que `serviceDirectories` conservaba una segunda ficha de Selles distinta de `healthFacilitiesDirectory.facilities`. Se sincronizaron ambas representaciones para evitar que la interfaz presente direcciones u horarios incompatibles: Pablo Marín 24, Garín; guardia general 24 h; atención CAPS lunes a viernes 7–14; vacunatorio lunes a viernes 8–13; teléfono sin consolidar. Se añadieron aserciones para impedir futuras divergencias entre ambos directorios.

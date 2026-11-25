@@ -372,8 +372,9 @@ jobs:
           caps = next((item for item in territory["serviceDirectories"] if item.get("id") == "caps-juan-carlos-selles"), None)
           assert caps is not None
           assert caps["locality"] == "Garín" and "neighborhood" not in caps
-          assert "Pablo Marín s/n" in caps["address"] and "Fonavi" in caps["address"]
-          assert caps["serviceHours"] == "Todos los días, las 24 horas"
+          assert "Pablo Marín 24" in caps["address"] and "Fonavi" not in caps["address"]
+          assert "Fonavi" in caps["verification"]["scope"]
+          assert caps["serviceHours"] == "Guardia general: todos los días, las 24 h. Atención CAPS: lunes a viernes de 7 a 14 h. Vacunatorio: lunes a viernes de 8 a 13 h."
           assert caps["phone"] is None
           assert caps["status"] == "operativo"
           assert caps["verification"]["checkedAt"] == "2026-11-24"
