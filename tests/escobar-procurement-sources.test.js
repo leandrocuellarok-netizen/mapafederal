@@ -17,16 +17,27 @@ const expected = {
   },
   "escobar-licitacion-71-2026-piedra-partida": {
     url: "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
-    published: "2026-11-19"
+    published: "2026-11-19",
+    checkedAt: "2026-11-25",
+    scopePattern: /Recomprobado el 25\\/11\\/2026/i
   },
   "escobar-licitacion-72-2026-cascote": {
     url: "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
-    published: "2026-11-19"
+    published: "2026-11-19",
+    checkedAt: "2026-11-25",
+    scopePattern: /Recomprobado el 25\\/11\\/2026/i
+  },
+  "escobar-licitacion-74-2026-polideportivo-maschwitz-pista-atletismo": {
+    url: "https://boletinoficial.gba.gob.ar/secciones/14517/ver",
+    published: "2026-11-18",
+    checkedAt: "2026-11-25",
+    scopePattern: /Recomprobado el 25\\/11\\/2026/i
   },
   "escobar-licitacion-75-2026-control-vectores": {
     url: "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
     published: "2026-11-19",
-    scopePattern: /Verificado en el Boletín Oficial bonaerense, edición del 20.11.2026, sección 14523/i
+    checkedAt: "2026-11-25",
+    scopePattern: /Recomprobado el 25\\/11\\/2026/i
   }
 };
 
@@ -38,7 +49,7 @@ for (const [id, expectedSource] of Object.entries(expected)) {
   assert.equal(item.sourceUrl, expectedSource.url, "Fuente oficial incorrecta para " + id);
   assert.equal(item.sourcePublishedAt, expectedSource.published);
   assert.equal(item.verification.status, "verified");
-  assert.equal(item.verification.checkedAt, "2026-11-24");
+  assert.equal(item.verification.checkedAt, expectedSource.checkedAt || "2026-11-24");
   assert.match(item.verification.scope, expectedSource.scopePattern || /enlace de fuente corregido/i);
   assert.match(item.amount.basis, /no equivale/i);
   assert.equal(new URL(item.sourceUrl).protocol, "https:");
@@ -58,4 +69,4 @@ assert.equal(desagote.amount.value, 288950000);
 assert.match(desagote.amount.basis, /no equivale al monto adjudicado/i);
 assert.match(desagote.verification.scope, /No se verificaron acta de apertura, ofertas, adjudicación, contrato ni prestación/i);
 
-console.log("Escobar procurement: seis licitaciones enlazan a sus fuentes oficiales; publicación, verificación y cautela sobre presupuesto/adjudicación comprobadas.");
+console.log("Escobar procurement: siete licitaciones enlazan a sus fuentes oficiales; publicación, verificación y cautela sobre presupuesto/adjudicación comprobadas.");
