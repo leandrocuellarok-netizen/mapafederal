@@ -126,3 +126,22 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - Revisar fuentes primarias y pliegos completos antes de recomendar participación.
 - Ejecutar validaciones JSON, enlaces, pruebas funcionales, CI y despliegue en cada publicación; confirmar el nuevo run de Pages después del ajuste de espera.
 - Cerrar este documento con el corte definitivo del 25/11/2026 a las 20:00, consignando avances, pendientes, riesgos y bloqueos comprobados.
+
+
+## Corte GBIE 21:55 — 24/11/2026
+
+- No se incorporaron nuevas noticias de IA ni oportunidades de inversión: las búsquedas no aportaron hallazgos adicionales suficientemente diferenciados y verificables. Se conservan 42 registros de Radar IA y 56 oportunidades (25 abiertas, 28 con disponibilidad desconocida y 3 cerradas), además de 4 eventos y 86 nodos estratégicos.
+- La página municipal “Escobar, tierra de inversiones” ya está representada en el perfil económico distrital: 382 establecimientos industriales y 6.438 comerciales, cifras de padrón rotuladas 2026, sin fecha exacta de corte. No se duplicaron.
+- LP 74 y LP 75 continúan como oportunidades abiertas según sus cronogramas publicados. LP 74 prevé consultas 26–27/11, venta 30/11–01/12 y apertura 04/12 a las 10:00; el acceso directo a la edición oficial 14517 devolvió timeout en este corte, por lo que no se atribuye una circular nueva. LP 75 prevé consultas 26–27/11, venta 01–02/12 y apertura 09/12 a las 12:00. No se verificaron pliegos completos, elegibilidad ni adjudicaciones.
+- Se preservaron los cambios concurrentes del directorio sanitario de Escobar: CAPS Juan Carlos Selles mantiene Garín como localidad, sin barrio ni teléfono único, debido a discrepancias entre fuentes municipales. El directorio conserva 14 fichas; no se sobrescribió su evidencia.
+- Se detectó y corrigió un bloqueo de CI: el validador municipal omitía dos jurisdicciones ya presentes en el catálogo y respaldadas por registros del Boletín Oficial: Partido de General Alvarado y Partido de Vicente López. Se incorporaron al allowlist de `.github/workflows/static.yml`. También se corrigió el test de LP 75: no debía exigir “enlace de fuente corregido”, porque el historial del registro no acredita una corrección; ahora contrasta la edición oficial y la fecha verificadas.
+- Commits técnicos: `a7c985179ebb5e6343ce66cc45eb802fa4d62007` (allowlist), `e4444f9f24cc75558755084ae7c3622e296d59f5`, `5df8339079ecd10edf275c8c0f2358e1617d2051` y `5314d1ea0d24a316196a93fbc47b87d5e90cd44c` (ajustes del test).
+- Validación del run [45522325569](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45522325569): `validate=success`; `deploy` estaba en curso al corte. El run anterior [45522262810](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45522262810) terminó con `validate=success` y `deploy=success`. La apertura directa de GitHub Pages desde el navegador de consulta no estuvo disponible; no se declara verificación visual independiente.
+- Contrato enterprise sin cambios: `freeFormReports=false`, `customAnalyses=by_request`, `predictiveClaimsRequireValidation=true`, `clientDataPublic=false`. Federal Reports sigue como único piloto descriptivo; cinco módulos continúan planificados.
+
+### Próximos pasos
+1. Revisar circulares y condiciones de LP 74 y LP 75 el 26–27/11.
+2. Reintentar la edición oficial 14517 y conservar la discrepancia si persiste el timeout.
+3. Verificar actas/resultados de LP 61 y LP 62 solo si se publican; ambos llamados ya están cerrados por fecha de apertura, sin adjudicación confirmada.
+4. Mantener el seguimiento del puerto de Escobar, BESS Maschwitz, QUO Loma Verde y expansiones industriales sin convertir anuncios en inversión ejecutada.
+5. Cerrar el balance definitivo el 25/11/2026 a las 20:00 con CI, Pages y estados de contratación actualizados.
