@@ -254,7 +254,7 @@ jobs:
           PY
       - name: Validate Escobar local profile and provenance
         run: |
-          node --check assets/escobar-profile.js
+          node --check assets/foco-escobar.js
           node --check assets/foco-escobar.js
           python - <<'PY'
           import json
@@ -382,7 +382,7 @@ jobs:
           assert "no se asigna barrio ni teléfono único" in caps["verification"]["scope"].lower()
           parsed_map = urlparse(caps["mapUrl"])
           assert parsed_map.scheme == "https" and parsed_map.netloc == "www.google.com"
-          profile_js = Path("assets/escobar-profile.js").read_text(encoding="utf-8")
+          profile_js = Path("assets/foco-escobar.js").read_text(encoding="utf-8")
           assert 'sourceLink(item.mapUrl,"Cómo llegar ↗")' in profile_js
           assert "item.serviceHours" in profile_js
           assert "territory.healthFacilitiesDirectory" in profile_js
@@ -473,7 +473,7 @@ jobs:
         run: node tests/escobar-rail-infrastructure.test.js
       - name: Test Escobar municipal transparency directory
         run: |
-          node --check assets/escobar-profile.js
+          node --check assets/foco-escobar.js
           node tests/escobar-transparency.test.js
       - name: Test Escobar health facility directory
         run: node tests/escobar-health-facilities.test.js

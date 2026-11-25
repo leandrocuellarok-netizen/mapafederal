@@ -96,7 +96,7 @@ for (const [index, expected] of expectedParticipation.entries()) {
   }
   assert.ok(source.label.includes(expected.label), "El enlace ambiental debe identificar el expediente esperado");
 }
-const profileRenderer = fs.readFileSync("assets/escobar-profile.js", "utf8");
+const profileRenderer = fs.readFileSync("assets/foco-escobar.js", "utf8");
 assert.match(profileRenderer, /source\.participationPeriod/);
 assert.match(profileRenderer, /source\.verification\.checkedAt/);
 const finderRenderer = fs.readFileSync("investment-finder/index.html", "utf8");
@@ -129,7 +129,7 @@ assert.match(market.sourcePublicationNote, /no indica fecha de publicación/i);
 assert.match(market.validityPeriod, /confirmar antes de concurrir/i);
 assert.match(market.verification.scope, /no se realizó verificación presencial/i);
 assert.equal(market.coords, undefined, "No inventar coordenadas de las paradas itinerantes");
-const marketRenderer = fs.readFileSync("assets/escobar-profile.js", "utf8");
+const marketRenderer = fs.readFileSync("assets/foco-escobar.js", "utf8");
 assert.match(marketRenderer, /economy\.commercialPrograms/);
 assert.match(marketRenderer, /Ver cronograma municipal por localidad/);
 console.log("Escobar: empresas, proyecto portuario, expedientes ambientales, períodos de participación y etiquetas de prefactibilidad comprobados.");

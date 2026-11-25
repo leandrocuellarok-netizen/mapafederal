@@ -46,7 +46,7 @@ for (const station of rail.stations) {
   assert.equal(node.coordinateSource, rail.resourceUrl);
 }
 
-const profile = fs.readFileSync("assets/escobar-profile.js", "utf8");
+const profile = fs.readFileSync("assets/foco-escobar.js", "utf8");
 const html = fs.readFileSync("index.html", "utf8");
 assert.match(profile, /mobility\.railInfrastructure/);
 assert.match(profile, /railInfrastructureHtml/);

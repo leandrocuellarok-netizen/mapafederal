@@ -89,7 +89,7 @@ for (const item of [papaFrancisco, guevara, selles, lopez]) {
   }
 }
 
-const renderer = fs.readFileSync("assets/escobar-profile.js", "utf8");
+const renderer = fs.readFileSync("assets/foco-escobar.js", "utf8");
 assert.match(renderer, /statusLabel\(item\.status\|\|health\.status\)/);
 assert.match(renderer, /facilitySources/);
 assert.match(renderer, /sourceLink\(source\.url/);

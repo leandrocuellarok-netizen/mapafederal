@@ -33,8 +33,8 @@ assert.ok(transparency.publishedFunctions.some(item => /presupuestos y ordenanza
 assert.ok(transparency.publishedFunctions.some(item => /licitaciones/i.test(item)));
 assert.equal(transparency.contact.email, "datos@escobar.gob.ar");
 
-const profile = fs.readFileSync("assets/escobar-profile.js", "utf8");
-const html = fs.readFileSync("index.html", "utf8");
+const profile = fs.readFileSync("assets/foco-escobar.js", "utf8");
+const html = fs.readFileSync("foco-escobar/index.html", "utf8");
 assert.match(profile, /escobar-transparency/);
 assert.match(profile, /transparency\.openDataSnapshot/);
 assert.match(profile, /transparency\.verification/);

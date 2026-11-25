@@ -129,7 +129,7 @@ for (const url of [route506.sourceUrl, ...route506.secondaryReports.map(item => 
   assert.equal(new URL(url).protocol, "https:");
 }
 
-const profile = fs.readFileSync("assets/escobar-profile.js", "utf8");
+const profile = fs.readFileSync("assets/foco-escobar.js", "utf8");
 assert.match(profile, /mobility\.interlocalConnections/);
 assert.match(profile, /mobility\.intermodalAssessment/);
 assert.match(profile, /connectionsHtml\+intermodalHtml/);
