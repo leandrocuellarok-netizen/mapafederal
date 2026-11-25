@@ -1574,6 +1574,38 @@
       }
     },
     {
+      "id": "escobar-pavimentacion-calle-salta-garin-2026",
+      "name": "Escobar — pavimentación de calle Salta en Garín (Villa Angélica)",
+      "recordType": "investment_project",
+      "scope": "municipal",
+      "sector": "Obra pública / infraestructura vial / drenaje pluvial / movilidad peatonal",
+      "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires",
+      "location": "Calle Salta, Garín, Partido de Escobar, Provincia de Buenos Aires, Argentina",
+      "locality": "Garín",
+      "neighborhood": "Villa Angélica (área mencionada por la fuente; no representa un límite catastral)",
+      "stage": "under_construction",
+      "stageLabel": "Etapa final según publicación municipal del 16/11/2026",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 263000000,
+        "currency": "ARS",
+        "basis": "Inversión informada por la Municipalidad el 16/11/2026; no equivale a monto adjudicado, certificado ni gasto ejecutado."
+      },
+      "validFrom": "2026-11-16",
+      "validUntil": null,
+      "sourceName": "Municipalidad de Escobar",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/sujarchuk-y-katopodis-visitaron-importantes-obras-de-infraestructura-e/",
+      "sourcePublishedAt": "2026-11-16",
+      "period": "La Municipalidad describió los trabajos en etapa final al 16/11/2026; no publicó fecha de recepción ni finalización definitiva.",
+      "description": "La Municipalidad informó que la pavimentación de calle Salta en Garín estaba en etapa final. La intervención comprende 350 metros lineales entre Colectora Oeste e Islas Malvinas, 700 metros de veredas, demarcación vial y mejoras de escurrimiento pluvial; el Municipio complementó los trabajos con luminarias LED. La publicación atribuye al proyecto una inversión de ARS 263 millones. El área de mejora se vincula con el barrio Villa Angélica y el acceso de familias a la Escuela Secundaria N.º 8. No se verificaron certificaciones, pagos, acta de recepción ni estado final posterior a la publicación.",
+      "territorialRelevance": "Obra localizada en Garín que combina pavimentación, veredas, señalización, drenaje y alumbrado. La fuente municipal la vincula con la circulación y el acceso escolar en Villa Angélica. La publicación no identifica contratista, adjudicación ni una oportunidad abierta para proveedores.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se abrió y revisó la publicación oficial municipal del 16/11/2026. Se verificaron la localidad de Garín, calle Salta, tramo de 350 metros entre Colectora Oeste e Islas Malvinas, 700 metros de veredas, demarcación vial, mejoras de escurrimiento pluvial, luminarias LED y la inversión de ARS 263 millones atribuida a la Municipalidad. La fuente describe los trabajos como «en etapa final» a la fecha de la publicación. La consulta del 25/11 confirma el contenido de esa publicación, no el avance físico actual. No se verificaron contratista, pliego, adjudicación, certificaciones, pagos, recepción ni finalización posterior."
+      }
+    },
+    {
       "id": "escobar-quo-loma-verde-centro-comercial-2026",
       "name": "Escobar — QUO Loma Verde: centro comercial, gastronomía y servicios",
       "recordType": "investment_project",

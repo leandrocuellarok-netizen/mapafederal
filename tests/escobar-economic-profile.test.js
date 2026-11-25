@@ -245,3 +245,32 @@ assert.equal(redSostenible.relatedSources.length, 1);
 assert.equal(redSostenible.relatedSources[0].url, "https://www.escobar.gob.ar/municipio/sostenible/redsostenible/");
 assert.match(redSostenible.verification.scope, /no permitió confirmar el formulario individual/i);
 assert.equal(new URL(redSostenible.sourceUrl).protocol, "https:");
+
+const calleSalta = opportunities.find(entry => entry.id === "escobar-pavimentacion-calle-salta-garin-2026");
+assert.ok(calleSalta, "Falta la obra de pavimentación de calle Salta en Garín");
+assert.equal(calleSalta.recordType, "investment_project");
+assert.equal(calleSalta.scope, "municipal");
+assert.equal(calleSalta.locality, "Garín");
+assert.match(calleSalta.location, /Calle Salta, Garín/);
+assert.match(calleSalta.neighborhood, /Villa Angélica/);
+assert.equal(calleSalta.stage, "under_construction");
+assert.match(calleSalta.stageLabel, /etapa final.*16\/11\/2026/i);
+assert.equal(calleSalta.opportunityStatus, "unknown", "La publicación no abre una convocatoria para proveedores");
+assert.deepEqual(calleSalta.amount, {
+  value: 263000000,
+  currency: "ARS",
+  basis: "Inversión informada por la Municipalidad el 16/11/2026; no equivale a monto adjudicado, certificado ni gasto ejecutado."
+});
+assert.equal(calleSalta.sourceName, "Municipalidad de Escobar");
+assert.equal(calleSalta.sourcePublishedAt, "2026-11-16");
+assert.equal(calleSalta.verification.status, "verified");
+assert.equal(calleSalta.verification.checkedAt, "2026-11-25");
+assert.match(calleSalta.description, /350 metros lineales/);
+assert.match(calleSalta.description, /700 metros de veredas/);
+assert.match(calleSalta.description, /Colectora Oeste e Islas Malvinas/);
+assert.match(calleSalta.description, /luminarias LED/);
+assert.match(calleSalta.verification.scope, /no equivale.*avance físico actual/i);
+assert.match(calleSalta.verification.scope, /No se verificaron contratista, pliego, adjudicación, certificaciones, pagos/);
+assert.equal(calleSalta.coords, undefined, "No se deben inventar coordenadas de la obra");
+assert.equal(new URL(calleSalta.sourceUrl).protocol, "https:");
+
