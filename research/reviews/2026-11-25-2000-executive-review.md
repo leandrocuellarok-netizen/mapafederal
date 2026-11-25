@@ -198,3 +198,12 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - Commits: Radar IA `ed7e7a88a7b459cbc22a8af5af8a7651a1cbde58`; Investment Finder `36aa53e15c42ee00a55a7e1915793911baf90254`. Workflows asociados: `45543592493` (en curso al corte) y `45543595561` (pendiente al corte). No se declara CI ni Pages exitosos hasta que terminen. No hubo comprobación visual independiente del sitio.
 - Bloqueos: falta revisar pliegos completos y requisitos de la licitación Cloud PBX; no se conoce su presupuesto ni elegibilidad de proveedores. No se verificaron adjudicaciones de las licitaciones locales. Sigue pendiente resolver la contradicción territorial del BESS Maschwitz y verificar la publicación definitiva de la regla BIS.
 - Próximos pasos para el cierre de las 20:00: confirmar CI/Pages; revisar circulares y consultas de LP 74/75 el 26–27/11; seguir LP 71/72; revalidar el aviso Cloud PBX y su vencimiento; buscar resultados oficiales de LP 61/62/67; mantener la revisión de BESS y BIS. El balance permanece acumulativo y no se considera definitivo hasta el corte de las 20:00.
+
+
+## Resultado de validación y publicación — 01:00, 25/11/2026
+
+- La primera versión del test actualizado de licitaciones falló por un escape incorrecto en una expresión regular; no fue un fallo del JSON ni de las fuentes. Se corrigió el patrón en `tests/escobar-procurement-sources.test.js` y se añadió la LP 74 al control de procedencia.
+- Commits de prueba: `e4bfb01c26d3f9b20671a6a84a1e173fc8fa6023` (ajuste inicial) y `f3345934dc3155b818a6b568c5782bca1ea11d8e` (corrección definitiva).
+- Workflow final [45543725620](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45543725620), sobre `f3345934`: `validate=success` y `deploy=success`. GitHub Pages confirmó el despliegue en https://leandrocuellarok-netizen.github.io/mapafederal/ .
+- La consulta web independiente de la página no estuvo disponible; se confirma el resultado del pipeline, no una inspección visual completa de cada pantalla.
+- El balance sigue siendo acumulativo y se cerrará con el corte de las 20:00.
