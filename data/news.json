@@ -36,13 +36,9 @@
     "source": "Agencia de Acceso a la Información Pública — Boletín Oficial de la República Argentina",
     "url": "https://www.boletinoficial.gob.ar/detalleAviso/primera/350736/20261125",
     "period": "Resolución firmada el 20/11/2026; publicada y vigente desde el 25/11/2026. El anexo forma parte integrante de la medida.",
-    "jurisdictions": [
-      "Argentina"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "La Resolución AAIP 188/2026 fue publicada en el Boletín Oficial de la República Argentina y corresponde a una autoridad nacional de aplicación de la Ley 25.326."
-    ],
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
     "jurisdictionScope": "Nacional — Argentina; autoridad de aplicación de la Ley 25.326.",
     "sector": "Regulación / protección de datos personales / transferencias internacionales / servicios digitales / IA y cloud",
     "territorialRelevance": "Relevante para responsables y encargados que transfieren datos personales al exterior, incluidos proveedores de IA, cloud y software cuando intervienen datos personales. No es una norma específica sobre modelos de IA ni obliga por sí sola a adoptar un único contrato.",
@@ -67,13 +63,9 @@
     "source": "Reuters",
     "url": "https://www.reuters.com/legal/litigation/australia-passes-law-forcing-internet-platforms-to-take-down-harmful-content-2026-11-25/",
     "period": "Aprobación parlamentaria informada el 25/11/2026. Reuters indica entrada en vigor en un año. El comunicado oficial del 15/10/2026 describe el alcance del proyecto, incluidos los chatbots de IA; la fecha de asentimiento y el texto consolidado no se verificaron de forma independiente.",
-    "jurisdictions": [
-      "Australia"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "Reuters identifica la aprobación parlamentaria australiana; el comunicado del Gobierno australiano del 15/10/2026 describe el alcance nacional del proyecto, incluidos los chatbots de IA."
-    ],
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
     "jurisdictionScope": "Australia — jurisdicción nacional; reforma de seguridad en servicios digitales.",
     "sector": "Regulación / servicios digitales / plataformas / chatbots de IA / seguridad en línea",
     "territorialRelevance": "Referencia comparativa para proveedores de chatbots de IA y plataformas que atienden usuarios australianos. No produce efectos jurídicos directos en Argentina ni en el Partido de Escobar.",
@@ -98,13 +90,9 @@
     "source": "NEC Corporation — comunicado corporativo",
     "url": "https://www.nec.com/en/press/202611/global_20261125_01.html",
     "period": "Anuncio del 25/11/2026. Convocatoria de socios: 25/11–11/12/2026; pitch previsto para el 14/12/2026; selección final anunciada para fines de diciembre. La fuente no informa monto de financiación ni elegibilidad geográfica.",
-    "jurisdictions": [
-      "Japón"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "El comunicado de NEC identifica a NEC X y a la Acquisition, Technology & Logistics Agency (ATLA) de Japón como participantes del programa."
-    ],
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
     "jurisdictionScope": "Japón — programa de NEC X y proyecto de investigación comisionado por la Acquisition, Technology & Logistics Agency (ATLA).",
     "sector": "Tecnología / IA / IoT / drones / telecomunicaciones / defensa / redes de comunicación",
     "territorialRelevance": "Señal comparativa para empresas y startups argentinas de IA, IoT, drones, telecomunicaciones y comunicaciones de emergencia. El comunicado no confirma elegibilidad de firmas argentinas ni apoyo financiero.",
@@ -155,13 +143,9 @@
     "source": "Reuters",
     "url": "https://www.reuters.com/technology/german-economy-minister-urges-industry-seize-ai-opportunity-2026-11-24/",
     "period": "Declaraciones reportadas el 24/11/2026 en Berlín; el artículo no anuncia un programa de subsidios ni una medida regulatoria concreta.",
-    "jurisdictions": [
-      "Alemania"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "Reuters sitúa el debate en Berlín y atribuye las declaraciones a la ministra alemana de Economía, a la BDI y a IG Metall."
-    ],
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
     "jurisdictionScope": "Alemania — debate de política industrial y adopción tecnológica.",
     "sector": "Economía / industria manufacturera / IA industrial / política de innovación y productividad",
     "territorialRelevance": "Señal comparativa para pymes industriales argentinas y de Escobar: el valor de la IA industrial depende de integrar datos productivos, procesos y capacidades de inversión. No implica incentivos ni obligaciones para Argentina.",
