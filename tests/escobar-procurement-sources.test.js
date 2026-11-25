@@ -57,6 +57,15 @@ for (const [id, expectedSource] of Object.entries(expected)) {
 
 const polideportivo = catalog.opportunities.find(item => item.id === "escobar-licitacion-66-2026-polideportivo-maschwitz");
 const mobiliario = catalog.opportunities.find(item => item.id === "escobar-licitacion-69-2026-mobiliario-urbano");
+const polideportivo74 = catalog.opportunities.find(item => item.id === "escobar-licitacion-74-2026-polideportivo-maschwitz-pista-atletismo");
+assert.ok(polideportivo74, "Falta la LP 74/2026 del Polideportivo Ingeniero Maschwitz.");
+assert.equal(polideportivo74.amount.value, 793000000);
+assert.match(polideportivo74.description, /valor del pliego ARS 2\.000\.000/i);
+assert.match(polideportivo74.description, /consultas: 26 y 27\/11\/2026, 09:00–12:00.*H\. Yrigoyen 743/i);
+assert.match(polideportivo74.description, /venta del pliego: 30\/11 y 01\/12\/2026, 09:00–12:00/i);
+assert.match(polideportivo74.description, /apertura: 04\/12\/2026 a las 10:00.*Sala de Reunión.*H\. Yrigoyen 743/i);
+assert.match(polideportivo74.description, /Expediente 288\.725\/26/);
+assert.match(polideportivo74.verification.scope, /edición 30368.*no se encontró una modificación/i);
 assert.equal(polideportivo.opportunityStatus, "unknown");
 assert.equal(mobiliario.opportunityStatus, "unknown");
 
