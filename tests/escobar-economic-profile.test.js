@@ -143,7 +143,7 @@ assert.equal(bess.coords, undefined, "No georreferenciar mientras la localizaci�
 assert.match(bess.location, /localización parcelaria permanece en contradicción documental/i);
 assert.match(bess.description, /clasifica el expediente como Partido de Escobar/i);
 assert.match(bess.description, /no se interpreta como aprobación ni como ausencia de observaciones/i);
-assert.match(bess.verification.scope, /adjunto del EIA 2026 devolvió timeout/i);
+assert.match(bess.verification.scope, /PDF adjunto de ese registro 2026 devolvió timeout/i);
 const bessPba = bess.relatedSources.find(source => source.sourceName === "Ministerio de Ambiente de la Provincia de Buenos Aires" && source.url.includes("/participacion/resumen/"));
 assert.ok(bessPba, "Falta el expediente provincial de participación pública");
 assert.equal(bessPba.sourcePublishedAt, null, "No inventar fecha de publicación de la ficha");
