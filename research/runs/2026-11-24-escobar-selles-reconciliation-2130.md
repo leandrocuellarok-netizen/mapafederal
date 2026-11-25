@@ -57,3 +57,6 @@ La segunda ejecución de validación, [45519127776](https://github.com/leandrocu
 ## Sincronización del directorio heredado
 
 La inspección del segundo fallo mostró que `serviceDirectories` conservaba una segunda ficha de Selles distinta de `healthFacilitiesDirectory.facilities`. Se sincronizaron ambas representaciones para evitar que la interfaz presente direcciones u horarios incompatibles: Pablo Marín 24, Garín; guardia general 24 h; atención CAPS lunes a viernes 7–14; vacunatorio lunes a viernes 8–13; teléfono sin consolidar. Se añadieron aserciones para impedir futuras divergencias entre ambos directorios.
+
+
+La tercera ejecución de validación, [45519316593](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45519316593), avanzó más allá de las aserciones de dirección y horarios, y detectó que la nota había omitido los paréntesis del teléfono publicado por Teléfonos útiles. Se restauró la grafía exacta «(0348) 449-3444» en ambas representaciones del CAPS; no se modifica el campo telefónico consolidado, que permanece nulo por la contradicción con 11 2150-0302.
