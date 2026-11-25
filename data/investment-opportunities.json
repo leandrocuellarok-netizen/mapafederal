@@ -5079,6 +5079,32 @@
         "scope": "Se abrió el aviso individual del Boletín Oficial publicado el 25/11/2026. Se verificaron objeto, jurisdicción municipal, pliego gratuito, domicilio de presentación, vencimiento de ofertas 01/12/2026 10:00 y apertura 11:00. No se publica presupuesto; no se infieren cantidades ni monto de inversión."
       },
       "relatedSources": []
+    },
+    {
+      "id": "armada-licitacion-0541-2026-impermeabilizacion-terraza-hospital-naval",
+      "name": "Armada Argentina — LP 0541/2026: impermeabilización de la terraza del 5.º piso del Hospital Naval Buenos Aires",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-18",
+      "validUntil": "2026-11-30",
+      "sourceName": "Boletín Oficial de la República Argentina — Armada Argentina",
+      "sourceUrl": "https://www.boletinoficial.gov.ar/detalleAviso/tercera/2420816/20261119",
+      "sourcePublishedAt": "2026-11-19",
+      "sector": "Infraestructura hospitalaria / construcción / impermeabilización / mantenimiento edilicio",
+      "jurisdiction": null,
+      "location": "Hospital Naval Buenos Aires Cirujano Mayor Doctor Pedro Mallo, Ciudad Autónoma de Buenos Aires, Argentina; dirección no consignada en el aviso.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Retiro del pliego y presentación de ofertas hasta el 30/11/2026 a las 10:00; consultas hasta el 25/11/2026 a las 10:00; apertura electrónica el 30/11/2026 a las 10:00 por COMPR.AR. El aviso no publica presupuesto.",
+      "description": "Licitación Pública 0541/2026 para impermeabilizar la terraza del 5.º piso del Hospital Naval Buenos Aires. La adquisición del pliego se realiza mediante COMPR.AR. El aviso no publica presupuesto, superficie ni especificaciones completas; revisar el pliego antes de evaluar costos y requisitos de participación.",
+      "territorialRelevance": "Contratación nacional de mantenimiento de infraestructura sanitaria, potencialmente relevante para empresas de impermeabilización, construcción y mantenimiento edilicio con capacidad de contratar con la Armada. La sede de referencia es CABA; no corresponde al Partido de Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se abrió el aviso individual del Boletín Oficial publicado el 19/11/2026. Se verificaron organismo, UOC, expediente, objeto, retiro del pliego hasta el 30/11/2026 a las 10:00, consultas hasta el 25/11/2026 a las 10:00, presentación de ofertas y apertura el 30/11/2026 a las 10:00. El aviso no publica presupuesto; no se revisó el pliego completo ni se verificaron requisitos, ofertas, adjudicación o ejecución."
+      },
+      "relatedSources": []
     }
   ]
 }
