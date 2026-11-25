@@ -333,8 +333,8 @@
     ],
     "verification": {
       "status": "editorial_reviewed",
-      "checkedAt": "2026-11-24",
-      "scope": "Reuters (24/11/2026, 11:17 UTC) reporta una cotización de USD 76,60, con caída de 12,6%, por debajo del precio de IPO de USD 83. El comunicado original de Anthropic (20/11/2026) confirma ingresos brutos de IPO por aproximadamente USD 93.500 millones, de los cuales USD 91.600 millones correspondieron a la empresa, y una colocación privada separada de USD 26.000 millones. El precio se conserva como dato temporal atribuido a Reuters; no se infiere rendimiento futuro, causalidad única ni recomendación de inversión."
+      "checkedAt": "2026-11-25",
+      "scope": "Revalidado el 25/11/2026 con Reuters (cotización reportada el 24/11 a las 11:17 UTC) y el comunicado original de Anthropic (20/11/2026), que confirma cierre de IPO, precio de USD 83, ingresos brutos de aproximadamente USD 93.500 millones y colocación privada separada de USD 26.000 millones. La cotización es temporal; no se infiere rendimiento futuro ni recomendación de inversión."
     }
   },
   {
@@ -414,7 +414,7 @@
     }
   },
   {
-    "id": "news-public-inspection-federalregister-gov-2026-23999-pdf",
+    "id": "news-www-federalregister-gov-public-inspection-2026-23999-additions-to-the-entity-list",
     "title": "Estados Unidos incorporó siete entidades del sudeste asiático a su lista de control de exportaciones de cómputo avanzado",
     "date": "2026-11-23",
     "category": "Regulación",
@@ -741,6 +741,28 @@
     }
   },
   {
+    "id": "news-www-reuters-com-technology-trump-says-us-to-penalize-firms-building-data-centers-abroad-2026-11-20",
+    "title": "Trump planteó penalizar a empresas estadounidenses que construyan centros de datos en el extranjero",
+    "date": "2026-11-20",
+    "category": "Regulación",
+    "summary": "Reuters informó el 20/11/2026 que Donald Trump dijo que Estados Unidos impondría un impuesto elevado a compañías estadounidenses que construyan centros de datos fuera del país. La nota no identifica texto normativo, tasa, autoridad ejecutora ni fecha de vigencia; se registra como declaración política y riesgo regulatorio potencial, no como medida aprobada o vigente. La discusión puede incidir en decisiones de localización de infraestructura de IA y servicios cloud.",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/technology/trump-says-us-to-penalize-firms-building-data-centers-abroad-2026-11-20/",
+    "period": "Declaración reportada el 20/11/2026; la fuente no identifica instrumento normativo ni fecha de entrada en vigor.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Estados Unidos; declaración de política nacional sin norma publicada en la fuente consultada.",
+    "sector": "Infraestructura de IA / centros de datos / cloud / energía / política industrial",
+    "territorialRelevance": "Alta para decisiones internacionales de inversión en centros de datos, cloud y energía; impacto indirecto para Argentina si la propuesta se formalizara. No acredita una restricción vigente ni una inversión local.",
+    "relatedSources": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Revisado en Reuters, 20/11/2026. La nota atribuye al presidente una declaración sobre un posible impuesto; no se localizó texto normativo, decreto ni fecha de aplicación. Se clasifica como señal política, no como regulación vigente."
+    }
+  },
+  {
     "title": "Escobar publicó tres licitaciones de suministros y servicios con aperturas en diciembre",
     "date": "2026-11-19",
     "category": "Infraestructura",
@@ -872,6 +894,28 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-25",
       "scope": "Revisión de la fuente primaria del BCE, Financial Stability Review de noviembre de 2026. Se verificó que los €24.300 millones son compromisos de crédito de bancos del área del euro con 165 firmas y filiales de la cadena IA, con datos hasta junio de 2026; €11.000 millones figuran sin desembolsar. El BCE advierte que faltan datos granulares de exposiciones fuera del área del euro. La proyección de USD 5,5 billones hasta 2030 corresponde a estimaciones de capex de grandes tecnológicas estadounidenses basadas en estimaciones de analistas, no a inversión comprometida ni ejecutada. No se infiere exposición argentina."
+    }
+  },
+  {
+    "id": "news-openai-com-index-research-acceleration-jagged-frontier",
+    "title": "OpenAI publicó nuevas mediciones internas sobre el uso de agentes en investigación y desarrollo de IA",
+    "date": "2026-11-18",
+    "category": "Tecnología",
+    "summary": "OpenAI informó que, entre marzo y octubre de 2026, la tasa estimada de éxito sin intervención de agentes en tareas de investigación de 2–4 horas subió de 23% a 46%, y en tareas de 4–8 horas de 13% a 35%. Reportó diferencias marcadas por tarea: 79% en monitoreo de entrenamientos y 25% en código de inferencia y serving. Son métricas internas, parciales y autodeclaradas por la empresa; no representan el mercado ni prueban productividad equivalente en otras organizaciones.",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/research-acceleration-jagged-frontier/",
+    "period": "Mediciones internas con ventanas entre marzo y octubre de 2026; publicación el 18/11/2026. La empresa advierte que el informe ofrece una imagen parcial y que los resultados varían por tipo de tarea.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Ámbito organizacional de OpenAI; el informe no asigna los resultados a una jurisdicción territorial específica.",
+    "sector": "IA / agentes de programación / investigación y desarrollo / productividad / seguridad y alineación",
+    "territorialRelevance": "Alta como señal tecnológica sobre la reorganización del trabajo de I+D con agentes; utilidad indirecta para empresas y equipos de investigación. No acredita adopción, productividad ni resultados en Argentina o Escobar.",
+    "relatedSources": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Revisado en la publicación oficial de OpenAI del 18/11/2026. Las tasas, gastos de API y métricas de uso corresponden a datos internos de la empresa, con metodología propia y limitaciones expresas; se presentan como resultados autodeclarados, no como estimaciones independientes ni generalizables."
     }
   },
   {

@@ -84,6 +84,491 @@
     },
     {
       "recordType": "tender",
+      "scope": "provincial",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-01",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Dirección de Vialidad",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "buenos-aires-direccion-vialidad-lpi-1-2026-bid-autovia-ruta-11-mar-de-ajo-pinamar",
+      "name": "Provincia de Buenos Aires — LPI 1/2026 BID: Autovía Ruta Provincial 11, tramo Mar de Ajó–Pinamar",
+      "sector": "Infraestructura vial / obra pública / transporte / seguridad vial",
+      "jurisdiction": "Buenos Aires",
+      "location": "Tramo Mar de Ajó–Pinamar, lotes 1 y 2; partidos de La Costa, General Lavalle, Pinamar y General Madariaga, Provincia de Buenos Aires",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Prórroga: presentación física de ofertas hasta el 01/12/2026 a las 10:00; apertura a las 10:30 en Av. 122 N.º 825, La Plata. La publicación no informa presupuesto.",
+      "description": "Licitación Pública Internacional 1/2026 BID para construir la Autovía Ruta Provincial 11 entre Mar de Ajó y Pinamar, en dos lotes de 24,75 km y 22,46 km. La edición 25/11 confirma la prórroga de recepción y apertura al 01/12/2026; no publica presupuesto en este aviso.",
+      "territorialRelevance": "Proyecto vial de alcance provincial, relevante para constructoras, ingeniería, seguridad vial, movimiento de suelos y proveedores de infraestructura. Afecta el corredor atlántico; no corresponde a Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, página 37. Se verificaron tramo, lotes, jurisdicciones, Préstamo BID 5418/OC-AR y nueva fecha/hora de recepción y apertura. No se revisó el pliego completo ni se verificaron presupuesto, oferentes, adjudicación o ejecución."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-18",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Avellaneda",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "avellaneda-licitacion-123-2026-camaras-corporales-estaciones-recoleccion-datos",
+      "name": "Avellaneda — LP 123/2026: cámaras corporales y estaciones de recolección de datos para la Policía Municipal",
+      "sector": "Tecnología / seguridad pública / cámaras corporales / evidencia digital",
+      "jurisdiction": "Partido de Avellaneda, Provincia de Buenos Aires",
+      "location": "Avellaneda, Partido de Avellaneda, Provincia de Buenos Aires — Jefatura de Compras y Suministros, Güemes 835.",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 937810000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Apertura 18/12/2026 a las 11:00. Consulta y/o adquisición de pliegos en Jefatura de Compras y Suministros, Güemes 835, 2.º piso, de 08:00 a 15:30. El aviso no precisa el límite de presentación de ofertas; disponibilidad por confirmar en el pliego.",
+      "description": "Licitación Pública 123/2026 para provisión y puesta en operatividad de cámaras corporales portátiles y estaciones de recolección de datos para la Policía Municipal. Presupuesto oficial ARS 937.810.000.",
+      "territorialRelevance": "Oportunidad para integradores y proveedores de bodycams, gestión segura de video, almacenamiento y sistemas de evidencia digital. El aviso no acredita elegibilidad de un proveedor específico.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, página 39. Se verificaron objeto, presupuesto oficial, fecha y hora de apertura, dirección y horario para consultar/adquirir pliegos. No se revisó el pliego técnico ni se confirmó el límite de ofertas; se conserva estado unknown."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-14",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Berazategui",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "berazategui-licitacion-75-2026-alquiler-camiones-balancin-porta-contenedor",
+      "name": "Berazategui — LP 75/2026: alquiler de camiones balancín, camión porta-contenedor y contenedores",
+      "sector": "Transporte / logística / flota pesada / gestión de residuos",
+      "jurisdiction": "Partido de Berazategui, Provincia de Buenos Aires",
+      "location": "Berazategui, Partido de Berazategui, Provincia de Buenos Aires — Dirección de Compras municipal.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 685464000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial total publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Venta e inspección de pliegos: 24/11–09/12/2026, de 08:00 a 14:00; consultas hasta 10/12; respuestas hasta 11/12; ofertas hasta 14/12 a las 10:30; apertura 14/12/2026 a las 11:00. Valor del pliego ARS 685.500.",
+      "description": "Licitación Pública 75/2026 para alquilar dos camiones balancín Iveco 170E22, un camión porta-contenedor y diez contenedores, con chofer y mantenimiento mecánico. El aviso indica que el combustible no está incluido.",
+      "territorialRelevance": "Oportunidad para operadores de transporte, alquiler de flota pesada y servicios logísticos. La prestación se localiza en Berazategui, no en Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, páginas 40–41. Se verificaron objeto, presupuesto, cronograma de pliegos, consultas, ofertas y apertura. No se revisaron requisitos técnicos completos, adjudicación ni ejecución."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-10",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Almirante Brown",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "almirante-brown-licitacion-53-2026-mantenimiento-desagues-pluviales",
+      "name": "Almirante Brown — LP 53/2026: mantenimiento del sistema de desagües pluviales",
+      "sector": "Infraestructura hidráulica / drenaje pluvial / obras y mantenimiento urbano",
+      "jurisdiction": "Partido de Almirante Brown, Provincia de Buenos Aires",
+      "location": "Partido de Almirante Brown, Provincia de Buenos Aires — Dirección General de Compras y Contrataciones, Adrogué.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 264962990.46,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Retiro de pliegos hasta el 04/12/2026 a las 13:30; apertura 10/12/2026 a las 10:00 en Adrogué. Valor del pliego ARS 264.962,99.",
+      "description": "Licitación Pública 53/2026 para contratar el mantenimiento del sistema de desagües pluviales del Partido de Almirante Brown. El presupuesto oficial asciende a ARS 264.962.990,46.",
+      "territorialRelevance": "Oportunidad para empresas de obras hidráulicas, mantenimiento de drenajes, saneamiento y servicios de infraestructura municipal.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, páginas 38–39. Se verificaron objeto, presupuesto, plazo de retiro de pliegos, apertura y valor del pliego. No se revisó el pliego completo ni se verificaron oferentes o adjudicación."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-11",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Almirante Brown",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "almirante-brown-licitacion-54-2026-obras-desagues-complementarios",
+      "name": "Almirante Brown — LP 54/2026: pequeñas obras de desagües complementarios",
+      "sector": "Infraestructura hidráulica / drenaje pluvial / obra civil",
+      "jurisdiction": "Partido de Almirante Brown, Provincia de Buenos Aires",
+      "location": "Partido de Almirante Brown, Provincia de Buenos Aires — Dirección General de Compras y Contrataciones, Adrogué.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 421004370.19,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Retiro de pliegos hasta el 04/12/2026 a las 13:30; apertura 11/12/2026 a las 10:00 en Adrogué. Valor del pliego ARS 421.004,37.",
+      "description": "Licitación Pública 54/2026 para ejecutar pequeñas obras de desagües complementarios en el Partido de Almirante Brown. Presupuesto oficial ARS 421.004.370,19.",
+      "territorialRelevance": "Oportunidad para constructoras, contratistas hidráulicos y proveedores de obras de drenaje urbano. No corresponde al Partido de Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, páginas 38–39. Se verificaron objeto, presupuesto, fecha límite de retiro de pliegos, apertura y valor del pliego. No se revisó el pliego completo ni se verificaron oferentes o adjudicación."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-15",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de General Paz",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "general-paz-licitacion-7-2026-mejoramiento-habitat-34-viviendas-loma-verde",
+      "name": "General Paz — LP 7/2026: mejoramiento del hábitat para 34 viviendas en Loma Verde",
+      "sector": "Vivienda / urbanización / infraestructura social / obra pública",
+      "jurisdiction": "Partido de General Paz, Provincia de Buenos Aires",
+      "location": "Barrio San Antonio, Loma Verde, Partido de General Paz, Provincia de Buenos Aires — Palacio Municipal de Ranchos.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 1040355730.59,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado en ARS; el aviso informa además 736.149,37 UVIs. No equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Presentación de propuestas hasta el 15/12/2026 a las 14:00; apertura 16/12/2026 a las 08:30. Pliego sin costo; consultas hasta el día hábil anterior a la presentación.",
+      "description": "Licitación Pública 7/2026, prorrogada, para el mejoramiento del hábitat de 34 viviendas en el Barrio San Antonio de Loma Verde. Presupuesto oficial ARS 1.040.355.730,59, también expresado en 736.149,37 UVIs.",
+      "territorialRelevance": "Oportunidad para constructoras, cooperativas y proveedores de urbanización y vivienda social. Proyecto municipal fuera de Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, página 42. Se verificaron objeto, localización, cantidad de viviendas, presupuesto en ARS y UVIs, fecha límite de propuestas y apertura. No se revisó el pliego ni se verificó adjudicación o ejecución."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-18",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de General Paz",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "general-paz-licitacion-9-2026-servicio-fotomulta",
+      "name": "General Paz — LP 9/2026: servicio de fotomulta",
+      "sector": "Tecnología / seguridad vial / fiscalización de tránsito / servicios digitales",
+      "jurisdiction": "Partido de General Paz, Provincia de Buenos Aires",
+      "location": "Partido de General Paz, Provincia de Buenos Aires — Palacio Municipal de Ranchos.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Recepción de ofertas hasta el 18/12/2026 a las 14:00; apertura 21/12/2026 a las 09:00. Consultas de pliegos hasta el día hábil anterior a la presentación.",
+      "description": "Licitación Pública 9/2026, prorrogada, para contratar un servicio de fotomulta en el Partido de General Paz. La publicación no informa presupuesto.",
+      "territorialRelevance": "Oportunidad para proveedores de cámaras, lectura de matrículas, procesamiento de imágenes, gestión de infracciones y servicios de seguridad vial. No se presume que el servicio incluya IA.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, página 42. Se verificaron objeto, jurisdicción, fecha límite de ofertas y apertura. No se publicó presupuesto ni se revisó el pliego técnico; no se infiere el uso de inteligencia artificial."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-15",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de General Paz",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "general-paz-licitacion-10-2026-cancha-hockey-cesped-sintetico",
+      "name": "General Paz — LP 10/2026: construcción y colocación de cancha de hockey con césped sintético",
+      "sector": "Infraestructura deportiva / obra civil / césped sintético",
+      "jurisdiction": "Partido de General Paz, Provincia de Buenos Aires",
+      "location": "Ranchos, Partido de General Paz, Provincia de Buenos Aires — Palacio Municipal.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 417311679.68,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Presentación de propuestas hasta el 15/12/2026 a las 14:00; apertura 16/12/2026 a las 09:00. Pliego sin costo; consultas hasta el día hábil anterior.",
+      "description": "Licitación Pública 10/2026 para construcción, provisión y colocación de una cancha de hockey con césped sintético. Presupuesto oficial ARS 417.311.679,68.",
+      "territorialRelevance": "Oportunidad para contratistas de infraestructura deportiva, superficies sintéticas, equipamiento y obra civil.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, página 52. Se verificaron objeto, presupuesto, fecha límite de propuestas y apertura. No se revisaron especificaciones técnicas completas ni se verificó adjudicación."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-03",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Hurlingham",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "hurlingham-licitacion-23-2026-servicio-laboratorio-segundo-llamado",
+      "name": "Hurlingham — LP 23/2026: servicio de laboratorio, segundo llamado",
+      "sector": "Salud / laboratorio clínico / diagnóstico / servicios sanitarios",
+      "jurisdiction": "Partido de Hurlingham, Provincia de Buenos Aires",
+      "location": "Hurlingham, Partido de Hurlingham, Provincia de Buenos Aires — Dirección de Compras, Palacio Municipal.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 490862167.92,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial total publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Apertura 03/12/2026 a las 13:00; recepción de sobres hasta dos horas antes (11:00). Pliegos sin costo, retiro presencial o por correo los días 27 y 30/11; consultas del 27/11 al 01/12; respuestas hasta 02/12.",
+      "description": "Segundo llamado a Licitación Pública 23/2026 para contratar el servicio de laboratorio. Presupuesto oficial total ARS 490.862.167,92.",
+      "territorialRelevance": "Oportunidad para prestadores de laboratorio, diagnóstico, reactivos y servicios de salud. La publicación no acredita requisitos técnicos ni elegibilidad de un proveedor concreto.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, página 52. Se verificaron segundo llamado, presupuesto, fecha y hora de apertura, límite de recepción de sobres, período de retiro de pliegos y consultas. No se revisó el pliego técnico."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-09",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de General San Martín",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "general-san-martin-licitacion-32-2026-medicacion-antibioticos-soluciones",
+      "name": "General San Martín — LP 32/2026: medicación, antibióticos y soluciones para el sistema de salud municipal",
+      "sector": "Salud / medicamentos / antibióticos / abastecimiento hospitalario",
+      "jurisdiction": "Partido de General San Martín, Provincia de Buenos Aires",
+      "location": "Partido de General San Martín, Provincia de Buenos Aires — Dirección de Compras, Belgrano 3747.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 1564698880.95,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Apertura 09/12/2026 a las 10:00. Venta de pliegos desde la publicación hasta un día hábil anterior a la apertura, de 09:00 a 14:00. Valor del pliego ARS 1.564.698,88.",
+      "description": "Licitación Pública 32/2026 de la Secretaría de Salud municipal para adquirir medicación, antibióticos y soluciones para el sistema de salud. Presupuesto oficial ARS 1.564.698.880,95.",
+      "territorialRelevance": "Oportunidad para laboratorios, droguerías y distribuidores de medicamentos y suministros hospitalarios.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, página 43. Se verificaron objeto, presupuesto, apertura, período de venta de pliegos y valor del pliego. No se revisó el listado técnico de productos ni se verificaron adjudicación o ejecución."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-09",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de La Matanza",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "la-matanza-licitacion-146-2026-ampliacion-edificio-salud-espacios-comunitarios",
+      "name": "La Matanza — LP 146/2026: puesta en valor y ampliación de edificio para salud y espacios comunitarios",
+      "sector": "Infraestructura sanitaria / espacios comunitarios / construcción",
+      "jurisdiction": "Partido de La Matanza, Provincia de Buenos Aires",
+      "location": "Gral. Ocampo 186, Villa Luzuriaga, Partido de La Matanza, Provincia de Buenos Aires.",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 945803538.05,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Apertura 09/12/2026 a las 11:00. Pliego en Dirección de Compras, Almafuerte 3050, 2.º piso, San Justo; consultas por correo. El plazo de consulta y adquisición se fija hasta siete días hábiles antes de la apertura, pero el extracto no detalla el límite de presentación de ofertas.",
+      "description": "Licitación Pública 146/2026 para puesta en valor y ampliación de un edificio destinado a salud y espacios comunitarios en Villa Luzuriaga. Presupuesto oficial ARS 945.803.538,05.",
+      "territorialRelevance": "Oportunidad para empresas de construcción, arquitectura, instalaciones sanitarias y equipamiento de espacios de salud y uso comunitario.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, página 43. Se verificaron objeto, localización, presupuesto, apertura y condiciones de consulta/adquisición del pliego. Como el extracto no explicita el cierre de recepción de ofertas, se conserva estado unknown."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-14",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de San Isidro",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "san-isidro-licitacion-26-2026-mantenimiento-equipos-rayos-x",
+      "name": "San Isidro — LP 26/2026: mantenimiento preventivo y correctivo de equipos de rayos X, segundo llamado",
+      "sector": "Salud / equipamiento médico / radiología / mantenimiento técnico",
+      "jurisdiction": "Partido de San Isidro, Provincia de Buenos Aires",
+      "location": "San Isidro, Partido de San Isidro, Provincia de Buenos Aires — Dirección General de Compras, Av. Centenario 77.",
+      "opportunityStatus": "unknown",
+      "amount": {
+        "value": 226094880,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Segundo llamado; apertura 14/12/2026 a las 10:00. Pliego gratuito en https://www.sanisidro.gob.ar/compras o por solicitud a la Dirección General de Compras. El extracto no detalla el límite de presentación de ofertas.",
+      "description": "Licitación Pública 26/2026 para mantenimiento preventivo y correctivo de equipos de rayos X municipales. Presupuesto oficial ARS 226.094.880.",
+      "territorialRelevance": "Oportunidad para empresas de servicio técnico, mantenimiento biomédico, radiología y soporte de equipamiento hospitalario.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, página 53. Se verificaron segundo llamado, objeto, presupuesto, fecha de apertura y acceso gratuito al pliego. No se obtuvo el pliego completo ni se confirmó el límite de presentación; estado unknown."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "municipal",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-09",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Patagones",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "patagones-licitacion-14-2026-nueva-terminal-villalonga",
+      "name": "Patagones — LP 14/2026: construcción de nueva terminal en Villalonga",
+      "sector": "Transporte / infraestructura pública / terminal de pasajeros / obra civil",
+      "jurisdiction": "Partido de Patagones, Provincia de Buenos Aires",
+      "location": "Villalonga, Partido de Patagones, Provincia de Buenos Aires — apertura en Casa de la Cultura Viejo Hotel.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 275885761.08,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Presentación de ofertas hasta el 09/12/2026 a las 08:30; apertura el mismo día a las 11:00 en Villalonga. Pliego en la Dirección de Compras de Carmen de Patagones; valor ARS 85.000.",
+      "description": "Licitación Pública 14/2026 para ejecutar una nueva terminal en Villalonga. Presupuesto oficial ARS 275.885.761,08.",
+      "territorialRelevance": "Oportunidad para constructoras, proveedores de instalaciones y empresas de infraestructura de transporte de pasajeros.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, página 53. Se verificaron objeto, localidad, presupuesto, fecha límite de ofertas, apertura y valor del pliego. No se revisó el pliego completo ni se verificó adjudicación o ejecución."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "provincial",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-17",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Ministerio de Infraestructura y Servicios Públicos",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "pba-minfra-licitacion-1003-0021-lpu26-caps-sor-teresa-de-calcuta-salliquelo",
+      "name": "Provincia de Buenos Aires — LP 1003-0021-LPU26: construcción del CAPS Sor Teresa de Calcuta, Salliqueló",
+      "sector": "Infraestructura sanitaria / atención primaria / construcción pública",
+      "jurisdiction": "Buenos Aires",
+      "location": "Salliqueló, Provincia de Buenos Aires.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 1308494427.55,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Presentación de ofertas hasta el 17/12/2026 a las 16:00; apertura 18/12/2026 a las 12:00 por PBACONTRATACIONES. Anticipo financiero previsto: 5%; plazo de obra: 360 días.",
+      "description": "Licitación Pública 1003-0021-LPU26 para construir el CAPS Sor Teresa de Calcuta en Salliqueló. Presupuesto oficial ARS 1.308.494.427,55.",
+      "territorialRelevance": "Obra provincial relevante para constructoras, instalaciones sanitarias, equipamiento y proveedores de infraestructura de atención primaria. No corresponde a Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, página 36. Se verificaron objeto, municipio, presupuesto, anticipo, plazo de obra, límite de ofertas y apertura. Pliego gratuito en PBACONTRATACIONES; no se verificó adjudicación ni ejecución."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "provincial",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-21",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Ministerio de Infraestructura y Servicios Públicos",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "pba-minfra-licitacion-1003-0022-lpu26-desagues-pluviales-general-san-martin",
+      "name": "Provincia de Buenos Aires — LP 1003-0022-LPU26: desagües pluviales en General San Martín, cuencas Lange y San Andrés",
+      "sector": "Infraestructura hidráulica / drenaje pluvial / obra civil",
+      "jurisdiction": "Buenos Aires",
+      "location": "Partido de General San Martín, Provincia de Buenos Aires.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 7652584231.61,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Presentación de ofertas hasta el 21/12/2026 a las 16:00; apertura 22/12/2026 a las 14:00 por PBACONTRATACIONES. Anticipo financiero: 5%; plazo de obra: 365 días.",
+      "description": "Licitación Pública 1003-0022-LPU26 para obras de desagües pluviales en las cuencas Lange y San Andrés, Partido de General San Martín. Presupuesto oficial ARS 7.652.584.231,61.",
+      "territorialRelevance": "Proyecto provincial de infraestructura hidráulica, relevante para constructoras, ingeniería, drenajes y proveedores de obras de saneamiento pluvial.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, páginas 36–37. Se verificaron objeto, jurisdicción, presupuesto, anticipo, plazo, fecha límite de ofertas y apertura. No se verificó adjudicación ni ejecución."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "provincial",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-21",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Ministerio de Infraestructura y Servicios Públicos",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "pba-minfra-licitacion-1003-0023-lpu26-entubamiento-arroyo-sarandi-avellaneda",
+      "name": "Provincia de Buenos Aires — LP 1003-0023-LPU26: entubamiento del Arroyo Sarandí, Avellaneda",
+      "sector": "Infraestructura hidráulica / saneamiento / entubamiento de arroyo / obra pública",
+      "jurisdiction": "Buenos Aires",
+      "location": "Avellaneda, Provincia de Buenos Aires.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 51707693706.79,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Presentación de ofertas hasta el 21/12/2026 a las 16:00; apertura 22/12/2026 a las 12:00 por PBACONTRATACIONES. Anticipo financiero: 5%; plazo de obra: 720 días.",
+      "description": "Licitación Pública 1003-0023-LPU26 para el entubamiento del Arroyo Sarandí en Avellaneda. Presupuesto oficial ARS 51.707.693.706,79.",
+      "territorialRelevance": "Obra hidráulica provincial de gran escala, relevante para empresas de ingeniería, movimiento de suelos, hormigón, canalizaciones y saneamiento. No corresponde a Escobar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, página 37. Se verificaron objeto, localización, presupuesto, anticipo, plazo, fecha límite de ofertas y apertura. No se verificó adjudicación ni ejecución."
+      }
+    },
+    {
+      "recordType": "tender",
+      "scope": "provincial",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-22",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Ministerio de Infraestructura y Servicios Públicos",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14528/ver",
+      "sourcePublishedAt": "2026-11-25",
+      "id": "pba-minfra-licitacion-1003-0020-lpu26-terminacion-polideportivo-bragado",
+      "name": "Provincia de Buenos Aires — LP 1003-0020-LPU26: terminación del Polideportivo Municipal de Bragado",
+      "sector": "Infraestructura deportiva / obra civil / equipamiento público",
+      "jurisdiction": "Buenos Aires",
+      "location": "Bragado, Provincia de Buenos Aires.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 4755862136.56,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Presentación de ofertas hasta el 22/12/2026 a las 16:00; apertura 23/12/2026 a las 12:00 por PBACONTRATACIONES. Anticipo financiero: 5%; plazo de obra: 547 días.",
+      "description": "Licitación Pública 1003-0020-LPU26 para terminar el Polideportivo Municipal de Bragado. Presupuesto oficial ARS 4.755.862.136,56.",
+      "territorialRelevance": "Proyecto provincial de infraestructura deportiva, relevante para constructoras, instalaciones, equipamiento y proveedores de obra pública.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "BOPBA edición 30368, sección oficial, página 38. Se verificaron objeto, municipio, presupuesto, anticipo, plazo, fecha límite de ofertas y apertura. No se verificó adjudicación ni ejecución."
+      }
+    },
+    {
+      "recordType": "tender",
       "scope": "municipal",
       "stage": "announced",
       "validFrom": "2026-11-24",
@@ -1282,15 +1767,15 @@
       "sector": "Tecnología / infraestructura tecnológica hospitalaria",
       "jurisdiction": null,
       "location": "Argentina — UOC del Hospital Naval Buenos Aires; el aviso no detalla el lugar de entrega.",
-      "opportunityStatus": "open",
+      "opportunityStatus": "closed",
       "amount": null,
-      "period": "Retiro del pliego y presentación de ofertas hasta el 25/11/2026 a las 10:00; consultas hasta el 19/11/2026 a las 10:00; apertura electrónica el 25/11/2026 a las 10:00, por COMPR.AR.",
+      "period": "Presentación de ofertas y apertura electrónica previstas para el 25/11/2026 a las 10:00 por COMPR.AR. El plazo había vencido al control de las 10:58 ART. No se obtuvo el acta de apertura.",
       "description": "Licitación Pública 0497/2026 de la Armada Argentina para adquirir infraestructura tecnológica destinada al Hospital Naval Buenos Aires Cirujano Mayor Doctor Pedro Mallo. El aviso no publica presupuesto ni detalla componentes técnicos o lugar de entrega. Revisar el pliego en COMPR.AR para confirmar especificaciones, garantías y requisitos.",
       "territorialRelevance": "Alcance nacional; oportunidad de provisión tecnológica vinculada a infraestructura hospitalaria. El aviso no permite inferir componentes, monto ni proveedor adjudicatario.",
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-25",
-        "scope": "Revisión del aviso original del Boletín Oficial, publicado el 13/11/2026 (e. 12/11, v. 13/11). Se verificaron organismo, UOC, objeto, expediente, modalidad, retiro del pliego, consultas, presentación y apertura. A las 09:08 ART del 25/11 el plazo de presentación y apertura previsto para las 10:00 seguía vigente. No se revisó el pliego completo ni se verificaron presupuesto, ofertas, adjudicación o ejecución."
+        "scope": "Revalidado en el aviso original del Boletín Oficial de la República Argentina a las 10:58 ART del 25/11/2026. El aviso fija el límite de presentación y la apertura automática para las 10:00; se marca closed por vencimiento temporal. No se obtuvo el acta electrónica ni se verificaron ofertas, adjudicación o ejecución."
       }
     },
     {
