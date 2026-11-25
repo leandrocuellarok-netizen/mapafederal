@@ -19,25 +19,25 @@ const expected = {
     url: "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
     published: "2026-11-19",
     checkedAt: "2026-11-25",
-    scopePattern: /Recomprobado el 25\\/11\\/2026/i
+    scopePattern: /Recomprobado el 25.11.2026/i
   },
   "escobar-licitacion-72-2026-cascote": {
     url: "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
     published: "2026-11-19",
     checkedAt: "2026-11-25",
-    scopePattern: /Recomprobado el 25\\/11\\/2026/i
+    scopePattern: /Recomprobado el 25.11.2026/i
   },
   "escobar-licitacion-74-2026-polideportivo-maschwitz-pista-atletismo": {
     url: "https://boletinoficial.gba.gob.ar/secciones/14517/ver",
     published: "2026-11-18",
     checkedAt: "2026-11-25",
-    scopePattern: /Recomprobado el 25\\/11\\/2026/i
+    scopePattern: /Recomprobado el 25.11.2026/i
   },
   "escobar-licitacion-75-2026-control-vectores": {
     url: "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
     published: "2026-11-19",
     checkedAt: "2026-11-25",
-    scopePattern: /Recomprobado el 25\\/11\\/2026/i
+    scopePattern: /Recomprobado el 25.11.2026/i
   }
 };
 
