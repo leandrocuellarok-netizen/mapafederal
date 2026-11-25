@@ -572,6 +572,28 @@
     ]
   },
   {
+    "id": "news-www-paloaltonetworks-com-company-press-2026-palo-alto-networks-to-acquire-applied-compute-bringing-secure-open-weight-ai-to-the-enterprise",
+    "title": "Palo Alto Networks acordó adquirir Applied Compute por USD 4.500 millones para reforzar la IA empresarial segura",
+    "date": "2026-11-18",
+    "category": "Tecnología",
+    "summary": "Palo Alto Networks anunció un acuerdo definitivo, íntegramente en acciones y valuado en USD 4.500 millones, para adquirir Applied Compute, plataforma de post-entrenamiento e inferencia de modelos open-weight. El cierre está previsto para el tercer trimestre fiscal de 2027 y depende de condiciones habituales, incluida la autorización regulatoria. Es un acuerdo anunciado, no una adquisición ya completada ni una prueba de disponibilidad general de las capacidades descritas.",
+    "source": "Palo Alto Networks (comunicado corporativo)",
+    "url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-to-acquire-applied-compute--bringing-secure-open-weight-ai-to-the-enterprise",
+    "period": "Acuerdo anunciado el 18/11/2026; cierre esperado en el tercer trimestre fiscal de 2027, sujeto a condiciones de cierre y autorización regulatoria.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Estados Unidos — empresa anunciante; alcance corporativo internacional. No se identifica despliegue específico en Argentina.",
+    "sector": "Ciberseguridad / IA empresarial / modelos open-weight / post-entrenamiento e inferencia",
+    "territorialRelevance": "Señal relevante para el seguimiento de seguridad, despliegue y gobernanza de modelos abiertos en empresas argentinas; no acredita clientes, contratos ni implementación en Escobar o Argentina.",
+    "relatedSources": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Revisión del comunicado corporativo original de Palo Alto Networks del 18/11/2026. La fuente confirma un acuerdo definitivo all-stock valuado en USD 4.500 millones, sujeto a condiciones habituales y autorización regulatoria, con cierre esperado en el tercer trimestre fiscal de 2027. Se atribuyen a la empresa las capacidades y beneficios esperados; no se afirma que la adquisición esté cerrada ni que el producto combinado esté disponible."
+    }
+  },
+  {
     "title": "knowmad mood adquirió la consultora argentina Danwor y amplió su negocio de Data & AI",
     "date": "2026-11-17",
     "category": "Tecnología",
