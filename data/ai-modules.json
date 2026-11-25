@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-25",
   "note": "Los estados describen capacidades disponibles en el repositorio, no promesas de desarrollo ni integraciones externas.",
   "modules": [
     {
@@ -67,7 +67,7 @@
       "description": "Descubrimiento y organización de eventos por sector y localización.",
       "status": "planned",
       "statusLabel": "Planificado · requiere fuentes de organizadores",
-      "currentCapability": "Existe un contrato JSON versionado y validado en data/events.json con dos registros históricos completados (Feria Japonesa Bazaa, 15/11/2026; Ronda de Negocios Escobar, 24/11/2026) y dos eventos futuros confirmados: Ronda de Negocios de Energía y Minería de PBA (01/12/2026, inscripción cerrada el 13/11) y Ronda RIGI (02/12/2026, inscripción B2B cerrada el 16/11). No hay agenda integrada, ingesta automática ni confirmación de cupos.",
+      "currentCapability": "Existe un contrato JSON versionado y validado en data/events.json con siete registros documentales: dos eventos completados, la Semana de la IA en desarrollo (25–27/11/2026, C3, CABA) y cuatro eventos futuros confirmados: Ronda de Negocios de Energía y Minería PBA (01/12/2026; inscripción cerrada el 13/11), Ronda RIGI (02/12/2026; inscripción B2B cerrada el 16/11 y otras actividades anunciadas hasta el 30/11), Colonia de Verano 2027 (04–28/01) y temporada de piletas (04–28/01 y 01–28/02). No hay agenda integrada, ingesta automática ni confirmación de cupos.",
       "dependencies": [
         "data/events.json",
         "Fuentes oficiales de organizadores y recintos",
