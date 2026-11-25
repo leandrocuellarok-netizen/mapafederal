@@ -209,7 +209,7 @@ assert.equal(escobarNotice.verification.status, "editorial_reviewed");
 assert.equal(escobarNotice.verification.checkedAt, "2026-11-25");
 assert.match(escobarNotice.summary, /no acredita que la transferencia se haya completado/i);
 assert.match(escobarNotice.verification.scope, /se omiten nombres, DNI y CUIT de particulares/i);
-assert.doesNotMatch(JSON.stringify(escobarNotice), /\\b(?:DNI|CUIT)\\s*[:#]?\\s*\\d/i);
-assert.doesNotMatch(JSON.stringify(escobarNotice), /HERNANDEZ|CHAPAPI/i);
+assert.doesNotMatch(JSON.stringify(escobarNotice), /\b(?:DNI|CUIT)\s*[:#]?\s*\d/i);
+assert.doesNotMatch(JSON.stringify(escobarNotice), /hernandez|chapapi/i);
 assert.equal(new URL(escobarNotice.url).protocol, "https:");
 
