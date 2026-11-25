@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 00:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 00:07 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -173,4 +173,14 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - Escobar / BESS Maschwitz: se pudo inspeccionar el texto extraído del EIAS BESS MAS 022/25 completo. La portada, el resumen ejecutivo y la sección socioeconómica identifican Dique Luján, Tigre, y el resumen consigna parcela 279a, partida 120574 y coordenadas. Sin embargo, el Mapa 9 topográfico describe PA Maschwitz en Ingeniero Maschwitz, Escobar. Es una contradicción interna del mismo EIAS, además de la clasificación del expediente de participación 2026 como Escobar. El registro permanece provincial, sin coordenada ni marcador, hasta obtener aclaración catastral o administrativa.
 - Fuentes primarias revisadas: Federal Register/BIS, FR Doc. 2026-23999; Nestlé Global, comunicado del 20/11/2026; Ministerio de Ambiente PBA, ficha de participación pública del BESS y EIAS BESS MAS 022/25. La comunicación municipal de Escobar del 03/11 y las coberturas vecinales del 22–24/11 siguen como contexto atribuido, no como autorización ni evaluación técnica.
 - Contrato enterprise: sin cambios. freeFormReports=false, customAnalyses=by_request, predictiveClaimsRequireValidation=true, clientDataPublic=false. Federal Reports continúa como único piloto descriptivo; cinco módulos siguen planificados. No se habilita generación libre de informes ni se presentan modelos predictivos como operativos.
-- Validación previa a escritura: JSON parseado; URLs nuevas HTTPS; IDs y URLs de Radar IA deduplicados; orden cronológico preservado; clasificación geográfica internacional mantenida sin asignar provincias argentinas. El commit de ciclo dispara el workflow de validación y despliegue; el resultado se comprobará después de la publicación.
+- Validación previa a escritura: JSON parseado; URLs nuevas HTTPS; IDs y URLs de Radar IA deduplicados; orden cronológico preservado; clasificación geográfica internacional mantenida sin asignar provincias argentinas. La validación y el despliegue de GitHub Pages finalizaron correctamente en el workflow 45537686651. La apertura independiente de la página desde el navegador de consulta no estuvo disponible; no se declara verificación visual.
+
+
+## Resultado de publicación — 00:07, 25/11/2026
+
+- Commit de datos: [43d6fa1](https://github.com/leandrocuellarok-netizen/mapafederal/commit/43d6fa1f3afd2178e7af243d98006675d6b41edc).
+- Workflow: [45537686651](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45537686651) — validación completa y despliegue de GitHub Pages: success.
+- URL publicada por el pipeline: https://leandrocuellarok-netizen.github.io/mapafederal/
+- La inspección independiente de la URL desde el navegador de consulta no estuvo disponible. Se confirma el estado del pipeline, no la revisión visual de cada pantalla.
+- Las dos ejecuciones fallidas anteriores fueron causadas por aserciones nuevas de prueba: una diferencia literal en el texto de la fecha efectiva y el ID de noticia BIS no ajustado al algoritmo determinista de URL. Ambas se corrigieron antes de la ejecución exitosa; los datos y sus fuentes no se alteraron por esos fallos.
+- Contrato enterprise verificado nuevamente: informes libres públicos deshabilitados; análisis personalizados bajo solicitud; datos de clientes privados; pronósticos sujetos a backtesting y validación. Un piloto descriptivo y cinco módulos planificados.
