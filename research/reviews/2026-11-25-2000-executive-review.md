@@ -528,3 +528,21 @@ Prioridades para el siguiente ciclo:
 3. Comprobar visitas, actas y adjudicaciones sin inferir resultados.
 4. Relevar nuevas oportunidades de Escobar y confirmar con fuentes posteriores el avance de las obras de Garín y El Dorado.
 5. Mantener el balance de las 20:00 provisional hasta incorporar las verificaciones posteriores.
+
+### Reconciliación final de Investment Finder — corte 14:03 ART
+
+El conteo de 108 oportunidades consignado en la actualización anterior era intermedio. Una segunda pasada por las ediciones oficiales del 24 y 25/11 permitió incorporar nueve llamados adicionales, todos con fuente primaria, cronograma y estado documentados:
+
+- Gendarmería LP 0077/2026: estación documentológica multiespectral.
+- Armada LP 0611/2026: material para modernizar sistemas de comando y control.
+- Armada LP 0573/2026: esfera giroscópica.
+- APN LP 0038/2026: 200 teléfonos rugerizados para trabajo de campo.
+- RENAPER LP 0012/2026: kits para la toma de trámites.
+- Hospital Cuenca Alta LP 088/2026: transductores para Clearvue 550; disponibilidad desconocida por falta de fecha límite separada de ofertas.
+- Armada LP 0599/2026: equipamiento sanitario para el Destacamento Naval Río Grande.
+- Armada LP 0570/2026: modernización del sistema de monitoreo de equipos del destructor ARA Sarandí.
+- Universidad Nacional de Quilmes LP 8/2026: equipamiento informático.
+
+El estado definitivo del corte es **117 oportunidades: 69 abiertas, 42 desconocidas y 6 cerradas**. No se añadieron presupuestos no publicados, adjudicaciones inferidas ni capacidades técnicas no contenidas en los avisos. La actualización adicional está documentada en el [registro del ciclo 14:03](../runs/2026-11-25-gbie-cycle-1403.md).
+
+El workflow #656, asociado al commit de datos `4f4e7fb028be1a136cb8d0fd02c54443118c0a5f`, completó la validación; el despliegue estaba en cola al momento de la ampliación documental. El workflow #653 ya había desplegado correctamente la versión anterior de los catálogos; no se considera publicado el último lote hasta que finalice el despliegue asociado a #656.
