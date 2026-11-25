@@ -1,5 +1,36 @@
 [
   {
+    "id": "news-argentina-gob-ar-node-522472-semana-ia-2026",
+    "title": "Comenzó la 2.ª Semana de la Inteligencia Artificial en Argentina",
+    "date": "2026-11-25",
+    "category": "Tecnología",
+    "summary": "La Secretaría de Innovación, Ciencia y Tecnología abrió la segunda Semana de la Inteligencia Artificial, del 25 al 27 de noviembre en el Centro Cultural de la Ciencia (C3), Ciudad de Buenos Aires. La agenda oficial reúne al sector público, empresas, startups, investigadores y comunidad educativa, con paneles sobre trabajo, industria, agro, energía y minería, salud, Estado, ecosistema emprendedor e IA en el espacio, además de talleres y actividades de formación.",
+    "source": "Secretaría de Innovación, Ciencia y Tecnología — Argentina.gob.ar",
+    "url": "https://www.argentina.gob.ar/node/522472",
+    "period": "Evento del 25 al 27/11/2026. La apertura oficial se anunció el 25/11; la página del evento publica el programa de las tres jornadas.",
+    "jurisdictions": [
+      "CABA"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Sede publicada: Centro Cultural de la Ciencia (C3), Ciudad Autónoma de Buenos Aires."
+    ],
+    "jurisdictionScope": "Argentina — encuentro de alcance nacional con sede presencial en CABA.",
+    "sector": "Inteligencia artificial / innovación / empresas y startups / educación y formación / industria / agro / energía y minería / salud / Estado / economía espacial",
+    "territorialRelevance": "Alta para el ecosistema argentino de IA: conecta empresas, startups, investigadores, sector público y formación; ofrece señales sectoriales sobre adopción y capacidades. No constituye por sí misma una inversión, una licitación ni un acuerdo comercial cerrado.",
+    "verification": {
+      "status": "verified",
+      "checkedAt": "2026-11-25",
+      "scope": "La nota oficial de Argentina.gob.ar fechada el 25/11/2026 confirma la apertura y el organizador. El sitio oficial del evento confirma fechas 25–27/11, sede C3, formato de tres jornadas y agenda temática. No se verifican acuerdos, inversiones, contratos ni participación individual del usuario."
+    },
+    "relatedSources": [
+      {
+        "label": "Sitio oficial del evento — fechas, sede y programa",
+        "url": "https://semanadelaia.gob.ar/"
+      }
+    ]
+  },
+  {
     "id": "news-docs-fcc-gov-public-attachments-da-26-1273a1-pdf",
     "title": "La FCC autorizó condicionalmente la constelación orbital Starmind de SpaceX para centros de datos",
     "date": "2026-11-25",
