@@ -586,3 +586,11 @@ El balance sigue provisional hasta la revisión de las 20:00.
 El workflow #661 no desplegó porque el test de procedencia de Escobar esperaba la URL anterior `/secciones/14523/ver`, mientras los registros ya apuntaban al PDF oficial `/secciones/14523/descargar`. Se corrigió la expectativa del test para mantener el vínculo con la fuente primaria descargable. La validación y el despliegue del commit correctivo siguen pendientes; el balance no declara publicación hasta confirmación.
 
 - El workflow #662 detectó una segunda discrepancia de test (expediente guardado en `period`, aserción mirando `description`). Se corrigió la prueba para respetar el esquema; nuevo CI pendiente.
+
+
+### Confirmación de publicación — 15:16 ART
+
+- El workflow [#663](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45672935679) finalizó con validación y despliegue de GitHub Pages exitosos. Esto confirma la publicación del corte de 64 registros de Radar IA y 129 oportunidades de Investment Finder.
+- Pasaron los tests de procedencia de Escobar y las 12 licitaciones del Boletín Oficial bonaerense, además de los controles SEO/GEO y de filtros.
+- Los fallos #661 y #662 fueron discrepancias de tests de fuente/campo, corregidas sin cambiar datos ni relajar validaciones.
+- No hubo inspección visual independiente: las URLs de Pages no resultaron accesibles desde el navegador de esta ejecución. El despliegue queda acreditado por GitHub Actions.
