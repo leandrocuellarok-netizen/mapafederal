@@ -17,7 +17,7 @@ Dominio: cultura, deporte, recreación e inclusión
 Fuente primaria: Municipalidad de Escobar.  
 Publicación: 16/11/2026.  
 Título: «Escobar abre la inscripción para la Colonia de Verano 2027 y anuncia los horarios de las piletas municipales».  
-URL: https://www.escobar.gob.ar/escobar-abre-la-inscripcion-para-la-colonia-de-verano-2027-y-anuncia-los-horarios-de-las-piletas-municipales/
+URL canónica: https://www.escobar.gob.ar/noticias/escobar-abre-la-inscripcion-para-la-colonia-de-verano-2027-y-anuncia-l/
 
 La publicación anuncia una colonia gratuita del 04/01/2027 al 28/01/2027. Para chicos de 5 a 13 años y adolescentes de 14 a 17 años indica dos turnos (08:00–12:00 y 13:00–17:00) en todos los polideportivos municipales. La colonia para adultos mayores se anuncia de 09:00 a 12:00 en el Club Italiano, Loma Verde. Para personas con discapacidad de 5 a 13 años, la modalidad integrada se desarrolla en todos los polideportivos; para personas de 14 años en adelante, la sede anunciada es YMCAHUASI, España 177, Matheu.
 
@@ -25,10 +25,10 @@ La inscripción prioritaria para socios fue anunciada del 17/11 al 23/11/2026. L
 
 ## 3. Alcance y límites de verificación
 
-- El resultado indexado de la publicación municipal contiene el texto y la fecha 16/11/2026.
-- El índice oficial de noticias también muestra el mismo título y fecha: https://www.escobar.gob.ar/noticias-columnas/
+- Se abrió directamente el enlace canónico de la publicación municipal y se comprobaron el título, fecha 16/11/2026, modalidades, sedes, horarios, plazos y carácter voluntario del bono.
+- El índice oficial de noticias también muestra el mismo título y fecha: https://www.escobar.gob.ar/noticias-columnas/.
 - La apertura general anunciada (24/11–04/12) está dentro de su período al 25/11/2026.
-- La consulta directa del artículo devolvió HTTP 403. Se trata de una restricción de acceso del sitio al navegador de verificación, no de una prueba de enlace roto.
+- Una variante antigua de la URL, sin el segmento `/noticias/`, devolvió HTTP 403; no se interpreta como enlace roto porque el enlace canónico sí abrió correctamente.
 - No se verificó el estado actual del formulario de Escobar 360, los cupos por sede, la disponibilidad individual ni una inscripción particular.
 - La fuente no publica una nómina completa de todos los polideportivos ni cupos por establecimiento.
 - La sede de inscripción Polideportivo Luis Monti se identifica en Belén de Escobar, Av. Tapia de Cruz 1280, mediante el directorio oficial Escobar 360 consultado el 25/11/2026. Esta fuente complementaria documenta la ubicación del establecimiento, no la disponibilidad del evento.
@@ -59,8 +59,9 @@ Se actualizó la fecha y nota del catálogo. Se corrigieron los recuentos del RE
 
 ## 6. Validación y publicación
 
-- Workflow #630 (run ID 45635849312), sobre el commit `5dd963baafca88976d3a35e609d363633f357feb`: job `validate` = success; test específico de Colonia de Verano 2027 = success; job `deploy` = success. GitHub Actions confirmó el despliegue en Pages.
-- La comprobación HTTP independiente de `https://leandrocuellarok-netizen.github.io/mapafederal/` no pudo completarse con el navegador de verificación; no se afirma inspección visual.
+- Workflow #630 (run ID 45635849312), sobre el commit `5dd963baafca88976d3a35e609d363633f357feb`: job `validate` = success; test específico de Colonia de Verano 2027 = success; job `deploy` = success.
+- Workflow #631 (run ID 45636127088), sobre el commit `6653320a32e7a0324aaa1c0ffa8baf913a72c2d6`: validación y despliegue de Pages exitosos, incluida la prueba de procedencia geográfica de Luis Monti.
+- La comprobación HTTP independiente de `https://leandrocuellarok-netizen.github.io/mapafederal/` no pudo completarse: el navegador no accedió y el entorno de red devolvió fallo DNS. No se afirma inspección visual.
 
 ## 7. Pendientes
 
@@ -72,3 +73,8 @@ Se actualizó la fecha y nota del catálogo. Se corrigieron los recuentos del RE
 ## Actualización de procedencia geográfica — 25/11/2026
 
 Se añadió como fuente complementaria el directorio oficial Escobar 360, que identifica el Polideportivo Luis Monti en Belén de Escobar y publica Av. Tapia de Cruz 1280. La dirección se incorpora como dato de ubicación del establecimiento; no se extrapola a cupos, funcionamiento de la colonia ni horarios del evento. El test específico ahora comprueba esta referencia y la segunda fuente oficial.
+
+
+## Corrección de URL canónica — 25/11/2026
+
+La publicación municipal fue abierta correctamente en su ruta canónica bajo `/noticias/`. Se reemplazó la variante anterior del enlace por la URL canónica, se ajustó el test y se actualizó el enlace de referencia en README. La respuesta HTTP 403 observada correspondía a la variante sin `/noticias/`, no al artículo canónico.

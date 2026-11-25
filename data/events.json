@@ -123,7 +123,7 @@
       "organizer": "Municipalidad de Escobar",
       "sector": "Deporte / recreación / inclusión / comunidad",
       "sourceName": "Municipalidad de Escobar",
-      "sourceUrl": "https://www.escobar.gob.ar/escobar-abre-la-inscripcion-para-la-colonia-de-verano-2027-y-anuncia-los-horarios-de-las-piletas-municipales/",
+      "sourceUrl": "https://www.escobar.gob.ar/noticias/escobar-abre-la-inscripcion-para-la-colonia-de-verano-2027-y-anuncia-l/",
       "sourcePublishedAt": "2026-11-16",
       "period": "Inscripción prioritaria para socios: 17/11/2026–23/11/2026 (finalizada). Inscripción general: 24/11/2026–04/12/2026. Actividades: 04/01/2027–28/01/2027.",
       "status": "confirmed",
@@ -142,7 +142,7 @@
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-25",
-        "scope": "Se contrastó el texto indexado de la publicación municipal fechada el 16/11/2026 con el índice oficial de noticias, que muestra el mismo título y fecha. La fuente anuncia actividades del 04/01 al 28/01/2027, inscripción general del 24/11 al 04/12/2026, modalidades, sedes y requisitos. La apertura general está dentro del período publicado al 25/11/2026. La consulta directa del artículo devolvió HTTP 403; por ello la comprobación se limita al contenido indexado y al índice municipal. No se verificó el estado actual del formulario de Escobar 360, cupos por sede ni inscripción individual. La ubicación del Polideportivo Luis Monti en Belén de Escobar y su dirección Av. Tapia de Cruz 1280 se contrastaron por separado con el directorio oficial de Escobar 360, consultado el 25/11/2026; esta referencia solo documenta la ubicación del establecimiento, no los cupos ni la operación del evento."
+        "scope": "Se abrió y verificó directamente el enlace canónico de la publicación municipal del 16/11/2026; se confirmaron título, fecha, modalidades, sedes, horarios, plazos de inscripción y carácter voluntario del bono contribución. El índice oficial de noticias muestra el mismo título y fecha. Una variante antigua de URL sin el segmento /noticias/ devolvió HTTP 403; se conserva el enlace canónico accesible. La inscripción general anunciada (24/11–04/12/2026) está dentro de su período al 25/11/2026. No se verificó el estado actual del formulario de Escobar 360, cupos por sede ni inscripción individual. La ubicación del Polideportivo Luis Monti en Belén de Escobar y su dirección Av. Tapia de Cruz 1280 se contrastaron por separado con el directorio oficial de Escobar 360, consultado el 25/11/2026; esta referencia solo documenta la ubicación del establecimiento, no los cupos ni la operación del evento."
       }
     }
   ]
