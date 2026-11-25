@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 02:10 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 03:09 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,7 +8,7 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 48 registros |
+| Radar IA | 49 registros |
 | Investment Finder | 57 registros |
 | Oportunidades abiertas | 26 |
 | Disponibilidad desconocida | 28 |
@@ -228,3 +228,20 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - Las páginas principales, Radar IA e Investment Finder existen en main y conservan referencias a sus catálogos JSON.
 - El estado combinado del commit final no devolvió checks. No se atribuye CI ni despliegue de GitHub Pages exitosos hasta obtener un resultado explícito.
 - La URL pública de Pages no fue accesible desde el navegador de consulta; no hay inspección visual independiente. El balance permanece provisional para la revisión de las 20:00.
+
+## Actualización del ciclo 03:09 — 25/11/2026
+
+- Radar IA: 48 → 49 registros. Se incorporó el comunicado corporativo de Automation Anywhere del 24/11/2026, que afirma haber completado la adquisición de Boost.ai. La integración combina IA conversacional y de voz con automatización agéntica de procesos empresariales. El comunicado no informa precio de compra ni calendario general de despliegue. Las métricas comerciales y de rendimiento permanecen atribuidas a la empresa; no se tratan como auditoría independiente. No se acredita despliegue en Argentina o Escobar. Fuente: https://www.automationanywhere.com/company/press-room/automation-anywhere-completes-boostai-acquisition-challenges-saas-giants-race.
+- Investment Finder: sin nuevas oportunidades; 57 registros (26 abiertas, 28 con disponibilidad desconocida y 3 cerradas). Se amplió la ficha ya existente de Red Sostenible con la página oficial municipal: https://www.escobar.gob.ar/municipio/sostenible/redsostenible/. La ficha identifica la Ordenanza 18498/25, programa anual de cuatro etapas y diez pasos, medición con participación de la UNGS, abono de Etapa 1 tras aceptación (monto no publicado), compensación por proyectos FORESE o proyecto propio y reconocimientos S/S+/S++. La Municipalidad declara una «ventaja en licitaciones municipales», pero no especifica mecanismo ni efecto jurídico; no se infiere preferencia ni adjudicación. El enlace de adhesión dirige a Escobar 360, pero no se confirmó el formulario individual ni una aceptación. Se conserva el plazo del 30/12/2026 y monto nulo: no es subsidio ni transferencia monetaria.
+- Escobar: la edición 14527 del Boletín Oficial volvió a agotar el tiempo de consulta. Los accesos directos a las fichas municipales de LP 66, 69, 71, 72, 74 y 75 no pudieron verificarse desde el navegador. No se agregaron llamados ni se cambiaron estados.
+- Arquitectura y contrato enterprise sin cambios. Se mantienen informes libres públicos deshabilitados, análisis personalizados bajo solicitud, datos de clientes privados y exigencia de backtesting/validación para cualquier afirmación predictiva. Federal Reports sigue como único piloto descriptivo; cinco módulos permanecen planificados.
+- Commits del ciclo: Radar IA `59fef6bce8a65d7e178e807a7188e8aa1304e12a`; Investment Finder `0b06bc479424d7bca0cbf42a3855e3396e5a3721`; pruebas `aea6fce08aed193824d2b3d7f9c4bbf002ee3484`. Registro: [GBIE ciclo 03:09](../runs/2026-11-25-gbie-cycle-0309.md).
+- El workflow #554 del ciclo anterior completó validate y deploy, pero la comprobación HTTP independiente de Pages no resolvió el dominio por DNS. Los commits de este ciclo todavía deben pasar su propio workflow; no se declara publicación exitosa hasta comprobarlo.
+- Pendientes prioritarios para las 20:00: reintentar Boletín Oficial 14527 y páginas de licitaciones; confirmar adhesión y costo de Red Sostenible; revisar adjudicaciones y actas; resolver la discrepancia territorial del BESS Maschwitz; verificar CI, Pages y accesibilidad de los JSON.
+
+### Cierre técnico del ciclo 03:09
+- Se actualizaron `data/news.json`, `data/investment-opportunities.json` y `tests/escobar-economic-profile.test.js`; los JSON fueron parseados y se comprobaron IDs, duplicados, HTTPS y trazabilidad.
+- El nuevo registro de Radar IA eleva el catálogo a 49 noticias. Investment Finder permanece en 57 oportunidades.
+- El registro de ejecución quedó publicado en `research/runs/2026-11-25-gbie-cycle-0309.md`.
+- Los commits de datos y pruebas activaron GitHub Actions; el estado del workflow de este ciclo y la comprobación visual/HTTP de Pages siguen pendientes.
+
