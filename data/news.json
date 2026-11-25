@@ -8,14 +8,10 @@
     "source": "Federal Communications Commission — Space Bureau, orden DA 26-1273",
     "url": "https://docs.fcc.gov/public/attachments/DA-26-1273A1.pdf",
     "period": "Orden emitida el 25/11/2026. La autorización exige un primer satélite operativo antes del 25/11/2033, 10% de la constelación antes del 25/11/2035, 50% antes del 25/11/2038 y el resto antes del 25/11/2040. La autorización no demuestra despliegue, financiación cerrada ni viabilidad comercial.",
-    "jurisdictions": [
-      "Estados Unidos"
-    ],
-    "geographyStatus": "explicit",
-    "geographyEvidence": [
-      "La autorización fue emitida por la Space Bureau de la Federal Communications Commission de Estados Unidos para Space Exploration Holdings, LLC (SpaceX)."
-    ],
-    "jurisdictionScope": "Estados Unidos — jurisdicción federal de la FCC sobre la autorización de la constelación orbital Starmind.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Estados Unidos — autorización federal de la FCC Space Bureau para una constelación orbital. La interfaz territorial del catálogo se limita a jurisdicciones argentinas; por eso no se asigna un filtro geográfico argentino.",
     "sector": "Inteligencia artificial / infraestructura de cómputo / centros de datos / satélites / telecomunicaciones / economía espacial / regulación de espectro",
     "territorialRelevance": "Señal internacional para Vilanova AI Solutions y Mapa Federal sobre nuevas arquitecturas de infraestructura de IA y su relación con espectro, energía, lanzamiento, disipación térmica, residuos orbitales y permisos. No constituye una inversión ejecutada ni una oportunidad localizada en Argentina o Escobar; no se extrapolan costos o beneficios ambientales.",
     "verification": {
