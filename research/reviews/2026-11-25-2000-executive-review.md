@@ -579,3 +579,8 @@ El workflow #656, asociado al commit de datos `4f4e7fb028be1a136cb8d0fd02c544431
 - Confirmar CI/Pages del nuevo commit antes de declarar publicación.
 
 El balance sigue provisional hasta la revisión de las 20:00.
+
+
+### Incidencia de CI — 15:12 ART
+
+El workflow #661 no desplegó porque el test de procedencia de Escobar esperaba la URL anterior `/secciones/14523/ver`, mientras los registros ya apuntaban al PDF oficial `/secciones/14523/descargar`. Se corrigió la expectativa del test para mantener el vínculo con la fuente primaria descargable. La validación y el despliegue del commit correctivo siguen pendientes; el balance no declara publicación hasta confirmación.
