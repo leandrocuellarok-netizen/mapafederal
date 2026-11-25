@@ -464,3 +464,67 @@ Se incorporaron siete contrataciones nacionales publicadas o reinsertadas en el 
 - Se intentó reejecutar el job fallido más reciente, pero la acción de reintento devolvió un error interno. No se declara despliegue exitoso ni inspección visual independiente.
 - El contrato enterprise, la arquitectura, los módulos, los nodos y los controles de acceso público no se modificaron. No se habilitó generación libre de informes ni se presentó ningún modelo predictivo como operativo.
 - Próximos pasos: reintentar Pages cuando se recupere el servicio; revisar los pliegos completos y eventuales circulares; seguir actas y adjudicaciones sin inferencias; reintentar las fichas municipales inaccesibles; resolver la georreferenciación del BESS; consolidar el balance a las 20:00.
+
+---
+
+## Actualización acumulada — 25/11/2026, 14:03 ART
+
+### Estado comprobado del repositorio
+
+Se inspeccionó `main` antes de editar. El HEAD inicial fue `38e6e6268bde92b763e6a6c298dfb78c50e405aa`; se revisaron los cambios concurrentes de calle Salta en Garín, las correcciones posteriores y la documentación del ciclo anterior. La arquitectura maestra y el contrato enterprise no se modificaron.
+
+### Radar IA: 63 registros
+
+Base anterior: 61. Se incorporaron dos artículos de Reuters del 25/11:
+
+- [Anthropic: escrutinio de valuaciones y costos de infraestructura](https://www.reuters.com/business/anthropics-slide-tests-wall-streets-lofty-bets-future-ai-profits-2026-11-25/). Se registra como análisis de mercado, no como pronóstico.
+- [Nio: uso transversal de agentes de IA](https://www.reuters.com/technology/nio-says-ai-use-could-lift-gross-margin-by-10-percentage-points-2026-11-25/). La mejora potencial de 10 puntos de margen y los 7.500 agentes son afirmaciones de la empresa reportadas por Reuters, no resultados realizados ni validados independientemente.
+
+La noticia sobre IA industrial alemana ya estaba registrada y no se duplicó.
+
+### Investment Finder: 108 oportunidades
+
+Base comprobada después de cambios concurrentes: 98. Se agregaron diez contrataciones nacionales, con fuente, publicación, jurisdicción/ubicación, sector, plazo, estado y alcance de verificación:
+
+1. APN LP 0036/2026 — módulos sanitarios prefabricados en el Parque Nacional Tierra del Fuego; ofertas 09/12.
+2. Gendarmería LP 0104/2026 — gestión integral de impresiones digitales; apertura 16/12.
+3. ARCA Regional Norte LP 14/2026 — higiene y seguridad laboral; estado desconocido porque el aviso no precisa el cierre de ofertas.
+4. ARCA Regional Salta LP 19/2026 — acarreo; apertura 04/12.
+5. ARN Concurso 6/2026 — conectividad para CNA y CNE; el aviso original fija ofertas hasta 26/11 a las 10:00 y la Circular 3 solo posterga la apertura al 03/12. No se presume prórroga de recepción.
+6. Hospital Cuenca Alta LP 087/2026 — bombas de infusión; disponibilidad desconocida por falta de cierre separado de ofertas.
+7. Hospital Cuenca Alta LP 093/2026 — volquetes; disponibilidad desconocida por falta de cierre separado de ofertas.
+8. UNSJ LP 4/2026 — repavimentación del Complejo Universitario Islas Malvinas; presupuesto oficial ARS 345.573.025 con IVA, recepción 11/12.
+9. Gendarmería LP 0101/2026 — limpieza del Paso Internacional Pérez Rosales; apertura 11/12.
+10. ARCA LP A0PC000000-0013-LPU26 — soporte de almacenamiento central All Flash; estado desconocido porque el aviso no detalla un cierre separado de ofertas.
+
+Distribución: 61 abiertas, 41 desconocidas y 6 cerradas. Los presupuestos publicados no se presentan como adjudicaciones ni gasto ejecutado.
+
+Se actualizó BCRA LP 48/26 con el aviso oficial del 25/11: visita obligatoria hasta 02/12, consultas hasta 03/12, ofertas hasta 14/12 a las 15:00 y requisito de registro de proveedores.
+
+### Escobar
+
+Se mantienen 24 registros municipales: 5 abiertos, 16 desconocidos y 3 cerrados. No se agregó una nueva licitación local en este corte.
+
+El registro de pavimentación de calle Salta, Garín, ya había sido agregado por un cambio concurrente; se verificó y no se duplicó. La publicación municipal del 16/11 informaba que estaba en etapa final, pero no se encontró confirmación posterior de recepción o finalización.
+
+Se enriqueció la ficha de El Dorado, Ingeniero Maschwitz: más de 23 cuadras, 2.300 metros y una inversión municipal aproximada cercana a ARS 7.000 millones. El importe se conserva como estimación anunciada, no como contrato ni gasto ejecutado. BESS Maschwitz sigue con disponibilidad desconocida y ubicación parcelaria pendiente.
+
+### Validación y publicación
+
+- Radar IA: 63 registros, IDs y URLs únicas, fechas ordenadas de más recientes a más antiguas, JSON parseado y enlaces HTTPS.
+- Investment Finder: 108 registros, IDs únicos, JSON parseado, fechas, estados y fuentes comprobados.
+- Se comprobó que las páginas principales, Radar IA e Investment Finder mantienen referencias a sus catálogos.
+- Commits de datos: [Radar IA](https://github.com/leandrocuellarok-netizen/mapafederal/commit/0fc63a2b7dad6cf206537f3a5b26f9c27b8e7710), [Investment Finder](https://github.com/leandrocuellarok-netizen/mapafederal/commit/ccd4eed8b9c1fe8e8b17c3fff6a4f3ba50d5394f), [orden cronológico de noticias](https://github.com/leandrocuellarok-netizen/mapafederal/commit/bfba1adb1d90ac47cdb5bb5244746d08e79ae88b).
+- Registro del ciclo: [14:03 ART](../runs/2026-11-25-gbie-cycle-1403.md).
+- Los workflows #650, #651 y #652 fallaron por el orden cronológico de las noticias; se corrigió en `bfba1ad`. El workflow [#653](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45662415272) finalizó con validación y despliegue de GitHub Pages exitosos. La inspección visual manual independiente no estuvo disponible.
+
+### Estado enterprise, riesgos y próximos pasos
+
+Se conserva el contrato: informes libres públicos deshabilitados, análisis personalizados bajo solicitud, datos de clientes privados y modelos predictivos no operativos sin datos, backtesting y validación. Federal Reports continúa como único piloto descriptivo; los otros cinco módulos permanecen planificados.
+
+Prioridades para el siguiente ciclo:
+1. Reconfirmar el cierre de ofertas de ARN 6/2026 antes del 26/11 a las 10:00.
+2. Revisar los pliegos de ARCA All Flash, ARCA Regional Norte y Hospital Cuenca Alta para aclarar plazos y condiciones.
+3. Comprobar visitas, actas y adjudicaciones sin inferir resultados.
+4. Relevar nuevas oportunidades de Escobar y confirmar con fuentes posteriores el avance de las obras de Garín y El Dorado.
+5. Mantener el balance de las 20:00 provisional hasta incorporar las verificaciones posteriores.
