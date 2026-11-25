@@ -132,4 +132,27 @@ assert.equal(market.coords, undefined, "No inventar coordenadas de las paradas i
 const marketRenderer = fs.readFileSync("assets/foco-escobar.js", "utf8");
 assert.match(marketRenderer, /economy\.commercialPrograms/);
 assert.match(marketRenderer, /Ver cronograma municipal por localidad/);
+
+const bess = opportunities.find(entry => entry.id === "bess-maschwitz-genneia-edenor-2026");
+assert.ok(bess, "Falta el registro del proyecto BESS Maschwitz");
+assert.equal(bess.scope, "provincial", "La discrepancia parcelaria impide asignarlo a un municipio");
+assert.equal(bess.stage, "preparation");
+assert.equal(bess.opportunityStatus, "unknown");
+assert.equal(bess.amount, null, "No inventar inversión");
+assert.equal(bess.coords, undefined, "No georreferenciar mientras la localización parcelaria siga en contradicción");
+assert.match(bess.location, /localización parcelaria permanece en contradicción documental/i);
+assert.match(bess.description, /clasifica el expediente como Partido de Escobar/i);
+assert.match(bess.description, /no se interpreta como aprobación ni como ausencia de observaciones/i);
+assert.match(bess.verification.scope, /adjunto del EIA 2026 devolvió timeout/i);
+const bessPba = bess.relatedSources.find(source => source.sourceName === "Ministerio de Ambiente de la Provincia de Buenos Aires" && source.url.includes("/participacion/resumen/"));
+assert.ok(bessPba, "Falta el expediente provincial de participación pública");
+assert.equal(bessPba.sourcePublishedAt, null, "No inventar fecha de publicación de la ficha");
+assert.deepEqual(bessPba.participationPeriod, { start: "2026-07-21", end: "2026-08-11" });
+assert.equal(bessPba.status, "pendiente", "La participación pública no equivale a una DIA");
+assert.equal(bessPba.verification.status, "verified");
+assert.equal(bessPba.verification.checkedAt, "2026-11-24");
+assert.match(bessPba.verification.scope, /clasifica el expediente.*Partido de Escobar/i);
+assert.match(bessPba.verification.scope, /no resuelve la contradicción/i);
+assert.equal(new URL(bessPba.url).protocol, "https:");
+
 console.log("Escobar: empresas, proyecto portuario, expedientes ambientales, períodos de participación y etiquetas de prefactibilidad comprobados.");
