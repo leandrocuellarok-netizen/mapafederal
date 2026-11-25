@@ -673,3 +673,7 @@ Nota de control de interfaz: las páginas index.html, radar-ia/index.html e inve
 Sin cambios: informes libres públicos deshabilitados; análisis personalizados bajo solicitud; datos de clientes no públicos; ningún modelo predictivo presentado como operativo sin datos, backtesting y validación documentados. Federal Reports sigue como único piloto descriptivo; los otros cinco módulos permanecen planificados.
 
 Corte provisional 16:59 ART. El balance de las 20:00 requiere una última comprobación de adjudicaciones, vencimientos, CI y publicación.
+
+
+### Nota de calidad 17:00 ART
+El primer CI de esta ejecución detectó una incompatibilidad de esquema en el exportador CSV: los registros con alcance nacional deben llevar `jurisdiction=null`, aunque el aviso identifique una sede local. Se corrigieron las fichas afectadas conservando el dato geográfico en `location`, y se endureció el test de regresión. El nuevo CI y Pages deben confirmarse antes de considerar publicada la actualización.

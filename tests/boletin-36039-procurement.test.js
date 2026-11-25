@@ -7,6 +7,7 @@ for(const [id,[status,until,published]] of Object.entries(expected)){
  assert.ok(x,"Falta "+id);
  assert.equal(x.recordType,"tender");
  assert.equal(x.scope,"national");
+ assert.equal(x.jurisdiction,null,"Los registros nacionales no deben asignarse a una jurisdicción subnacional.");
  assert.equal(x.opportunityStatus,status);
  assert.equal(x.validUntil,until);
  assert.equal(x.sourcePublishedAt,published);
