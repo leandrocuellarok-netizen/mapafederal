@@ -35,10 +35,10 @@
 
 ## Validación y publicación
 
-- JSON: parseado antes de preparar el commit.
-- Prueba nueva: incorporada al workflow; ejecución pendiente.
-- Commit: pendiente al momento de crear este registro.
-- GitHub Actions y GitHub Pages: pendientes de ejecución.
+- JSON: parseado antes del commit inicial `6f22fb6168c9621780e0726520d8b5257ece5025`.
+- Workflow #611: falló en la nueva prueba por una aserción que esperaba la palabra «siete», mientras la fuente reproduce literalmente «7 CDI». La prueba se ajustó para comprobar la transcripción exacta; no se modificó el dato fuente.
+- Corrección de prueba: commit pendiente de confirmación.
+- Workflow final y GitHub Pages: pendientes de nueva ejecución.
 - Inspección HTTP independiente de GitHub Pages: no disponible en esta ejecución de investigación.
 
 ## Evidencia necesaria para cerrar la conciliación

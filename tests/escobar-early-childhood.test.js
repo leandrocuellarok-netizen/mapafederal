@@ -51,7 +51,7 @@ const historic = directory.relatedSources.find(item => /Inscripción 2024/.test(
 const dataset = directory.relatedSources.find(item => /Dataset municipal/.test(item.label));
 assert.ok(education && children && conecta && historic && dataset);
 assert.match(education.note, /nueve/i);
-assert.match(children.note, /siete/i);
+assert.match(children.note, /Los 7 CDI/);
 assert.match(conecta.note, /N°8/);
 assert.match(conecta.note, /N°7/);
 assert.equal(historic.sourcePublishedAt, "2023-10-23");
