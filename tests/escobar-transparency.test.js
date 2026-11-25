@@ -309,3 +309,29 @@ for (const url of [floodDetection.sourceUrl, floodDetection.resourceUrl]) {
 assert.equal(floodDetection.coords, undefined, "No agregar geometría al mapa sin CRS verificado");
 assert.equal(floodDetection.locality, undefined, "No asignar una localidad que la fuente no especifica");
 
+const floodHazard = transparency.environmentalDatasets.find(item => item.id === "peligrosidad-inundaciones-ada-partido-escobar");
+assert.ok(floodHazard, "Falta la capa municipal de peligrosidad de inundaciones basada en cartografía ADA");
+assert.equal(floodHazard.status, "pendiente");
+assert.equal(floodHazard.territorialScope, "Partido de Escobar");
+assert.equal(floodHazard.localityDetail, "No especificada por la ficha; no se asigna a ninguna de las siete localidades.");
+assert.equal(floodHazard.sourcePublishedAt, null);
+assert.equal(floodHazard.createdAt, "2025-10-01");
+assert.equal(floodHazard.lastUpdatedAt, "2026-03-31");
+assert.equal(floodHazard.version, "1.0");
+assert.equal(floodHazard.periodicity, "Anual");
+assert.equal(floodHazard.license, "Open Data Commons Open Database License (ODbL)");
+assert.match(floodHazard.sourceMethod, /Autoridad del Agua/);
+assert.match(floodHazard.sourceCrs, /pendiente de inspección técnica/i);
+assert.equal(floodHazard.geometryIntegrationStatus, "pending");
+assert.match(floodHazard.geometryNote, /no se confirmó el CRS/i);
+assert.match(floodHazard.geometryNote, /no es un pronóstico/i);
+assert.equal(floodHazard.resourceChecks.length, 2);
+assert.match(floodHazard.resourceChecks.find(item => item.format === "SHP").note, /no demuestra que el archivo esté roto/i);
+assert.equal(floodHazard.verification.status, "verified");
+assert.equal(floodHazard.verification.checkedAt, "2026-11-25");
+assert.equal(floodHazard.coords, undefined, "No agregar geometría al mapa sin CRS y esquema verificados");
+assert.equal(floodHazard.locality, undefined, "No asignar una localidad que la ficha no especifica");
+for (const url of [floodHazard.sourceUrl, floodHazard.resourceUrl]) {
+  assert.equal(new URL(url).protocol, "https:");
+}
+

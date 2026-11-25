@@ -1396,6 +1396,50 @@
           "checkedAt": "2026-11-25",
           "scope": "Se consultó la ficha municipal y se abrió el enlace Descargar del GeoJSON. El navegador devolvió contenido application/json con tipo FeatureCollection; las entidades visibles son polígonos y exponen atributos Id y gridcode en los ejemplos inspeccionados. La ficha identifica MNDWI e imágenes COPERNICUS/S2_SR_HARMONIZED de tormentas de 2025, versión 1.0, creación 01/10/2025, actualización 31/03/2026 y licencia ODbL. El GeoJSON no declara CRS ni localidad por entidad. No se realizó transformación, superposición con límites municipales, validación de cada geometría ni análisis de riesgo."
         }
+      },
+      {
+        "id": "peligrosidad-inundaciones-ada-partido-escobar",
+        "name": "Peligrosidad de Inundaciones – Partido de Escobar",
+        "category": "Riesgo Climático y Gestión de Emergencias",
+        "description": "Cartografía de áreas con distintos niveles de peligrosidad hídrica, elaborada por el Municipio a partir de cartografía oficial de la Autoridad del Agua (ADA) de la Provincia de Buenos Aires. Es una referencia para planificación y gestión del riesgo, no una alerta operativa ni una evaluación predial.",
+        "sourceName": "Estrategia Ambiental y datos — Municipalidad de Escobar; cartografía de base atribuida a la Autoridad del Agua (ADA), Provincia de Buenos Aires.",
+        "sourceUrl": "https://datos.escobar.gob.ar/dataset/peligrosidad-de-inundaciones-partido-de-escobar",
+        "resourceUrl": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/peligrosidad-de-inundaciones-partido-de-escobar/peligrosidad_inundaciones.geojson",
+        "resourceName": "peligrosidad_inundaciones.geojson",
+        "resourceSize": "1,567 KB",
+        "resourceFormat": "GeoJSON",
+        "sourcePublishedAt": null,
+        "sourcePublicationNote": "La ficha no informa fecha de publicación. Declara creación 01/10/2025 y última actualización 31/03/2026. Consultada el 25/11/2026.",
+        "createdAt": "2025-10-01",
+        "lastUpdatedAt": "2026-03-31",
+        "version": "1.0",
+        "periodicity": "Anual",
+        "license": "Open Data Commons Open Database License (ODbL)",
+        "territorialScope": "Partido de Escobar",
+        "localityDetail": "No especificada por la ficha; no se asigna a ninguna de las siete localidades.",
+        "sourceMethod": "Cartografía de la Autoridad del Agua (ADA), Provincia de Buenos Aires, según atribución de la ficha municipal; la metodología de recorte, clasificación y transformación no está detallada en la ficha.",
+        "sourceCrs": "No informado en la ficha; pendiente de inspección técnica del recurso.",
+        "geometryIntegrationStatus": "pending",
+        "geometryNote": "La ficha declara que el conjunto identifica áreas con distinto nivel de peligrosidad hídrica a partir de cartografía de ADA. No se confirmó el CRS, el esquema de atributos y clases, la fecha de referencia de la cartografía de origen ni el método de transformación. No transformar ni dibujar la geometría hasta inspeccionar el archivo completo y contrastar la referencia con ADA. La capa no es un pronóstico ni una alerta en tiempo real y no permite por sí sola asignar riesgo a un inmueble.",
+        "status": "pendiente",
+        "validityPeriod": "Versión 1.0, periodicidad anual y última actualización declarada el 31/03/2026. No se verificó una edición posterior ni la vigencia técnica de la cartografía ADA.",
+        "resourceChecks": [
+          {
+            "format": "GeoJSON",
+            "resultLabel": "Abierto parcialmente",
+            "note": "Se abrió el recurso y se confirmó la cabecera FeatureCollection; la herramienta de consulta no permitió inspeccionar el esquema y las geometrías completas."
+          },
+          {
+            "format": "SHP",
+            "resultLabel": "Tipo de contenido no compatible con el visor",
+            "note": "El endpoint .shp devolvió HTTP 400 por el tipo de contenido application/vnd.shp; esto no demuestra que el archivo esté roto."
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "checkedAt": "2026-11-25",
+          "scope": "Se verificó la ficha municipal, la categoría, la organización, la descripción, la atribución a cartografía ADA, la versión, la periodicidad, las fechas declaradas, la licencia y los tamaños y formatos. El GeoJSON se abrió parcialmente como FeatureCollection. No se inspeccionaron todas las entidades, los atributos, el CRS ni las geometrías. El recurso SHP no pudo procesarse en el visor web por su tipo de contenido."
+        }
       }
     ]
   },
