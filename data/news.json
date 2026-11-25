@@ -1,5 +1,27 @@
 [
   {
+    "id": "news-www-automationanywhere-com-company-press-room-automation-anywhere-completes-boostai-acquisition-challenges-saas-giants-race",
+    "title": "Automation Anywhere completó la adquisición de Boost.ai y amplió su oferta de IA conversacional empresarial",
+    "date": "2026-11-24",
+    "category": "Empresas",
+    "summary": "Automation Anywhere comunicó que completó la adquisición de Boost.ai, proveedor de IA conversacional y de voz para industrias reguladas. La integración combina atención conversacional con automatización agéntica capaz de ejecutar procesos entre aplicaciones y sistemas empresariales. La empresa describe casos de uso y métricas de producto como declaraciones corporativas; no publica el precio de compra ni acredita despliegue o resultados en Argentina.",
+    "source": "Automation Anywhere — comunicado corporativo",
+    "url": "https://www.automationanywhere.com/company/press-room/automation-anywhere-completes-boostai-acquisition-challenges-saas-giants-race",
+    "period": "Adquisición completada el 24/11/2026. El comunicado no publica el precio de la operación ni un calendario general de despliegue.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Alcance corporativo internacional; la fuente no identifica una jurisdicción de despliegue concreta.",
+    "sector": "Tecnología / software empresarial / IA conversacional / automatización agéntica / atención al cliente",
+    "territorialRelevance": "Relevancia comparativa para Argentina y Escobar: muestra la convergencia entre IA conversacional y ejecución automatizada de procesos empresariales. No acredita disponibilidad, ventas, adopción ni despliegue local.",
+    "relatedSources": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se abrió el comunicado original del 24/11/2026 en la sala de prensa de Automation Anywhere. La fuente afirma que la adquisición de Boost.ai fue completada y describe la combinación de IA conversacional/de voz y automatización de procesos. Las cifras de clientes, idiomas, resolución y ejecuciones son afirmaciones corporativas, no métricas auditadas aquí. No se halló precio de compra ni evidencia de despliegue en Argentina o Escobar."
+    }
+  },
+  {
     "id": "news-www-zonanortediario-com-ar-24-11-2026-mas-de-270-empresas-y-entidades-participaron-de-una-nueva-ronda-de-negocios-en-escobar",
     "title": "Escobar reunió a 277 empresas y entidades en una ronda multisectorial de negocios",
     "date": "2026-11-24",
