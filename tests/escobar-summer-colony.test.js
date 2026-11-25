@@ -80,9 +80,9 @@ assert.equal(pools.long, undefined);
 
 const readme = fs.readFileSync("README.md", "utf8");
 const roadmap = fs.readFileSync("docs/intelligence-modules-roadmap.md", "utf8");
-assert.match(readme, /seis registros documentales validados/);
+assert.match(readme, /siete registros documentales validados/);
 assert.match(readme, /Colonia de Verano 2027/);
-assert.match(roadmap, /seis registros documentales verificados/);
+assert.match(roadmap, /siete registros documentales verificados/);
 assert.doesNotMatch(roadmap, /el catálogo permanece vacío/);
 
 console.log("Escobar Event Intelligence: Colonia de Verano 2027 y temporada de piletas, fechas, horarios, requisitos de acceso, trazabilidad, ausencia de cupos confirmados y falta de georreferencias comprobados.");
