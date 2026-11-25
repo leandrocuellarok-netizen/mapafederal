@@ -1206,12 +1206,18 @@
       "sourceUrl": "https://www.escobar.gob.ar/noticias/escobar-abrio-la-convocatoria-para-que-empresas-y-comercios-midan-redu/",
       "sourcePublishedAt": "2026-11-10",
       "period": "Solicitudes hasta el 30/12/2026; incorporación prevista durante el primer trimestre de 2027.",
-      "description": "Convocatoria municipal dirigida a empresas, industrias, comercios, hoteles, emprendimientos y otras organizaciones radicadas en el Partido de Escobar. El programa propone medir la huella de carbono mediante universidades y metodología ISO; determinar Créditos Equivalentes Sostenibles (CES) para compensar mediante proyectos de triple impacto con beneficios para Escobar; y otorgar el Sello S++ a quienes completen el proceso. Requisitos publicados: pertenecer al partido, realizar la capacitación virtual y trabajar activamente por la sostenibilidad. La inscripción e información se canalizan por Escobar 360. La comunicación no anuncia un subsidio, transferencia monetaria ni monto de financiamiento; no se debe presentar como ayuda económica.",
+      "description": "Convocatoria municipal para empresas, industrias, comercios, hoteles, emprendimientos y otras organizaciones radicadas en el Partido de Escobar. La ficha oficial describe un programa anual de cuatro etapas y diez pasos: adhesión y aceptación; medición certificada de huella de carbono junto con la UNGS; plan de reducción y compensación mediante proyectos de la cartera FORESE o un proyecto propio; y reconocimiento anual S, S+ o S++. Tras la aceptación se abona la Etapa 1, pero la fuente no publica el monto. La Municipalidad declara beneficios de capacitación, asesoría, visibilidad y una «ventaja en licitaciones municipales», sin detallar el mecanismo ni sus efectos jurídicos. No se anuncia subsidio, transferencia monetaria ni financiamiento directo.",
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-25",
-        "scope": "Revisada nuevamente el 25/11/2026 la publicación oficial municipal del 10/11/2026: destinatarios, requisitos, metodología general, CES, Sello S++, fecha límite del 30/12/2026 e incorporación prevista para el primer trimestre de 2027. También se consultó la portada pública de Escobar 360° (https://www.escobar360.gob.ar/), que lista «#Escobar Sostenible - Red Sostenible para el Desarrollo». El acceso visible inspeccionado abre una imagen institucional y no permite verificar un formulario o trámite de inscripción; la ruta efectiva de postulación queda pendiente. Se conserva opportunityStatus=open por la convocatoria municipal y su fecha límite futura, sin afirmar que el formulario esté disponible, que se haya recibido una solicitud ni que exista financiamiento monetario."
-      }
+        "scope": "Se revisaron la convocatoria municipal publicada el 10/11/2026 y la ficha oficial https://www.escobar.gob.ar/municipio/sostenible/redsostenible/. La ficha identifica la Ordenanza 18498/25 y detalla el programa anual de cuatro etapas y diez pasos, destinatarios, medición con participación de la UNGS, abono anual de la Etapa 1 después de la aceptación (sin monto publicado), compensación mediante proyectos FORESE o proyecto propio y reconocimientos S/S+/S++. La ficha declara una «ventaja en licitaciones municipales», pero no especifica mecanismo, ponderación ni efecto jurídico; no se interpreta como adjudicación preferencial. El enlace «Solicitar adhesión» dirige a Escobar 360; la vista pública consultada no permitió confirmar el formulario individual ni una aceptación. Se mantiene open por el plazo publicado hasta el 30/12/2026. No se presenta como subsidio ni como transferencia monetaria."
+      },
+      "relatedSources": [
+        {
+          "label": "Municipalidad de Escobar — ficha oficial de Red Sostenible para el Desarrollo",
+          "url": "https://www.escobar.gob.ar/municipio/sostenible/redsostenible/"
+        }
+      ]
     },
     {
       "id": "escobar-licitacion-67-2026-servicio-desagote",
