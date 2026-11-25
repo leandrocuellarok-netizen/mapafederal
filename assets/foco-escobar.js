@@ -204,14 +204,8 @@ function renderNodes(nodes){
  const local=(Array.isArray(nodes)?nodes:[]).filter(item=>item&&item.district==="Partido de Escobar");
  const localities=Array.from(new Set(local.map(item=>item.locality).filter(Boolean)));
  el("escobar-map-coverage").innerHTML='<strong>'+escapeHtml(number(local.length))+'</strong> referencias cartográficas · <strong>'+escapeHtml(number(localities.length))+'</strong> de 7 localidades con puntos propios. El catálogo actual se concentra en '+escapeHtml(localities.join(" y ")||"ninguna localidad")+'; no se inventan coordenadas para las restantes.';
- el("escobar-map-nodes").innerHTML=local.map(item=>'<article class="escobar-node"><div><strong>'+escapeHtml(item.name)+'</strong><small>'+escapeHtml(item.locality)+' · '+escapeHtml(item.type)+' · '+escapeHtml(statusLabel(item.status))+' · verificado '+escapeHtml(date(item.verification&&item.verification.checkedAt))+'</small><small>'+escapeHtml(item.validityPeriod||"Vigencia no informada")+'</small><small>'+escapeHtml(item.sourceName||"Fuente no informada")+' · '+escapeHtml(item.sourcePublicationNote||date(item.sourcePublishedAt))+'</small></div><button type="button" data-escobar-node="'+escapeHtml(item.name)+'">Ver en mapa ↗</button></article>').join("")||'<p class="escobar-meta">No hay referencias cartográficas locales cargadas.</p>';
+ el("escobar-map-nodes").innerHTML=local.map(item=>'<article class="escobar-node"><div><strong>'+escapeHtml(item.name)+'</strong><small>'+escapeHtml(item.locality)+' · '+escapeHtml(item.type)+' · '+escapeHtml(statusLabel(item.status))+' · verificado '+escapeHtml(date(item.verification&&item.verification.checkedAt))+'</small><small>'+escapeHtml(item.validityPeriod||"Vigencia no informada")+'</small><small>'+escapeHtml(item.sourceName||"Fuente no informada")+' · '+escapeHtml(item.sourcePublicationNote||date(item.sourcePublishedAt))+'</small></div><span class="escobar-status">Referencia cartográfica</span></article>').join("")||'<p class="escobar-meta">No hay referencias cartográficas locales cargadas.</p>';
 }
-root.addEventListener("click",event=>{
- const button=event.target.closest("[data-escobar-node]");
- if(!button)return;
- const focus=window.MapaFederalMap&&window.MapaFederalMap.focusPoint;
- if(typeof focus==="function")focus(button.getAttribute("data-escobar-node"));
-});
 window.MapaFederalEscobar={setNodes:renderNodes};
 
 async function load(){
