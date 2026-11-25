@@ -638,3 +638,6 @@ El artículo de Le Monde respalda explorar un servicio de evaluación y orquesta
 7. Mantener la localización del BESS Maschwitz pendiente hasta resolver la discrepancia Escobar/Tigre.
 
 El balance permanece **provisional** hasta la revisión de las 20:00 ART.
+
+
+Nota de control de interfaz: las páginas index.html, radar-ia/index.html e investment-finder/index.html fueron revalidadas; no se habilitó generación pública libre de informes.
