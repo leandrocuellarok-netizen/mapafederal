@@ -1685,6 +1685,102 @@
         "checkedAt": "2026-11-25",
         "scope": "Verificado el aviso oficial del Boletín Oficial de la República Argentina, publicado el 18/11/2026. Se comprobaron objeto, organismo, expediente, plataforma de contratación y fechas de consulta, presentación y apertura. No se revisó el pliego completo ni se verificaron elegibilidad de proveedores, garantías, ofertas, adjudicación o ejecución."
       }
+    },
+    {
+      "id": "argentina-ministerio-defensa-licitacion-64-2026-conectividad-satelital",
+      "name": "Argentina — Ministerio de Defensa: LP 64/2026 para conectividad satelital antártica y marítima",
+      "recordType": "tender",
+      "scope": "national",
+      "sector": "Telecomunicaciones / conectividad satelital / logística antártica / servicios marítimos",
+      "jurisdiction": null,
+      "location": "Bases antárticas y embarcaciones vinculadas al sostén logístico antártico — Argentina",
+      "stage": "announced",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "validFrom": "2026-10-27",
+      "validUntil": null,
+      "sourceName": "Boletín Oficial de la República Argentina — Ministerio de Defensa",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421032/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "period": "Convocatoria original publicada el 28/10/2026; Circular 1 publicada el 12/11 y Circular 3, fechada el 24/11, publicada el 25/11. La Circular 3 fija una nueva apertura para el 03/12/2026, pero no consigna hora ni nuevo plazo de presentación de ofertas. Confirmar el cronograma vigente en COMPR.AR.",
+      "description": "Licitación Pública 64/2026 del Ministerio de Defensa para el servicio de conectividad satelital de bases antárticas y embarcaciones del sostén logístico antártico. La Circular 3 reprograma la apertura al 03/12/2026. La circular no publica presupuesto ni precisa el nuevo límite horario de presentación; por eso la disponibilidad se conserva como desconocida hasta confirmar el cronograma actualizado en COMPR.AR. No se verificaron adjudicación ni ejecución.",
+      "territorialRelevance": "Alcance nacional con operación antártica y marítima. Puede interesar a proveedores de conectividad satelital, telecomunicaciones y logística especializada; no se atribuye una ubicación comercial ni un monto no publicado.",
+      "relatedSources": [
+        {
+          "label": "Boletín Oficial — aviso original de la LP 0064/2026 (28/10/2026)",
+          "url": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2419648/20261028"
+        },
+        {
+          "label": "Boletín Oficial — Circular 1 de la LP 64/2026 (12/11/2026)",
+          "url": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2420353/20261112"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se contrastaron el aviso original del 28/10, la Circular 1 del 12/11 y la Circular 3 publicada el 25/11 en el Boletín Oficial. Se verificaron organismo, expediente, objeto y nueva fecha de apertura del 03/12. La Circular 3 no informa hora ni nuevo límite de presentación; no se asigna estado open ni presupuesto sin consultar el cronograma vigente de COMPR.AR."
+      }
+    },
+    {
+      "id": "argentina-bcra-licitacion-48-26-mantenimiento-sistemas-audio",
+      "name": "Argentina — BCRA: LP 48/26 para mantenimiento integral de sistemas de audio",
+      "recordType": "tender",
+      "scope": "national",
+      "sector": "Tecnología / sistemas audiovisuales / mantenimiento técnico / compras públicas",
+      "jurisdiction": null,
+      "location": "Dependencias del Banco Central, Reconquista 266, Ciudad Autónoma de Buenos Aires, Argentina",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": null,
+      "validFrom": "2026-11-24",
+      "validUntil": "2026-12-14",
+      "sourceName": "Boletín Oficial de la República Argentina — Banco Central de la República Argentina",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421005/20261124",
+      "sourcePublishedAt": "2026-11-24",
+      "period": "Consultas hasta el 03/12/2026; visita obligatoria a coordinar hasta el 02/12, de 10:00 a 14:00; ofertas electrónicas hasta el 14/12/2026 a las 15:00 y apertura ese día a las 15:00. El aviso no publica presupuesto. Requiere preinscripción en el registro de proveedores del BCRA e inscripción al momento de la adjudicación.",
+      "description": "Licitación Pública 48/26 del Banco Central para mantenimiento preventivo y correctivo y provisión de horas de soporte técnico para equipamiento y sistemas de audio en sus dependencias, por 24 meses con opción de 12 meses adicionales. La visita de inspección es obligatoria, salvo la excepción indicada para el prestador del período anterior. No se verificaron el pliego completo, el presupuesto ni la adjudicación.",
+      "territorialRelevance": "Contratación nacional con tareas en CABA. Puede interesar a empresas de integración audiovisual, mantenimiento electrónico y soporte técnico; el aviso no informa monto ni adjudicatario.",
+      "relatedSources": [],
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Verificado el aviso oficial del Boletín Oficial publicado el 24/11/2026. Se comprobaron objeto, plazo contractual, consultas, visita obligatoria, presentación y apertura de ofertas. El aviso no publica presupuesto; no se revisó el pliego completo ni se verificaron adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "argentina-la-barrancosa-licitacion-0009-2026-consultoria-hidroelectrica",
+      "name": "Argentina — LP 0009/2026: consultoría para el Aprovechamiento Hidroeléctrico La Barrancosa y LEAT",
+      "recordType": "tender",
+      "scope": "national",
+      "sector": "Energía / hidroelectricidad / ingeniería / líneas de alta tensión / consultoría / compras públicas",
+      "jurisdiction": null,
+      "location": "La Barrancosa, Río Santa Cruz, Departamento Corpen Aike, Provincia de Santa Cruz, Argentina",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 39624345857.96,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial del servicio de consultoría, referido al 04/05/2026; no equivale al monto adjudicado, al costo total del complejo hidroeléctrico ni al gasto ejecutado."
+      },
+      "validFrom": "2026-11-02",
+      "validUntil": "2026-12-30",
+      "sourceName": "Boletín Oficial de la República Argentina — Subsecretaría de Gestión Administrativa de Infraestructura",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2420988/20261124",
+      "sourcePublishedAt": "2026-11-24",
+      "period": "Pliego disponible desde el 02/11/2026; consultas hasta el 11/12/2026 a las 12:00; ofertas y apertura electrónica hasta/el 30/12/2026 a las 12:00 por CONTRAT.AR. Presupuesto oficial: ARS 39.624.345.857,96, referido al 04/05/2026. El aviso consigna fecha e. 02/11 y v. 25/11; el portal lo ubica en la edición del 24/11.",
+      "description": "Licitación Pública 0009/2026 para servicios de consultoría de la obra denominada Aprovechamiento Hidroeléctrico La Barrancosa y LEAT. El presupuesto oficial publicado corresponde al servicio licitado, no a la inversión total de la represa. La localización en Santa Cruz se contrasta con normativa nacional sobre el complejo del Río Santa Cruz. No se revisó el pliego técnico completo ni se verificaron adjudicación, contrato o ejecución.",
+      "territorialRelevance": "Proyecto energético de alcance nacional emplazado en Santa Cruz. Relevante para consultoras de ingeniería, hidroelectricidad y transmisión eléctrica; el presupuesto publicado no debe interpretarse como capex total ni como inversión disponible para terceros.",
+      "relatedSources": [
+        {
+          "label": "Argentina.gob.ar — Resolución 31/2019: localización de La Barrancosa en el Río Santa Cruz",
+          "url": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-31-2019-319695"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se verificó el aviso oficial del Boletín Oficial, edición 24/11/2026, con objeto, organismo, presupuesto oficial, fecha base del presupuesto y cronograma de CONTRAT.AR. La localización se contrastó con la Resolución 31/2019 en Argentina.gob.ar, que ubica La Barrancosa en el Río Santa Cruz, departamento Corpen Aike. No se revisó el pliego técnico completo ni se verificaron adjudicación o ejecución."
+      }
     }
   ]
 }
