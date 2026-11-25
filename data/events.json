@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-11-25",
-  "note": "Catálogo documental de eventos con procedencia y verificación. No es una agenda integrada ni confirma cupos o inscripción. Los registros históricos se conservan como completados. Para la Ronda RIGI del 02/12/2026, la inscripción a reuniones B2B cerró el 16/11; la asistencia a otras actividades se anuncia hasta el 30/11. Para la Ronda de Negocios de Energía y Minería de PBA del 01/12/2026, la inscripción cerró el 13/11; no se presume acceso para nuevas empresas. Se agregó la Ronda de Negocios Escobar 2026 (24/11) como evento completado: fecha y sede contrastadas con PBA; cifras de participación atribuidas a cobertura local, sin inferir negocios cerrados ni cupos. Se agregó la Colonia de Verano 2027 de Escobar como evento futuro confirmado: publicación municipal del 16/11/2026, inscripción general anunciada del 24/11 al 04/12 y actividades del 04/01 al 28/01/2027. El registro es documental; no confirma cupos ni el estado del formulario o de una inscripción individual. Se agregó un registro separado para la temporada de piletas municipales 2027, con los dos períodos y horarios publicados, requisitos de acceso y límites de verificación; no se individualizan sedes ni cupos por pileta.",
+  "note": "Catálogo documental de eventos con procedencia y verificación. No es una agenda integrada ni confirma cupos o inscripción. Los registros históricos se conservan como completados. Para la Ronda RIGI del 02/12/2026, la inscripción a reuniones B2B cerró el 16/11; la asistencia a otras actividades se anuncia hasta el 30/11. Para la Ronda de Negocios de Energía y Minería de PBA del 01/12/2026, la inscripción cerró el 13/11; no se presume acceso para nuevas empresas. Se agregó la Ronda de Negocios Escobar 2026 (24/11) como evento completado: fecha y sede contrastadas con PBA; cifras de participación atribuidas a cobertura local, sin inferir negocios cerrados ni cupos. Se agregó la Colonia de Verano 2027 de Escobar como evento futuro confirmado: publicación municipal del 16/11/2026, inscripción general anunciada del 24/11 al 04/12 y actividades del 04/01 al 28/01/2027. El registro es documental; no confirma cupos ni el estado del formulario o de una inscripción individual. Se agregó un registro separado para la temporada de piletas municipales 2027, con los dos períodos y horarios publicados, requisitos de acceso y límites de verificación; no se individualizan sedes ni cupos por pileta. La 2.ª Semana de la Inteligencia Artificial en Argentina (25–27/11/2026, C3, CABA) se incorporó como evento confirmado; al 25/11 está en desarrollo. La ficha no acredita acuerdos, inversiones ni participación individual.",
   "events": [
     {
       "id": "feria-japonesa-bazaa-5-edicion-2026",
@@ -168,6 +168,37 @@
         "status": "verified",
         "checkedAt": "2026-11-25",
         "scope": "Se abrió la publicación municipal del 16/11/2026 y se verificaron directamente los dos períodos de habilitación, horarios diferenciados, cupos limitados, requisito de socio y verificación biométrica. La fuente no identifica cada pileta ni su localidad; las clases de natación se anuncian de 12:00 a 14:00, con días a informar. No se verificó apertura efectiva, cupo disponible por sede ni fechas de clases."
+      }
+    },
+    {
+      "id": "semana-inteligencia-artificial-argentina-2026-11-25",
+      "name": "2.ª Semana de la Inteligencia Artificial en Argentina",
+      "startDate": "2026-11-25",
+      "endDate": "2026-11-27",
+      "time": null,
+      "timeZone": "America/Argentina/Buenos_Aires",
+      "scope": "national",
+      "jurisdiction": "CABA",
+      "venue": "Centro Cultural de la Ciencia (C3), Ciudad Autónoma de Buenos Aires, Argentina",
+      "organizer": "Secretaría de Innovación, Ciencia y Tecnología",
+      "sector": "Inteligencia artificial / innovación / empresas y startups / educación / industria / agro / energía y minería / salud / Estado / economía espacial",
+      "sourceName": "Secretaría de Innovación, Ciencia y Tecnología — Argentina.gob.ar",
+      "sourceUrl": "https://www.argentina.gob.ar/node/522472",
+      "sourcePublishedAt": "2026-11-25",
+      "period": "Del 25 al 27/11/2026. Al corte del 25/11, el encuentro se encuentra en desarrollo. El programa oficial contempla conferencias, paneles, demostraciones, talleres, hackathon y networking.",
+      "status": "confirmed",
+      "description": "Encuentro nacional de tres jornadas para conectar sector público, empresas, startups, emprendedores, investigadores, comunidad educativa y referentes internacionales. La agenda incluye paneles sobre transformación del trabajo, IA en la industria, agro, energía y minería, salud, Estado, ecosistema emprendedor e IA en el espacio. El primer día publica un panel de IA en el Espacio con participación de referentes de INVAP, CONAE, Satellites on Fire, Epic Aerospace y VENG, y un cierre a cargo de Microsoft Argentina. No se infieren acuerdos comerciales ni inversiones concretadas.",
+      "territorialRelevance": "Alta para el ecosistema argentino de IA, con sede en CABA y alcance nacional. Relevante para observar adopción sectorial, formación, articulación público-privada y capacidades tecnológicas; no acredita oportunidades de contratación para Vilanova ni participación del usuario.",
+      "relatedSources": [
+        {
+          "label": "Sitio oficial del evento — agenda y programa",
+          "url": "https://semanadelaia.gob.ar/"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se verificaron directamente en el sitio oficial del evento las fechas 25–27/11/2026, la sede C3, el organizador, el formato y el programa publicado. La nota oficial de Argentina.gob.ar del 25/11 confirma la apertura. No se verificaron cupos, inscripción individual, reuniones concretadas ni resultados comerciales."
       }
     }
   ]
