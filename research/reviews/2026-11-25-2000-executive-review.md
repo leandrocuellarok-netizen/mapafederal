@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 04:57 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 05:56 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,9 +8,9 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 50 registros |
-| Investment Finder | 60 registros |
-| Oportunidades abiertas | 28 |
+| Radar IA | 51 registros |
+| Investment Finder | 64 registros |
+| Oportunidades abiertas | 32 |
 | Disponibilidad desconocida | 29 |
 | Cerradas | 3 |
 | Event Intelligence | 4 registros |
@@ -20,6 +20,16 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 | Módulos planificados | 5 |
 
 El catálogo de oportunidades conserva 24 registros de Escobar: 5 abiertos (LP 71, LP 72, LP 74, LP 75 y Red Sostenible), 16 con disponibilidad desconocida y 3 cerrados. El estado `open` significa que el cronograma oficial de consulta/venta y apertura no venció; no garantiza elegibilidad técnica ni disponibilidad de cupos.
+
+## Actualización del ciclo 05:56 — 25/11/2026
+
+- Radar IA: 51 registros. Se añadió el análisis de Reuters sobre IA industrial en Alemania (24/11), atribuyendo las posiciones a la ministra de Economía, BDI e IG Metall. Es una señal de economía y adopción sectorial, no una norma ni un programa de ayudas.
+- Investment Finder: 64 registros (32 abiertos, 29 desconocidos y 3 cerrados). Se incorporaron cuatro licitaciones nacionales: Fuerza Aérea LP 0173/2026 (refrigeración, ofertas 03/12 09:00); Ministerio de Defensa LP 0069/2026 (equipos de apoyo de vuelo, ofertas 25/11 09:00); Armada LP 0497/2026 (infraestructura tecnológica hospitalaria, ofertas 25/11 10:00); y Armada LP 0569/2026 (frutas y verduras para Zonas Navales, ofertas 25/11 09:00). Los tres llamados con cierre el 25/11 se verificaron como abiertos a las 05:56 ART. Ninguno publica presupuesto en el aviso consultado.
+- Se observó el contrato binacional SG-790 de Salto Grande, pero se difirió su incorporación porque el esquema de datos no contempla jurisdicción binacional; no se asignó una provincia o municipio por inferencia.
+- Escobar: sin nuevas oportunidades incorporadas. El portal provincial mostraba como última edición la 14526 (24/11); la sección 14527 agotó el tiempo de espera. El catálogo local permanece en 24 registros (5 abiertos, 16 desconocidos y 3 cerrados). Esto no demuestra ausencia exhaustiva de nuevos llamados.
+- Calidad: se detectaron dos fallos previos de CI por aserciones demasiado rígidas. Se corrigieron la prueba de transparencia (commit `3a5be5e3`) y la prueba de búsqueda de Investment Finder (commit `64fed583`). El workflow `45581243464` seguía pendiente al momento del registro; no se declara despliegue exitoso. GitHub Pages no pudo verificarse por HTTP independiente.
+- Registro completo: [ciclo 05:56](../runs/2026-11-25-gbie-cycle-0556.md). Commits de datos: [Radar IA](https://github.com/leandrocuellarok-netizen/mapafederal/commit/004d727f014c868d96323521d95ce51572e6b152) · [Investment Finder](https://github.com/leandrocuellarok-netizen/mapafederal/commit/8dbe76a1c376b921c386993d3b783220c0b5b08a).
+
 
 ## Actualización del ciclo 17:00 — 24/11/2026
 
