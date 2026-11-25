@@ -27,6 +27,28 @@
     }
   },
   {
+    "id": "news-reuters-2026-11-24-germany-industrial-ai-investment-climate",
+    "title": "Alemania insta a su industria a convertir la IA industrial en valor productivo",
+    "date": "2026-11-24",
+    "category": "Economía",
+    "summary": "La ministra de Economía Katherina Reiche instó a la industria alemana a extender el uso de IA industrial y aprovechar sus datos de producción como ventaja competitiva. La asociación industrial BDI señaló que la adopción también requiere un entorno favorable a la inversión y mayor velocidad; IG Metall pidió priorizar mejoras tecnológicas sobre recortes de costos y un marco estable de financiación y regulación. Son posiciones expresadas en un debate sectorial, no un programa presupuestado ni una nueva norma.",
+    "source": "Reuters",
+    "url": "https://www.reuters.com/technology/german-economy-minister-urges-industry-seize-ai-opportunity-2026-11-24/",
+    "period": "Declaraciones reportadas el 24/11/2026 en Berlín; el artículo no anuncia un programa de subsidios ni una medida regulatoria concreta.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Alemania — debate de política industrial y adopción tecnológica.",
+    "sector": "Economía / industria manufacturera / IA industrial / política de innovación y productividad",
+    "territorialRelevance": "Señal comparativa para pymes industriales argentinas y de Escobar: el valor de la IA industrial depende de integrar datos productivos, procesos y capacidades de inversión. No implica incentivos ni obligaciones para Argentina.",
+    "relatedSources": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se revisó el artículo original de Reuters publicado el 24/11/2026. El texto atribuye declaraciones a la ministra alemana de Economía, a la BDI y a IG Metall sobre IA industrial, inversión, productividad y marco regulatorio. No se infieren políticas nuevas, montos, subsidios ni resultados medidos."
+    }
+  },
+  {
     "id": "news-www-automationanywhere-com-company-press-room-automation-anywhere-completes-boostai-acquisition-challenges-saas-giants-race",
     "title": "Automation Anywhere completó la adquisición de Boost.ai y amplió su oferta de IA conversacional empresarial",
     "date": "2026-11-24",
