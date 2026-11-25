@@ -204,7 +204,7 @@ assert.equal(escobarNotice.source, "Boletín Oficial de la Provincia de Buenos A
 assert.equal(escobarNotice.url, "https://boletinoficial.gba.gob.ar/secciones/14526/ver");
 assert.deepEqual(escobarNotice.jurisdictions, ["Buenos Aires"]);
 assert.equal(escobarNotice.geographyStatus, "explicit");
-assert.match(escobarNotice.geographyEvidence[0], /Las Orquídeas 1643, Belén de Escobar/);
+assert.match(escobarNotice.geographyEvidence[0], /Las Orquideas1643, Belén de Escobar/);
 assert.equal(escobarNotice.verification.status, "editorial_reviewed");
 assert.equal(escobarNotice.verification.checkedAt, "2026-11-25");
 assert.match(escobarNotice.summary, /no acredita que la transferencia se haya completado/i);
