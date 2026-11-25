@@ -42,3 +42,10 @@ La evidencia actual refuerza la referencia B° 24 de Febrero en varias páginas 
 ## Siguiente evidencia necesaria
 
 Una ficha municipal única y corregida que unifique la referencia barrial, el teléfono y la ubicación del CAPS. Hasta entonces se conserva la discrepancia.
+
+
+## Precisión adicional de la Cartilla de salud y corrección del test
+
+La lectura completa de la [Cartilla de salud](https://www.escobar.gob.ar/municipio/prestaciones-con-o-sin-obra-social/) mostró que la misma página tiene dos bloques distintos: en «Guardias» publica B° 24 de Febrero, guardia general las 24 horas y teléfono 11 2150-0302; en la ficha CAPS publica la dirección Pablo Marín 24, Garín, atención de lunes a viernes de 7 a 14 y vacunatorio de 8 a 13. Se separan esos horarios para no confundir guardia con atención regular. La referencia barrial queda sin consolidar porque el mismo portal no repite el barrio en la ficha CAPS y otras páginas municipales conservan Fonavi.
+
+La primera ejecución asociada al commit `15f5ac63e73a09638f2ff47d482d7dddfde0d70d`, [45518927772](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45518927772), detectó una aserción heredada en `.github/workflows/static.yml` que todavía exigía «Fonavi» dentro del campo de dirección. La aserción era incompatible con la mejora de trazabilidad: Fonavi debe permanecer en la nota de discrepancia, no en la dirección principal. Se actualizan las pruebas para exigir Pablo Marín 24, los tres horarios diferenciados y la conservación de la referencia Fonavi únicamente como discrepancia documental.

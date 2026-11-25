@@ -291,10 +291,13 @@ jobs:
           assert selles["locality"] == "Garín"
           if "serviceNote" in selles:
               assert "neighborhood" not in selles
-              assert "Pablo Marín s/n" in selles["address"] and "Fonavi" in selles["address"]
+              assert "Pablo Marín 24" in selles["address"] and "Fonavi" not in selles["address"]
+              assert "Fonavi" in selles["addressNote"]
               assert selles.get("phone") is None
               assert "24 de Febrero" in selles["serviceNote"]
               assert "(0348) 449-3444" in selles["serviceNote"] and "11 2150-0302" in selles["serviceNote"]
+              assert "lunes a viernes de 7 a 14 h" in selles["serviceHours"]
+              assert "lunes a viernes de 8 a 13 h" in selles["serviceHours"]
               assert "discrepancia" in selles["serviceNote"].lower()
           else:
               assert selles["neighborhood"] == "24 de Febrero"
@@ -350,7 +353,8 @@ jobs:
           assert {item["locality"] for item in health["facilities"]} == {"Belén de Escobar", "Garín", "Ingeniero Maschwitz", "Maquinista Savio", "Matheu", "Loma Verde"}
           selles = next(item for item in health["facilities"] if item["id"] == "caps-juan-carlos-selles")
           assert selles["locality"] == "Garín" and "neighborhood" not in selles
-          assert "Fonavi" in selles["address"]
+          assert "Pablo Marín 24" in selles["address"] and "Fonavi" in selles["addressNote"]
+          assert any(source["url"] == "https://www.escobar.gob.ar/municipio/prestaciones-con-o-sin-obra-social/" for source in selles["relatedSources"])
           lopez = next(item for item in health["facilities"] if item["id"] == "hospital-horacio-lopez")
           assert lopez["address"] is None and "156" in lopez["addressNote"] and "240" in lopez["addressNote"]
           susana = next(item for item in health["facilities"] if item["id"] == "udp-susana-lara")

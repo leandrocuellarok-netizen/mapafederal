@@ -52,8 +52,11 @@ assert.equal(health.pendingDirectoryDiscrepancies.length, 0, "La discrepancia de
 
 const selles = health.facilities.find(item => item.id === "caps-juan-carlos-selles");
 assert.equal(selles.phone, null, "No consolidar teléfonos oficiales contradictorios");
-assert.equal(selles.address, "Pablo Marín s/n, entre Islas Malvinas e Hipólito Yrigoyen, Garín");
-assert.ok(!selles.mapUrl.includes("Fonavi"), "El buscador cartográfico no debe fijar un barrio controvertido");
+assert.equal(selles.address, "Pablo Marín 24, Garín");
+assert.match(selles.serviceHours, /Guardia general: todos los días, las 24 h/);
+assert.match(selles.serviceHours, /lunes a viernes de 7 a 14 h/);
+assert.match(selles.serviceHours, /lunes a viernes de 8 a 13 h/);
+assert.ok(selles.mapUrl.includes("Pablo%20Mar%C3%ADn%2024"), "El buscador cartográfico debe usar la dirección publicada sin barrio inferido");
 assert.match(selles.addressNote, /Fonavi/);
 assert.match(selles.addressNote, /24 de Febrero/);
 assert.match(selles.verification.scope, /Cartilla de salud/);
