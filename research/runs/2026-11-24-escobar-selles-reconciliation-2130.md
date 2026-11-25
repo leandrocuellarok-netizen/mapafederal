@@ -60,3 +60,6 @@ La inspección del segundo fallo mostró que `serviceDirectories` conservaba una
 
 
 La tercera ejecución de validación, [45519316593](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45519316593), avanzó más allá de las aserciones de dirección y horarios, y detectó que la nota había omitido los paréntesis del teléfono publicado por Teléfonos útiles. Se restauró la grafía exacta «(0348) 449-3444» en ambas representaciones del CAPS; no se modifica el campo telefónico consolidado, que permanece nulo por la contradicción con 11 2150-0302.
+
+
+La ejecución [45519388887](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45519388887) avanzó con la grafía exacta del teléfono, pero la validación heredada también requiere la frase «No se asigna barrio ni teléfono único» en el alcance de verificación. Se normalizó esa formulación en las dos fichas del CAPS y se agregó una aserción equivalente al test sanitario. La precisión documental no cambia: Garín queda como localidad y el barrio permanece sin consolidar.
