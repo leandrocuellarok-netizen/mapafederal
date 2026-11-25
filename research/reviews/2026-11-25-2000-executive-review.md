@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 16:14 ART. Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 18:01 ART. Pendiente del corte final de las 20:00 y de nuevas verificaciones de vencimientos y adjudicaciones.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,18 +8,18 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 65 registros |
-| Investment Finder | 138 registros |
-| Oportunidades abiertas | 81 |
-| Disponibilidad desconocida | 51 |
-| Cerradas | 6 |
+| Radar IA | 68 registros |
+| Investment Finder | 178 registros |
+| Oportunidades abiertas | 116 |
+| Disponibilidad desconocida | 55 |
+| Cerradas | 7 |
 | Event Intelligence | 6 registros |
 | Nodos estratégicos | 86 |
 | Módulos documentados | 6 |
 | Módulos en piloto | 1 |
 | Módulos planificados | 5 |
 
-El catálogo de oportunidades conserva 24 registros de Escobar: 5 abiertos (LP 71, LP 72, LP 74, LP 75 y Red Sostenible), 16 con disponibilidad desconocida y 3 cerrados. El estado `open` significa que el cronograma oficial de consulta/venta y apertura no venció; no garantiza elegibilidad técnica ni disponibilidad de cupos.
+El catálogo de oportunidades conserva 25 registros de Escobar: 5 abiertos (LP 71, LP 72, LP 74, LP 75 y Red Sostenible), 16 con disponibilidad desconocida y 4 cerrados (LP 61, LP 62, LP 67 y LP 68). El estado `open` significa que el cronograma oficial de consulta/venta y apertura no venció; no garantiza elegibilidad técnica ni disponibilidad de cupos.
 
 ## Actualización del ciclo 05:56 — 25/11/2026
 
@@ -721,3 +721,38 @@ Se alineó la expresión de la ventana de venta de pliegos con la redacción exa
 
 ### Ajuste final del test Salto Grande — 17:23 ART
 Se hizo insensible a mayúsculas la prueba de visita obligatoria de SG-790; la fecha de visita (09/12/2026) y la fecha límite (11/01/2027) permanecen verificadas.
+
+
+## Actualización acumulada — 18:01 ART, 25/11/2026
+
+### Estado comprobado
+- Radar IA: 68 registros (67 → 68). Se incorporó el análisis de Ballotpedia del 06/11 sobre 41 consultas locales de centros de datos en diez estados de EE. UU.; 40 de 41 favorecieron límites, pero el resultado no es una norma federal ni una encuesta nacional. Se actualizaron 27 medidas aprobadas y 13 medidas pro-desarrollo rechazadas tal como las clasifica la fuente.
+- España: se enriqueció la ficha del Real Decreto 1032/2026 con el reporte de Europa Press del 25/11 sobre el recurso de SpainDC presentado el 24/11 y la solicitud de suspensión cautelar. No se verificó una resolución judicial que suspenda la norma; no se marca como suspendida.
+- Investment Finder: 178 registros (176 → 178): 116 abiertos, 55 desconocidos y 7 cerrados. Se agregó Laguna Paiva LP 2/2026 (Santa Fe), con ofertas hasta el 01/12/2026 10:00 y apertura 11:00, sin presupuesto publicado. Se recuperó Armada LP 0403/2026 y su Circular 1: el plazo original venció el 19/11; la circular corrige especificaciones, no anuncia prórroga y la disponibilidad permanece desconocida. Se actualizó Cuenca Alta LP 088/2026 a la publicación oficial del 25/11 y se dejó `validUntil=null`, porque el aviso informa apertura el 09/12 pero no un cierre independiente de presentación.
+- Escobar: 25 registros (5 abiertos, 16 desconocidos, 4 cerrados). No se encontró una nueva licitación municipal abierta en las fuentes oficiales consultadas. La movilidad ya documenta la ficha Mi Bus de la línea 506 Estación Escobar–Mercado Libre: 23 paradas y horarios publicados para lunes a viernes y domingo; la interfaz no rotula explícitamente el ramal B y no acredita circulación efectiva en tiempo real.
+- Event Intelligence: 6 registros. Nodos estratégicos: 86. Módulos: 6; Federal Reports es el único piloto y los otros cinco siguen planificados.
+
+### Relevancia comercial para Vilanova AI Solutions
+La evidencia sobre oposición local a centros de datos y la controversia regulatoria española permite diseñar una oferta de inteligencia territorial para infraestructura de IA: energía, agua, permisos, zonificación, aceptación comunitaria, soberanía digital y riesgos de cronograma. Es una hipótesis de posicionamiento comercial; no se identificó un cliente, contrato ni inversión nueva atribuible a Vilanova en este ciclo.
+
+### Cambios y validación
+- Commit de datos: [847a2e7eacad9ec9b2c04c4923ceb67eab85e7ef](https://github.com/leandrocuellarok-netizen/mapafederal/commit/847a2e7eacad9ec9b2c04c4923ceb67eab85e7ef).
+- Workflow #45701392264: validación y despliegue de GitHub Pages completados con éxito.
+- Se amplió la lista de jurisdicciones municipales admitidas para incluir Laguna Paiva, Santa Fe; los registros nacionales conservan `jurisdiction=null`.
+- JSON, IDs estables de noticias, IDs únicos de oportunidades, URLs HTTPS, cronologías y pruebas específicas del Boletín 36.039 fueron validados.
+- El contrato enterprise no cambió: `freeFormReports=false`, `customAnalyses=by_request`, `clientDataPublic=false` y `predictiveClaimsRequireValidation=true`. No se habilitó generación libre de informes ni se presentó ningún modelo predictivo como operativo.
+- La inspección visual manual de Pages no estuvo disponible desde el navegador de verificación; el despliegue sí fue confirmado por GitHub Actions.
+
+### Pendientes y riesgos
+1. Confirmar en COMPR.AR si Armada LP 0403/2026 tuvo nueva fecha, acta de apertura o adjudicación posterior a la Circular 1.
+2. Consultar el pliego del Hospital Cuenca Alta LP 088/2026 para localizar un plazo de presentación independiente; no inferirlo de la apertura.
+3. Conciliar individualmente los seis avisos de adjudicación y siete dictámenes de evaluación listados en la sección del BORA del 25/11; no todos fueron vinculados a registros existentes en este ciclo.
+4. Revalidar LP 66/2026 y LP 69/2026 de Escobar, y seguir consultas/respuestas de LP 74 y LP 75.
+5. Resolver la jurisdicción parcelaria del BESS Maschwitz y mantener separada la noticia de la confirmación de ejecución.
+6. Seguir la causa de SpainDC sin asumir que la solicitud cautelar fue concedida.
+7. Realizar una inspección visual manual de la portada y de las páginas de Radar IA e Investment Finder cuando el acceso de verificación esté disponible.
+
+### Próximos pasos
+Priorizar actas y adjudicaciones, vencimientos de diciembre, oportunidades locales de Escobar, conciliación del BESS y una oferta comercial de due diligence territorial para infraestructura de IA. Mantener los informes personalizados bajo solicitud y el piloto Federal Reports en modalidad descriptiva.
+
+Corte provisional 18:01 ART. El balance de las 20:00 permanece abierto.

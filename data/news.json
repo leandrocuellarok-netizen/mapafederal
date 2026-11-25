@@ -1336,7 +1336,7 @@
     "jurisdictions": [],
     "geographyStatus": "not_specified",
     "geographyEvidence": [],
-    "jurisdictionScope": "Estados Unidos — 41 consultas locales en diez estados; el detalle territorial se conserva en esta descripción porque el filtro geográfico del catálogo está limitado a las 24 jurisdicciones argentinas.",
+    "jurisdictionScope": "Estados Unidos — California, Florida, Ohio, Kansas, Maine, Illinois, Wisconsin, New Jersey, Nevada y Dakota del Norte; 41 consultas locales. El filtro geográfico del catálogo solo admite las 24 jurisdicciones argentinas, por lo que los estados se conservan en texto.",
     "sector": "Infraestructura digital / centros de datos / energía / agua / uso del suelo / gobernanza local",
     "territorialRelevance": "Señal comparativa para evaluar proyectos de infraestructura de IA: aceptación comunitaria, demanda eléctrica e hídrica, zonificación y permisos pueden convertirse en riesgos de cronograma y reputación. No se interpreta como rechazo a la IA ni como regla aplicable en Argentina o Escobar.",
     "verification": {

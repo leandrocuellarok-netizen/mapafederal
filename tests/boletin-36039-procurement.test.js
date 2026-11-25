@@ -66,5 +66,7 @@ assert.ok(spain.relatedSources.some(x=>x.url==="https://www.europapress.es/econo
 assert.match(spain.verification.scope,/no se verificó.*resolución/i);
 assert.ok(news.some(x=>x.id==="news-news-ballotpedia-org-2026-11-06-voters-favored-limiting-data-center-development-in-40-of-41-local-ballot-measures-on-nov-3" && x.date==="2026-11-06"));
 assert.ok(news.some(x=>x.url==="https://news.ballotpedia.org/2026/11/06/voters-favored-limiting-data-center-development-in-40-of-41-local-ballot-measures-on-nov-3/"));
+const ballot=news.find(x=>x.url==="https://news.ballotpedia.org/2026/11/06/voters-favored-limiting-data-center-development-in-40-of-41-local-ballot-measures-on-nov-3/");
+assert.match(ballot.jurisdictionScope,/California, Florida, Ohio, Kansas, Maine, Illinois, Wisconsin, New Jersey, Nevada y Dakota del Norte/);
 
 console.log("BORA 36.039: fichas, circulares, Laguna Paiva, Cuenca Alta 088 y estados de licitación comprobados.");
