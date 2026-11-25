@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 05:56 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 09:10 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,11 +8,11 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 51 registros |
-| Investment Finder | 64 registros |
+| Radar IA | 55 registros |
+| Investment Finder | 67 registros |
 | Oportunidades abiertas | 32 |
-| Disponibilidad desconocida | 29 |
-| Cerradas | 3 |
+| Disponibilidad desconocida | 30 |
+| Cerradas | 5 |
 | Event Intelligence | 4 registros |
 | Nodos estratégicos | 86 |
 | Módulos documentados | 6 |
@@ -308,3 +308,16 @@ El catálogo de oportunidades conserva 24 registros de Escobar: 5 abiertos (LP 7
 - Commits: Radar IA `5b9ed843` y orden cronológico `142c320b`; Investment Finder `81a3f212`; registro `fe8ccdc3`. Registro completo: [GBIE ciclo 07:56](../runs/2026-11-25-gbie-cycle-0756.md).
 - El estado combinado de los commits no devolvió checks y la consulta de ejecuciones disponible no expuso runs asociados. No se declara CI ni despliegue de Pages exitosos; tampoco hubo inspección visual independiente. El balance sigue provisional hasta la revisión de las 20:00 ART.
 - Pendientes: inspeccionar pliegos completos, verificar circulares y adjudicaciones, reintentar Boletín Oficial bonaerense, resolver BESS Maschwitz y validar CRS/semántica del dataset de anegamientos antes de integrar geometrías.
+
+
+## Actualización del ciclo 09:02 — 25/11/2026
+
+- Radar IA permanece en 55 registros; no se encontró una novedad adicional suficientemente verificada para incorporar sin duplicar señales existentes. Se corrigió el ID determinista del registro Five9 para que refleje la URL de la SEC terminada en `.htm`. Los ámbitos internacionales y nacionales siguen en `jurisdictionScope`: el campo `jurisdictions` de Territorial Monitor admite provincias argentinas y CABA, no países extranjeros ni una jurisdicción nacional genérica.
+- Investment Finder pasó de 66 a 67 registros. Se incorporó Bajo del Choique-La Invernada (Pluspetrol–GyP), Neuquén, como proyecto provincial en etapa `announced` y disponibilidad `unknown`. La Resolución 1808/2026 aprobó la adhesión al RIGI como Proyecto de Exportación Estratégica de Largo Plazo; Presidencia informa un plan de USD 12.240 millones, exportaciones esperadas cercanas a USD 2.300 millones anuales y más de 2.300 empleos. Son cifras de proyecto, no desembolsos ejecutados ni capital disponible a terceros.
+- Estado general de Investment Finder: 32 abiertos, 30 desconocidos y 5 cerrados. Defensa LP 0069/2026 y Armada LP 0569/2026 vencieron el 25/11 a las 09:00; se marcaron cerradas tras la reconsulta de las 09:02 ART. No se verificaron actas, ofertas ni adjudicaciones. Armada LP 0497/2026 seguía abierta a las 09:02, con apertura prevista para las 10:00; requiere revalidación posterior.
+- Argentina LNG ya estaba registrado. Se revalidó el anuncio ministerial de incorporación al RIGI informado por Reuters y la información de Eni sobre el alcance del proyecto y el objetivo de FID a fines de 2026. Al 25/11 no se localizó una resolución formal de adhesión ni se verificó FID; el estado continúa `unknown` y los montos se consideran expectativas, no ejecución.
+- Escobar conserva 24 registros: 5 abiertos, 16 desconocidos y 3 cerrados. No se encontró un nuevo llamado local abierto verificable en esta ventana. QUO Loma Verde tenía apertura comercial anunciada para el 24/11, pero no se halló confirmación independiente de inauguración; permanece en construcción hasta contar con evidencia. BESS Maschwitz conserva la discrepancia territorial pendiente y el dataset municipal de anegamientos no se georreferencia hasta validar CRS y semántica.
+- Calidad: se corrigieron tres causas de fallos de CI detectadas durante la ejecución: (1) países cargados en el campo cartográfico limitado a provincias/CABA; (2) proyecto de Neuquén marcado como nacional en lugar de provincial; (3) ID de Five9 con sufijo `html` en vez de `htm`. La validación manual confirmó JSON, IDs únicos, IDs de noticias deterministas, URLs HTTPS, geografía, scopes, fechas, montos y referencias de páginas.
+- GitHub Actions run [45611091493](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45611091493) completó validación y despliegue de Pages con éxito para el commit `cb7c0085`. La URL informada por el entorno de despliegue es https://leandrocuellarok-netizen.github.io/mapafederal/. La herramienta de consulta no pudo abrirla para inspección visual independiente.
+- Commits principales: Investment Finder `cc47d644` y corrección de scope `9fceb95f`; corrección del ID Five9 `cb7c0085`; registro del ciclo `e93c897b` y actualización de su trazabilidad `d97149d5`, `f7a23124`. Registro: [GBIE ciclo 09:02](../runs/2026-11-25-gbie-cycle-0902.md).
+- Próximos pasos: revalidar Armada LP 0497/2026 después de las 10:00 ART; buscar actas de apertura de las dos licitaciones vencidas; seguir la resolución/FID de Argentina LNG; revisar nuevos avisos municipales y provinciales; resolver el alcance territorial de BESS Maschwitz y el CRS del dataset de anegamientos. El balance de las 20:00 continúa provisional.
