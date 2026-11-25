@@ -165,6 +165,27 @@
     }
   },
   {
+    "id": "news-public-inspection-federalregister-gov-2026-23999-additions-to-the-entity-list",
+    "title": "Estados Unidos incorporó siete entidades del sudeste asiático a su lista de control de exportaciones de cómputo avanzado",
+    "date": "2026-11-23",
+    "category": "Regulación",
+    "summary": "El Bureau of Industry and Security (BIS) presentó para inspección pública una regla final que añade siete entidades de Malasia, Singapur y Tailandia a la Entity List. Para ellas, los artículos sujetos a las Export Administration Regulations requieren licencia y las solicitudes se revisan bajo presunción de denegación. El BIS fundamenta la medida en un riesgo significativo de desvío de bienes de cómputo avanzado hacia usos o usuarios no autorizados. La copia consultada fue presentada el 23/11 y tenía publicación programada para el 25/11; conserva marcadores en los campos de fecha y folio, por lo que no se fija aquí una fecha efectiva exacta.",
+    "source": "U.S. Department of Commerce — Bureau of Industry and Security (BIS)",
+    "url": "https://public-inspection.federalregister.gov/2026-23999.pdf",
+    "period": "Regla final presentada para inspección pública el 23/11/2026; publicación programada para el 25/11/2026. La copia consultada conserva marcadores de fecha y folio de publicación.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Estados Unidos — controles de exportación; entidades alcanzadas en Malasia, Singapur y Tailandia.",
+    "sector": "Inteligencia artificial / semiconductores / cómputo avanzado / centros de datos / controles de exportación",
+    "territorialRelevance": "Alta para el seguimiento de las cadenas internacionales de aceleradores, cómputo y centros de datos; indirecta para Argentina y Escobar. La incidencia sobre empresas argentinas depende de operaciones con las entidades listadas o con bienes sujetos a las reglas EAR; no constituye una prohibición general para compradores locales.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se revisó la copia oficial de inspección pública del Federal Register, FR Doc. 2026-23999, Docket 261123-0006. El texto enumera siete entidades en Malasia, Singapur y Tailandia y establece requisito de licencia para todos los artículos sujetos a EAR, con presunción de denegación. El documento indica publicación programada para el 25/11/2026, pero la versión consultada conserva campos de fecha y folio como marcadores; no se declara comprobada la versión final publicada ni se fija una fecha efectiva exacta. El BIS describe un riesgo de desvío; el registro no convierte ese fundamento en una condena penal ni en una constatación independiente de cada operación."
+    }
+  },
+  {
     "id": "news-eldiadeescobar-com-ar-maschwitz-marcho-contra-la-instalacion-de-una-planta-de-baterias-de-litio",
     "title": "Vecinos de Ingeniero Maschwitz reclamaron relocalizar el proyecto BESS",
     "date": "2026-11-22",
@@ -437,6 +458,27 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-24",
       "scope": "Se revisó el comunicado corporativo de Zscaler del 20/11/2026. Se atribuyen expresamente al proveedor las colaboraciones con Anthropic y Mistral, la integración de Claude Mythos 5.1, el carácter de vista previa limitada y el alcance europeo de la solución con Mistral. No se infieren resultados de seguridad, adopción comercial generalizada ni disponibilidad en Argentina."
+    }
+  },
+  {
+    "id": "news-www-nestle-com-media-news-deep-tech-center-orbe-ai-robotics",
+    "title": "Nestlé inauguró un centro Deep Tech para desarrollar IA, sensores y robótica aplicados a alimentos y manufactura",
+    "date": "2026-11-20",
+    "category": "Tecnología",
+    "summary": "Nestlé informó la apertura de su Deep Tech Center en Orbe, Suiza, para desarrollar, probar y escalar aplicaciones de inteligencia artificial, sensores inteligentes, robótica y sistemas conectados. El trabajo abarca experiencia de consumo, investigación y desarrollo, y manufactura. La empresa indica que las aplicaciones se prototipan y validan en pruebas piloto antes de extenderse a sus operaciones; no publica un monto de inversión ni un calendario general de despliegue. Es una comunicación corporativa, no una auditoría independiente de resultados.",
+    "source": "Nestlé Global",
+    "url": "https://www.nestle.com/media/news/deep-tech-center-orbe-ai-robotics",
+    "period": "Centro inaugurado el 20/11/2026; las aplicaciones pasan por prototipado y pruebas piloto antes de su posible despliegue, sin calendario general publicado.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Suiza — Orbe, cantón de Vaud; caso empresarial internacional.",
+    "sector": "Alimentos y bebidas / manufactura / IA industrial / sensores / robótica",
+    "territorialRelevance": "Referencia comparativa para el seguimiento de automatización industrial en alimentos, manufactura y logística en Argentina y Escobar. No acredita inversión, empleo ni despliegue de Nestlé en el Partido de Escobar.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se revisó el comunicado corporativo original de Nestlé, fechado el 20/11/2026. Confirma la apertura del centro en Orbe y su foco en IA, sensores, robótica y sistemas conectados para experiencia de consumo, I+D y manufactura. La empresa describe instalaciones de prototipado y pruebas piloto antes del despliegue. No se informa monto de inversión, calendario general de adopción, métricas de productividad ni resultados independientes; no se atribuye una implantación en Argentina."
     }
   },
   {

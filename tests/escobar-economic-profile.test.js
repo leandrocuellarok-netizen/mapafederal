@@ -156,3 +156,39 @@ assert.match(bessPba.verification.scope, /no resuelve la contradicción/i);
 assert.equal(new URL(bessPba.url).protocol, "https:");
 
 console.log("Escobar: empresas, proyecto portuario, expedientes ambientales, períodos de participación y etiquetas de prefactibilidad comprobados.");
+
+
+assert.match(bess.description, /Mapa 9 topográfico.*Ingeniero Maschwitz.*Partido de Escobar/i);
+assert.match(bess.verification.scope, /contradicción interna/i);
+assert.equal(bess.verification.checkedAt, "2026-11-25");
+const bessEias = bess.relatedSources.find(source => source.url.includes("/adjunto/viewpdf/"));
+assert.ok(bessEias, "Falta el EIAS completo de BESS Maschwitz");
+assert.equal(bessEias.sourcePublishedAt, "2025-09-16");
+assert.equal(bessEias.verification.status, "verified");
+assert.equal(bessEias.verification.checkedAt, "2026-11-25");
+assert.match(bessEias.verification.scope, /Mapa 9.*Partido de Escobar/i);
+assert.match(bessEias.verification.scope, /Parcela 279a.*Tigre/i);
+assert.equal(new URL(bessEias.url).protocol, "https:");
+
+const radarNews = JSON.parse(fs.readFileSync("data/news.json", "utf8"));
+const bisRule = radarNews.find(entry => entry.id === "news-public-inspection-federalregister-gov-2026-23999-additions-to-the-entity-list");
+assert.ok(bisRule, "Falta la regla BIS 2026-23999");
+assert.equal(bisRule.date, "2026-11-23");
+assert.equal(bisRule.category, "Regulación");
+assert.equal(bisRule.verification.status, "editorial_reviewed");
+assert.equal(bisRule.verification.checkedAt, "2026-11-25");
+assert.deepEqual(bisRule.jurisdictions, []);
+assert.equal(bisRule.geographyStatus, "not_specified");
+assert.match(bisRule.verification.scope, /siete entidades/i);
+assert.match(bisRule.verification.scope, /no se fija una fecha efectiva exacta/i);
+assert.equal(new URL(bisRule.url).protocol, "https:");
+
+const nestleAi = radarNews.find(entry => entry.id === "news-www-nestle-com-media-news-deep-tech-center-orbe-ai-robotics");
+assert.ok(nestleAi, "Falta el centro Deep Tech de Nestlé");
+assert.equal(nestleAi.date, "2026-11-20");
+assert.equal(nestleAi.source, "Nestlé Global");
+assert.equal(nestleAi.verification.status, "editorial_reviewed");
+assert.deepEqual(nestleAi.jurisdictions, []);
+assert.equal(nestleAi.geographyStatus, "not_specified");
+assert.match(nestleAi.verification.scope, /pruebas piloto/i);
+assert.equal(new URL(nestleAi.url).protocol, "https:");

@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 24/11/2026 a las 21:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 00:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,7 +8,7 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 42 registros |
+| Radar IA | 45 registros |
 | Investment Finder | 56 registros |
 | Oportunidades abiertas | 25 |
 | Disponibilidad desconocida | 28 |
@@ -164,3 +164,13 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 3. Reintentar las ediciones oficiales 14517 y 14523 cuando el sitio responda.
 4. Confirmar CI y Pages tras los commits de datos y el documento.
 5. Cerrar el balance definitivo el 25/11/2026 a las 20:00.
+
+
+## Actualización del ciclo 00:00 — 25/11/2026
+
+- Radar IA: se incorporaron dos registros que no estaban en el catálogo: (1) Nestlé abrió el 20/11 su Deep Tech Center en Orbe, Suiza, para probar IA, sensores, robótica y sistemas conectados en experiencia de consumo, I+D y manufactura; (2) el BIS presentó para inspección pública la regla final FR Doc. 2026-23999, que añade siete entidades de Malasia, Singapur y Tailandia a la Entity List por riesgo de desvío de bienes de cómputo avanzado. La copia oficial consultada señala publicación programada para el 25/11 y conserva marcadores en los campos de fecha y folio; no se afirma una fecha efectiva exacta. Radar IA pasa de 43 a 45 registros.
+- Investment Finder: no se agregó una oportunidad nueva. El catálogo conserva 56 registros (25 abiertos, 28 con disponibilidad desconocida y 3 cerrados); Escobar mantiene 24 (5 abiertos, 16 desconocidos, 3 cerrados). Se consultó la edición 14527 del Boletín Oficial bonaerense, pero el acceso devolvió timeout; la edición 14526 del 24/11 sigue siendo la última edición revisada en esta ejecución. No se afirma que no existan nuevos llamados.
+- Escobar / BESS Maschwitz: se pudo inspeccionar el texto extraído del EIAS BESS MAS 022/25 completo. La portada, el resumen ejecutivo y la sección socioeconómica identifican Dique Luján, Tigre, y el resumen consigna parcela 279a, partida 120574 y coordenadas. Sin embargo, el Mapa 9 topográfico describe PA Maschwitz en Ingeniero Maschwitz, Escobar. Es una contradicción interna del mismo EIAS, además de la clasificación del expediente de participación 2026 como Escobar. El registro permanece provincial, sin coordenada ni marcador, hasta obtener aclaración catastral o administrativa.
+- Fuentes primarias revisadas: Federal Register/BIS, FR Doc. 2026-23999; Nestlé Global, comunicado del 20/11/2026; Ministerio de Ambiente PBA, ficha de participación pública del BESS y EIAS BESS MAS 022/25. La comunicación municipal de Escobar del 03/11 y las coberturas vecinales del 22–24/11 siguen como contexto atribuido, no como autorización ni evaluación técnica.
+- Contrato enterprise: sin cambios. freeFormReports=false, customAnalyses=by_request, predictiveClaimsRequireValidation=true, clientDataPublic=false. Federal Reports continúa como único piloto descriptivo; cinco módulos siguen planificados. No se habilita generación libre de informes ni se presentan modelos predictivos como operativos.
+- Validación previa a escritura: JSON parseado; URLs nuevas HTTPS; IDs y URLs de Radar IA deduplicados; orden cronológico preservado; clasificación geográfica internacional mantenida sin asignar provincias argentinas. El commit de ciclo dispara el workflow de validación y despliegue; el resultado se comprobará después de la publicación.
