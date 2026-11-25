@@ -546,3 +546,10 @@ El conteo de 108 oportunidades consignado en la actualización anterior era inte
 El estado definitivo del corte es **117 oportunidades: 69 abiertas, 42 desconocidas y 6 cerradas**. No se añadieron presupuestos no publicados, adjudicaciones inferidas ni capacidades técnicas no contenidas en los avisos. La actualización adicional está documentada en el [registro del ciclo 14:03](../runs/2026-11-25-gbie-cycle-1403.md).
 
 El workflow #656, asociado al commit de datos `4f4e7fb028be1a136cb8d0fd02c54443118c0a5f`, completó la validación; el despliegue estaba en cola al momento de la ampliación documental. El workflow #653 ya había desplegado correctamente la versión anterior de los catálogos; no se considera publicado el último lote hasta que finalice el despliegue asociado a #656.
+
+### Confirmación final de publicación del corte 14:03
+
+- El workflow [#656](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45663165750), sobre el commit de datos `4f4e7fb028be1a136cb8d0fd02c54443118c0a5f`, terminó con `validate: success` y `deploy: success`. Esto confirma la publicación del catálogo de 117 oportunidades.
+- El workflow [#658](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45663287257), sobre el commit de revisión `1ea3d73d52b88b4f12b531210a5657ce95c53ed2`, también terminó con validación y despliegue exitosos.
+- El workflow #657 fue cancelado por la ejecución posterior #658; los cambios documentales permanecen en `main` y el despliegue final se completó con #658.
+- La comprobación visual manual independiente del sitio no estuvo disponible; se cuenta con la validación automatizada del punto de entrada y la confirmación del despliegue de GitHub Pages.
