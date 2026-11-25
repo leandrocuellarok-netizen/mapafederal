@@ -390,6 +390,7 @@ El catálogo de oportunidades conserva 23 registros de Escobar: 5 abiertos (LP 7
 - Se añadió una noticia regulatoria, con fuente primaria del BOE: Real Decreto 1032/2026 de España, publicado el 21/11/2026 y vigente desde el 22/11/2026.
 - La norma fija requisitos de acceso y conexión eléctrica para centros de datos con potencia de acceso igual o superior a 10 MW; contempla criterios de energía renovable, eficiencia energética e hídrica, transparencia y salvaguardas de soberanía digital para sistemas públicos de categoría ALTA. Durante la transición al etiquetado europeo establece valores PUE ≤1,25 y WUE ≤0,1 con plazos de adaptación. No se presenta como regulación general de IA ni como norma aplicable en Argentina.
 - Catálogo: 58 → 59. ID determinista: news-www-boe-es-eli-es-rd-2026-11-20-1032.
+- La jurisdicción España se conserva explícitamente en jurisdictionScope; el filtro estructurado vigente solo admite las 24 jurisdicciones argentinas, por lo que no se fuerza una provincia local ni se altera el esquema en este ciclo.
 - Fuente primaria: https://www.boe.es/eli/es/rd/2026/11/20/1032
 - Fuente explicativa complementaria: https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html
 
