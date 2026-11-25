@@ -1559,19 +1559,24 @@
       "location": "Ingeniero Maschwitz, Partido de Escobar, Provincia de Buenos Aires",
       "stage": "under_construction",
       "opportunityStatus": "unknown",
-      "amount": null,
+      "amount": {
+        "value": 7000000000,
+        "currency": "ARS",
+        "basis": "Inversión aproximada informada por la Municipalidad el 16/11/2026 («cercana a ARS 7.000 millones»); cifra anunciada, no monto contractual, certificado ni gasto ejecutado."
+      },
       "validFrom": "2026-11-16",
       "validUntil": null,
       "sourceName": "Municipalidad de Escobar",
       "sourceUrl": "https://www.escobar.gob.ar/noticias/sujarchuk-y-katopodis-visitaron-importantes-obras-de-infraestructura-e/",
       "sourcePublishedAt": "2026-11-16",
       "period": "Inicio de obra informado el 16/11/2026; la fuente no publica fecha de finalización.",
-      "description": "La Municipalidad informó el inicio de la pavimentación integral de más de 23 cuadras en el barrio El Dorado, Ingeniero Maschwitz, con pavimento de hormigón, veredas y cordón cuneta. El anuncio estima una inversión cercana a ARS 7.000 millones y señala que la obra permitirá una salida más directa hacia Tigre. Se registra como proyecto público en ejecución, no como licitación abierta. El campo amount queda nulo porque el monto publicado es aproximado y no una certificación de inversión ejecutada.",
+      "description": "La Municipalidad informó el inicio de la pavimentación integral de más de 23 cuadras del barrio El Dorado, en Ingeniero Maschwitz: unos 2.300 metros con pavimento de hormigón, veredas y cordón cuneta. El anuncio atribuye al proyecto una inversión cercana a ARS 7.000 millones y señala que permitirá una salida más directa hacia Tigre. Se registra como proyecto público en ejecución, no como licitación abierta; la cifra se conserva como aproximación municipal, no como monto contractual ni gasto ejecutado.",
       "verification": {
         "status": "verified",
-        "checkedAt": "2026-11-24",
-        "scope": "Verificado el anuncio institucional municipal, la localidad, el alcance de más de 23 cuadras y el inicio informado. No se verificaron contratos, certificaciones, pagos, avance físico independiente ni fecha de finalización."
-      }
+        "checkedAt": "2026-11-25",
+        "scope": "Se reabrió la publicación institucional municipal del 16/11/2026 y se verificaron más de 23 cuadras, 2.300 metros, pavimento de hormigón, veredas, cordón cuneta e inversión aproximada cercana a ARS 7.000 millones. La cifra se atribuye al anuncio municipal; no se verificaron contrato, contratista, certificaciones, pagos, recepción ni avance físico independiente al 25/11."
+      },
+      "territorialRelevance": "Proyecto localizado en El Dorado, Ingeniero Maschwitz, con más de 23 cuadras y 2.300 metros de infraestructura vial. Puede mejorar la conectividad hacia Tigre y generar demanda de proveedores de construcción, pavimentación y servicios; no se verificaron contratista, adjudicación, certificados ni pagos."
     },
     {
       "id": "escobar-pavimentacion-calle-salta-garin-2026",
@@ -2406,16 +2411,22 @@
       "validFrom": "2026-11-24",
       "validUntil": "2026-12-14",
       "sourceName": "Boletín Oficial de la República Argentina — Banco Central de la República Argentina",
-      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421005/20261124",
-      "sourcePublishedAt": "2026-11-24",
-      "period": "Consultas hasta el 03/12/2026; visita obligatoria a coordinar hasta el 02/12, de 10:00 a 14:00; ofertas electrónicas hasta el 14/12/2026 a las 15:00 y apertura ese día a las 15:00. El aviso no publica presupuesto. Requiere preinscripción en el registro de proveedores del BCRA e inscripción al momento de la adjudicación.",
-      "description": "Licitación Pública 48/26 del Banco Central para mantenimiento preventivo y correctivo y provisión de horas de soporte técnico para equipamiento y sistemas de audio en sus dependencias, por 24 meses con opción de 12 meses adicionales. La visita de inspección es obligatoria, salvo la excepción indicada para el prestador del período anterior. No se verificaron el pliego completo, el presupuesto ni la adjudicación.",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421030/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "period": "Consultas hasta el 03/12/2026; visita obligatoria a coordinar hasta el 02/12, de 10:00 a 14:00; ofertas electrónicas hasta el 14/12/2026 a las 15:00 y apertura ese día a las 15:00. Requiere preinscripción en el registro de proveedores del BCRA e inscripción al momento de la adjudicación. El aviso del 25/11 confirma que la visita es obligatoria, salvo la excepción prevista para el prestador anterior.",
+      "description": "Licitación Pública 48/26 del Banco Central para mantenimiento preventivo y correctivo y provisión de horas de soporte técnico para equipamiento y sistemas de audio en sus dependencias, por 24 meses con opción de 12 meses adicionales. La visita de inspección es obligatoria, salvo la excepción indicada para el prestador del período anterior. Los interesados deben estar preinscriptos en el registro de proveedores y registrados al momento de la adjudicación. No se publica presupuesto.",
       "territorialRelevance": "Contratación nacional con tareas en CABA. Puede interesar a empresas de integración audiovisual, mantenimiento electrónico y soporte técnico; el aviso no informa monto ni adjudicatario.",
-      "relatedSources": [],
+      "relatedSources": [
+        {
+          "label": "Aviso oficial original publicado el 24/11/2026",
+          "url": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421005/20261124",
+          "sourcePublishedAt": "2026-11-24"
+        }
+      ],
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-25",
-        "scope": "Verificado el aviso oficial del Boletín Oficial publicado el 24/11/2026. Se comprobaron objeto, plazo contractual, consultas, visita obligatoria, presentación y apertura de ofertas. El aviso no publica presupuesto; no se revisó el pliego completo ni se verificaron adjudicación o ejecución."
+        "scope": "Se revalidó el procedimiento con el aviso oficial del Boletín Oficial publicado el 25/11/2026, en contraste con el aviso del 24/11. Se confirmaron objeto, plazo contractual, consultas hasta el 03/12, visita obligatoria hasta el 02/12, presentación hasta el 14/12 a las 15:00, apertura y requisito de registro de proveedores. No se publica presupuesto y no se revisó el pliego completo."
       }
     },
     {
@@ -2843,6 +2854,267 @@
         "status": "verified",
         "checkedAt": "2026-11-25",
         "scope": "Se abrió el aviso oficial del Boletín Oficial, edición 25/11/2026, y se comprobó el texto del aviso (e. 24/11 y v. 30/11). Se verificaron objeto, presupuesto oficial ARS 468.763.983,06 IVA incluido, garantía de oferta del 1%, plazo de 90 días, anticipo financiero del 15% contra póliza, pliego sin costo, recepción hasta 11/12/2026 a las 09:30 y apertura a las 10:00. El aviso no informa capacidad instalada ni generación prevista. No se inspeccionó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "argentina-administracion-parques-nacionales-licitacion-0036-2026-modulos-sanitarios-pn-tierra-del-fuego",
+      "name": "Administración de Parques Nacionales — LP 0036/2026: instalación de módulos sanitarios prefabricados en el Parque Nacional Tierra del Fuego",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-09",
+      "sourceName": "Boletín Oficial de la República Argentina — Administración de Parques Nacionales",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421116/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Infraestructura / servicios sanitarios / construcción modular / parques nacionales",
+      "jurisdiction": null,
+      "location": "Parque Nacional Tierra del Fuego, Argentina; el aviso no especifica una dirección más precisa.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Retiro del pliego hasta el 09/12/2026 a las 10:00; consultas hasta el 27/11/2026 a las 14:00; presentación de ofertas y apertura el 09/12/2026 a las 10:00 por COMPR.AR.",
+      "description": "Licitación Pública 0036/2026 para instalar módulos sanitarios prefabricados en el Parque Nacional Tierra del Fuego. El aviso no publica presupuesto. Revisar el pliego en COMPR.AR para confirmar cantidad, especificaciones, obra civil, logística, garantías y condiciones de participación.",
+      "territorialRelevance": "Contratación nacional localizada en un área protegida de Tierra del Fuego. Puede interesar a proveedores de construcción modular, sanitarios, instalaciones y logística; no acredita adjudicación ni elegibilidad de una empresa.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se revisó el aviso original del Boletín Oficial, publicado el 25/11/2026. Se verificaron organismo, objeto, ubicación indicada, plazo de retiro, consultas, presentación y apertura. No se publica presupuesto y no se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "argentina-gendarmeria-licitacion-0104-2026-servicio-gestion-impresiones-digitales",
+      "name": "Gendarmería Nacional — LP 0104/2026: locación, mantenimiento y gestión integral de impresiones digitales",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-16",
+      "sourceName": "Boletín Oficial de la República Argentina — Gendarmería Nacional Argentina",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421117/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Tecnología / servicios de impresión / gestión documental / mantenimiento",
+      "jurisdiction": null,
+      "location": "Argentina — dependencias de Gendarmería Nacional; sedes de prestación no detalladas en el aviso.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Retiro del pliego desde el 25/11/2026 a las 08:00 hasta el 16/12/2026 a las 10:00; consultas hasta el 10/12/2026 a las 06:00; ofertas y apertura el 16/12/2026 a las 10:00 por COMPR.AR.",
+      "description": "Licitación Pública 0104/2026 para locación, mantenimiento y gestión integral de impresiones digitales. El aviso no publica presupuesto ni detalla las sedes. Revisar el pliego en COMPR.AR para confirmar volúmenes, equipamiento, consumibles, niveles de servicio y requisitos.",
+      "territorialRelevance": "Oportunidad nacional para proveedores de impresión administrada, gestión documental, mantenimiento y servicios tecnológicos. No se acredita adjudicación ni capacidad de un proveedor específico.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se revisó el aviso original del Boletín Oficial publicado el 25/11/2026. Se verificaron organismo, número, objeto, expediente, plazo de retiro, consultas, presentación y apertura. No se publica presupuesto y no se inspeccionó el pliego completo."
+      }
+    },
+    {
+      "id": "argentina-arca-direccion-regional-norte-licitacion-14-2026-higiene-seguridad-trabajo",
+      "name": "ARCA — Dirección Regional Norte, LP 14/2026: servicio de higiene y seguridad en el trabajo",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-16",
+      "sourceName": "Boletín Oficial de la República Argentina — ARCA, Dirección Regional Norte",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421025/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Servicios profesionales / higiene y seguridad laboral / salud ocupacional",
+      "jurisdiction": null,
+      "location": "Apertura en Jaramillo 1595, 8.º piso, Ciudad Autónoma de Buenos Aires; prestación en edificios dependientes de la Dirección Regional Norte, cuyas sedes no se enumeran en el aviso.",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "period": "Retiro del pliego hasta el 10/12/2026; visita optativa hasta el 10/12/2026; consultas por escrito hasta el 11/12/2026; apertura el 16/12/2026 a las 11:00. El aviso no especifica una hora límite separada para la recepción de ofertas; confirmar en el pliego.",
+      "description": "Licitación Pública 14/2026 para servicios de higiene y seguridad en el trabajo en edificios dependientes de la Dirección Regional Norte de ARCA. No se publica presupuesto. El aviso indica retiro de pliego, visita optativa, consultas y apertura, pero no precisa por separado el cierre de recepción de ofertas.",
+      "territorialRelevance": "Contratación nacional de servicios profesionales de seguridad e higiene laboral. La dirección de apertura está en CABA; las sedes de prestación no están detalladas. La disponibilidad se mantiene desconocida hasta verificar el pliego.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se revisó el aviso original del Boletín Oficial publicado el 25/11/2026. Se verificaron objeto, expediente, domicilio de apertura, período de retiro, visita optativa, consultas y fecha/hora de apertura. No se publica presupuesto ni se especifica una fecha/hora límite independiente de ofertas."
+      }
+    },
+    {
+      "id": "argentina-arca-direccion-regional-salta-licitacion-19-2026-servicio-acarreo",
+      "name": "ARCA — Dirección Regional Salta, LP 19/2026: servicio de acarreo",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-04",
+      "sourceName": "Boletín Oficial de la República Argentina — ARCA, Dirección Regional Salta",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421026/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Logística / traslado / servicios generales / acarreo",
+      "jurisdiction": null,
+      "location": "Dirección Regional Salta, Deán Funes 190, 4.º piso, ciudad de Salta, Provincia de Salta, Argentina.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Presentación de ofertas hasta el 04/12/2026 antes del horario de apertura; apertura el 04/12/2026 a las 11:00 en Deán Funes 190, 4.º piso, Salta. El pliego no tiene costo.",
+      "description": "Licitación Pública 19/2026 para servicio de acarreo destinado al edificio sede de la Dirección Regional Salta de ARCA. El aviso no publica presupuesto. Consultas y retiro del pliego se gestionan ante la Dirección Regional Salta; revisar el alcance y condiciones antes de ofertar.",
+      "territorialRelevance": "Contratación localizada en Salta para empresas de logística, acarreo y servicios generales. No se publica presupuesto ni se verifican ofertas, adjudicación o ejecución.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se revisó el aviso original del Boletín Oficial publicado el 25/11/2026. Se verificaron organismo, objeto, expediente, lugar de presentación, fecha límite, hora de apertura y gratuidad del pliego. No se publica presupuesto y no se revisó el pliego completo."
+      }
+    },
+    {
+      "id": "argentina-autoridad-regulatoria-nuclear-concurso-6-2026-conectividad-cna-cne",
+      "name": "Autoridad Regulatoria Nuclear — Concurso Público 6/2026: conectividad full internet y enlaces punto a punto para CNA y CNE",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-04",
+      "validUntil": "2026-11-26",
+      "sourceName": "Boletín Oficial de la República Argentina — Autoridad Regulatoria Nuclear",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421031/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Telecomunicaciones / conectividad / infraestructura nuclear / enlaces de datos",
+      "jurisdiction": null,
+      "location": "Argentina — enlaces para CNA y CNE según el objeto del llamado; las sedes exactas no se detallan en la circular.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "El aviso original del 04/11/2026 fija retiro del pliego y presentación de ofertas hasta el 26/11/2026 a las 10:00. La Circular modificatoria 3, publicada el 25/11, posterga la apertura al 03/12/2026, pero no menciona una prórroga de recepción de ofertas. Confirmar el plazo en COMPR.AR; no se presume extendido.",
+      "description": "Concurso Público 6/2026 de la Autoridad Regulatoria Nuclear para servicios de conectividad full internet y enlaces punto a punto para CNA y CNE. La Circular 3 cambia la fecha de apertura al 03/12/2026. El aviso original mantiene la presentación de ofertas hasta el 26/11/2026 a las 10:00; no se encontró una extensión explícita de ese plazo.",
+      "territorialRelevance": "Servicio de conectividad para infraestructura nuclear argentina. Puede interesar a operadores de telecomunicaciones e integradores de enlaces; la disponibilidad se considera abierta solo hasta el plazo original de ofertas, sujeto a confirmación oficial.",
+      "relatedSources": [
+        {
+          "label": "Aviso original del concurso (04/11/2026)",
+          "url": "https://www.boletinoficial.gov.ar/detalleAviso/tercera/2420029/20261104",
+          "sourcePublishedAt": "2026-11-04"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se contrastó el aviso original del Boletín Oficial del 04/11/2026, que fija presentación de ofertas hasta el 26/11/2026 a las 10:00, con la Circular 3 publicada el 25/11/2026, que posterga la apertura al 03/12/2026. La circular no menciona una prórroga de recepción. Se conserva el vencimiento original y se recomienda reconfirmarlo en COMPR.AR; no se infiere extensión."
+      }
+    },
+    {
+      "id": "hospital-cuenca-alta-licitacion-087-2026-bombas-infusion",
+      "name": "Hospital Cuenca Alta SAMIC — LP 087/2026: provisión de bombas de infusión",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-09",
+      "sourceName": "Boletín Oficial de la República Argentina — Hospital de Alta Complejidad Cuenca Alta Dr. Néstor Carlos Kirchner (SAMIC)",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421038/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Salud / equipamiento médico / bombas de infusión",
+      "jurisdiction": null,
+      "location": "Hospital Cuenca Alta Dr. Néstor Carlos Kirchner, Ruta Provincial 6 y Ruta Nacional 205, Cañuelas, Provincia de Buenos Aires, Argentina.",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "period": "Apertura de propuestas el 09/12/2026 a las 11:00 en el Área de Compras y Contrataciones del Hospital. El aviso remite a la web institucional para alcances y condiciones, pero no precisa una fecha/hora independiente de cierre de ofertas.",
+      "description": "Licitación Pública 087/2026 para provisión de bombas de infusión varias para el Hospital Cuenca Alta Dr. Néstor Carlos Kirchner. El aviso no publica presupuesto y remite a la institución para conocer alcances y condiciones contractuales.",
+      "territorialRelevance": "Contratación hospitalaria localizada en Cañuelas, Provincia de Buenos Aires. Puede interesar a proveedores de equipamiento médico y tecnología hospitalaria; la disponibilidad permanece desconocida hasta verificar el pliego completo.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se revisó el aviso oficial del Boletín Oficial publicado el 25/11/2026. Se verificaron objeto, expediente, lugar y fecha/hora de apertura. El aviso no publica presupuesto ni establece en el extracto una fecha/hora separada para la presentación; las condiciones completas remiten al hospital."
+      }
+    },
+    {
+      "id": "hospital-cuenca-alta-licitacion-093-2026-provision-volquetes",
+      "name": "Hospital Cuenca Alta SAMIC — LP 093/2026: provisión de volquetes",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-09",
+      "sourceName": "Boletín Oficial de la República Argentina — Hospital de Alta Complejidad Cuenca Alta Dr. Néstor Carlos Kirchner (SAMIC)",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421039/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Servicios / logística / volquetes / gestión de residuos",
+      "jurisdiction": null,
+      "location": "Hospital Cuenca Alta Dr. Néstor Carlos Kirchner, Ruta Provincial 6 y Ruta Nacional 205, Cañuelas, Provincia de Buenos Aires, Argentina.",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "period": "Apertura de propuestas el 09/12/2026 a las 13:00 en el Área de Compras y Contrataciones del Hospital. El aviso remite a la web institucional para alcances y condiciones, pero no precisa una fecha/hora independiente de cierre de ofertas.",
+      "description": "Licitación Pública 093/2026 para contratación del servicio de provisión de volquetes para el Hospital Cuenca Alta Dr. Néstor Carlos Kirchner. El aviso no publica presupuesto y remite a la institución para conocer alcances y condiciones contractuales.",
+      "territorialRelevance": "Contratación de servicios localizada en Cañuelas, Provincia de Buenos Aires. Puede interesar a operadores de volquetes, logística y gestión de residuos; no se presume disponibilidad hasta verificar el pliego.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se revisó el aviso oficial del Boletín Oficial publicado el 25/11/2026. Se verificaron objeto, expediente, lugar y fecha/hora de apertura. El aviso no publica presupuesto ni establece en el extracto una fecha/hora separada para la presentación; las condiciones completas remiten al hospital."
+      }
+    },
+    {
+      "id": "unsj-licitacion-4-2026-repavimentacion-complejo-universitario-islas-malvinas",
+      "name": "Universidad Nacional de San Juan — LP 4/2026: repavimentación de calles internas del Complejo Universitario Islas Malvinas, etapa 1",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-11",
+      "sourceName": "Boletín Oficial de la República Argentina — Universidad Nacional de San Juan",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421106/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Infraestructura educativa / obra pública / repavimentación vial",
+      "jurisdiction": null,
+      "location": "Complejo Universitario Islas Malvinas, Universidad Nacional de San Juan, ciudad de San Juan, Provincia de San Juan, Argentina.",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 345573025,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado con IVA incluido; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "period": "Recepción de sobres hasta el 11/12/2026 a las 11:30; apertura el 11/12/2026 a las 12:00. Plazo de ejecución: 30 días corridos. Anticipo financiero del 15% contra póliza de garantía. Pliego sin costo.",
+      "description": "Licitación Pública 4/2026 para la repavimentación de calles internas del Complejo Universitario Islas Malvinas, etapa 1, mediante sistema de ajuste alzado. Presupuesto oficial ARS 345.573.025, IVA incluido. El aviso establece 30 días de ejecución y anticipo financiero del 15% contra garantía.",
+      "territorialRelevance": "Obra pública universitaria en San Juan. Puede interesar a constructoras viales, empresas de pavimentación y proveedores de materiales; el presupuesto es oficial y no representa monto adjudicado ni obra ejecutada.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se revisó el aviso original del Boletín Oficial publicado el 25/11/2026. Se verificaron objeto, sistema de contratación, presupuesto oficial con IVA, garantía de oferta, plazo de ejecución, anticipo, recepción de sobres y apertura. No se verificaron oferentes, adjudicación ni ejecución."
+      }
+    },
+    {
+      "id": "gendarmeria-licitacion-0101-2026-limpieza-paso-internacional-perez-rosales",
+      "name": "Gendarmería Nacional — LP 0101/2026: servicio de limpieza para el Paso Internacional Pérez Rosales",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-25",
+      "validUntil": "2026-12-11",
+      "sourceName": "Boletín Oficial de la República Argentina — Gendarmería Nacional, Escuadrón 34 Bariloche",
+      "sourceUrl": "https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421108/20261125",
+      "sourcePublishedAt": "2026-11-25",
+      "sector": "Servicios / limpieza / infraestructura fronteriza / logística",
+      "jurisdiction": null,
+      "location": "Paso Internacional Pérez Rosales, ámbito del Escuadrón 34 Bariloche, Provincia de Río Negro, Argentina.",
+      "opportunityStatus": "open",
+      "amount": null,
+      "period": "Retiro del pliego desde el 25/11/2026 a las 08:00 hasta el 11/12/2026 a las 12:00; consultas hasta el 04/12/2026 a las 12:00; ofertas y apertura el 11/12/2026 a las 12:00 por COMPR.AR.",
+      "description": "Licitación Pública 0101/2026 para el servicio de limpieza del Paso Internacional Pérez Rosales, a cargo del Escuadrón 34 Bariloche de Gendarmería Nacional. El aviso no publica presupuesto. Revisar el pliego para confirmar superficies, frecuencia, dotación, equipamiento y requisitos.",
+      "territorialRelevance": "Contratación nacional localizada en un paso fronterizo de Río Negro. Puede interesar a prestadores de limpieza y mantenimiento de instalaciones fronterizas; no se verifican adjudicación ni ejecución.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se revisó el aviso original del Boletín Oficial publicado el 25/11/2026. Se verificaron unidad requirente, objeto, lugar, plazos de retiro y consultas, presentación y apertura. No se publica presupuesto y no se inspeccionó el pliego completo."
+      }
+    },
+    {
+      "id": "argentina-arca-licitacion-a0pc000000-0013-lpu26-soporte-almacenamiento-all-flash",
+      "name": "ARCA — LP A0PC000000-0013-LPU26: soporte y mantenimiento de la solución integral de almacenamiento central All Flash",
+      "recordType": "tender",
+      "scope": "national",
+      "stage": "announced",
+      "validFrom": "2026-11-13",
+      "validUntil": "2026-12-04",
+      "sourceName": "Boletín Oficial de la República Argentina — ARCA, Dirección de Compras, Infraestructura y Logística",
+      "sourceUrl": "https://www.boletinoficial.gov.ar/detalleAviso/tercera/2420468/20261113",
+      "sourcePublishedAt": "2026-11-13",
+      "sector": "Tecnología / almacenamiento empresarial / infraestructura de datos / soporte técnico",
+      "jurisdiction": null,
+      "location": "Argentina — contratación central de ARCA; sedes de prestación no detalladas en el aviso.",
+      "opportunityStatus": "unknown",
+      "amount": null,
+      "period": "Consultas hasta el 27/11/2026 a las 16:00; apertura el 04/12/2026 a las 16:00 por el Portal de Compras ARCA. El aviso no especifica una hora límite independiente para presentar ofertas; confirmar el cierre y los requisitos en el pliego.",
+      "description": "Licitación Pública A0PC000000-0013-LPU26 para soporte y mantenimiento de la solución integral de almacenamiento central All Flash de ARCA. El aviso no publica presupuesto y remite al Portal de Compras ARCA para presentación y apertura. No se infieren especificaciones, elegibilidad ni adjudicación.",
+      "territorialRelevance": "Contratación nacional relevante para integradores de almacenamiento empresarial, soporte de infraestructura de datos y mantenimiento tecnológico. No acredita una adquisición de IA ni un proveedor adjudicatario.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se revisó el aviso oficial del Boletín Oficial publicado el 13/11/2026. Se verificaron número de proceso, objeto, ausencia de costo de pliego, fecha límite de consultas y apertura. No se publica presupuesto ni una fecha/hora separada de recepción de ofertas; por eso la disponibilidad permanece desconocida."
       }
     }
   ]
