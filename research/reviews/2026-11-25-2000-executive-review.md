@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 03:09 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 03:57 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -245,3 +245,16 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - El registro de ejecución quedó publicado en `research/runs/2026-11-25-gbie-cycle-0309.md`.
 - Los commits de datos y pruebas activaron GitHub Actions; el estado del workflow de este ciclo y la comprobación visual/HTTP de Pages siguen pendientes.
 
+
+
+## Actualización del ciclo 03:57 — 25/11/2026
+
+- Radar IA: sin nuevos registros. Las noticias recientes del 23–24/11 ya estaban incorporadas; no se encontró una publicación nueva del 25/11 con fecha y fuente original suficientemente verificadas.
+- Investment Finder: sin nuevas oportunidades ni cambios de estado. Se mantienen 57 registros (26 abiertas, 28 desconocidas y 3 cerradas); Escobar conserva 23 (5 abiertas, 15 desconocidas y 3 cerradas).
+- Candidato de inversión revisado pero no incorporado: BlackCore / Project Tango, Córdoba. La empresa publica un plan de 300 MW para Tango 1, 40 MW para Tango 2 y un master plan de 1,2 GW. Las cifras son corporativas y están condicionadas a hitos. La propia web presenta estados contradictorios sobre capacidad en desarrollo y situación del sitio; la cobertura especializada consultada no localiza confirmación pública independiente suficiente de subestación, energía, terreno, RIGI ni clientes vinculantes. Se conserva como diligencia pendiente, no como inversión verificada. Fuentes: https://www.blackcore.ai/ y https://www.mundoia.com.ar/project-tango-campus-ia-cordoba/.
+- Escobar: se releyó la publicación municipal del 16/11 sobre Garín, Ingeniero Maschwitz, Maquinista Savio y Loma Verde; ya estaba reflejada y no se duplicó. Las vistas de la edición 14527 del Boletín Oficial bonaerense volvieron a dar timeout; no se incorporaron llamados ni circulares sin fuente verificable.
+- Cambio concurrente: el commit `85395449381bb3c1f2cb1e3043b5387b7276c893` añadió el dataset municipal de Plazas y Parques de Escobar (46 polígonos, EPSG:22185, ODbL). La integración geométrica sigue pendiente y no se dibuja la capa sin transformar y validar coordenadas.
+- Arquitectura y contrato enterprise sin cambios: `freeFormReports=false`, `customAnalyses=by_request`, `predictiveClaimsRequireValidation=true`, `clientDataPublic=false`. Federal Reports continúa como único piloto; cinco módulos siguen planificados.
+- No se modificaron datos productivos ni páginas en este ciclo. Se publicó únicamente el registro de ejecución. El estado combinado del último commit devolvió cero checks; no se declara CI ni despliegue exitosos. No hubo inspección visual/HTTP independiente de Pages.
+- Registro: [GBIE ciclo 03:57](../runs/2026-11-25-gbie-cycle-0357.md).
+- Pendientes: reintentar Boletín Oficial 14527; obtener documentación primaria/independiente de Project Tango; resolver BESS Maschwitz; validar geometrías de plazas/parques; confirmar CI y Pages antes de la revisión final de las 20:00.
