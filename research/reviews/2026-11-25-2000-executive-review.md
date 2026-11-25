@@ -357,3 +357,7 @@ El catálogo de oportunidades conserva 23 registros de Escobar: 5 abiertos (LP 7
 
 ### Seguimiento de CI posterior al ciclo 10:58
 - El workflow #623 (`45630250410`) pasó la validación general de catálogos, pero falló en un test de Escobar que todavía buscaba el ID antiguo de la ficha BIS 2026-23999. Se corrigió el test para localizar la ficha por URL canónica y verificar el ID determinista actualizado. CI y despliegue quedan pendientes de la siguiente ejecución; no se declara Pages publicado.
+
+
+### Seguimiento de CI — normalización de jurisdicciones provinciales
+- El workflow #625 pasó la corrección del ID BIS y llegó a Investment Finder. Detectó cuatro registros anteriores con `scope=provincial` y valores de `jurisdiction` no admitidos por el esquema provincial. Se normalizaron a `Buenos Aires` cuatro fichas (Caja de Retiros, Acueducto Parque San Martín y HIGA Pedro Fiorito LP 3/4), preservando su ubicación detallada. No se cambiaron montos, estados ni oportunidades. La siguiente ejecución de Actions debe confirmar CI/Pages.
