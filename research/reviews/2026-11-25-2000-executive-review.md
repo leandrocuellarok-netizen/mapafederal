@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 19:04 ART. Pendiente del corte final de las 20:00 y de nuevas verificaciones de vencimientos y adjudicaciones.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 19:09 ART. Pendiente del corte final de las 20:00 y de nuevas verificaciones de vencimientos y adjudicaciones.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -770,3 +770,8 @@ Corte provisional 18:01 ART. El balance de las 20:00 permanece abierto.
 - Registro detallado: [ciclo 19:04](../runs/2026-11-25-gbie-cycle-1904.md).
 
 Corte provisional 19:04 ART. El balance de las 20:00 permanece abierto.
+
+
+### Verificación posterior de publicación — 19:09 ART
+
+El workflow #702 (`45710549124`) completó validación y despliegue de GitHub Pages sobre el commit `45fd8999`; los catálogos Radar IA e Investment Finder quedaron incluidos en ese deployment. El workflow #703 validó el registro de ciclo y tenía su deployment en curso; #704 quedó en cola para el balance. No se pudo realizar inspección visual independiente de la web desde el navegador de verificación.
