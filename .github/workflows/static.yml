@@ -432,10 +432,15 @@ jobs:
               assert item.get("verification", {}).get("scope")
               if item.get("coordinateSource"):
                   assert item.get("coordinateSourceName") and item.get("coordinateSourcePublicationNote")
-          assert 'id="escobar"' in html
-          assert './assets/escobar-profile.js' in html
-          assert 'id="escobar-localities"' in html and 'id="escobar-map-nodes"' in html
-          assert 'id="escobar-mobility"' in html and "Mi Bus y ferrocarril" in html
+          escobar_html = Path("foco-escobar/index.html").read_text(encoding="utf-8")
+          escobar_js = Path("assets/foco-escobar.js").read_text(encoding="utf-8")
+          assert 'id="escobar"' in escobar_html
+          assert '../assets/foco-escobar.js' in escobar_html
+          assert 'id="escobar-localities"' in escobar_html and 'id="escobar-map-nodes"' in escobar_html
+          assert 'id="escobar-mobility"' in escobar_html and "Transporte público y ferrocarril" in escobar_html
+          assert 'href="./foco-escobar/"' in html and '<h3>Foco Escobar</h3>' in html
+          assert 'MapaFederalMap' not in escobar_js
+          assert '../data/escobar-territory.json' in escobar_js and '../data/escobar-economic-profile.json' in escobar_js
           assert "territory.mobilityDirectory" in profile_js and "mobility.stops" in profile_js
           assert "mobility.railService" in profile_js and "rail.stations" in profile_js
           rail_infrastructure = mobility["railInfrastructure"]
@@ -456,8 +461,8 @@ jobs:
           assert {item["locality"] for item in rail_nodes} == {"Belén de Escobar", "Ingeniero Maschwitz", "Garín", "Maquinista Savio", "Matheu"}
           assert "escobar-mobility-stops" in html and "escobar-mobility-locality" in profile_js
           assert "railInfrastructureHtml" in profile_js
-          assert 'href="#escobar"' in html
-          print("Escobar: 7 localidades, 246 barrios, indicadores 2026, directorios y 14 referencias cartográficas en 6 localidades validados.")
+          assert 'href="./foco-escobar/"' in html
+          print("Foco Escobar: observatorio independiente, siete localidades, 246 barrios, indicadores, directorios y 14 referencias cartográficas validados.")
           PY
       - name: Test Escobar economic profile and company evidence
         run: node tests/escobar-economic-profile.test.js
@@ -1352,10 +1357,15 @@ jobs:
               "https://leandrocuellarok-netizen.github.io/mapafederal/nodos-estrategicos/",
               "https://leandrocuellarok-netizen.github.io/mapafederal/radar-ia/",
               "https://leandrocuellarok-netizen.github.io/mapafederal/investment-finder/",
+              "https://leandrocuellarok-netizen.github.io/mapafederal/foco-escobar/",
           ]
           assert urls == expected_urls
           assert '<svg' in logo and 'aria-label="Mapa Federal"' in logo and '#07502B' in logo and '#A65A18' in logo
-          print("SEO/GEO: metadatos, Schema.org, FAQ retirada, robots, sitemap de cuatro páginas y nuevo emblema argentino validados.")
+          foco = Path("foco-escobar/index.html").read_text(encoding="utf-8")
+          assert '<title>Foco Escobar | Observatorio territorial - Mapa Federal</title>' in foco
+          assert 'rel="canonical" href="https://leandrocuellarok-netizen.github.io/mapafederal/foco-escobar/"' in foco
+          assert 'property="og:title"' in foco
+          print("SEO/GEO: metadatos, Schema.org, robots y sitemap de cinco páginas, incluido Foco Escobar, validados.")
           PY
 
       - name: Test Escobar procurement source links
