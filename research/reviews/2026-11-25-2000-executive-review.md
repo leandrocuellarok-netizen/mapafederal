@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 13:03 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 16:14 ART. Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,10 +8,10 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 61 registros |
-| Investment Finder | 97 registros |
-| Oportunidades abiertas | 55 |
-| Disponibilidad desconocida | 36 |
+| Radar IA | 65 registros |
+| Investment Finder | 138 registros |
+| Oportunidades abiertas | 81 |
+| Disponibilidad desconocida | 51 |
 | Cerradas | 6 |
 | Event Intelligence | 6 registros |
 | Nodos estratégicos | 86 |
@@ -19,7 +19,7 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 | Módulos en piloto | 1 |
 | Módulos planificados | 5 |
 
-El catálogo de oportunidades conserva 23 registros de Escobar: 5 abiertos (LP 71, LP 72, LP 74, LP 75 y Red Sostenible), 15 con disponibilidad desconocida y 3 cerrados. El estado `open` significa que el cronograma oficial de consulta/venta y apertura no venció; no garantiza elegibilidad técnica ni disponibilidad de cupos.
+El catálogo de oportunidades conserva 24 registros de Escobar: 5 abiertos (LP 71, LP 72, LP 74, LP 75 y Red Sostenible), 16 con disponibilidad desconocida y 3 cerrados. El estado `open` significa que el cronograma oficial de consulta/venta y apertura no venció; no garantiza elegibilidad técnica ni disponibilidad de cupos.
 
 ## Actualización del ciclo 05:56 — 25/11/2026
 
@@ -594,3 +594,47 @@ El workflow #661 no desplegó porque el test de procedencia de Escobar esperaba 
 - Pasaron los tests de procedencia de Escobar y las 12 licitaciones del Boletín Oficial bonaerense, además de los controles SEO/GEO y de filtros.
 - Los fallos #661 y #662 fueron discrepancias de tests de fuente/campo, corregidas sin cambiar datos ni relajar validaciones.
 - No hubo inspección visual independiente: las URLs de Pages no resultaron accesibles desde el navegador de esta ejecución. El despliegue queda acreditado por GitHub Actions.
+
+## Actualización acumulada — 16:14 ART, 25/11/2026
+
+### Estado comprobable
+- Radar IA: **65 registros** (64 → 65). Se incorporó un artículo de Le Monde del 25/11 sobre la adopción empresarial de modelos desarrollados en China. El artículo cita datos de OpenRouter limitados al tráfico de pasarelas API y una afirmación de ahorro de Revolut cercana a 10x que no está auditada. No se presenta ese porcentaje como cuota total de mercado ni el ahorro como resultado transferible a empresas argentinas. No se verificó una nueva norma de IA suficientemente respaldada en este corte.
+- Investment Finder: **138 oportunidades** (129 → 138): **81 abiertas, 51 con disponibilidad desconocida y 6 cerradas**. Se añadieron nueve llamados/ventas de activos publicados en el Boletín Oficial bonaerense, edición 30368 del 25/11:
+  1. OPPCGP, proceso 614-1241-LPU26, camiones: presupuesto oficial ARS 2.583.295.500,60; disponibilidad desconocida porque el aviso no fija el vencimiento de ofertas.
+  2. Consorcio de Gestión del Puerto de Bahía Blanca, LP 11-CGPBB/2026, vigilancia privada: sin presupuesto publicado; ofertas hasta 05/01/2027 10:30, apertura 11:00.
+  3. General San Martín, LP 36/2026, descartables, suturas y textiles hospitalarios: ARS 1.035.667.248,48; venta de pliego hasta un día hábil antes de la apertura del 10/12.
+  4. Almirante Brown, LP 56/2026, luminarias LED y fotocélulas: ARS 680.000.000; retiro de pliego hasta 11/12, apertura 14/12.
+  5. Almirante Brown, LP 57/2026, mezcla asfáltica en caliente: ARS 550.122.576; retiro de pliego hasta 11/12, apertura 14/12.
+  6. Avellaneda, LP 125/2026, guardapolvos, mochilas y zapatillas: ARS 632.781.200; estado desconocido porque el extracto no fija el cierre de adquisición ni el límite de recepción de ofertas.
+  7. La Matanza, LP 129/2026, alquiler, lavado y planchado de ropa: ARS 155.922.000; estado desconocido por falta de un plazo de recepción de ofertas en el aviso consultado.
+  8. Banco Provincia, EE-443-CC, mobiliario tapizado y tándems metálicos: sin presupuesto publicado; consultas hasta 30/11 y apertura 09/12; estado desconocido porque el portal mostró solo el acceso general, no la ficha individual ni la fecha inicial de disponibilidad.
+  9. San Antonio de Areco, LP 8/2026, venta de terrenos en Duggan: una parcela estimada de 500 m² con base ARS 48 millones y seis parcelas estimadas de 400 m² con base ARS 42 millones cada una; ofertas hasta 22/12 11:30. No se calcula un monto agregado ni se presume aptitud constructiva.
+- Los presupuestos oficiales no son adjudicaciones ni gastos ejecutados. Las fechas de apertura no se usan como sustituto de un plazo de oferta cuando el aviso no lo informa.
+- Escobar: se mantienen **24 registros municipales** (5 abiertos, 16 desconocidos y 3 cerrados). La búsqueda de “MUNICIPALIDAD DE ESCOBAR” en el PDF de la edición 30368 no devolvió un nuevo aviso municipal; esto se limita a esa edición y no demuestra ausencia exhaustiva de oportunidades.
+- LP 66/2026 y LP 69/2026 de Escobar se revalidaron contra las ediciones 14505 (12/11) y 14508 (13/11). Se corrigió sourcePublishedAt a 13/11 para el enlace principal 14508 y se añadió 14505 como primera publicación relacionada. Las ventanas de consulta y venta del pliego (16–19/11) ya vencieron; no se localizó circular de prórroga ni un plazo independiente de presentación de ofertas. Ambas conservan disponibilidad desconocida, pese a que la apertura está prevista para el 30/11.
+- La convocatoria Red Sostenible para el Desarrollo ya había sido enriquecida por el ciclo territorial concurrente de las 15:32–15:36. La portada de Escobar 360 muestra el acceso al programa, pero no se verificaron el formulario individual ni la recepción de solicitudes; no se envió ningún formulario y no se duplicó el registro.
+- Event Intelligence: 6 registros. Nodos estratégicos: 86. Módulos documentados: 6; uno en piloto (Federal Reports) y cinco planificados.
+
+### Relevancia comercial para Vilanova AI Solutions
+El artículo de Le Monde respalda explorar un servicio de evaluación y orquestación multimodelo para pymes: selección por tarea, comparación de costo total, pruebas de calidad, latencia, privacidad, residencia de datos y licencias. El dato de ahorro de Revolut no debe venderse como promesa ni extrapolarse sin una prueba propia con tareas, volúmenes y costos comparables.
+
+### Repositorio, pruebas y publicación
+- data/news.json: 65 registros; ID determinista, URL única, fecha ISO y orden descendente.
+- data/investment-opportunities.json: 138 registros; IDs únicos, fuentes HTTPS, montos finitos, jurisdicciones y estados conservadores.
+- Se añadió tests/boletin-14528-procurement.test.js, conectado al workflow estático.
+- Se añadió Partido de San Antonio de Areco, Provincia de Buenos Aires, a la lista de jurisdicciones municipales admitidas.
+- Se actualizaron las pruebas de procedencia de LP 66 y LP 69.
+- Commits: [Radar IA](https://github.com/leandrocuellarok-netizen/mapafederal/commit/5d1e0f9aa38e9eba7c7dea5840c16efa69df4024) · [Investment Finder](https://github.com/leandrocuellarok-netizen/mapafederal/commit/012eca5ef2911f1c675530bde97c9a6b6a917006) · [procedencia Escobar](https://github.com/leandrocuellarok-netizen/mapafederal/commit/90714e655af20175bc5b20e3770c4fbe967a5500) · [test edición 30368](https://github.com/leandrocuellarok-netizen/mapafederal/commit/dc2072a4fb49d874eb1a8ccb085233df6f8fc483) · [workflow y whitelist](https://github.com/leandrocuellarok-netizen/mapafederal/commit/767e64135e88a682c6c78a788b9d9efa71c26581).
+- La validación previa de los datos y la relectura remota confirmaron los conteos y las estructuras. Al corte, el conector no devolvió checks para el commit 767e641; no se confirma todavía CI ni despliegue de Pages de este ciclo. El workflow #665 exitoso corresponde al commit anterior 6df9a3f, no a los cambios actuales.
+- El contrato enterprise y la arquitectura maestra no se modificaron: informes libres públicos deshabilitados, análisis personalizados bajo solicitud, datos de clientes privados y modelos predictivos no operativos sin datos, backtesting y validación.
+
+### Pendientes y próximos pasos
+1. Confirmar CI y GitHub Pages del commit 767e64135e88a682c6c78a788b9d9efa71c26581.
+2. Obtener los pliegos de OPPCGP, Banco Provincia, Avellaneda y La Matanza para resolver los plazos que el aviso resumido no especifica.
+3. Verificar circulares, actas y adjudicaciones de las nueve oportunidades; no inferir resultados.
+4. Comprobar títulos, zonificación, servicios y restricciones de los terrenos de Duggan antes de recomendar inversión.
+5. Revalidar LP 66 y LP 69 de Escobar y buscar actas de apertura; no tratarlas como oportunidades abiertas solo porque la fecha de apertura sea futura.
+6. Verificar el formulario de Red Sostenible, su importe de Etapa 1 y el alcance jurídico de la “ventaja en licitaciones” mencionada por el municipio.
+7. Mantener la localización del BESS Maschwitz pendiente hasta resolver la discrepancia Escobar/Tigre.
+
+El balance permanece **provisional** hasta la revisión de las 20:00 ART.
