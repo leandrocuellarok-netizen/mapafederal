@@ -856,6 +856,33 @@
     "id": "news-www-indec-gob-ar-uploads-informesdeprensa-ica-11-262beec7410a-pdf"
   },
   {
+    "id": "news-www-isaca-org-about-us-newsroom-press-releases-2026-isaca-launches-updated-cobit-7-with-enhanced-assessment-model-and-modern-digital-platform",
+    "title": "ISACA lanzó COBIT 7 con evaluaciones actualizadas y escenarios específicos de riesgo de IA",
+    "date": "2026-11-19",
+    "category": "Tecnología",
+    "summary": "ISACA presentó COBIT 7, una actualización de su marco de gobernanza y gestión de TI. Incluye un módulo de evaluación de desempeño, herramientas adaptables, nuevos factores de diseño sobre salud organizacional y gestión de datos, y escenarios de riesgo de IA en el perfil de riesgos de TI. También incorpora consideraciones de IA y nube en métodos de implementación. Es una guía profesional de gobernanza, no una ley ni una certificación de cumplimiento.",
+    "source": "ISACA",
+    "url": "https://www.isaca.org/about-us/newsroom/press-releases/2026/isaca-launches-updated-cobit-7-with-enhanced-assessment-model-and-modern-digital-platform",
+    "period": "Comunicado institucional publicado el 19/11/2026; ISACA anunció una certificación de diseño e implementación para 2027.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Alcance internacional declarado por ISACA; comunicado publicado desde Schaumburg, Illinois, Estados Unidos.",
+    "sector": "Gobernanza de TI / inteligencia artificial / ciberseguridad / auditoría y gestión de riesgos",
+    "territorialRelevance": "Aporta un marco de referencia para evaluar gobernanza de IA en empresas argentinas y para diseñar servicios de diagnóstico y capacitación de Vilanova AI Solutions. No sustituye normas argentinas ni prueba adopción o conformidad de una organización.",
+    "relatedSources": [
+      {
+        "label": "ISACA — COBIT 7",
+        "url": "https://www.isaca.org/en/resources/cobit"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se revisó el comunicado original de ISACA publicado el 19/11/2026. Se confirmaron lanzamiento, módulo de evaluación, factores de diseño, escenarios de riesgo de IA y consideraciones de nube. Se clasifica como marco de buenas prácticas, no como regulación obligatoria ni certificación de cumplimiento; no se verificó su adopción por empresas argentinas."
+    }
+  },
+  {
     "title": "El INTA destacó la trazabilidad y la diferenciación como oportunidades para la cadena cárnica",
     "date": "2026-11-18",
     "category": "Tecnología",

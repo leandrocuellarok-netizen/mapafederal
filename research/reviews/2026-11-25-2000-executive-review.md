@@ -553,3 +553,29 @@ El workflow #656, asociado al commit de datos `4f4e7fb028be1a136cb8d0fd02c544431
 - El workflow [#658](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45663287257), sobre el commit de revisión `1ea3d73d52b88b4f12b531210a5657ce95c53ed2`, también terminó con validación y despliegue exitosos.
 - El workflow #657 fue cancelado por la ejecución posterior #658; los cambios documentales permanecen en `main` y el despliegue final se completó con #658.
 - La comprobación visual manual independiente del sitio no estuvo disponible; se cuenta con la validación automatizada del punto de entrada y la confirmación del despliegue de GitHub Pages.
+
+
+## Actualización acumulada — 15:04 ART, 25/11/2026
+
+### Estado de los catálogos
+- Radar IA: **64 registros** (63 → 64), con una incorporación de ISACA/COBIT 7, clasificada como marco de buenas prácticas y no como norma jurídica.
+- Investment Finder: **129 oportunidades** (117 → 129): 76 abiertas, 47 con disponibilidad desconocida y 6 cerradas.
+- Escobar: **24 oportunidades municipales**: 5 abiertas, 16 desconocidas y 3 cerradas. Se enriquecieron LP 71, 72 y 75; LP 74 no se duplicó.
+- Se incorporaron 12 licitaciones del Boletín Oficial bonaerense, edición 30366, sección 14523, páginas 79–83. Los importes son presupuestos publicados, no adjudicaciones ni ejecución.
+- Registro completo: [GBIE 15:04](../runs/2026-11-25-gbie-cycle-1504.md).
+
+### Gobernanza y calidad
+- Se amplió la whitelist municipal para General Alvear, General La Madrid, Malvinas Argentinas y Presidente Perón.
+- Se agregó una prueba automatizada para las 12 oportunidades y se reforzaron las pruebas de las licitaciones de Escobar.
+- Se mantiene el contrato enterprise: informes públicos libres deshabilitados, análisis personalizados bajo solicitud y modelos predictivos no operativos sin validación documentada.
+- Federal Reports continúa como único piloto funcional; los otros cinco módulos permanecen planificados.
+
+### Pendientes inmediatos
+- Presidente Perón LP 14/2026: recepción 26/11 a las 09:00.
+- Escobar LP 75/2026: consultas del pliego 26–27/11.
+- Escobar LP 74/2026: consultas del pliego 26–27/11.
+- Malvinas Argentinas LP 50/2026: recepción 30/11 a las 11:00.
+- Verificar pliegos completos, circulares, actas y adjudicaciones; no inferir resultados.
+- Confirmar CI/Pages del nuevo commit antes de declarar publicación.
+
+El balance sigue provisional hasta la revisión de las 20:00.

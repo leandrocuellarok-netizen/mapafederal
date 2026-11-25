@@ -919,15 +919,19 @@ jobs:
               "Partido de Escobar, Provincia de Buenos Aires",
               "Partido de Esteban Echeverría, Provincia de Buenos Aires",
               "Partido de General Alvarado, Provincia de Buenos Aires",
+              "Partido de General Alvear, Provincia de Buenos Aires",
+              "Partido de General La Madrid, Provincia de Buenos Aires",
               "Partido de General Paz, Provincia de Buenos Aires",
               "Partido de General San Martín, Provincia de Buenos Aires",
               "Partido de Hurlingham, Provincia de Buenos Aires",
               "Partido de La Matanza, Provincia de Buenos Aires",
               "Partido de Lomas de Zamora, Provincia de Buenos Aires",
               "Partido de Luján, Provincia de Buenos Aires",
+              "Partido de Malvinas Argentinas, Provincia de Buenos Aires",
               "Partido de Mercedes, Provincia de Buenos Aires",
               "Partido de Merlo, Provincia de Buenos Aires",
               "Partido de Patagones, Provincia de Buenos Aires",
+              "Partido de Presidente Perón, Provincia de Buenos Aires",
               "Partido de Quilmes, Provincia de Buenos Aires",
               "Partido de Rivadavia, Provincia de Buenos Aires",
               "Partido de San Andrés de Giles, Provincia de Buenos Aires",
@@ -1404,6 +1408,9 @@ jobs:
 
       - name: Test Escobar procurement source links
         run: node tests/escobar-procurement-sources.test.js
+
+      - name: Test additional opportunities from Buenos Aires Official Gazette
+        run: node tests/boletin-14523-procurement.test.js
 
   deploy:
     needs: validate
