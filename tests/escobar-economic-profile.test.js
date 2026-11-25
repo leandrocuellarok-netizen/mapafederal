@@ -195,3 +195,21 @@ assert.deepEqual(nestleAi.jurisdictions, []);
 assert.equal(nestleAi.geographyStatus, "not_specified");
 assert.match(nestleAi.verification.scope, /pruebas piloto/i);
 assert.equal(new URL(nestleAi.url).protocol, "https:");
+
+const escobarNotice = radarNews.find(entry => entry.id === "news-boletinoficial-gba-gob-ar-secciones-14526-ver");
+assert.ok(escobarNotice, "Falta el aviso oficial de transferencia comercial en Belén de Escobar");
+assert.equal(escobarNotice.date, "2026-11-24");
+assert.equal(escobarNotice.category, "Comercio");
+assert.equal(escobarNotice.source, "Boletín Oficial de la Provincia de Buenos Aires");
+assert.equal(escobarNotice.url, "https://boletinoficial.gba.gob.ar/secciones/14526/ver");
+assert.deepEqual(escobarNotice.jurisdictions, ["Buenos Aires"]);
+assert.equal(escobarNotice.geographyStatus, "explicit");
+assert.match(escobarNotice.geographyEvidence[0], /Las Orquídeas 1643, Belén de Escobar/);
+assert.equal(escobarNotice.verification.status, "editorial_reviewed");
+assert.equal(escobarNotice.verification.checkedAt, "2026-11-25");
+assert.match(escobarNotice.summary, /no acredita que la transferencia se haya completado/i);
+assert.match(escobarNotice.verification.scope, /se omiten nombres, DNI y CUIT de particulares/i);
+assert.doesNotMatch(JSON.stringify(escobarNotice), /\\b(?:DNI|CUIT)\\s*[:#]?\\s*\\d/i);
+assert.doesNotMatch(JSON.stringify(escobarNotice), /HERNANDEZ|CHAPAPI/i);
+assert.equal(new URL(escobarNotice.url).protocol, "https:");
+
