@@ -361,3 +361,9 @@ El catálogo de oportunidades conserva 23 registros de Escobar: 5 abiertos (LP 7
 
 ### Seguimiento de CI — normalización de jurisdicciones provinciales
 - El workflow #625 pasó la corrección del ID BIS y llegó a Investment Finder. Detectó cuatro registros anteriores con `scope=provincial` y valores de `jurisdiction` no admitidos por el esquema provincial. Se normalizaron a `Buenos Aires` cuatro fichas (Caja de Retiros, Acueducto Parque San Martín y HIGA Pedro Fiorito LP 3/4), preservando su ubicación detallada. No se cambiaron montos, estados ni oportunidades. La siguiente ejecución de Actions debe confirmar CI/Pages.
+
+
+### Seguimiento final de validación del ciclo 10:58
+- El workflow #626 identificó una sola jurisdicción municipal faltante en la whitelist: Partido de Merlo, correspondiente a una oportunidad ya existente. Se añadió al validador sin alterar la ficha ni duplicarla.
+- Se normalizó la URL de Reuters sobre la declaración de centros de datos al enlace canónico publicado por Reuters y se recalculó su ID. Se mantiene como señal política sin norma vigente acreditada.
+- El siguiente workflow debe confirmar CI/Pages; no se declara publicación web exitosa hasta ese resultado.
