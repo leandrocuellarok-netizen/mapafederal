@@ -1225,144 +1225,144 @@
           "scope": "Se consultó la ficha municipal y se abrió el GeoJSON original. Se comprobó FeatureCollection, 46 features de geometría Polygon, CRS EPSG:22185 y las etiquetas literales del atributo Localidad. La ficha declara creación 01/10/2025, última actualización 31/03/2026, versión 1.0, periodicidad anual y licencia ODbL. No se transformaron coordenadas ni se integró la capa al mapa; no se verificaron en terreno el acceso, mantenimiento, horarios o uso efectivo."
         }
       },
-    {
-      "id": "reservas-naturales-municipales-partido-escobar",
-      "name": "Reservas Naturales Municipales del Partido de Escobar",
-      "category": "Ambiente y Biodiversidad",
-      "description": "El portal municipal publica una ficha de delimitación geográfica de las reservas naturales municipales. La capa no se integra al mapa mientras no se recupere una geometría legible y verificable. La Municipalidad documenta por separado la Reserva Natural Educativa de Ingeniero Maschwitz.",
-      "sourceName": "Estrategia Ambiental y datos — Municipalidad de Escobar",
-      "sourceUrl": "https://datos.escobar.gob.ar/dataset/reservas-naturales-municipales-del-partido-de-escobar",
-      "resourceName": "reservas_naturales_escobar.geojson",
-      "resourceFormat": "GeoJSON + Shapefile",
-      "sourcePublishedAt": null,
-      "sourcePublicationNote": "La ficha no informa fecha de publicación. Declara creación 01/10/2025, última actualización 31/03/2026, versión 1.0 y periodicidad anual. Consultada el 25/11/2026.",
-      "createdAt": "2025-10-01",
-      "lastUpdatedAt": "2026-03-31",
-      "version": "1.0",
-      "periodicity": "Anual",
-      "license": "Open Data Commons Open Database License (ODbL)",
-      "resourceChecks": [
-        {
-          "format": "GeoJSON",
-          "fileName": "reservas_naturales_escobar.geojson",
-          "url": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/reservas-naturales-municipales-del-partido-de-escobar/reservas_naturales_escobar.geojson",
-          "checkedAt": "2026-11-25",
-          "result": "http_404",
-          "resultLabel": "HTTP 404",
-          "note": "El enlace Descargar de la ficha devolvió 404; no se obtuvo geometría."
-        },
-        {
-          "format": "Shapefile",
-          "fileName": "reservas_naturales_escobar.shp",
-          "url": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/reservas-naturales-municipales-del-partido-de-escobar/reservas_naturales_escobar.shp",
-          "checkedAt": "2026-11-25",
-          "result": "unsupported_content_type",
-          "resultLabel": "No inspeccionable (400)",
-          "note": "La herramienta de consulta rechazó el tipo MIME application/vnd.shp; no es una confirmación de 404 ni permite comprobar la integridad del archivo."
-        }
-      ],
-      "geometryIntegrationStatus": "pending",
-      "geometryNote": "La ficha no declara un CRS verificable en el contenido accesible. No se pudo inspeccionar el GeoJSON y el Shapefile no pudo procesarse. No se transforma ni dibuja ninguna geometría y no se genera un marcador.",
-      "status": "pendiente",
-      "validityPeriod": "Versión 1.0; la ficha municipal declara actualización 31/03/2026 y periodicidad anual. La disponibilidad de los recursos se comprobó el 25/11/2026.",
-      "documentedFacility": {
-        "name": "Reserva Natural Educativa de Ingeniero Maschwitz",
-        "locality": "Ingeniero Maschwitz",
-        "address": "Sucre 1550 (PES), Ingeniero Maschwitz",
-        "areaHa": 23,
-        "ordinance": "5767/19",
-        "admission": "Gratuita",
-        "hours": "De 9 a 17 h",
-        "days": "No especificados en la ficha municipal actual; las fuentes municipales antiguas discrepan.",
-        "publishedStatus": "La ficha municipal publica horario y entrada gratuita.",
-        "status": "pendiente",
-        "operationalStatus": "no verificado",
-        "statusNote": "La ficha municipal actual publica horario de 9 a 17 h, pero no indica días ni confirma apertura en tiempo real. Una ficha municipal anterior indexada señala martes a domingos; el boletín municipal sin fecha señala miércoles a domingos y advierte que sus notas son antiguas. No se fija un calendario vigente.",
-        "sourceName": "Municipalidad de Escobar",
-        "sourceUrl": "https://www.escobar.gob.ar/municipio/sostenible/reserva-natural-educativa/",
+      {
+        "id": "reservas-naturales-municipales-partido-escobar",
+        "name": "Reservas Naturales Municipales del Partido de Escobar",
+        "category": "Ambiente y Biodiversidad",
+        "description": "El portal municipal publica una ficha de delimitación geográfica de las reservas naturales municipales. La capa no se integra al mapa mientras no se recupere una geometría legible y verificable. La Municipalidad documenta por separado la Reserva Natural Educativa de Ingeniero Maschwitz.",
+        "sourceName": "Estrategia Ambiental y datos — Municipalidad de Escobar",
+        "sourceUrl": "https://datos.escobar.gob.ar/dataset/reservas-naturales-municipales-del-partido-de-escobar",
+        "resourceName": "reservas_naturales_escobar.geojson",
+        "resourceFormat": "GeoJSON + Shapefile",
         "sourcePublishedAt": null,
-        "sourcePublicationNote": "La página consultada no informa fecha de publicación o edición; verificada el 25/11/2026.",
-        "relatedSources": [
+        "sourcePublicationNote": "La ficha no informa fecha de publicación. Declara creación 01/10/2025, última actualización 31/03/2026, versión 1.0 y periodicidad anual. Consultada el 25/11/2026.",
+        "createdAt": "2025-10-01",
+        "lastUpdatedAt": "2026-03-31",
+        "version": "1.0",
+        "periodicity": "Anual",
+        "license": "Open Data Commons Open Database License (ODbL)",
+        "resourceChecks": [
           {
-            "label": "Ficha municipal anterior (horario por días; acceso directo 403)",
-            "url": "https://www.escobar.gob.ar/reserva-municipal-ing-maschwitz/",
-            "sourcePublishedAt": null,
-            "verificationNote": "El índice de búsqueda muestra martes a domingos, de 09 a 17 h; el acceso directo devolvió 403 en esta consulta."
+            "format": "GeoJSON",
+            "fileName": "reservas_naturales_escobar.geojson",
+            "url": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/reservas-naturales-municipales-del-partido-de-escobar/reservas_naturales_escobar.geojson",
+            "checkedAt": "2026-11-25",
+            "result": "http_404",
+            "resultLabel": "HTTP 404",
+            "note": "El enlace Descargar de la ficha devolvió 404; no se obtuvo geometría."
           },
           {
-            "label": "Ordenanzas ambientales municipales (índice que incluye 5767/19)",
-            "url": "https://www.escobar.gob.ar/municipio/sostenible/ordenanzas-ambientales/",
-            "sourcePublishedAt": null,
-            "verificationNote": "La página lista la Ordenanza 5767/19 dentro de un conjunto de normas; no sustituye el texto completo de la ordenanza."
-          },
-          {
-            "label": "EIA provincial (enero de 2022), Anexo I, p. 151 — matriz legal que reproduce la Ordenanza 5767/19",
-            "url": "https://www.ambiente.gba.gob.ar/ParticipacionCiudadana/EIA_SANEAMIENTO%20PLUVIAL%20CUENCA%20BAJA%20ARROYO%20BEDOYA.pdf",
-            "sourcePublishedAt": null,
-            "sourcePublicationNote": "Documento fechado enero de 2022; no indica día específico.",
-            "verificationNote": "La matriz legal reproduce una síntesis de la Ordenanza 5767/19 y cita 230.000 m², Partido 118, Circunscripción IV, parcela 426a y Arroyo Escobar como límite norte. No es el texto íntegro de la ordenanza."
-          },
-          {
-            "label": "ComiLu — Términos de referencia sobre áreas naturales protegidas (julio de 2024)",
-            "url": "https://normas.gba.gob.ar/anexos/descargar/Y0ZrO10L.pdf",
-            "sourcePublishedAt": null,
-            "sourcePublicationNote": "Documento fechado julio de 2024; no indica día específico.",
-            "verificationNote": "La Tabla 1, página 5, consigna 42,124 ha para la Reserva Natural Educativa Ing. Maschwitz bajo la Ordenanza 5767/19. No informa método de medición ni polígono."
-          },
-          {
-            "label": "Boletín municipal anterior sin fecha — miércoles a domingos",
-            "url": "https://www.escobar.gob.ar/municipio/sostenible/agenda-verde/",
-            "sourcePublishedAt": null,
-            "sourcePublicationNote": "La propia página identifica las notas como parte de un boletín anterior sin fecha y advierte que algunos horarios pueden haber cambiado.",
-            "verificationNote": "La ficha de la reserva dentro del boletín indica miércoles a domingos, de 9 a 17 h. Se conserva como referencia histórica no vigente, en discrepancia con la ficha municipal anterior que indicaba martes a domingos."
+            "format": "Shapefile",
+            "fileName": "reservas_naturales_escobar.shp",
+            "url": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/reservas-naturales-municipales-del-partido-de-escobar/reservas_naturales_escobar.shp",
+            "checkedAt": "2026-11-25",
+            "result": "unsupported_content_type",
+            "resultLabel": "No inspeccionable (400)",
+            "note": "La herramienta de consulta rechazó el tipo MIME application/vnd.shp; no es una confirmación de 404 ni permite comprobar la integridad del archivo."
           }
         ],
-        "verification": {
-          "status": "verified",
-          "checkedAt": "2026-11-25",
-          "scope": "Se verificó la ficha municipal actual (23 ha, Sucre 1550, horario de 9 a 17 h, entrada gratuita, Ordenanza 5767/19); se contrastó la referencia de 230.000 m², Partido 118, Circunscripción IV, parcela 426a y Arroyo Escobar, reproducida en un EIA provincial de enero de 2022; y la cifra de 42,124 ha de la Tabla 1 del TDR ComiLu de julio de 2024. La diferencia de superficie no está explicada y queda pendiente. Para los días, la ficha actual no especifica; dos páginas municipales antiguas y sin fecha discrepan entre martes-domingo y miércoles-domingo. No se obtuvo el texto íntegro de la ordenanza ni una geometría oficial, y no se realizó inspección presencial."
-        },
-        "areaEvidence": [
-          {
-            "id": "ordenanza-5767-resumen-eia-2022",
-            "label": "Superficie atribuida a la Ordenanza 5767/19 (reproducida en un EIA)",
-            "areaHa": 23,
-            "areaM2": 230000,
+        "geometryIntegrationStatus": "pending",
+        "geometryNote": "La ficha no declara un CRS verificable en el contenido accesible. No se pudo inspeccionar el GeoJSON y el Shapefile no pudo procesarse. No se transforma ni dibuja ninguna geometría y no se genera un marcador.",
+        "status": "pendiente",
+        "validityPeriod": "Versión 1.0; la ficha municipal declara actualización 31/03/2026 y periodicidad anual. La disponibilidad de los recursos se comprobó el 25/11/2026.",
+        "documentedFacility": {
+          "name": "Reserva Natural Educativa de Ingeniero Maschwitz",
+          "locality": "Ingeniero Maschwitz",
+          "address": "Sucre 1550 (PES), Ingeniero Maschwitz",
+          "areaHa": 23,
+          "ordinance": "5767/19",
+          "admission": "Gratuita",
+          "hours": "De 9 a 17 h",
+          "days": "No especificados en la ficha municipal actual; las fuentes municipales antiguas discrepan.",
+          "publishedStatus": "La ficha municipal publica horario y entrada gratuita.",
+          "status": "pendiente",
+          "operationalStatus": "no verificado",
+          "statusNote": "La ficha municipal actual publica horario de 9 a 17 h, pero no indica días. No confirma apertura en tiempo real. Una ficha municipal anterior indexada señala martes a domingos; el boletín municipal sin fecha señala miércoles a domingos y advierte que sus notas son antiguas. No se fija un calendario vigente.",
+          "sourceName": "Municipalidad de Escobar",
+          "sourceUrl": "https://www.escobar.gob.ar/municipio/sostenible/reserva-natural-educativa/",
+          "sourcePublishedAt": null,
+          "sourcePublicationNote": "La página consultada no informa fecha de publicación o edición; verificada el 25/11/2026.",
+          "relatedSources": [
+            {
+              "label": "Ficha municipal anterior (horario por días; acceso directo 403)",
+              "url": "https://www.escobar.gob.ar/reserva-municipal-ing-maschwitz/",
+              "sourcePublishedAt": null,
+              "verificationNote": "El índice de búsqueda muestra martes a domingos, de 09 a 17 h; el acceso directo devolvió 403 en esta consulta."
+            },
+            {
+              "label": "Ordenanzas ambientales municipales (índice que incluye 5767/19)",
+              "url": "https://www.escobar.gob.ar/municipio/sostenible/ordenanzas-ambientales/",
+              "sourcePublishedAt": null,
+              "verificationNote": "La página lista la Ordenanza 5767/19 dentro de un conjunto de normas; no sustituye el texto completo de la ordenanza."
+            },
+            {
+              "label": "EIA provincial (enero de 2022), Anexo I, p. 151 — matriz legal que reproduce la Ordenanza 5767/19",
+              "url": "https://www.ambiente.gba.gob.ar/ParticipacionCiudadana/EIA_SANEAMIENTO%20PLUVIAL%20CUENCA%20BAJA%20ARROYO%20BEDOYA.pdf",
+              "sourcePublishedAt": null,
+              "sourcePublicationNote": "Documento fechado enero de 2022; no indica día específico.",
+              "verificationNote": "La matriz legal reproduce una síntesis de la Ordenanza 5767/19 y cita 230.000 m², Partido 118, Circunscripción IV, parcela 426a y Arroyo Escobar como límite norte. No es el texto íntegro de la ordenanza."
+            },
+            {
+              "label": "ComiLu — Términos de referencia sobre áreas naturales protegidas (julio de 2024)",
+              "url": "https://normas.gba.gob.ar/anexos/descargar/Y0ZrO10L.pdf",
+              "sourcePublishedAt": null,
+              "sourcePublicationNote": "Documento fechado julio de 2024; no indica día específico.",
+              "verificationNote": "La Tabla 1, página 5, consigna 42,124 ha para la Reserva Natural Educativa Ing. Maschwitz bajo la Ordenanza 5767/19. No informa método de medición ni polígono."
+            },
+            {
+              "label": "Boletín municipal anterior sin fecha — miércoles a domingos",
+              "url": "https://www.escobar.gob.ar/municipio/sostenible/agenda-verde/",
+              "sourcePublishedAt": null,
+              "sourcePublicationNote": "La propia página identifica las notas como parte de un boletín anterior sin fecha y advierte que algunos horarios pueden haber cambiado.",
+              "verificationNote": "La ficha de la reserva dentro del boletín indica miércoles a domingos, de 9 a 17 h. Se conserva como referencia histórica no vigente, en discrepancia con la ficha municipal anterior que indicaba martes a domingos."
+            }
+          ],
+          "verification": {
+            "status": "verified",
+            "checkedAt": "2026-11-25",
+            "scope": "Se verificó la ficha municipal actual (23 ha, Sucre 1550, horario de 9 a 17 h, entrada gratuita, Ordenanza 5767/19); se contrastó la referencia de 230.000 m², Partido 118, Circunscripción IV, parcela 426a y Arroyo Escobar, reproducida en un EIA provincial de enero de 2022; y la cifra de 42,124 ha de la Tabla 1 del TDR ComiLu de julio de 2024. La diferencia de superficie no está explicada y queda pendiente. Para los días, la ficha actual no especifica; dos páginas municipales antiguas y sin fecha discrepan entre martes-domingo y miércoles-domingo. No se obtuvo el texto íntegro de la ordenanza ni una geometría oficial, y no se realizó inspección presencial."
+          },
+          "areaEvidence": [
+            {
+              "id": "ordenanza-5767-resumen-eia-2022",
+              "label": "Superficie atribuida a la Ordenanza 5767/19 (reproducida en un EIA)",
+              "areaHa": 23,
+              "areaM2": 230000,
+              "sourceName": "Estudio de Impacto Ambiental — Saneamiento Pluvial Cuenca Baja Arroyo Bedoya, Etapa I",
+              "sourceUrl": "https://www.ambiente.gba.gob.ar/ParticipacionCiudadana/EIA_SANEAMIENTO%20PLUVIAL%20CUENCA%20BAJA%20ARROYO%20BEDOYA.pdf",
+              "sourcePublishedAt": null,
+              "sourcePublicationNote": "Documento fechado enero de 2022; Anexo I, página 151. Reproduce una síntesis de la matriz legal municipal, no el texto íntegro de la Ordenanza 5767/19.",
+              "sourceType": "Estudio de Impacto Ambiental provincial que reproduce una referencia normativa municipal",
+              "evidenceType": "attributed_statement",
+              "note": "La matriz legal atribuye a la Ordenanza 5767/19 una superficie aproximada de 230.000 m² y la nomenclatura Partido 118 (Escobar), Circunscripción IV, parcela 426a, desde el límite norte (Arroyo Escobar)."
+            },
+            {
+              "id": "comilu-tdr-2024",
+              "label": "Superficie consignada por ComiLu",
+              "areaHa": 42.124,
+              "sourceName": "Comité de Cuenca del Río Luján (ComiLu) — Ministerio de Infraestructura y Servicios Públicos de la Provincia de Buenos Aires",
+              "sourceUrl": "https://normas.gba.gob.ar/anexos/descargar/Y0ZrO10L.pdf",
+              "sourcePublishedAt": null,
+              "sourcePublicationNote": "Documento fechado julio de 2024; Tabla 1, página 5. No indica día de publicación.",
+              "sourceType": "Términos de referencia de consultoría",
+              "evidenceType": "attributed_statement",
+              "note": "La Tabla 1 lista la Reserva Natural Educativa Ing. Maschwitz bajo la Ordenanza 5767/19 y consigna 42,124 ha. El documento no explica el método de medición ni delimita el polígono utilizado."
+            }
+          ],
+          "cadastralReference": {
+            "jurisdiction": "Partido 118 (Escobar)",
+            "circumscription": "IV",
+            "parcel": "426a",
+            "northBoundaryDescription": "Arroyo Escobar",
+            "areaInOrdinanceSummaryM2": 230000,
             "sourceName": "Estudio de Impacto Ambiental — Saneamiento Pluvial Cuenca Baja Arroyo Bedoya, Etapa I",
             "sourceUrl": "https://www.ambiente.gba.gob.ar/ParticipacionCiudadana/EIA_SANEAMIENTO%20PLUVIAL%20CUENCA%20BAJA%20ARROYO%20BEDOYA.pdf",
-            "sourcePublishedAt": null,
-            "sourcePublicationNote": "Documento fechado enero de 2022; Anexo I, página 151. Reproduce una síntesis de la matriz legal municipal, no el texto íntegro de la Ordenanza 5767/19.",
-            "sourceType": "Estudio de Impacto Ambiental provincial que reproduce una referencia normativa municipal",
-            "evidenceType": "attributed_statement",
-            "note": "La matriz legal atribuye a la Ordenanza 5767/19 una superficie aproximada de 230.000 m² y la nomenclatura Partido 118 (Escobar), Circunscripción IV, parcela 426a, desde el límite norte (Arroyo Escobar)."
+            "sourcePublicationNote": "Documento fechado enero de 2022; Anexo I, página 151, matriz legal. Reproduce una síntesis de la Ordenanza 5767/19; no es el texto íntegro ni un plano parcelario.",
+            "verificationNote": "Referencia catastral atribuida a la síntesis normativa del EIA. No se dispone de geometría catastral oficial validada; no usar para dibujar límites ni generar coordenadas."
           },
-          {
-            "id": "comilu-tdr-2024",
-            "label": "Superficie consignada por ComiLu",
-            "areaHa": 42.124,
-            "sourceName": "Comité de Cuenca del Río Luján (ComiLu) — Ministerio de Infraestructura y Servicios Públicos de la Provincia de Buenos Aires",
-            "sourceUrl": "https://normas.gba.gob.ar/anexos/descargar/Y0ZrO10L.pdf",
-            "sourcePublishedAt": null,
-            "sourcePublicationNote": "Documento fechado julio de 2024; Tabla 1, página 5. No indica día de publicación.",
-            "sourceType": "Términos de referencia de consultoría",
-            "evidenceType": "attributed_statement",
-            "note": "La Tabla 1 lista la Reserva Natural Educativa Ing. Maschwitz bajo la Ordenanza 5767/19 y consigna 42,124 ha. El documento no explica el método de medición ni delimita el polígono utilizado."
-          }
-        ],
-        "cadastralReference": {
-          "jurisdiction": "Partido 118 (Escobar)",
-          "circumscription": "IV",
-          "parcel": "426a",
-          "northBoundaryDescription": "Arroyo Escobar",
-          "areaInOrdinanceSummaryM2": 230000,
-          "sourceName": "Estudio de Impacto Ambiental — Saneamiento Pluvial Cuenca Baja Arroyo Bedoya, Etapa I",
-          "sourceUrl": "https://www.ambiente.gba.gob.ar/ParticipacionCiudadana/EIA_SANEAMIENTO%20PLUVIAL%20CUENCA%20BAJA%20ARROYO%20BEDOYA.pdf",
-          "sourcePublicationNote": "Documento fechado enero de 2022; Anexo I, página 151, matriz legal. Reproduce una síntesis de la Ordenanza 5767/19; no es el texto íntegro ni un plano parcelario.",
-          "verificationNote": "Referencia catastral atribuida a la síntesis normativa del EIA. No se dispone de geometría catastral oficial validada; no usar para dibujar límites ni generar coordenadas."
-        },
-        "areaDiscrepancyNote": "Las fuentes citan 23 ha (230.000 m²) y 42,124 ha para la misma reserva. El TDR de ComiLu no explica el método ni el ámbito medido. No se obtuvo el texto íntegro de la ordenanza ni una geometría oficial que permita conciliar las cifras. No se adopta ninguna cifra como límite cartográfico."
+          "areaDiscrepancyNote": "Las fuentes citan 23 ha (230.000 m²) y 42,124 ha para la misma reserva. El TDR de ComiLu no explica el método ni el ámbito medido. No se obtuvo el texto íntegro de la ordenanza ni una geometría oficial que permita conciliar las cifras. No se adopta ninguna cifra como límite cartográfico."
+        }
       }
-    }
     ]
   },
   "participatoryBudget2026": {

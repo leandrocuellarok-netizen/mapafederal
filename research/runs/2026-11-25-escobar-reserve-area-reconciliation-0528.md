@@ -54,7 +54,7 @@ Se documentó el contraste de superficies, la referencia catastral citada y la d
 
 - No se ejecutó un working tree local desde esta conexión.
 - Se agregaron aserciones específicas para ambas superficies, la nomenclatura catastral, las discrepancias de días y el renderizado de las fuentes.
-- El workflow de GitHub Actions se comprobará después del commit. El estado previo de CI ya está bloqueado por la prueba nacional de Investment Finder descrita arriba.
+- Workflow #570: la validación de Escobar llegó a la prueba de transparencia y falló por una diferencia textual: el nuevo resumen decía «ni confirma apertura» mientras una aserción existente exigía «no confirma apertura». Se corrigió la redacción sin alterar el estado de operación. Las pruebas Escobar anteriores a ese punto finalizaron correctamente; los pasos posteriores quedaron omitidos por la falla.
 - Verificación HTTP independiente de GitHub Pages: el sitio no pudo abrirse desde el entorno de consulta; no se afirma una comprobación visual.
 
 ## Evidencia necesaria para resolver
