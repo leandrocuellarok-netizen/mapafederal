@@ -213,3 +213,16 @@ assert.doesNotMatch(JSON.stringify(escobarNotice), /\b(?:DNI|CUIT)\s*[:#]?\s*\d/
 assert.doesNotMatch(JSON.stringify(escobarNotice), /hernandez|chapapi/i);
 assert.equal(new URL(escobarNotice.url).protocol, "https:");
 
+const redSostenible = opportunities.find(entry => entry.id === "escobar-red-sostenible-desarrollo-2026");
+assert.ok(redSostenible, "Falta la convocatoria municipal Red Sostenible para el Desarrollo");
+assert.equal(redSostenible.recordType, "public_program");
+assert.equal(redSostenible.scope, "municipal");
+assert.equal(redSostenible.stage, "announced");
+assert.equal(redSostenible.opportunityStatus, "open");
+assert.equal(redSostenible.validUntil, "2026-12-30");
+assert.equal(redSostenible.amount, null, "La convocatoria no anuncia financiamiento monetario");
+assert.equal(redSostenible.verification.status, "verified");
+assert.equal(redSostenible.verification.checkedAt, "2026-11-25");
+assert.match(redSostenible.verification.scope, /Escobar 360°/);
+assert.match(redSostenible.verification.scope, /no permite verificar un formulario o trámite de inscripción/i);
+assert.equal(new URL(redSostenible.sourceUrl).protocol, "https:");
