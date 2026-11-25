@@ -1,5 +1,44 @@
 [
   {
+    "id": "news-docs-fcc-gov-public-attachments-da-26-1273a1-pdf",
+    "title": "La FCC autorizó condicionalmente la constelación orbital Starmind de SpaceX para centros de datos",
+    "date": "2026-11-25",
+    "category": "Regulación",
+    "summary": "La Space Bureau de la Federal Communications Commission concedió a SpaceX autorización condicionada para desplegar y operar hasta un millón de satélites Starmind concebidos como centros de datos orbitales. El permiso fija hitos de despliegue hasta 2040; no acredita que se hayan fabricado o lanzado satélites. La FCC difirió la solicitud de waiver para disponer satélites por encima de 600 km mediante órbitas alternativas, a la espera de información adicional.",
+    "source": "Federal Communications Commission — Space Bureau, orden DA 26-1273",
+    "url": "https://docs.fcc.gov/public/attachments/DA-26-1273A1.pdf",
+    "period": "Orden emitida el 25/11/2026. La autorización exige un primer satélite operativo antes del 25/11/2033, 10% de la constelación antes del 25/11/2035, 50% antes del 25/11/2038 y el resto antes del 25/11/2040. La autorización no demuestra despliegue, financiación cerrada ni viabilidad comercial.",
+    "jurisdictions": [
+      "Estados Unidos"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "La autorización fue emitida por la Space Bureau de la Federal Communications Commission de Estados Unidos para Space Exploration Holdings, LLC (SpaceX)."
+    ],
+    "jurisdictionScope": "Estados Unidos — jurisdicción federal de la FCC sobre la autorización de la constelación orbital Starmind.",
+    "sector": "Inteligencia artificial / infraestructura de cómputo / centros de datos / satélites / telecomunicaciones / economía espacial / regulación de espectro",
+    "territorialRelevance": "Señal internacional para Vilanova AI Solutions y Mapa Federal sobre nuevas arquitecturas de infraestructura de IA y su relación con espectro, energía, lanzamiento, disipación térmica, residuos orbitales y permisos. No constituye una inversión ejecutada ni una oportunidad localizada en Argentina o Escobar; no se extrapolan costos o beneficios ambientales.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se identificó la orden FCC Space Bureau DA 26-1273, emitida el 25/11/2026, y se contrastaron el alcance condicionado y los hitos de despliegue con Reuters, TechCrunch y una revisión especializada que cita el instrumento oficial. El PDF oficial fue identificado por su número de documento, pero el acceso directo al archivo no estuvo disponible en el entorno de consulta. Se conserva la distinción entre autorización y despliegue: no se afirma que los satélites hayan sido lanzados, que exista viabilidad comercial demostrada ni que se haya concedido el waiver de disposición orbital para altitudes superiores a 600 km."
+    },
+    "relatedSources": [
+      {
+        "label": "Reuters — autorización de la FCC para hasta un millón de satélites Starmind (25/11/2026)",
+        "url": "https://www.reuters.com/business/media-telecom/us-authorizes-spacex-deploy-1-million-satellites-data-centers-space-2026-11-25/"
+      },
+      {
+        "label": "TechCrunch — alcance condicionado y objeciones regulatorias (25/11/2026)",
+        "url": "https://techcrunch.com/2026/11/25/fcc-approves-spacex-plan-to-put-ai-data-centers-in-space/"
+      },
+      {
+        "label": "Benton Institute — extractos del acto de la FCC (25/11/2026)",
+        "url": "https://www.benton.org/headlines/fcc-authorizes-1-million-satellites-data-centers-space"
+      }
+    ]
+  },
+  {
     "id": "news-www-lemonde-fr-economie-article-2026-11-25-le-succes-des-ia-chinoises-aupres-des-entreprises-met-les-leaders-anthropic-et-openai-sous-pression-6815050-3234-html",
     "title": "La adopción empresarial de modelos chinos de IA gana terreno frente a los proveedores estadounidenses",
     "date": "2026-11-25",
