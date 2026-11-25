@@ -41,3 +41,13 @@ Fuente: [Municipalidad de Escobar — Colonia de Verano 2027](https://www.escoba
 ## Límites y siguiente paso
 
 La corrección no cambia la noticia BIS ni amplía el alcance territorial. El siguiente trabajo de datos para Escobar puede incorporar la Colonia de Verano 2027 como evento documental confirmado, con el plazo de inscripción y las sedes expresamente atribuidas a la fuente municipal. No debe describirse como agenda integrada ni como confirmación de cupos.
+
+## Resultado observado de CI después de la corrección
+
+- Commit de la corrección y del registro inicial: `9df1a34344dbad06b97a65a048d17dd49fec189f`.
+- Workflow #620: [run 45624602855](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45624602855).
+- Los pasos de perfil local de Escobar, perfil económico, movilidad, ferrocarril, transparencia, salud y directorio CDI finalizaron correctamente. En particular, `Test Escobar economic profile and company evidence` pasó después de corregir la aserción obsoleta.
+- El job `validate` volvió a fallar en el paso 17, `Validate geographic and editorial JSON`, por un ID no determinista en la noticia BIS 2026-23999 de `data/news.json`. El job `deploy` quedó omitido.
+- No se corrigió ese registro editorial porque queda fuera del alcance exclusivo de Escobar. No se alteraron `data/news.json` ni otros catálogos nacionales.
+- Último despliegue exitoso observado: workflow #613, sobre el commit `50669b738d8de2526db67230a5eb8e7f6088bb82`; no incluye la corrección de este ciclo.
+- La inspección HTTP independiente del sitio publicado no pudo completarse en este entorno.
