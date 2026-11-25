@@ -717,3 +717,7 @@ La prueba de LP 69 conservaba un patrón textual demasiado estricto para las ref
 
 ### Ajuste de prueba compartida LP 66/69 — 17:22 ART
 Se alineó la expresión de la ventana de venta de pliegos con la redacción exacta de las fichas: “18–19/11”. La prueba continúa exigiendo que no exista circular oficial de prórroga localizada.
+
+
+### Ajuste final del test Salto Grande — 17:23 ART
+Se hizo insensible a mayúsculas la prueba de visita obligatoria de SG-790; la fecha de visita (09/12/2026) y la fecha límite (11/01/2027) permanecen verificadas.

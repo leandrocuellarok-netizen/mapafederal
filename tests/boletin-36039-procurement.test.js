@@ -34,7 +34,7 @@ assert.match(defensa.period,/03\/12\/2026/);
 const fm=catalog.opportunities.find(x=>x.id==="fabricaciones-militares-concurso-publico-cpu-2026-sc-001-socios-estrategicos");
 assert.match(fm.period,/04\/12\/2026.*08:00 a 12:00.*14:00/);
 const salto=catalog.opportunities.find(x=>x.id==="salto-grande-licitacion-sg-790-nuevo-taller-mantenimiento-electrico");
-assert.match(salto.period,/visita.*09\/12\/2026.*11\/01\/2027/s);
+assert.match(salto.period,/visita.*09\/12\/2026.*11\/01\/2027/is);
 const uba=catalog.opportunities.find(x=>x.id==="uba-licitacion-001-26-concesion-bar-facultad-psicologia");
 assert.match(uba.period,/1\.500 viandas.*50 períodos/i);
 const unm=catalog.opportunities.find(x=>x.id==="unm-licitacion-privada-05-2026-puesta-en-valor-aula-j004");
