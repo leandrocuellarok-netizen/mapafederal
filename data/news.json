@@ -35,6 +35,32 @@
     }
   },
   {
+    "id": "news-boletinoficial-gba-gob-ar-secciones-14526-ver",
+    "title": "El Boletín Oficial publicó un aviso de transferencia comercial en Belén de Escobar",
+    "date": "2026-11-24",
+    "category": "Comercio",
+    "summary": "La edición 14526 del Boletín Oficial bonaerense incluyó un aviso de transferencia de un fondo de comercio del rubro carnicería y granja en Belén de Escobar. El aviso está publicado por cinco días y consigna «nov. 20 v. nov. 27». No se identificó una marca comercial y la publicación no acredita que la transferencia se haya completado ni que el local continúe operando. Se omiten datos personales de las partes.",
+    "source": "Boletín Oficial de la Provincia de Buenos Aires",
+    "url": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+    "period": "Aviso de cinco días; el ejemplar fechado 24/11/2026 consigna «nov. 20 v. nov. 27». No se verificó el cierre de la operación.",
+    "jurisdictions": [
+      "Buenos Aires"
+    ],
+    "geographyStatus": "explicit",
+    "geographyEvidence": [
+      "Las Orquídeas 1643, Belén de Escobar, Partido de Escobar, Provincia de Buenos Aires"
+    ],
+    "jurisdictionScope": "Local — Belén de Escobar / Partido de Escobar / Provincia de Buenos Aires",
+    "sector": "Comercio minorista / alimentos / carnicería y granja",
+    "territorialRelevance": "El aviso aporta una señal registral de movimiento de un fondo de comercio en Belén de Escobar; no identifica marca ni acredita precio, empleo, cierre del trámite o continuidad operativa.",
+    "relatedSources": [],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se revisó la edición 14526 del Boletín Oficial bonaerense, fechada 24/11/2026, página 83. El aviso «POR 5 DÍAS» describe la transferencia de un fondo de comercio del rubro carnicería y granja en Las Orquídeas 1643, Belén de Escobar; se omiten nombres, DNI y CUIT de particulares. No se verificó la conclusión de la transferencia, habilitación ni operación actual. Es un aviso legal, no una vacante ni una oportunidad de inversión."
+    }
+  },
+  {
     "id": "news-www-fca-org-uk-firms-innovation-ai-approach-agentic-ai",
     "title": "La FCA publicó expectativas regulatorias para la IA agéntica en servicios financieros",
     "date": "2026-11-24",
