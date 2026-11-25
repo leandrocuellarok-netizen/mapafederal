@@ -59,8 +59,10 @@ Se actualizó la fecha y nota del catálogo. Se corrigieron los recuentos del RE
 
 ## 6. Validación y publicación
 
-- Workflow #630 (run ID 45635849312), sobre el commit `5dd963baafca88976d3a35e609d363633f357feb`: job `validate` = success; test específico de Colonia de Verano 2027 = success; job `deploy` = success.
-- Workflow #631 (run ID 45636127088), sobre el commit `6653320a32e7a0324aaa1c0ffa8baf913a72c2d6`: validación y despliegue de Pages exitosos, incluida la prueba de procedencia geográfica de Luis Monti.
+- Workflow #630 (run ID 45635849312), commit `5dd963baafca88976d3a35e609d363633f357feb`: validación, test específico y despliegue de Pages exitosos.
+- Workflow #631 (run ID 45636127088), commit `6653320a32e7a0324aaa1c0ffa8baf913a72c2d6`: validación y despliegue exitosos, incluida la prueba de ubicación de Luis Monti.
+- Workflow #632 (run ID 45636590745), commit `d4e942e80b4e7f168550fdc62e0d601031af30af`: falló únicamente el test nuevo por una aserción que esperaba las palabras «enlace canónico» antes de «verificó directamente»; los datos y la URL canónica no fallaron. El despliegue fue omitido.
+- Workflow #633 (run ID 45636669506), commit `98850aeec827f02a5c5fe1e9b479421e22c2ab05`: test corregido; job `validate` y job `deploy` finalizaron con success.
 - La comprobación HTTP independiente de `https://leandrocuellarok-netizen.github.io/mapafederal/` no pudo completarse: el navegador no accedió y el entorno de red devolvió fallo DNS. No se afirma inspección visual.
 
 ## 7. Pendientes
@@ -78,3 +80,11 @@ Se añadió como fuente complementaria el directorio oficial Escobar 360, que id
 ## Corrección de URL canónica — 25/11/2026
 
 La publicación municipal fue abierta correctamente en su ruta canónica bajo `/noticias/`. Se reemplazó la variante anterior del enlace por la URL canónica, se ajustó el test y se actualizó el enlace de referencia en README. La respuesta HTTP 403 observada correspondía a la variante sin `/noticias/`, no al artículo canónico.
+
+
+## Trazabilidad de commits
+
+- `5dd963baafca88976d3a35e609d363633f357feb`: registro de evento, test específico, workflow y actualización documental.
+- `6653320a32e7a0324aaa1c0ffa8baf913a72c2d6`: fuente oficial complementaria para la ubicación del Polideportivo Luis Monti.
+- `d4e942e80b4e7f168550fdc62e0d601031af30af`: sustitución por la URL canónica de la publicación municipal.
+- `98850aeec827f02a5c5fe1e9b479421e22c2ab05`: corrección de la aserción del test de procedencia.
