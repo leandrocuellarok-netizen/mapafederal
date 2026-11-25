@@ -196,6 +196,17 @@ assert.equal(nestleAi.geographyStatus, "not_specified");
 assert.match(nestleAi.verification.scope, /pruebas piloto/i);
 assert.equal(new URL(nestleAi.url).protocol, "https:");
 
+const automationAnywhere = radarNews.find(entry => entry.id === "news-www-automationanywhere-com-company-press-room-automation-anywhere-completes-boostai-acquisition-challenges-saas-giants-race");
+assert.ok(automationAnywhere, "Falta la adquisición completada de Boost.ai");
+assert.equal(automationAnywhere.date, "2026-11-24");
+assert.equal(automationAnywhere.source, "Automation Anywhere — comunicado corporativo");
+assert.equal(automationAnywhere.verification.status, "editorial_reviewed");
+assert.deepEqual(automationAnywhere.jurisdictions, []);
+assert.equal(automationAnywhere.geographyStatus, "not_specified");
+assert.match(automationAnywhere.verification.scope, /adquisición de Boost.ai fue completada/i);
+assert.match(automationAnywhere.verification.scope, /no se halló precio de compra/i);
+assert.equal(new URL(automationAnywhere.url).protocol, "https:");
+
 const escobarNotice = radarNews.find(entry => entry.id === "news-boletinoficial-gba-gob-ar-secciones-14526-ver");
 assert.ok(escobarNotice, "Falta el aviso oficial de transferencia comercial en Belén de Escobar");
 assert.equal(escobarNotice.date, "2026-11-24");
@@ -224,5 +235,11 @@ assert.equal(redSostenible.amount, null, "La convocatoria no anuncia financiamie
 assert.equal(redSostenible.verification.status, "verified");
 assert.equal(redSostenible.verification.checkedAt, "2026-11-25");
 assert.match(redSostenible.verification.scope, /Escobar 360°/);
-assert.match(redSostenible.verification.scope, /no permite verificar un formulario o trámite de inscripción/i);
+assert.match(redSostenible.description, /cuatro etapas y diez pasos/i);
+assert.match(redSostenible.description, /no publica el monto/i);
+assert.match(redSostenible.verification.scope, /ventaja en licitaciones municipales/i);
+assert.match(redSostenible.verification.scope, /no especifica mecanismo/i);
+assert.equal(redSostenible.relatedSources.length, 1);
+assert.equal(redSostenible.relatedSources[0].url, "https://www.escobar.gob.ar/municipio/sostenible/redsostenible/");
+assert.match(redSostenible.verification.scope, /no permitió confirmar el formulario individual/i);
 assert.equal(new URL(redSostenible.sourceUrl).protocol, "https:");
