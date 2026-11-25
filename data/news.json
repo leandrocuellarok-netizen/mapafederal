@@ -681,21 +681,25 @@
   },
   {
     "id": "news-www-reuters-com-technology-trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20",
-    "title": "Estados Unidos planteó penalizar a empresas que construyan centros de datos en el exterior",
+    "title": "Trump planteó penalizar a empresas estadounidenses que construyan centros de datos en el extranjero",
     "date": "2026-11-20",
-    "category": "Tecnología",
-    "summary": "El presidente Donald Trump anunció que su gobierno buscaría penalizar fiscalmente a empresas estadounidenses que construyan centros de datos fuera de Estados Unidos. Reuters presenta el planteo como una declaración política; la nota no aporta texto normativo, alícuota, calendario ni mecanismo de aplicación. Es una señal de riesgo para inversiones transfronterizas en infraestructura de cómputo, no una norma vigente ni una medida ejecutada.",
+    "category": "Regulación",
+    "summary": "Reuters informó el 20/11/2026 que Donald Trump dijo que Estados Unidos impondría un impuesto elevado a compañías estadounidenses que construyan centros de datos fuera del país. La nota no identifica texto normativo, tasa, autoridad ejecutora ni fecha de vigencia; se registra como declaración política y riesgo regulatorio potencial, no como medida aprobada o vigente. La discusión puede incidir en decisiones de localización de infraestructura de IA y servicios cloud.",
     "source": "Reuters",
     "url": "https://www.reuters.com/technology/trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20/",
-    "period": "Declaración presidencial informada el 20/11/2026; implementación normativa no verificada.",
+    "period": "Declaración reportada el 20/11/2026; la fuente no identifica instrumento normativo ni fecha de entrada en vigor.",
     "verification": {
       "status": "editorial_reviewed",
-      "checkedAt": "2026-11-24",
-      "scope": "Revisión del reporte de Reuters del 20/11/2026. Se registra la declaración y su posible señal de política industrial; no se encontró texto legal ni se atribuye una consecuencia cuantificada a proyectos concretos. La taxonomía territorial del catálogo filtra jurisdicciones argentinas; el país extranjero se explicita en el titular y el resumen, sin forzarlo a una provincia argentina."
+      "checkedAt": "2026-11-25",
+      "scope": "Revisado en Reuters, 20/11/2026. La nota atribuye al presidente una declaración sobre un posible impuesto; no se localizó texto normativo, decreto ni fecha de aplicación. Se clasifica como señal política, no como regulación vigente."
     },
     "jurisdictions": [],
     "geographyStatus": "not_specified",
-    "geographyEvidence": []
+    "geographyEvidence": [],
+    "jurisdictionScope": "Estados Unidos; declaración de política nacional sin norma publicada en la fuente consultada.",
+    "sector": "Infraestructura de IA / centros de datos / cloud / energía / política industrial",
+    "territorialRelevance": "Alta para decisiones internacionales de inversión en centros de datos, cloud y energía; impacto indirecto para Argentina si la propuesta se formalizara. No acredita una restricción vigente ni una inversión local.",
+    "relatedSources": []
   },
   {
     "id": "news-zscaler-gcs-web-com-news-releases-news-release-details-zscaler-partners-frontier-model-providers-help-enterprises",
@@ -738,28 +742,6 @@
       "status": "editorial_reviewed",
       "checkedAt": "2026-11-25",
       "scope": "Se revisó el comunicado corporativo original de Nestlé, fechado el 20/11/2026. Confirma la apertura del centro en Orbe y su foco en IA, sensores, robótica y sistemas conectados para experiencia de consumo, I+D y manufactura. La empresa describe instalaciones de prototipado y pruebas piloto antes del despliegue. No se informa monto de inversión, calendario general de adopción, métricas de productividad ni resultados independientes; no se atribuye una implantación en Argentina."
-    }
-  },
-  {
-    "id": "news-www-reuters-com-technology-trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20",
-    "title": "Trump planteó penalizar a empresas estadounidenses que construyan centros de datos en el extranjero",
-    "date": "2026-11-20",
-    "category": "Regulación",
-    "summary": "Reuters informó el 20/11/2026 que Donald Trump dijo que Estados Unidos impondría un impuesto elevado a compañías estadounidenses que construyan centros de datos fuera del país. La nota no identifica texto normativo, tasa, autoridad ejecutora ni fecha de vigencia; se registra como declaración política y riesgo regulatorio potencial, no como medida aprobada o vigente. La discusión puede incidir en decisiones de localización de infraestructura de IA y servicios cloud.",
-    "source": "Reuters",
-    "url": "https://www.reuters.com/technology/trump-says-us-penalize-firms-building-data-centers-abroad-2026-11-20/",
-    "period": "Declaración reportada el 20/11/2026; la fuente no identifica instrumento normativo ni fecha de entrada en vigor.",
-    "jurisdictions": [],
-    "geographyStatus": "not_specified",
-    "geographyEvidence": [],
-    "jurisdictionScope": "Estados Unidos; declaración de política nacional sin norma publicada en la fuente consultada.",
-    "sector": "Infraestructura de IA / centros de datos / cloud / energía / política industrial",
-    "territorialRelevance": "Alta para decisiones internacionales de inversión en centros de datos, cloud y energía; impacto indirecto para Argentina si la propuesta se formalizara. No acredita una restricción vigente ni una inversión local.",
-    "relatedSources": [],
-    "verification": {
-      "status": "editorial_reviewed",
-      "checkedAt": "2026-11-25",
-      "scope": "Revisado en Reuters, 20/11/2026. La nota atribuye al presidente una declaración sobre un posible impuesto; no se localizó texto normativo, decreto ni fecha de aplicación. Se clasifica como señal política, no como regulación vigente."
     }
   },
   {
