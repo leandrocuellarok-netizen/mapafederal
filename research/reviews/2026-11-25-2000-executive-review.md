@@ -705,3 +705,7 @@ El workflow #45693293076 llegó a la prueba de licitaciones de Escobar y detect�
 
 ### Ajuste sintáctico del test LP66 — 17:18 ART
 Se simplificó la expresión regular del test de LP 66 para evitar doble escape de barras; se conserva la comprobación de fecha 25/11 y de las ediciones 14505/14508.
+
+
+### Ajuste final de patrón LP66 — 17:20 ART
+Se ajustó la expresión regular del test para aceptar la fecha de cada edición entre las referencias 14505 y 14508. No se alteró el registro ni su evidencia.
