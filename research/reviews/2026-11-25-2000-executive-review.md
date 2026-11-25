@@ -709,3 +709,7 @@ Se simplificó la expresión regular del test de LP 66 para evitar doble escape 
 
 ### Ajuste final de patrón LP66 — 17:20 ART
 Se ajustó la expresión regular del test para aceptar la fecha de cada edición entre las referencias 14505 y 14508. No se alteró el registro ni su evidencia.
+
+
+### Octava corrección de CI — 17:21 ART
+La prueba de LP 69 conservaba un patrón textual demasiado estricto para las referencias a las ediciones 14505 y 14508. Se actualizó para admitir las fechas entre paréntesis sin relajar la comprobación de ausencia de circular de prórroga.

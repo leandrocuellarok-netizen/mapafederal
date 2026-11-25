@@ -17,7 +17,7 @@ const expected = {
     url: "https://boletinoficial.gba.gob.ar/secciones/14508/ver",
     published: "2026-11-13",
     checkedAt: "2026-11-25",
-    scopePattern: /ediciones 14505 y 14508.*no se localizó circular/i
+    scopePattern: /ediciones 14505.*14508.*no se localizó circular/i
   },
   "escobar-licitacion-71-2026-piedra-partida": {
     url: "https://boletinoficial.gba.gob.ar/secciones/14523/descargar",
