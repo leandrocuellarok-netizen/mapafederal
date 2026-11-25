@@ -145,3 +145,22 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 3. Verificar actas/resultados de LP 61 y LP 62 solo si se publican; ambos llamados ya están cerrados por fecha de apertura, sin adjudicación confirmada.
 4. Mantener el seguimiento del puerto de Escobar, BESS Maschwitz, QUO Loma Verde y expansiones industriales sin convertir anuncios en inversión ejecutada.
 5. Cerrar el balance definitivo el 25/11/2026 a las 20:00 con CI, Pages y estados de contratación actualizados.
+
+
+## Corte GBIE 23:00 — 24/11/2026
+
+- Radar IA: no se añadió una nueva señal estrictamente tecnológica o regulatoria; las publicaciones de la FCA y la cotización de Anthropic del 24/11 ya estaban registradas. El catálogo editorial pasa de 42 a 43 noticias por la movilización vecinal vinculada al BESS Maschwitz.
+- La movilización tuvo lugar el 21/11. El Día de Escobar publicó el 22/11 y Redacción Norte el 24/11; ambas coberturas describen reclamos para trasladar el proyecto a una zona industrial y preocupaciones vecinales sobre proximidad residencial, seguridad y ambiente. La comunicación municipal del 03/11 confirma trabajos preliminares, potencia declarada de 40 MW y hasta cinco horas de refuerzo. Los reclamos no se presentan como conclusiones técnicas ni como decisión administrativa. Se omitieron cifras de firmas por no contar con registro primario independiente.
+- Investment Finder se mantiene en 56 oportunidades: 25 abiertas, 28 con disponibilidad desconocida y 3 cerradas. No se incorporó una nueva licitación o inversión: se actualizó el registro BESS Maschwitz con fuentes complementarias y una señal de riesgo de aceptación social. Conserva etapa preparation, disponibilidad unknown, monto no informado y jurisdicción municipal sin resolver entre Escobar y Tigre.
+- LP 74 conserva consultas 26–27/11, venta 30/11–01/12 y apertura 04/12 a las 10:00. LP 75 conserva consultas 26–27/11, venta 01–02/12 y apertura 09/12 a las 12:00. Los accesos directos a las ediciones 14517 y 14523 devolvieron timeout; no se afirma una circular nueva.
+- Commits de datos: [0150795](https://github.com/leandrocuellarok-netizen/mapafederal/commit/01507959d05f3cb1dd3e813aeb4c931528271052) (noticia nueva) y [b9b96d2](https://github.com/leandrocuellarok-netizen/mapafederal/commit/b9b96d2546daed0ab15f9240f81ee3abf6c51864) (actualización BESS). Registro: [ciclo 23:00](https://github.com/leandrocuellarok-netizen/mapafederal/blob/main/research/runs/2026-11-24-gbie-cycle-2300.md).
+- Cambios concurrentes ya presentes en main: rebranding de la sección a **Invertí en Argentina**, mapa vectorial con remapeo del rótulo visible a **Malvinas Argentinas**, Foco Escobar como observatorio independiente y ajustes del validador ES modules. La implementación de código fue inspeccionada, pero no se hizo verificación visual independiente del sitio.
+- Contrato enterprise sin cambios: informes libres públicos deshabilitados, análisis personalizados bajo solicitud, datos de clientes privados y afirmaciones predictivas sujetas a validación. Federal Reports sigue como único piloto descriptivo; cinco módulos continúan planificados.
+- JSON, IDs, duplicados, orden cronológico, resumen, jurisdicción y URLs HTTPS de los registros modificados se validaron antes de escribir. Las páginas principales de la novedad fueron abiertas. Los estados de checks de los commits nuevos no devolvieron resultados; no se declara CI ni Pages exitosos.
+
+### Próximos pasos
+1. Seguir la respuesta institucional y ambiental al reclamo BESS y resolver la discrepancia jurisdiccional antes de georreferenciar.
+2. Revisar LP 74 y LP 75 el 26–27/11 y obtener los pliegos/circulares.
+3. Reintentar las ediciones oficiales 14517 y 14523 cuando el sitio responda.
+4. Confirmar CI y Pages tras los commits de datos y el documento.
+5. Cerrar el balance definitivo el 25/11/2026 a las 20:00.
