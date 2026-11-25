@@ -44,9 +44,11 @@ El programa propone medición de huella de carbono mediante universidades y meto
 
 ## Validación y publicación
 
-- JSON parseado antes de crear el commit.
-- Pruebas específicas añadidas para tipo de registro, alcance municipal, estado de convocatoria, fecha límite, ausencia de monto y limitación del formulario.
-- La ejecución de CI y el despliegue correspondientes a este cambio quedan pendientes de GitHub Actions.
+- Commit de datos, prueba y registro: `7efdb1f9c4acb3d8618c4feda7b3016bf2516cb5`.
+- Workflow #554: https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45554271142 — validación completada con éxito; el job `validate` y todos sus pasos finalizaron correctamente, incluido `Test Escobar economic profile and company evidence`.
+- El job `deploy` y el paso `Deploy to GitHub Pages` finalizaron correctamente. GitHub Actions informa publicación exitosa.
+- Comprobación HTTP independiente: no completada. La apertura web y `curl` no pudieron resolver `leandrocuellarok-netizen.github.io` (error DNS); por tanto, no se confirma desde este entorno la lectura del recurso ya publicado.
+- La validación JSON local previa al commit y las pruebas específicas añadidas quedaron cubiertas además por la ejecución completa de CI.
 
 ## Incertidumbres y siguiente evidencia necesaria
 
