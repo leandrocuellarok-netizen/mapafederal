@@ -353,3 +353,7 @@ El catálogo de oportunidades conserva 23 registros de Escobar: 5 abiertos (LP 7
 - Avance comprobable: 59 noticias en Radar IA; 90 oportunidades en Investment Finder; 17 altas nuevas en esta ejecución y una oportunidad cerrada por vencimiento verificado.
 - Riesgos: montos de presupuestos no equivalen a inversión ejecutada; tres nuevas oportunidades permanecen con disponibilidad desconocida; declaración de política estadounidense no equivale a norma vigente; métricas de OpenAI son internas y no generalizables; el BESS Maschwitz sigue con localización por aclarar.
 - Pendientes prioritarios: CI y despliegue; actas y circulares; validación de pliegos y requisitos; nuevas oportunidades de Escobar; revisión territorial y documental del BESS.
+
+
+### Seguimiento de CI posterior al ciclo 10:58
+- El workflow #623 (`45630250410`) pasó la validación general de catálogos, pero falló en un test de Escobar que todavía buscaba el ID antiguo de la ficha BIS 2026-23999. Se corrigió el test para localizar la ficha por URL canónica y verificar el ID determinista actualizado. CI y despliegue quedan pendientes de la siguiente ejecución; no se declara Pages publicado.
