@@ -74,13 +74,13 @@ const cascote=catalog.opportunities.find(x=>x.id==="escobar-licitacion-72-2026-c
 const vectores=catalog.opportunities.find(x=>x.id==="escobar-licitacion-75-2026-control-vectores");
 assert.match(piedra.period,/Consultas: 1 y 2\/12\/2026, 09:00–12:00.*H\. Yrigoyen 743/i);
 assert.match(piedra.description,/IVA incluido y con carácter de precio tope/i);
-assert.match(piedra.description,/Expediente 289\.566\/26/);
+assert.match(piedra.period,/Expediente 289\.566\/26/);
 assert.match(cascote.period,/apertura: 11\/12\/2026 a las 10:00/i);
 assert.match(cascote.description,/IVA incluido y con carácter de precio tope/i);
-assert.match(cascote.description,/Expediente 289\.561\/26/);
+assert.match(cascote.period,/Expediente 289\.561\/26/);
 assert.match(vectores.period,/Consultas de pliego: 26–27\/11\/2026, 09:00–13:30.*Estrada 599/i);
 assert.match(vectores.description,/la fuente no aclara en el aviso si incluye IVA/i);
-assert.match(vectores.description,/Expediente 293\.751\/2026/);
+assert.match(vectores.period,/Expediente 293\.751\/2026/);
 
 const desagote = catalog.opportunities.find(item => item.id === "escobar-licitacion-67-2026-servicio-desagote");
 assert.ok(desagote, "Falta la LP 67/2026 de servicio de desagote.");

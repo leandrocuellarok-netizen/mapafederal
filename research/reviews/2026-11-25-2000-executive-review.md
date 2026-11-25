@@ -584,3 +584,5 @@ El balance sigue provisional hasta la revisión de las 20:00.
 ### Incidencia de CI — 15:12 ART
 
 El workflow #661 no desplegó porque el test de procedencia de Escobar esperaba la URL anterior `/secciones/14523/ver`, mientras los registros ya apuntaban al PDF oficial `/secciones/14523/descargar`. Se corrigió la expectativa del test para mantener el vínculo con la fuente primaria descargable. La validación y el despliegue del commit correctivo siguen pendientes; el balance no declara publicación hasta confirmación.
+
+- El workflow #662 detectó una segunda discrepancia de test (expediente guardado en `period`, aserción mirando `description`). Se corrigió la prueba para respetar el esquema; nuevo CI pendiente.
