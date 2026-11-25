@@ -65,11 +65,11 @@ assert.equal(route506.operator, "Micro Ómnibus Tigre S.A. (M.O.T.S.A.)");
 assert.deepEqual(route506.localities, ["Belén de Escobar", "Loma Verde"]);
 assert.equal(route506.sourcePublishedAt, "2026-11-03");
 assert.equal(route506.status, "anunciado");
-assert.equal(route506.operationalStatus, "no verificado");
+assert.match(route506.operationalStatus, /Mi Bus publica un servicio 506/i);
 assert.ok(route506.destination.includes("Mercado Libre"));
 assert.ok(route506.routeOutbound.includes("Km 59 de Panamericana"));
 assert.ok(route506.routeReturn.includes("Puente Loma Verde"));
-assert.match(route506.verification.scope, /no se localizó una confirmación posterior del Municipio o de M\.O\.T\.S\.A\./i);
+assert.match(route506.verification.scope, /Mi Bus.*23 paradas/i);
 assert.equal(route506.schedule, undefined, "No se deben importar horarios de fuentes secundarias como oficiales");
 assert.equal(route506.secondaryReports.length, 1);
 assert.equal(route506.secondaryReports[0].sourceName, "El Diario de Escobar");
@@ -88,16 +88,29 @@ assert.equal(planner506.listedStopsCount, 23);
 assert.equal(planner506.firstListedStop, "TERMINAL ESCOBAR");
 assert.equal(planner506.lastListedStop, "COL. ESTE (MERCADO LIBRE)");
 assert.equal(planner506.sourcePublishedAt, null);
-assert.equal(planner506.status, "no verificado");
-assert.equal(planner506.publicationStatus, "listado en el planificador municipal");
-assert.equal(planner506.operationalStatus, "no verificado");
+assert.equal(planner506.status, "operativo");
+assert.equal(planner506.publicationStatus, "ficha y horarios publicados en el planificador municipal");
+assert.equal(planner506.operationalStatus, "programado en Mi Bus; circulación efectiva no verificada en terreno");
 assert.equal(planner506.relatedAnnouncementId, route506.id);
 assert.match(planner506.announcementRelation, /no identifica el ramal B/i);
 assert.equal(planner506.verification.status, "verified");
-assert.equal(planner506.verification.checkedAt, "2026-11-24");
+assert.equal(planner506.verification.checkedAt, "2026-11-25");
 assert.match(planner506.verification.scope, /23 paradas/i);
 assert.match(planner506.verification.scope, /no confirma circulación en tiempo real/i);
-assert.match(planner506.verification.scope, /no.*equivalencia exacta/i);
+assert.match(planner506.verification.scope, /no identifica explícitamente la letra B/i);
+const officialSchedule = planner506.officialSchedule;
+assert.ok(officialSchedule, "Faltan los horarios oficiales publicados por Mi Bus");
+assert.equal(officialSchedule.checkedAt, "2026-11-25");
+assert.deepEqual(officialSchedule.serviceDaysDisplayed, ["Lunes a Viernes", "Domingo"]);
+assert.deepEqual(officialSchedule.terminalEscobar.weekdays, ["09:00", "12:00", "17:00"]);
+assert.deepEqual(officialSchedule.terminalEscobar.sunday, ["12:00", "17:00"]);
+assert.deepEqual(officialSchedule.mercadoLibreStop.weekdays, ["09:30", "12:30", "17:30"]);
+assert.deepEqual(officialSchedule.mercadoLibreStop.sunday, ["12:30", "17:30"]);
+assert.match(officialSchedule.note, /No se infieren horarios de retorno/i);
+for (const url of [officialSchedule.terminalEscobar.sourceUrl, officialSchedule.mercadoLibreStop.sourceUrl]) {
+  assert.equal(new URL(url).protocol, "https:");
+}
+
 for (const url of [planner506.sourceUrl, planner506.catalogUrl]) {
   assert.equal(new URL(url).protocol, "https:");
 }
@@ -135,6 +148,8 @@ assert.match(profile, /mobility\.intermodalAssessment/);
 assert.match(profile, /connectionsHtml\+intermodalHtml/);
 assert.match(profile, /mobility\.plannerServices/);
 assert.match(profile, /plannerServicesHtml/);
+assert.match(profile, /item\\.officialSchedule/);
+assert.match(profile, /Horarios publicados por Mi Bus/);
 assert.match(profile, /Servicios publicados en el planificador Mi Bus/);
 
-console.log("Escobar movilidad: 15 paradas, 3 estaciones, 3 coincidencias sin inferir transbordos, 1 puente con estado actual no verificado, 2 ramales anunciados y 2 fichas Mi Bus independientes.");
+console.log("Escobar movilidad: 15 paradas, 3 estaciones, 3 coincidencias sin inferir transbordos, puente con estado actual no verificado, 503 H anunciado y 506 con programación oficial Mi Bus verificada.");

@@ -741,8 +741,8 @@
     "status": "pendiente",
     "summary": "La publicación municipal indica que los QR permiten consultar líneas, llegadas estimadas, frecuencias y recorridos. Para planificar viajes con origen, destino y combinaciones, el Municipio remite al planificador Mi Bus.",
     "verification": {
-      "checkedAt": "2026-11-23",
-      "scope": "Se contrastaron las 15 intersecciones con la publicación municipal y se comprobó que el planificador Mi Bus carga un buscador de origen/destino y un listado de líneas. No se verificó presencialmente que cada QR siga instalado ni se confirmaron horarios, frecuencias u operación de cada servicio."
+      "checkedAt": "2026-11-25",
+      "scope": "Revalidación focal del 25/11/2026: se consultó la ficha oficial Mi Bus y los horarios de la línea 506 Est. Escobar–Mercado Libre. No se revalidaron en esta ejecución el recurso XLSX de datos abiertos, la operación ferroviaria ni el estado físico de las 15 paradas QR y el puente peatonal."
     },
     "planner": {
       "name": "Mi Bus — planificador de transporte",
@@ -1106,10 +1106,10 @@
         "sourceUrl": "https://www.escobar.gob.ar/noticias/transporte-publico-escobar-suma-dos-nuevos-ramales-y-mas-colectivos-0-/",
         "sourcePublishedAt": "2026-11-03",
         "period": "Anuncio municipal del 03/11/2026; inicio previsto «durante la próxima semana», sin fecha exacta publicada.",
-        "validityPeriod": "Anuncio del 03/11/2026. Al 24/11/2026 existen reportes periodísticos posteriores sobre el inicio, pero no se localizó confirmación primaria del Municipio o del operador.",
+        "validityPeriod": "Anuncio del 03/11/2026. Al 25/11/2026, Mi Bus publica una ficha de la línea 506 Est. Escobar–Mercado Libre con 23 paradas y horarios. La ficha no identifica explícitamente la letra B; no hubo comprobación presencial.",
         "status": "anunciado",
-        "operationalStatus": "no verificado",
-        "summary": "La Municipalidad anunció el ramal B de la línea 506, operado por M.O.T.S.A., entre la terminal de Belén de Escobar y el sector del Parque Industrial de Loma Verde y el centro de almacenamiento de Mercado Libre, con referencia de llegada al km 59 de Panamericana. No se incorporan horarios ni paradas no publicados por la fuente primaria.",
+        "operationalStatus": "Mi Bus publica un servicio 506 con destino Mercado Libre y horarios; la ficha no identifica explícitamente el ramal B y la circulación efectiva no fue comprobada en terreno.",
+        "summary": "La Municipalidad anunció el ramal B de la línea 506 entre Belén de Escobar y el sector del Parque Industrial de Loma Verde/Mercado Libre. Al 25/11, Mi Bus publica una ficha de la línea 506 Est. Escobar–Mercado Libre con 23 paradas y horarios; la ficha no rotula la letra B.",
         "secondaryReports": [
           {
             "sourceName": "El Diario de Escobar",
@@ -1119,9 +1119,10 @@
           }
         ],
         "verification": {
-          "checkedAt": "2026-11-24",
-          "scope": "Se verificó la publicación municipal del 03/11/2026, el operador, la línea, el ramal, origen, destino y trazados de ida y vuelta. El Diario de Escobar publicó el 18/11/2026 que el ramal ya funcionaba, pero no se localizó una confirmación posterior del Municipio o de M.O.T.S.A.; por eso el estado operativo permanece no verificado. No se importan los horarios publicados por prensa secundaria como horarios oficiales."
-        }
+          "checkedAt": "2026-11-25",
+          "scope": "Se reabrió el anuncio municipal del 03/11/2026 y se consultó la ficha dinámica Mi Bus de la línea 506, que enumera 23 paradas desde TERMINAL ESCOBAR hasta COL. ESTE (MERCADO LIBRE), junto con los horarios de ambas paradas. La coincidencia de línea y destino respalda que existe programación oficial publicada para ese servicio; Mi Bus no identifica explícitamente la letra B. No se verificó circulación presencial ni en tiempo real."
+        },
+        "relatedPlannerServiceId": "linea-506-estacion-escobar-mercado-libre-mibus-2026"
       }
     ],
     "plannerServices": [
@@ -1171,18 +1172,53 @@
         "catalogUrl": "https://mibus.escobar.gob.ar/",
         "sourcePublishedAt": null,
         "sourcePublicationNote": "La ficha dinámica del planificador no informa fecha de publicación o actualización.",
-        "period": "Ficha visible en el planificador municipal consultado el 2026-11-24.",
-        "validityPeriod": "Registro visible en la consulta del 2026-11-24; el planificador no informa fecha de publicación/actualización ni garantiza circulación en tiempo real.",
-        "status": "no verificado",
-        "publicationStatus": "listado en el planificador municipal",
-        "operationalStatus": "no verificado",
+        "period": "Ficha de ruta y horarios visibles en el planificador municipal consultado el 25/11/2026.",
+        "validityPeriod": "La ficha dinámica no informa fecha de publicación o actualización. Los horarios se observaron el 25/11/2026 y pueden cambiar. La interfaz mostró opciones de lunes a viernes y domingo; no se infiere la inexistencia de servicio otros días.",
+        "status": "operativo",
+        "publicationStatus": "ficha y horarios publicados en el planificador municipal",
+        "operationalStatus": "programado en Mi Bus; circulación efectiva no verificada en terreno",
         "relatedAnnouncementId": "linea-506-ramal-b-escobar-loma-verde-2026",
-        "announcementRelation": "La Municipalidad anunció el ramal B de la línea 506 el 03/11/2026, pero la ficha del planificador no identifica el ramal B. No se afirma equivalencia entre ambos registros.",
-        "summary": "El planificador municipal lista la Línea 506 como Est. Escobar - Mercado Libre (Loma Verde), con 23 paradas desde TERMINAL ESCOBAR hasta COL. ESTE (MERCADO LIBRE).",
+        "announcementRelation": "El Municipio anunció el ramal B de la línea 506 el 03/11/2026. Mi Bus publica una ficha de la línea 506 con destino Mercado Libre y 23 paradas; la ficha coincide en línea y destino, pero no rotula explícitamente el ramal B. No se afirma equivalencia nominal independiente.",
+        "summary": "Mi Bus lista la línea 506 como Est. Escobar–Mercado Libre (Loma Verde), con 23 paradas entre TERMINAL ESCOBAR y COL. ESTE (MERCADO LIBRE). Horarios publicados: Terminal Escobar, lunes a viernes 09:00, 12:00 y 17:00; domingo 12:00 y 17:00. En la parada de Mercado Libre, lunes a viernes 09:30, 12:30 y 17:30; domingo 12:30 y 17:30. La ficha no etiqueta la letra del ramal.",
         "verification": {
           "status": "verified",
-          "checkedAt": "2026-11-24",
-          "scope": "Se comprobó en el catálogo principal de Mi Bus la denominación «506 Est. Escobar - Mercado Libre (Loma Verde)» y en la ficha de ruta 23 paradas, desde TERMINAL ESCOBAR hasta COL. ESTE (MERCADO LIBRE). Esto acredita la publicación de la ruta en el planificador municipal al 2026-11-24; no confirma circulación en tiempo real, frecuencias, horarios de cada salida ni equivalencia exacta con el ramal B anunciado el 03/11/2026."
+          "checkedAt": "2026-11-25",
+          "scope": "Se comprobó la ficha municipal Mi Bus de la línea 506 y sus 23 paradas, desde TERMINAL ESCOBAR hasta COL. ESTE (MERCADO LIBRE), y se abrieron los enlaces de horarios de ambas paradas. El 25/11/2026 se mostraron salidas de Terminal Escobar a las 09:00, 12:00 y 17:00 de lunes a viernes, y 12:00 y 17:00 los domingos; en la parada de Mercado Libre, 09:30, 12:30 y 17:30 de lunes a viernes, y 12:30 y 17:30 los domingos. La ficha coincide en línea y destino con el ramal anunciado, pero no identifica explícitamente la letra B. Esto acredita programación publicada, no circulación presencial ni en tiempo real. No se infiere inexistencia de servicio los sábados."
+        },
+        "officialSchedule": {
+          "sourceName": "Municipalidad de Escobar — Escobar 360 / Mi Bus",
+          "checkedAt": "2026-11-25",
+          "serviceDaysDisplayed": [
+            "Lunes a Viernes",
+            "Domingo"
+          ],
+          "terminalEscobar": {
+            "stopName": "TERMINAL ESCOBAR",
+            "weekdays": [
+              "09:00",
+              "12:00",
+              "17:00"
+            ],
+            "sunday": [
+              "12:00",
+              "17:00"
+            ],
+            "sourceUrl": "https://mibus.escobar.gob.ar/stop_times/21/SH0002533/escobar_462"
+          },
+          "mercadoLibreStop": {
+            "stopName": "COL. ESTE (MERCADO LIBRE)",
+            "weekdays": [
+              "09:30",
+              "12:30",
+              "17:30"
+            ],
+            "sunday": [
+              "12:30",
+              "17:30"
+            ],
+            "sourceUrl": "https://mibus.escobar.gob.ar/stop_times/21/SH0002533/S00192098"
+          },
+          "note": "Son horarios publicados para las paradas consultadas. No se infieren horarios de retorno, frecuencias intermedias ni circulación en tiempo real. La interfaz consultada mostró opciones de lunes a viernes y domingo; no se concluye que no haya servicio sábado."
         }
       }
     ]
