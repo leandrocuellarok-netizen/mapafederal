@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 03:57 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 04:57 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,10 +8,10 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 49 registros |
-| Investment Finder | 57 registros |
-| Oportunidades abiertas | 26 |
-| Disponibilidad desconocida | 28 |
+| Radar IA | 50 registros |
+| Investment Finder | 60 registros |
+| Oportunidades abiertas | 28 |
+| Disponibilidad desconocida | 29 |
 | Cerradas | 3 |
 | Event Intelligence | 4 registros |
 | Nodos estratégicos | 86 |
@@ -19,7 +19,7 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 | Módulos en piloto | 1 |
 | Módulos planificados | 5 |
 
-El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 71, LP 72, LP 74, LP 75 y Red Sostenible. El estado `open` significa que el cronograma oficial de consulta/venta y apertura no venció; no garantiza elegibilidad técnica ni disponibilidad de cupos.
+El catálogo de oportunidades conserva 24 registros de Escobar: 5 abiertos (LP 71, LP 72, LP 74, LP 75 y Red Sostenible), 16 con disponibilidad desconocida y 3 cerrados. El estado `open` significa que el cronograma oficial de consulta/venta y apertura no venció; no garantiza elegibilidad técnica ni disponibilidad de cupos.
 
 ## Actualización del ciclo 17:00 — 24/11/2026
 
@@ -258,3 +258,14 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - No se modificaron datos productivos ni páginas en este ciclo. Se publicó únicamente el registro de ejecución. El estado combinado del último commit devolvió cero checks; no se declara CI ni despliegue exitosos. No hubo inspección visual/HTTP independiente de Pages.
 - Registro: [GBIE ciclo 03:57](../runs/2026-11-25-gbie-cycle-0357.md).
 - Pendientes: reintentar Boletín Oficial 14527; obtener documentación primaria/independiente de Project Tango; resolver BESS Maschwitz; validar geometrías de plazas/parques; confirmar CI y Pages antes de la revisión final de las 20:00.
+
+
+## Actualización del ciclo 04:57 — 25/11/2026
+
+- Radar IA: 49 → 50 registros. Se incorporó la Resolución AAIP 188/2026, publicada el 25/11, que aprueba las Cláusulas Contractuales Modelo del Convenio 108 para transferencias internacionales de datos personales (responsable-responsable, responsable-encargado y encargado-encargado). Es relevante para proveedores de IA, cloud y software cuando procesan datos personales transfronterizos; no es una norma específica de IA ni sustituye la Ley 25.326. El aviso oficial directo presentó timeout; el registro conserva esa limitación. Fuente: https://www.boletinoficial.gob.ar/detalleAviso/primera/350736/20261125.
+- Investment Finder: 57 → 60 registros. Se incorporaron la LP 64/2026 del Ministerio de Defensa (Circular 3: apertura reprogramada al 03/12; nuevo límite de ofertas no precisado, por lo que el estado queda unknown), la LP 48/26 del BCRA (ofertas 14/12, visita obligatoria, sin presupuesto publicado) y la LP 0009/2026 de consultoría para La Barrancosa (ofertas 30/12; presupuesto oficial del servicio ARS 39.624.345.857,96 referido al 04/05/2026, no capex total). Fuentes oficiales: https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421032/20261125 ; https://www.boletinoficial.gob.ar/detalleAviso/tercera/2421005/20261124 ; https://www.boletinoficial.gob.ar/detalleAviso/tercera/2420988/20261124.
+- Estados globales: 28 abiertas, 29 desconocidas y 3 cerradas. Escobar conserva 24 registros: 5 abiertos, 16 desconocidos y 3 cerrados. No se incorporó un nuevo llamado local en este corte.
+- Cambio territorial concurrente: el commit 6afea72684c0e5801e6af889c2f677ffb86a7059 documentó la Reserva Natural Educativa de Ingeniero Maschwitz (23 ha, Sucre 1550, entrada gratuita y horario municipal publicado 09:00–17:00, sin confirmar apertura en tiempo real). El dataset de reservas declara ODbL; el GeoJSON respondió 404, el Shapefile no pudo inspeccionarse y no se verificó CRS. No se integró geometría.
+- Commits del ciclo: Radar IA 98834ef851886c67b8873369dede6a28b45f971c; Investment Finder 4ce7dd12cd5c4c279ed4a7823dc705edd3d67d34; registro 04:57 pendiente de enlazar al commit final.
+- JSON, IDs, duplicados, fechas, HTTPS, estados y metadatos se validaron antes de publicar; las páginas existentes siguen cargando los catálogos y no requirieron cambios HTML. El estado combinado de ambos commits devolvió cero checks; CI y Pages quedan pendientes. No hubo inspección HTTP/visual independiente.
+- Próximos pasos: confirmar cronograma COMPR.AR de LP 64; revisar pliego y visita BCRA; revisar pliego técnico de La Barrancosa; reintentar Boletín Oficial 14527 y adjudicaciones/circulares de Escobar; recuperar el anexo de la Resolución 188/2026 y los recursos geoespaciales de reservas. El balance sigue provisional para el corte de las 20:00 ART.
