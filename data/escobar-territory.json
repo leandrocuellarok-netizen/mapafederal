@@ -128,6 +128,162 @@
       }
     }
   ],
+  "earlyChildhoodDirectory": {
+    "name": "Centros de Desarrollo Infantil (CDI)",
+    "sourceName": "Municipalidad de Escobar",
+    "sourceUrl": "https://www.escobar.gob.ar/municipio/oficinas/?q=cdi",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La Guía de oficinas no indica fecha de publicación o edición; consultada el 2026-11-25.",
+    "validityPeriod": "Listado municipal consultado el 2026-11-25. La consulta no confirma operación diaria, vacantes, horarios ni admisión vigentes.",
+    "status": "pendiente",
+    "operationalStatus": "unknown",
+    "mapIntegrationStatus": "pending",
+    "summary": "La Guía de oficinas municipal enumera siete CDI con nombre, localidad, dirección y teléfono; la página de trámites «Tengo hijos/as» también informa siete. En contraste, Educación y deporte atribuye nueve CDI a la revista de gestión 2026. CONECTA 2026 menciona CDI N°2 en Lambertuchi, N°8 en La Chechela, N°6 en Villa Angélica y N°7 en Saavedra, pero sus proyectos no constituyen un inventario ni prueban operación. Una noticia municipal del 23/10/2023 enumeró nueve centros para la inscripción 2024, incluidos Beatriz Causillas de Moreyra y Rosario Vera Peñaloza, y anunció otros dos en construcción en La Victoria y Los Pinos. Los totales, identidades y numeraciones no están conciliados.",
+    "coverageNote": "Las siete fichas visibles en la Guía de oficinas corresponden a Belén de Escobar, Garín, Ingeniero Maschwitz, Maquinista Savio y Matheu. La ausencia de fichas en Loma Verde o 24 de Febrero no demuestra ausencia de servicios en esas localidades.",
+    "verification": {
+      "status": "verified",
+      "checkedAt": "2026-11-25",
+      "scope": "Se revisaron la Guía de oficinas filtrada por CDI, la página Tengo hijos/as, Educación y deporte, CONECTA y la noticia municipal de inscripción 2024. Se transcribieron las siete fichas visibles de la Guía de oficinas sin convertirlas en una afirmación de operación efectiva. Se verificó que el portal de datos abiertos publica una ficha de dataset, pero el enlace cdis.geojson devolvió HTTP 404. No se realizó comprobación presencial ni se confirmaron vacantes, horarios o admisiones."
+    },
+    "listedFacilities": [
+      {
+        "id": "cdi-01-nino-jesus",
+        "number": "1",
+        "name": "CDI Nº1 «Niño Jesús»",
+        "locality": "Belén de Escobar",
+        "address": "Víctor Hugo 265",
+        "phone": "(0348) 443-0553",
+        "listingStatus": "listed"
+      },
+      {
+        "id": "cdi-02-sagrado-corazon",
+        "number": "2",
+        "name": "CDI Nº2 «Sagrado Corazón de Jesús»",
+        "locality": "Belén de Escobar",
+        "address": "Callao 2542",
+        "phone": "(0348) 443-0554",
+        "listingStatus": "listed"
+      },
+      {
+        "id": "cdi-03-san-antonio",
+        "number": "3",
+        "name": "CDI Nº3 «San Antonio de Padua»",
+        "locality": "Ingeniero Maschwitz",
+        "address": "Muñiz 232",
+        "phone": "(0348) 444-6209",
+        "listingStatus": "listed"
+      },
+      {
+        "id": "cdi-04-santa-teresa",
+        "number": "4",
+        "name": "CDI Nº4 «Santa Teresa»",
+        "locality": "Garín",
+        "address": "Pablo Marín s/n, entre Islas Malvinas y Scalabrini Ortiz",
+        "phone": "(02320) 620-940",
+        "listingStatus": "listed"
+      },
+      {
+        "id": "cdi-05-virgen-de-lujan",
+        "number": "5",
+        "name": "CDI Nº5 «Virgen de Luján»",
+        "locality": "Maquinista Savio",
+        "address": "Sarmiento s/n, entre San Martín y Chaco",
+        "phone": "(0348) 446-8590",
+        "listingStatus": "listed"
+      },
+      {
+        "id": "cdi-06-evita",
+        "number": "6",
+        "name": "CDI Nº6 «Evita»",
+        "locality": "Garín",
+        "address": "Santa Fe 877",
+        "phone": "(0348) 447-6544",
+        "listingStatus": "listed"
+      },
+      {
+        "id": "cdi-07-siete-de-mayo",
+        "number": "7",
+        "name": "CDI Nº7 «7 de Mayo»",
+        "locality": "Matheu",
+        "address": "Pavón 173",
+        "phone": "(0348) 446-1122",
+        "listingStatus": "listed"
+      }
+    ],
+    "relatedSources": [
+      {
+        "label": "Educación y deporte — 9 CDI",
+        "url": "https://www.escobar.gob.ar/municipio/educacion/",
+        "sourcePublishedAt": null,
+        "note": "La página atribuye el total de nueve CDI a la revista de gestión 2026; no indica fecha exacta de publicación."
+      },
+      {
+        "label": "Tengo hijos/as — 7 CDI",
+        "url": "https://www.escobar.gob.ar/tramites/tengo-hijos/",
+        "sourcePublishedAt": null,
+        "note": "La ficha de trámite dice «Los 7 CDI municipales»; no indica fecha exacta de publicación."
+      },
+      {
+        "label": "CONECTA — Presupuesto Participativo 2026",
+        "url": "https://www.escobar.gob.ar/conecta/",
+        "sourcePublishedAt": null,
+        "note": "Los proyectos institucionales mencionan CDI N°2 (Lambertuchi) y N°8 (La Chechela) en Belén de Escobar, CDI N°6 (Villa Angélica) en Garín y CDI N°7 (Saavedra) en Matheu. Son referencias de proyectos, no un directorio ni una confirmación de operación."
+      },
+      {
+        "label": "Inscripción 2024 — nueve CDI",
+        "url": "https://www.escobar.gob.ar/abrio-la-inscripcion-2024-para-los-nueve-centros-de-desarrollo-infantil-del-partido-de-escobar/",
+        "sourcePublishedAt": "2023-10-23",
+        "note": "La noticia enumeró nueve centros para la inscripción 2024, incluidos Beatriz Causillas de Moreyra y Rosario Vera Peñaloza. También informó que avanzaba la construcción de otros dos, en La Victoria y Los Pinos. Para Niño Jesús publicó Víctor Hugo 285, frente a Víctor Hugo 265 en la Guía de oficinas consultada en 2026."
+      },
+      {
+        "label": "Dataset municipal de CDI",
+        "url": "https://datos.escobar.gob.ar/dataset/centros-de-desarrollo-infantil-del-partido-de-escobar",
+        "sourcePublishedAt": null,
+        "note": "El portal informa relevamiento municipal, creación 01/10/2025, actualización 31/03/2026, versión 1.0, licencia ODbL y recurso GeoJSON de 4 KB. La descarga no pudo recuperarse."
+      }
+    ],
+    "datasetResource": {
+      "pageUrl": "https://datos.escobar.gob.ar/dataset/centros-de-desarrollo-infantil-del-partido-de-escobar",
+      "resourceUrl": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/centros-de-desarrollo-infantil-del-partido-de-escobar/cdis.geojson",
+      "createdAt": "2025-10-01",
+      "lastUpdatedAt": "2026-03-31",
+      "version": "1.0",
+      "license": "Open Data Commons Open Database License (ODbL)",
+      "resourceFormat": "GeoJSON",
+      "advertisedSize": "4 KB",
+      "checkedAt": "2026-11-25",
+      "httpStatus": 404,
+      "sourceCrs": null,
+      "geometryIntegrationStatus": "pending",
+      "note": "El enlace de descarga cdis.geojson devolvió HTTP 404 el 2026-11-25. No se descargó geometría ni se verificó CRS, propiedades o correspondencia entre features y las fichas nominales."
+    },
+    "discrepancies": [
+      {
+        "topic": "Total publicado",
+        "note": "Educación y deporte informa nueve CDI según la revista de gestión 2026; Tengo hijos/as informa siete y la Guía de oficinas muestra siete fichas. No se elige una cifra como inventario definitivo."
+      },
+      {
+        "topic": "Numeración y referencias barriales",
+        "note": "La Guía de oficinas identifica al CDI Nº7 como «7 de Mayo» en Matheu; CONECTA 2026 menciona un CDI Nº7 en Saavedra, también dentro de la sección de Matheu, y un CDI Nº8 en La Chechela. No se asume que sean el mismo establecimiento ni se reasignan números."
+      },
+      {
+        "topic": "Registros de 2023 no visibles en la guía consultada",
+        "note": "La inscripción 2024 nombró Beatriz Causillas de Moreyra y Rosario Vera Peñaloza, que no aparecen entre las siete fichas de la Guía de oficinas consultada en 2026. No se infiere cierre, traslado ni cambio de nombre."
+      },
+      {
+        "topic": "Dirección de Niño Jesús",
+        "note": "La noticia municipal del 23/10/2023 indicó Víctor Hugo 285; la Guía de oficinas consultada el 25/11/2026 indica Víctor Hugo 265. Se conserva el dato de la guía en el listado y la diferencia en esta nota."
+      },
+      {
+        "topic": "Obras anunciadas en 2023",
+        "note": "La noticia de inscripción 2024 informó que avanzaba la construcción de CDI en La Victoria y Los Pinos. No se encontró en esta revisión una fuente posterior que confirme finalización, habilitación o incorporación al inventario actual."
+      },
+      {
+        "topic": "Geometría",
+        "note": "El dataset municipal existe como ficha de metadatos, pero su recurso GeoJSON devolvió HTTP 404. No se agregan puntos ni polígonos y no se infieren límites de cobertura."
+      }
+    ]
+  },
   "healthFacilitiesDirectory": {
     "name": "Guardias y urgencias por localidad",
     "sourceName": "Municipalidad de Escobar",

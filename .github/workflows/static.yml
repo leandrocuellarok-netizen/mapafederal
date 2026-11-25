@@ -479,6 +479,9 @@ jobs:
       - name: Test Escobar health facility directory
         run: node tests/escobar-health-facilities.test.js
 
+      - name: Test Escobar early-childhood directory and source reconciliation
+        run: node tests/escobar-early-childhood.test.js
+
       - name: Validate geographic and editorial JSON
         run: |
           python - <<'PY'
