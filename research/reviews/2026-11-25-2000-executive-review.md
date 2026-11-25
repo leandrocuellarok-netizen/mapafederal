@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 24/11/2026 a las 20:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
+**Estado:** borrador provisional, actualizado el 24/11/2026 a las 21:00 (Argentina). Se actualizará con las verificaciones posteriores antes de la revisión final.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,9 +8,9 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 41 registros |
-| Investment Finder | 51 registros |
-| Oportunidades abiertas | 20 |
+| Radar IA | 42 registros |
+| Investment Finder | 56 registros |
+| Oportunidades abiertas | 25 |
 | Disponibilidad desconocida | 28 |
 | Cerradas | 3 |
 | Event Intelligence | 4 registros |
@@ -48,7 +48,7 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 ### Escobar
 - LP 71/2026 y LP 72/2026: provisión de piedra partida y cascote; consultas 01–02/12, venta 03–04/12, apertura 11/12.
 - LP 74/2026: cancha de fútbol y pista de atletismo del Polideportivo de Ingeniero Maschwitz; consultas 26–27/11, venta 30/11–01/12, apertura 04/12.
-- LP 75/2026: fumigación y control de vectores; consultas 26–27/11, venta 01–02/12, apertura 09/12.
+- LP 75/2026: fumigación y control de vectores; presupuesto oficial ARS 1.400 millones y pliego ARS 30 millones; consultas 26–27/11, venta 01–02/12, apertura 09/12 a las 12:00.
 - Red Sostenible para el Desarrollo: solicitudes hasta 30/12/2026; no se registra como subsidio ni transferencia monetaria.
 - Mercado Libre/Plaza Logística: primera etapa del centro logístico inaugurada el 28/10; ampliaciones futuras y empleo proyectado no se confunden con puestos actuales.
 - Terminal Marítima Escobar: dos expedientes portuarios en prefactibilidad ambiental; no hay DIA ni inicio de obra acreditados. La cifra municipal superior a USD 600 millones es anunciada, no desembolsada.
@@ -78,6 +78,18 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - Control de calidad: se inspeccionó el fallo del workflow 45502207803. El job validate se detuvo en Validate geographic and editorial JSON porque el ID del registro Zscaler no coincidía con el identificador determinista derivado de su URL. Se corrigió el ID sin alterar su contenido editorial. Los JSON de noticias, eventos y módulos se parsearon antes de publicar; se comprobaron IDs y URLs únicos, HTTPS y los estados contractuales. El nuevo workflow disparado por esta actualización debe confirmarse antes de declarar publicación exitosa.
 - Contrato enterprise: sin cambios. freeFormReports=false, customAnalyses=by_request, predictiveClaimsRequireValidation=true, clientDataPublic=false. La arquitectura sigue siendo blueprint; Federal Reports es el único piloto y los demás módulos siguen planificados.
 
+## Actualización del ciclo 21:00 — 24/11/2026
+
+- Inspección previa: HEAD inicial `e887e73d4ab8454d0bc99a43faf959e0c7b29726`. Se revisaron arquitectura maestra, contrato enterprise, README, catálogos, manifiesto de módulos, perfil territorial de Escobar y los cambios concurrentes del Presupuesto Participativo. El commit `e887e73` documenta la validación y publicación del perfil participativo; el workflow `45511171522` terminó con `validate=success` y `deploy=success`.
+- Radar IA: se añadió un registro sobre la evolución bursátil de Anthropic. Reuters informó el 24/11/2026 a las 11:17 UTC que la acción cotizaba a USD 76,60, un 12,6% abajo y por debajo del precio de IPO de USD 83. El emisor informó que la IPO generó USD 93.500 millones brutos, de los cuales USD 91.600 millones fueron recibidos por Anthropic; la colocación privada de USD 26.000 millones fue una operación separada. El precio se conserva como una observación temporal de Reuters, no como cotización en tiempo real ni como recomendación. No se incorporó una nueva norma argentina de IA en este corte. Fuentes: https://www.reuters.com/business/anthropic-breaks-below-83-ipo-price-debut-rally-unravels-2026-11-24/ ; https://www.anthropic.com/news/ipo-close .
+- Investment Finder: se agregaron cinco registros de la edición 14523 del Boletín Oficial bonaerense (20/11/2026): adquisición provincial de guantes de látex para hospitales (presupuesto estimado ARS 2.938.406.400; apertura 04/12 por PBAC); rehabilitación de planta cloacal y ampliación de desagües en Suipacha (ARS 13.438.514.832 a valores de septiembre de 2026; préstamos CAF 10061 y 11342; propuestas 06/01/2027); alquiler y mantenimiento de máquinas multifunción para Fiscalía de Estado (ARS 259.100.400; apertura 03/12 por PBAC); concesión del predio Ebomar de General Alvarado para maricultura terrestre RAS (pliego ARS 2.000.000 por renglón, sin presupuesto base publicado); y renovación de licencias Microsoft de Vicente López (presupuesto ARS 900.000.000, pliego ARS 900.000, apertura 10/12). Los registros se clasifican como abiertos por sus cronogramas publicados; no se infiere elegibilidad, adjudicación, inversión ejecutada ni rentabilidad. Fuente: https://boletinoficial.gba.gob.ar/secciones/14523/ver .
+- Escobar: la misma edición 14523 confirma LP 71 y LP 72, ya existentes en el catálogo, y LP 75. Para LP 75 se verificaron presupuesto ARS 1.400.000.000, valor del pliego ARS 30.000.000, consultas 26–27/11 de 09:00 a 13:30, venta 01–02/12 de 09:00 a 13:30 y apertura 09/12 a las 12:00. Se actualizó su descripción y período. LP 71 y LP 72 conservan sus presupuestos y cronogramas previamente registrados. La consulta directa de la edición 14517 para LP 74 devolvió timeout; se mantiene la verificación anterior sin atribuir una circular nueva.
+- Presupuesto Participativo 2026: la actualización concurrente agregó al perfil de Escobar los 14 proyectos publicados bajo 24 de Febrero, agrupados 6/2/6 por categorías. CONECTA continúa mostrando la votación abierta y 219 proyectos en siete localidades; la noticia municipal del 16/09 fijó el plazo extendido al 25/09. No se encontró una prórroga posterior ni resultados oficiales. El estado sigue como pendiente de conciliación; no se presenta como convocatoria abierta, adjudicación ni ejecución. Fuentes: https://www.escobar.gob.ar/conecta/ ; https://www.escobar.gob.ar/noticias/el-presupuesto-participativo-2026-extiende-su-votacion-hasta-el-vierne/ .
+- Catálogos al corte: Radar IA 42; Investment Finder 56 (25 open, 28 unknown, 3 closed); Event Intelligence 4; nodos estratégicos 86. No se agregaron nuevas oportunidades locales de Escobar aparte de las licitaciones ya registradas; los proyectos portuarios, BESS y expansiones empresariales mantienen sus estados previos.
+- Cambios publicados: `01cf5ce242f2f98d078576963534bdb2c5cfb621` (Radar IA); `e2c4e3accefb5e35d8e28c82db511b860f0d5756` (Investment Finder); `841d6f6f34c6f9d3fe94f0c33f1ee51a4f3463c8` (README). La actualización de este balance y el registro del ciclo se incorporan en el commit documental posterior.
+- Validación previa a documentación: JSON parseado; IDs y URLs únicos; HTTPS; noticias en orden cronológico; 42 noticias; 56 oportunidades; 25 abiertas, 28 desconocidas y 3 cerradas; todos los registros conservan período, fuente, fecha y alcance de verificación. Se mantuvo monto `null` para Ebomar porque la fuente no publica presupuesto base. Los workflows de los tres commits de datos/documentación todavía deben confirmarse.
+- Contrato enterprise: sin cambios. `freeFormReports=false`, `customAnalyses=by_request`, `predictiveClaimsRequireValidation=true`, `clientDataPublic=false`. Federal Reports sigue como único piloto descriptivo; los otros cinco módulos permanecen planificados.
+
 ## Estado de producto y contrato enterprise
 - Se documentan seis módulos: Federal AI Assistant, Investment Finder, Territorial Monitor, Event Intelligence, Federal Reports y Executive Travel AI.
 - Federal Reports es un piloto descriptivo con indicadores OPEX/INDEC 2025; no es un pronosticador.
@@ -88,7 +100,7 @@ El catálogo de oportunidades conserva cinco registros abiertos de Escobar: LP 7
 - `clientDataPublic=false`: los datos de clientes no se publican.
 
 ## Pendientes críticos para la revisión final
-1. Verificar circulares y pliegos de LP 74 y LP 75 de Escobar los días 26–27/11; para LP 75, revisar además el valor del pliego ARS 30 millones y su venta 01–02/12.
+1. Revisar las consultas y eventuales circulares de LP 74 y LP 75 los días 26–27/11. Para LP 75 ya se verificó el valor del pliego ARS 30 millones y la venta 01–02/12; para LP 74, la edición 14517 no respondió en la consulta directa de este ciclo y debe revalidarse.
 2. Confirmar venta de pliegos, recepción y aperturas de LP 71/72, las tres licitaciones de Quilmes y los ocho nuevos llamados del Boletín Oficial 14526; revisar el requisito RUP de Lomas.
 3. Consultar el resultado de LP 61/62/67 y de LP 66/69; no inferir adjudicación.
 4. Seguir la Asamblea de Mayores Contribuyentes de Escobar, reportada para el 27/11 a las 18:00. Al corte del 24/11 no se localizó una convocatoria oficial del HCD que confirme esa fecha y hora; mantenerlas como pendientes de corroboración. El proyecto Fiscal-Tributario 2027 no es norma vigente hasta completar el procedimiento.
