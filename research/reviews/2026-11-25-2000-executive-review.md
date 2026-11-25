@@ -1,6 +1,6 @@
 # Balance ejecutivo acumulativo — revisión 25/11/2026 20:00
 
-**Estado:** borrador provisional, actualizado el 25/11/2026 a las 18:01 ART. Pendiente del corte final de las 20:00 y de nuevas verificaciones de vencimientos y adjudicaciones.
+**Estado:** borrador provisional, actualizado el 25/11/2026 a las 19:04 ART. Pendiente del corte final de las 20:00 y de nuevas verificaciones de vencimientos y adjudicaciones.
 
 ## Resumen ejecutivo
 Mapa Federal mantiene una arquitectura documental nacional con prioridad operativa en Escobar. Los catálogos se apoyan en fuentes oficiales y periodísticas identificadas, distinguen hechos, anuncios, estimaciones y estados desconocidos, y conservan fechas de publicación y verificación. La plataforma no debe presentarse como un sistema predictivo ni como una ingesta automática integral.
@@ -8,9 +8,9 @@ Mapa Federal mantiene una arquitectura documental nacional con prioridad operati
 ## Indicadores comprobables al corte
 | Indicador | Estado |
 |---|---:|
-| Radar IA | 68 registros |
-| Investment Finder | 178 registros |
-| Oportunidades abiertas | 116 |
+| Radar IA | 69 registros |
+| Investment Finder | 179 registros |
+| Oportunidades abiertas | 117 |
 | Disponibilidad desconocida | 55 |
 | Cerradas | 7 |
 | Event Intelligence | 6 registros |
@@ -756,3 +756,17 @@ La evidencia sobre oposición local a centros de datos y la controversia regulat
 Priorizar actas y adjudicaciones, vencimientos de diciembre, oportunidades locales de Escobar, conciliación del BESS y una oferta comercial de due diligence territorial para infraestructura de IA. Mantener los informes personalizados bajo solicitud y el piloto Federal Reports en modalidad descriptiva.
 
 Corte provisional 18:01 ART. El balance de las 20:00 permanece abierto.
+
+
+## Actualización del ciclo 19:04 — 25/11/2026
+
+- Radar IA: se incorporó la autorización condicionada de la FCC Space Bureau (orden DA 26-1273, 25/11/2026) para la constelación Starmind de SpaceX, de hasta un millón de satélites concebidos como centros de datos orbitales. La autorización establece hitos de despliegue hasta 2040; no acredita satélites construidos, lanzados, financiación cerrada ni viabilidad comercial. La FCC difirió el waiver para disposición orbital alternativa por encima de 600 km. El PDF oficial fue identificado, pero no pudo abrirse directamente en el entorno; se contrastó el acto con Reuters, TechCrunch y Benton Institute. El registro queda como `editorial_reviewed` y no se asigna al filtro geográfico argentino. Fuente oficial identificada: https://docs.fcc.gov/public/attachments/DA-26-1273A1.pdf.
+- Investment Finder: se incorporó Armada LP 0541/2026 para impermeabilización de la terraza del quinto piso del Hospital Naval Buenos Aires. El aviso oficial fija presentación y apertura el 30/11/2026 a las 10:00; consultas hasta el 25/11 a las 10:00; no publica presupuesto. Fuente: https://www.boletinoficial.gov.ar/detalleAviso/tercera/2420816/20261119.
+- Se deduplicaron los avisos nacionales del 25/11 que ya estaban registrados. La LP 0009/2026 de La Barrancosa y BCRA LP 48/26 permanecen en sus fichas existentes. Se detectó el dictamen de evaluación de Armada LP 0506/2026 con USD 374.931,56 preadjudicados; no se añadió como oportunidad abierta porque corresponde a una evaluación y no a un nuevo llamado.
+- Escobar: no se localizó una nueva LP 76/2026 en las búsquedas dirigidas. Se conservan 25 registros locales (5 abiertos, 16 desconocidos y 4 cerrados); BESS Maschwitz permanece separado como registro provincial con jurisdicción parcelaria sin resolver.
+- Catálogos: Radar IA 69; Investment Finder 179 (117 abiertas, 55 desconocidas y 7 cerradas). Los seis módulos siguen documentados: Federal Reports es el único piloto; cinco continúan planificados.
+- Commits: Radar IA `b3dba209`, Investment Finder `64f7bf23` y corrección territorial `45fd8999`. Los workflows #700 y #701 fallaron por usar “Estados Unidos” como jurisdicción en un filtro público limitado a jurisdicciones argentinas; se corrigió la clasificación a `not_specified` sin inferir una provincia. Workflow #702 completó validación; el despliegue estaba en curso al corte. No se declara publicación hasta confirmación del job de Pages.
+- Contrato enterprise sin cambios: `freeFormReports=false`, `customAnalyses=by_request`, `clientDataPublic=false` y `predictiveClaimsRequireValidation=true`. No se habilitó generación libre de informes ni se presentó un modelo predictivo como operativo.
+- Registro detallado: [ciclo 19:04](../runs/2026-11-25-gbie-cycle-1904.md).
+
+Corte provisional 19:04 ART. El balance de las 20:00 permanece abierto.
