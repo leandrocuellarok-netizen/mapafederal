@@ -444,6 +444,172 @@
       }
     },
     {
+      "id": "pba-salud-licitacion-guantes-latex-105-1186-lpu-2026",
+      "name": "Provincia de Buenos Aires — adquisición de guantes de látex para instituciones sanitarias",
+      "recordType": "tender",
+      "scope": "provincial",
+      "sector": "Salud / insumos hospitalarios / guantes de látex / compras públicas",
+      "jurisdiction": "Buenos Aires",
+      "location": "Instituciones sanitarias dependientes de la Dirección Provincial de Hospitales, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 2938406400,
+        "currency": "ARS",
+        "basis": "Presupuesto estimado total publicado en el Boletín Oficial; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validFrom": "2026-11-20",
+      "validUntil": "2026-12-04",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
+      "relatedSources": [
+        {
+          "label": "Portal Provincia de Buenos Aires Compras (PBAC)",
+          "url": "https://pbac.cgp.gba.gov.ar/"
+        }
+      ],
+      "sourcePublishedAt": "2026-11-20",
+      "period": "Apertura 04/12/2026 a las 10:00 por el portal PBAC; las bases se publican sin costo.",
+      "description": "Licitación Pública tramitada como Proceso de Compra 105-1186-LPU26 para adquirir guantes de látex de examinación no estériles destinados a diversas instituciones sanitarias dependientes de la Dirección Provincial de Hospitales. Presupuesto estimado total ARS 2.938.406.400. Apertura prevista para el 4 de diciembre de 2026 a las 10:00 mediante PBAC. Verificar renglones, especificaciones, requisitos y circulares en el pliego antes de participar.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523. Se contrastaron organismo, objeto, presupuesto estimado, gratuidad de bases y apertura por PBAC. No se revisó el pliego completo ni se verificaron elegibilidad, ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "suipacha-licitacion-internacional-7-2026-saneamiento-caf",
+      "name": "Suipacha — licitación internacional para rehabilitación de planta cloacal y ampliación de desagües",
+      "recordType": "tender",
+      "scope": "provincial",
+      "sector": "Infraestructura sanitaria / saneamiento / obra pública / financiamiento multilateral",
+      "jurisdiction": "Buenos Aires",
+      "location": "Suipacha, Partido de Suipacha, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 13438514832,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial a valores de septiembre de 2026; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validFrom": "2026-11-20",
+      "validUntil": "2027-01-06",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
+      "relatedSources": [
+        {
+          "label": "Ministerio de Infraestructura y Servicios Públicos — licitaciones",
+          "url": "https://www.gba.gob.ar/infraestructura/licitaciones"
+        }
+      ],
+      "sourcePublishedAt": "2026-11-20",
+      "period": "Presentación de propuestas hasta 06/01/2027 a las 11:30; apertura 06/01/2027 a las 12:00. Plazo de obra: 720 días corridos por lote. Presupuesto a valores de septiembre de 2026.",
+      "description": "Licitación Pública Internacional N.º 7/2026, asociada a los préstamos CAF 10061 y 11342, para rehabilitar la planta de tratamiento de líquidos cloacales y ampliar el sistema de desagües de Suipacha. Incluye ampliación de red, dos estaciones de bombeo con impulsiones y rehabilitación de la planta existente. Presupuesto oficial ARS 13.438.514.832 a valores de septiembre de 2026; plazo de obra de 720 días corridos por lote. Las propuestas se reciben hasta el 6 de enero de 2027 a las 11:30 y la apertura es a las 12:00. El pliego se publica gratuitamente. No se presenta como obra adjudicada ni iniciada.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523. Se contrastaron número de licitación, objeto, localización, presupuesto y base temporal, préstamos CAF, plazo y cronograma de presentación/apertura. No se verificaron adjudicación, contrato ni avance físico."
+      }
+    },
+    {
+      "id": "fiscalia-estado-pba-licitacion-3-2026-maquinas-multifuncion",
+      "name": "Fiscalía de Estado bonaerense — alquiler y mantenimiento de máquinas multifunción 2027",
+      "recordType": "tender",
+      "scope": "provincial",
+      "sector": "Tecnología de oficina / impresión / servicios de mantenimiento / compras públicas",
+      "jurisdiction": "Buenos Aires",
+      "location": "Fiscalía de Estado, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 259100400,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validFrom": "2026-11-20",
+      "validUntil": "2026-12-03",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
+      "relatedSources": [
+        {
+          "label": "Portal Provincia de Buenos Aires Compras (PBAC)",
+          "url": "https://pbac.cgp.gba.gov.ar/"
+        }
+      ],
+      "sourcePublishedAt": "2026-11-20",
+      "period": "Apertura de ofertas 03/12/2026 a las 10:00 por PBAC; pliego gratuito; consultas hasta tres días hábiles previos a la apertura.",
+      "description": "Licitación Pública N.º 3/2026 para el alquiler y mantenimiento de máquinas multifunción destinadas a la Fiscalía de Estado durante 2027. Presupuesto oficial ARS 259.100.400 y pliego gratuito. La apertura está prevista para el 3 de diciembre de 2026 a las 10:00 por PBAC; las consultas pueden formularse hasta tres días hábiles previos, sin computar el día de apertura. Verificar especificaciones, volúmenes, niveles de servicio y condiciones contractuales en el pliego.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523. Se contrastaron objeto, ejercicio, presupuesto, gratuidad del pliego, plazo de consultas y apertura por PBAC. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+      }
+    },
+    {
+      "id": "general-alvarado-concesion-ebomar-maricultura-ras-2026",
+      "name": "General Alvarado — concesión del predio Ebomar para proyecto de maricultura terrestre",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Acuicultura / maricultura / alimentos / concesión productiva",
+      "jurisdiction": "Partido de General Alvarado, Provincia de Buenos Aires",
+      "location": "Predio municipal Ebomar, Miramar, Partido de General Alvarado, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": null,
+      "validFrom": "2026-11-24",
+      "validUntil": "2026-12-18",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
+      "relatedSources": [
+        {
+          "label": "Municipalidad de General Alvarado",
+          "url": "https://mga.gov.ar"
+        }
+      ],
+      "sourcePublishedAt": "2026-11-20",
+      "period": "Venta de pliegos 24/11–17/12/2026 de 08:00 a 13:00; recepción de ofertas hasta 18/12/2026 a las 09:30; apertura 18/12/2026 a las 10:00. Valor del pliego: ARS 2.000.000 por renglón. La fuente no publica presupuesto base.",
+      "description": "Concesión del uso, recuperación, puesta en valor, diseño, ejecución de obras, instalación, puesta en funcionamiento, operación, explotación y mantenimiento del predio municipal Ebomar. El destino exclusivo publicado es un proyecto integral de maricultura terrestre mediante sistemas de recirculación acuícola (RAS), orientado principalmente al cultivo de pez limón (Seriola lalandi) y otros organismos que autoricen las autoridades competentes. El pliego cuesta ARS 2.000.000 por renglón; no se informa presupuesto base. La venta se extiende del 24 de noviembre al 17 de diciembre, y la apertura está prevista para el 18 de diciembre a las 10:00. La concesión no implica permisos productivos ya otorgados ni rentabilidad garantizada.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523. Se contrastaron objeto de concesión, ubicación municipal, modalidad RAS, especie principal, precio del pliego por renglón y cronograma. No se verificaron permisos ambientales/productivos, adjudicación, inversión requerida ni viabilidad comercial."
+      }
+    },
+    {
+      "id": "vicente-lopez-licitacion-68-2026-renovacion-licencias-microsoft",
+      "name": "Vicente López — LP 68/2026: renovación de licencias Microsoft para Transformación Digital",
+      "recordType": "tender",
+      "scope": "municipal",
+      "sector": "Tecnología / software empresarial / licencias / transformación digital",
+      "jurisdiction": "Partido de Vicente López, Provincia de Buenos Aires",
+      "location": "Secretaría de Transformación Digital, Municipalidad de Vicente López, Provincia de Buenos Aires",
+      "stage": "announced",
+      "opportunityStatus": "open",
+      "amount": {
+        "value": 900000000,
+        "currency": "ARS",
+        "basis": "Presupuesto oficial publicado; no equivale al monto adjudicado ni al gasto ejecutado."
+      },
+      "validFrom": "2026-11-20",
+      "validUntil": "2026-12-10",
+      "sourceName": "Boletín Oficial de la Provincia de Buenos Aires",
+      "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
+      "relatedSources": [
+        {
+          "label": "Municipalidad de Vicente López — portal institucional",
+          "url": "https://www.vicentelopez.gov.ar"
+        }
+      ],
+      "sourcePublishedAt": "2026-11-20",
+      "period": "Presentación y apertura 10/12/2026 a las 14:00; documentación consultable y adquirible en el portal municipal hasta 24 horas antes de la apertura. El boletín informa pliego por ARS 900.000.",
+      "description": "Licitación Pública N.º 68/2026 de la Secretaría de Transformación Digital de Vicente López para renovar licencias Microsoft. Presupuesto oficial ARS 900.000.000; el Boletín Oficial consigna además un valor de pliego de ARS 900.000. La presentación y apertura están previstas para el 10 de diciembre de 2026 a las 14:00. La documentación se consulta y adquiere a través del sitio municipal hasta 24 horas antes de la apertura. Verificar cantidades, productos, duración de licencias y requisitos de proveedor en el pliego.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-24",
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523. Se contrastaron organismo, objeto, presupuesto oficial, valor del pliego y fecha/hora de presentación y apertura. No se revisó el pliego completo ni se verificaron elegibilidad, ofertas, adjudicación o ejecución."
+      }
+    },
+    {
       "id": "argentina-lng-ypf-eni-xrg-rigi-2026",
       "name": "Argentina LNG — proyecto integrado de YPF, Eni y XRG",
       "recordType": "investment_project",
@@ -501,12 +667,12 @@
       "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Municipalidad de Escobar",
       "sourceUrl": "https://boletinoficial.gba.gob.ar/secciones/14523/ver",
       "sourcePublishedAt": "2026-11-19",
-      "period": "Consultas 26–27/11/2026; venta de pliego 1–2/12/2026; apertura 9/12/2026 a las 12:00.",
-      "description": "Licitación de la Secretaría de Hacienda para un servicio de fumigación y control del mosquito transmisor de dengue, Zika y chikungunya en dependencias municipales, vía pública y sectores peri domiciliarios del Partido de Escobar. Presupuesto oficial de ARS 1.400.000.000. Consultas previstas para el 26 y 27 de noviembre, venta de pliego el 1 y 2 de diciembre y apertura el 9/12/2026 a las 12:00.",
+      "period": "Consultas 26–27/11/2026 de 09:00 a 13:30; venta del pliego 01–02/12/2026 de 09:00 a 13:30; valor del pliego ARS 30.000.000; apertura 09/12/2026 a las 12:00.",
+      "description": "Licitación de la Secretaría de Hacienda para un servicio de fumigación y control del mosquito transmisor de dengue, Zika y chikungunya en dependencias municipales, vía pública y sectores peri domiciliarios del Partido de Escobar. Presupuesto oficial ARS 1.400.000.000. El valor del pliego es ARS 30.000.000. Consultas 26 y 27 de noviembre de 2026, de 9:00 a 13:30; venta del pliego 1 y 2 de diciembre, de 9:00 a 13:30; apertura 9 de diciembre de 2026 a las 12:00 en Belén de Escobar. Verificar condiciones, garantías y circulares antes de decidir participar.",
       "verification": {
         "status": "verified",
         "checkedAt": "2026-11-24",
-        "scope": "Enlace de fuente corregido y contrastado contra el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523, donde figuran las LP 71/2026, 72/2026 y 75/2026. Se verificaron objeto, presupuesto, sede y cronograma publicados. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición del 20/11/2026, sección 14523. Se contrastaron objeto, jurisdicción, presupuesto oficial ARS 1.400.000.000, valor del pliego ARS 30.000.000, sede y horarios de consulta, venta y apertura. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
       }
     },
     {
