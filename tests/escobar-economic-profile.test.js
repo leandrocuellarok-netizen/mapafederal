@@ -269,7 +269,7 @@ assert.match(calleSalta.description, /350 metros lineales/);
 assert.match(calleSalta.description, /700 metros de veredas/);
 assert.match(calleSalta.description, /Colectora Oeste e Islas Malvinas/);
 assert.match(calleSalta.description, /luminarias LED/);
-assert.match(calleSalta.verification.scope, /no equivale.*avance físico actual/i);
+assert.match(calleSalta.verification.scope, /no el avance físico actual/i);
 assert.match(calleSalta.verification.scope, /No se verificaron contratista, pliego, adjudicación, certificaciones, pagos/);
 assert.equal(calleSalta.coords, undefined, "No se deben inventar coordenadas de la obra");
 assert.equal(new URL(calleSalta.sourceUrl).protocol, "https:");
