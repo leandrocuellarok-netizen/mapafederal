@@ -63,9 +63,9 @@ assert.equal(pools.sourceUrl, "https://www.escobar.gob.ar/noticias/escobar-abre-
 assert.equal(pools.status, "confirmed");
 assert.equal(pools.verification.status, "verified");
 assert.equal(pools.verification.checkedAt, "2026-11-25");
-assert.match(pools.period, /04\\/01\\/2027 al 28\\/01\\/2027/);
-assert.match(pools.period, /01\\/02\\/2027 al 28\\/02\\/2027/);
-assert.match(pools.period, /29–31\\/01\\/2027/);
+assert.match(pools.period, /04\/01\/2027 al 28\/01\/2027/);
+assert.match(pools.period, /01\/02\/2027 al 28\/02\/2027/);
+assert.match(pools.period, /29–31\/01\/2027/);
 assert.match(pools.description, /cupos limitados/i);
 assert.match(pools.description, /ser socio de un polideportivo municipal/i);
 assert.match(pools.description, /verificación biométrica/i);
