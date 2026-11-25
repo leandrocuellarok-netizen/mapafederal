@@ -298,7 +298,7 @@ jobs:
               assert "(0348) 449-3444" in selles["serviceNote"] and "11 2150-0302" in selles["serviceNote"]
               assert "lunes a viernes de 7 a 14 h" in selles["serviceHours"]
               assert "lunes a viernes de 8 a 13 h" in selles["serviceHours"]
-              assert "discrepancia" in selles["serviceNote"].lower()
+              assert "no se consolida un teléfono único" in selles["serviceNote"].lower()
           else:
               assert selles["neighborhood"] == "24 de Febrero"
           pending = health.get("pendingDirectoryDiscrepancies", [])
