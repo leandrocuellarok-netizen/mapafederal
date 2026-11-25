@@ -480,6 +480,33 @@
     }
   },
   {
+    "id": "news-www-boe-es-eli-es-rd-2026-11-20-1032",
+    "title": "España puso en vigor requisitos de sostenibilidad y soberanía digital para centros de datos",
+    "date": "2026-11-21",
+    "category": "Regulación",
+    "summary": "El Real Decreto 1032/2026, publicado el 21/11 y vigente desde el 22/11, fija requisitos de acceso y conexión eléctrica para centros de datos con potencia de acceso igual o superior a 10 MW. Incluye criterios de energía renovable, eficiencia energética e hídrica y salvaguardas de soberanía digital para sistemas públicos de categoría ALTA. Durante la transición al etiquetado europeo establece umbrales PUE ≤1,25 y WUE ≤0,1, con plazos de adaptación. No es una regulación general de IA.",
+    "source": "Boletín Oficial del Estado — Real Decreto 1032/2026",
+    "url": "https://www.boe.es/eli/es/rd/2026/11/20/1032",
+    "period": "Disposición de 20/11/2026; publicada en BOE núm. 290 el 21/11/2026; entrada en vigor 22/11/2026.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "España — ámbito nacional; requisitos vinculados al acceso y conexión a redes eléctricas y a sistemas públicos de categoría ALTA.",
+    "sector": "Regulación / centros de datos / infraestructura de IA / energía / eficiencia hídrica / soberanía digital",
+    "territorialRelevance": "Señal regulatoria directa para promotores y operadores de centros de datos en España. Relevancia comparativa para evaluar proyectos de infraestructura de IA en Argentina y Escobar (energía, agua, conexión, permisos y soberanía), sin aplicación jurídica directa fuera de España.",
+    "relatedSources": [
+      {
+        "label": "MITECO — explicación oficial de los requisitos y umbrales",
+        "url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2026/noviembre/el-gobierno-aprueba-el-real-decreto-para-la-sostenibilidad-energ.html"
+      }
+    ],
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se consultó el texto original BOE-A-2026-24439: publicación 21/11/2026 y entrada en vigor 22/11/2026. Se verificaron el umbral de 10 MW de potencia de acceso para las condiciones de conexión; las salvaguardas del artículo 5 para sistemas públicos de categoría ALTA; los criterios de energía renovable, eficiencia energética e hídrica; los valores transitorios PUE ≤1,25 y WUE ≤0,1; y las obligaciones de información para centros de datos con potencia IT igual o superior a 500 kW. Los requisitos de soberanía digital no se presentan como una obligación general para todos los centros ni la norma como regulación general de IA. Su alcance es España; no se atribuye efecto jurídico en Argentina."
+    }
+  },
+  {
     "title": "Escobar: las ordenanzas fiscales 2027 avanzaron en el HCD y esperan la Asamblea de Mayores Contribuyentes",
     "date": "2026-11-20",
     "category": "Regulación",
