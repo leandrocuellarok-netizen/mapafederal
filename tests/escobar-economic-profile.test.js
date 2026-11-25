@@ -171,7 +171,7 @@ assert.match(bessEias.verification.scope, /Parcela 279a.*Tigre/i);
 assert.equal(new URL(bessEias.url).protocol, "https:");
 
 const radarNews = JSON.parse(fs.readFileSync("data/news.json", "utf8"));
-const bisRule = radarNews.find(entry => entry.id === "news-public-inspection-federalregister-gov-2026-23999-additions-to-the-entity-list");
+const bisRule = radarNews.find(entry => entry.id === "news-public-inspection-federalregister-gov-2026-23999-pdf");
 assert.ok(bisRule, "Falta la regla BIS 2026-23999");
 assert.equal(bisRule.date, "2026-11-23");
 assert.equal(bisRule.category, "Regulación");
