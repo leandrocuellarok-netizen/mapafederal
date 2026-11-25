@@ -641,3 +641,35 @@ El balance permanece **provisional** hasta la revisión de las 20:00 ART.
 
 
 Nota de control de interfaz: las páginas index.html, radar-ia/index.html e investment-finder/index.html fueron revalidadas; no se habilitó generación pública libre de informes.
+
+---
+
+## Addendum 16:59 ART — ejecución GBIE 11 del 25/11/2026 (provisional)
+
+### Avances comprobables
+- Radar IA: 67 registros (+2), con comunicados primarios de Cloudera (soberanía digital/IA privada) y Coforge (seguridad y remediación agéntica).
+- Investment Finder: 176 registros (+38 netos nuevos, incluyendo LP 68/2026 de Escobar); 115 abiertos, 54 con disponibilidad desconocida y 7 cerrados.
+- Escobar: 25 oportunidades; 5 abiertas, 16 desconocidas y 4 cerradas. LP 68/2026 se conserva como antecedente cerrado, con discrepancias oficiales de presupuesto y hora de apertura explícitas.
+- Se corrigió la clasificación conservadora de ARN Concurso 6/2026 y se incorporó la Circular 3 de Defensa LP 64/2026 sin presumir extensión del plazo de ofertas.
+- Se detectó y corrigió una aserción CI obsoleta sobre la fecha de verificación del CAPS Juan Carlos Selles; se añadió un test para la edición 36.039 del Boletín Oficial.
+
+### Oportunidades de mayor interés
+- Fabricaciones Militares: proceso de selección de socios estratégicos para UTE, ofertas 04/12/2026; revisar el pliego original antes de cualquier evaluación de inversión.
+- Salto Grande SG-790: nuevo taller eléctrico, visita obligatoria 09/12/2026 y ofertas 11/01/2027.
+- SOFSE LP 8/2025: dispositivos de lubricación de vías en Línea Mitre, ofertas 15/12/2026.
+- UBA LP 001/26: concesión de bar-comedor en Facultad de Psicología, con visita obligatoria y base mensual de 1.500 viandas.
+- UNM LP 05/2026: puesta en valor de aula J004, presupuesto oficial ARS 32.717.096,87 (valores agosto 2026).
+- Salud/defensa: nuevos llamados de hospitales, prótesis, medicamentos, residuos patógenos, hematología y descartables.
+
+### Pendientes y riesgos
+- CI y Pages del nuevo commit: pendiente de resultado; el workflow previo falló por una aserción obsoleta de fecha, no por datos del catálogo.
+- Inspección visual de Pages: pendiente.
+- Hospital Cuenca Alta LP 092/093: cierre de ofertas no precisado en el aviso; disponibilidad desconocida.
+- LP 68/2026 Escobar: BOPBA 14493 y la ficha municipal muestran presupuestos y horarios diferentes; se mantiene importe nulo y se documenta la divergencia.
+- No se halló nueva licitación municipal abierta de Escobar en la edición 36.039.
+- Circulares de Armada LP 403 y Fuerza Aérea LP 83 permanecen fuera del catálogo hasta recuperar sus avisos base y cronogramas.
+
+### Contrato enterprise
+Sin cambios: informes libres públicos deshabilitados; análisis personalizados bajo solicitud; datos de clientes no públicos; ningún modelo predictivo presentado como operativo sin datos, backtesting y validación documentados. Federal Reports sigue como único piloto descriptivo; los otros cinco módulos permanecen planificados.
+
+Corte provisional 16:59 ART. El balance de las 20:00 requiere una última comprobación de adjudicaciones, vencimientos, CI y publicación.

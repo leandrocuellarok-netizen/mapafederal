@@ -218,6 +218,28 @@
     }
   },
   {
+    "id": "news-coforge-nuuron-agentic-vulnerability-remediation-2026-11-25",
+    "title": "Coforge amplió Nuuron con agentes de IA para priorizar y remediar vulnerabilidades empresariales",
+    "date": "2026-11-25",
+    "category": "Empresas",
+    "summary": "Coforge anunció nuevas capacidades agénticas de Nuuron para identificar, contextualizar, priorizar y remediar vulnerabilidades en infraestructura, aplicaciones, nube, datos y sistemas de IA. El modelo combina agentes, ingenieros desplegados en los entornos del cliente y aprobaciones humanas para acciones de riesgo, con integración declarada a herramientas de seguridad, DevSecOps y gestión de cambios. Las prestaciones y beneficios son afirmaciones corporativas, no resultados auditados independientemente.",
+    "source": "Coforge — comunicado corporativo",
+    "url": "https://news.coforge.com/newsroom/press-release/coforge-nuuron-expands-agentic-capabilities-to-accelerate-vulnerability-remediation-and-mitigate-cyber-risks-at-enterprise-scale",
+    "period": "Anuncio corporativo del 25/11/2026. El comunicado no publica métricas independientes de eficacia ni confirma implementaciones en Argentina.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Comunicado emitido desde Princeton, Estados Unidos, y Greater Noida, India; no se identifican despliegues argentinos concretos.",
+    "sector": "Ciberseguridad / IA agéntica / gestión de vulnerabilidades / gobernanza de modelos / DevSecOps",
+    "territorialRelevance": "Oportunidad para Vilanova AI Solutions: estructurar un servicio de diagnóstico de seguridad de agentes, controles de acceso a herramientas, seguridad RAG, exposición de datos, gobernanza de modelos, aprobaciones humanas y trazabilidad de remediaciones. No debe prometerse autonomía segura ni reducción de incidentes sin pruebas en el entorno del cliente.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se abrió el comunicado oficial de Coforge fechado el 25/11/2026. Se verificaron el alcance funcional declarado, la combinación de agentes y forward-deployed engineers, los puntos de aprobación humana y las integraciones mencionadas. No se encontraron métricas auditadas independientemente ni evidencia de despliegue en Argentina."
+    },
+    "relatedSources": []
+  },
+  {
     "id": "news-www-sec-gov-archives-edgar-data-1288847-000119312526475778-d433495d8k-htm",
     "title": "Five9 completó la adquisición de Level AI por USD 325 millones",
     "date": "2026-11-24",
@@ -402,6 +424,28 @@
       "checkedAt": "2026-11-25",
       "scope": "Revalidado el 25/11/2026 con Reuters (cotización reportada el 24/11 a las 11:17 UTC) y el comunicado original de Anthropic (20/11/2026), que confirma cierre de IPO, precio de USD 83, ingresos brutos de aproximadamente USD 93.500 millones y colocación privada separada de USD 26.000 millones. La cotización es temporal; no se infiere rendimiento futuro ni recomendación de inversión."
     }
+  },
+  {
+    "id": "news-cloudera-digital-sovereignty-private-ai-2026-11-24",
+    "title": "Cloudera presentó una solución de soberanía digital para gobernar datos e IA en entornos híbridos",
+    "date": "2026-11-24",
+    "category": "Tecnología",
+    "summary": "Cloudera anunció Cloudera for Digital Sovereignty, una solución que combina Anywhere Cloud, Open Data Lakehouse, Unified Data Fabric y modelos de pesos abiertos de Mistral para desplegar datos gobernados e IA privada en nubes soberanas, centros de datos privados y entornos aislados. El comunicado describe controles zero-trust, políticas, linaje y movilidad de cargas; no presenta métricas independientes de despliegues o resultados de clientes.",
+    "source": "Cloudera — comunicado corporativo",
+    "url": "https://www.cloudera.com/about/news-and-blogs/press-releases/2026-11-24-cloudera-launches-digital-sovereignty-solution-that-gives-enterprises-control-of-data-and-ai-across-the-entire-lifecycle.html",
+    "period": "Anuncio corporativo del 24/11/2026. La empresa señala un foco inicial en Europa y una futura expansión del ecosistema a otras regiones; el comunicado no identifica implementaciones argentinas ni fechas de disponibilidad local.",
+    "jurisdictions": [],
+    "geographyStatus": "not_specified",
+    "geographyEvidence": [],
+    "jurisdictionScope": "Comunicado emitido desde San José, Estados Unidos, y Madrid, España; el foco inicial declarado es Europa y no se identifican despliegues concretos en Argentina.",
+    "sector": "IA empresarial / gobernanza de datos / nube híbrida / soberanía digital / ciberseguridad",
+    "territorialRelevance": "Señal competitiva para Vilanova AI Solutions: refuerza la demanda empresarial de gobierno de datos, trazabilidad, controles de acceso, despliegues privados y arquitectura híbrida. Puede orientar diagnósticos de soberanía y gobernanza para sectores regulados, sin afirmar que el producto esté disponible localmente ni que existan resultados argentinos comprobados.",
+    "verification": {
+      "status": "editorial_reviewed",
+      "checkedAt": "2026-11-25",
+      "scope": "Se abrió el comunicado oficial de Cloudera del 24/11/2026. Se verificaron fecha, componentes de la solución, integración anunciada con modelos de pesos abiertos Mistral, entornos de despliegue y controles descritos. Las capacidades y planes de expansión son afirmaciones del proveedor; no se verificaron despliegues, métricas auditadas ni clientes en Argentina."
+    },
+    "relatedSources": []
   },
   {
     "title": "Applied Digital anunció un contrato de capacidad para centros de datos de IA por USD 5.400 millones",

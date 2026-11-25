@@ -369,7 +369,7 @@ jobs:
               parsed = urlparse(item["sourceUrl"])
               assert parsed.scheme == "https" and parsed.netloc
               assert item["status"] in allowed
-              assert item["verification"]["checkedAt"] in {"2026-11-23", "2026-11-24"}
+              assert item["verification"]["checkedAt"] in {"2026-11-23", "2026-11-24", "2026-11-25"}
               assert item["verification"]["scope"]
           caps = next((item for item in territory["serviceDirectories"] if item.get("id") == "caps-juan-carlos-selles"), None)
           assert caps is not None
@@ -379,7 +379,7 @@ jobs:
           assert caps["serviceHours"] == "Guardia general: todos los días, las 24 h. Atención CAPS: lunes a viernes de 7 a 14 h. Vacunatorio: lunes a viernes de 8 a 13 h."
           assert caps["phone"] is None
           assert caps["status"] == "operativo"
-          assert caps["verification"]["checkedAt"] == "2026-11-24"
+          assert caps["verification"]["checkedAt"] == "2026-11-25"
           assert "no se asigna barrio ni teléfono único" in caps["verification"]["scope"].lower()
           parsed_map = urlparse(caps["mapUrl"])
           assert parsed_map.scheme == "https" and parsed_map.netloc == "www.google.com"
@@ -1415,6 +1415,9 @@ jobs:
 
       - name: Test additional opportunities from Buenos Aires Official Gazette edition 30368
         run: node tests/boletin-14528-procurement.test.js
+ 
+      - name: Test opportunities from Argentina Official Gazette edition 36039
+        run: node tests/boletin-36039-procurement.test.js
 
   deploy:
     needs: validate

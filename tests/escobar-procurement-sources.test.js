@@ -97,4 +97,15 @@ assert.equal(desagote.amount.value, 288950000);
 assert.match(desagote.amount.basis, /no equivale al monto adjudicado/i);
 assert.match(desagote.verification.scope, /No se verificaron acta de apertura, ofertas, adjudicación, contrato ni prestación/i);
 
-console.log("Escobar procurement: siete licitaciones enlazan a sus fuentes oficiales; cronogramas y cautelas sobre presupuesto/adjudicación comprobados.");
+const riego = catalog.opportunities.find(item => item.id === "escobar-licitacion-68-2026-alquiler-servicio-riego");
+assert.ok(riego, "Falta la LP 68/2026 de alquiler de servicio de riego.");
+assert.equal(riego.scope, "municipal");
+assert.equal(riego.jurisdiction, "Partido de Escobar, Provincia de Buenos Aires");
+assert.equal(riego.opportunityStatus, "closed");
+assert.equal(riego.stage, "unknown", "No se debe inferir adjudicación.");
+assert.equal(riego.validUntil, "2026-11-20");
+assert.equal(riego.amount, null, "No se debe resolver la discrepancia de presupuesto con una cifra inventada.");
+assert.equal(riego.sourceUrl, "https://boletinoficial.gba.gob.ar/secciones/14493/ver");
+assert.match(riego.period, /09:00.*11:00.*286\.602\.960.*300\.010\.000/s);
+assert.match(riego.verification.scope, /no se adopta.*importe único|diferencias no se pudieron reconciliar/i);
+console.log("Escobar procurement: ocho licitaciones enlazan a fuentes oficiales; LP 68 queda cerrada y con discrepancias presupuestarias/horarias explícitas.");
