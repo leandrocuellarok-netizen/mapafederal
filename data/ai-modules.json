@@ -24,8 +24,8 @@
     },
     {
       "id": "investment-finder",
-      "name": "Investment & Political Finder Bs. As.",
-      "description": "Inteligencia político-económica de la Provincia de Buenos Aires, organizada por sección electoral, municipio, intendencia y signo político.",
+      "name": "IA Finder Bs. As.",
+      "description": "Inteligencia territorial, política y económica de la Provincia de Buenos Aires.",
       "status": "planned",
       "statusLabel": "Estructura territorial creada · datos políticos pendientes",
       "currentCapability": "La interfaz organiza los 135 municipios bonaerenses en ocho secciones electorales y permite consultar oportunidades documentadas con alcance provincial o municipal. Los campos de intendente y signo político permanecen pendientes hasta contar con fuente vigente por municipio; no se infieren ni se completan por aproximación. El catálogo excluye registros nacionales sin localización bonaerense y oportunidades de otras provincias.",
