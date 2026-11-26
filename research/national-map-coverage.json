@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T01:33:16-03:00",
+  "generatedAt": "2026-11-26T02:35:00-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "2b4947d7e1a431a6a609ca9900c0e4aa46577e2a",
-  "nodeCount": 88,
+  "catalogCommit": "e260ce88eff0e264d2a71bf4be6c4f85db51f446",
+  "nodeCount": 90,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -48,7 +48,7 @@
         "San Juan",
         "San Luis"
       ],
-      "nodeCount": 9,
+      "nodeCount": 11,
       "coveredJurisdictions": 4
     },
     {
@@ -533,11 +533,11 @@
     {
       "province": "San Luis",
       "region": "Cuyo",
-      "total": 1,
+      "total": 3,
       "byType": {
         "Ciudad": 0,
         "Puerto": 0,
-        "Aeropuerto": 0,
+        "Aeropuerto": 2,
         "Paso fronterizo": 0,
         "Logística": 0,
         "Industria": 1,
@@ -548,7 +548,6 @@
       "missingCategories": [
         "Ciudad",
         "Puerto",
-        "Aeropuerto",
         "Paso fronterizo",
         "Logística",
         "Recurso mineral",
@@ -683,7 +682,7 @@
   "categoryTotals": {
     "Ciudad": 7,
     "Puerto": 22,
-    "Aeropuerto": 19,
+    "Aeropuerto": 21,
     "Paso fronterizo": 11,
     "Logística": 3,
     "Industria": 12,
@@ -695,11 +694,6 @@
     {
       "province": "La Pampa",
       "region": "Centro",
-      "total": 1
-    },
-    {
-      "province": "San Luis",
-      "region": "Cuyo",
       "total": 1
     },
     {
@@ -718,9 +712,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NEA",
-    "nextTarget": "Cuyo",
-    "note": "Agrupación operativa para rotar la investigación; no sustituye regionalizaciones oficiales. En este ciclo se incorporó un punto de referencia del Parque Industrial Provincial Puerto Tirol (Chaco), en la categoría Industria; la próxima región es Cuyo."
+    "lastTargeted": "Cuyo",
+    "nextTarget": "Centro",
+    "note": "En este ciclo se incorporaron dos ARP aeroportuarios documentados de San Luis (SAOU y SAOS), diferenciando coordenadas, fuente y estado. La próxima región de la rotación es Centro."
   },
   "pendingCandidates": [
     {
@@ -758,6 +752,29 @@
       "sourceUrls": [
         "https://chaco.gob.ar/noticia-el-gobernador-zdero-acompano-la-inauguracion-del-parque-industrial-y-logistico-nexo-capital-y-entrego-creditos-por-mas-de-300-millones-2025-09-02-16-40",
         "https://produccion.chaco.gob.ar/2025/09/02/dia-de-la-industria-creditos-chacoindustria-e-inauguracion-de-centro-logistico/"
+      ]
+    },
+    {
+      "province": "San Luis",
+      "locality": "Villa Mercedes / Villa Reynolds",
+      "category": "Aeropuerto",
+      "name": "Aeropuerto Nacional Villa Reynolds (SAOR)",
+      "decision": "not_added",
+      "reason": "El AIP oficial 1/2022 aporta ARP y coordenadas, pero no se localizó una confirmación primaria vigente del estado operativo en 2026. La edición 2022 registra la pista 10/28 clausurada; una ficha secundaria reciente presenta una configuración distinta. Se requiere reconciliar la publicación AIP oficial vigente y el estado del aeródromo antes de incorporarlo.",
+      "sourceUrls": [
+        "https://ais.anac.gob.ar/descarga/aip-631a9053a1625",
+        "https://notac.aero/airports/SAOR/"
+      ]
+    },
+    {
+      "province": "San Luis",
+      "locality": "San Luis",
+      "category": "Industria",
+      "name": "Parque Industrial San Luis — revisión del marcador existente",
+      "decision": "review_existing",
+      "reason": "El registro actual conserva coordenadas redondeadas [-33.3, -66.34] y una página provincial genérica como fuente; no se identificó una geometría oficial ni una fuente atribuible para el punto exacto. No se corrigió ni eliminó en esta ejecución para evitar una relocalización inferida.",
+      "sourceUrls": [
+        "https://www.sanluis.gov.ar/"
       ]
     }
   ],
