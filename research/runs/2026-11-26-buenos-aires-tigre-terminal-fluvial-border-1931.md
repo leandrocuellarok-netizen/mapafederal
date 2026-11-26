@@ -2,7 +2,7 @@
 
 - Fecha y hora de verificación: 2026-11-26T19:31:27-03:00 (ART).
 - Rama de trabajo: `automation/2026-11-26-buenos-aires-tigre-border`.
-- HEAD de trabajo antes de esta bitácora: `6490c638230cdabebe644e164fa33f455edd380d`.
+- HEAD de trabajo antes de esta bitácora: `621af6d6584aefe9ce394151208308ea8cb821c4`.
 - Región trabajada: Buenos Aires Province. Próxima región de la rotación: CABA.
 - Alcance: mapa nacional de portada `index.html`, catálogo `data/strategic-nodes.json`, 24 jurisdicciones y nueve categorías existentes.
 
@@ -67,7 +67,8 @@ Commits:
 - Catálogo: [`496872d`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/496872d1145d1931325e486f34eecbf1ed5e6d1f).
 - Matriz: [`c9a7ca2`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/c9a7ca24c1b08d684600089de90cb8d77ef451dc).
 - README: [`bb61823`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/bb618237d5e471cec950382c0ac6870e85474215).
-- Prueba de regresión: [`6490c63`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/6490c638230cdabebe644e164fa33f455edd380d).
+- Prueba de regresión inicial: [`6490c63`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/6490c638230cdabebe644e164fa33f455edd380d).
+- Ajuste de aserción de regresión para coincidir con el alcance de estado documentado: [`621af6d`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/621af6d6584aefe9ce394151208308ea8cb821c4).
 
 ## Integración y publicación
 
