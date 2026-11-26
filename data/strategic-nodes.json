@@ -617,11 +617,32 @@
     "province": "Formosa",
     "type": "Puerto",
     "coords": [
-      -26.184,
-      -58.177
+      -26.19861111,
+      -58.14736111
     ],
-    "note": "Puerto sobre la margen derecha del río Paraguay. La referencia oficial describe tráfico vecinal fronterizo y operaciones de carga; coordenada aproximada del sector portuario.",
-    "source": "https://www.argentina.gob.ar/formosa/llegar"
+    "note": "Puerto Nuevo de la Ciudad de Formosa, sobre la margen derecha del río Paraguay (km 1444). ANPyN publica 232 m lineales de atraque. El Decreto 768/2003 lo habilitó como puerto provincial, de uso público y destino comercial; la operación efectiva actual no está verificada.",
+    "source": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/formosa",
+    "locality": "Formosa",
+    "sourceName": "Agencia Nacional de Puertos y Navegación (ANPyN) — ficha oficial del Puerto Formosa",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La ficha oficial publica km 1444 del río Paraguay, margen derecha, coordenadas 26°11'55.0\"S / 58°08'50.5\"W y 232 m lineales de atraque. No indica fecha de publicación.",
+    "sourceRecordId": "ANPyN — Ficha de puerto Formosa",
+    "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/formosa",
+    "coordinateSourceName": "ANPyN — localización oficial del Puerto Formosa",
+    "coordinateSourcePublishedAt": null,
+    "coordinateReferenceSystem": "No declarado en la ficha; coordenadas geográficas publicadas en grados, minutos y segundos. No se atribuye datum ni código EPSG.",
+    "coordinateTransformation": "Conversión aritmética de DMS a grados decimales; sin transformación de datum ni reproyección.",
+    "coordinateQuality": "Coordenada puntual publicada por ANPyN para el puerto; la ficha no precisa si corresponde al punto medio del puerto o del muelle ni declara datum/CRS. No representa acceso ni perímetro.",
+    "statusSource": "https://www.argentina.gob.ar/normativa/nacional/norma-88513/texto",
+    "statusSourceName": "Decreto 768/2003 — habilitación del Puerto Nuevo de la Ciudad de Formosa",
+    "statusSourcePublishedAt": "2003-09-17",
+    "administrativeStatus": "Habilitado por Decreto 768/2003 como puerto provincial, de uso público y destino comercial. La ficha ANPyN actualiza localización y datos técnicos, pero las fuentes consultadas no confirman operación efectiva a la fecha de verificación.",
+    "validityPeriod": "Habilitación histórica publicada el 17/09/2003; vigencia y operación efectiva actual no verificadas en esta ejecución.",
+    "status": "no_verificado",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "Se corrigió la coordenada referencial anterior (-26.184, -58.177) por la posición publicada por ANPyN: 26°11'55.0\"S, 58°08'50.5\"W. Conversión aritmética DMS a grados decimales, sin reproyección. La ficha no declara datum/CRS ni precisa si el punto es el centro del puerto o del muelle. El Decreto 768/2003 acredita la habilitación provincial, pública y comercial; no se verificó operación efectiva actual."
+    }
   },
   {
     "id": "entre-rios-puerto-puerto-de-concepcion-del-uruguay",
