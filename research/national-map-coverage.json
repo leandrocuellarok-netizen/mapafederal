@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T13:37:14-03:00",
+  "generatedAt": "2026-11-26T14:40:39.162-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "78aee6ba74d51adfd342ddc6a152a0f91b7b2759",
+  "catalogCommit": "fa89cd1e08fdea57e69b22b74daf0ba57cad0a55",
   "nodeCount": 99,
   "jurisdictionCount": 24,
   "categories": [
@@ -734,9 +734,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "CABA",
-    "nextTarget": "NOA",
-    "note": "La ejecución CABA realizó una auditoría de aplicabilidad de la categoría Paso fronterizo y no incorporó nodos por falta de geometrías puntuales vigentes. La Dirección Nacional de Migraciones incluye las terminales portuarias Buquebus y Colonia Express y la Terminal de Cruceros Quinquela Martín entre las vías de ingreso/egreso del Área Metropolitana; una ficha oficial de 2025 sitúa Buquebus en Puerto Madero (CABA). Argentina.gob.ar identifica además dos pasos internacionales fluviales de la Provincia de Buenos Aires: Puerto Guazú-Guazucito–Carmelo y Puerto Martín García–Carmelo. Por ello Paso fronterizo es aplicable en CABA y Buenos Aires y permanece como brecha de coordenadas, no como categoría no aplicable. Para esta matriz, la categoría comprende cruces terrestres o fluviales con contraparte internacional; los aeropuertos se contabilizan en Aeropuerto. Se marca no aplicable en Córdoba, La Pampa, San Luis, Santa Fe, Santiago del Estero y Tucumán, que no tienen frontera terrestre ni fluvial internacional. Se investigó también la parada del Bus Turístico asociada a Reserva Ecológica; no se incorporó porque la ficha GeoJSON oficial fue modificada el 13/11/2026 y no pudo verificarse la geometría de la versión vigente; la coordenada visible en una vista previa anterior no se reutilizó."
+    "lastTargeted": "NOA",
+    "nextTarget": "NEA",
+    "note": "La ejecución del 26/11/2026 priorizó Tucumán, la jurisdicción menos cubierta (1 nodo). Se completó una migración de calidad del catálogo: 85 registros históricos recibieron IDs deterministas derivados de provincia, tipo y nombre; los 14 IDs existentes se preservaron. No se agregó un nodo geográfico: IDET publica la capa Localidad, pero no se recuperó la geometría de la feature; RIDES/IDET identifica parques industriales y ofrece capas poligonales, pero la consulta de geometrías no fue accesible. La Casa Histórica de la Independencia está documentada por Cultura de la Nación en Congreso de Tucumán 141, pero la fuente consultada no publica coordenadas. No se geocodificaron domicilios ni topónimos. Próxima región: NEA."
   },
   "pendingCandidates": [
     {
@@ -817,11 +817,14 @@
       "category": "Industria",
       "name": "Capa provincial RIDES — Parques industriales (KML/SHP, 11/08/2025)",
       "decision": "not_added",
-      "reason": "RIDES publica una capa provincial descargable en KML y SHP, pero en esta ejecución no fue posible inspeccionar el contenido de los archivos ni sus metadatos geométricos. Se requiere revisar entidades, CRS, atributos, geometrías y correspondencia con parques existentes antes de elegir un punto o derivar un centroide. No se agregó marcador desde la página de descarga ni desde nombres de parques.",
+      "reason": "RIDES mantiene una capa provincial KML/SHP (11/08/2025). Además, el servicio ArcGIS oficial Actividades_Industriales_WMS expone la capa Parques_Industriales (ID 2), con geometría poligonal y referencia espacial POSGAR 2007 / Argentina 3 (EPSG:5345); el metadato enumera, entre otros, Parque Industrial Tucumán, Parque Industrial El Bracho, Parque Industrial San Isidro de Lules, Parque Industrial Kanamico y Parque Industrial Agropecuario y Tecnológico Famaillá. La consulta REST de entidades no devolvió la geometría en esta ejecución y la página WFS de RIDES no permitió obtener el contenido GetCapabilities. Sin geometría/feature atribuible, atributos de cada polígono y verificación de estado, no se calculó centroide ni se agregó marcador.",
       "sourceUrls": [
         "https://rides.producciontucuman.gob.ar/capa/parques-industriales/",
         "https://rides.producciontucuman.gob.ar/wp-content/uploads/2025/08/Parques_Industriales_11_08_2025.kml",
-        "https://rides.producciontucuman.gob.ar/wp-content/uploads/2025/08/Parques_Industriales_11_08_2025.zip"
+        "https://rides.producciontucuman.gob.ar/wp-content/uploads/2025/08/Parques_Industriales_11_08_2025.zip",
+        "https://rides.producciontucuman.gob.ar/servicios-wfs/",
+        "https://gis.producciontucuman.gob.ar/ArcGIS/rest/services/Actividades_Industriales_WMS/MapServer",
+        "https://gis.producciontucuman.gob.ar/ArcGIS/rest/services/Actividades_Industriales_WMS/MapServer/2"
       ]
     },
     {
@@ -895,6 +898,32 @@
         "https://www.argentina.gob.ar/node/216042",
         "https://www.argentina.gob.ar/migraciones/pasos-internacionales"
       ]
+    },
+    {
+      "province": "Tucumán",
+      "locality": "San Miguel de Tucumán",
+      "category": "Ciudad",
+      "name": "Localidad — capa oficial IDET / Secretaría de Producción",
+      "decision": "not_added",
+      "reason": "El servicio ArcGIS oficial publica la capa Localidad (ID 0) y sus atributos Depto, Nombre y Fuente; la página del layer muestra simbología y etiquetado de punto y el servicio declara referencia espacial 22173. La consulta de entidades no devolvió el registro ni su geometría en esta ejecución. No se usó el centroide de localidad ni se geocodificó el topónimo. Se requiere respuesta de feature con coordenada/geom y CRS explícitos.",
+      "sourceUrls": [
+        "https://gis.producciontucuman.gob.ar/ArcGIS/rest/services/Tucuman/MapServer",
+        "https://gis.producciontucuman.gob.ar/ArcGIS/rest/services/Tucuman/MapServer/0",
+        "https://idet.tucuman.gov.ar/novedades/ver/72"
+      ]
+    },
+    {
+      "province": "Tucumán",
+      "locality": "San Miguel de Tucumán",
+      "category": "Turismo",
+      "name": "Museo Casa Histórica de la Independencia",
+      "decision": "not_added",
+      "reason": "La Comisión Nacional de Monumentos y la Secretaría de Cultura identifican el museo como Monumento Histórico Nacional y publican su dirección (Congreso de Tucumán 141), además de su actividad cultural en 2026. Las fichas consultadas no publican coordenada ni geometría exacta del inmueble. No se geocodificó la dirección; se requiere punto catastral, feature oficial o coordenada institucional atribuible.",
+      "sourceUrls": [
+        "https://www.argentina.gob.ar/capital-humano/cultura/monumentos/museo-casa-historica-de-la-independencia",
+        "https://www.argentina.gob.ar/node/506983",
+        "https://www.argentina.gob.ar/noticias/el-dia-de-la-independencia-en-la-casa-historica-de-tucuman"
+      ]
     }
   ],
   "methodology": [
@@ -910,6 +939,7 @@
     "El nodo del Aeropuerto Internacional Teniente Benjamín Matienzo (Tucumán) fue corregido con la coordenada geográfica publicada por ANAC para SANT (26°50'18\\\"S, 065°06'16\\\"W), convertida de DMS a grados decimales sin reproyección. El suplemento AIP A39/2026 actualiza el plano y las normas de movimiento en plataforma comercial. El datum/CRS no se explicita en el suplemento; no se atribuye EPSG ni precisión geodésica. La condición operativa se refiere a infraestructura y procedimientos aeroportuarios publicados, no a frecuencias de vuelos comerciales ni NOTAM en tiempo real.",
     "El nodo del Parque Nacional El Leoncito usa la coordenada geográfica 31°53'22''S 69°15'54''O publicada por IGN para el área protegida. Se convirtió DMS a grados decimales sin transformación de datum ni reproyección. La tabla IGN no define si el punto corresponde a acceso, centroide o punto interno; por eso el marcador se identifica solo como referencia cartográfica y no como acceso ni perímetro. APN documenta horarios estacionales, senderos y actividades de visita.",
     "El Parque Industrial Municipal de Las Higueras (Córdoba) se incorporó con una coordenada geográfica publicada por AABE para el inmueble CIE 1400003161/18. El anexo de la Resolución 218/2022 advierte que el croquis es ilustrativo y no aporta polígono ni datum/CRS; el punto se usa solo como referencia del inmueble, sin presentarlo como acceso, centroide certificado ni perímetro. La Ordenanza municipal 45/2023 identifica parcelas y ubicación; la Ordenanza 216/2025 y una fuente secundaria local del 18/03/2026 documentan el desarrollo y las obras, sin acreditar habilitación definitiva ni operación plena.",
-    "El Parque Industrial de Río Grande (Tierra del Fuego) se incorporó con una coordenada publicada por un directorio sectorial secundario. El punto cae dentro de la extensión geográfica de la capa oficial IDETDF «Parque Industrial» (edición 2025, EPSG:4326), cuyo linaje declara datos extraídos de la base IGN y complementados por IDETDF. La descarga WFS/ZIP agotó el tiempo de espera y no se inspeccionó la geometría; por ello no se asigna CRS al punto secundario ni se representa acceso, centroide, perímetro o lote específico. La Municipalidad de Río Grande informa aproximadamente 102 empresas en operación y 15 en construcción para 2024; el estado vigente del padrón queda no_verificado."
+    "El Parque Industrial de Río Grande (Tierra del Fuego) se incorporó con una coordenada publicada por un directorio sectorial secundario. El punto cae dentro de la extensión geográfica de la capa oficial IDETDF «Parque Industrial» (edición 2025, EPSG:4326), cuyo linaje declara datos extraídos de la base IGN y complementados por IDETDF. La descarga WFS/ZIP agotó el tiempo de espera y no se inspeccionó la geometría; por ello no se asigna CRS al punto secundario ni se representa acceso, centroide, perímetro o lote específico. La Municipalidad de Río Grande informa aproximadamente 102 empresas en operación y 15 en construcción para 2024; el estado vigente del padrón queda no_verificado.",
+    "El 26/11/2026 se completó la asignación de IDs estables del catálogo: los 85 registros históricos que carecían de id recibieron un slug determinista derivado de provincia, tipo y nombre; los 14 IDs preexistentes se conservaron. Los IDs se consideran claves persistentes y no deben regenerarse al editar nombres descriptivos."
   ]
 }
