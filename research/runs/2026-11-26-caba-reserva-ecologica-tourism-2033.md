@@ -62,8 +62,10 @@ No se agregaron puntos de Paso fronterizo: ANPyN publica una coordenada general 
 
 - Validación previa del repositorio: ejecución #830 aprobada; jobs `validate` y `deploy`.
 - Validación de esta incorporación: pendiente de Actions.
-- Commit de datos/documentación: pendiente de creación.
-- Workflow y GitHub Pages: pendientes de la ejecución posterior al commit.
+- Commit de catálogo y documentación: `3ec915af721bafb723d9c4f35db793a3968e2630`.
+- GitHub Actions #831, asociado al commit de catálogo: falló en una aserción del nuevo test por un error de mayúsculas en el literal `feature geojson id=17`; el job `deploy` fue omitido. La geometría y el registro no fueron rechazados por las validaciones generales; el fallo fue el texto de la prueba.
+- Corrección del test y sincronización de `catalogCommit`: commit en curso.
+- GitHub Actions y Pages posteriores a la corrección: pendientes.
 - Inspección visual independiente de la portada: no disponible al momento de redactar este registro.
 
 ## Brechas no resueltas

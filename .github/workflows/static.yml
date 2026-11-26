@@ -698,7 +698,7 @@ jobs:
           assert "solo se reordenaron los ejes" in reserva_stop["coordinateTransformation"].lower()
           assert reserva_stop["status"] == "no_verificado"
           assert "no representa el acceso" in reserva_stop["coordinateQuality"].lower()
-          assert "feature geojSON id=17" in reserva_stop["sourceRecordId"].lower()
+          assert "feature geojson id=17" in reserva_stop["sourceRecordId"].lower()
           assert reserva_stop["verification"]["checkedAt"] == "2026-11-26"
           buenos_aires = next(row for row in coverage_rows if row["province"] == "Buenos Aires")
           assert buenos_aires["total"] == 29 and buenos_aires["byType"]["Turismo"] == 3 and buenos_aires["byType"]["Paso fronterizo"] == 1
