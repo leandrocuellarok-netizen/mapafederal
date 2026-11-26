@@ -1842,5 +1842,40 @@
       "checkedAt": "2026-11-26",
       "scope": "SIB/APN confirma Chubut, departamento Futaleufú, coordenada geográfica y designaciones del área. APN publica horarios estacionales, tres portadas, centro de visitantes, senderos y servicios. La noticia institucional de APN del 13/11/2026 confirma actividad de gestión en el parque. La coordenada se conserva como referencia general, no como acceso ni perímetro. No se verificó disponibilidad en tiempo real de rutas, senderos ni servicios."
     }
+  },
+  {
+    "id": "buenos-aires-paso-fronterizo-terminal-fluvial-binacional-de-tigre",
+    "name": "Terminal Fluvial Binacional de Tigre",
+    "province": "Buenos Aires",
+    "district": "Tigre",
+    "locality": "Tigre",
+    "type": "Paso fronterizo",
+    "coords": [
+      -34.42121,
+      -58.58097
+    ],
+    "note": "Punto de ingreso y egreso internacional fluvial incluido por Migraciones entre las vías en funcionamiento; horario publicado de 07 a 17 para embarcaciones particulares y deportivas. No acredita un servicio comercial internacional regular.",
+    "source": "https://www.argentina.gob.ar/migraciones/pasos-internacionales",
+    "sourceName": "Dirección Nacional de Migraciones — Pasos Internacionales",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La página identifica vías de ingreso y egreso en funcionamiento; consultada el 2026-11-26. No indica fecha de publicación o actualización.",
+    "sourceRecordId": "Área Metropolitana de Buenos Aires — Terminal Fluvial Binacional de Tigre.",
+    "coordinateSource": "https://mapcarta.com/es/W269888419",
+    "coordinateSourceName": "Mapcarta — Estación Fluvial Internacional Tigre, basada en OpenStreetMap",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "Identifica OpenStreetMap way 269888419, amenity=ferry_terminal; publica latitud -34.42121 y longitud -58.58097. No informa método de captura, precisión, CRS/datum ni fecha de modificación de la geometría.",
+    "coordinateReferenceSystem": "Coordenadas geográficas en grados decimales publicadas por Mapcarta a partir de OpenStreetMap; datum y CRS no declarados. No se asigna EPSG.",
+    "coordinateTransformation": "Transcripción de los valores decimales publicados; sin reproyección, transformación de datum ni geocodificación.",
+    "statusSource": "https://www.argentina.gob.ar/migraciones/pasos-internacionales",
+    "statusSourceName": "Dirección Nacional de Migraciones — Pasos Internacionales",
+    "statusSourcePublishedAt": null,
+    "administrativeStatus": "Migraciones incluye la Terminal Fluvial Binacional de Tigre entre las vías de ingreso y egreso en funcionamiento y publica horario de 07 a 17 para embarcaciones particulares y deportivas. La Decisión Administrativa 86/2022 autorizó su apertura como corredor seguro internacional en el contexto sanitario de 2022; esa autorización histórica no se usa por sí sola como prueba de un servicio comercial vigente. El Municipio de Tigre confirma la Estación Fluvial Domingo Faustino Sarmiento y las salidas de lanchas colectivas; no se afirma un servicio internacional comercial regular.",
+    "validityPeriod": "Listado de Migraciones consultado el 2026-11-26; la página no indica fecha de actualización. Los horarios pueden cambiar y no se verificó operación en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "Se verificó que Migraciones incluye la Terminal Fluvial Binacional de Tigre entre las vías de ingreso y egreso en funcionamiento, con horario publicado para embarcaciones particulares y deportivas. La Decisión Administrativa 86/2022 documenta su autorización como corredor seguro internacional en 2022. El Municipio identifica la estación fluvial de pasajeros en Mitre 305 y las salidas de lanchas colectivas. La coordenada procede de la feature OSM way 269888419 difundida por Mapcarta; al no existir en las fuentes primarias consultadas una geometría puntual recuperable, se declara expresamente como referencia secundaria, sin precisión catastral, acceso ni puesto de control. No se verificó servicio internacional comercial regular ni operación en tiempo real."
+    },
+    "coordinateQuality": "Referencia secundaria publicada por Mapcarta para OpenStreetMap way 269888419 (amenity=ferry_terminal). El proveedor no informa método de captura, precisión ni CRS/datum; no se presenta como acceso, muelle específico, puesto de control migratorio ni perímetro certificado."
   }
 ]
