@@ -1810,5 +1810,37 @@
       "scope": "Se contrastó provincia, departamento, creación y coordenada geográfica en la ficha SIB/APN con la ficha institucional y las páginas APN de recorrido y servicios. La coordenada se usa únicamente como referencia cartográfica del área protegida; la fuente no define si corresponde a acceso, centroide o punto interno. No representa acceso ni perímetro. Verificación documental, no presencial ni en tiempo real."
     },
     "coordinateQuality": "Punto de referencia oficial publicado por SIB/APN. La fuente no declara si representa acceso, centroide o punto interno; no se presenta como acceso ni como geometría del límite."
+  },
+  {
+    "id": "chubut-turismo-parque-nacional-los-alerces",
+    "name": "Parque Nacional Los Alerces",
+    "province": "Chubut",
+    "district": "Futaleufú",
+    "type": "Turismo",
+    "coords": [
+      -42.84453,
+      -71.83818
+    ],
+    "note": "Área protegida nacional y Sitio de Patrimonio Mundial Natural. APN documenta portadas de acceso, centro de visitantes, senderos y servicios. La coordenada SIB/APN es una referencia geográfica general: no identifica una portada, un acceso ni el perímetro; las condiciones de rutas y servicios deben verificarse antes de viajar.",
+    "source": "https://www.argentina.gob.ar/parquesnacionales/regionpatagonia/parque-nacional-los-alerces",
+    "sourceName": "Administración de Parques Nacionales (APN)",
+    "sourceRecordId": "Ficha institucional del Parque Nacional Los Alerces",
+    "coordinateSource": "https://sib.gob.ar/areas-protegidas/parque-nacional-los-alerces",
+    "coordinateSourceName": "Sistema de Información de Biodiversidad de la Administración de Parques Nacionales (SIB/APN)",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por SIB/APN; la ficha no declara datum ni CRS.",
+    "coordinateTransformation": "No se realizó transformación ni reproyección; se transcribieron las coordenadas decimales publicadas por SIB/APN.",
+    "coordinateQuality": "Referencia geográfica del área protegida publicada por SIB/APN (42°50'40.31''S, 71°50'17.46''O). La ficha no especifica si el punto es acceso, centroide o punto interno; no se presenta como portada, acceso, centroide certificado ni perímetro.",
+    "status": "operativo",
+    "statusSource": "https://www.argentina.gob.ar/parquesnacionales/regionpatagonia/parque-nacional-los-alerces/horarios-como-llegar",
+    "statusSourceName": "APN — Horarios / Cómo llegar",
+    "additionalStatusSource": "https://www.argentina.gob.ar/noticias/el-parque-nacional-los-alerces-realizo-la-presentacion-institucional-del-proceso-de-conformacion-de-su-comision-asesora-local",
+    "additionalStatusSourceName": "APN — Presentación institucional de la Comisión Asesora Local",
+    "additionalStatusSourcePublishedAt": "2026-11-13",
+    "administrativeStatus": "Parque Nacional creado en 1937, de jurisdicción y administración nacional; declarado Sitio de Patrimonio Mundial Natural y Reserva de Biósfera. APN publica horarios estacionales, tres portadas de acceso, centro de visitantes, senderos y servicios. El estado operativo describe el área y su uso público documentado, no la disponibilidad en tiempo real de rutas, senderos o prestadores.",
+    "validityPeriod": "Verificación documental al 2026-11-26; horarios y condiciones sujetos a actualización de APN.",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "SIB/APN confirma Chubut, departamento Futaleufú, coordenada geográfica y designaciones del área. APN publica horarios estacionales, tres portadas, centro de visitantes, senderos y servicios. La noticia institucional de APN del 13/11/2026 confirma actividad de gestión en el parque. La coordenada se conserva como referencia general, no como acceso ni perímetro. No se verificó disponibilidad en tiempo real de rutas, senderos ni servicios."
+    }
   }
 ]
