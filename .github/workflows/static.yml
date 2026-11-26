@@ -1213,7 +1213,7 @@ jobs:
             assert.ok(html.includes('id="' + id + '"'), "Missing PBA Finder control: " + id);
           }
           assert.ok(html.includes("Oportunidades documentadas en Provincia de Buenos Aires."));
-          assert.ok(html.includes("Investment &amp; Political Finder Bs. As."));
+          assert.ok(html.includes("IA Finder Bs. As."));
           const start = html.indexOf("function filterInvestmentOpportunities(records,filters){");
           const end = html.indexOf("\nfunction investmentStageLabel", start);
           assert.ok(start >= 0 && end > start, "Missing reusable PBA opportunity filter.");
@@ -1244,8 +1244,8 @@ jobs:
           assert territories["municipalityCount"] == 135
           assert len(territories["sections"]) == 8
           assert sum(len(section["municipalities"]) for section in territories["sections"]) == 135
-          assert module["name"] == "Investment & Political Finder Bs. As."
-          assert "signo político" in module["description"].lower()
+          assert module["name"] == "IA Finder Bs. As."
+          assert "inteligencia territorial" in module["description"].lower()
           assert "fuente" in module["currentCapability"].lower()
           assert len(opportunities["opportunities"]) == opportunities["opportunityCount"]
           assert all(item["territorialClassification"]["province"] == "Buenos Aires" for item in opportunities["opportunities"])
@@ -1265,8 +1265,8 @@ jobs:
           assert territories["municipalityCount"] == 135
           assert len(territories["sections"]) == 8
           assert sum(len(section["municipalities"]) for section in territories["sections"]) == 135
-          assert module["name"] == "Investment & Political Finder Bs. As."
-          assert "signo político" in module["description"].lower()
+          assert module["name"] == "IA Finder Bs. As."
+          assert "inteligencia territorial" in module["description"].lower()
           assert "fuente" in module["currentCapability"].lower()
           assert len(opportunities["opportunities"]) == opportunities["opportunityCount"]
           assert all(item["territorialClassification"]["province"] == "Buenos Aires" for item in opportunities["opportunities"])
