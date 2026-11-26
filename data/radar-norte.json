@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-11-25",
-  "scope": "Exclusivamente información con localización explícita en los municipios y la unidad territorial definidos para Radar Norte. No se incorporan noticias nacionales, provinciales generales ni internacionales.",
+  "scope": "Información territorial de los municipios incluidos en Radar Norte. Cada registro debe identificar su jurisdicción y contar con una fuente consultable; se distingue entre anuncios, licitaciones, obras ejecutadas y resultados.",
   "groups": [
     {
       "id": "urban",
@@ -326,6 +326,206 @@
         "Proyectos empresariales anunciados para el Partido de Escobar; Biogénesis Bagó menciona expresamente su establecimiento de Garín."
       ],
       "relatedSources": []
+    },
+    {
+      "id": "news-san-fernando-2026-11-20-renovacion-escuelas",
+      "title": "San Fernando proyecta invertir $3.870 millones en la renovación de cuatro escuelas",
+      "date": "2026-11-20",
+      "summary": "El Municipio convocó tres licitaciones para renovar dos escuelas primarias, una secundaria y un jardín de infantes. Los presupuestos oficiales suman $3.870 millones y las aperturas están previstas para el 14 de diciembre. Se trata de montos presupuestados: las obras todavía no están adjudicadas y el inicio dependerá de los procedimientos de contratación.",
+      "source": "Redacción Norte",
+      "url": "https://www.redaccionnorte.com.ar/san-fernando-preve-invertir-3-870-millones-en-la-renovacion-de-cuatro-establecimientos-educativos/",
+      "period": "Licitaciones publicadas el 19/11/2026; apertura prevista para el 14/12/2026.",
+      "jurisdiction": "San Fernando",
+      "category": "Norte urbano consolidado",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-25",
+        "scope": "Nota periodística local contrastada con el detalle de las tres convocatorias y sus presupuestos oficiales. No se presentan los montos como gasto ejecutado ni las obras como adjudicadas."
+      },
+      "geographyEvidence": [
+        "Cuatro establecimientos educativos del partido de San Fernando, Provincia de Buenos Aires."
+      ],
+      "relatedSources": []
+    },
+    {
+      "id": "news-tigre-2026-11-25-tigre-tiene-talento",
+      "title": "Tigre reunió a 21 artistas locales en la final de «Tigre Tiene Talento»",
+      "date": "2026-11-25",
+      "summary": "La final del certamen municipal se realizó en el Teatro Pacheco, con más de 250 espectadores y participantes de teatro, danza y canto. La iniciativa busca promover la formación y visibilidad de artistas del distrito. Durante el encuentro, el Municipio anticipó nuevas salas culturales en Don Torcuato, El Talar y otras localidades; esos anuncios no equivalen a obras ya inauguradas.",
+      "source": "InfoBAN",
+      "url": "https://www.infoban.com.ar/25/11/2026/se-celebro-la-final-del-certamen-municipal-tigre-tiene-talento-una-propuesta-para-mostrar-las-destrezas-artisticas/",
+      "period": "Evento realizado y cobertura publicada el 25/11/2026.",
+      "jurisdiction": "Tigre",
+      "category": "Norte residencial y turístico",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-25",
+        "scope": "Información contrastada con la cobertura local y la agenda de novedades del Municipio de Tigre. Las cifras de asistentes y participantes se atribuyen a las fuentes citadas; los anuncios de salas se mantienen como previsiones."
+      },
+      "geographyEvidence": [
+        "Teatro Pacheco, General Pacheco, partido de Tigre, Provincia de Buenos Aires."
+      ],
+      "relatedSources": [
+        {
+          "label": "Municipio de Tigre — archivo de novedades",
+          "url": "https://www.tigre.gob.ar/novedades"
+        }
+      ]
+    },
+    {
+      "id": "news-san-miguel-2026-11-06-hospital-larcade-guardias",
+      "title": "San Miguel avanza con un nuevo edificio de guardias en el Hospital Larcade",
+      "date": "2026-11-06",
+      "summary": "La obra incorpora un sector de guardia de adultos con atención las 24 horas y dos pisos de internación con 74 camas. También contempla consultorios, áreas de atención especializada, ascensor, escaleras y un acceso renovado para ambulancias. La información describe avances de obra publicados por el Municipio; no confirma la fecha de puesta en funcionamiento del nuevo edificio.",
+      "source": "Municipalidad de San Miguel / MunicipiosAR",
+      "url": "https://municipiosar.com/buenos-aires/san-miguel/mejoras-en-el-hospital-larcade-de-san-miguel-nuevo-edificio-de-guardias",
+      "period": "Avance de obra informado el 06/11/2026.",
+      "jurisdiction": "San Miguel",
+      "category": "Norte metropolitano y comercial",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-25",
+        "scope": "La nota atribuye la información a la Municipalidad de San Miguel. Se conservan las características anunciadas y no se infiere que el edificio esté terminado, habilitado o en servicio."
+      },
+      "geographyEvidence": [
+        "Hospital Dr. Raúl Larcade, San Miguel, Provincia de Buenos Aires."
+      ],
+      "relatedSources": [
+        {
+          "label": "Municipalidad de San Miguel — prensa",
+          "url": "https://www.msm.gov.ar/prensa/"
+        }
+      ]
+    },
+    {
+      "id": "news-san-isidro-2026-11-05-incentivos-inversion",
+      "title": "San Isidro aprobó un régimen de incentivos para atraer inversiones y empleo",
+      "date": "2026-11-05",
+      "summary": "El Concejo Deliberante aprobó una ordenanza que busca promover la radicación de empresas y actividades vinculadas con software, hardware, innovación, educación e investigación. La misma sesión reguló la habilitación y funcionamiento de vehículos gastronómicos. La aprobación legislativa no permite inferir por sí sola cuántas empresas accederán al régimen ni cuántos empleos se generarán.",
+      "source": "InfoBAN",
+      "url": "https://www.infoban.com.ar/05/11/2026/san-isidro-aprobo-un-regimen-de-incentivos-a-la-inversion-y-regulo-los-vehiculos-gastronomicos/",
+      "period": "Ordenanzas aprobadas en la 17.ª Sesión Ordinaria de 2026.",
+      "jurisdiction": "San Isidro",
+      "category": "Norte urbano consolidado",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-25",
+        "scope": "Cobertura periodística que identifica la sesión y el contenido general de las ordenanzas. No se agregan beneficios, requisitos ni plazos que no estén descriptos en la fuente."
+      },
+      "geographyEvidence": [
+        "Partido de San Isidro, Provincia de Buenos Aires; área delimitada para el desarrollo tecnológico e industrial según la cobertura."
+      ],
+      "relatedSources": []
+    },
+    {
+      "id": "news-jose-c-paz-2026-11-24-centro-ninez",
+      "title": "José C. Paz abrió un cuarto Centro de la Niñez y Primera Infancia",
+      "date": "2026-11-24",
+      "summary": "El Centro de la Niñez N.º 4 «Rita Sánchez», ubicado en Rincón de Tortuguitas, es el primero del distrito con modalidad de doble jornada. Es gratuito y recibe a niños desde los primeros meses hasta los cinco años, con desayuno, almuerzo y merienda. La apertura amplía la oferta municipal de atención a la primera infancia.",
+      "source": "Noticias GBA",
+      "url": "https://noticiasgba.com.ar/jose-c-paz-abrio-un-cuarto-centro-para-la-primera-infancia-el-primero-con-doble-jornada/",
+      "period": "Inauguración informada el 23/11/2026; nota publicada el 24/11/2026.",
+      "jurisdiction": "José C. Paz",
+      "category": "Norte metropolitano y comercial",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-25",
+        "scope": "Cobertura local con fecha, nombre, ubicación y modalidad del centro. No se agregan cifras de vacantes ni capacidad que la fuente no informa."
+      },
+      "geographyEvidence": [
+        "Barrio Rincón de Tortuguitas, partido de José C. Paz, Provincia de Buenos Aires."
+      ],
+      "relatedSources": []
+    },
+    {
+      "id": "news-malvinas-argentinas-2026-11-22-desafio-urbano",
+      "title": "Malvinas Argentinas realizó su primer Desafío Urbano con más de 300 participantes",
+      "date": "2026-11-22",
+      "summary": "La propuesta combinó obstáculos, actividad física y recreación frente al Palacio Municipal. La convocatoria superó los 300 inscriptos y agotó los cupos en pocas horas. El evento fue presentado como una iniciativa abierta a mayores de 18 años, sin requerir que los participantes fueran deportistas federados.",
+      "source": "Noticias GBA",
+      "url": "https://noticiasgba.com.ar/malvinas-argentinas-hizo-el-primer-desafio-urbano-con-mas-de-300-inscriptos-y-cupos-agotados/",
+      "period": "Actividad realizada en noviembre de 2026; cobertura publicada el 22/11/2026.",
+      "jurisdiction": "Malvinas Argentinas",
+      "category": "Norte metropolitano y comercial",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-25",
+        "scope": "Nota local con datos de convocatoria y sede. Se presenta como actividad realizada, no como programa permanente ni como indicador general de actividad deportiva."
+      },
+      "geographyEvidence": [
+        "Entorno del Palacio Municipal, Los Polvorines, partido de Malvinas Argentinas, Provincia de Buenos Aires."
+      ],
+      "relatedSources": []
+    },
+    {
+      "id": "news-general-san-martin-2026-11-19-licitacion-desagues",
+      "title": "La Provincia licitó obras pluviales por $7.652 millones para General San Martín",
+      "date": "2026-11-19",
+      "summary": "El Ministerio de Infraestructura bonaerense publicó la licitación pública para ejecutar desagües pluviales en las cuencas Lange y San Andrés. El presupuesto oficial asciende a $7.652.584.231,61 y la apertura está prevista para el 22 de diciembre de 2026. El llamado y su presupuesto no significan que la obra esté adjudicada o iniciada.",
+      "source": "Ministerio de Infraestructura y Servicios Públicos de la Provincia de Buenos Aires",
+      "url": "https://www.minfra.gba.gob.ar/licitacionesV2/bidding/show/1208/",
+      "period": "Licitación 61/2026; apertura prevista para el 22/12/2026 a las 14:00.",
+      "jurisdiction": "General San Martín",
+      "category": "Norte metropolitano y comercial",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Ficha oficial de licitación provincial: organismo comitente, municipio, objeto, presupuesto, expediente y fecha de apertura. Se distingue convocatoria de adjudicación y ejecución."
+      },
+      "geographyEvidence": [
+        "Cuencas Lange y San Andrés, partido de General San Martín, Provincia de Buenos Aires."
+      ],
+      "relatedSources": [
+        {
+          "label": "Boletín Oficial de la Provincia de Buenos Aires — publicación de la licitación",
+          "url": "https://boletinoficial.gba.gob.ar/secciones/14528/descargar"
+        }
+      ]
+    },
+    {
+      "id": "news-pilar-2026-11-18-licitacion-viandas",
+      "title": "Pilar presupuestó más de $21.418 millones para contratar viandas durante 2027",
+      "date": "2026-11-18",
+      "summary": "El Municipio convocó una licitación para proveer comidas preparadas a hospitales, centros de rehabilitación, espacios de atención infantil y otras dependencias durante 2027. El presupuesto oficial es de $21.418.705.800 y la apertura de ofertas está prevista para el 21 de diciembre. La convocatoria no informa la cantidad de viandas ni su costo unitario; el monto es un presupuesto oficial, no un gasto ejecutado.",
+      "source": "Redacción Norte",
+      "url": "https://www.redaccionnorte.com.ar/pilar-preve-destinar-mas-de-21-418-millones-a-la-compra-de-viandas-para-hospitales-y-dependencias-municipales-durante-2027/",
+      "period": "Licitación Pública 55/2026; apertura prevista para el 21/12/2026.",
+      "jurisdiction": "Pilar",
+      "category": "Norte industrial y logístico",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-25",
+        "scope": "Cobertura periodística basada en convocatorias publicadas en el Boletín Oficial bonaerense. Se conserva la distinción entre presupuesto, adjudicación y gasto efectivo."
+      },
+      "geographyEvidence": [
+        "Hospitales, centros de rehabilitación y dependencias municipales del partido de Pilar, Provincia de Buenos Aires."
+      ],
+      "relatedSources": []
+    },
+    {
+      "id": "news-vicente-lopez-2026-11-19-camaras-patrullas",
+      "title": "Vicente López instaló 80 cámaras inteligentes en las patrullas municipales",
+      "date": "2026-11-19",
+      "summary": "Los dispositivos registran el interior y exterior de los móviles y transmiten imágenes en vivo al centro de monitoreo ESCUDO. Según la información municipal, el sistema incorpora analíticas y alertas para supervisar los operativos y detectar situaciones de riesgo. La instalación fue informada como completada en todas las patrullas municipales.",
+      "source": "Página/12",
+      "url": "https://www.pagina12.com.ar/2026/11/19/vicente-lopez-instalo-nuevas-camaras-en-todas-sus-patrullas-para-monitorear-en-tiempo-real-los-operativos-de-seguridad/",
+      "period": "Sistema presentado el 19/11/2026.",
+      "jurisdiction": "Vicente López",
+      "category": "Norte urbano consolidado",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-25",
+        "scope": "Cobertura periodística que atribuye la información al Municipio. Se describe el equipamiento anunciado sin inferir resultados sobre delitos ni eficacia del sistema."
+      },
+      "geographyEvidence": [
+        "Patrullas municipales que recorren el partido de Vicente López, Provincia de Buenos Aires."
+      ],
+      "relatedSources": [
+        {
+          "label": "Noticias Argentinas — cobertura del sistema",
+          "url": "https://noticiasargentinas.com/politica/vicente-lopez-instalo-80-camaras-en-sus-patrullas-para-monitorear-operativos-en-vivo_a6affa39509bc92d20f3d7024?output=amp"
+        }
+      ]
     }
   ]
 }
