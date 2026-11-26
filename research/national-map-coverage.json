@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T05:40:25-03:00",
+  "generatedAt": "2026-11-26T06:32:06-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "a5a7fd3c841c08122a106a52f65c4a718eefeec7",
-  "nodeCount": 93,
+  "catalogCommit": "51016bb52645eacb2b17710124906745a5064d66",
+  "nodeCount": 94,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -87,7 +87,7 @@
       "jurisdictions": [
         "CABA"
       ],
-      "nodeCount": 3,
+      "nodeCount": 4,
       "coveredJurisdictions": 1
     }
   ],
@@ -95,7 +95,7 @@
     {
       "province": "CABA",
       "region": "CABA",
-      "total": 3,
+      "total": 4,
       "byType": {
         "Ciudad": 1,
         "Puerto": 1,
@@ -105,15 +105,14 @@
         "Industria": 0,
         "Recurso mineral": 0,
         "Turismo": 0,
-        "Estación ferroviaria": 0
+        "Estación ferroviaria": 1
       },
       "missingCategories": [
         "Paso fronterizo",
         "Logística",
         "Industria",
         "Recurso mineral",
-        "Turismo",
-        "Estación ferroviaria"
+        "Turismo"
       ]
     },
     {
@@ -687,7 +686,7 @@
     "Industria": 12,
     "Recurso mineral": 4,
     "Turismo": 6,
-    "Estación ferroviaria": 5
+    "Estación ferroviaria": 6
   },
   "leastCoveredJurisdictions": [
     {
@@ -726,9 +725,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Buenos Aires Province",
-    "nextTarget": "CABA",
-    "note": "En este ciclo se incorporó la cantera fiscal de dolomita D-6, en Sierras Bayas (Olavarría). La Resolución 57-SSMINMPCEITGP-2021 adjudicó un permiso de explotación por diez años; no se verificó extracción, renovación o revocación actual. El marcador es el centroide geométrico de los cuatro vértices oficiales de la parcela, transformado desde POSGAR 2007 / Argentina 5 (EPSG:5347, zona inferida) a EPSG:4326."
+    "lastTargeted": "CABA",
+    "nextTarget": "NOA",
+    "note": "En esta ejecución se incorporó la Estación Retiro de la línea Mitre, ramal Retiro–Tigre, con coordenadas del GeoJSON oficial del GCBA en CRS84 y estado del servicio contrastado con el aviso de Trenes Argentinos del 24/11/2026. La próxima rotación vuelve al NOA; priorizar jurisdicciones y categorías con menor cobertura, empezando por Tucumán."
   },
   "pendingCandidates": [
     {
