@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T09:37:00-03:00",
+  "generatedAt": "2026-11-26T10:36:50-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "8f9ba8c73fc147e1406d533fade3ac5abae544e1",
-  "nodeCount": 96,
+  "catalogCommit": "8b43ae5592e59eee61cc348362f8e04373452ec7",
+  "nodeCount": 97,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -59,7 +59,7 @@
         "La Pampa",
         "Santa Fe"
       ],
-      "nodeCount": 12,
+      "nodeCount": 13,
       "coveredJurisdictions": 4
     },
     {
@@ -210,14 +210,14 @@
     {
       "province": "Córdoba",
       "region": "Centro",
-      "total": 2,
+      "total": 3,
       "byType": {
         "Ciudad": 0,
         "Puerto": 0,
         "Aeropuerto": 1,
         "Paso fronterizo": 0,
         "Logística": 0,
-        "Industria": 1,
+        "Industria": 2,
         "Recurso mineral": 0,
         "Turismo": 0,
         "Estación ferroviaria": 0
@@ -681,7 +681,7 @@
     "Aeropuerto": 24,
     "Paso fronterizo": 11,
     "Logística": 3,
-    "Industria": 12,
+    "Industria": 13,
     "Recurso mineral": 4,
     "Turismo": 7,
     "Estación ferroviaria": 6
@@ -698,11 +698,6 @@
       "total": 2
     },
     {
-      "province": "Córdoba",
-      "region": "Centro",
-      "total": 2
-    },
-    {
       "province": "Formosa",
       "region": "NEA",
       "total": 2
@@ -710,6 +705,11 @@
     {
       "province": "Jujuy",
       "region": "NOA",
+      "total": 2
+    },
+    {
+      "province": "La Pampa",
+      "region": "Centro",
       "total": 2
     }
   ],
@@ -723,9 +723,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Cuyo",
-    "nextTarget": "Centro",
-    "note": "La ejecución Cuyo incorporó el Parque Nacional El Leoncito en San Juan, con coordenada de referencia publicada por IGN y estado de visita documentado por APN. El punto no representa acceso ni perímetro y la fuente geográfica no define su semántica geométrica. La próxima rotación continúa por Centro; priorizar provincias y categorías menos cubiertas con coordenadas atribuibles."
+    "lastTargeted": "Centro",
+    "nextTarget": "Patagonia",
+    "note": "La ejecución Centro incorporó el Parque Industrial Municipal de Las Higueras (Córdoba), con ubicación general y referencia puntual del inmueble documentadas por fuentes oficiales. El estado de desarrollo se identifica como en construcción con apoyo de una fuente secundaria local del 18/03/2026; no se afirma habilitación definitiva ni operación plena. La próxima rotación continúa por Patagonia."
   },
   "pendingCandidates": [
     {
@@ -849,6 +849,7 @@
     "El nodo Aeropuerto El Tehuelche (SAVY) usa el ARP publicado por ANAC en AIP Suplemento A 65/2024, identificado como centro geométrico de pista. Se convirtió DMS a grados decimales sin reproyección; el suplemento no declara datum/CRS. El estado de la infraestructura se contrastó con horarios AIP A192/2025 y su inclusión en el grupo de cabotaje C de AIC A13/2026; no se afirma programación ni frecuencia comercial actual.",
     "El nodo de la cantera fiscal D-6 (Sierras Bayas, Olavarría) usa el centroide geométrico calculado a partir de los cuatro vértices publicados en la Resolución 57-SSMINMPCEITGP-2021. La resolución indica POSGAR 07 pero no la zona; Argentina 5 (EPSG:5347) se infiere por magnitud de coordenadas y ubicación. El centroide representa la parcela de 4,27 ha, no un frente de extracción ni un acceso. La operación actual no está verificada.",
     "El nodo del Aeropuerto Internacional Teniente Benjamín Matienzo (Tucumán) fue corregido con la coordenada geográfica publicada por ANAC para SANT (26°50'18\\\"S, 065°06'16\\\"W), convertida de DMS a grados decimales sin reproyección. El suplemento AIP A39/2026 actualiza el plano y las normas de movimiento en plataforma comercial. El datum/CRS no se explicita en el suplemento; no se atribuye EPSG ni precisión geodésica. La condición operativa se refiere a infraestructura y procedimientos aeroportuarios publicados, no a frecuencias de vuelos comerciales ni NOTAM en tiempo real.",
-    "El nodo del Parque Nacional El Leoncito usa la coordenada geográfica 31°53'22''S 69°15'54''O publicada por IGN para el área protegida. Se convirtió DMS a grados decimales sin transformación de datum ni reproyección. La tabla IGN no define si el punto corresponde a acceso, centroide o punto interno; por eso el marcador se identifica solo como referencia cartográfica y no como acceso ni perímetro. APN documenta horarios estacionales, senderos y actividades de visita."
+    "El nodo del Parque Nacional El Leoncito usa la coordenada geográfica 31°53'22''S 69°15'54''O publicada por IGN para el área protegida. Se convirtió DMS a grados decimales sin transformación de datum ni reproyección. La tabla IGN no define si el punto corresponde a acceso, centroide o punto interno; por eso el marcador se identifica solo como referencia cartográfica y no como acceso ni perímetro. APN documenta horarios estacionales, senderos y actividades de visita.",
+    "El Parque Industrial Municipal de Las Higueras (Córdoba) se incorporó con una coordenada geográfica publicada por AABE para el inmueble CIE 1400003161/18. El anexo de la Resolución 218/2022 advierte que el croquis es ilustrativo y no aporta polígono ni datum/CRS; el punto se usa solo como referencia del inmueble, sin presentarlo como acceso, centroide certificado ni perímetro. La Ordenanza municipal 45/2023 identifica parcelas y ubicación; la Ordenanza 216/2025 y una fuente secundaria local del 18/03/2026 documentan el desarrollo y las obras, sin acreditar habilitación definitiva ni operación plena."
   ]
 }

@@ -364,7 +364,7 @@ jobs:
           for url in [health["sourceUrl"], health["additionalDirectoryUrl"], health["contactDirectoryUrl"]] + [item.get("addressSourceUrl") for item in health["facilities"] if item.get("addressSourceUrl")] + [item.get("serviceNoteSourceUrl") for item in health["facilities"] if item.get("serviceNoteSourceUrl")] + [url for entry in health.get("pendingDirectoryDiscrepancies", []) for url in [entry["sourceUrl"], *entry["comparisonSourceUrls"]]]:
               parsed = urlparse(url)
               assert parsed.scheme == "https" and parsed.netloc
-          allowed = {"operativo", "anunciado", "histórico", "pendiente", "no verificado"}
+          allowed = {"operativo", "en_construccion", "anunciado", "histórico", "pendiente", "no verificado"}
           for item in territory["serviceDirectories"]:
               parsed = urlparse(item["sourceUrl"])
               assert parsed.scheme == "https" and parsed.netloc
@@ -579,6 +579,13 @@ jobs:
           assert la_banda_customs["province"] == "Santiago del Estero" and la_banda_customs["type"] == "Logística"
           assert la_banda_customs["status"] == "no_verificado"
           assert la_banda_customs["coordinateReferenceSystem"].startswith("No declarado")
+          las_higueras = next((node for node in nodes if node.get("id") == "cordoba-parque-industrial-las-higueras"), None)
+          assert las_higueras is not None and las_higueras["province"] == "Córdoba" and las_higueras["type"] == "Industria"
+          assert las_higueras["status"] == "en_construccion"
+          assert las_higueras["coords"] == [-33.07885989, -64.27645770]
+          assert las_higueras["coordinateSource"].endswith("res218-372140.pdf")
+          assert las_higueras["coordinateReferenceSystem"].startswith("No declarado")
+          assert "croquis" in las_higueras["coordinateQuality"].lower() and "no es centroide certificado" in las_higueras["coordinateQuality"].lower()
           coverage = json.loads(Path("research/national-map-coverage.json").read_text(encoding="utf-8"))
           assert coverage.get("catalogPath") == "data/strategic-nodes.json"
           assert coverage.get("nodeCount") == len(nodes)
