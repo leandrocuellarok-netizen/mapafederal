@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T03:41:59-03:00",
+  "generatedAt": "2026-11-26T04:37:01-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "20ef295d05c969a92c6718302bba56c1eb054095",
-  "nodeCount": 91,
+  "catalogCommit": "fbf0391450277efd5116425f7bf9b1e1b75c40c0",
+  "nodeCount": 92,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -71,7 +71,7 @@
         "Santa Cruz",
         "Tierra del Fuego"
       ],
-      "nodeCount": 19,
+      "nodeCount": 20,
       "coveredJurisdictions": 5
     },
     {
@@ -188,11 +188,11 @@
     {
       "province": "Chubut",
       "region": "Patagonia",
-      "total": 4,
+      "total": 5,
       "byType": {
         "Ciudad": 0,
         "Puerto": 2,
-        "Aeropuerto": 1,
+        "Aeropuerto": 2,
         "Paso fronterizo": 0,
         "Logística": 0,
         "Industria": 0,
@@ -682,7 +682,7 @@
   "categoryTotals": {
     "Ciudad": 7,
     "Puerto": 22,
-    "Aeropuerto": 22,
+    "Aeropuerto": 23,
     "Paso fronterizo": 11,
     "Logística": 3,
     "Industria": 12,
@@ -727,9 +727,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Centro",
-    "nextTarget": "Patagonia",
-    "note": "En este ciclo se incorporó el Aeropuerto de General Pico (SAZG), La Pampa, usando el ARP publicado por ANAC en AIP AD 2.2 (AIRAC A18/2022). Se conserva status no_verificado: Argentina.gob.ar indica que no opera vuelos comerciales regulares y no se verificó AIP/MADHEL vigente para confirmar la operación actual del aeródromo."
+    "lastTargeted": "Patagonia",
+    "nextTarget": "Buenos Aires Province",
+    "note": "En este ciclo se incorporó el Aeropuerto El Tehuelche (SAVY), Puerto Madryn. El ARP procede de ANAC AIP A65/2024 y se identifica como centro geométrico de pista; el estado de la infraestructura se contrastó con AIP A192/2025 y AIC A13/2026. No se infieren rutas ni frecuencias comerciales vigentes."
   },
   "pendingCandidates": [
     {
@@ -791,6 +791,19 @@
       "sourceUrls": [
         "https://www.sanluis.gov.ar/"
       ]
+    },
+    {
+      "province": "Chubut",
+      "locality": "Camarones",
+      "category": "Turismo",
+      "name": "Área Natural Protegida Cabo Dos Bahías",
+      "decision": "not_added",
+      "reason": "Las fuentes oficiales confirman el área protegida, la infraestructura de uso público y el acceso desde Camarones por RP 1 y desvío posterior, pero no publican una coordenada exacta atribuible para la entrada o un establecimiento de visitantes. No se derivó un marcador desde distancias viales ni desde el topónimo.",
+      "sourceUrls": [
+        "https://www.argentina.gob.ar/interior/ambiente/parquesnacionales/marinocostero/actividades",
+        "https://www.argentina.gob.ar/node/154173",
+        "https://noticias.chubut.gob.ar/notas/turismo/5310/los-pinguinos-de-magallanes-llegan-a-chubut-para-brindar-uno-de-los-grandes-espectaculos-de-la-fauna-patagonica.html"
+      ]
     }
   ],
   "methodology": [
@@ -800,6 +813,7 @@
     "La agrupación regional se usa únicamente para rotar la investigación y no constituye una clasificación geográfica oficial.",
     "El nodo logístico de La Banda usa el vértice A del polígono legal publicado en la RG AFIP 3783/2015. La fuente no declara CRS/datum; solo se convirtió DMS a grados decimales, sin transformación. El marcador se identifica como vértice, no como acceso ni centro del predio.",
     "El punto del Parque Industrial Provincial Puerto Tirol usa una coordenada de referencia publicada en una tesis de la UNNE (2020), basada en Google Earth Pro. La tesis no especifica CRS/datum; se convirtió DMS a grados decimales sin reproyección. No representa perímetro parcelario ni acceso.",
-    "El nodo del Aeropuerto de General Pico usa el ARP publicado por ANAC en AIP AD 2.2, Suplemento AIRAC A18/2022 (efectivo 14/07/2022). La fila no declara datum/CRS; se convirtió DMS a grados decimales sin reproyección. La ficha oficial nacional consultada 26/11/2026 indica que no opera vuelos comerciales regulares; como no se verificó AIP/MADHEL vigente, el status del aeródromo queda no_verificado."
+    "El nodo del Aeropuerto de General Pico usa el ARP publicado por ANAC en AIP AD 2.2, Suplemento AIRAC A18/2022 (efectivo 14/07/2022). La fila no declara datum/CRS; se convirtió DMS a grados decimales sin reproyección. La ficha oficial nacional consultada 26/11/2026 indica que no opera vuelos comerciales regulares; como no se verificó AIP/MADHEL vigente, el status del aeródromo queda no_verificado.",
+    "El nodo Aeropuerto El Tehuelche (SAVY) usa el ARP publicado por ANAC en AIP Suplemento A 65/2024, identificado como centro geométrico de pista. Se convirtió DMS a grados decimales sin reproyección; el suplemento no declara datum/CRS. El estado de la infraestructura se contrastó con horarios AIP A192/2025 y su inclusión en el grupo de cabotaje C de AIC A13/2026; no se afirma programación ni frecuencia comercial actual."
   ]
 }
