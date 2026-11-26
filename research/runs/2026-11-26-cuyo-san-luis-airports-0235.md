@@ -22,7 +22,7 @@ Se incorporaron dos puntos de referencia aeroportuarios en San Luis, categoría 
    - Fuente de coordenadas: ANAC, Suplemento A 40/2022, AD 2.2.
    - Estado: `operativo`. Argentina.gob.ar documenta su incorporación al SNA y el inicio de vuelos regulares en diciembre de 2022; la transcripción secundaria del AIP AIRAC 01/26 lo identifica como controlado IFR/VFR. No se infiere frecuencia comercial vigente.
 
-En ambos casos el marcador representa el ARP publicado por ANAC, definido como centro geométrico de pista. No representa acceso, centroide del predio ni perímetro. Las tablas de los suplementos no explicitan datum/CRS; se realizó únicamente conversión aritmética de DMS a grados decimales, sin transformación de datum ni reproyección.
+En ambos casos el marcador representa el ARP publicado por ANAC, definido como centro geométrico de pista. Los dos suplementos marcan esa coordenada con asterisco y aclaran «calculado en gabinete»; no se presenta como levantamiento geodésico independiente. No representa acceso, centroide del predio ni perímetro. Las tablas de los suplementos no explicitan datum/CRS; se realizó únicamente conversión aritmética de DMS a grados decimales, sin transformación de datum ni reproyección.
 
 ## Fuentes
 
@@ -49,16 +49,15 @@ En ambos casos el marcador representa el ARP publicado por ANAC, definido como c
 
 ## Archivos y commits
 
-- `data/strategic-nodes.json`: dos nuevos registros. Commit de catálogo: `e260ce88eff0e264d2a71bf4be6c4f85db51f446`.
-- `research/national-map-coverage.json`: matriz recalculada, rotación Cuyo → Centro y pendientes ampliados. Commit de matriz: `9aacb83fddea933897a4931a35413991f83d57b8`.
+- `data/strategic-nodes.json`: dos nuevos registros y precisión metodológica del ARP documentada. Commit de catálogo: `909b58a09da6419796b745b35da6727adebd9521`.
+- `research/national-map-coverage.json`: matriz recalculada, rotación Cuyo → Centro y pendientes ampliados. Commit de matriz: `e6da0067ebba0d437c77a93de7a7c24d56b388da`.
 - `research/runs/2026-11-26-cuyo-san-luis-airports-0235.md`: este registro de investigación.
 
 ## Validación y publicación
 
-- Validación previa: JSON parseado; 90 registros; IDs estables presentes únicos; nombres y coordenadas exactas únicas; categorías y jurisdicciones admitidas; coordenadas dentro del rango argentino; URLs HTTPS; matriz contrastada contra el catálogo.
-- JavaScript de portada sin cambios; se ejecutarán las validaciones del workflow existente tras promover el conjunto a `main`.
-- GitHub Actions y GitHub Pages: pendientes de la ejecución automática asociada al push a `main`. No se declara publicación antes de comprobar ambos jobs.
-- Comprobación independiente de la portada pública: no disponible en esta revisión desde la herramienta web.
+- Validación del primer commit: JSON, matriz y JavaScript aprobados en GitHub Actions #765 (ID 45762849612); jobs `validate` y `deploy` completados con éxito. El despliegue de Pages fue aceptado por el job, pero la portada pública y el JSON no pudieron comprobarse independientemente: el acceso web falló y el entorno de red no resolvió el dominio.
+- Este seguimiento añade la advertencia metodológica «calculado en gabinete» a los dos ARP; el workflow posterior a este commit debe volver a validar el catálogo y el despliegue.
+- No se declara confirmación visual de la publicación mientras la URL pública no pueda verificarse.
 
 ## Próxima prioridad
 
