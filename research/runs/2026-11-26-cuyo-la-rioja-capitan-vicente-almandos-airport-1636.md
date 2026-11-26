@@ -5,8 +5,8 @@
 - Región de rotación: Cuyo.
 - Categoría principal: Aeropuerto.
 - Resultado: 1 nodo nuevo; 0 registros corregidos.
-- Commit del cambio de datos: pendiente de confirmación al crear el commit.
-- GitHub Actions / Pages: pendiente de ejecución.
+- Commit del cambio de datos y pruebas: `803fa4515e93c23efb87a2bb4f8b07c7889ad6ed`.
+- GitHub Actions #819 ([run 45885413764](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45885413764)): `validate: success`, `deploy: success`; GitHub Pages completó el despliegue del commit de datos.
 
 ## 1. Incorporación
 
@@ -70,7 +70,7 @@ No se modificaron `index.html`, módulos regionales ni datasets de otros proyect
 
 ## 5. Commit y publicación
 
-- Commit del cambio de datos y pruebas: pendiente de confirmación.
+- Commit del cambio de datos y pruebas: `803fa4515e93c23efb87a2bb4f8b07c7889ad6ed`.
 - Commit de alineación de `catalogCommit` y cierre de bitácora: pendiente.
-- Workflow de validación y GitHub Pages: pendiente.
-- Inspección independiente de la portada pública: pendiente.
+- Workflow de validación y GitHub Pages: #819, ambos jobs completados con `success`.
+- Inspección independiente de la portada pública: no disponible desde el entorno de verificación; la URL de Pages no resolvió por DNS. El despliegue sí quedó confirmado por el job `deploy`.
