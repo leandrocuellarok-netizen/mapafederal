@@ -563,6 +563,26 @@ jobs:
           covered_jurisdictions = {node["province"] for node in nodes}
           missing_jurisdictions = expected_jurisdictions - covered_jurisdictions
           assert not missing_jurisdictions, f"Faltan jurisdicciones en el catálogo: {sorted(missing_jurisdictions)}"
+          coverage = json.loads(Path("research/national-map-coverage.json").read_text(encoding="utf-8"))
+          assert coverage.get("catalogPath") == "data/strategic-nodes.json"
+          assert coverage.get("nodeCount") == len(nodes)
+          assert coverage.get("jurisdictionCount") == len(expected_jurisdictions)
+          assert set(coverage.get("categories", [])) == allowed_node_types
+          coverage_rows = coverage.get("jurisdictions")
+          assert isinstance(coverage_rows, list) and len(coverage_rows) == 24
+          coverage_names = [row.get("province") for row in coverage_rows]
+          assert set(coverage_names) == expected_jurisdictions and len(coverage_names) == len(set(coverage_names))
+          for row in coverage_rows:
+              expected_counts = {
+                  category: sum(1 for node in nodes if node["province"] == row["province"] and node["type"] == category)
+                  for category in coverage["categories"]
+              }
+              assert row.get("byType") == expected_counts, f"Matriz desactualizada: {row['province']}"
+              assert row.get("total") == sum(expected_counts.values()), f"Total de matriz incorrecto: {row['province']}"
+          assert coverage.get("regionalRotation", {}).get("nextTarget") == "NOA"
+          la_pampa = next(row for row in coverage_rows if row["province"] == "La Pampa")
+          assert la_pampa["total"] == 1 and la_pampa["byType"]["Industria"] == 0
+          print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
           assert isinstance(provincial_data.get("profileYear"), str) and provincial_data["profileYear"].isdigit(), "Falta el año de edición de las fichas complementarias"

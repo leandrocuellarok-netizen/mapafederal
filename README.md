@@ -105,7 +105,7 @@ Editar `data/strategic-nodes.json`. Cada entrada debe conservar esta estructura:
 ```
 
 - `coords` usa el orden latitud, longitud.
-- Tipos usados: Ciudad, Puerto, Aeropuerto, Paso fronterizo, Logística, Industria y Turismo.
+- Tipos usados: Ciudad, Puerto, Aeropuerto, Paso fronterizo, Logística, Industria, Recurso mineral, Turismo y Estación ferroviaria.
 - Agregar una URL institucional o del administrador responsable.
 - Cuando la coordenada provenga de una ficha distinta de la fuente descriptiva, agregar `coordinateSource`; si no existe una referencia exacta, explicitar que el marcador es aproximado.
 - Identificar expresamente las coordenadas aproximadas y no inferir estado operativo.

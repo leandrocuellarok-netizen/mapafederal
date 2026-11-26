@@ -1,0 +1,752 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-25T23:28:18-03:00",
+  "catalogPath": "data/strategic-nodes.json",
+  "catalogCommit": "e2ec24ea2fea6c6fabd5514fbfa8450b3e01989c",
+  "nodeCount": 86,
+  "jurisdictionCount": 24,
+  "categories": [
+    "Ciudad",
+    "Puerto",
+    "Aeropuerto",
+    "Paso fronterizo",
+    "Logística",
+    "Industria",
+    "Recurso mineral",
+    "Turismo",
+    "Estación ferroviaria"
+  ],
+  "regions": [
+    {
+      "name": "NOA",
+      "jurisdictions": [
+        "Catamarca",
+        "Jujuy",
+        "Salta",
+        "Santiago del Estero",
+        "Tucumán"
+      ],
+      "nodeCount": 9,
+      "coveredJurisdictions": 5
+    },
+    {
+      "name": "NEA",
+      "jurisdictions": [
+        "Chaco",
+        "Corrientes",
+        "Formosa",
+        "Misiones"
+      ],
+      "nodeCount": 9,
+      "coveredJurisdictions": 4
+    },
+    {
+      "name": "Cuyo",
+      "jurisdictions": [
+        "La Rioja",
+        "Mendoza",
+        "San Juan",
+        "San Luis"
+      ],
+      "nodeCount": 9,
+      "coveredJurisdictions": 4
+    },
+    {
+      "name": "Centro",
+      "jurisdictions": [
+        "Córdoba",
+        "Entre Ríos",
+        "La Pampa",
+        "Santa Fe"
+      ],
+      "nodeCount": 11,
+      "coveredJurisdictions": 4
+    },
+    {
+      "name": "Patagonia",
+      "jurisdictions": [
+        "Chubut",
+        "Neuquén",
+        "Río Negro",
+        "Santa Cruz",
+        "Tierra del Fuego"
+      ],
+      "nodeCount": 19,
+      "coveredJurisdictions": 5
+    },
+    {
+      "name": "Buenos Aires Province",
+      "jurisdictions": [
+        "Buenos Aires"
+      ],
+      "nodeCount": 26,
+      "coveredJurisdictions": 1
+    },
+    {
+      "name": "CABA",
+      "jurisdictions": [
+        "CABA"
+      ],
+      "nodeCount": 3,
+      "coveredJurisdictions": 1
+    }
+  ],
+  "jurisdictions": [
+    {
+      "province": "CABA",
+      "region": "CABA",
+      "total": 3,
+      "byType": {
+        "Ciudad": 1,
+        "Puerto": 1,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 0,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Paso fronterizo",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Buenos Aires",
+      "region": "Buenos Aires Province",
+      "total": 26,
+      "byType": {
+        "Ciudad": 6,
+        "Puerto": 7,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 0,
+        "Logística": 1,
+        "Industria": 4,
+        "Recurso mineral": 0,
+        "Turismo": 2,
+        "Estación ferroviaria": 5
+      },
+      "missingCategories": [
+        "Paso fronterizo",
+        "Recurso mineral"
+      ]
+    },
+    {
+      "province": "Catamarca",
+      "region": "NOA",
+      "total": 2,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 0,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 1,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Puerto",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Chaco",
+      "region": "NEA",
+      "total": 2,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 1,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 0,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Paso fronterizo",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Chubut",
+      "region": "Patagonia",
+      "total": 4,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 2,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 0,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 1,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Paso fronterizo",
+        "Logística",
+        "Industria",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Córdoba",
+      "region": "Centro",
+      "total": 2,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 0,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 0,
+        "Logística": 0,
+        "Industria": 1,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Puerto",
+        "Paso fronterizo",
+        "Logística",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Corrientes",
+      "region": "NEA",
+      "total": 2,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 1,
+        "Aeropuerto": 0,
+        "Paso fronterizo": 1,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Aeropuerto",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Entre Ríos",
+      "region": "Centro",
+      "total": 3,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 2,
+        "Aeropuerto": 0,
+        "Paso fronterizo": 1,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Aeropuerto",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Formosa",
+      "region": "NEA",
+      "total": 2,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 1,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 0,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Paso fronterizo",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Jujuy",
+      "region": "NOA",
+      "total": 2,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 0,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 1,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Puerto",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "La Pampa",
+      "region": "Centro",
+      "total": 1,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 0,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 0,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Puerto",
+        "Paso fronterizo",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "La Rioja",
+      "region": "Cuyo",
+      "total": 2,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 0,
+        "Aeropuerto": 0,
+        "Paso fronterizo": 1,
+        "Logística": 0,
+        "Industria": 1,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Puerto",
+        "Aeropuerto",
+        "Logística",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Mendoza",
+      "region": "Cuyo",
+      "total": 4,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 0,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 2,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 1,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Puerto",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Misiones",
+      "region": "NEA",
+      "total": 3,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 1,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 0,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 1,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Paso fronterizo",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Neuquén",
+      "region": "Patagonia",
+      "total": 5,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 0,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 2,
+        "Logística": 1,
+        "Industria": 1,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Puerto",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Río Negro",
+      "region": "Patagonia",
+      "total": 3,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 1,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 0,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 1,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Paso fronterizo",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Salta",
+      "region": "NOA",
+      "total": 3,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 0,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 0,
+        "Logística": 0,
+        "Industria": 2,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Puerto",
+        "Paso fronterizo",
+        "Logística",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "San Juan",
+      "region": "Cuyo",
+      "total": 2,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 0,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 1,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Puerto",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "San Luis",
+      "region": "Cuyo",
+      "total": 1,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 0,
+        "Aeropuerto": 0,
+        "Paso fronterizo": 0,
+        "Logística": 0,
+        "Industria": 1,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Puerto",
+        "Aeropuerto",
+        "Paso fronterizo",
+        "Logística",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Santa Cruz",
+      "region": "Patagonia",
+      "total": 5,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 1,
+        "Aeropuerto": 0,
+        "Paso fronterizo": 1,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 2,
+        "Turismo": 1,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Aeropuerto",
+        "Logística",
+        "Industria",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Santa Fe",
+      "region": "Centro",
+      "total": 5,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 3,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 0,
+        "Logística": 0,
+        "Industria": 1,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Paso fronterizo",
+        "Logística",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Santiago del Estero",
+      "region": "NOA",
+      "total": 1,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 0,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 0,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Puerto",
+        "Paso fronterizo",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Tierra del Fuego",
+      "region": "Patagonia",
+      "total": 2,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 1,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 0,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Paso fronterizo",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    },
+    {
+      "province": "Tucumán",
+      "region": "NOA",
+      "total": 1,
+      "byType": {
+        "Ciudad": 0,
+        "Puerto": 0,
+        "Aeropuerto": 1,
+        "Paso fronterizo": 0,
+        "Logística": 0,
+        "Industria": 0,
+        "Recurso mineral": 0,
+        "Turismo": 0,
+        "Estación ferroviaria": 0
+      },
+      "missingCategories": [
+        "Ciudad",
+        "Puerto",
+        "Paso fronterizo",
+        "Logística",
+        "Industria",
+        "Recurso mineral",
+        "Turismo",
+        "Estación ferroviaria"
+      ]
+    }
+  ],
+  "categoryTotals": {
+    "Ciudad": 7,
+    "Puerto": 22,
+    "Aeropuerto": 19,
+    "Paso fronterizo": 11,
+    "Logística": 2,
+    "Industria": 11,
+    "Recurso mineral": 3,
+    "Turismo": 6,
+    "Estación ferroviaria": 5
+  },
+  "leastCoveredJurisdictions": [
+    {
+      "province": "La Pampa",
+      "region": "Centro",
+      "total": 1
+    },
+    {
+      "province": "San Luis",
+      "region": "Cuyo",
+      "total": 1
+    },
+    {
+      "province": "Santiago del Estero",
+      "region": "NOA",
+      "total": 1
+    },
+    {
+      "province": "Tucumán",
+      "region": "NOA",
+      "total": 1
+    }
+  ],
+  "regionalRotation": {
+    "order": [
+      "NOA",
+      "NEA",
+      "Cuyo",
+      "Centro",
+      "Patagonia",
+      "Buenos Aires Province",
+      "CABA"
+    ],
+    "lastTargeted": "Centro",
+    "nextTarget": "NOA",
+    "note": "Agrupación operativa para rotar la investigación; no sustituye regionalizaciones oficiales. La Pampa se revisó por estar entre las jurisdicciones con menor cobertura."
+  },
+  "pendingCandidates": [
+    {
+      "province": "La Pampa",
+      "locality": "General Pico",
+      "category": "Industria",
+      "name": "Parque Industrial General Pico",
+      "decision": "not_added",
+      "reason": "La Ley provincial 530 confirma su creación y vigencia, pero no aporta geometría. El directorio secundario publica una coordenada sin datum/CRS y como punto de referencia; no se incorporó como ubicación exacta.",
+      "sourceUrls": [
+        "https://digesto.tcuentaslp.gob.ar/digesto%20tribunal/Leyes/Ley%20530.html",
+        "https://parquesindustriales.com.ar/parque?id=50881"
+      ]
+    }
+  ],
+  "methodology": [
+    "Los conteos reflejan exclusivamente registros del catálogo nacional data/strategic-nodes.json.",
+    "Una celda con cero significa que no hay un nodo catalogado para esa combinación; no demuestra ausencia territorial de infraestructura.",
+    "Los conteos no miden exhaustividad, calidad geoespacial, estado operativo ni disponibilidad comercial.",
+    "La agrupación regional se usa únicamente para rotar la investigación y no constituye una clasificación geográfica oficial."
+  ]
+}
