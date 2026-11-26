@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T10:36:50-03:00",
+  "generatedAt": "2026-11-26T11:33:38-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "8b43ae5592e59eee61cc348362f8e04373452ec7",
-  "nodeCount": 97,
+  "catalogCommit": "549ad6601bb56d114691c70e720845370dd993f1",
+  "nodeCount": 98,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -71,7 +71,7 @@
         "Santa Cruz",
         "Tierra del Fuego"
       ],
-      "nodeCount": 20,
+      "nodeCount": 21,
       "coveredJurisdictions": 5
     },
     {
@@ -626,14 +626,14 @@
     {
       "province": "Tierra del Fuego",
       "region": "Patagonia",
-      "total": 2,
+      "total": 3,
       "byType": {
         "Ciudad": 0,
         "Puerto": 1,
         "Aeropuerto": 1,
         "Paso fronterizo": 0,
         "Logística": 0,
-        "Industria": 0,
+        "Industria": 1,
         "Recurso mineral": 0,
         "Turismo": 0,
         "Estación ferroviaria": 0
@@ -642,7 +642,6 @@
         "Ciudad",
         "Paso fronterizo",
         "Logística",
-        "Industria",
         "Recurso mineral",
         "Turismo",
         "Estación ferroviaria"
@@ -681,7 +680,7 @@
     "Aeropuerto": 24,
     "Paso fronterizo": 11,
     "Logística": 3,
-    "Industria": 13,
+    "Industria": 14,
     "Recurso mineral": 4,
     "Turismo": 7,
     "Estación ferroviaria": 6
@@ -723,9 +722,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Centro",
-    "nextTarget": "Patagonia",
-    "note": "La ejecución Centro incorporó el Parque Industrial Municipal de Las Higueras (Córdoba), con ubicación general y referencia puntual del inmueble documentadas por fuentes oficiales. El estado de desarrollo se identifica como en construcción con apoyo de una fuente secundaria local del 18/03/2026; no se afirma habilitación definitiva ni operación plena. La próxima rotación continúa por Patagonia."
+    "lastTargeted": "Patagonia",
+    "nextTarget": "Buenos Aires Province",
+    "note": "La ejecución Patagonia incorporó el Parque Industrial de Río Grande (Tierra del Fuego) como nodo de Industria. La Municipalidad informa actividad empresarial en el parque con corte 2024; el estado vigente del padrón no se verificó. La coordenada puntual procede de un directorio sectorial secundario y cae dentro de la extensión oficial IDETDF EPSG:4326, pero la geometría vectorial no pudo recuperarse. No se presenta como acceso, centroide ni perímetro. La próxima región de la rotación es Buenos Aires Province."
   },
   "pendingCandidates": [
     {
@@ -850,6 +849,7 @@
     "El nodo de la cantera fiscal D-6 (Sierras Bayas, Olavarría) usa el centroide geométrico calculado a partir de los cuatro vértices publicados en la Resolución 57-SSMINMPCEITGP-2021. La resolución indica POSGAR 07 pero no la zona; Argentina 5 (EPSG:5347) se infiere por magnitud de coordenadas y ubicación. El centroide representa la parcela de 4,27 ha, no un frente de extracción ni un acceso. La operación actual no está verificada.",
     "El nodo del Aeropuerto Internacional Teniente Benjamín Matienzo (Tucumán) fue corregido con la coordenada geográfica publicada por ANAC para SANT (26°50'18\\\"S, 065°06'16\\\"W), convertida de DMS a grados decimales sin reproyección. El suplemento AIP A39/2026 actualiza el plano y las normas de movimiento en plataforma comercial. El datum/CRS no se explicita en el suplemento; no se atribuye EPSG ni precisión geodésica. La condición operativa se refiere a infraestructura y procedimientos aeroportuarios publicados, no a frecuencias de vuelos comerciales ni NOTAM en tiempo real.",
     "El nodo del Parque Nacional El Leoncito usa la coordenada geográfica 31°53'22''S 69°15'54''O publicada por IGN para el área protegida. Se convirtió DMS a grados decimales sin transformación de datum ni reproyección. La tabla IGN no define si el punto corresponde a acceso, centroide o punto interno; por eso el marcador se identifica solo como referencia cartográfica y no como acceso ni perímetro. APN documenta horarios estacionales, senderos y actividades de visita.",
-    "El Parque Industrial Municipal de Las Higueras (Córdoba) se incorporó con una coordenada geográfica publicada por AABE para el inmueble CIE 1400003161/18. El anexo de la Resolución 218/2022 advierte que el croquis es ilustrativo y no aporta polígono ni datum/CRS; el punto se usa solo como referencia del inmueble, sin presentarlo como acceso, centroide certificado ni perímetro. La Ordenanza municipal 45/2023 identifica parcelas y ubicación; la Ordenanza 216/2025 y una fuente secundaria local del 18/03/2026 documentan el desarrollo y las obras, sin acreditar habilitación definitiva ni operación plena."
+    "El Parque Industrial Municipal de Las Higueras (Córdoba) se incorporó con una coordenada geográfica publicada por AABE para el inmueble CIE 1400003161/18. El anexo de la Resolución 218/2022 advierte que el croquis es ilustrativo y no aporta polígono ni datum/CRS; el punto se usa solo como referencia del inmueble, sin presentarlo como acceso, centroide certificado ni perímetro. La Ordenanza municipal 45/2023 identifica parcelas y ubicación; la Ordenanza 216/2025 y una fuente secundaria local del 18/03/2026 documentan el desarrollo y las obras, sin acreditar habilitación definitiva ni operación plena.",
+    "El Parque Industrial de Río Grande (Tierra del Fuego) se incorporó con una coordenada publicada por un directorio sectorial secundario. El punto cae dentro de la extensión geográfica de la capa oficial IDETDF «Parque Industrial» (edición 2025, EPSG:4326), cuyo linaje declara datos extraídos de la base IGN y complementados por IDETDF. La descarga WFS/ZIP agotó el tiempo de espera y no se inspeccionó la geometría; por ello no se asigna CRS al punto secundario ni se representa acceso, centroide, perímetro o lote específico. La Municipalidad de Río Grande informa aproximadamente 102 empresas en operación y 15 en construcción para 2024; el estado vigente del padrón queda no_verificado."
   ]
 }

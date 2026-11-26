@@ -622,6 +622,17 @@ jobs:
           assert tehuelche["coords"] == [-42.75916667, -65.10277778]
           assert tehuelche["coordinateSource"].endswith("sup-663d2d7f10036")
           assert tehuelche["coordinateReferenceSystem"].startswith("No declarado")
+          rio_grande = next((node for node in nodes if node.get("id") == "tierra-del-fuego-parque-industrial-rio-grande"), None)
+          assert rio_grande is not None and rio_grande["province"] == "Tierra del Fuego" and rio_grande["type"] == "Industria"
+          assert rio_grande["status"] == "no_verificado"
+          assert rio_grande["coords"] == [-53.801118, -67.741510]
+          assert rio_grande["coordinateSource"] == "https://parquesindustriales.com.ar/parque?id=53955"
+          assert rio_grande["coordinateReferenceSystem"].startswith("No declarado")
+          assert "IDETDF" in rio_grande["coordinateQuality"] and "no representa acceso" in rio_grande["coordinateQuality"].lower()
+          assert -53.80682039 <= rio_grande["coords"][0] <= -53.79380794
+          assert -67.74924058 <= rio_grande["coords"][1] <= -67.72373435
+          tierra_del_fuego = next(row for row in coverage_rows if row["province"] == "Tierra del Fuego")
+          assert tierra_del_fuego["total"] == 3 and tierra_del_fuego["byType"]["Industria"] == 1
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
