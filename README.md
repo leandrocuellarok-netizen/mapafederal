@@ -109,6 +109,7 @@ Editar `data/strategic-nodes.json`. Cada entrada debe conservar esta estructura:
 - `id` es obligatorio para cada alta nueva y debe ser estable, único y estar en `kebab-case`.
 - `coords` usa el orden latitud, longitud.
 - Tipos usados: Ciudad, Puerto, Aeropuerto, Paso fronterizo, Logística, Industria, Recurso mineral, Turismo y Estación ferroviaria.
+- `Paso fronterizo` se reserva para cruces terrestres o fluviales con contraparte internacional; los aeropuertos se registran en `Aeropuerto`. La matriz usa `notApplicableCategories` solo cuando la jurisdicción no tiene frontera terrestre o fluvial internacional.
 - Agregar una URL institucional o del administrador responsable.
 - Cuando la coordenada provenga de una ficha distinta de la fuente descriptiva, agregar `coordinateSource`; si no existe una referencia exacta, explicitar que el marcador es aproximado.
 - Identificar expresamente la calidad y semántica de la coordenada; no presentar un punto de referencia como acceso, centroide o perímetro si la fuente no lo acredita.

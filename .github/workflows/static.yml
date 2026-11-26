@@ -640,10 +640,17 @@ jobs:
           assert ciervo["coordinateReferenceSystem"].startswith("Coordenadas geográficas") and "no se presenta como acceso" in ciervo["coordinateQuality"].lower()
           buenos_aires = next(row for row in coverage_rows if row["province"] == "Buenos Aires")
           assert buenos_aires["total"] == 28 and buenos_aires["byType"]["Turismo"] == 3
-          assert "Paso fronterizo" in buenos_aires.get("notApplicableCategories", []) and "Paso fronterizo" not in buenos_aires["missingCategories"]
+          assert "Paso fronterizo" in buenos_aires["missingCategories"]
+          assert "Paso fronterizo" not in buenos_aires.get("notApplicableCategories", [])
           caba = next(row for row in coverage_rows if row["province"] == "CABA")
-          assert "Paso fronterizo" in caba.get("notApplicableCategories", [])
-          assert coverage["regionalRotation"]["lastTargeted"] == "Buenos Aires Province" and coverage["regionalRotation"]["nextTarget"] == "CABA"
+          assert "Paso fronterizo" in caba["missingCategories"]
+          assert "Paso fronterizo" not in caba.get("notApplicableCategories", [])
+          inland_without_international_border = {"Córdoba", "La Pampa", "San Luis", "Santa Fe", "Santiago del Estero", "Tucumán"}
+          for province in inland_without_international_border:
+              row = next(item for item in coverage_rows if item["province"] == province)
+              assert "Paso fronterizo" in row.get("notApplicableCategories", [])
+              assert "Paso fronterizo" not in row["missingCategories"]
+          assert coverage["regionalRotation"]["lastTargeted"] == "CABA" and coverage["regionalRotation"]["nextTarget"] == "NOA"
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"

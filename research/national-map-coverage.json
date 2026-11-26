@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T12:37:42-03:00",
+  "generatedAt": "2026-11-26T13:37:14-03:00",
   "catalogPath": "data/strategic-nodes.json",
   "catalogCommit": "78aee6ba74d51adfd342ddc6a152a0f91b7b2759",
   "nodeCount": 99,
@@ -108,13 +108,11 @@
         "Estación ferroviaria": 1
       },
       "missingCategories": [
+        "Paso fronterizo",
         "Logística",
         "Industria",
         "Recurso mineral",
         "Turismo"
-      ],
-      "notApplicableCategories": [
-        "Paso fronterizo"
       ]
     },
     {
@@ -132,8 +130,7 @@
         "Turismo": 3,
         "Estación ferroviaria": 5
       },
-      "missingCategories": [],
-      "notApplicableCategories": [
+      "missingCategories": [
         "Paso fronterizo"
       ]
     },
@@ -228,11 +225,13 @@
       "missingCategories": [
         "Ciudad",
         "Puerto",
-        "Paso fronterizo",
         "Logística",
         "Recurso mineral",
         "Turismo",
         "Estación ferroviaria"
+      ],
+      "notApplicableCategories": [
+        "Paso fronterizo"
       ]
     },
     {
@@ -352,12 +351,14 @@
       "missingCategories": [
         "Ciudad",
         "Puerto",
-        "Paso fronterizo",
         "Logística",
         "Industria",
         "Recurso mineral",
         "Turismo",
         "Estación ferroviaria"
+      ],
+      "notApplicableCategories": [
+        "Paso fronterizo"
       ]
     },
     {
@@ -547,11 +548,13 @@
       "missingCategories": [
         "Ciudad",
         "Puerto",
-        "Paso fronterizo",
         "Logística",
         "Recurso mineral",
         "Turismo",
         "Estación ferroviaria"
+      ],
+      "notApplicableCategories": [
+        "Paso fronterizo"
       ]
     },
     {
@@ -594,11 +597,13 @@
       },
       "missingCategories": [
         "Ciudad",
-        "Paso fronterizo",
         "Logística",
         "Recurso mineral",
         "Turismo",
         "Estación ferroviaria"
+      ],
+      "notApplicableCategories": [
+        "Paso fronterizo"
       ]
     },
     {
@@ -619,11 +624,13 @@
       "missingCategories": [
         "Ciudad",
         "Puerto",
-        "Paso fronterizo",
         "Industria",
         "Recurso mineral",
         "Turismo",
         "Estación ferroviaria"
+      ],
+      "notApplicableCategories": [
+        "Paso fronterizo"
       ]
     },
     {
@@ -668,12 +675,14 @@
       "missingCategories": [
         "Ciudad",
         "Puerto",
-        "Paso fronterizo",
         "Logística",
         "Industria",
         "Recurso mineral",
         "Turismo",
         "Estación ferroviaria"
+      ],
+      "notApplicableCategories": [
+        "Paso fronterizo"
       ]
     }
   ],
@@ -725,9 +734,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Buenos Aires Province",
-    "nextTarget": "CABA",
-    "note": "La ejecución Buenos Aires Province incorporó el Parque Nacional Ciervo de los Pantanos (Campana) en Turismo. SIB/APN publica la ubicación geográfica -34.23450, -58.87724; la ficha no define si es acceso, centroide o punto interno, por lo que se registra solo como referencia cartográfica. APN publica horarios de visita, sin verificación en tiempo real. La categoría Paso fronterizo se marca no aplicable para Buenos Aires y CABA por no tener frontera terrestre internacional; queda pendiente revisar la aplicabilidad de esta categoría en otras jurisdicciones."
+    "lastTargeted": "CABA",
+    "nextTarget": "NOA",
+    "note": "La ejecución CABA realizó una auditoría de aplicabilidad de la categoría Paso fronterizo y no incorporó nodos por falta de geometrías puntuales vigentes. La Dirección Nacional de Migraciones incluye las terminales portuarias Buquebus y Colonia Express y la Terminal de Cruceros Quinquela Martín entre las vías de ingreso/egreso del Área Metropolitana; una ficha oficial de 2025 sitúa Buquebus en Puerto Madero (CABA). Argentina.gob.ar identifica además dos pasos internacionales fluviales de la Provincia de Buenos Aires: Puerto Guazú-Guazucito–Carmelo y Puerto Martín García–Carmelo. Por ello Paso fronterizo es aplicable en CABA y Buenos Aires y permanece como brecha de coordenadas, no como categoría no aplicable. Para esta matriz, la categoría comprende cruces terrestres o fluviales con contraparte internacional; los aeropuertos se contabilizan en Aeropuerto. Se marca no aplicable en Córdoba, La Pampa, San Luis, Santa Fe, Santiago del Estero y Tucumán, que no tienen frontera terrestre ni fluvial internacional. Se investigó también la parada del Bus Turístico asociada a Reserva Ecológica; no se incorporó porque la ficha GeoJSON oficial fue modificada el 13/11/2026 y no pudo verificarse la geometría de la versión vigente; la coordenada visible en una vista previa anterior no se reutilizó."
   },
   "pendingCandidates": [
     {
@@ -849,6 +858,42 @@
       "sourceUrls": [
         "https://sib.gob.ar/areas-protegidas/parque-nacional-campos-del-tuyu",
         "https://www.argentina.gob.ar/noticias/larsen-recorrio-el-parque-nacional-campos-del-tuyu-que-prepara-la-apertura-de-uso-publico"
+      ]
+    },
+    {
+      "province": "CABA",
+      "locality": "Puerto Madero",
+      "category": "Paso fronterizo",
+      "name": "Terminal Portuaria Buquebus",
+      "decision": "not_added",
+      "reason": "La Dirección Nacional de Migraciones incluye la Terminal Portuaria de Buquebus entre las vías de ingreso/egreso del Área Metropolitana; Argentina.gob.ar confirma su ubicación en Puerto Madero, CABA. La fuente consultada no publica coordenadas puntuales atribuibles de la terminal. No se geocodificó el domicilio ni se reutilizó el marcador general del Puerto de Buenos Aires.",
+      "sourceUrls": [
+        "https://www.argentina.gob.ar/migraciones/pasos-internacionales",
+        "https://www.argentina.gob.ar/noticias/el-gobierno-nacional-inauguro-un-centro-integral-de-documentacion-en-la-terminal-de"
+      ]
+    },
+    {
+      "province": "CABA",
+      "locality": "Puerto Madero",
+      "category": "Turismo",
+      "name": "Parada 07 Reserva Ecológica (principal) — Bus Turístico",
+      "decision": "not_added",
+      "reason": "Una vista previa GeoJSON anterior muestra la feature id=17, punto CRS84 en -58.356996687129474, -34.616277328065124, dirección Av. Dr. Tristán Achával Rodríguez 1500. La ficha oficial del recurso informa una modificación posterior, el 13/11/2026, y la vista previa/descarga vigente no permitió verificar que la geometría siga igual. Se conserva como candidato; no se copia una coordenada de una versión anterior no revalidada.",
+      "sourceUrls": [
+        "https://data.buenosaires.gob.ar/dataset/bus-turistico/resource/ad2915b2-9f43-4fbe-b4ec-b425e989f339",
+        "https://turismo.buenosaires.gob.ar/es/article/que-hacer-esta-semana"
+      ]
+    },
+    {
+      "province": "Buenos Aires",
+      "locality": "Río de la Plata / conexión con Uruguay",
+      "category": "Paso fronterizo",
+      "name": "Puerto Guazú-Guazucito–Carmelo y Puerto Martín García–Carmelo",
+      "decision": "not_added",
+      "reason": "Argentina.gob.ar identifica expresamente dos pasos internacionales fluviales que conectan la Provincia de Buenos Aires con Uruguay. La ficha consultada nombra los pasos, pero no aporta coordenadas puntuales ni geometrías de las terminales; no se geocodificó desde los nombres.",
+      "sourceUrls": [
+        "https://www.argentina.gob.ar/node/216042",
+        "https://www.argentina.gob.ar/migraciones/pasos-internacionales"
       ]
     }
   ],
