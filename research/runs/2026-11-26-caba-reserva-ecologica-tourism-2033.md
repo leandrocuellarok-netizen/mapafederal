@@ -64,8 +64,10 @@ No se agregaron puntos de Paso fronterizo: ANPyN publica una coordenada general 
 - Validación de esta incorporación: pendiente de Actions.
 - Commit de catálogo y documentación: `3ec915af721bafb723d9c4f35db793a3968e2630`.
 - GitHub Actions #831, asociado al commit de catálogo: falló en una aserción del nuevo test por un error de mayúsculas en el literal `feature geojson id=17`; el job `deploy` fue omitido. La geometría y el registro no fueron rechazados por las validaciones generales; el fallo fue el texto de la prueba.
-- Corrección del test y sincronización de `catalogCommit`: commit en curso.
-- GitHub Actions y Pages posteriores a la corrección: pendientes.
+- Commit correctivo y de sincronización de `catalogCommit`: `50341e8057d52c3ef59d09f7a8b84432d18bed43`.
+- GitHub Actions #832, asociado al commit correctivo: jobs `validate` y `deploy` completados con éxito. [Ejecución #832](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45912119705).
+- GitHub Pages: despliegue confirmado por el job `Deploy to GitHub Pages` de #832.
+- La inspección independiente de la portada y del JSON publicado no pudo completarse: el entorno de verificación no pudo acceder al dominio de GitHub Pages. No se declara comprobación visual.
 - Inspección visual independiente de la portada: no disponible al momento de redactar este registro.
 
 ## Brechas no resueltas
