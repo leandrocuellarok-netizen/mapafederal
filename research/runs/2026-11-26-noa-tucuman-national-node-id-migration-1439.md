@@ -74,3 +74,9 @@ La inspección independiente de la portada pública fue intentada, pero el clien
 ## 6. Próxima prioridad
 
 NEA, comenzando por Formosa o Misiones según la matriz vigente. Priorizar una combinación provincia/categoría vacante y exigir la geometría o coordenada puntual de la fuente antes de insertar.
+
+## 7. Incidencia de validación y corrección
+
+GitHub Actions #812 (run ID 45869759176), sobre el commit `374ddbdc36352dd4fd5618ff59dab0171c72b056`, falló en `Validate geographic and editorial JSON`. La causa fue una aserción histórica que fijaba la rotación en `CABA → NOA`, aunque el propio validador ya comprobaba dinámicamente el orden regional y la matriz se había actualizado correctamente a `NOA → NEA`. No fallaron las comprobaciones de IDs, JSON ni coordenadas; el despliegue de Pages fue omitido por la dependencia del job.
+
+Se eliminó la aserción duplicada y obsoleta. La prueba dinámica existente sigue verificando que `nextTarget` sea la región siguiente a `lastTargeted` según el orden declarado. La validación y el despliegue del commit correctivo quedan sujetos a la nueva ejecución de Actions.

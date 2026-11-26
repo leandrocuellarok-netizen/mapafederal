@@ -649,7 +649,6 @@ jobs:
               row = next(item for item in coverage_rows if item["province"] == province)
               assert "Paso fronterizo" in row.get("notApplicableCategories", [])
               assert "Paso fronterizo" not in row["missingCategories"]
-          assert coverage["regionalRotation"]["lastTargeted"] == "CABA" and coverage["regionalRotation"]["nextTarget"] == "NOA"
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
