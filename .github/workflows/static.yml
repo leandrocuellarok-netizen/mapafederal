@@ -687,7 +687,7 @@ jobs:
           assert tigre["coordinateSource"] == "https://mapcarta.com/es/W269888419"
           assert "referencia secundaria" in tigre["coordinateQuality"].lower()
           assert "particulares y deportivas" in tigre["administrativeStatus"].lower()
-          assert "no se afirma un servicio internacional comercial regular" in tigre["verification"]["scope"].lower()
+          assert "no se verificó servicio internacional comercial regular" in tigre["verification"]["scope"].lower()
           buenos_aires = next(row for row in coverage_rows if row["province"] == "Buenos Aires")
           assert buenos_aires["total"] == 29 and buenos_aires["byType"]["Turismo"] == 3 and buenos_aires["byType"]["Paso fronterizo"] == 1
           assert "Paso fronterizo" not in buenos_aires["missingCategories"]
