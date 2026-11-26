@@ -1,0 +1,1436 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-25",
+  "province": "Provincia de Buenos Aires",
+  "municipalityCount": 135,
+  "electoralSectionCount": 8,
+  "description": "Directorio bonaerense organizado por sección electoral y municipio. Intendencia y signo político solo se completan con verificación documental vigente.",
+  "sources": [
+    {
+      "name": "Junta Electoral PBA — Boletín Oficial, 9 de abril de 2025, distritos y secciones electorales",
+      "url": "https://boletinoficial.gba.gob.ar/secciones/13411/ver",
+      "checkedAt": "2026-11-25"
+    },
+    {
+      "name": "Datos Abiertos PBA — Secciones electorales, IDEBA / IGN",
+      "url": "https://catalogo.datos.gba.gob.ar/sl/dataset/secciones-electorales",
+      "checkedAt": "2026-11-25"
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-1",
+      "name": "Primera",
+      "number": 1,
+      "label": "Sección Primera",
+      "municipalities": [
+        {
+          "name": "Campana",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Escobar",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General Las Heras",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General Rodríguez",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General San Martín",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Hurlingham",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Ituzaingó",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "José C. Paz",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Luján",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Malvinas Argentinas",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Marcos Paz",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Mercedes",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Merlo",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Moreno",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Morón",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Navarro",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Pilar",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "San Fernando",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "San Isidro",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "San Miguel",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Suipacha",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Tigre",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Tres de Febrero",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Vicente López",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "name": "Segunda",
+      "number": 2,
+      "label": "Sección Segunda",
+      "municipalities": [
+        {
+          "name": "Baradero",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Arrecifes",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Capitán Sarmiento",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Carmen de Areco",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Colón",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Exaltación de la Cruz",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Pergamino",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Ramallo",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Rojas",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Salto",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "San Andrés de Giles",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "San Antonio de Areco",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "San Nicolás",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "San Pedro",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Zárate",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "name": "Tercera",
+      "number": 3,
+      "label": "Sección Tercera",
+      "municipalities": [
+        {
+          "name": "Almirante Brown",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Avellaneda",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Berazategui",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Berisso",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Brandsen",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Cañuelas",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Ensenada",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Esteban Echeverría",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Florencio Varela",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "La Matanza",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Lanús",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Lobos",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Lomas de Zamora",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Magdalena",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Quilmes",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "San Vicente",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Presidente Perón",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Punta Indio",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Ezeiza",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "name": "Cuarta",
+      "number": 4,
+      "label": "Sección Cuarta",
+      "municipalities": [
+        {
+          "name": "Alberti",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Bragado",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Carlos Casares",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Carlos Tejedor",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Chacabuco",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Chivilcoy",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General Arenales",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General Pinto",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General Viamonte",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General Villegas",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Hipólito Yrigoyen",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Junín",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Leandro N. Alem",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Lincoln",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Nueve de Julio",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Pehuajó",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Rivadavia",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Trenque Lauquen",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Florentino Ameghino",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        }
+      ]
+    },
+    {
+      "id": "section-5",
+      "name": "Quinta",
+      "number": 5,
+      "label": "Sección Quinta",
+      "municipalities": [
+        {
+          "name": "Ayacucho",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Balcarce",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Castelli",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Chascomús",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Dolores",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General Alvarado",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General Belgrano",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General Guido",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General Lavalle",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General Madariaga",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General Paz",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General Pueyrredón",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Las Flores",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Lobería",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Maipú",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Mar Chiquita",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Monte",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Necochea",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Pila",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Pinamar",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Rauch",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "San Cayetano",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Tandil",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Tordillo",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "La Costa",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Villa Gesell",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Lezama",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        }
+      ]
+    },
+    {
+      "id": "section-6",
+      "name": "Sexta",
+      "number": 6,
+      "label": "Sección Sexta",
+      "municipalities": [
+        {
+          "name": "Adolfo Alsina",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Bahía Blanca",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Patagones",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Coronel Dorrego",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Coronel Pringles",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Coronel de Marina Leonardo Rosales",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Coronel Suárez",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Daireaux",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General La Madrid",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Adolfo Gonzales Chaves",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Guaminí",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Benito Juárez",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Laprida",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Pellegrini",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Puan",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Saavedra",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Salliqueló",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Tornquist",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Tres Arroyos",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Monte Hermoso",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Villarino",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Tres Lomas",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        }
+      ]
+    },
+    {
+      "id": "section-7",
+      "name": "Séptima",
+      "number": 7,
+      "label": "Sección Séptima",
+      "municipalities": [
+        {
+          "name": "Azul",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Bolívar",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "General Alvear",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Olavarría",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Roque Pérez",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Saladillo",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Tapalqué",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        },
+        {
+          "name": "Veinticinco de Mayo",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        }
+      ]
+    },
+    {
+      "id": "section-8",
+      "name": "Octava / Capital",
+      "number": 8,
+      "label": "Octava / Capital",
+      "municipalities": [
+        {
+          "name": "La Plata",
+          "intendantName": null,
+          "politicalSign": null,
+          "coalition": null,
+          "governmentPeriod": "2023-2027",
+          "verificationStatus": "pending",
+          "verifiedAt": null,
+          "sourceUrl": null
+        }
+      ]
+    }
+  ]
+}
