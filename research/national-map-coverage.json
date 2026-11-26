@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T07:39:05-03:00",
+  "generatedAt": "2026-11-26T08:33:35-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "23ef3895373a44b7a7f8755265a85bc02ad63288",
-  "nodeCount": 94,
+  "catalogCommit": "22272548d09d715793386afdeecaa635652b062f",
+  "nodeCount": 95,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -37,7 +37,7 @@
         "Formosa",
         "Misiones"
       ],
-      "nodeCount": 10,
+      "nodeCount": 11,
       "coveredJurisdictions": 4
     },
     {
@@ -235,11 +235,11 @@
     {
       "province": "Corrientes",
       "region": "NEA",
-      "total": 2,
+      "total": 3,
       "byType": {
         "Ciudad": 0,
         "Puerto": 1,
-        "Aeropuerto": 0,
+        "Aeropuerto": 1,
         "Paso fronterizo": 1,
         "Logística": 0,
         "Industria": 0,
@@ -249,7 +249,6 @@
       },
       "missingCategories": [
         "Ciudad",
-        "Aeropuerto",
         "Logística",
         "Industria",
         "Recurso mineral",
@@ -680,7 +679,7 @@
   "categoryTotals": {
     "Ciudad": 7,
     "Puerto": 22,
-    "Aeropuerto": 23,
+    "Aeropuerto": 24,
     "Paso fronterizo": 11,
     "Logística": 3,
     "Industria": 12,
@@ -705,13 +704,13 @@
       "total": 2
     },
     {
-      "province": "Corrientes",
+      "province": "Formosa",
       "region": "NEA",
       "total": 2
     },
     {
-      "province": "Formosa",
-      "region": "NEA",
+      "province": "Jujuy",
+      "region": "NOA",
       "total": 2
     }
   ],
@@ -725,9 +724,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NOA",
-    "nextTarget": "NEA",
-    "note": "La ejecución NOA corrigió la coordenada referencial del único nodo de Tucumán con la coordenada geográfica publicada por ANAC para el aeródromo SANT. No se incorporó un nodo nuevo en las categorías vacantes: la capa provincial RIDES de parques industriales ofrece KML/SHP, pero sus geometrías y metadatos CRS no pudieron inspeccionarse en esta ejecución. La próxima rotación continúa por NEA y deberá priorizar una combinación provincia/categoría poco cubierta con geometría o coordenadas verificables."
+    "lastTargeted": "NEA",
+    "nextTarget": "Cuyo",
+    "note": "La ejecución NEA incorporó el Aeropuerto Internacional Doctor Fernando Piragine Niveyro en Corrientes, con ARP publicado por ANAC en el Suplemento AIP A30/2024 y estado contrastado con la transcripción secundaria del AIP AIRAC 01/26. La portada ya consume el catálogo y mantiene el filtro Aeropuerto. La próxima rotación continúa por Cuyo; priorizar provincias/categorías con menos nodos y exigir coordenadas atribuibles."
   },
   "pendingCandidates": [
     {
