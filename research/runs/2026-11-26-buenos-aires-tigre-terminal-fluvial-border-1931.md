@@ -3,6 +3,7 @@
 - Fecha y hora de verificación: 2026-11-26T19:31:27-03:00 (ART).
 - Rama de trabajo: `automation/2026-11-26-buenos-aires-tigre-border`.
 - HEAD de trabajo antes de esta bitácora: `621af6d6584aefe9ce394151208308ea8cb821c4`.
+- PR #9 integrado en `main` mediante merge commit [`e915b2d`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/e915b2d5acc342d2a05cce86b84b87cbd7ec81be).
 - Región trabajada: Buenos Aires Province. Próxima región de la rotación: CABA.
 - Alcance: mapa nacional de portada `index.html`, catálogo `data/strategic-nodes.json`, 24 jurisdicciones y nueve categorías existentes.
 
@@ -74,9 +75,9 @@ Commits:
 ## Integración y publicación
 
 - `index.html` no se modificó: la portada carga `./data/strategic-nodes.json` mediante `loadPoints()`, valida coordenadas dentro del rango nacional y genera el directorio/filtros desde el catálogo.
-- Estado de GitHub Actions: pendiente de merge a `main`.
-- Estado de GitHub Pages: pendiente de la ejecución de Actions posterior al merge.
-- Inspección visual independiente de la portada: pendiente; no se declara visualización del nuevo marcador.
+- PR #9: integrado en `main`; merge commit [`e915b2d`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/e915b2d5acc342d2a05cce86b84b87cbd7ec81be).
+- GitHub Actions: las consultas de estados combinados y ejecuciones por commit no devolvieron resultados para el merge ni para el commit de cierre documental. No se pudo confirmar `validate` ni `Deploy to GitHub Pages`; no se declara despliegue.
+- GitHub Pages: la portada y el JSON publicados no respondieron a la comprobación independiente del entorno. No se declara visualización ni publicación del nuevo marcador.
 
 ## Brechas pendientes
 
