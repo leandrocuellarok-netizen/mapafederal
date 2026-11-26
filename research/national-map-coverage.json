@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T00:36:52-03:00",
+  "generatedAt": "2026-11-26T01:33:16-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "026e9bfbe1cf412441dd725a1bc11065b2a7f04a",
-  "nodeCount": 87,
+  "catalogCommit": "2b4947d7e1a431a6a609ca9900c0e4aa46577e2a",
+  "nodeCount": 88,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -37,7 +37,7 @@
         "Formosa",
         "Misiones"
       ],
-      "nodeCount": 9,
+      "nodeCount": 10,
       "coveredJurisdictions": 4
     },
     {
@@ -164,14 +164,14 @@
     {
       "province": "Chaco",
       "region": "NEA",
-      "total": 2,
+      "total": 3,
       "byType": {
         "Ciudad": 0,
         "Puerto": 1,
         "Aeropuerto": 1,
         "Paso fronterizo": 0,
         "Logística": 0,
-        "Industria": 0,
+        "Industria": 1,
         "Recurso mineral": 0,
         "Turismo": 0,
         "Estación ferroviaria": 0
@@ -180,7 +180,6 @@
         "Ciudad",
         "Paso fronterizo",
         "Logística",
-        "Industria",
         "Recurso mineral",
         "Turismo",
         "Estación ferroviaria"
@@ -687,7 +686,7 @@
     "Aeropuerto": 19,
     "Paso fronterizo": 11,
     "Logística": 3,
-    "Industria": 11,
+    "Industria": 12,
     "Recurso mineral": 3,
     "Turismo": 6,
     "Estación ferroviaria": 5
@@ -719,9 +718,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NOA",
-    "nextTarget": "NEA",
-    "note": "Agrupación operativa para rotar la investigación; no sustituye regionalizaciones oficiales. En este ciclo se verificó un nodo logístico de Santiago del Estero; la siguiente región es NEA."
+    "lastTargeted": "NEA",
+    "nextTarget": "Cuyo",
+    "note": "Agrupación operativa para rotar la investigación; no sustituye regionalizaciones oficiales. En este ciclo se incorporó un punto de referencia del Parque Industrial Provincial Puerto Tirol (Chaco), en la categoría Industria; la próxima región es Cuyo."
   },
   "pendingCandidates": [
     {
@@ -748,6 +747,18 @@
         "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-3783-2015-248900/texto",
         "https://parquesindustriales.com.ar/parque?id=62662"
       ]
+    },
+    {
+      "province": "Chaco",
+      "locality": "Puerto Tirol",
+      "category": "Logística",
+      "name": "Nexo Capital — Centro Logístico Industrial",
+      "decision": "not_added",
+      "reason": "El Gobierno del Chaco lo ubica sobre la RN 16, km 24, en jurisdicción de Puerto Tirol, e informa su inauguración en 2025. La fuente no publica coordenadas ni geometría del predio; no se deriva un marcador desde el kilometraje vial ni se reutiliza la coordenada general del parque industrial.",
+      "sourceUrls": [
+        "https://chaco.gob.ar/noticia-el-gobernador-zdero-acompano-la-inauguracion-del-parque-industrial-y-logistico-nexo-capital-y-entrego-creditos-por-mas-de-300-millones-2025-09-02-16-40",
+        "https://produccion.chaco.gob.ar/2025/09/02/dia-de-la-industria-creditos-chacoindustria-e-inauguracion-de-centro-logistico/"
+      ]
     }
   ],
   "methodology": [
@@ -755,6 +766,7 @@
     "Una celda con cero significa que no hay un nodo catalogado para esa combinación; no demuestra ausencia territorial de infraestructura.",
     "Los conteos no miden exhaustividad, calidad geoespacial, estado operativo ni disponibilidad comercial.",
     "La agrupación regional se usa únicamente para rotar la investigación y no constituye una clasificación geográfica oficial.",
-    "El nodo logístico de La Banda usa el vértice A del polígono legal publicado en la RG AFIP 3783/2015. La fuente no declara CRS/datum; solo se convirtió DMS a grados decimales, sin transformación. El marcador se identifica como vértice, no como acceso ni centro del predio."
+    "El nodo logístico de La Banda usa el vértice A del polígono legal publicado en la RG AFIP 3783/2015. La fuente no declara CRS/datum; solo se convirtió DMS a grados decimales, sin transformación. El marcador se identifica como vértice, no como acceso ni centro del predio.",
+    "El punto del Parque Industrial Provincial Puerto Tirol usa una coordenada de referencia publicada en una tesis de la UNNE (2020), basada en Google Earth Pro. La tesis no especifica CRS/datum; se convirtió DMS a grados decimales sin reproyección. No representa perímetro parcelario ni acceso."
   ]
 }
