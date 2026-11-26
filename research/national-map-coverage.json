@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T06:32:06-03:00",
+  "generatedAt": "2026-11-26T07:36:26-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "51016bb52645eacb2b17710124906745a5064d66",
+  "catalogCommit": "0e5ce749949f8d403c98b0aadb2354a90567ba3c",
   "nodeCount": 94,
   "jurisdictionCount": 24,
   "categories": [
@@ -725,9 +725,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "CABA",
-    "nextTarget": "NOA",
-    "note": "En esta ejecución se incorporó la Estación Retiro de la línea Mitre, ramal Retiro–Tigre, con coordenadas del GeoJSON oficial del GCBA en CRS84 y estado del servicio contrastado con el aviso de Trenes Argentinos del 24/11/2026. La próxima rotación vuelve al NOA; priorizar jurisdicciones y categorías con menor cobertura, empezando por Tucumán."
+    "lastTargeted": "NOA",
+    "nextTarget": "NEA",
+    "note": "La ejecución NOA corrigió la coordenada referencial del único nodo de Tucumán con la coordenada geográfica publicada por ANAC para el aeródromo SANT. No se incorporó un nodo nuevo en las categorías vacantes: la capa provincial RIDES de parques industriales ofrece KML/SHP, pero sus geometrías y metadatos CRS no pudieron inspeccionarse en esta ejecución. La próxima rotación continúa por NEA y deberá priorizar una combinación provincia/categoría poco cubierta con geometría o coordenadas verificables."
   },
   "pendingCandidates": [
     {
@@ -802,6 +802,18 @@
         "https://www.argentina.gob.ar/node/154173",
         "https://noticias.chubut.gob.ar/notas/turismo/5310/los-pinguinos-de-magallanes-llegan-a-chubut-para-brindar-uno-de-los-grandes-espectaculos-de-la-fauna-patagonica.html"
       ]
+    },
+    {
+      "province": "Tucumán",
+      "category": "Industria",
+      "name": "Capa provincial RIDES — Parques industriales (KML/SHP, 11/08/2025)",
+      "decision": "not_added",
+      "reason": "RIDES publica una capa provincial descargable en KML y SHP, pero en esta ejecución no fue posible inspeccionar el contenido de los archivos ni sus metadatos geométricos. Se requiere revisar entidades, CRS, atributos, geometrías y correspondencia con parques existentes antes de elegir un punto o derivar un centroide. No se agregó marcador desde la página de descarga ni desde nombres de parques.",
+      "sourceUrls": [
+        "https://rides.producciontucuman.gob.ar/capa/parques-industriales/",
+        "https://rides.producciontucuman.gob.ar/wp-content/uploads/2025/08/Parques_Industriales_11_08_2025.kml",
+        "https://rides.producciontucuman.gob.ar/wp-content/uploads/2025/08/Parques_Industriales_11_08_2025.zip"
+      ]
     }
   ],
   "methodology": [
@@ -813,6 +825,7 @@
     "El punto del Parque Industrial Provincial Puerto Tirol usa una coordenada de referencia publicada en una tesis de la UNNE (2020), basada en Google Earth Pro. La tesis no especifica CRS/datum; se convirtió DMS a grados decimales sin reproyección. No representa perímetro parcelario ni acceso.",
     "El nodo del Aeropuerto de General Pico usa el ARP publicado por ANAC en AIP AD 2.2, Suplemento AIRAC A18/2022 (efectivo 14/07/2022). La fila no declara datum/CRS; se convirtió DMS a grados decimales sin reproyección. La ficha oficial nacional consultada 26/11/2026 indica que no opera vuelos comerciales regulares; como no se verificó AIP/MADHEL vigente, el status del aeródromo queda no_verificado.",
     "El nodo Aeropuerto El Tehuelche (SAVY) usa el ARP publicado por ANAC en AIP Suplemento A 65/2024, identificado como centro geométrico de pista. Se convirtió DMS a grados decimales sin reproyección; el suplemento no declara datum/CRS. El estado de la infraestructura se contrastó con horarios AIP A192/2025 y su inclusión en el grupo de cabotaje C de AIC A13/2026; no se afirma programación ni frecuencia comercial actual.",
-    "El nodo de la cantera fiscal D-6 (Sierras Bayas, Olavarría) usa el centroide geométrico calculado a partir de los cuatro vértices publicados en la Resolución 57-SSMINMPCEITGP-2021. La resolución indica POSGAR 07 pero no la zona; Argentina 5 (EPSG:5347) se infiere por magnitud de coordenadas y ubicación. El centroide representa la parcela de 4,27 ha, no un frente de extracción ni un acceso. La operación actual no está verificada."
+    "El nodo de la cantera fiscal D-6 (Sierras Bayas, Olavarría) usa el centroide geométrico calculado a partir de los cuatro vértices publicados en la Resolución 57-SSMINMPCEITGP-2021. La resolución indica POSGAR 07 pero no la zona; Argentina 5 (EPSG:5347) se infiere por magnitud de coordenadas y ubicación. El centroide representa la parcela de 4,27 ha, no un frente de extracción ni un acceso. La operación actual no está verificada.",
+    "El nodo del Aeropuerto Internacional Teniente Benjamín Matienzo (Tucumán) fue corregido con la coordenada geográfica publicada por ANAC para SANT (26°50'18\\\"S, 065°06'16\\\"W), convertida de DMS a grados decimales sin reproyección. El suplemento AIP A39/2026 actualiza el plano y las normas de movimiento en plataforma comercial. El datum/CRS no se explicita en el suplemento; no se atribuye EPSG ni precisión geodésica. La condición operativa se refiere a infraestructura y procedimientos aeroportuarios publicados, no a frecuencias de vuelos comerciales ni NOTAM en tiempo real."
   ]
 }
