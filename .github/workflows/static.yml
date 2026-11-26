@@ -653,6 +653,17 @@ jobs:
           assert tehuelche["coords"] == [-42.75916667, -65.10277778]
           assert tehuelche["coordinateSource"].endswith("sup-663d2d7f10036")
           assert tehuelche["coordinateReferenceSystem"].startswith("No declarado")
+          los_alerces = next((node for node in nodes if node.get("id") == "chubut-turismo-parque-nacional-los-alerces"), None)
+          assert los_alerces is not None and los_alerces["province"] == "Chubut" and los_alerces["district"] == "Futaleufú" and los_alerces["type"] == "Turismo"
+          assert los_alerces["coords"] == [-42.84453, -71.83818] and los_alerces["status"] == "operativo"
+          assert los_alerces["coordinateSource"] == "https://sib.gob.ar/areas-protegidas/parque-nacional-los-alerces"
+          assert los_alerces["source"] == "https://www.argentina.gob.ar/parquesnacionales/regionpatagonia/parque-nacional-los-alerces"
+          assert los_alerces["coordinateReferenceSystem"].startswith("Coordenadas geográficas") and "no se presenta como portada" in los_alerces["coordinateQuality"].lower()
+          assert los_alerces["verification"]["checkedAt"] == "2026-11-26"
+          chubut = next(row for row in coverage_rows if row["province"] == "Chubut")
+          assert chubut["total"] == 6 and chubut["byType"]["Turismo"] == 1
+          assert "Turismo" not in chubut["missingCategories"]
+          assert coverage["categoryTotals"]["Turismo"] == 10
           rio_grande = next((node for node in nodes if node.get("id") == "tierra-del-fuego-parque-industrial-rio-grande"), None)
           assert rio_grande is not None and rio_grande["province"] == "Tierra del Fuego" and rio_grande["type"] == "Industria"
           assert rio_grande["status"] == "no_verificado"
