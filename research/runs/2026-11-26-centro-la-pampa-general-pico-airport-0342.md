@@ -52,7 +52,7 @@ La portada sigue consumiendo `data/strategic-nodes.json` y conserva el filtro `A
 - Validación local previa al commit: JSON parseable; ID nuevo; nombres y coordenadas sin duplicados; categoría, jurisdicción, rangos y URLs HTTPS comprobados.
 - GitHub Actions #769, ID 45769956392, commit `20ef295d05c969a92c6718302bba56c1eb054095`: falló en `Validate geographic and editorial JSON` porque la matriz todavía indicaba 90 nodos mientras el catálogo ya tenía 91. Los pasos anteriores pasaron; el job de Pages quedó omitido.
 - GitHub Actions #770, ID 45770119141, commit `17c6ead19277f5baa3b56c039d20ddcdfad126a1`: volvió a fallar en la misma validación, esta vez porque el workflow conservaba una aserción histórica que exigía que La Pampa tuviera un solo nodo. La matriz y el catálogo ya coincidían en 91; el job de Pages quedó omitido.
-- Se actualizó `.github/workflows/static.yml` para esperar dos aeropuertos en La Pampa y comprobar el ID, la categoría y el estado `no_verificado` del registro SAZG. La nueva ejecución #771 queda pendiente; no se declara publicación hasta verificar validación, job de Pages y portada pública.
+- Se actualizó `.github/workflows/static.yml` para esperar dos aeropuertos en La Pampa y comprobar el ID, la categoría y el estado `no_verificado` del registro SAZG. GitHub Actions #771, ID 45770213544, commit `35ec7f8c8209ca2ccf3f1eda4783f2c449db3f62`, completó validación y despliegue de GitHub Pages con resultado `success`. La comprobación independiente de la portada pública no pudo completarse desde el entorno de verificación; se confirma el job de Pages, pero no la visualización final del mapa en navegador.
 
 ## Próxima prioridad
 
