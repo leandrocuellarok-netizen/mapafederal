@@ -57,9 +57,11 @@ Se revisó la parada 07 «Reserva Ecológica (principal)» del Bus Turístico. U
 - Reconciliación de conteos: se recalculó la matriz a partir de los 99 nodos.
 - IDs y nombres existentes: 14 IDs únicos; 99 nombres sin duplicados.
 - JavaScript de portada: sin cambios; el workflow existente mantiene la comprobación de sintaxis.
-- Commit principal: pendiente.
-- GitHub Actions y job de GitHub Pages: pendientes de verificación.
-- Inspección HTTP independiente de la portada: pendiente; no se afirmará visualización sin comprobación.
+- Commit principal de matriz, validación y documentación: `523b8c1998954f0e0e59be52710ef084d89b4b62`.
+- GitHub Actions: ejecución [#45861500081](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45861500081), commit `523b8c1998954f0e0e59be52710ef084d89b4b62`; jobs `validate` y `deploy` concluyeron `success`, incluido `Deploy to GitHub Pages`.
+- GitHub Pages: despliegue aprobado por Actions. La apertura independiente de `https://leandrocuellarok-netizen.github.io/mapafederal/` no fue accesible desde el entorno de verificación; no se afirma inspección visual del mapa.
+
+- Commit de finalización de esta bitácora: se registra en el historial Git al actualizar este archivo.
 
 ## Gaps no resueltos
 
