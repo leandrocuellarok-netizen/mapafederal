@@ -1137,99 +1137,67 @@ jobs:
           console.log("Territorial Monitor: filtro territorial, filtros combinados, registros ambiguos y traducciones comprobados.");
           JS
 
-      - name: Test Investment Finder filters and provenance
+      - name: Test Investment & Political Finder Buenos Aires territory and filters
         run: |
           node - <<'JS'
-          const fs = require("fs");
-          const vm = require("vm");
+          const assert = require("node:assert/strict");
+          const fs = require("node:fs");
+          const vm = require("node:vm");
           const html = fs.readFileSync("investment-finder/index.html", "utf8");
-          const catalog = JSON.parse(fs.readFileSync("data/investment-opportunities.json", "utf8"));
-          for (const id of ["investment-search", "investment-sector", "investment-scope", "investment-jurisdiction", "investment-stage", "investment-status", "investment-verification", "investment-count", "investment-grid"]) {
-            if (!html.includes('id="' + id + '"')) throw new Error("Falta el control de Investment Finder: " + id);
+          const territories = JSON.parse(fs.readFileSync("data/pba-territories.json", "utf8"));
+          const catalog = JSON.parse(fs.readFileSync("data/pba-investment-opportunities.json", "utf8"));
+          assert.equal(territories.municipalityCount, 135);
+          assert.equal(territories.sections.length, 8);
+          assert.equal(territories.sections.reduce((n, s) => n + s.municipalities.length, 0), 135);
+          assert.equal(new Set(territories.sections.flatMap(s => s.municipalities.map(m => m.name))).size, 135);
+          assert.equal(territories.sections[0].municipalities.find(m => m.name === "Escobar").name, "Escobar");
+          assert.equal(territories.sections[0].name, "Primera");
+          assert.ok(catalog.opportunities.length > 0);
+          assert.ok(catalog.opportunities.every(o => ["provincial", "municipal"].includes(o.scope)));
+          assert.ok(catalog.opportunities.every(o => o.territorialClassification.province === "Buenos Aires"));
+          assert.ok(catalog.opportunities.every(o => !/Provincia de Santa Fe|Provincia del Neuqu[eé]n/.test([o.jurisdiction, o.location].filter(Boolean).join(" "))));
+          for (const id of ["investment-search", "investment-section", "investment-municipality", "pba-territory-search", "investment-sector", "investment-scope", "investment-stage", "investment-status", "investment-verification", "investment-count", "investment-grid", "pba-territory-list"]) {
+            assert.ok(html.includes('id="' + id + '"'), "Missing PBA Finder control: " + id);
           }
-          if (!html.includes("registros documentados")) throw new Error("Falta la etiqueta traducible del contador.");
+          assert.ok(html.includes("Oportunidades documentadas en Provincia de Buenos Aires."));
+          assert.ok(html.includes("Investment &amp; Political Finder Bs. As."));
           const start = html.indexOf("function filterInvestmentOpportunities(records,filters){");
-          const end = html.indexOf("\nfunction investmentStageLabel", start);
-          if (start < 0 || end < 0) throw new Error("No se encontró el filtro reutilizable de Investment Finder.");
-          const normalizeText = value => String(value ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("es").trim();
+          const end = html.indexOf("\\nfunction investmentStageLabel", start);
+          assert.ok(start >= 0 && end > start, "Missing reusable PBA opportunity filter.");
+          const normalizeText = value => String(value ?? "").normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").toLocaleLowerCase("es").trim();
           const filter = vm.runInNewContext("(" + html.slice(start, end) + ")", { normalizeText });
-          const record = catalog.opportunities.find(item => item.id === "rimi-eficiencia-energetica-2026");
-          if (!record || record.opportunityStatus !== "unknown") throw new Error("El registro documental RIMI debe conservar disponibilidad desconocida.");
-          const base = { query: "eficiencia energética", sector: "all", scope: "national", jurisdiction: "Nacional", status: "unknown", verification: "all" };
-          const kit40Record = catalog.opportunities.find(item => item.id === "programa-kit-4-0-2026");
-          if (!kit40Record || kit40Record.opportunityStatus !== "unknown" || kit40Record.verification?.status !== "verified") throw new Error("KIT 4.0 debe conservar fuente verificada y disponibilidad no confirmada.");
-          if (filter(catalog.opportunities, { ...base, query: "kit 4.0" }).length !== 1) throw new Error("La búsqueda no encuentra KIT 4.0.");
-          if (filter(catalog.opportunities, { ...base, query: "kit 4.0", status: "open" }).length !== 0) throw new Error("KIT 4.0 no debe aparecer como disponibilidad confirmada.");
-          if (!kit40Record.description.includes("no como pago directo a la PyME")) throw new Error("La ficha debe aclarar que el beneficio se acredita al proveedor.");
-          if (filter(catalog.opportunities, base).length !== 1) throw new Error("No se encontró el registro nacional mediante búsqueda y filtros combinados.");
-          if (filter(catalog.opportunities, { ...base, verification: "verified" }).length !== 1) throw new Error("El filtro debe encontrar una fuente verificada aunque la disponibilidad sea desconocida.");
-          if (filter(catalog.opportunities, { ...base, verification: "outdated" }).length !== 0) throw new Error("Una fuente verificada no debe aparecer como desactualizada.");
-          const exportStart = html.indexOf("function exportVisibleInvestmentOpportunities(){");
-          const exportEnd = html.indexOf("\nasync function loadInvestmentFinder", exportStart);
-          if (exportStart < 0 || exportEnd < 0) throw new Error("No se encontró la exportación filtrada de Investment Finder.");
-          const exportFunction = html.slice(exportStart, exportEnd);
-          if (!exportFunction.includes('verification:document.getElementById("investment-verification").value')) throw new Error("El CSV debe respetar el filtro de verificación visible.");
-          const verificationFixtures = [
-            { ...record, id: "fixture-fuente-verificada", verification: { ...record.verification, status: "verified" } },
-            { ...record, id: "fixture-fuente-desactualizada", verification: { ...record.verification, status: "outdated" } }
-          ];
-          if (filter(verificationFixtures, { ...base, verification: "verified" }).length !== 1) throw new Error("El filtro no separa las fuentes verificadas.");
-          if (filter(verificationFixtures, { ...base, verification: "outdated" }).length !== 1) throw new Error("El filtro no separa las verificaciones desactualizadas.");
-          if (filter(catalog.opportunities, { ...base, status: "open" }).length !== 0) throw new Error("El registro RIMI no debe aparecer como oportunidad abierta.");
-          if (filter(catalog.opportunities, { ...base, stage: "unknown" }).length !== 1) throw new Error("El filtro por etapa no encuentra el registro RIMI.");
-          if (filter(catalog.opportunities, { ...base, stage: "announced" }).length !== 0) throw new Error("El filtro por etapa mezcló registros de distintas etapas.");
-          const stagedFixtures = [record, { ...record, id: "fixture-anunciado", stage: "announced" }];
-          if (filter(stagedFixtures, { ...base, stage: "announced" }).length !== 1) throw new Error("El filtro por etapa no aísla registros anunciados.");
-          if (filter(stagedFixtures, { ...base, stage: "unknown" }).length !== 1) throw new Error("El filtro por etapa no conserva registros sin etapa informada.");
-          const stageStart = html.indexOf("function investmentStageLabel(stage){");
-          const stageEnd = html.indexOf("\nfunction investmentStatusLabel", stageStart);
-          if (stageStart < 0 || stageEnd < 0) throw new Error("Falta el catálogo de etiquetas legibles para las etapas.");
-          const stageLabel = vm.runInNewContext("(" + html.slice(stageStart, stageEnd) + ")");
-          if (stageLabel("announced") !== "Anunciado" || stageLabel("unknown") !== "Etapa no informada") throw new Error("Las etiquetas de etapa no son correctas.");
-          if (filter(catalog.opportunities, { ...base, scope: "provincial" }).length !== 0) throw new Error("El filtro provincial incluyó un registro nacional.");
-          if (filter(catalog.opportunities, { ...base, jurisdiction: "Buenos Aires" }).length !== 0) throw new Error("El filtro de jurisdicción incluyó un registro nacional.");
-          const pampaAI = catalog.opportunities.find(item => item.id === "pampa-ai-centros-datos-computo-ia-2026");
-          if (!pampaAI || pampaAI.stage !== "preparation" || pampaAI.opportunityStatus !== "unknown" || pampaAI.amount !== null) throw new Error("Pampa AI debe permanecer como proyecto en preparación, sin capex confirmado y con disponibilidad desconocida.");
-          if (filter(catalog.opportunities, { ...base, query: "pampa ai" }).length !== 1) throw new Error("La búsqueda no encuentra el registro Pampa AI.");
-          const officialGazetteMatches = filter(catalog.opportunities, { ...base, query: "boletin oficial" });
-          if (!officialGazetteMatches.some(item => item.id === "rimi-eficiencia-energetica-2026") || !officialGazetteMatches.some(item => item.id === "pampa-ai-centros-datos-computo-ia-2026")) throw new Error("La búsqueda debe incluir RIMI y Pampa AI entre los registros nacionales con fuente del Boletín Oficial.");
-          for (const field of ["sourceName", "sourceUrl", "sourcePublishedAt", "period", "validFrom", "verification"]) {
-            if (!record[field]) throw new Error("El registro carece de trazabilidad: " + field);
-          }
-          if (!record.sourceUrl.startsWith("https://") || !record.verification.checkedAt || !record.verification.scope) {
-            throw new Error("La fuente y el alcance/fecha de verificación deben permanecer visibles.");
-          }
-          console.log("Investment Finder: filtros locales, alcance nacional, estado desconocido y trazabilidad comprobados.");
+          const escobarRecord = catalog.opportunities.find(o => (o.territorialClassification.municipalities || []).includes("Escobar"));
+          assert.ok(escobarRecord, "No documented opportunity is classified for Escobar.");
+          const base = { query: "", sector: "all", scope: "all", section: "all", municipality: "all", stage: "all", status: "all", verification: "all" };
+          assert.equal(filter([escobarRecord], { ...base, municipality: "Escobar" }).length, 1);
+          assert.equal(filter([escobarRecord], { ...base, section: "Primera" }).length, 1);
+          assert.equal(filter([escobarRecord], { ...base, section: "Sexta" }).length, 0);
+          assert.equal(filter([escobarRecord], { ...base, municipality: "La Plata" }).length, 0);
+          assert.equal(filter(catalog.opportunities, { ...base, query: "escobar" }).some(o => o.id === escobarRecord.id), true);
+          const inline = [...html.matchAll(/<script([^>]*)>([\\s\\S]*?)<\\/script>/gi)].filter(m => !/application\\/ld\\+json/.test(m[1]) && !/src=/.test(m[1])).map(m => m[2]);
+          for (const code of inline) new Function(code);
+          console.log("PBA Finder: 135 municipios, ocho secciones, catálogo bonaerense y filtros territoriales validados.");
           JS
 
-      - name: Validate Investment Finder module manifest consistency
+      - name: Validate Investment & Political Finder module manifest
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-
+          territories = json.loads(Path("data/pba-territories.json").read_text(encoding="utf-8"))
+          opportunities = json.loads(Path("data/pba-investment-opportunities.json").read_text(encoding="utf-8"))
           manifest = json.loads(Path("data/ai-modules.json").read_text(encoding="utf-8"))
-          catalog = json.loads(Path("data/investment-opportunities.json").read_text(encoding="utf-8"))
-          readme = Path("README.md").read_text(encoding="utf-8")
           module = next(item for item in manifest["modules"] if item["id"] == "investment-finder")
-
-          assert module["status"] == "planned", "Investment Finder no debe presentarse como operativo."
-          capability = module["currentCapability"].lower()
-          for term in ("rimi", "kit 4.0", "unknown", "saldo del cupo", "disponibilidad", "etapa"):
-              assert term in capability, f"La capacidad documentada no refleja {term!r}."
-          assert "etapa" in readme.lower(), "README debe documentar el filtro por etapa."
-
-          records = {item["id"]: item for item in catalog["opportunities"]}
-          for record_id in ("rimi-eficiencia-energetica-2026", "programa-kit-4-0-2026"):
-              record = records.get(record_id)
-              assert record is not None, f"Falta el registro {record_id}."
-              assert record["opportunityStatus"] == "unknown", f"{record_id} no tiene disponibilidad confirmada."
-              assert record["verification"]["status"] == "verified"
-              assert record["sourceUrl"].startswith("https://")
-              assert record["sourcePublishedAt"] and record["period"]
-              assert record["verification"]["checkedAt"] and record["verification"]["scope"]
-
-          print("Investment Finder: manifiesto, documentación, trazabilidad y disponibilidad no confirmada alineados.")
+          assert territories["municipalityCount"] == 135
+          assert len(territories["sections"]) == 8
+          assert sum(len(section["municipalities"]) for section in territories["sections"]) == 135
+          assert module["name"] == "Investment & Political Finder Bs. As."
+          assert "signo político" in module["description"].lower()
+          assert "fuente" in module["currentCapability"].lower()
+          assert len(opportunities["opportunities"]) == opportunities["opportunityCount"]
+          assert all(item["territorialClassification"]["province"] == "Buenos Aires" for item in opportunities["opportunities"])
+          assert all(item["scope"] in ("municipal", "provincial") for item in opportunities["opportunities"])
+          print(f"PBA Finder: {territories['municipalityCount']} municipios, {len(territories['sections'])} secciones y {opportunities['opportunityCount']} registros.")
           PY
 
       - name: Validate Investment Finder period contract documentation
