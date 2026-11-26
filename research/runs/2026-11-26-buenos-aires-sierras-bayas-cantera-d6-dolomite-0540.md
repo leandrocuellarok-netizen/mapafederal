@@ -50,10 +50,12 @@ JSON parseable; ID, nombre y coordenadas sin duplicados; coordenadas dentro del 
 
 ## Commits
 - Catálogo: `a5a7fd3c841c08122a106a52f65c4a718eefeec7`.
-- Matriz, README y registro: se publican en el commit de cierre de esta ejecución.
+- Matriz, README y registro: `b8294bc28dff4faefe4f8a44a4aeb57f709c60c7`.
 
 ## GitHub Actions y Pages
-Estado pendiente de la ejecución del workflow sobre el commit de cierre. No se declara publicación hasta comprobar los jobs de validación y Pages y, si está disponible, la portada pública.
+- Run #775 (`a5a7fd3c841c08122a106a52f65c4a718eefeec7`): falló la validación porque el catálogo ya tenía 93 nodos mientras la matriz todavía registraba 92; el job de despliegue fue omitido. Era el estado intermedio entre el commit del catálogo y el cierre de matriz.
+- Run #776 (`b8294bc28dff4faefe4f8a44a4aeb57f709c60c7`): `validate` aprobado y `deploy` aprobado; el paso `Deploy to GitHub Pages` terminó correctamente. https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45785295221
+- La portada pública no pudo abrirse independientemente desde el entorno de comprobación. Se confirma el despliegue del job de Pages, no una inspección visual independiente del mapa.
 
 ## Brechas pendientes
 - Confirmar zona y metadatos del CRS con el Catastro Minero provincial.
