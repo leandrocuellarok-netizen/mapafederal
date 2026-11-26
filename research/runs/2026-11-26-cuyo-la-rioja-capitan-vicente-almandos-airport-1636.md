@@ -71,6 +71,6 @@ No se modificaron `index.html`, módulos regionales ni datasets de otros proyect
 ## 5. Commit y publicación
 
 - Commit del cambio de datos y pruebas: `803fa4515e93c23efb87a2bb4f8b07c7889ad6ed`.
-- Commit de alineación de `catalogCommit` y cierre de bitácora: pendiente.
-- Workflow de validación y GitHub Pages: #819, ambos jobs completados con `success`.
+- Commit de alineación de `catalogCommit`: `6f20d7941b2a6f583a3057a405c536005c9a4222`.
+- Workflow de validación y GitHub Pages: #819 (run `45885413764`, commit de datos) y #820 (run `45885547867`, alineación de matriz); ambos completaron `validate: success` y `deploy: success`.
 - Inspección independiente de la portada pública: no disponible desde el entorno de verificación; la URL de Pages no resolvió por DNS. El despliegue sí quedó confirmado por el job `deploy`.
