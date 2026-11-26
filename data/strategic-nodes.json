@@ -1,5 +1,6 @@
 [
   {
+    "id": "caba-ciudad-ciudad-autonoma-de-buenos-aires",
     "name": "Ciudad Autónoma de Buenos Aires",
     "province": "CABA",
     "type": "Ciudad",
@@ -11,6 +12,7 @@
     "source": "https://www.buenosaires.gob.ar/"
   },
   {
+    "id": "caba-puerto-puerto-de-buenos-aires",
     "name": "Puerto de Buenos Aires",
     "province": "CABA",
     "type": "Puerto",
@@ -22,6 +24,7 @@
     "source": "https://www.puertobuenosaires.gob.ar/"
   },
   {
+    "id": "buenos-aires-aeropuerto-aeropuerto-internacional-de-ezeiza",
     "name": "Aeropuerto Internacional de Ezeiza",
     "province": "Buenos Aires",
     "type": "Aeropuerto",
@@ -33,6 +36,7 @@
     "source": "https://www.aa2000.com.ar/ezeiza"
   },
   {
+    "id": "caba-aeropuerto-aeroparque-jorge-newbery",
     "name": "Aeroparque Jorge Newbery",
     "province": "CABA",
     "type": "Aeropuerto",
@@ -44,6 +48,7 @@
     "source": "https://www.aa2000.com.ar/aeroparque"
   },
   {
+    "id": "buenos-aires-puerto-puerto-la-plata",
     "name": "Puerto La Plata",
     "province": "Buenos Aires",
     "type": "Puerto",
@@ -55,6 +60,7 @@
     "source": "https://www.puertolaplata.com/"
   },
   {
+    "id": "buenos-aires-industria-polo-petroquimico-de-bahia-blanca",
     "name": "Polo petroquímico de Bahía Blanca",
     "province": "Buenos Aires",
     "type": "Industria",
@@ -66,6 +72,7 @@
     "source": "https://www.bahia.gob.ar/"
   },
   {
+    "id": "santa-fe-puerto-puerto-de-rosario",
     "name": "Puerto de Rosario",
     "province": "Santa Fe",
     "type": "Puerto",
@@ -77,6 +84,7 @@
     "source": "https://www.enapro.com.ar/"
   },
   {
+    "id": "santa-fe-puerto-complejo-portuario-san-lorenzo",
     "name": "Complejo portuario San Lorenzo",
     "province": "Santa Fe",
     "type": "Puerto",
@@ -88,6 +96,7 @@
     "source": "https://www.enapro.com.ar/"
   },
   {
+    "id": "santa-fe-aeropuerto-aeropuerto-internacional-de-rosario",
     "name": "Aeropuerto Internacional de Rosario",
     "province": "Santa Fe",
     "type": "Aeropuerto",
@@ -99,6 +108,7 @@
     "source": "https://aeropuertorosario.com/"
   },
   {
+    "id": "santa-fe-puerto-puerto-de-santa-fe",
     "name": "Puerto de Santa Fe",
     "province": "Santa Fe",
     "type": "Puerto",
@@ -110,6 +120,7 @@
     "source": "https://www.puertosfe.com/"
   },
   {
+    "id": "buenos-aires-puerto-puerto-de-bahia-blanca",
     "name": "Puerto de Bahía Blanca",
     "province": "Buenos Aires",
     "type": "Puerto",
@@ -121,6 +132,7 @@
     "source": "https://puertobahiablanca.com/"
   },
   {
+    "id": "buenos-aires-puerto-puerto-de-quequen",
     "name": "Puerto de Quequén",
     "province": "Buenos Aires",
     "type": "Puerto",
@@ -132,6 +144,7 @@
     "source": "https://www.puertoquequen.com/"
   },
   {
+    "id": "cordoba-industria-parque-industrial-cordoba",
     "name": "Parque Industrial Córdoba",
     "province": "Córdoba",
     "type": "Industria",
@@ -143,6 +156,7 @@
     "source": "https://www.cordoba.gob.ar/"
   },
   {
+    "id": "cordoba-aeropuerto-aeropuerto-internacional-cordoba",
     "name": "Aeropuerto Internacional Córdoba",
     "province": "Córdoba",
     "type": "Aeropuerto",
@@ -154,6 +168,7 @@
     "source": "https://www.aa2000.com.ar/cordoba"
   },
   {
+    "id": "mendoza-paso-fronterizo-paso-cristo-redentor",
     "name": "Paso Cristo Redentor",
     "province": "Mendoza",
     "type": "Paso fronterizo",
@@ -165,6 +180,7 @@
     "source": "https://www.argentina.gob.ar/seguridad/pasosinternacionales"
   },
   {
+    "id": "mendoza-aeropuerto-aeropuerto-internacional-el-plumerillo",
     "name": "Aeropuerto Internacional El Plumerillo",
     "province": "Mendoza",
     "type": "Aeropuerto",
@@ -176,6 +192,7 @@
     "source": "https://www.aa2000.com.ar/mendoza"
   },
   {
+    "id": "neuquen-industria-parque-industrial-neuquen",
     "name": "Parque Industrial Neuquén",
     "province": "Neuquén",
     "type": "Industria",
@@ -187,6 +204,7 @@
     "source": "https://www.neuquencapital.gov.ar/"
   },
   {
+    "id": "neuquen-aeropuerto-aeropuerto-presidente-peron",
     "name": "Aeropuerto Presidente Perón",
     "province": "Neuquén",
     "type": "Aeropuerto",
@@ -198,6 +216,7 @@
     "source": "https://www.aa2000.com.ar/neuquen"
   },
   {
+    "id": "neuquen-paso-fronterizo-paso-cardenal-samore",
     "name": "Paso Cardenal Samoré",
     "province": "Neuquén",
     "type": "Paso fronterizo",
@@ -209,6 +228,7 @@
     "source": "https://www.argentina.gob.ar/seguridad/pasosinternacionales"
   },
   {
+    "id": "tierra-del-fuego-puerto-puerto-de-ushuaia",
     "name": "Puerto de Ushuaia",
     "province": "Tierra del Fuego",
     "type": "Puerto",
@@ -220,6 +240,7 @@
     "source": "https://www.puertoushuaia.com/"
   },
   {
+    "id": "tierra-del-fuego-aeropuerto-aeropuerto-malvinas-argentinas",
     "name": "Aeropuerto Malvinas Argentinas",
     "province": "Tierra del Fuego",
     "type": "Aeropuerto",
@@ -231,6 +252,7 @@
     "source": "https://www.aa2000.com.ar/ushuaia"
   },
   {
+    "id": "jujuy-paso-fronterizo-paso-jama",
     "name": "Paso Jama",
     "province": "Jujuy",
     "type": "Paso fronterizo",
@@ -242,6 +264,7 @@
     "source": "https://www.argentina.gob.ar/seguridad/pasosinternacionales"
   },
   {
+    "id": "salta-industria-parque-industrial-salta",
     "name": "Parque Industrial Salta",
     "province": "Salta",
     "type": "Industria",
@@ -253,6 +276,7 @@
     "source": "https://www.salta.gob.ar/"
   },
   {
+    "id": "salta-aeropuerto-aeropuerto-internacional-martin-miguel-de-guemes",
     "name": "Aeropuerto Internacional Martín Miguel de Güemes",
     "province": "Salta",
     "type": "Aeropuerto",
@@ -264,6 +288,7 @@
     "source": "https://www.aa2000.com.ar/salta"
   },
   {
+    "id": "corrientes-paso-fronterizo-paso-de-los-libres-uruguayana",
     "name": "Paso de los Libres - Uruguayana",
     "province": "Corrientes",
     "type": "Paso fronterizo",
@@ -275,6 +300,7 @@
     "source": "https://www.argentina.gob.ar/seguridad/pasosinternacionales"
   },
   {
+    "id": "corrientes-puerto-puerto-de-corrientes",
     "name": "Puerto de Corrientes",
     "province": "Corrientes",
     "type": "Puerto",
@@ -286,6 +312,7 @@
     "source": "https://www.corrientes.gob.ar/"
   },
   {
+    "id": "misiones-aeropuerto-aeropuerto-internacional-de-iguazu",
     "name": "Aeropuerto Internacional de Iguazú",
     "province": "Misiones",
     "type": "Aeropuerto",
@@ -297,6 +324,7 @@
     "source": "https://www.aa2000.com.ar/iguazu"
   },
   {
+    "id": "la-rioja-industria-complejo-industrial-la-rioja",
     "name": "Complejo Industrial La Rioja",
     "province": "La Rioja",
     "type": "Industria",
@@ -308,6 +336,7 @@
     "source": "https://www.larioja.gob.ar/"
   },
   {
+    "id": "san-luis-industria-parque-industrial-san-luis",
     "name": "Parque Industrial San Luis",
     "province": "San Luis",
     "type": "Industria",
@@ -319,6 +348,7 @@
     "source": "https://www.sanluis.gov.ar/"
   },
   {
+    "id": "rio-negro-aeropuerto-aeropuerto-internacional-de-bariloche",
     "name": "Aeropuerto Internacional de Bariloche",
     "province": "Río Negro",
     "type": "Aeropuerto",
@@ -330,6 +360,7 @@
     "source": "https://www.aa2000.com.ar/bariloche"
   },
   {
+    "id": "chubut-puerto-puerto-madryn",
     "name": "Puerto Madryn",
     "province": "Chubut",
     "type": "Puerto",
@@ -341,6 +372,7 @@
     "source": "https://www.chubut.gov.ar/"
   },
   {
+    "id": "chubut-aeropuerto-aeropuerto-de-comodoro-rivadavia",
     "name": "Aeropuerto de Comodoro Rivadavia",
     "province": "Chubut",
     "type": "Aeropuerto",
@@ -352,6 +384,7 @@
     "source": "https://www.aa2000.com.ar/comodororivadavia"
   },
   {
+    "id": "santa-cruz-paso-fronterizo-paso-integracion-austral",
     "name": "Paso Integración Austral",
     "province": "Santa Cruz",
     "type": "Paso fronterizo",
@@ -363,6 +396,7 @@
     "source": "https://www.argentina.gob.ar/seguridad/pasosinternacionales"
   },
   {
+    "id": "chaco-aeropuerto-aeropuerto-internacional-de-resistencia",
     "name": "Aeropuerto Internacional de Resistencia",
     "province": "Chaco",
     "type": "Aeropuerto",
@@ -374,6 +408,7 @@
     "source": "https://www.aa2000.com.ar/resistencia"
   },
   {
+    "id": "santiago-del-estero-aeropuerto-aeropuerto-de-santiago-del-estero",
     "name": "Aeropuerto de Santiago del Estero",
     "province": "Santiago del Estero",
     "type": "Aeropuerto",
@@ -385,6 +420,7 @@
     "source": "https://www.aa2000.com.ar/santiagodelestero"
   },
   {
+    "id": "buenos-aires-puerto-puerto-de-mar-del-plata",
     "name": "Puerto de Mar del Plata",
     "province": "Buenos Aires",
     "type": "Puerto",
@@ -396,6 +432,7 @@
     "source": "https://puertomardelplata.net/"
   },
   {
+    "id": "rio-negro-puerto-puerto-san-antonio-este",
     "name": "Puerto San Antonio Este",
     "province": "Río Negro",
     "type": "Puerto",
@@ -407,6 +444,7 @@
     "source": "https://www.patagonia-norte.com.ar/sae.html"
   },
   {
+    "id": "chubut-puerto-puerto-de-comodoro-rivadavia",
     "name": "Puerto de Comodoro Rivadavia",
     "province": "Chubut",
     "type": "Puerto",
@@ -418,6 +456,7 @@
     "source": "https://puertocomodororivadavia.ar/"
   },
   {
+    "id": "santa-cruz-puerto-puerto-deseado",
     "name": "Puerto Deseado",
     "province": "Santa Cruz",
     "type": "Puerto",
@@ -429,6 +468,7 @@
     "source": "https://www.uneposc.com.ar/"
   },
   {
+    "id": "buenos-aires-puerto-puerto-campana",
     "name": "Puerto Campana",
     "province": "Buenos Aires",
     "type": "Puerto",
@@ -440,6 +480,7 @@
     "source": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/tarifas-de-puertos"
   },
   {
+    "id": "buenos-aires-logistica-terminal-zarate",
     "name": "Terminal Zárate",
     "province": "Buenos Aires",
     "type": "Logística",
@@ -451,6 +492,7 @@
     "source": "https://www.terminalzarate.com.ar/"
   },
   {
+    "id": "neuquen-paso-fronterizo-paso-pino-hachado",
     "name": "Paso Pino Hachado",
     "province": "Neuquén",
     "type": "Paso fronterizo",
@@ -462,6 +504,7 @@
     "source": "https://www.argentina.gob.ar/interior/centros-de-frontera/pino-hachado"
   },
   {
+    "id": "san-juan-paso-fronterizo-paso-agua-negra",
     "name": "Paso Agua Negra",
     "province": "San Juan",
     "type": "Paso fronterizo",
@@ -473,6 +516,7 @@
     "source": "https://www.argentina.gob.ar/interior/centros-de-frontera/agua-negra"
   },
   {
+    "id": "la-rioja-paso-fronterizo-paso-pircas-negras",
     "name": "Paso Pircas Negras",
     "province": "La Rioja",
     "type": "Paso fronterizo",
@@ -484,6 +528,7 @@
     "source": "https://www.argentina.gob.ar/interior/centros-de-frontera/pircas-negras"
   },
   {
+    "id": "buenos-aires-industria-parque-industrial-pilar",
     "name": "Parque Industrial Pilar",
     "province": "Buenos Aires",
     "type": "Industria",
@@ -495,6 +540,7 @@
     "source": "https://www.parqueindustrialpilar.org.ar/contacto"
   },
   {
+    "id": "neuquen-logistica-anelo-nodo-vaca-muerta",
     "name": "Añelo — nodo Vaca Muerta",
     "province": "Neuquén",
     "type": "Logística",
@@ -506,6 +552,7 @@
     "source": "https://www.neuqueninforma.gob.ar/noticias/2025/09/08/251191-vaca-muerta-provincia-y-operadoras-acordaron-construir-una-obra-vial-estrategica"
   },
   {
+    "id": "jujuy-aeropuerto-aeropuerto-internacional-gobernador-horacio-guzman",
     "name": "Aeropuerto Internacional Gobernador Horacio Guzmán",
     "province": "Jujuy",
     "type": "Aeropuerto",
@@ -517,6 +564,7 @@
     "source": "https://www.argentina.gob.ar/transporte/obras-en-los-aeropuertos/aeropuerto-de-jujuy"
   },
   {
+    "id": "san-juan-aeropuerto-aeropuerto-internacional-domingo-faustino-sarmiento",
     "name": "Aeropuerto Internacional Domingo Faustino Sarmiento",
     "province": "San Juan",
     "type": "Aeropuerto",
@@ -528,6 +576,7 @@
     "source": "https://www.argentina.gob.ar/node/118621"
   },
   {
+    "id": "santa-fe-industria-parque-de-actividades-economicas-de-rafaela-paer",
     "name": "Parque de Actividades Económicas de Rafaela (PAER)",
     "province": "Santa Fe",
     "type": "Industria",
@@ -539,6 +588,7 @@
     "source": "https://paer.rafaela.gob.ar/parque-actividades-economicas-rafaela/"
   },
   {
+    "id": "catamarca-aeropuerto-aeropuerto-internacional-coronel-felipe-varela",
     "name": "Aeropuerto Internacional Coronel Felipe Varela",
     "province": "Catamarca",
     "type": "Aeropuerto",
@@ -550,6 +600,7 @@
     "source": "https://www.argentina.gob.ar/catamarca/llegar"
   },
   {
+    "id": "formosa-aeropuerto-aeropuerto-internacional-el-pucu",
     "name": "Aeropuerto Internacional El Pucú",
     "province": "Formosa",
     "type": "Aeropuerto",
@@ -561,6 +612,7 @@
     "source": "https://www.argentina.gob.ar/formosa/llegar"
   },
   {
+    "id": "formosa-puerto-puerto-de-formosa",
     "name": "Puerto de Formosa",
     "province": "Formosa",
     "type": "Puerto",
@@ -572,6 +624,7 @@
     "source": "https://www.argentina.gob.ar/formosa/llegar"
   },
   {
+    "id": "entre-rios-puerto-puerto-de-concepcion-del-uruguay",
     "name": "Puerto de Concepción del Uruguay",
     "province": "Entre Ríos",
     "type": "Puerto",
@@ -583,6 +636,7 @@
     "source": "https://www.argentina.gob.ar/entre-rios/llegar"
   },
   {
+    "id": "entre-rios-paso-fronterizo-centro-de-frontera-concordia-salto-grande",
     "name": "Centro de Frontera Concordia — Salto Grande",
     "province": "Entre Ríos",
     "type": "Paso fronterizo",
@@ -594,6 +648,7 @@
     "source": "https://www.argentina.gob.ar/interior/centros-de-frontera/concordia"
   },
   {
+    "id": "la-pampa-aeropuerto-aeropuerto-de-santa-rosa",
     "name": "Aeropuerto de Santa Rosa",
     "province": "La Pampa",
     "type": "Aeropuerto",
@@ -637,6 +692,7 @@
     "coordinateQuality": "Punto de referencia aeroportuario publicado por ANAC en AIP; no representa acceso ni perímetro. El suplemento no explicita datum/CRS ni método de determinación geodésica."
   },
   {
+    "id": "misiones-turismo-puerto-iguazu-destino-cataratas-y-triple-frontera",
     "name": "Puerto Iguazú — destino Cataratas y Triple Frontera",
     "province": "Misiones",
     "type": "Turismo",
@@ -648,6 +704,7 @@
     "source": "https://visitiguazu.travel/sin-categoria/informacion-de-interes/"
   },
   {
+    "id": "mendoza-turismo-mendoza-destino-de-enoturismo-y-reuniones",
     "name": "Mendoza — destino de enoturismo y reuniones",
     "province": "Mendoza",
     "type": "Turismo",
@@ -659,6 +716,7 @@
     "source": "https://www.argentina.gob.ar/node/444514"
   },
   {
+    "id": "rio-negro-turismo-san-carlos-de-bariloche-destino-ejecutivo-y-naturaleza",
     "name": "San Carlos de Bariloche — destino ejecutivo y naturaleza",
     "province": "Río Negro",
     "type": "Turismo",
@@ -670,6 +728,7 @@
     "source": "https://www.barilocheturismo.gob.ar/es/sobre-bariloche"
   },
   {
+    "id": "santa-cruz-turismo-el-calafate-puerta-de-acceso-a-los-glaciares",
     "name": "El Calafate — puerta de acceso a Los Glaciares",
     "province": "Santa Cruz",
     "type": "Turismo",
@@ -681,6 +740,7 @@
     "source": "https://turismo.santacruz.gob.ar/donde-ir/el-calafate"
   },
   {
+    "id": "chaco-puerto-puerto-de-barranqueras-muelle-provincial",
     "name": "Puerto de Barranqueras — muelle provincial",
     "province": "Chaco",
     "type": "Puerto",
@@ -692,6 +752,7 @@
     "source": "https://www.argentina.gob.ar/puertos-vias-navegables-y-marina-mercante/informaci%C3%B3n-portuaria/barranqueras-provincial"
   },
   {
+    "id": "catamarca-paso-fronterizo-paso-internacional-san-francisco",
     "name": "Paso Internacional San Francisco",
     "province": "Catamarca",
     "type": "Paso fronterizo",
@@ -703,6 +764,7 @@
     "source": "https://www.turismofiambala.com.ar/qu%C3%A9-visitar/paso-internacional-san-francisco"
   },
   {
+    "id": "buenos-aires-industria-parque-industrial-bahia-blanca",
     "name": "Parque Industrial Bahía Blanca",
     "province": "Buenos Aires",
     "type": "Industria",
@@ -714,6 +776,7 @@
     "source": "https://pibb.com.ar/"
   },
   {
+    "id": "mendoza-paso-fronterizo-paso-internacional-pehuenche",
     "name": "Paso Internacional Pehuenche",
     "province": "Mendoza",
     "type": "Paso fronterizo",
@@ -725,6 +788,7 @@
     "source": "https://www.argentina.gob.ar/interior/centros-de-frontera/pehuenche"
   },
   {
+    "id": "salta-industria-parque-industrial-guemes",
     "name": "Parque Industrial Güemes",
     "province": "Salta",
     "type": "Industria",
@@ -737,6 +801,7 @@
     "coordinateSource": "https://mapcarta.com/es/W1390977508"
   },
   {
+    "id": "buenos-aires-puerto-puerto-de-san-nicolas-muelle-provincial",
     "name": "Puerto de San Nicolás — muelle provincial",
     "province": "Buenos Aires",
     "type": "Puerto",
@@ -749,6 +814,7 @@
     "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/san-nicolas-muelle-provincial"
   },
   {
+    "id": "misiones-puerto-nuevo-puerto-de-posadas-muelle-1",
     "name": "Nuevo Puerto de Posadas — muelle 1",
     "province": "Misiones",
     "type": "Puerto",
@@ -761,6 +827,7 @@
     "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/nuevo-puerto-de-posadas"
   },
   {
+    "id": "entre-rios-puerto-puerto-de-ibicuy",
     "name": "Puerto de Ibicuy",
     "province": "Entre Ríos",
     "type": "Puerto",
@@ -773,6 +840,7 @@
     "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/ibicuy"
   },
   {
+    "id": "buenos-aires-puerto-puerto-de-san-pedro",
     "name": "Puerto de San Pedro",
     "province": "Buenos Aires",
     "type": "Puerto",
@@ -785,6 +853,7 @@
     "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/san-pedro"
   },
   {
+    "id": "chubut-recurso-mineral-proyecto-navidad-deposito-polimetalico",
     "name": "Proyecto Navidad — depósito polimetálico",
     "province": "Chubut",
     "type": "Recurso mineral",
@@ -797,6 +866,7 @@
     "coordinateSource": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp24342.html"
   },
   {
+    "id": "santa-cruz-recurso-mineral-cerro-moro-distrito-epitermal-au-ag",
     "name": "Cerro Moro — distrito epitermal Au-Ag",
     "province": "Santa Cruz",
     "type": "Recurso mineral",
@@ -809,6 +879,7 @@
     "coordinateSource": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp559.html"
   },
   {
+    "id": "santa-cruz-recurso-mineral-manantial-espejo-distrito-epitermal-au-ag",
     "name": "Manantial Espejo — distrito epitermal Au-Ag",
     "province": "Santa Cruz",
     "type": "Recurso mineral",
@@ -821,6 +892,7 @@
     "coordinateSource": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp585.html"
   },
   {
+    "id": "buenos-aires-ciudad-belen-de-escobar-centro-de-localidad",
     "name": "Belén de Escobar — centro de localidad",
     "province": "Buenos Aires",
     "type": "Ciudad",
@@ -843,6 +915,7 @@
     }
   },
   {
+    "id": "buenos-aires-ciudad-garin-centro-de-localidad",
     "name": "Garín — centro de localidad",
     "province": "Buenos Aires",
     "type": "Ciudad",
@@ -865,6 +938,7 @@
     }
   },
   {
+    "id": "buenos-aires-industria-parque-industrial-garin",
     "name": "Parque Industrial Garín",
     "province": "Buenos Aires",
     "type": "Industria",
@@ -891,6 +965,7 @@
     }
   },
   {
+    "id": "buenos-aires-turismo-bioparque-temaiken",
     "name": "Bioparque Temaikèn",
     "province": "Buenos Aires",
     "type": "Turismo",
@@ -917,6 +992,7 @@
     }
   },
   {
+    "id": "buenos-aires-turismo-munchi-s-sucursal-temaiken",
     "name": "Munchi’s — sucursal Temaikèn",
     "province": "Buenos Aires",
     "type": "Turismo",
@@ -943,6 +1019,7 @@
     }
   },
   {
+    "id": "buenos-aires-ciudad-centro-de-ingeniero-maschwitz-referencia-urbana",
     "name": "Centro de Ingeniero Maschwitz — referencia urbana",
     "province": "Buenos Aires",
     "type": "Ciudad",
@@ -969,6 +1046,7 @@
     }
   },
   {
+    "id": "buenos-aires-ciudad-centro-de-loma-verde-referencia-urbana",
     "name": "Centro de Loma Verde — referencia urbana",
     "province": "Buenos Aires",
     "type": "Ciudad",
@@ -995,6 +1073,7 @@
     }
   },
   {
+    "id": "buenos-aires-ciudad-centro-de-matheu-referencia-urbana",
     "name": "Centro de Matheu — referencia urbana",
     "province": "Buenos Aires",
     "type": "Ciudad",
@@ -1021,6 +1100,7 @@
     }
   },
   {
+    "id": "buenos-aires-ciudad-maquinista-savio-referencia-sector-este",
     "name": "Maquinista Savio — referencia sector este",
     "province": "Buenos Aires",
     "type": "Ciudad",
@@ -1047,6 +1127,7 @@
     }
   },
   {
+    "id": "buenos-aires-estacion-ferroviaria-estacion-ferroviaria-belen-de-escobar",
     "name": "Estación ferroviaria — Belén de Escobar",
     "province": "Buenos Aires",
     "type": "Estación ferroviaria",
@@ -1074,6 +1155,7 @@
     "sourceRecordId": "est-belen-de-escobar"
   },
   {
+    "id": "buenos-aires-estacion-ferroviaria-estacion-ferroviaria-ingeniero-maschwitz",
     "name": "Estación ferroviaria — Ingeniero Maschwitz",
     "province": "Buenos Aires",
     "type": "Estación ferroviaria",
@@ -1101,6 +1183,7 @@
     "sourceRecordId": "est-ingeniero-maschwitz"
   },
   {
+    "id": "buenos-aires-estacion-ferroviaria-estacion-ferroviaria-garin",
     "name": "Estación ferroviaria — Garín",
     "province": "Buenos Aires",
     "type": "Estación ferroviaria",
@@ -1128,6 +1211,7 @@
     "sourceRecordId": "est-garin"
   },
   {
+    "id": "buenos-aires-estacion-ferroviaria-estacion-ferroviaria-maquinista-savio",
     "name": "Estación ferroviaria — Maquinista Savio",
     "province": "Buenos Aires",
     "type": "Estación ferroviaria",
@@ -1155,6 +1239,7 @@
     "sourceRecordId": "est-maquinista-savio"
   },
   {
+    "id": "buenos-aires-estacion-ferroviaria-estacion-ferroviaria-matheu",
     "name": "Estación ferroviaria — Matheu",
     "province": "Buenos Aires",
     "type": "Estación ferroviaria",

@@ -537,10 +537,9 @@ jobs:
           }
           for node in nodes:
               node_id = node.get("id")
-              if node_id is not None:
-                  assert isinstance(node_id, str) and re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", node_id), f"ID estable inválido: {node_id}"
-                  assert node_id not in stable_ids, f"ID estable duplicado: {node_id}"
-                  stable_ids.add(node_id)
+              assert isinstance(node_id, str) and re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", node_id), f"ID estable ausente o inválido: {node.get('name')}"
+              assert node_id not in stable_ids, f"ID estable duplicado: {node_id}"
+              stable_ids.add(node_id)
               for field in ("name", "province", "type", "note", "source"):
                   assert isinstance(node.get(field), str) and node[field].strip(), f"Nodo sin {field}"
               assert node["province"] in expected_jurisdictions, f"Jurisdicción no admitida: {node['province']}"
