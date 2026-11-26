@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24",
+  "updatedAt": "2026-11-25",
   "jurisdiction": "Partido de Escobar",
   "province": "Buenos Aires",
   "country": "Argentina",
@@ -461,6 +461,59 @@
         "status": "verified",
         "checkedAt": "2026-11-24",
         "scope": "Se verificaron en la página municipal la denominación del programa, modalidad itinerante, localidades, días, puntos de encuentro y franjas horarias publicadas. La fuente no consigna fecha de edición. No se realizó verificación presencial ni se confirmó que cada puesto funcione efectivamente en el día y horario anunciado; el estado operativo permanece no verificado."
+      }
+    },
+    {
+      "id": "circuito-beneficios-turisticos",
+      "name": "Circuito de Beneficios Turísticos — adhesión de comercios",
+      "status": "operativo",
+      "publicationStatus": "Página municipal activa; invitación a sumar comercios publicada",
+      "operationalStatus": "Circuito y listado publicados; vigencia individual de promociones sujeta a cada comercio; recepción efectiva de nuevas adhesiones no verificada",
+      "description": "La iniciativa permite que quienes presenten entradas del Teatro Seminari/Cine Italia, la Granja Educativa Don Benito o el Jardín Japonés accedan a descuentos y promociones en comercios adheridos. La Municipalidad invita a comercios locales a sumarse; cada comercio define su propia propuesta.",
+      "participation": {
+        "status": "anunciado",
+        "invitation": "Los comercios de Escobar que deseen sumarse pueden comunicarse con la Secretaría de Producción y Turismo para recibir información e incorporarse al programa.",
+        "contactPhones": [
+          "11 3726-1259",
+          "11 3536-6096"
+        ],
+        "contactEmails": [
+          "secretariaproduccion@escobar.gob.ar",
+          "turismo@escobar.gob.ar"
+        ],
+        "applicationMethod": "Contacto por teléfono o correo electrónico; no se identificó un formulario público de adhesión.",
+        "eligibilityCriteria": "No especificados en la página consultada.",
+        "deadline": null,
+        "verification": {
+          "status": "verified",
+          "checkedAt": "2026-11-25",
+          "scope": "La página municipal invita a sumar comercios y publica los correos institucionales. La noticia municipal del 08/07/2026 añade dos teléfonos de contacto. No se contactó a la Secretaría ni se envió una solicitud; no se verificó recepción efectiva, aceptación de nuevas altas ni criterios formales."
+        }
+      },
+      "sourceName": "Municipalidad de Escobar — Secretaría de Producción y Turismo",
+      "sourceUrl": "https://www.escobar.gob.ar/circuito-de-beneficios/",
+      "sourceLabel": "Circuito de Beneficios Turísticos · fuente municipal",
+      "sourcePublishedAt": null,
+      "sourcePublicationNote": "La página del programa no indica fecha de publicación o edición; consultada el 25/11/2026.",
+      "relatedSources": [
+        {
+          "sourceName": "Municipalidad de Escobar — Secretaría de Producción",
+          "label": "Una entrada, muchos beneficios — 08/07/2026",
+          "url": "https://www.escobar.gob.ar/una-entrada-muchos-beneficios-comercios-de-escobar-ofrecen-descuentos-a-quienes-visiten-atractivos-turisticos-municipales/",
+          "sourcePublishedAt": "2026-07-08",
+          "sourcePublicationNote": "Noticia municipal fechada el 8 de julio de 2026.",
+          "verification": {
+            "status": "verified",
+            "checkedAt": "2026-11-25",
+            "scope": "La nota confirma que visitantes de atractivos municipales pueden acceder a beneficios en comercios adheridos y que los comercios interesados pueden solicitar información por teléfono o correo. Aclara que la vigencia de cada promoción depende del comercio; no se presume que todas las ofertas publicadas sigan vigentes."
+          }
+        }
+      ],
+      "validityPeriod": "Página oficial consultada el 25/11/2026; no indica fecha límite para adherir comercios. La vigencia de cada promoción depende del establecimiento participante.",
+      "verification": {
+        "status": "verified",
+        "checkedAt": "2026-11-25",
+        "scope": "Se abrió la página municipal del circuito, que explica el mecanismo de beneficios para visitantes y mantiene una invitación explícita a sumar comercios. Se contrastó con la noticia municipal del 08/07/2026, que publica teléfonos y correos de contacto y aclara que la vigencia de las promociones depende de cada comercio. No se enviaron mensajes ni solicitudes; no se verificó la recepción efectiva de nuevas adhesiones ni un plazo formal."
       }
     }
   ]

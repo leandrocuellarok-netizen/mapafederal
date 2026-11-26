@@ -278,3 +278,28 @@ assert.match(calleSalta.verification.scope, /No se verificaron contratista, plie
 assert.equal(calleSalta.coords, undefined, "No se deben inventar coordenadas de la obra");
 assert.equal(new URL(calleSalta.sourceUrl).protocol, "https:");
 
+
+
+const tourismCircuit = economy.commercialPrograms.find(item => item.id === "circuito-beneficios-turisticos");
+assert.ok(tourismCircuit, "Falta el Circuito de Beneficios Turísticos como programa comercial municipal");
+assert.equal(tourismCircuit.status, "operativo");
+assert.equal(tourismCircuit.publicationStatus, "Página municipal activa; invitación a sumar comercios publicada");
+assert.equal(tourismCircuit.participation.status, "anunciado");
+assert.equal(tourismCircuit.participation.deadline, null, "No inventar una fecha límite de adhesión");
+assert.equal(tourismCircuit.participation.eligibilityCriteria, "No especificados en la página consultada.");
+assert.deepEqual(tourismCircuit.participation.contactEmails, ["secretariaproduccion@escobar.gob.ar", "turismo@escobar.gob.ar"]);
+assert.deepEqual(tourismCircuit.participation.contactPhones, ["11 3726-1259", "11 3536-6096"]);
+assert.equal(tourismCircuit.sourcePublishedAt, null, "La página del programa no informa fecha editorial");
+assert.equal(tourismCircuit.relatedSources[0].sourcePublishedAt, "2026-07-08");
+assert.equal(tourismCircuit.verification.checkedAt, "2026-11-25");
+assert.match(tourismCircuit.verification.scope, /no se enviaron mensajes ni solicitudes/i);
+assert.match(tourismCircuit.validityPeriod, /no indica fecha límite/i);
+assert.match(tourismCircuit.operationalStatus, /recepción efectiva.*no verificada/i);
+assert.equal(new URL(tourismCircuit.sourceUrl).protocol, "https:");
+assert.equal(new URL(tourismCircuit.relatedSources[0].url).protocol, "https:");
+assert.equal(tourismCircuit.schedule, undefined, "No inventar cronogramas para el programa de adhesión");
+const profileRenderer = fs.readFileSync("assets/foco-escobar.js", "utf8");
+assert.match(profileRenderer, /const participation=item\.participation/);
+assert.match(profileRenderer, /participation\.status/);
+assert.match(profileRenderer, /item\.sourceLabel\|\|"Fuente municipal/);
+assert.match(profileRenderer, /const scheduleHtml=schedule\?/);
