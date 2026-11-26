@@ -53,7 +53,7 @@ La Decisión Administrativa 86/2022 autorizó la apertura de la terminal como co
 - Se verificaron 24 jurisdicciones, nueve categorías admitidas y coordenadas dentro del rango nacional.
 - La matriz quedó reconciliada en 103 nodos; Buenos Aires registra 29 y un nodo Paso fronterizo.
 - Se añadió una prueba de regresión para ID, jurisdicción, categoría, coordenadas, fuentes, calidad secundaria, estado y cobertura.
-- La ejecución de GitHub Actions y el despliegue de Pages quedan pendientes de la integración en `main`; no se afirma publicación en esta etapa.
+- La validación automatizada y el despliegue de Pages quedan pendientes de confirmación externa; no se afirma publicación en esta etapa.
 
 ## Archivos y commits de la rama
 
@@ -67,6 +67,7 @@ Commits:
 - Catálogo: [`496872d`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/496872d1145d1931325e486f34eecbf1ed5e6d1f).
 - Matriz: [`c9a7ca2`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/c9a7ca24c1b08d684600089de90cb8d77ef451dc).
 - README: [`bb61823`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/bb618237d5e471cec950382c0ac6870e85474215).
+- Corrección final del segundo conteo README: [`3f552d6`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/3f552d61e11d12ecdde168021224074f9424dfed).
 - Prueba de regresión inicial: [`6490c63`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/6490c638230cdabebe644e164fa33f455edd380d).
 - Ajuste de aserción de regresión para coincidir con el alcance de estado documentado: [`621af6d`](https://github.com/leandrocuellarok-netizen/mapafederal/commit/621af6d6584aefe9ce394151208308ea8cb821c4).
 
