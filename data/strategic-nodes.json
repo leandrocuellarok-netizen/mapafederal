@@ -1593,5 +1593,39 @@
       "scope": "La existencia y actividad industrial se contrastaron con el portal oficial de Turismo de Río Grande, que informa el registro RENPI y empresas en operación para 2024. La situación de obras se contrastó con la presentación municipal del Presupuesto 2026, que señala inactividad de programas FAMP para modernización, sin afirmar cierre del parque. La coordenada fue transcripta de un directorio sectorial secundario y comprobada dentro de la extensión publicada por la metadata oficial IDETDF (EPSG:4326); el WFS/ZIP agotó el tiempo de espera y no se inspeccionó la geometría. No se declara estado operativo actual ni precisión catastral."
     },
     "coordinateQuality": "Coordenada de referencia publicada por fuente secundaria sectorial; método de captura y precisión no declarados. El punto cae dentro del bounding box de la capa oficial IDETDF Parque Industrial (edición 2025, EPSG:4326), pero la geometría no pudo recuperarse. No representa acceso, centroide, perímetro ni lote específico y no se atribuye precisión catastral."
+  },
+  {
+    "id": "buenos-aires-parque-nacional-ciervo-de-los-pantanos",
+    "name": "Parque Nacional Ciervo de los Pantanos",
+    "province": "Buenos Aires",
+    "district": "Campana",
+    "type": "Turismo",
+    "coords": [
+      -34.2345,
+      -58.87724
+    ],
+    "note": "Área protegida nacional y Sitio Ramsar en el partido de Campana. El SIB de APN publica esta coordenada como ubicación geográfica del parque; se usa como referencia cartográfica, no como acceso ni perímetro. APN publica horarios de visita sujetos a avisos y condiciones vigentes.",
+    "source": "https://www.argentina.gob.ar/parquesnacionales/centro/parque-nacional-ciervo-de-los-pantanos",
+    "sourceName": "Administración de Parques Nacionales (APN)",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Ficha institucional consultada el 2026-11-26; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "Ficha institucional APN — Parque Nacional Ciervo de los Pantanos",
+    "coordinateSource": "https://sib.gob.ar/index.php/areas-protegidas/reserva-natural-otamendi",
+    "coordinateSourceName": "Sistema de Información de Biodiversidad de la Administración de Parques Nacionales (SIB/APN)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La ficha publica la ubicación geográfica 34 14 4.19 S (-34.23450), 58 52 38.06 O (-58.87724); no informa fecha de actualización ni semántica geométrica del punto.",
+    "coordinateReferenceSystem": "Coordenadas geográficas en grados decimales publicadas por SIB/APN; datum y CRS no especificados. No se atribuye EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron los valores decimales publicados por SIB/APN; no se realizó geocodificación ni reproyección.",
+    "statusSource": "https://www.argentina.gob.ar/parquesnacionales/centro/parque-nacional-ciervo-de-los-pantanos/horarios-como-llegar",
+    "statusSourceName": "APN — Horarios / Cómo llegar",
+    "statusSourcePublishedAt": null,
+    "administrativeStatus": "Parque Nacional creado por Ley Nacional 27.456/2018 y administrado por APN. La página oficial de visita informa apertura diaria de 10 a 18 h y habilitación de senderos de 10:30 a 17 h; esto documenta información institucional publicada, no disponibilidad en tiempo real.",
+    "validityPeriod": "Área protegida establecida en 2018; información de visita consultada el 2026-11-26. No se verificó apertura en tiempo real ni eventuales cierres temporales.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "La ficha SIB de APN identifica la jurisdicción Campana y publica la ubicación geográfica del parque. La página APN de visita informa apertura diaria y horarios de senderos. La coordenada se usa como referencia cartográfica del área protegida; la fuente no define si corresponde a acceso, centroide o punto interno. Verificación documental, no presencial ni en tiempo real."
+    },
+    "coordinateQuality": "Punto de referencia oficial publicado por SIB/APN. La fuente no declara si representa acceso, centroide o punto interno; no se presenta como acceso ni perímetro."
   }
 ]
