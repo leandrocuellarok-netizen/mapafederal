@@ -41,9 +41,9 @@ Córdoba tenía 2 nodos, uno de ellos de Industria. Se incorpora una segunda ref
 
 ## Commit, workflow y Pages
 - Commit de catálogo: `8b43ae5592e59eee61cc348362f8e04373452ec7`.
-- Commit final de matriz, validador, README y bitácora: pendiente de creación.
-- GitHub Actions: pendiente de ejecución.
-- GitHub Pages: pendiente de validar el job de despliegue y la página publicada.
+- Commit final de matriz, validador, README y bitácora: `f0a0ebb844e14e36471d9f8f399a0aec90eba076`.
+- GitHub Actions [#803](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45831641343), run ID `45831641343`, asociado al commit `f0a0ebb844e14e36471d9f8f399a0aec90eba076`: `validate=success`, `deploy=success`, conclusión global `success`.
+- GitHub Pages: el job `Deploy to GitHub Pages` terminó con `success` en la ejecución #803. La verificación HTTP independiente de la portada y del JSON publicado no estuvo disponible; no se afirma inspección visual independiente.
 
 ## Gaps pendientes
 - Obtener geometría oficial del parque y CRS/datum para reemplazar la referencia puntual del inmueble por un punto de acceso o polígono verificable.
