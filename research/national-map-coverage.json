@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T11:33:38-03:00",
+  "generatedAt": "2026-11-26T12:37:42-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "549ad6601bb56d114691c70e720845370dd993f1",
-  "nodeCount": 98,
+  "catalogCommit": "78aee6ba74d51adfd342ddc6a152a0f91b7b2759",
+  "nodeCount": 99,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -79,7 +79,7 @@
       "jurisdictions": [
         "Buenos Aires"
       ],
-      "nodeCount": 27,
+      "nodeCount": 28,
       "coveredJurisdictions": 1
     },
     {
@@ -108,17 +108,19 @@
         "Estación ferroviaria": 1
       },
       "missingCategories": [
-        "Paso fronterizo",
         "Logística",
         "Industria",
         "Recurso mineral",
         "Turismo"
+      ],
+      "notApplicableCategories": [
+        "Paso fronterizo"
       ]
     },
     {
       "province": "Buenos Aires",
       "region": "Buenos Aires Province",
-      "total": 27,
+      "total": 28,
       "byType": {
         "Ciudad": 6,
         "Puerto": 7,
@@ -127,10 +129,11 @@
         "Logística": 1,
         "Industria": 4,
         "Recurso mineral": 1,
-        "Turismo": 2,
+        "Turismo": 3,
         "Estación ferroviaria": 5
       },
-      "missingCategories": [
+      "missingCategories": [],
+      "notApplicableCategories": [
         "Paso fronterizo"
       ]
     },
@@ -682,7 +685,7 @@
     "Logística": 3,
     "Industria": 14,
     "Recurso mineral": 4,
-    "Turismo": 7,
+    "Turismo": 8,
     "Estación ferroviaria": 6
   },
   "leastCoveredJurisdictions": [
@@ -722,9 +725,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Patagonia",
-    "nextTarget": "Buenos Aires Province",
-    "note": "La ejecución Patagonia incorporó el Parque Industrial de Río Grande (Tierra del Fuego) como nodo de Industria. La Municipalidad informa actividad empresarial en el parque con corte 2024; el estado vigente del padrón no se verificó. La coordenada puntual procede de un directorio sectorial secundario y cae dentro de la extensión oficial IDETDF EPSG:4326, pero la geometría vectorial no pudo recuperarse. No se presenta como acceso, centroide ni perímetro. La próxima región de la rotación es Buenos Aires Province."
+    "lastTargeted": "Buenos Aires Province",
+    "nextTarget": "CABA",
+    "note": "La ejecución Buenos Aires Province incorporó el Parque Nacional Ciervo de los Pantanos (Campana) en Turismo. SIB/APN publica la ubicación geográfica -34.23450, -58.87724; la ficha no define si es acceso, centroide o punto interno, por lo que se registra solo como referencia cartográfica. APN publica horarios de visita, sin verificación en tiempo real. La categoría Paso fronterizo se marca no aplicable para Buenos Aires y CABA por no tener frontera terrestre internacional; queda pendiente revisar la aplicabilidad de esta categoría en otras jurisdicciones."
   },
   "pendingCandidates": [
     {
@@ -834,6 +837,18 @@
       "sourceUrls": [
         "https://anchipurac.sanjuan.gob.ar/institucional",
         "https://anchipurac.sanjuan.gob.ar/informacion"
+      ]
+    },
+    {
+      "province": "Buenos Aires",
+      "locality": "General Lavalle",
+      "category": "Turismo",
+      "name": "Parque Nacional Campos del Tuyú",
+      "decision": "not_added",
+      "reason": "SIB/APN publica una coordenada geográfica exacta de referencia (-36.35444, -56.87624), pero la noticia oficial de APN del 25/09/2024 indicaba que se preparaba la apertura al uso público. No se encontró en esta revisión una confirmación institucional más reciente de acceso turístico regular; se documenta el área protegida sin incorporarla como destino visitable operativo.",
+      "sourceUrls": [
+        "https://sib.gob.ar/areas-protegidas/parque-nacional-campos-del-tuyu",
+        "https://www.argentina.gob.ar/noticias/larsen-recorrio-el-parque-nacional-campos-del-tuyu-que-prepara-la-apertura-de-uso-publico"
       ]
     }
   ],
