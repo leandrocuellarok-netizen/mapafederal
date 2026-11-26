@@ -41,9 +41,10 @@ La resolución no declara la zona Gauss-Krüger. POSGAR 2007 / Argentina 5 (EPSG
 - `data/strategic-nodes.json`
 - `research/national-map-coverage.json`
 - `README.md`
+- `index.html` (asociación al filtro sectorial Minería)
 - Este registro en `research/runs/`
 
-`index.html` no se modificó: la portada ya carga `data/strategic-nodes.json` y filtra los nodos por su campo `type`. No se creó una categoría nueva.
+`index.html` se actualizó para incluir «Cantera fiscal D-6 — dolomita (Sierras Bayas)» en el filtro sectorial «Minería». El filtro de categoría «Recurso mineral» ya existía y sigue leyendo el campo `type`; no se creó una categoría nueva.
 
 ## Validación local de contenido
 JSON parseable; ID, nombre y coordenadas sin duplicados; coordenadas dentro del rango argentino; categoría y jurisdicción admitidas; fuente HTTPS; matriz recalculada contra los 93 registros; totales regionales y por categoría conciliados. La validación automática completa, sintaxis JavaScript y publicación quedan sujetas al workflow de GitHub Actions posterior al push.
@@ -55,6 +56,7 @@ JSON parseable; ID, nombre y coordenadas sin duplicados; coordenadas dentro del 
 ## GitHub Actions y Pages
 - Run #775 (`a5a7fd3c841c08122a106a52f65c4a718eefeec7`): falló la validación porque el catálogo ya tenía 93 nodos mientras la matriz todavía registraba 92; el job de despliegue fue omitido. Era el estado intermedio entre el commit del catálogo y el cierre de matriz.
 - Run #776 (`b8294bc28dff4faefe4f8a44a4aeb57f709c60c7`): `validate` aprobado y `deploy` aprobado; el paso `Deploy to GitHub Pages` terminó correctamente. https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45785295221
+- Run #777 (`4e75cb44fefeacf19fddb669102b00a03e6728c5`): validación y despliegue aprobados tras actualizar el registro de investigación. https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45785474243
 - La portada pública no pudo abrirse independientemente desde el entorno de comprobación. Se confirma el despliegue del job de Pages, no una inspección visual independiente del mapa.
 
 ## Brechas pendientes
