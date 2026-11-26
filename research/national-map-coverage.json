@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T19:31:27-03:00",
+  "generatedAt": "2026-11-26T20:33:13-03:00",
   "catalogPath": "data/strategic-nodes.json",
   "catalogCommit": "496872d1145d1931325e486f34eecbf1ed5e6d1f",
-  "nodeCount": 103,
+  "nodeCount": 104,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -87,7 +87,7 @@
       "jurisdictions": [
         "CABA"
       ],
-      "nodeCount": 4,
+      "nodeCount": 5,
       "coveredJurisdictions": 1
     }
   ],
@@ -95,7 +95,7 @@
     {
       "province": "CABA",
       "region": "CABA",
-      "total": 4,
+      "total": 5,
       "byType": {
         "Ciudad": 1,
         "Puerto": 1,
@@ -104,15 +104,14 @@
         "Logística": 0,
         "Industria": 0,
         "Recurso mineral": 0,
-        "Turismo": 0,
+        "Turismo": 1,
         "Estación ferroviaria": 1
       },
       "missingCategories": [
         "Paso fronterizo",
         "Logística",
         "Industria",
-        "Recurso mineral",
-        "Turismo"
+        "Recurso mineral"
       ]
     },
     {
@@ -689,7 +688,7 @@
     "Logística": 3,
     "Industria": 14,
     "Recurso mineral": 4,
-    "Turismo": 10,
+    "Turismo": 11,
     "Estación ferroviaria": 6
   },
   "leastCoveredJurisdictions": [
@@ -729,9 +728,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Buenos Aires Province",
-    "nextTarget": "CABA",
-    "note": "Ejecución del 26/11/2026 en Buenos Aires Province: se incorporó la Terminal Fluvial Binacional de Tigre, partido de Tigre, categoría Paso fronterizo. Migraciones la incluye entre las vías de ingreso y egreso en funcionamiento y publica horario de 07 a 17 para embarcaciones particulares y deportivas. La coordenada se tomó de Mapcarta/OpenStreetMap way 269888419, fuente secundaria sin CRS ni precisión declarados; se presenta solo como referencia cartográfica, no como acceso ni puesto de control. No se afirma un servicio internacional comercial regular. Catálogo: 103 nodos. Próxima región: CABA."
+    "lastTargeted": "CABA",
+    "nextTarget": "NOA",
+    "note": "Ejecución del 26/11/2026 en CABA: se incorporó la Parada 07 — Reserva Ecológica (principal) del Bus Turístico como referencia de Turismo, usando la feature 17 del GeoJSON oficial de Buenos Aires Data, CRS84. El punto representa la parada, no el acceso ni el perímetro de la reserva; la operación del servicio no se verificó en tiempo real. Se investigaron las terminales internacionales Buquebus y Colonia Express: Migraciones y ANPyN confirman su función y muelles, pero no se obtuvo una coordenada puntual oficial; no se geocodificaron domicilios ni se reutilizó el punto general del Puerto de Buenos Aires. Catálogo: 104 nodos. Próxima región: NOA."
   },
   "pendingCandidates": [
     {
@@ -864,22 +863,12 @@
       "category": "Paso fronterizo",
       "name": "Terminal Portuaria Buquebus",
       "decision": "not_added",
-      "reason": "La Dirección Nacional de Migraciones incluye la Terminal Portuaria de Buquebus entre las vías de ingreso/egreso del Área Metropolitana; Argentina.gob.ar confirma su ubicación en Puerto Madero, CABA. La fuente consultada no publica coordenadas puntuales atribuibles de la terminal. No se geocodificó el domicilio ni se reutilizó el marcador general del Puerto de Buenos Aires.",
+      "reason": "La Dirección Nacional de Migraciones incluye la Terminal Portuaria de Buquebus entre las vías de ingreso/egreso en funcionamiento; ANPyN identifica Dársena Norte 1ra/2da/7ma como muelle BUQUEBUS para pasajeros. La coordenada publicada por ANPyN corresponde al Puerto de Buenos Aires en general, no a la terminal ni al muelle específico. Un directorio secundario difunde una coordenada OSM sin método de captura ni precisión declarados; no se usa como punto exacto. Se requiere geometría oficial del muelle/terminal o coordenada institucional atribuible.",
       "sourceUrls": [
         "https://www.argentina.gob.ar/migraciones/pasos-internacionales",
-        "https://www.argentina.gob.ar/noticias/el-gobierno-nacional-inauguro-un-centro-integral-de-documentacion-en-la-terminal-de"
-      ]
-    },
-    {
-      "province": "CABA",
-      "locality": "Puerto Madero",
-      "category": "Turismo",
-      "name": "Parada 07 Reserva Ecológica (principal) — Bus Turístico",
-      "decision": "not_added",
-      "reason": "Una vista previa GeoJSON anterior muestra la feature id=17, punto CRS84 en -58.356996687129474, -34.616277328065124, dirección Av. Dr. Tristán Achával Rodríguez 1500. La ficha oficial del recurso informa una modificación posterior, el 13/11/2026, y la vista previa/descarga vigente no permitió verificar que la geometría siga igual. Se conserva como candidato; no se copia una coordenada de una versión anterior no revalidada.",
-      "sourceUrls": [
-        "https://data.buenosaires.gob.ar/dataset/bus-turistico/resource/ad2915b2-9f43-4fbe-b4ec-b425e989f339",
-        "https://turismo.buenosaires.gob.ar/es/article/que-hacer-esta-semana"
+        "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/buenos-aires",
+        "https://www.argentina.gob.ar/sites/default/files/certificado_global_2025.pdf",
+        "https://logistica.dir.ar/empresa/terminal-fluvial-buquebus-puerto-madero.html"
       ]
     },
     {
@@ -931,6 +920,20 @@
         "https://m.formosa.gob.ar/noticia/34029/83/el_parque_industrial_de_formosa_se_posiciona_como_referente_en_el_nea_con_empresa_quimica_que_invierte_en_innovacion_y_energia_renovable",
         "https://m.formosa.gob.ar/noticia/34729/1301/formosa_cerro_la_semana_de_la_industria_con_inversiones_innovacion_y_respaldo_al_sector_productivo",
         "https://idef.formosa.gob.ar/geoportal/servicios"
+      ]
+    },
+    {
+      "province": "CABA",
+      "locality": "Puerto Madero Sur",
+      "category": "Paso fronterizo",
+      "name": "Terminal Portuaria Colonia Express",
+      "decision": "not_added",
+      "reason": "Migraciones incluye Colonia Express entre las vías de ingreso/egreso en funcionamiento y ANPyN identifica Dársena Sur-Oeste como muelle de la terminal para pasajeros. El operador publica la dirección Av. Elvira Rawson de Dellepiane 155, pero ninguna fuente oficial consultada aporta una coordenada puntual o geometría del muelle. Un directorio secundario publica un punto GPS sin CRS ni método de captura; no se geocodifica el domicilio ni se incorpora ese punto como exacto. Se requiere geometría oficial de la terminal o coordenada institucional atribuible.",
+      "sourceUrls": [
+        "https://www.argentina.gob.ar/migraciones/pasos-internacionales",
+        "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/buenos-aires",
+        "https://www.coloniaexpress.com/es/ar/mas-informacion/terminales/",
+        "https://argentina.worldplaces.me/es/view-place/75497846-terminal-fluviomaritima-colonia-express.html"
       ]
     }
   ],

@@ -1877,5 +1877,39 @@
       "scope": "Se verificó que Migraciones incluye la Terminal Fluvial Binacional de Tigre entre las vías de ingreso y egreso en funcionamiento, con horario publicado para embarcaciones particulares y deportivas. La Decisión Administrativa 86/2022 documenta su autorización como corredor seguro internacional en 2022. El Municipio identifica la estación fluvial de pasajeros en Mitre 305 y las salidas de lanchas colectivas. La coordenada procede de la feature OSM way 269888419 difundida por Mapcarta; al no existir en las fuentes primarias consultadas una geometría puntual recuperable, se declara expresamente como referencia secundaria, sin precisión catastral, acceso ni puesto de control. No se verificó servicio internacional comercial regular ni operación en tiempo real."
     },
     "coordinateQuality": "Referencia secundaria publicada por Mapcarta para OpenStreetMap way 269888419 (amenity=ferry_terminal). El proveedor no informa método de captura, precisión ni CRS/datum; no se presenta como acceso, muelle específico, puesto de control migratorio ni perímetro certificado."
+  },
+  {
+    "id": "caba-turismo-parada-07-reserva-ecologica-bus-turistico",
+    "name": "Parada 07 — Reserva Ecológica (principal), Bus Turístico",
+    "province": "CABA",
+    "district": "Comuna 1",
+    "locality": "Puerto Madero",
+    "type": "Turismo",
+    "coords": [
+      -34.616277328065124,
+      -58.356996687129474
+    ],
+    "note": "Parada 07 del Bus Turístico de CABA, registrada en la capa oficial GeoJSON; dirección Achával Rodríguez, Dr. Av. 1500, barrio Puerto Madero, Comuna 1. La geometría representa el punto de parada, no el acceso ni el perímetro de la Reserva Ecológica. La operación del recorrido no se verificó en tiempo real.",
+    "source": "https://data.buenosaires.gob.ar/zh_Hant_TW/dataset/bus-turistico/resource/ad2915b2-9f43-4fbe-b4ec-b425e989f339",
+    "sourceName": "Buenos Aires Data — Gobierno de la Ciudad Autónoma de Buenos Aires",
+    "sourcePublishedAt": "2026-11-03",
+    "sourcePublicationNote": "Recurso GeoJSON creado el 25/09/2025; último cambio declarado el 03/11/2026.",
+    "sourceRecordId": "Feature GeoJSON id=17; nombre 07. Reserva Ecológica (principal); recorrido Rojo; dirección Achával Rodriguez, T., Dr. Av. 1500; barrio Puerto Madero; Comuna 1.",
+    "coordinateSource": "https://data.buenosaires.gob.ar/zh_Hant_TW/dataset/bus-turistico/resource/ad2915b2-9f43-4fbe-b4ec-b425e989f339",
+    "coordinateSourceName": "Buenos Aires Data — Bus Turístico Paradas (GeoJSON), feature id=17",
+    "coordinateSourcePublishedAt": "2026-11-03",
+    "coordinateReferenceSystem": "OGC:CRS84 (urn:ogc:def:crs:OGC:1.3:CRS84), declarado en el GeoJSON.",
+    "coordinateTransformation": "La fuente publica [longitud, latitud]; el catálogo almacena [latitud, longitud]. Solo se reordenaron los ejes; no hubo reproyección ni transformación de datum.",
+    "coordinateQuality": "Punto de parada publicado en la capa oficial del GCBA; la fuente no declara método de captura ni precisión posicional. No representa el acceso ni el perímetro de la Reserva Ecológica.",
+    "statusSource": "https://data.buenosaires.gob.ar/zh_Hant_TW/dataset/bus-turistico/resource/ad2915b2-9f43-4fbe-b4ec-b425e989f339",
+    "statusSourceName": "Buenos Aires Data — recurso oficial de paradas del Bus Turístico",
+    "statusSourcePublishedAt": "2026-11-03",
+    "administrativeStatus": "La feature aparece en el conjunto oficial de paradas actualizado el 03/11/2026. Esto acredita que la parada figura en el catálogo administrativo, pero no confirma la operación del recorrido en tiempo real.",
+    "validityPeriod": "Geometría y atributos publicados en el recurso oficial consultado el 26/11/2026; operación del recorrido no verificada en tiempo real.",
+    "status": "no_verificado",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "Se consultó el GeoJSON oficial de Buenos Aires Data. La feature id=17 identifica la parada principal de Reserva Ecológica, dirección Achával Rodríguez 1500, Puerto Madero, Comuna 1. El recurso declara OGC:CRS84; se reordenó longitud/latitud a latitud/longitud. No se hizo inspección presencial ni verificación del servicio en tiempo real."
+    }
   }
 ]

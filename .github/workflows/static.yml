@@ -663,7 +663,7 @@ jobs:
           chubut = next(row for row in coverage_rows if row["province"] == "Chubut")
           assert chubut["total"] == 6 and chubut["byType"]["Turismo"] == 1
           assert "Turismo" not in chubut["missingCategories"]
-          assert coverage["categoryTotals"]["Turismo"] == 10
+          assert coverage["categoryTotals"]["Turismo"] == 11
           rio_grande = next((node for node in nodes if node.get("id") == "tierra-del-fuego-parque-industrial-rio-grande"), None)
           assert rio_grande is not None and rio_grande["province"] == "Tierra del Fuego" and rio_grande["type"] == "Industria"
           assert rio_grande["status"] == "no_verificado"
@@ -688,12 +688,26 @@ jobs:
           assert "referencia secundaria" in tigre["coordinateQuality"].lower()
           assert "particulares y deportivas" in tigre["administrativeStatus"].lower()
           assert "no se verificó servicio internacional comercial regular" in tigre["verification"]["scope"].lower()
+          reserva_stop = next((node for node in nodes if node.get("id") == "caba-turismo-parada-07-reserva-ecologica-bus-turistico"), None)
+          assert reserva_stop is not None and reserva_stop["province"] == "CABA" and reserva_stop["type"] == "Turismo"
+          assert reserva_stop["district"] == "Comuna 1" and reserva_stop["locality"] == "Puerto Madero"
+          assert reserva_stop["coords"] == [-34.616277328065124, -58.356996687129474]
+          assert reserva_stop["source"].endswith("/resource/ad2915b2-9f43-4fbe-b4ec-b425e989f339")
+          assert reserva_stop["coordinateSource"] == reserva_stop["source"]
+          assert reserva_stop["coordinateReferenceSystem"].startswith("OGC:CRS84")
+          assert "solo se reordenaron los ejes" in reserva_stop["coordinateTransformation"].lower()
+          assert reserva_stop["status"] == "no_verificado"
+          assert "no representa el acceso" in reserva_stop["coordinateQuality"].lower()
+          assert "feature geojSON id=17" in reserva_stop["sourceRecordId"].lower()
+          assert reserva_stop["verification"]["checkedAt"] == "2026-11-26"
           buenos_aires = next(row for row in coverage_rows if row["province"] == "Buenos Aires")
           assert buenos_aires["total"] == 29 and buenos_aires["byType"]["Turismo"] == 3 and buenos_aires["byType"]["Paso fronterizo"] == 1
           assert "Paso fronterizo" not in buenos_aires["missingCategories"]
           assert "Paso fronterizo" not in buenos_aires.get("notApplicableCategories", [])
           assert coverage["categoryTotals"]["Paso fronterizo"] == 12
           caba = next(row for row in coverage_rows if row["province"] == "CABA")
+          assert caba["total"] == 5 and caba["byType"]["Turismo"] == 1
+          assert "Turismo" not in caba["missingCategories"]
           assert "Paso fronterizo" in caba["missingCategories"]
           assert "Paso fronterizo" not in caba.get("notApplicableCategories", [])
           inland_without_international_border = {"Córdoba", "La Pampa", "San Luis", "Santa Fe", "Santiago del Estero", "Tucumán"}
