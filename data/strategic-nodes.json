@@ -1518,5 +1518,43 @@
       "scope": "Se contrastó la identificación y la coordenada de referencia en la tabla oficial del IGN con la ficha, los horarios de ingreso y las actividades publicadas por APN. La coordenada se usa únicamente como referencia cartográfica del área protegida; no se interpreta como acceso, centroide certificado, instalación ni perímetro. Verificación documental, no presencial."
     },
     "coordinateQuality": "Coordenada oficial de referencia publicada por IGN para el área protegida; la fuente no define si es acceso, centroide o punto interno. No se presenta como acceso ni como geometría del límite."
+  },
+  {
+    "id": "cordoba-parque-industrial-las-higueras",
+    "name": "Parque Industrial Municipal de Las Higueras",
+    "province": "Córdoba",
+    "district": "Río Cuarto",
+    "locality": "Las Higueras",
+    "type": "Industria",
+    "coords": [
+      -33.07885989,
+      -64.2764577
+    ],
+    "note": "Parque Industrial Municipal sobre la Ruta Nacional 158, frente al Área Material de la Fuerza Aérea. En desarrollo; el reporte local del 18/03/2026 documenta obras de suelo, calles y cerramiento, con redes internas aún pendientes. La coordenada AABE es una referencia del inmueble, no un acceso ni perímetro.",
+    "source": "https://www3.lashigueras.gov.ar/media/ORDENANZAS/2023/45-2023_Reglamento_Interno_Parque_Industrial_Las_Higueras_17-10-2023_202_NaWYIwR.pdf",
+    "sourceName": "Municipalidad de Las Higueras — Ordenanza 45/2023, Reglamento Interno del Parque Industrial",
+    "sourcePublishedAt": "2023-10-17",
+    "sourcePublicationNote": "Aprobada el 17/10/2023. El artículo 2 ubica el Parque Industrial sobre RN 158, frente al Área Material de la Fuerza Aérea Argentina, y enumera las parcelas 2405-0481246-5 y 2405-0215444-4.",
+    "sourceRecordId": "Ordenanza 45/2023, artículos 1–4; Parque Industrial Las Higueras.",
+    "coordinateSource": "https://www.argentina.gob.ar/sites/default/files/infoleg/res218-372140.pdf",
+    "coordinateSourceName": "Agencia de Administración de Bienes del Estado (AABE) — Croquis del inmueble CIE 1400003161/18, anexo de Resolución 218/2022",
+    "coordinateSourcePublishedAt": "2022-09-28",
+    "coordinateSourcePublicationNote": "Página 2 del anexo: publica latitud -33.07885989 y longitud -64.27645770 para el inmueble de aproximadamente 303.060,94 m². El propio documento advierte que el croquis es solo a efectos ilustrativos; no aporta polígono.",
+    "coordinateReferenceSystem": "No declarado en el croquis AABE; se publican coordenadas geográficas de latitud/longitud. No se asigna EPSG.",
+    "coordinateTransformation": "Sin transformación ni reproyección: se transcribieron los valores de latitud/longitud publicados en grados decimales. El datum no está especificado por la fuente.",
+    "statusSource": "https://www3.lashigueras.gov.ar/media/ORDENANZAS/2025/Ordenanza_N_216_-_Beneficio_Impositivo_METAGRO_-_RYMI_20260417135540.pdf",
+    "statusSourceName": "Municipalidad de Las Higueras — Ordenanza 216/2025, beneficio impositivo METAGRO/RYMI",
+    "statusSourcePublishedAt": "2025-11-20",
+    "additionalStatusSource": "https://eldiadehigueras.com.ar/amp/19647/parque-industrial-avanza-el-desarrollo-y-crece-el-interes-en-las-hig",
+    "additionalStatusSourceName": "El Día de Higueras — Parque Industrial: avanza el desarrollo y crece el interés de empresas en Las Higueras",
+    "additionalStatusSourcePublishedAt": "2026-03-18",
+    "administrativeStatus": "Parque Industrial Municipal creado por Ordenanza 29/2023 y reglamentado por Ordenanza 45/2023. La Ordenanza 216/2025 documenta el desarrollo municipal y compromisos de obra de METAGRO/RYMI. Una fuente periodística local del 18/03/2026 reporta movimiento de suelos, apertura de calles y cerramiento ejecutados, con redes internas aún en etapa de proyecto. No se acredita habilitación definitiva ni operación plena.",
+    "validityPeriod": "Avance de obra documentado al 18/03/2026; no se localizó confirmación municipal posterior de habilitación definitiva ni de operación plena al 26/11/2026.",
+    "status": "en_construccion",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "La existencia, administración y ubicación general se verificaron en la Ordenanza municipal 45/2023. La coordenada se transcribió del anexo oficial AABE de la Resolución 218/2022, que publica latitud/longitud y advierte que el croquis es ilustrativo. El estado de desarrollo se contrastó con la Ordenanza municipal 216/2025 y, como fuente secundaria identificada, con El Día de Higueras (18/03/2026), que informa movimiento de suelos, calles y cerramiento, con redes internas aún en proyecto. No se verificó habilitación definitiva ni operación plena; el punto no representa acceso, centroide certificado ni perímetro."
+    },
+    "coordinateQuality": "Coordenada geográfica explícita publicada por AABE para el inmueble, pero el croquis se declara ilustrativo y no define método de captura, datum/CRS ni semántica del punto. Se usa solo como referencia cartográfica del inmueble; no es centroide certificado, acceso ni perímetro, y no se atribuye precisión catastral."
   }
 ]
