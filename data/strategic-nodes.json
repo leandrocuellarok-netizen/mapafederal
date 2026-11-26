@@ -1188,5 +1188,35 @@
       "checkedAt": "2026-11-26",
       "scope": "Se verificaron los cuatro vértices y la habilitación jurídica en la resolución AFIP; la Casa de Santiago del Estero confirma que el Parque Industrial La Isla sigue listado en La Banda y en el RENPI. No se verificó la operación aduanera actual. El marcador usa el vértice A como referencia explícita del perímetro."
     }
+  },
+  {
+    "id": "chaco-parque-industrial-puerto-tirol",
+    "name": "Parque Industrial Provincial Puerto Tirol",
+    "province": "Chaco",
+    "locality": "Puerto Tirol",
+    "type": "Industria",
+    "coords": [
+      -27.368669,
+      -59.060592
+    ],
+    "note": "Punto de referencia geográfico publicado en una tesis de la UNNE a partir de Google Earth Pro (2020); no representa el perímetro parcelario ni un acceso. El Gobierno del Chaco documentó actividad industrial dentro del parque y la apertura de una nueva fábrica en marzo de 2026.",
+    "source": "https://chaco.gob.ar/noticia-chaco-suma-una-nueva-industria-abrio-sus-puertas-la-fabrica-de-alfajores-mood-en-puerto-tirol-2026-03-25-14-38",
+    "sourceName": "Gobierno de la Provincia del Chaco",
+    "sourcePublishedAt": "2026-03-25",
+    "sourcePublicationNote": "Noticia oficial sobre la apertura de la fábrica Mood dentro del Parque Industrial de Puerto Tirol; no aporta coordenadas.",
+    "sourceRecordId": "Noticia de Gobernación del 25/03/2026 sobre la apertura de la fábrica Mood",
+    "coordinateSource": "https://repositorio.unne.edu.ar/server/api/core/bitstreams/fa655680-00df-4519-91a3-2400e58ee1e6/content",
+    "coordinateSourceName": "Universidad Nacional del Nordeste, Facultad de Ingeniería — tesis de especialización de María Alejandra Capay",
+    "coordinateSourcePublishedAt": "2020-10-15",
+    "coordinateSourcePublicationNote": "Figura 1 identifica la ubicación del Parque Industrial Puerto Tirol y publica 27°22'07.21\"S, 59°03'38.13\"O con fuente Google Earth Pro. Fuente secundaria académica; no es catastro ni geoportal oficial.",
+    "coordinateReferenceSystem": "No especificado por la tesis; coordenadas geográficas publicadas en DMS con referencia a Google Earth Pro.",
+    "coordinateTransformation": "Conversión aritmética de DMS a grados decimales; sin transformación de datum ni reproyección.",
+    "administrativeStatus": "Parque industrial provincial con actividad industrial documentada por el Gobierno del Chaco; apertura de una nueva fábrica dentro del predio informada el 25/03/2026.",
+    "validityPeriod": "La referencia geográfica se publicó en 2020; la actividad industrial dentro del parque fue corroborada por fuente oficial en marzo de 2026. El punto no delimita el predio.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "La coordenada se transcribió de la Figura 1 de la tesis UNNE (15/10/2020), basada en Google Earth Pro. El Gobierno del Chaco informó la apertura de la fábrica Mood dentro del parque el 25/03/2026. Se usa como referencia puntual secundaria, no como acceso, centroide certificado ni perímetro; CRS/datum no especificado y sin verificación presencial."
+    }
   }
 ]
