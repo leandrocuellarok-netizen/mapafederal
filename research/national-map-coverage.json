@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T18:32:00-03:00",
+  "generatedAt": "2026-11-26T19:31:27-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "98419b6433357748ed2afea437dfc606cf0f7d6f",
-  "nodeCount": 102,
+  "catalogCommit": "496872d1145d1931325e486f34eecbf1ed5e6d1f",
+  "nodeCount": 103,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -79,7 +79,7 @@
       "jurisdictions": [
         "Buenos Aires"
       ],
-      "nodeCount": 28,
+      "nodeCount": 29,
       "coveredJurisdictions": 1
     },
     {
@@ -118,21 +118,19 @@
     {
       "province": "Buenos Aires",
       "region": "Buenos Aires Province",
-      "total": 28,
+      "total": 29,
       "byType": {
         "Ciudad": 6,
         "Puerto": 7,
         "Aeropuerto": 1,
-        "Paso fronterizo": 0,
+        "Paso fronterizo": 1,
         "Logística": 1,
         "Industria": 4,
         "Recurso mineral": 1,
         "Turismo": 3,
         "Estación ferroviaria": 5
       },
-      "missingCategories": [
-        "Paso fronterizo"
-      ]
+      "missingCategories": []
     },
     {
       "province": "Catamarca",
@@ -687,7 +685,7 @@
     "Ciudad": 7,
     "Puerto": 22,
     "Aeropuerto": 25,
-    "Paso fronterizo": 11,
+    "Paso fronterizo": 12,
     "Logística": 3,
     "Industria": 14,
     "Recurso mineral": 4,
@@ -731,9 +729,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Patagonia",
-    "nextTarget": "Buenos Aires Province",
-    "note": "Ejecución del 26/11/2026 en Patagonia: se incorporó el Parque Nacional Los Alerces, Chubut, categoría Turismo. SIB/APN publica la referencia geográfica (-42.84453, -71.83818), departamento Futaleufú; la ficha no define si es acceso, centroide o punto interno, por lo que no se presenta como acceso ni perímetro. APN mantiene horarios estacionales, portadas, senderos y servicios; su comunicación institucional del 13/11/2026 confirma actividad de gestión en el parque. No se afirma disponibilidad en tiempo real. Catálogo: 102 nodos. Próxima región: Buenos Aires Province."
+    "lastTargeted": "Buenos Aires Province",
+    "nextTarget": "CABA",
+    "note": "Ejecución del 26/11/2026 en Buenos Aires Province: se incorporó la Terminal Fluvial Binacional de Tigre, partido de Tigre, categoría Paso fronterizo. Migraciones la incluye entre las vías de ingreso y egreso en funcionamiento y publica horario de 07 a 17 para embarcaciones particulares y deportivas. La coordenada se tomó de Mapcarta/OpenStreetMap way 269888419, fuente secundaria sin CRS ni precisión declarados; se presenta solo como referencia cartográfica, no como acceso ni puesto de control. No se afirma un servicio internacional comercial regular. Catálogo: 103 nodos. Próxima región: CABA."
   },
   "pendingCandidates": [
     {
@@ -951,6 +949,7 @@
     "El Parque Industrial Municipal de Las Higueras (Córdoba) se incorporó con una coordenada geográfica publicada por AABE para el inmueble CIE 1400003161/18. El anexo de la Resolución 218/2022 advierte que el croquis es ilustrativo y no aporta polígono ni datum/CRS; el punto se usa solo como referencia del inmueble, sin presentarlo como acceso, centroide certificado ni perímetro. La Ordenanza municipal 45/2023 identifica parcelas y ubicación; la Ordenanza 216/2025 y una fuente secundaria local del 18/03/2026 documentan el desarrollo y las obras, sin acreditar habilitación definitiva ni operación plena.",
     "El Parque Industrial de Río Grande (Tierra del Fuego) se incorporó con una coordenada publicada por un directorio sectorial secundario. El punto cae dentro de la extensión geográfica de la capa oficial IDETDF «Parque Industrial» (edición 2025, EPSG:4326), cuyo linaje declara datos extraídos de la base IGN y complementados por IDETDF. La descarga WFS/ZIP agotó el tiempo de espera y no se inspeccionó la geometría; por ello no se asigna CRS al punto secundario ni se representa acceso, centroide, perímetro o lote específico. La Municipalidad de Río Grande informa aproximadamente 102 empresas en operación y 15 en construcción para 2024; el estado vigente del padrón queda no_verificado.",
     "El 26/11/2026 se completó la asignación de IDs estables del catálogo: los 85 registros históricos que carecían de id recibieron un slug determinista derivado de provincia, tipo y nombre; los 14 IDs preexistentes se conservaron. Los IDs se consideran claves persistentes y no deben regenerarse al editar nombres descriptivos.",
-    "El Aeropuerto Capitán Vicente Almandos Almonacid (SANL, La Rioja) usa el ARP publicado por ANAC en el Suplemento AIP A 67/2022 (AD 2.2): 29°22'50\"S 066°47'45\"W, identificado como centro geométrico de pista calculado en gabinete. Se convirtió DMS a grados decimales sin reproyección. El datum/CRS del ARP no está explicitado; no se asigna EPSG. El estado de infraestructura se apoya en el AIP permanente de ANAC y en la transcripción secundaria del AIRAC 01/26 vigente desde 11/06/2026, que identifica SANL como controlado IFR/VFR; no se infieren frecuencias comerciales ni NOTAM en tiempo real."
+    "El Aeropuerto Capitán Vicente Almandos Almonacid (SANL, La Rioja) usa el ARP publicado por ANAC en el Suplemento AIP A 67/2022 (AD 2.2): 29°22'50\"S 066°47'45\"W, identificado como centro geométrico de pista calculado en gabinete. Se convirtió DMS a grados decimales sin reproyección. El datum/CRS del ARP no está explicitado; no se asigna EPSG. El estado de infraestructura se apoya en el AIP permanente de ANAC y en la transcripción secundaria del AIRAC 01/26 vigente desde 11/06/2026, que identifica SANL como controlado IFR/VFR; no se infieren frecuencias comerciales ni NOTAM en tiempo real.",
+    "La Terminal Fluvial Binacional de Tigre (Buenos Aires) se agregó como Paso fronterizo porque la Dirección Nacional de Migraciones la incluye entre las vías de ingreso y egreso en funcionamiento. La coordenada [-34.42121, -58.58097] procede de Mapcarta/OpenStreetMap way 269888419 (amenity=ferry_terminal), fuente secundaria; no se obtuvo una geometría puntual primaria recuperable. El CRS/datum, método y precisión no están declarados. El punto es una referencia de la terminal, no un acceso, muelle específico ni puesto de control. La ficha de Migraciones publica horario de 07 a 17 para embarcaciones particulares y deportivas; no se infiere servicio internacional comercial regular."
   ]
 }
