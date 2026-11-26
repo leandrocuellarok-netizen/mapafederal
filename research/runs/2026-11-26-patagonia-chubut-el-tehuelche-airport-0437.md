@@ -50,7 +50,7 @@ Brecha abordada: Chubut tenía un único nodo aeroportuario. Se incorporó el Ae
 JSON parseable; ID, nombre y coordenadas sin duplicados; coordenadas dentro del rango argentino; categoría y jurisdicción permitidas; fuentes HTTPS; matriz recalculada y conciliada con los 92 registros; filtro de portada confirmado en el archivo existente.
 
 ## GitHub Actions y Pages
-Pendiente de inspección posterior a la actualización de `main`. No se declara despliegue ni publicación hasta comprobar la ejecución y el job de Pages.
+El workflow está configurado para ejecutarse en cada push a `main`. Tras el push, `get_commit_combined_status` devolvió una lista vacía y la función de consulta de workflow runs disponible no expone ejecuciones de push (solo PR). No se obtuvo un ID/resultado verificable ni el estado del job de Pages. La URL canónica de la portada y el JSON publicado tampoco fueron accesibles desde el entorno de verificación. No se confirma ejecución ni despliegue; la publicación queda pendiente de comprobación.
 
 ## Próxima prioridad
 Buenos Aires Province. Mantener la búsqueda de nodos en provincias y categorías subrepresentadas; no agregar marcadores sin coordenadas exactas y atribuibles.
