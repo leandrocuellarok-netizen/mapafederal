@@ -24,22 +24,24 @@
     },
     {
       "id": "investment-finder",
-      "name": "Investment Finder",
-      "description": "Exploración y clasificación de oportunidades con criterios definidos.",
-      "status": "planned",
-      "statusLabel": "Planificado · requiere datos empresariales",
-      "currentCapability": "Investment Finder ofrece un catálogo documental de solo lectura con filtros locales por texto, sector, alcance, jurisdicción, etapa y estado. Incluye registros nacionales del RIMI y del Programa KIT 4.0 con fuente, fecha de publicación, período y verificación fechada. En ambos, opportunityStatus permanece unknown: no se confirmó la operatividad del SGI ni la elegibilidad para RIMI, ni el saldo del cupo y la disponibilidad de kits/proveedores para KIT 4.0. No hay ingesta automática, evaluación de elegibilidad ni recomendaciones.",
+      "name": "Investment & Political Finder Bs. As.",
+      "description": "Inteligencia político-económica de la Provincia de Buenos Aires, organizada por sección electoral, municipio, intendencia y signo político.",
+      "status": "pilot",
+      "statusLabel": "Piloto territorial · 135 municipios estructurados",
+      "currentCapability": "La interfaz organiza los 135 municipios bonaerenses en ocho secciones electorales y permite consultar oportunidades documentadas con alcance provincial o municipal. Los campos de intendente y signo político permanecen pendientes hasta contar con fuente vigente por municipio; no se infieren ni se completan por aproximación. El catálogo excluye registros nacionales sin localización bonaerense y oportunidades de otras provincias.",
       "dependencies": [
-        "data/investment-opportunities.json",
-        "Fuentes públicas con condiciones de reutilización permitidas",
-        "Datos de proyectos e inversiones con fecha de vigencia",
-        "Criterios de elegibilidad definidos"
+        "data/pba-territories.json",
+        "data/pba-investment-opportunities.json",
+        "Fuentes oficiales municipales, provinciales y electorales",
+        "Verificación periódica de autoridades y signos políticos"
       ],
-      "nextStep": "Confirmar la operatividad del trámite SGI y la elegibilidad en RIMI, y el saldo del cupo y la disponibilidad de kits/proveedores en KIT 4.0; sumar nuevas oportunidades solo cuando fuente, condiciones, vigencia y estado puedan verificarse.",
+      "nextStep": "Verificar y completar para cada municipio el nombre del intendente, partido o alianza gobernante, período de mandato y fuente oficial; ampliar perfiles productivos, presupuestos, ordenanzas, compras, obras, parques industriales y actores empresariales.",
       "acceptanceCriteria": [
-        "Cada oportunidad incluye fuente, fecha y estado",
-        "Filtros por sector, jurisdicción y etapa",
-        "No se muestran oportunidades vencidas como activas"
+        "135 municipios distribuidos en las ocho secciones electorales",
+        "Cada ficha municipal distingue intendencia, partido o alianza y fecha/fuente de verificación",
+        "Oportunidades con localización bonaerense, fuente, fecha, vigencia, etapa y estado",
+        "No incluir registros de otras provincias ni oportunidades nacionales sin localización PBA",
+        "Separar hechos documentados, análisis y estimaciones"
       ]
     },
     {
