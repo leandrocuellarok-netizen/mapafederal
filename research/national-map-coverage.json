@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T17:39:08-03:00",
+  "generatedAt": "2026-11-26T18:32:00-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "c947d5b54de7f57aa604daf862d3df9f97f25e4a",
-  "nodeCount": 101,
+  "catalogCommit": "98419b6433357748ed2afea437dfc606cf0f7d6f",
+  "nodeCount": 102,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -71,7 +71,7 @@
         "Santa Cruz",
         "Tierra del Fuego"
       ],
-      "nodeCount": 21,
+      "nodeCount": 22,
       "coveredJurisdictions": 5
     },
     {
@@ -186,7 +186,7 @@
     {
       "province": "Chubut",
       "region": "Patagonia",
-      "total": 5,
+      "total": 6,
       "byType": {
         "Ciudad": 0,
         "Puerto": 2,
@@ -195,7 +195,7 @@
         "Logística": 0,
         "Industria": 0,
         "Recurso mineral": 1,
-        "Turismo": 0,
+        "Turismo": 1,
         "Estación ferroviaria": 0
       },
       "missingCategories": [
@@ -203,7 +203,6 @@
         "Paso fronterizo",
         "Logística",
         "Industria",
-        "Turismo",
         "Estación ferroviaria"
       ]
     },
@@ -692,7 +691,7 @@
     "Logística": 3,
     "Industria": 14,
     "Recurso mineral": 4,
-    "Turismo": 9,
+    "Turismo": 10,
     "Estación ferroviaria": 6
   },
   "leastCoveredJurisdictions": [
@@ -732,9 +731,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Centro",
-    "nextTarget": "Patagonia",
-    "note": "Ejecución del 26/11/2026 en Centro: se incorporó el Parque Nacional Lihué Calel, La Pampa, categoría Turismo. SIB/APN publica la ubicación geográfica (-37.93488, -65.60471); se conserva como referencia cartográfica y no se interpreta como acceso, centroide certificado ni perímetro. El datum/CRS no está declarado. APN documenta recorridos, senderos, centro de visitantes y área de acampe; las instalaciones requieren reserva y la disponibilidad de servicios puede variar. Catálogo: 101 nodos. Próxima región: Patagonia."
+    "lastTargeted": "Patagonia",
+    "nextTarget": "Buenos Aires Province",
+    "note": "Ejecución del 26/11/2026 en Patagonia: se incorporó el Parque Nacional Los Alerces, Chubut, categoría Turismo. SIB/APN publica la referencia geográfica (-42.84453, -71.83818), departamento Futaleufú; la ficha no define si es acceso, centroide o punto interno, por lo que no se presenta como acceso ni perímetro. APN mantiene horarios estacionales, portadas, senderos y servicios; su comunicación institucional del 13/11/2026 confirma actividad de gestión en el parque. No se afirma disponibilidad en tiempo real. Catálogo: 102 nodos. Próxima región: Buenos Aires Province."
   },
   "pendingCandidates": [
     {
