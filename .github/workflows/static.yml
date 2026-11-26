@@ -609,6 +609,12 @@ jobs:
           assert general_pico is not None and general_pico["province"] == "La Pampa" and general_pico["type"] == "Aeropuerto"
           assert general_pico["status"] == "no_verificado"
           assert general_pico["coordinateSource"].endswith("sup-62aaa363bab62")
+          tehuelche = next((node for node in nodes if node.get("id") == "chubut-aeropuerto-el-tehuelche-savy"), None)
+          assert tehuelche is not None and tehuelche["province"] == "Chubut" and tehuelche["type"] == "Aeropuerto"
+          assert tehuelche["status"] == "operativo"
+          assert tehuelche["coords"] == [-42.75916667, -65.10277778]
+          assert tehuelche["coordinateSource"].endswith("sup-663d2d7f10036")
+          assert tehuelche["coordinateReferenceSystem"].startswith("No declarado")
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
