@@ -55,9 +55,10 @@ Se incorporó el Parque Nacional Lihué Calel, La Pampa, en la categoría `Turis
 ## Commits y publicación
 
 - Commit del catálogo: `c947d5b54de7f57aa604daf862d3df9f97f25e4a`.
-- Commit de matriz, validador, README y bitácora: se registra en el historial de GitHub al finalizar esta actualización.
-- Workflow de datos #822: ejecución disparada por el commit de catálogo; su resultado se documentará tras completarse.
-- Workflow de integración: pendiente de ejecución y comprobación de los jobs `validate` y `deploy`.
+- Commit de matriz, validador, README y bitácora: `f96a409638e4a157eace7b64858c6ca4bca8099e`.
+- GitHub Actions #822 (run `45892812807`, commit de catálogo): `validate: failure` por desajuste temporal entre el catálogo de 101 nodos y la matriz todavía en 100; `deploy: skipped`.
+- GitHub Actions #823 (run `45892898640`, commit de integración): `validate: failure` por una indentación incorrecta en la nueva aserción de regresión; `deploy: skipped`. Se corrigió la indentación en este commit.
+- GitHub Actions #824: pendiente de ejecución y comprobación de los jobs `validate` y `deploy`.
 - Inspección independiente de la portada pública: no disponible desde el entorno de verificación; la URL de Pages no respondió. No se declara inspección visual.
 
 ## Brechas pendientes

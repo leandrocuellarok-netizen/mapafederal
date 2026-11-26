@@ -647,7 +647,7 @@ jobs:
           assert lihue["coordinateSource"] == "https://sib.gob.ar/areas-protegidas/parque-nacional-lihue-calel"
           assert lihue["coordinateReferenceSystem"].startswith("Coordenadas geográficas") and "no se presenta como acceso" in lihue["coordinateQuality"].lower()
           assert "reserva" in lihue["administrativeStatus"].lower()
-                    tehuelche = next((node for node in nodes if node.get("id") == "chubut-aeropuerto-el-tehuelche-savy"), None)
+          tehuelche = next((node for node in nodes if node.get("id") == "chubut-aeropuerto-el-tehuelche-savy"), None)
           assert tehuelche is not None and tehuelche["province"] == "Chubut" and tehuelche["type"] == "Aeropuerto"
           assert tehuelche["status"] == "operativo"
           assert tehuelche["coords"] == [-42.75916667, -65.10277778]
