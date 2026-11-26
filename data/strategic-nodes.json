@@ -1556,5 +1556,42 @@
       "scope": "La existencia, administración y ubicación general se verificaron en la Ordenanza municipal 45/2023. La coordenada se transcribió del anexo oficial AABE de la Resolución 218/2022, que publica latitud/longitud y advierte que el croquis es ilustrativo. El estado de desarrollo se contrastó con la Ordenanza municipal 216/2025 y, como fuente secundaria identificada, con El Día de Higueras (18/03/2026), que informa movimiento de suelos, calles y cerramiento, con redes internas aún en proyecto. No se verificó habilitación definitiva ni operación plena; el punto no representa acceso, centroide certificado ni perímetro."
     },
     "coordinateQuality": "Coordenada geográfica explícita publicada por AABE para el inmueble, pero el croquis se declara ilustrativo y no define método de captura, datum/CRS ni semántica del punto. Se usa solo como referencia cartográfica del inmueble; no es centroide certificado, acceso ni perímetro, y no se atribuye precisión catastral."
+  },
+  {
+    "id": "tierra-del-fuego-parque-industrial-rio-grande",
+    "name": "Parque Industrial de Río Grande",
+    "province": "Tierra del Fuego",
+    "locality": "Río Grande",
+    "type": "Industria",
+    "coords": [
+      -53.801118,
+      -67.74151
+    ],
+    "note": "Polo industrial municipal de Río Grande. La Municipalidad informa que en 2024 el parque estaba inscripto en RENPI con alrededor de 102 empresas en operación y 15 en construcción; el estado del padrón actual no fue verificado. La coordenada publicada por un directorio sectorial secundario cae dentro de la extensión oficial de la capa Parque Industrial de IDETDF (EPSG:4326), pero no representa un acceso, centroide, perímetro ni lote específico.",
+    "source": "https://turismo.riogrande.gob.ar/historia/",
+    "sourceName": "Municipalidad de Río Grande — Turismo RGA, “Río Grande es historia”, sección “Río Grande, Ley 19640 y su Industria”",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Página institucional consultada el 26/11/2026; informa que durante 2024 el parque inscripto en RENPI tenía alrededor de 102 empresas en operación y 15 en construcción. No indica fecha de publicación o actualización del texto.",
+    "sourceRecordId": "Turismo RGA, apartado “Río Grande, Ley 19640 y su Industria”, párrafo de RENPI 2024.",
+    "coordinateSource": "https://parquesindustriales.com.ar/parque?id=53955",
+    "coordinateSourceName": "Parques Industriales — ficha “Parque Industrial de Río Grande” (fuente secundaria sectorial)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "Ficha consultada el 26/11/2026; publica la coordenada de localización -53.801118, -67.741510. No declara método de captura, precisión, datum ni CRS. La pareja cae dentro de la extensión geográfica de la capa oficial IDETDF “Parque Industrial”, edición 2025, EPSG:4326; no se recuperó la geometría vectorial para una comparación directa.",
+    "coordinateReferenceSystem": "No declarado por la fuente secundaria de coordenadas. La metadata oficial IDETDF declara EPSG:4326 para la capa Parque Industrial y una extensión que contiene el punto; no se asigna EPSG al registro sin inspeccionar la geometría.",
+    "coordinateTransformation": "Transcripción directa de latitud/longitud decimal publicada por el directorio sectorial; sin transformación ni reproyección. Se comprobó que el punto cae dentro del bounding box oficial IDETDF EPSG:4326. No se obtuvo la geometría WFS/ZIP durante esta ejecución.",
+    "statusSource": "https://turismo.riogrande.gob.ar/historia/",
+    "statusSourceName": "Municipalidad de Río Grande — Turismo RGA, “Río Grande es historia”",
+    "statusSourcePublishedAt": null,
+    "additionalStatusSource": "https://info.riogrande.gob.ar/en-un-contexto-restrictivo-definimos-un-plan-de-obras-responsable-para-acompanar-el-crecimiento-de-rio-grande",
+    "additionalStatusSourceName": "Municipalidad de Río Grande — Presupuesto Municipal 2026, lineamientos de Obras y Servicios Públicos",
+    "additionalStatusSourcePublishedAt": "2025-11-18",
+    "administrativeStatus": "La Municipalidad informa que durante 2024 el parque estaba inscripto en RENPI con alrededor de 102 empresas en operación y 15 en construcción. La presentación del Presupuesto 2026, actualizada el 18/11/2025, señala que los programas FAMP destinados a obras de modernización del parque estaban inactivos por falta de respuesta nacional; esto no acredita el cierre del parque. No se obtuvo padrón RENPI 2026 ni información que permita verificar el estado actual de cada empresa.",
+    "validityPeriod": "Dato municipal de actividad con corte 2024; información presupuestaria municipal para 2026 presentada el 18/11/2025. Situación vigente del padrón y de cada empresa no verificada al 26/11/2026.",
+    "status": "no_verificado",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "La existencia y actividad industrial se contrastaron con el portal oficial de Turismo de Río Grande, que informa el registro RENPI y empresas en operación para 2024. La situación de obras se contrastó con la presentación municipal del Presupuesto 2026, que señala inactividad de programas FAMP para modernización, sin afirmar cierre del parque. La coordenada fue transcripta de un directorio sectorial secundario y comprobada dentro de la extensión publicada por la metadata oficial IDETDF (EPSG:4326); el WFS/ZIP agotó el tiempo de espera y no se inspeccionó la geometría. No se declara estado operativo actual ni precisión catastral."
+    },
+    "coordinateQuality": "Coordenada de referencia publicada por fuente secundaria sectorial; método de captura y precisión no declarados. El punto cae dentro del bounding box de la capa oficial IDETDF Parque Industrial (edición 2025, EPSG:4326), pero la geometría no pudo recuperarse. No representa acceso, centroide, perímetro ni lote específico y no se atribuye precisión catastral."
   }
 ]
