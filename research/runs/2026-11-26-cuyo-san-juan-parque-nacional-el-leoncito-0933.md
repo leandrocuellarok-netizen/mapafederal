@@ -68,7 +68,7 @@ La matriz cuenta solo registros del catálogo; una celda vacía no demuestra aus
 ## Archivos y commits
 
 - `data/strategic-nodes.json`: nuevo nodo. Commit `8f9ba8c73fc147e1406d533fade3ac5abae544e1`.
-- `research/national-map-coverage.json`: conteos, Cuyo → Centro, pendientes y referencia al commit del catálogo. Commit de documentación/matriz: se registrará en la actualización final del log.
+- `research/national-map-coverage.json`: conteos, Cuyo → Centro, pendientes y referencia al commit del catálogo. Commit de matriz/README/registro: `086400581cdfba842dde7c416f925f59db5f051e`.
 - `README.md`: conteo nacional actualizado de 95 a 96 nodos.
 - `research/runs/2026-11-26-cuyo-san-juan-parque-nacional-el-leoncito-0933.md`: este registro.
 - `index.html`: sin cambios; la integración con el catálogo y el filtro Turismo ya existían.
@@ -87,8 +87,8 @@ La matriz cuenta solo registros del catálogo; una celda vacía no demuestra aus
 - Matriz provincial, regional y por categoría: reconciliada con el catálogo.
 - Portada: se confirmó en el código que sigue cargando el catálogo y conserva el filtro Turismo.
 - GitHub Actions #792 (commit del catálogo): falló en la aserción de sincronización del nodeCount porque la matriz aún reflejaba 95 nodos; el despliegue quedó omitido. Esta inconsistencia intermedia se resuelve en el commit de matriz/documentación.
-- El workflow #793, disparado por el commit de matriz/documentación, queda pendiente de consulta en el cierre final.
-- No se declara publicación hasta verificar el job de Pages y el estado final de la portada.
+- GitHub Actions #793 (`45821116922`), disparado por el commit de matriz/documentación: validación `success`; job `deploy` de GitHub Pages `success`. La matriz y el catálogo quedaron desplegados por este run.
+- El job de Pages terminó correctamente. La comprobación independiente de la portada y del JSON publicado no pudo completarse: el dominio no resolvió desde el entorno de verificación. Se confirma el despliegue del workflow, no una inspección visual independiente del marcador.
 
 ## Próxima prioridad
 
