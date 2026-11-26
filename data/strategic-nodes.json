@@ -1229,11 +1229,11 @@
       -33.2733333,
       -66.3563889
     ],
-    "note": "ARP publicado por ANAC como centro geométrico de pista; no representa acceso ni centroide del predio. La transcripción secundaria del AIP AIRAC 01/26 lo identifica como aeródromo controlado IFR/VFR; no se infieren vuelos comerciales ni estado NOTAM en tiempo real.",
+    "note": "ARP publicado por ANAC como centro geométrico de pista (la fuente indica calculado en gabinete); no representa acceso ni centroide del predio. La transcripción secundaria del AIP AIRAC 01/26 lo identifica como aeródromo controlado IFR/VFR; no se infieren vuelos comerciales ni estado NOTAM en tiempo real.",
     "source": "https://ais.anac.gob.ar/descarga/sup-6214e8cc1dd30",
     "sourceName": "ANAC — Suplemento A 04/2022 de la AIP Argentina",
     "sourcePublishedAt": "2022-02-22",
-    "sourcePublicationNote": "AD 2.2 publica el ARP 331624S - 0662123W y lo identifica como centro geométrico de pista. El estado/servicios se contrastó con la transcripción secundaria de AIP AIRAC 01/26, efectiva desde el 11/06/2026.",
+    "sourcePublicationNote": "AD 2.2 publica el ARP 331624S - 0662123W y lo identifica como centro geométrico de pista. El estado/servicios se contrastó con la transcripción secundaria de AIP AIRAC 01/26, efectiva desde el 11/06/2026. La coordenada ARP lleva asterisco y el suplemento aclara «calculado en gabinete».",
     "coordinateSource": "https://ais.anac.gob.ar/descarga/sup-6214e8cc1dd30",
     "coordinateSourceName": "ANAC — Suplemento A 04/2022, AD 2.2",
     "coordinateSourcePublishedAt": "2022-02-22",
@@ -1247,8 +1247,9 @@
     "status": "operativo",
     "verification": {
       "checkedAt": "2026-11-26",
-      "scope": "Se verificó el ARP en el suplemento oficial ANAC A04/2022 y su definición como centro geométrico de pista. El estado se contrastó con una transcripción secundaria del AIP AIRAC 01/26; no se infieren vuelos comerciales ni condición NOTAM en tiempo real."
-    }
+      "scope": "Se verificó el ARP en el suplemento oficial ANAC A04/2022 y su definición como centro geométrico de pista. El estado se contrastó con una transcripción secundaria del AIP AIRAC 01/26; no se infieren vuelos comerciales ni condición NOTAM en tiempo real. El suplemento marca el ARP como calculado en gabinete; no se presenta como levantamiento geodésico independiente."
+    },
+    "coordinateQuality": "ARP oficial publicado por ANAC; el suplemento marca la coordenada como calculada en gabinete, no como levantamiento geodésico independiente."
   },
   {
     "id": "san-luis-aeropuerto-internacional-valle-del-conlara",
@@ -1260,11 +1261,11 @@
       -32.3844694,
       -65.1857722
     ],
-    "note": "ARP publicado por ANAC como centro geométrico de pista; no representa acceso ni centroide del predio. El Gobierno nacional confirmó su incorporación al Sistema Nacional de Aeropuertos y el inicio de vuelos regulares en 2022; la transcripción secundaria del AIP AIRAC 01/26 lo identifica como controlado IFR/VFR.",
+    "note": "ARP publicado por ANAC como centro geométrico de pista (la fuente indica calculado en gabinete); no representa acceso ni centroide del predio. El Gobierno nacional confirmó su incorporación al Sistema Nacional de Aeropuertos y el inicio de vuelos regulares en 2022; la transcripción secundaria del AIP AIRAC 01/26 lo identifica como controlado IFR/VFR.",
     "source": "https://ais.anac.gob.ar/descarga/sup-633c866e96869",
     "sourceName": "ANAC — Suplemento A 40/2022 de la AIP Argentina",
     "sourcePublishedAt": "2022-10-04",
-    "sourcePublicationNote": "AD 2.2 publica el ARP 322304.09S 0651108.78W como centro geométrico de pista. La incorporación al SNA y el primer vuelo regular se documentan por separado en Argentina.gob.ar (05/12/2022).",
+    "sourcePublicationNote": "AD 2.2 publica el ARP 322304.09S 0651108.78W como centro geométrico de pista. La incorporación al SNA y el primer vuelo regular se documentan por separado en Argentina.gob.ar (05/12/2022). La coordenada ARP lleva asterisco y el suplemento aclara «calculado en gabinete».",
     "coordinateSource": "https://ais.anac.gob.ar/descarga/sup-633c866e96869",
     "coordinateSourceName": "ANAC — Suplemento A 40/2022, AD 2.2",
     "coordinateSourcePublishedAt": "2022-10-04",
@@ -1281,7 +1282,8 @@
     "status": "operativo",
     "verification": {
       "checkedAt": "2026-11-26",
-      "scope": "Se verificó el ARP en el suplemento oficial ANAC A40/2022. Argentina.gob.ar documenta la incorporación al SNA y el primer vuelo regular. La clasificación actual controlado/IFR/VFR se contrastó con una transcripción secundaria del AIP AIRAC 01/26; no se afirma frecuencia comercial vigente."
-    }
+      "scope": "Se verificó el ARP en el suplemento oficial ANAC A40/2022. Argentina.gob.ar documenta la incorporación al SNA y el primer vuelo regular. La clasificación actual controlado/IFR/VFR se contrastó con una transcripción secundaria del AIP AIRAC 01/26; no se afirma frecuencia comercial vigente. El suplemento marca el ARP como calculado en gabinete; no se presenta como levantamiento geodésico independiente."
+    },
+    "coordinateQuality": "ARP oficial publicado por ANAC; el suplemento marca la coordenada como calculada en gabinete, no como levantamiento geodésico independiente."
   }
 ]
