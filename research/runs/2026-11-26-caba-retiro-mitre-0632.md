@@ -57,3 +57,11 @@ No se modificó `index.html`: la portada ya carga `data/strategic-nodes.json`, c
 
 ## Pendientes y próxima prioridad
 CABA mantiene vacantes en el catálogo las categorías Paso fronterizo, Logística, Industria, Recurso mineral y Turismo. No se agregan puntos sin coordenadas atribuibles. La rotación continúa por NOA; comenzar por Tucumán, actualmente la jurisdicción menos cubierta, y priorizar una categoría con fuente oficial de geometría o coordenadas.
+
+## Resultado de CI y publicación (actualizado 06:35 ART)
+- Commit de catálogo: `51016bb52645eacb2b17710124906745a5064d66`.
+- Commit de matriz, README y registro: `70f74e172350bc116afa07391286528ad3fae594`.
+- GitHub Actions #780, asociado al commit de catálogo: `failure` en «Validate geographic and editorial JSON» porque el catálogo ya tenía 94 nodos y la matriz aún registraba 93. El job `deploy` fue omitido. No fue un error del registro nuevo: fue la inconsistencia transitoria entre los dos commits secuenciales.
+- GitHub Actions #781, asociado al commit `70f74e1`: `success`. Todas las pruebas de validación finalizaron correctamente y el job «Deploy to GitHub Pages» terminó con `success`.
+- Ejecución #781: https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45793134700
+- La URL pública de la portada no fue accesible desde el entorno de verificación; por eso se confirma el job de Pages, pero no una inspección independiente de la visualización del marcador en navegador.
