@@ -52,11 +52,13 @@ JSON parseable; ID, nombre y coordenadas sin duplicados; coordenadas dentro del 
 ## Commits
 - Catálogo: `a5a7fd3c841c08122a106a52f65c4a718eefeec7`.
 - Matriz, README y registro: `b8294bc28dff4faefe4f8a44a4aeb57f709c60c7`.
+- Integración del filtro sectorial «Minería» en `index.html`: `a2c955e99162223b4d009b96f2305a63b1d625d3`.
 
 ## GitHub Actions y Pages
 - Run #775 (`a5a7fd3c841c08122a106a52f65c4a718eefeec7`): falló la validación porque el catálogo ya tenía 93 nodos mientras la matriz todavía registraba 92; el job de despliegue fue omitido. Era el estado intermedio entre el commit del catálogo y el cierre de matriz.
 - Run #776 (`b8294bc28dff4faefe4f8a44a4aeb57f709c60c7`): `validate` aprobado y `deploy` aprobado; el paso `Deploy to GitHub Pages` terminó correctamente. https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45785295221
 - Run #777 (`4e75cb44fefeacf19fddb669102b00a03e6728c5`): validación y despliegue aprobados tras actualizar el registro de investigación. https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45785474243
+- Run #778 (`a2c955e99162223b4d009b96f2305a63b1d625d3`): validación, sintaxis JavaScript, punto de entrada público y despliegue de GitHub Pages aprobados. https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45785717600
 - La portada pública no pudo abrirse independientemente desde el entorno de comprobación. Se confirma el despliegue del job de Pages, no una inspección visual independiente del mapa.
 
 ## Brechas pendientes
