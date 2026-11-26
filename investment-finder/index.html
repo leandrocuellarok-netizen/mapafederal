@@ -52,7 +52,7 @@ footer{background:#061b14;color:#d9e2db;padding:30px 0}.foot{display:flex;justif
 
 
 .enterprise-intelligence{background:#0b3023;color:#f4f2e9;padding:64px 0}.enterprise-intelligence .section-head h2{color:#f4f2e9}.enterprise-intelligence .section-head p{color:#c4d1c8}.enterprise-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.enterprise-grid article{border:1px solid #c7a35b55;background:#ffffff08;padding:21px;border-radius:6px}.enterprise-grid article span{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#e2c783}.enterprise-grid h3{font:23px Georgia,serif;color:#fff;margin:14px 0 8px}.enterprise-grid p,.enterprise-foot p{font-size:12px;line-height:1.7;color:#d0ddd5}.enterprise-foot{border-top:1px solid #c7a35b55;margin-top:22px;padding-top:18px}.enterprise-link{display:inline-block;margin-top:8px;background:#c7a35b;color:#17251d;padding:13px 17px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:700}.enterprise-link:hover{background:#e2c783}@media(max-width:760px){.enterprise-grid{grid-template-columns:1fr}.enterprise-intelligence{padding:46px 0}}
-.pba-territory-controls{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:10px;margin:20px 0 15px;padding:15px;background:#fff;border:1px solid var(--line);border-radius:6px}.pba-territory-controls label{display:grid;gap:6px;font-size:10px;color:var(--muted)}.pba-territory-controls select,.pba-territory-controls input{width:100%;min-width:0;border:1px solid var(--line);background:#fff;padding:11px 12px;border-radius:4px;font-size:11px;color:var(--ink)}.pba-section{margin:10px 0;border:1px solid var(--line);border-radius:6px;background:#fff;overflow:hidden}.pba-section summary{cursor:pointer;padding:15px 17px;background:#f1f4ef;color:var(--forest);font:18px Georgia,serif}.pba-section summary small{font:10px Inter,system-ui,sans-serif;color:var(--muted);margin-left:8px}.pba-municipalities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;padding:12px}.pba-municipality{border:1px solid var(--line);border-radius:5px;padding:12px;min-width:0}.pba-municipality h4{font:16px Georgia,serif;color:var(--forest);margin:0 0 8px}.pba-municipality p{font-size:10px;line-height:1.5;color:var(--muted);margin:4px 0}.pba-municipality button{margin-top:8px;border:1px solid var(--gold);background:#fff;color:var(--forest);padding:7px 9px;border-radius:3px;font-size:9px;cursor:pointer}.pba-municipality button:hover{background:var(--forest);color:#fff}.pba-opportunities-head{margin-top:48px}@media(max-width:800px){.pba-municipalities{grid-template-columns:repeat(2,minmax(0,1fr))}.pba-territory-controls{grid-template-columns:1fr 1fr}.pba-territory-controls label:last-child{grid-column:1/-1}}@media(max-width:520px){.pba-municipalities,.pba-territory-controls{grid-template-columns:1fr}.pba-territory-controls label:last-child{grid-column:auto}}</style>
+.pba-territory-controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:20px 0 15px;padding:16px;background:#fff;border:1px solid var(--line);border-radius:6px}.pba-territory-controls label{display:grid;align-content:start;gap:7px;font-size:10px;color:var(--muted)}.pba-territory-controls label span{font-size:10px;font-weight:700;color:var(--forest);letter-spacing:.04em}.pba-territory-controls select,.pba-territory-controls input{width:100%;min-width:0;border:1px solid var(--line);background:#fff;padding:12px;border-radius:4px;font-size:11px;color:var(--ink)}.pba-territory-controls select:disabled{background:#f3f5f1;color:#9aa49c;cursor:not-allowed}.pba-territory-list{margin:12px 0 22px}.pba-selected-card{display:grid;grid-template-columns:1.2fr 1fr;gap:14px;padding:18px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:6px}.pba-selected-card h3{font:22px Georgia,serif;color:var(--forest);margin:0 0 9px}.pba-selected-card p{font-size:11px;line-height:1.65;color:var(--muted);margin:5px 0}.pba-selected-card strong{color:var(--forest)}.pba-selected-card .pba-locality-note{grid-column:1/-1;padding-top:10px;border-top:1px solid var(--line)}.pba-source-note{font-size:10px;color:var(--muted);margin:8px 0}.pba-opportunities-head{margin-top:48px}@media(max-width:900px){.pba-territory-controls{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.pba-territory-controls,.pba-selected-card{grid-template-columns:1fr}}</style>
 
 <style id="home-tools-layout">
 .tool-hub{padding:58px 0;background:#fff}
@@ -97,8 +97,8 @@ footer{background:#061b14;color:#d9e2db;padding:30px 0}.foot{display:flex;justif
 <section class="investment" id="investment"><div class="wrap">
 <div class="section-head"><div><div class="eyebrow">INTELLIGENCE · POLITICS · BUSINESS</div><h2>Investment &amp; Political Finder Bs. As.</h2></div><p>Oportunidades documentadas en Provincia de Buenos Aires.</p></div>
 <p class="editorial-note">Explorá la provincia por sección electoral y municipio. Cada ficha incorpora intendencia y signo político cuando esos datos estén documentados y verificados. La información política se presenta como contexto institucional, sin sesgo partidario.</p>
-<div class="pba-territory-controls"><label>Sección electoral<select id="investment-section"><option value="all">Todas las secciones</option></select></label><label>Municipio<select id="investment-municipality"><option value="all">Todos los municipios</option></select></label><label>Buscar municipio, intendente o fuerza<input id="pba-territory-search" type="search" placeholder="Ej. Escobar, intendente, PJ"></label></div>
-<div id="pba-territory-list" class="pba-territory-list" aria-live="polite"><div class="investment-empty">Cargando las 8 secciones electorales y los 135 municipios bonaerenses…</div></div>
+<div class="pba-territory-controls pba-territory-steps"><label><span>1. Sección electoral</span><select id="investment-section" aria-label="1. Elegir sección electoral"><option value="all">Elegí una sección electoral</option></select></label><label><span>2. Municipio</span><select id="investment-municipality" aria-label="2. Elegir municipio" disabled><option value="all">Primero elegí una sección</option></select></label><label><span>3. Ciudad o localidad</span><select id="investment-locality" aria-label="3. Elegir ciudad o localidad" disabled><option value="all">Primero elegí un municipio</option></select></label><label><span>Buscar municipio, intendente o fuerza</span><input id="pba-territory-search" type="search" placeholder="Ej. Escobar, intendente, PJ"></label></div>
+<div id="pba-territory-list" class="pba-territory-list" aria-live="polite"><div class="investment-empty">Elegí una sección electoral para comenzar. Después seleccioná un municipio y una ciudad o localidad.</div></div>
 <div class="section-head pba-opportunities-head"><div><div class="eyebrow">Oportunidades e inteligencia local</div><h2>Registros económicos y empresariales.</h2></div><p>Contrataciones, obras, proyectos productivos, programas y oportunidades con fuente identificable, jurisdicción, vigencia y estado documental.</p></div>
 <div class="investment-tools"><input id="investment-search" type="search" placeholder="Buscar por nombre, sector o fuente" aria-label="Buscar oportunidades"><select id="investment-sector" aria-label="Filtrar por sector"><option value="all">Todos los sectores</option></select><select id="investment-scope" aria-label="Filtrar por alcance"><option value="all">Todos los alcances</option><option value="provincial">Provincial</option><option value="municipal">Municipal</option></select><select id="investment-stage" aria-label="Filtrar por etapa"><option value="all">Todas las etapas</option></select><select id="investment-status" aria-label="Filtrar por disponibilidad"><option value="all">Todos los estados</option><option value="open">Abierta según fuente</option><option value="unknown">Disponibilidad no confirmada</option><option value="closed">Cerrada</option><option value="expired">Vencida</option></select><select id="investment-verification" aria-label="Filtrar por verificación de fuente"><option value="all">Todas las verificaciones</option><option value="verified">Fuente verificada</option><option value="not_verified">No verificada</option><option value="outdated">Desactualizada</option></select></div>
 <div class="investment-summary"><p class="investment-count"><span id="investment-count" aria-live="polite">0 / 0</span> <span>registros bonaerenses documentados</span></p><button type="button" id="export-investment-results" class="export-btn" disabled>Exportar resultados CSV</button><span id="investment-export-status" role="status" aria-live="polite"></span></div>
@@ -378,6 +378,7 @@ function filterInvestmentOpportunities(records,filters){
    &&(filters.sector==="all"||opportunity.sector===filters.sector)
    &&(filters.section==="all"||(territory.sections||[]).includes(filters.section)||territory.level==="province")
    &&(filters.municipality==="all"||(territory.municipalities||[]).includes(filters.municipality)||territory.level==="province")
+   &&(!filters.locality||filters.locality==="all"||normalizeText([opportunity.location,opportunity.name,(territory.localities||[]).join(" ")].join(" ")).includes(normalizeText(filters.locality))||territory.level==="province")
    &&(!filters.stage||filters.stage==="all"||opportunity.stage===filters.stage)
    &&(filters.status==="all"||opportunity.opportunityStatus===filters.status)
    &&((filters.verification||"all")==="all"||opportunity.verification?.status===filters.verification)
@@ -410,6 +411,7 @@ function renderInvestmentFinder(){
     scope:document.getElementById("investment-scope").value,
     section:document.getElementById("investment-section").value,
     municipality:document.getElementById("investment-municipality").value,
+    locality:document.getElementById("investment-locality").value,
     stage:document.getElementById("investment-stage").value,
     status:document.getElementById("investment-status").value,
     verification:document.getElementById("investment-verification").value
@@ -481,33 +483,113 @@ async function loadInvestmentFinder(){
   const stages=[...new Set(investmentOpportunities.map(x=>x.stage).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
   document.getElementById("investment-sector").innerHTML='<option value="all">Todos los sectores</option>'+sectors.map(v=>'<option value="'+escapeHtml(v)+'">'+escapeHtml(v)+'</option>').join("");
   document.getElementById("investment-stage").innerHTML='<option value="all">Todas las etapas</option>'+stages.map(v=>'<option value="'+escapeHtml(v)+'">'+escapeHtml(investmentStageLabel(v))+'</option>').join("");
-  document.getElementById("investment-section").innerHTML='<option value="all">Todas las secciones</option>'+td.sections.map(s=>'<option value="'+escapeHtml(s.name)+'">'+escapeHtml(s.label)+' · '+s.municipalities.length+' municipios</option>').join("");
-  const municipalities=td.sections.flatMap(s=>s.municipalities.map(m=>({name:m.name,section:s.name}))).sort((a,b)=>a.name.localeCompare(b.name,"es"));
-  document.getElementById("investment-municipality").innerHTML='<option value="all">Todos los municipios</option>'+municipalities.map(m=>'<option value="'+escapeHtml(m.name)+'">'+escapeHtml(m.name)+' · '+escapeHtml(m.section)+'</option>').join("");
+  document.getElementById("investment-section").innerHTML='<option value="all">Elegí una sección electoral</option>'+td.sections.map(s=>'<option value="'+escapeHtml(s.name)+'">'+escapeHtml(s.label)+'</option>').join("");
+  document.getElementById("investment-municipality").innerHTML='<option value="all">Primero elegí una sección</option>';
+  document.getElementById("investment-locality").innerHTML='<option value="all">Primero elegí un municipio</option>';
+  document.getElementById("investment-municipality").disabled=true;
+  document.getElementById("investment-locality").disabled=true;
+  renderPbaTerritories();
   investmentLoadError=false;
  }catch(error){investmentLoadError=true;}
  renderInvestmentFinder();
 }
+let pbaLocalityRequest=0;
 function renderPbaTerritories(){
  const root=document.getElementById("pba-territory-list");
+ const section=document.getElementById("investment-section").value;
+ const municipality=document.getElementById("investment-municipality").value;
+ const locality=document.getElementById("investment-locality").value;
  if(!pbaTerritoryData){root.innerHTML='<div class="investment-empty">Directorio territorial no disponible.</div>';return;}
- root.innerHTML=pbaTerritoryData.sections.map((s,i)=>{
-  const cards=s.municipalities.map(m=>'<article class="pba-municipality"><h4>'+escapeHtml(m.name)+'</h4><p><strong>Intendencia:</strong> '+(m.intendantName?escapeHtml(m.intendantName):"Pendiente de verificación")+'</p><p><strong>Signo político:</strong> '+(m.politicalSign?escapeHtml(m.politicalSign):"Pendiente de verificación")+'</p><button type="button" data-pba-municipality="'+escapeHtml(m.name)+'" data-pba-section="'+escapeHtml(s.name)+'">Ver información municipal</button></article>').join("");
-  return '<details class="pba-section" '+(i===0?"open":"")+'><summary>'+escapeHtml(s.label)+' <small>'+s.municipalities.length+' municipios</small></summary><div class="pba-municipalities">'+cards+'</div></details>';
- }).join("");
+ if(section==="all"){root.innerHTML='<div class="investment-empty">Paso 1: elegí una sección electoral. El sistema mostrará únicamente los municipios que pertenecen a esa sección.</div>';return;}
+ const selectedSection=pbaTerritoryData.sections.find(item=>item.name===section);
+ const selectedMunicipality=selectedSection?.municipalities.find(item=>item.name===municipality);
+ if(!selectedMunicipality){root.innerHTML='<div class="investment-empty">Paso 2: elegí un municipio de '+escapeHtml(selectedSection?.label||"la sección seleccionada")+'.</div>';return;}
+ const localityText=locality==="all"?"Elegí una ciudad o localidad para profundizar la consulta.":"Localidad seleccionada: "+escapeHtml(locality)+".";
+ root.innerHTML='<article class="pba-selected-card"><div><span class="micro">'+escapeHtml(selectedSection.label)+'</span><h3>'+escapeHtml(selectedMunicipality.name)+'</h3><p><strong>Intendencia:</strong> '+(selectedMunicipality.intendantName?escapeHtml(selectedMunicipality.intendantName):"Pendiente de verificación")+'</p><p><strong>Signo político:</strong> '+(selectedMunicipality.politicalSign?escapeHtml(selectedMunicipality.politicalSign):"Pendiente de verificación")+'</p></div><div><p><strong>Ámbito territorial</strong></p><p>Provincia de Buenos Aires · '+escapeHtml(selectedSection.label)+'</p><p><strong>Desagregación</strong></p><p>'+localityText+'</p></div><p class="pba-locality-note">Las localidades se consultan mediante Georef, servicio oficial de normalización territorial basado en fuentes como INDEC e IGN. La denominación censal puede diferir de barrios o subdivisiones informales.</p></article>';
+}
+async function loadPbaLocalities(municipality){
+ const select=document.getElementById("investment-locality");
+ const request=++pbaLocalityRequest;
+ select.disabled=true;
+ select.innerHTML='<option value="all">Cargando localidades…</option>';
+ if(!municipality||municipality==="all"){select.innerHTML='<option value="all">Primero elegí un municipio</option>';renderPbaTerritories();return;}
+ try{
+  const url=new URL("https://apis.datos.gob.ar/georef/api/v2.0/localidades");
+  url.searchParams.set("provincia","Buenos Aires");
+  url.searchParams.set("municipio",municipality);
+  url.searchParams.set("max","5000");
+  url.searchParams.set("campos","estandar");
+  const response=await fetch(url.toString(),{headers:{Accept:"application/json"}});
+  if(!response.ok)throw new Error("Georef no respondió correctamente");
+  const data=await response.json();
+  if(request!==pbaLocalityRequest)return;
+  const names=[...new Set((data.localidades||[]).map(item=>item.nombre).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
+  select.innerHTML='<option value="all">Elegí una ciudad o localidad</option>'+names.map(name=>'<option value="'+escapeHtml(name)+'">'+escapeHtml(name)+'</option>').join("");
+  if(!names.length){select.innerHTML='<option value="all">Sin localidades registradas</option>';}
+  select.disabled=names.length===0;
+ }catch(error){
+  if(request!==pbaLocalityRequest)return;
+  select.innerHTML='<option value="all">No se pudieron cargar las localidades</option>';
+  select.disabled=true;
+  const root=document.getElementById("pba-territory-list");
+  root.innerHTML+='<p class="pba-source-note">No se pudo consultar Georef en este momento. La selección de sección y municipio sigue disponible; probá nuevamente más tarde.</p>';
+ }
+ renderPbaTerritories();
 }
 function filterPbaTerritories(){
- const section=document.getElementById("investment-section").value,municipality=document.getElementById("investment-municipality").value,query=normalizeText(document.getElementById("pba-territory-search").value);
- document.querySelectorAll(".pba-section").forEach(details=>{
-  const label=details.querySelector("summary").textContent,sectionMatch=section==="all"||normalizeText(label).includes(normalizeText(section));let visible=0;
-  details.querySelectorAll(".pba-municipality").forEach(card=>{const name=card.querySelector("h4").textContent;const match=(municipality==="all"||name===municipality)&&(!query||normalizeText(card.textContent).includes(query));card.hidden=!(sectionMatch&&match);if(sectionMatch&&match)visible++;});
-  details.hidden=!(sectionMatch&&visible>0);if(section!=="all"||municipality!=="all"||query)details.open=sectionMatch&&visible>0;
- });
+ const section=document.getElementById("investment-section").value;
+ const municipality=document.getElementById("investment-municipality").value;
+ const locality=document.getElementById("investment-locality").value;
+ const query=normalizeText(document.getElementById("pba-territory-search").value);
+ const sectionRecord=pbaTerritoryData?.sections.find(item=>item.name===section);
+ if(section==="all"){
+  document.getElementById("investment-municipality").innerHTML='<option value="all">Primero elegí una sección</option>';
+  document.getElementById("investment-municipality").disabled=true;
+ }else{
+  document.getElementById("investment-municipality").innerHTML='<option value="all">Elegí un municipio</option>'+(sectionRecord?.municipalities||[]).map(m=>'<option value="'+escapeHtml(m.name)+'">'+escapeHtml(m.name)+'</option>').join("");
+  document.getElementById("investment-municipality").disabled=false;
+  if(municipality!=="all"&&sectionRecord?.municipalities.some(m=>m.name===municipality))document.getElementById("investment-municipality").value=municipality;
+ }
+ if(section==="all"||municipality==="all"){
+  document.getElementById("investment-locality").innerHTML='<option value="all">Primero elegí un municipio</option>';
+  document.getElementById("investment-locality").disabled=true;
+ }
+ document.querySelectorAll(".pba-section").forEach(card=>card.remove());
+ renderPbaTerritories();
 }
-document.getElementById("investment-section").addEventListener("change",()=>{filterPbaTerritories();renderInvestmentFinder();});
-document.getElementById("investment-municipality").addEventListener("change",()=>{filterPbaTerritories();renderInvestmentFinder();});
-document.getElementById("pba-territory-search").addEventListener("input",filterPbaTerritories);
-document.getElementById("pba-territory-list").addEventListener("click",event=>{const b=event.target.closest("[data-pba-municipality]");if(!b)return;document.getElementById("investment-section").value=b.dataset.pbaSection;document.getElementById("investment-municipality").value=b.dataset.pbaMunicipality;filterPbaTerritories();renderInvestmentFinder();document.getElementById("investment-grid").scrollIntoView({behavior:"smooth",block:"start"});});
+document.getElementById("investment-section").addEventListener("change",()=>{
+ document.getElementById("investment-municipality").value="all";
+ document.getElementById("investment-locality").value="all";
+ document.getElementById("investment-locality").disabled=true;
+ filterPbaTerritories();renderInvestmentFinder();
+});
+document.getElementById("investment-municipality").addEventListener("change",()=>{
+ document.getElementById("investment-locality").value="all";
+ if(document.getElementById("investment-municipality").value==="all"){
+  document.getElementById("investment-locality").innerHTML='<option value="all">Primero elegí un municipio</option>';
+  document.getElementById("investment-locality").disabled=true;
+  renderPbaTerritories();
+ }else{
+  renderPbaTerritories();
+  loadPbaLocalities(document.getElementById("investment-municipality").value);
+ }
+ renderInvestmentFinder();
+});
+document.getElementById("investment-locality").addEventListener("change",()=>{renderPbaTerritories();renderInvestmentFinder();});
+document.getElementById("pba-territory-search").addEventListener("input",()=>{
+ const query=normalizeText(document.getElementById("pba-territory-search").value);
+ if(!query){renderPbaTerritories();return;}
+ const matches=pbaTerritoryData.sections.flatMap(section=>section.municipalities.filter(m=>normalizeText([m.name,m.intendantName,m.politicalSign,section.label].join(" ")).includes(query)).map(m=>({section,municipality:m})));
+ if(matches.length===1){
+  const match=matches[0];
+  document.getElementById("investment-section").value=match.section.name;
+  filterPbaTerritories();
+  document.getElementById("investment-municipality").value=match.municipality.name;
+  renderPbaTerritories();loadPbaLocalities(match.municipality.name);
+ }else if(matches.length>1){
+  document.getElementById("pba-territory-list").innerHTML='<div class="investment-empty">'+matches.length+' coincidencias. Precisá la búsqueda o elegí la sección y el municipio en los selectores.</div>';
+ }else renderPbaTerritories();
+});
 ["investment-search"].forEach(id=>document.getElementById(id).addEventListener("input",renderInvestmentFinder));
 ["investment-sector","investment-scope","investment-stage","investment-status","investment-verification"].forEach(id=>document.getElementById(id).addEventListener("change",renderInvestmentFinder));
 document.getElementById("export-investment-results").addEventListener("click",exportVisibleInvestmentOpportunities);
