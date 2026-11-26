@@ -40,7 +40,7 @@ footer{background:#061b14;color:#d9e2db;padding:25px 0}.foot{display:flex;justif
 <div class="controls"><input id="search" type="search" placeholder="Buscar noticia, empresa o localidad" aria-label="Buscar información"><select id="group" aria-label="Filtrar por clasificación"><option value="all">Todas las categorías territoriales</option></select></div>
 <p class="count" id="count" aria-live="polite">Cargando información…</p>
 <div class="news-grid" id="news-grid" aria-live="polite" aria-busy="true"><div class="empty">Cargando información territorial verificada…</div></div>
-<p class="count" style="margin-top:18px">Cobertura inicial: los registros disponibles se concentran en Escobar. Las demás jurisdicciones permanecen en el alcance del radar, pero no se completan con noticias de otras zonas ni con ubicaciones inferidas.</p>
+<p class="count" style="margin-top:18px">Cobertura municipal: las noticias se distribuyen entre las jurisdicciones de Radar Norte. Cada ficha identifica localidad, fecha, categoría y fuente; las novedades se intercalan para evitar acumulaciones de un solo municipio.</p>
 </section>
 </main>
 <footer><div class="wrap foot"><span class="brand">MAPA FEDERAL</span><small>RADAR NORTE · INTELIGENCIA TERRITORIAL PARA DECIDIR</small></div></footer>
@@ -51,7 +51,12 @@ let catalog={groups:[],items:[]};
 function render(){
  const query=normalize(document.getElementById("search").value);
  const group=document.getElementById("group").value;
- const items=catalog.items.filter(item=>(group==="all"||item.category===group)&&normalize([item.title,item.summary,item.source,item.jurisdiction,...(item.geographyEvidence||[])].join(" ")).includes(query));
+ const filtered=catalog.items.filter(item=>(group==="all"||item.category===group)&&normalize([item.title,item.summary,item.source,item.jurisdiction,...(item.geographyEvidence||[])].join(" ")).includes(query));
+ const buckets=new Map();
+ filtered.forEach(item=>{const key=item.jurisdiction||"Sin jurisdicción";if(!buckets.has(key))buckets.set(key,[]);buckets.get(key).push(item);});
+ for(const bucket of buckets.values())bucket.sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+ const items=[];
+ while([...buckets.values()].some(bucket=>bucket.length))for(const bucket of buckets.values())if(bucket.length)items.push(bucket.shift());
  document.getElementById("count").textContent=items.length+" de "+catalog.items.length+" registros territoriales";
  document.getElementById("news-grid").setAttribute("aria-busy","false");
  document.getElementById("news-grid").innerHTML=items.length?items.map(item=>{
@@ -60,7 +65,7 @@ function render(){
   const source=item.url&&/^https:\/\//i.test(item.url)?'<a class="source" href="'+escapeHtml(item.url)+'" target="_blank" rel="noopener noreferrer">Consultar fuente original ↗</a>':"";
   const verification=item.verification?.status==="verified"?"Fuente verificada":item.verification?.status==="editorial_reviewed"?"Revisión editorial":"Verificación pendiente";
   return '<article class="news-card"><div class="news-meta"><span class="region-tag">'+escapeHtml(item.category)+'</span><time datetime="'+escapeHtml(item.date)+'">'+escapeHtml(date)+'</time></div><h3>'+escapeHtml(item.title)+'</h3><p>'+escapeHtml(item.summary)+'</p><p class="place">'+escapeHtml(item.jurisdiction)+" · "+escapeHtml(place)+'</p><div class="provenance">'+escapeHtml(item.source)+" · "+escapeHtml(verification)+'</div>'+source+'</article>';
- }).join(""):'<div class="empty">No hay registros para esta categoría o búsqueda. No se muestran noticias de otras jurisdicciones.</div>';
+ }).join(""):'<div class="empty">No hay registros para esta categoría o búsqueda. Probá con otra localidad o clasificación.</div>';
 }
 async function load(){
  try{
