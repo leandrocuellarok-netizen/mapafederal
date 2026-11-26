@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T08:33:35-03:00",
+  "generatedAt": "2026-11-26T09:35:33-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "22272548d09d715793386afdeecaa635652b062f",
-  "nodeCount": 95,
+  "catalogCommit": "8f9ba8c73fc147e1406d533fade3ac5abae544e1",
+  "nodeCount": 96,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -48,7 +48,7 @@
         "San Juan",
         "San Luis"
       ],
-      "nodeCount": 11,
+      "nodeCount": 12,
       "coveredJurisdictions": 4
     },
     {
@@ -505,7 +505,7 @@
     {
       "province": "San Juan",
       "region": "Cuyo",
-      "total": 2,
+      "total": 3,
       "byType": {
         "Ciudad": 0,
         "Puerto": 0,
@@ -514,7 +514,7 @@
         "Logística": 0,
         "Industria": 0,
         "Recurso mineral": 0,
-        "Turismo": 0,
+        "Turismo": 1,
         "Estación ferroviaria": 0
       },
       "missingCategories": [
@@ -523,7 +523,6 @@
         "Logística",
         "Industria",
         "Recurso mineral",
-        "Turismo",
         "Estación ferroviaria"
       ]
     },
@@ -684,7 +683,7 @@
     "Logística": 3,
     "Industria": 12,
     "Recurso mineral": 4,
-    "Turismo": 6,
+    "Turismo": 7,
     "Estación ferroviaria": 6
   },
   "leastCoveredJurisdictions": [
@@ -724,9 +723,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NEA",
-    "nextTarget": "Cuyo",
-    "note": "La ejecución NEA incorporó el Aeropuerto Internacional Doctor Fernando Piragine Niveyro en Corrientes, con ARP publicado por ANAC en el Suplemento AIP A30/2024 y estado contrastado con la transcripción secundaria del AIP AIRAC 01/26. La portada ya consume el catálogo y mantiene el filtro Aeropuerto. La próxima rotación continúa por Cuyo; priorizar provincias/categorías con menos nodos y exigir coordenadas atribuibles."
+    "lastTargeted": "Cuyo",
+    "nextTarget": "Centro",
+    "note": "La ejecución Cuyo incorporó el Parque Nacional El Leoncito en San Juan, con coordenada de referencia publicada por IGN y estado de visita documentado por APN. El punto no representa acceso ni perímetro y la fuente geográfica no define su semántica geométrica. La próxima rotación continúa por Centro; priorizar provincias y categorías menos cubiertas con coordenadas atribuibles."
   },
   "pendingCandidates": [
     {
@@ -813,6 +812,30 @@
         "https://rides.producciontucuman.gob.ar/wp-content/uploads/2025/08/Parques_Industriales_11_08_2025.kml",
         "https://rides.producciontucuman.gob.ar/wp-content/uploads/2025/08/Parques_Industriales_11_08_2025.zip"
       ]
+    },
+    {
+      "province": "San Juan",
+      "locality": "Chimbas",
+      "category": "Industria",
+      "name": "Parque Industrial de Chimbas",
+      "decision": "not_added",
+      "reason": "El Plan Estratégico San Juan 2023 documenta el parque y obras de infraestructura; un edicto oficial de mayo de 2026 registra una empresa en el lote 62. Ninguna de las fuentes consultadas publica coordenadas o geometría del parque ni un punto exacto de instalación. No se geocodificó desde la dirección.",
+      "sourceUrls": [
+        "https://planestrategico.sanjuan.gob.ar/wp-content/uploads/2023/12/PESJ-Actualizacion-2023-digital.pdf",
+        "https://contenido.sanjuan.gob.ar/media/k2/attachments/%2805%29_%28MAYO%29_08-05-2026__%28P._36_Internet.pdf"
+      ]
+    },
+    {
+      "province": "San Juan",
+      "locality": "Rivadavia",
+      "category": "Turismo",
+      "name": "Centro Ambiental Anchipurac",
+      "decision": "not_added",
+      "reason": "La web oficial confirma el centro, su actividad educativa y las visitas. El iframe de Google Maps embebido publica coordenadas de centro de vista, pero no documenta que sean la coordenada de la instalación ni declara CRS. No se reutiliza el centro del mapa como punto exacto.",
+      "sourceUrls": [
+        "https://anchipurac.sanjuan.gob.ar/institucional",
+        "https://anchipurac.sanjuan.gob.ar/informacion"
+      ]
     }
   ],
   "methodology": [
@@ -825,6 +848,7 @@
     "El nodo del Aeropuerto de General Pico usa el ARP publicado por ANAC en AIP AD 2.2, Suplemento AIRAC A18/2022 (efectivo 14/07/2022). La fila no declara datum/CRS; se convirtió DMS a grados decimales sin reproyección. La ficha oficial nacional consultada 26/11/2026 indica que no opera vuelos comerciales regulares; como no se verificó AIP/MADHEL vigente, el status del aeródromo queda no_verificado.",
     "El nodo Aeropuerto El Tehuelche (SAVY) usa el ARP publicado por ANAC en AIP Suplemento A 65/2024, identificado como centro geométrico de pista. Se convirtió DMS a grados decimales sin reproyección; el suplemento no declara datum/CRS. El estado de la infraestructura se contrastó con horarios AIP A192/2025 y su inclusión en el grupo de cabotaje C de AIC A13/2026; no se afirma programación ni frecuencia comercial actual.",
     "El nodo de la cantera fiscal D-6 (Sierras Bayas, Olavarría) usa el centroide geométrico calculado a partir de los cuatro vértices publicados en la Resolución 57-SSMINMPCEITGP-2021. La resolución indica POSGAR 07 pero no la zona; Argentina 5 (EPSG:5347) se infiere por magnitud de coordenadas y ubicación. El centroide representa la parcela de 4,27 ha, no un frente de extracción ni un acceso. La operación actual no está verificada.",
-    "El nodo del Aeropuerto Internacional Teniente Benjamín Matienzo (Tucumán) fue corregido con la coordenada geográfica publicada por ANAC para SANT (26°50'18\\\"S, 065°06'16\\\"W), convertida de DMS a grados decimales sin reproyección. El suplemento AIP A39/2026 actualiza el plano y las normas de movimiento en plataforma comercial. El datum/CRS no se explicita en el suplemento; no se atribuye EPSG ni precisión geodésica. La condición operativa se refiere a infraestructura y procedimientos aeroportuarios publicados, no a frecuencias de vuelos comerciales ni NOTAM en tiempo real."
+    "El nodo del Aeropuerto Internacional Teniente Benjamín Matienzo (Tucumán) fue corregido con la coordenada geográfica publicada por ANAC para SANT (26°50'18\\\"S, 065°06'16\\\"W), convertida de DMS a grados decimales sin reproyección. El suplemento AIP A39/2026 actualiza el plano y las normas de movimiento en plataforma comercial. El datum/CRS no se explicita en el suplemento; no se atribuye EPSG ni precisión geodésica. La condición operativa se refiere a infraestructura y procedimientos aeroportuarios publicados, no a frecuencias de vuelos comerciales ni NOTAM en tiempo real.",
+    "El nodo del Parque Nacional El Leoncito usa la coordenada geográfica 31°53'22''S 69°15'54''O publicada por IGN para el área protegida. Se convirtió DMS a grados decimales sin transformación de datum ni reproyección. La tabla IGN no define si el punto corresponde a acceso, centroide o punto interno; por eso el marcador se identifica solo como referencia cartográfica y no como acceso ni perímetro. APN documenta horarios estacionales, senderos y actividades de visita."
   ]
 }
