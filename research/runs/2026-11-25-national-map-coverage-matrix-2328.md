@@ -45,14 +45,11 @@ No se modificó `data/strategic-nodes.json` ni `index.html`: no hubo evidencia s
 
 ## Validación, commit y publicación
 
-- Validación JSON y conteos de la matriz: incluida en GitHub Actions.
-- Sintaxis del workflow: pendiente de ejecución en Actions.
-- Commit SHA: se completa tras crear el commit.
-- GitHub Actions / Pages: se completa tras observar la ejecución posterior al commit.
-- Comprobación HTTP independiente de la portada: pendiente.
+- Commit de la matriz y documentación: `2fbcca81425b6e9a5cebb610477761d37fe37472`.
+- Corrección del validador: `cbd0677a65cde7899efbf1f3d854208a914e29dc` (se agregó la importación de `pathlib.Path`, requerida para leer la matriz).
+- GitHub Actions #757, sobre `2fbcca8`: falló por el `NameError: Path is not defined` en el nuevo bloque de validación. No fue un error de los datos; se corrigió en el commit siguiente.
+- GitHub Actions #758, sobre `cbd0677`: `validate` aprobado y `deploy` aprobado. El workflow terminó con conclusión `success`.
+- Verificación independiente de la portada: intentada en `https://leandrocuellarok-netizen.github.io/mapafederal/`; el cliente HTTP/web devolvió que la URL no era accesible. El despliegue de Pages está confirmado por el job, pero no se pudo verificar la respuesta independiente de la página.
+- HEAD de `main` al preparar este cierre: `cbd0677a65cde7899efbf1f3d854208a914e29dc`.
 
-## Pendientes
-
-- Obtener geometría oficial o coordenada de acceso confirmada del Parque Industrial General Pico.
-- Verificar directamente el portal municipal cuando vuelva a responder.
-- En el próximo ciclo NOA, priorizar un nodo industrial/logístico en Santiago del Estero o Tucumán solo si una fuente primaria y coordenadas verificables lo permiten.
+La validación de matriz comprobó que sus 24 filas, los nueve tipos y los conteos por provincia coinciden con `data/strategic-nodes.json`. El siguiente commit actualiza únicamente este registro de investigación y volverá a disparar el workflow de Pages.
