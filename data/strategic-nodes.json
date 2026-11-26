@@ -1159,5 +1159,34 @@
       "scope": "Se leyó el GeoJSON municipal de cinco estaciones y se transformaron las coordenadas proyectadas a WGS 84 con pyproj 3.7.2. Verificación documental; no presencial. No se infiere servicio de pasajeros ni horario vigente."
     },
     "sourceRecordId": "est-matheu"
+  },
+  {
+    "id": "sde-la-banda-zona-primaria-aduanera-la-isla",
+    "name": "Zona Primaria Aduanera La Banda — Parque Industrial La Isla",
+    "province": "Santiago del Estero",
+    "district": "Departamento Banda",
+    "locality": "La Banda",
+    "type": "Logística",
+    "coords": [
+      -27.758108,
+      -64.255669
+    ],
+    "note": "Vértice A del perímetro oficial de la zona primaria aduanera (8.186,89 m²); el marcador identifica ese vértice, no el acceso ni el centro del predio. La RG 3783/2015 habilitó la zona; la operación aduanera actual no fue verificada.",
+    "source": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-3783-2015-248900/texto",
+    "sourceName": "Administración Federal de Ingresos Públicos (AFIP)",
+    "sourcePublishedAt": "2015-07-06",
+    "sourceRecordId": "Resolución General AFIP 3783/2015, Anexo, Zona Primaria Aduanera La Banda, vértice A",
+    "coordinateSource": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-3783-2015-248900/texto",
+    "coordinateSourceName": "AFIP, Resolución General 3783/2015, Anexo",
+    "coordinateSourcePublishedAt": "2015-07-06",
+    "coordinateReferenceSystem": "No declarado por la resolución; las coordenadas se publican como posiciones geosatelitales.",
+    "coordinateTransformation": "Conversión de grados, minutos y segundos a grados decimales; sin transformación de datum.",
+    "administrativeStatus": "Zona primaria aduanera habilitada por los artículos 1 y 2 de la Resolución General 3783/2015.",
+    "validityPeriod": "Perímetro delimitado por la Resolución General 3783/2015; vigencia operativa actual no verificada.",
+    "status": "no_verificado",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "Se verificaron los cuatro vértices y la habilitación jurídica en la resolución AFIP; la Casa de Santiago del Estero confirma que el Parque Industrial La Isla sigue listado en La Banda y en el RENPI. No se verificó la operación aduanera actual. El marcador usa el vértice A como referencia explícita del perímetro."
+    }
   }
 ]

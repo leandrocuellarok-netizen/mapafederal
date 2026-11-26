@@ -525,6 +525,8 @@ jobs:
           assert isinstance(nodes, list) and nodes, "El catálogo de nodos está vacío"
           assert isinstance(news, list), "El archivo de noticias debe ser una lista"
           names = set()
+          stable_ids = set()
+          coordinate_keys = set()
           allowed_node_types = {"Ciudad", "Puerto", "Aeropuerto", "Paso fronterizo", "Logística", "Industria", "Turismo", "Recurso mineral", "Estación ferroviaria"}
           expected_jurisdictions = {
               "CABA", "Buenos Aires", "Catamarca", "Chaco", "Chubut", "Córdoba",
@@ -534,6 +536,11 @@ jobs:
               "Tierra del Fuego", "Tucumán"
           }
           for node in nodes:
+              node_id = node.get("id")
+              if node_id is not None:
+                  assert isinstance(node_id, str) and re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", node_id), f"ID estable inválido: {node_id}"
+                  assert node_id not in stable_ids, f"ID estable duplicado: {node_id}"
+                  stable_ids.add(node_id)
               for field in ("name", "province", "type", "note", "source"):
                   assert isinstance(node.get(field), str) and node[field].strip(), f"Nodo sin {field}"
               assert node["province"] in expected_jurisdictions, f"Jurisdicción no admitida: {node['province']}"
@@ -544,6 +551,9 @@ jobs:
               assert isinstance(lat, (int, float)) and not isinstance(lat, bool), f"Latitud no numérica: {node['name']}"
               assert isinstance(lon, (int, float)) and not isinstance(lon, bool), f"Longitud no numérica: {node['name']}"
               assert -55.2 <= lat <= -21.7 and -73.6 <= lon <= -53.5, f"Coordenada fuera del rango argentino: {node['name']}"
+              coordinate_key = (lat, lon)
+              assert coordinate_key not in coordinate_keys, f"Coordenada duplicada: {node['name']}"
+              coordinate_keys.add(coordinate_key)
               source = urlparse(node["source"])
               assert source.scheme == "https" and source.netloc, f"Fuente no HTTPS: {node['name']}"
               coordinate_source = node.get("coordinateSource")
@@ -564,6 +574,11 @@ jobs:
           covered_jurisdictions = {node["province"] for node in nodes}
           missing_jurisdictions = expected_jurisdictions - covered_jurisdictions
           assert not missing_jurisdictions, f"Faltan jurisdicciones en el catálogo: {sorted(missing_jurisdictions)}"
+          la_banda_customs = next((node for node in nodes if node.get("id") == "sde-la-banda-zona-primaria-aduanera-la-isla"), None)
+          assert la_banda_customs is not None, "Falta el nodo de la zona primaria aduanera de La Banda"
+          assert la_banda_customs["province"] == "Santiago del Estero" and la_banda_customs["type"] == "Logística"
+          assert la_banda_customs["status"] == "no_verificado"
+          assert la_banda_customs["coordinateReferenceSystem"].startswith("No declarado")
           coverage = json.loads(Path("research/national-map-coverage.json").read_text(encoding="utf-8"))
           assert coverage.get("catalogPath") == "data/strategic-nodes.json"
           assert coverage.get("nodeCount") == len(nodes)
@@ -580,7 +595,14 @@ jobs:
               }
               assert row.get("byType") == expected_counts, f"Matriz desactualizada: {row['province']}"
               assert row.get("total") == sum(expected_counts.values()), f"Total de matriz incorrecto: {row['province']}"
-          assert coverage.get("regionalRotation", {}).get("nextTarget") == "NOA"
+          rotation = coverage.get("regionalRotation", {})
+          rotation_order = rotation.get("order")
+          assert isinstance(rotation_order, list) and rotation_order, "Falta el orden de rotación regional"
+          last_targeted = rotation.get("lastTargeted")
+          next_target = rotation.get("nextTarget")
+          assert last_targeted in rotation_order and next_target in rotation_order, "Región de rotación no reconocida"
+          expected_next = rotation_order[(rotation_order.index(last_targeted) + 1) % len(rotation_order)]
+          assert next_target == expected_next, "La próxima región no respeta la rotación declarada"
           la_pampa = next(row for row in coverage_rows if row["province"] == "La Pampa")
           assert la_pampa["total"] == 1 and la_pampa["byType"]["Industria"] == 0
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")

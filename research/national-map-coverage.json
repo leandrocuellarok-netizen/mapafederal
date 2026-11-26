@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-25T23:28:18-03:00",
+  "generatedAt": "2026-11-26T00:34:42-03:00",
   "catalogPath": "data/strategic-nodes.json",
   "catalogCommit": "e2ec24ea2fea6c6fabd5514fbfa8450b3e01989c",
-  "nodeCount": 86,
+  "nodeCount": 87,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -26,7 +26,7 @@
         "Santiago del Estero",
         "Tucumán"
       ],
-      "nodeCount": 9,
+      "nodeCount": 10,
       "coveredJurisdictions": 5
     },
     {
@@ -607,13 +607,13 @@
     {
       "province": "Santiago del Estero",
       "region": "NOA",
-      "total": 1,
+      "total": 2,
       "byType": {
         "Ciudad": 0,
         "Puerto": 0,
         "Aeropuerto": 1,
         "Paso fronterizo": 0,
-        "Logística": 0,
+        "Logística": 1,
         "Industria": 0,
         "Recurso mineral": 0,
         "Turismo": 0,
@@ -623,7 +623,6 @@
         "Ciudad",
         "Puerto",
         "Paso fronterizo",
-        "Logística",
         "Industria",
         "Recurso mineral",
         "Turismo",
@@ -687,7 +686,7 @@
     "Puerto": 22,
     "Aeropuerto": 19,
     "Paso fronterizo": 11,
-    "Logística": 2,
+    "Logística": 3,
     "Industria": 11,
     "Recurso mineral": 3,
     "Turismo": 6,
@@ -702,11 +701,6 @@
     {
       "province": "San Luis",
       "region": "Cuyo",
-      "total": 1
-    },
-    {
-      "province": "Santiago del Estero",
-      "region": "NOA",
       "total": 1
     },
     {
@@ -725,9 +719,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Centro",
-    "nextTarget": "NOA",
-    "note": "Agrupación operativa para rotar la investigación; no sustituye regionalizaciones oficiales. La Pampa se revisó por estar entre las jurisdicciones con menor cobertura."
+    "lastTargeted": "NOA",
+    "nextTarget": "NEA",
+    "note": "Agrupación operativa para rotar la investigación; no sustituye regionalizaciones oficiales. En este ciclo se verificó un nodo logístico de Santiago del Estero; la siguiente región es NEA."
   },
   "pendingCandidates": [
     {
@@ -741,12 +735,26 @@
         "https://digesto.tcuentaslp.gob.ar/digesto%20tribunal/Leyes/Ley%20530.html",
         "https://parquesindustriales.com.ar/parque?id=50881"
       ]
+    },
+    {
+      "province": "Santiago del Estero",
+      "locality": "La Banda",
+      "category": "Industria",
+      "name": "Parque Industrial La Isla — predio industrial completo",
+      "decision": "not_added",
+      "reason": "La fuente oficial de Casa de Santiago confirma el parque, su localización en La Banda y su inscripción en RENPI. La RG AFIP 3783/2015 aporta coordenadas exactas solo para el polígono de 8.186,89 m² de la zona primaria aduanera, no para el perímetro completo del parque (236 ha urbanizadas según la ficha oficial). La coordenada de directorio secundario no declara CRS/datum ni geometría; no se usa como centro del parque. Se agregó únicamente la zona aduanera como nodo Logística, con el vértice A explícitamente identificado.",
+      "sourceUrls": [
+        "https://www.casadesantiago.gob.ar/comercio-exterior-parques-zonas-industriales",
+        "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-3783-2015-248900/texto",
+        "https://parquesindustriales.com.ar/parque?id=62662"
+      ]
     }
   ],
   "methodology": [
     "Los conteos reflejan exclusivamente registros del catálogo nacional data/strategic-nodes.json.",
     "Una celda con cero significa que no hay un nodo catalogado para esa combinación; no demuestra ausencia territorial de infraestructura.",
     "Los conteos no miden exhaustividad, calidad geoespacial, estado operativo ni disponibilidad comercial.",
-    "La agrupación regional se usa únicamente para rotar la investigación y no constituye una clasificación geográfica oficial."
+    "La agrupación regional se usa únicamente para rotar la investigación y no constituye una clasificación geográfica oficial.",
+    "El nodo logístico de La Banda usa el vértice A del polígono legal publicado en la RG AFIP 3783/2015. La fuente no declara CRS/datum; solo se convirtió DMS a grados decimales, sin transformación. El marcador se identifica como vértice, no como acceso ni centro del predio."
   ]
 }
