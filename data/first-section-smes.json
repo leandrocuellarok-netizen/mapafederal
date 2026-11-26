@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-25",
+  "scope": "Primera Sección Electoral de la Provincia de Buenos Aires",
+  "scopeSource": "https://w3.trabajo.gba.gov.ar/gestion-territorial-empleo",
+  "methodology": "Perfiles territoriales orientativos construidos a partir de fuentes públicas sectoriales. No constituyen un censo de empresas ni un ranking actualizado de establecimientos por municipio. Los casos empresariales y políticas públicas se muestran únicamente cuando existe una fuente identificable.",
+  "categories": [
+    "Comercio y distribución",
+    "Industria y manufactura",
+    "Logística y transporte",
+    "Construcción e inmobiliario",
+    "Servicios profesionales y tecnología",
+    "Salud y educación"
+  ],
+  "localities": [
+    {
+      "locality": "Campana",
+      "sectors": [
+        "Industria y manufactura",
+        "Logística y transporte",
+        "Servicios industriales"
+      ],
+      "description": "La actividad pyme se vincula con la cadena industrial, la metalmecánica, el mantenimiento, los servicios técnicos y los proveedores de logística. La cercanía con grandes plantas y corredores de transporte abre oportunidades para talleres especializados, proveedores industriales y servicios empresariales."
+    },
+    {
+      "locality": "Escobar",
+      "sectors": [
+        "Industria y manufactura",
+        "Logística y transporte",
+        "Comercio y distribución",
+        "Construcción e inmobiliario"
+      ],
+      "description": "El entramado pyme combina comercio, construcción, alimentos, servicios y proveedores de parques industriales y centros logísticos. Su ubicación sobre el corredor norte y la conexión con Pilar, Campana y Tigre favorecen la distribución y los servicios a empresas."
+    },
+    {
+      "locality": "General Las Heras",
+      "sectors": [
+        "Industria y manufactura",
+        "Comercio y distribución",
+        "Agroindustria"
+      ],
+      "description": "El perfil pyme se relaciona con la producción agropecuaria, los alimentos, los servicios rurales, el mantenimiento de maquinaria y el comercio de cercanía. Las oportunidades aparecen en agregado de valor, frío, transporte y provisión de insumos."
+    },
+    {
+      "locality": "General Rodríguez",
+      "sectors": [
+        "Industria y manufactura",
+        "Logística y transporte",
+        "Construcción e inmobiliario"
+      ],
+      "description": "La presencia de áreas industriales y su conexión con los corredores del oeste favorecen pymes metalmecánicas, alimenticias, de envases, mantenimiento, construcción y transporte. La articulación entre parques industriales y proveedores locales es una línea central de desarrollo."
+    },
+    {
+      "locality": "General San Martín",
+      "sectors": [
+        "Industria y manufactura",
+        "Comercio y distribución",
+        "Servicios profesionales y tecnología"
+      ],
+      "description": "Es uno de los núcleos industriales más importantes de la sección. Se destacan metalurgia, caucho y plástico, química, textiles y alimentos. La densidad de establecimientos pequeños y medianos genera demanda de insumos, matricería, mantenimiento, logística y servicios tecnológicos."
+    },
+    {
+      "locality": "Hurlingham",
+      "sectors": [
+        "Industria y manufactura",
+        "Comercio y distribución",
+        "Construcción e inmobiliario"
+      ],
+      "description": "Su tejido productivo combina talleres industriales, metalmecánica, autopartes, textiles, comercio y servicios. Las pymes pueden integrarse como proveedoras de cadenas industriales del corredor San Martín-Tres de Febrero y del mercado metropolitano."
+    },
+    {
+      "locality": "Ituzaingó",
+      "sectors": [
+        "Comercio y distribución",
+        "Servicios profesionales y tecnología",
+        "Construcción e inmobiliario"
+      ],
+      "description": "Predominan oportunidades vinculadas al comercio, servicios profesionales, gastronomía, construcción, mantenimiento y pequeñas manufacturas. El desafío pyme es mejorar productividad, digitalización, canales de venta y articulación con los mercados del oeste metropolitano."
+    },
+    {
+      "locality": "José C. Paz",
+      "sectors": [
+        "Comercio y distribución",
+        "Construcción e inmobiliario",
+        "Industria y manufactura"
+      ],
+      "description": "El mercado local ofrece espacio para pymes comerciales, alimenticias, textiles, talleres, construcción y servicios personales y profesionales. La formalización, el acceso al crédito y la capacitación en gestión son factores relevantes para consolidar unidades productivas."
+    },
+    {
+      "locality": "Luján",
+      "sectors": [
+        "Industria y manufactura",
+        "Comercio y distribución",
+        "Agroindustria",
+        "Turismo y servicios"
+      ],
+      "description": "Conviven industria alimenticia, textil, cuero, metalmecánica, comercio y servicios vinculados al turismo y al patrimonio. Las pymes pueden aprovechar la demanda regional y turística mediante productos locales, gastronomía, manufacturas y servicios especializados."
+    },
+    {
+      "locality": "Malvinas Argentinas",
+      "sectors": [
+        "Industria y manufactura",
+        "Logística y transporte",
+        "Comercio y distribución"
+      ],
+      "description": "El perfil productivo combina parques y establecimientos industriales, logística, distribución, alimentos, laboratorios y servicios a empresas. La escala de los corredores industriales genera oportunidades para proveedores, mantenimiento, envases y transporte."
+    },
+    {
+      "locality": "Marcos Paz",
+      "sectors": [
+        "Agroindustria",
+        "Industria y manufactura",
+        "Comercio y distribución",
+        "Logística y transporte"
+      ],
+      "description": "Las pymes se vinculan con alimentos, producción agropecuaria, servicios rurales, construcción, comercio y transporte. El agregado de valor a la producción primaria y la mejora de la conectividad comercial son oportunidades para empresas locales."
+    },
+    {
+      "locality": "Mercedes",
+      "sectors": [
+        "Agroindustria",
+        "Industria y manufactura",
+        "Comercio y distribución",
+        "Turismo y servicios"
+      ],
+      "description": "Su economía combina alimentos, actividad agropecuaria, metalmecánica, comercio y servicios. Las pymes pueden articular producción rural, transformación alimentaria, gastronomía, turismo y distribución hacia otros centros urbanos."
+    },
+    {
+      "locality": "Merlo",
+      "sectors": [
+        "Industria y manufactura",
+        "Comercio y distribución",
+        "Construcción e inmobiliario"
+      ],
+      "description": "El entramado pyme es diverso: metalmecánica, textiles, alimentos, talleres, construcción y comercio. La escala del mercado local favorece proveedores de cercanía y servicios para hogares y empresas, mientras que la industria demanda capacitación y actualización tecnológica."
+    },
+    {
+      "locality": "Moreno",
+      "sectors": [
+        "Industria y manufactura",
+        "Comercio y distribución",
+        "Logística y transporte",
+        "Construcción e inmobiliario"
+      ],
+      "description": "Se combinan manufacturas, alimentos, textiles, metalmecánica, comercio y logística. La localización sobre corredores metropolitanos permite desarrollar proveedores industriales, distribución, construcción y servicios para empresas y consumidores."
+    },
+    {
+      "locality": "Morón",
+      "sectors": [
+        "Comercio y distribución",
+        "Servicios profesionales y tecnología",
+        "Industria y manufactura",
+        "Salud y educación"
+      ],
+      "description": "Es un centro comercial y de servicios del oeste, con actividad industrial y talleres especializados. Las pymes se distribuyen entre comercio, salud, educación, servicios profesionales, autopartes y manufactura; la digitalización y la gestión comercial son ejes de competitividad."
+    },
+    {
+      "locality": "Navarro",
+      "sectors": [
+        "Agroindustria",
+        "Industria y manufactura",
+        "Comercio y distribución"
+      ],
+      "description": "El perfil pyme se relaciona con producción agropecuaria, lácteos, alimentos, maquinaria, transporte y servicios rurales. La transformación local de materias primas y el acceso a mercados regionales resultan claves para agregar valor."
+    },
+    {
+      "locality": "Pilar",
+      "sectors": [
+        "Industria y manufactura",
+        "Logística y transporte",
+        "Servicios profesionales y tecnología",
+        "Salud y educación"
+      ],
+      "description": "Pilar reúne parques industriales, centros logísticos, empresas de alimentos, laboratorios, tecnología y servicios profesionales. Su ecosistema pyme incluye proveedores industriales, mantenimiento, packaging, transporte y servicios especializados."
+    },
+    {
+      "locality": "San Fernando",
+      "sectors": [
+        "Industria y manufactura",
+        "Logística y transporte",
+        "Comercio y distribución",
+        "Turismo y servicios"
+      ],
+      "description": "La actividad náutica y naval convive con metalmecánica, servicios técnicos, logística, comercio y turismo. Las pymes pueden proveer reparación, carpintería, motores, equipamiento, gastronomía y servicios vinculados al río y a la industria."
+    },
+    {
+      "locality": "San Isidro",
+      "sectors": [
+        "Servicios profesionales y tecnología",
+        "Comercio y distribución",
+        "Salud y educación"
+      ],
+      "description": "El tejido pyme presenta fuerte presencia de servicios profesionales, tecnología, salud, educación, comercio y actividades creativas. La oportunidad está en servicios de alto valor, soluciones digitales y proveedores para empresas y hogares."
+    },
+    {
+      "locality": "San Miguel",
+      "sectors": [
+        "Comercio y distribución",
+        "Servicios profesionales y tecnología",
+        "Salud y educación",
+        "Industria y manufactura"
+      ],
+      "description": "Su centralidad comercial y de servicios sostiene pymes de gastronomía, salud, educación, comercio, mantenimiento y manufacturas. El mercado local y la conexión con otros municipios del noroeste metropolitano amplían la demanda potencial."
+    },
+    {
+      "locality": "Suipacha",
+      "sectors": [
+        "Agroindustria",
+        "Industria y manufactura",
+        "Comercio y distribución"
+      ],
+      "description": "La cadena agroalimentaria, los lácteos, la producción rural y los servicios asociados conforman un eje central para las pymes. Se destacan oportunidades en procesamiento, logística de alimentos, mantenimiento y comercialización regional."
+    },
+    {
+      "locality": "Tigre",
+      "sectors": [
+        "Logística y transporte",
+        "Industria y manufactura",
+        "Comercio y distribución",
+        "Turismo y servicios"
+      ],
+      "description": "La economía pyme combina logística, comercio, gastronomía, turismo, náutica, mantenimiento e industria. El Delta y los corredores de transporte generan demanda de servicios especializados, distribución, construcción y actividades recreativas."
+    },
+    {
+      "locality": "Tres de Febrero",
+      "sectors": [
+        "Industria y manufactura",
+        "Comercio y distribución",
+        "Construcción e inmobiliario"
+      ],
+      "description": "La industria local incluye metalurgia, plásticos, alimentos, textiles y talleres especializados. El municipio cuenta con un Observatorio Productivo y ha impulsado censos industriales para conocer la estructura de las empresas y orientar políticas públicas."
+    },
+    {
+      "locality": "Vicente López",
+      "sectors": [
+        "Servicios profesionales y tecnología",
+        "Industria y manufactura",
+        "Comercio y distribución",
+        "Salud y educación"
+      ],
+      "description": "Su estructura combina servicios empresariales, tecnología, salud, educación, comercio e industria. Las pymes suelen operar en actividades de mayor especialización, servicios a empresas, manufacturas y soluciones tecnológicas."
+    }
+  ],
+  "cases": [
+    {
+      "locality": "San Martín",
+      "title": "Iluminación Yapeyú: una pyme familiar industrial-comercial",
+      "text": "Un trabajo académico de la UNSAM documentó a Iluminación Yapeyú, empresa familiar de San Martín dedicada a producir y comercializar materiales eléctricos y de iluminación. El caso describe su origen en 1982 y su trayectoria en el rubro al momento del estudio. Se presenta como caso documentado de pyme, no como certificación de su situación actual.",
+      "label": "Caso empresarial documentado",
+      "source": "https://ri.unsam.edu.ar/bitstream/123456789/977/1/TFPP%20EEYN%202019%20PL-PE-TM.pdf",
+      "sourceLabel": "Trabajo académico · UNSAM"
+    },
+    {
+      "locality": "Escobar",
+      "title": "150 pymes participaron de una ronda de negocios",
+      "text": "En mayo de 2025, una ronda provincial en Escobar reunió a 150 empresas fabricantes y 26 compradores de cadenas comerciales. La actividad se vinculó con Producción Bonaerense, que ofrece apoyo técnico y comercial para facilitar el acceso de marcas locales a canales de venta.",
+      "label": "Política pública y articulación comercial",
+      "source": "https://www.gba.gob.ar/produccion/noticias/la_pba_organiz%C3%B3_una_ronda_de_negocios_destinada_producci%C3%B3n_bonaerense",
+      "sourceLabel": "Ministerio de Producción bonaerense"
+    },
+    {
+      "locality": "San Martín",
+      "title": "465 pymes en Expo Ciudad Pyme y ronda de negocios",
+      "text": "En agosto de 2025, la ronda de negocios organizada junto al municipio registró 465 pymes y más de 2.200 entrevistas. La Provincia difundió herramientas de capacitación, asistencia tecnológica, comercialización y garantías.",
+      "label": "Política pública y vinculación empresarial",
+      "source": "https://www.gba.gob.ar/produccion/noticias/la_provincia_y_una_ronda_de_negocios_r%C3%A9cord_en_san_mart%C3%ADn_con_465_pymes_locales",
+      "sourceLabel": "Ministerio de Producción bonaerense"
+    },
+    {
+      "locality": "Tres de Febrero",
+      "title": "Observatorio Productivo y censo industrial",
+      "text": "El municipio dispone de un Observatorio Productivo y señala que el relevamiento de establecimientos industriales busca conocer la estructura productiva para diseñar políticas públicas de acompañamiento a las pymes.",
+      "label": "Política pública municipal",
+      "source": "https://www.tresdefebrero.gov.ar/observatorioproductivo/",
+      "sourceLabel": "Municipalidad de Tres de Febrero"
+    },
+    {
+      "locality": "Primera Sección",
+      "title": "Herramientas provinciales para mipymes",
+      "text": "La Provincia publica líneas de crédito, microcréditos, garantías de FOGABA, capacitación de Escuela Productiva Bonaerense y asistencia técnica mediante Clínica Tecnológica. La disponibilidad, requisitos y montos deben revisarse en cada convocatoria.",
+      "label": "Política pública provincial",
+      "source": "https://www.gba.gob.ar/produccion/herramientas_mipymes",
+      "sourceLabel": "Ministerio de Producción bonaerense"
+    },
+    {
+      "locality": "Primera Sección",
+      "title": "Rondas de Negocios: vinculación entre empresas",
+      "text": "La Provincia organiza rondas gratuitas para facilitar reuniones entre pymes, grandes empresas, cooperativas y proveedores. El calendario incluye encuentros en municipios de la sección, sujeto a las fechas y condiciones publicadas por el organismo.",
+      "label": "Política pública provincial",
+      "source": "https://www.gba.gob.ar/produccion/ronda_de_negocios",
+      "sourceLabel": "Ministerio de Producción bonaerense"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Ministerio de Trabajo bonaerense · municipios por sección electoral",
+      "url": "https://w3.trabajo.gba.gov.ar/gestion-territorial-empleo"
+    },
+    {
+      "name": "UIPBA · Estructura productiva industrial de la Provincia de Buenos Aires",
+      "url": "https://uipba.org.ar/raiz/wp-content/uploads/2023/11/Estructura-productiva-industrial-PBA.pdf"
+    },
+    {
+      "name": "UNSAM · Empleo y salarios / estructura industrial municipal",
+      "url": "https://noticias.unsam.edu.ar/wp-content/uploads/2024/05/Industria-del-Conurbano.pdf"
+    },
+    {
+      "name": "Provincia de Buenos Aires · Herramientas para mipymes",
+      "url": "https://www.gba.gob.ar/produccion/herramientas_mipymes"
+    }
+  ]
+}
