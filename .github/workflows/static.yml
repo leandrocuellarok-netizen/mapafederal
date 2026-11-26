@@ -1162,9 +1162,9 @@ jobs:
           assert.ok(html.includes("Oportunidades documentadas en Provincia de Buenos Aires."));
           assert.ok(html.includes("Investment &amp; Political Finder Bs. As."));
           const start = html.indexOf("function filterInvestmentOpportunities(records,filters){");
-          const end = html.indexOf("\\nfunction investmentStageLabel", start);
+          const end = html.indexOf("\nfunction investmentStageLabel", start);
           assert.ok(start >= 0 && end > start, "Missing reusable PBA opportunity filter.");
-          const normalizeText = value => String(value ?? "").normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").toLocaleLowerCase("es").trim();
+          const normalizeText = value => String(value ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("es").trim();
           const filter = vm.runInNewContext("(" + html.slice(start, end) + ")", { normalizeText });
           const escobarRecord = catalog.opportunities.find(o => (o.territorialClassification.municipalities || []).includes("Escobar"));
           assert.ok(escobarRecord, "No documented opportunity is classified for Escobar.");
@@ -1174,10 +1174,31 @@ jobs:
           assert.equal(filter([escobarRecord], { ...base, section: "Sexta" }).length, 0);
           assert.equal(filter([escobarRecord], { ...base, municipality: "La Plata" }).length, 0);
           assert.equal(filter(catalog.opportunities, { ...base, query: "escobar" }).some(o => o.id === escobarRecord.id), true);
-          const inline = [...html.matchAll(/<script([^>]*)>([\\s\\S]*?)<\\/script>/gi)].filter(m => !/application\\/ld\\+json/.test(m[1]) && !/src=/.test(m[1])).map(m => m[2]);
+          const inline = [...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/gi)].filter(m => !/application\/ld\+json/.test(m[1]) && !/src=/.test(m[1])).map(m => m[2]);
           for (const code of inline) new Function(code);
           console.log("PBA Finder: 135 municipios, ocho secciones, catálogo bonaerense y filtros territoriales validados.");
           JS
+
+      - name: Validate Investment & Political Finder module manifest
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          territories = json.loads(Path("data/pba-territories.json").read_text(encoding="utf-8"))
+          opportunities = json.loads(Path("data/pba-investment-opportunities.json").read_text(encoding="utf-8"))
+          manifest = json.loads(Path("data/ai-modules.json").read_text(encoding="utf-8"))
+          module = next(item for item in manifest["modules"] if item["id"] == "investment-finder")
+          assert territories["municipalityCount"] == 135
+          assert len(territories["sections"]) == 8
+          assert sum(len(section["municipalities"]) for section in territories["sections"]) == 135
+          assert module["name"] == "Investment & Political Finder Bs. As."
+          assert "signo político" in module["description"].lower()
+          assert "fuente" in module["currentCapability"].lower()
+          assert len(opportunities["opportunities"]) == opportunities["opportunityCount"]
+          assert all(item["territorialClassification"]["province"] == "Buenos Aires" for item in opportunities["opportunities"])
+          assert all(item["scope"] in ("municipal", "provincial") for item in opportunities["opportunities"])
+          print(f"PBA Finder: {territories['municipalityCount']} municipios, {len(territories['sections'])} secciones y {opportunities['opportunityCount']} registros.")
+          PY
 
       - name: Validate Investment & Political Finder module manifest
         run: |
