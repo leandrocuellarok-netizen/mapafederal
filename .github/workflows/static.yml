@@ -604,7 +604,11 @@ jobs:
           expected_next = rotation_order[(rotation_order.index(last_targeted) + 1) % len(rotation_order)]
           assert next_target == expected_next, "La próxima región no respeta la rotación declarada"
           la_pampa = next(row for row in coverage_rows if row["province"] == "La Pampa")
-          assert la_pampa["total"] == 1 and la_pampa["byType"]["Industria"] == 0
+          assert la_pampa["total"] == 2 and la_pampa["byType"]["Aeropuerto"] == 2 and la_pampa["byType"]["Industria"] == 0
+          general_pico = next((node for node in nodes if node.get("id") == "la-pampa-aeropuerto-general-pico-sazg"), None)
+          assert general_pico is not None and general_pico["province"] == "La Pampa" and general_pico["type"] == "Aeropuerto"
+          assert general_pico["status"] == "no_verificado"
+          assert general_pico["coordinateSource"].endswith("sup-62aaa363bab62")
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
