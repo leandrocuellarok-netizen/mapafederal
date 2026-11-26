@@ -1190,13 +1190,17 @@ jobs:
           console.log("Territorial Monitor: filtro territorial, filtros combinados, registros ambiguos y traducciones comprobados.");
           JS
 
-      - name: Test Investment & Political Finder Buenos Aires territory and filters
+      - name: Test IA Finder Buenos Aires territory and filters
         run: |
           node - <<'JS'
           const assert = require("node:assert/strict");
           const fs = require("node:fs");
           const vm = require("node:vm");
           const html = fs.readFileSync("investment-finder/index.html", "utf8");
+          for (const file of ["index.html", "foco-escobar/index.html", "radar-norte/index.html", "nodos-estrategicos/index.html", "investment-finder/index.html"]) {
+            const page = fs.readFileSync(file, "utf8");
+            for (const label of ["Foco Escobar", "Radar Norte", "IA Finder Bs. As.", "Invertí en Argentina"]) assert.ok(page.includes(label), file + " is missing global navigation item: " + label);
+          }
           const territories = JSON.parse(fs.readFileSync("data/pba-territories.json", "utf8"));
           const catalog = JSON.parse(fs.readFileSync("data/pba-investment-opportunities.json", "utf8"));
           assert.equal(territories.municipalityCount, 135);
@@ -1212,7 +1216,7 @@ jobs:
           for (const id of ["investment-search", "investment-section", "investment-municipality", "pba-territory-search", "investment-sector", "investment-scope", "investment-stage", "investment-status", "investment-verification", "investment-count", "investment-grid", "pba-territory-list"]) {
             assert.ok(html.includes('id="' + id + '"'), "Missing PBA Finder control: " + id);
           }
-          assert.ok(html.includes("Oportunidades documentadas en Provincia de Buenos Aires."));
+          assert.ok(html.includes("Inteligencia territorial, política y económica de la Provincia de Buenos Aires."));
           assert.ok(html.includes("IA Finder Bs. As."));
           const start = html.indexOf("function filterInvestmentOpportunities(records,filters){");
           const end = html.indexOf("\nfunction investmentStageLabel", start);
@@ -1232,7 +1236,7 @@ jobs:
           console.log("PBA Finder: 135 municipios, ocho secciones, catálogo bonaerense y filtros territoriales validados.");
           JS
 
-      - name: Validate Investment & Political Finder module manifest
+      - name: Validate IA Finder module manifest
         run: |
           python - <<'PY'
           import json
@@ -1253,7 +1257,7 @@ jobs:
           print(f"PBA Finder: {territories['municipalityCount']} municipios, {len(territories['sections'])} secciones y {opportunities['opportunityCount']} registros.")
           PY
 
-      - name: Validate Investment & Political Finder module manifest
+      - name: Validate IA Finder module manifest
         run: |
           python - <<'PY'
           import json
