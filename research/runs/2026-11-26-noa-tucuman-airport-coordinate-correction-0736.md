@@ -16,7 +16,7 @@ Tucumán continúa siendo la jurisdicción menos cubierta del catálogo, con un 
 ## Registro corregido
 - ID estable: `tucuman-aeropuerto-teniente-benjamin-matienzo-sant`.
 - Nombre: Aeropuerto Internacional Teniente Benjamín Matienzo (SANT).
-- Jurisdicción/localidad: Tucumán / Cevil Pozo.
+- Jurisdicción: Tucumán. No se consigna localidad porque la fuente AIP usada para la coordenada no establece una localidad administrativa.
 - Categoría: Aeropuerto.
 - Coordenada anterior: `[-26.8409, -65.1049]` (referencial, sin fuente exacta).
 - Coordenada corregida: `[-26.83833333, -65.10444444]`.

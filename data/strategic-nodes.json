@@ -615,7 +615,6 @@
     "note": "Coordenada de referencia del aeródromo publicada por ANAC en la carta AIP SANT (26°50'18\"S, 065°06'16\"W); no representa acceso ni perímetro. El Suplemento AIP A39/2026 actualiza la carta y las normas de movimiento en plataforma comercial. No se infieren frecuencias ni vuelos comerciales vigentes.",
     "source": "https://ais.anac.gob.ar/descarga/sup-698b2d7f7081a",
     "id": "tucuman-aeropuerto-teniente-benjamin-matienzo-sant",
-    "locality": "Cevil Pozo",
     "sourceName": "ANAC — Suplemento A 39/2026 de la AIP Argentina, SANT",
     "sourcePublishedAt": "2026-02-09",
     "sourcePublicationNote": "Documento permanente que actualiza AD 2.8 y AD 2.14 y reemplaza el plano de aeródromo OACI por la versión de febrero de 2026. El documento publica la coordenada geográfica 26°50'18\"S, 065°06'16\"W.",
