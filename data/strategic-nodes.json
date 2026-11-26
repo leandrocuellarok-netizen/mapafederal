@@ -1355,5 +1355,40 @@
       "scope": "Se verificó el ARP en AIP ANAC A65/2024, AD 2.2, donde se identifica como centro geométrico de pista. El AIP A192/2025 publica horarios de administración, operador y ATS; la AIC A13/2026 incluye El Tehuelche en el grupo de cabotaje C; Argentina.gob.ar documenta la reapertura de pista y terminal renovada en 2024. No se comprobaron NOTAM ni frecuencias comerciales en tiempo real."
     },
     "coordinateQuality": "ARP oficial publicado por ANAC como centro geométrico de pista; no representa acceso ni perímetro aeroportuario. El suplemento no declara datum/CRS."
+  },
+  {
+    "id": "buenos-aires-cantera-fiscal-d6-sierras-bayas",
+    "name": "Cantera fiscal D-6 — dolomita (Sierras Bayas)",
+    "province": "Buenos Aires",
+    "district": "Olavarría",
+    "locality": "Sierras Bayas",
+    "type": "Recurso mineral",
+    "coords": [
+      -36.92455487,
+      -60.14613878
+    ],
+    "note": "Concesión minera fiscal de dolomita en Sierras Bayas, adjudicada en 2021 para triturados pétreos. El marcador es el centroide geométrico calculado del polígono oficial de 4,27 ha; no identifica el frente de extracción ni un acceso. Operación actual no verificada.",
+    "source": "https://boletinoficial.gba.gob.ar/secciones/10935/ver",
+    "sourceName": "Boletín Oficial de la Provincia de Buenos Aires — Subsecretaría de Minería",
+    "sourcePublishedAt": "2021-05-04",
+    "sourcePublicationNote": "Boletín Oficial Año CXII Nº 29007, páginas 46–48; Resolución 57-SSMINMPCEITGP-2021.",
+    "sourceRecordId": "Resolución 57-SSMINMPCEITGP-2021, artículos 1, 3 y 4, cantera fiscal D-6.",
+    "coordinateSource": "https://boletinoficial.gba.gob.ar/secciones/10935/ver",
+    "coordinateSourceName": "Boletín Oficial de la Provincia de Buenos Aires — Resolución 57-SSMINMPCEITGP-2021",
+    "coordinateSourcePublishedAt": "2021-05-04",
+    "coordinateSourcePublicationNote": "Publica los cuatro vértices del polígono de D-6 en coordenadas POSGAR 07 y una superficie de 4 ha 27 a 47 ca.",
+    "coordinateReferenceSystem": "POSGAR 2007 / Argentina 5 (EPSG:5347); la resolución solo indica «POSGAR 07». La zona 5 se infiere de los valores de coordenadas y de la ubicación en Olavarría; confirmar los metadatos catastrales originales para usos legales.",
+    "coordinateTransformation": "Los cuatro pares se interpretaron según los ejes X=norte, Y=este de EPSG:5347. Se calculó el centroide geométrico del polígono en metros proyectados (fórmula shoelace) y se transformó a EPSG:4326 mediante PROJ/pyproj; el catálogo almacena [latitud,longitud]. Sin geocodificación.",
+    "administrativeStatus": "La Resolución 57-SSMINMPCEITGP-2021 adjudicó el permiso de explotación a POLCECAL S.A. para triturados pétreos de dolomita. Fijó un plazo de diez años desde el otorgamiento y obligaciones de registro y regalías; no se verificó si hubo renovación, revocación o extracción reciente.",
+    "validityPeriod": "Plazo de diez años desde el otorgamiento en 2021; vigencia registral y operación actual pendientes de consulta al Catastro Minero digital.",
+    "status": "no_verificado",
+    "statusSource": "https://boletinoficial.gba.gob.ar/secciones/10935/ver",
+    "statusSourceName": "Boletín Oficial de la Provincia de Buenos Aires — Resolución 57-SSMINMPCEITGP-2021",
+    "statusSourcePublishedAt": "2021-05-04",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "Se verificó la adjudicación del permiso, el mineral autorizado, el plazo y los cuatro vértices publicados en el Boletín Oficial. El centroide se calculó sobre el polígono oficial y se transformó desde POSGAR 2007 / Argentina 5 (EPSG:5347) a WGS84 (EPSG:4326). La resolución no especifica la zona Gauss-Krüger; la zona 5 se infiere de la magnitud de las coordenadas y la ubicación en Olavarría. No se consultó un asiento actualizado del Catastro Minero ni se verificó actividad extractiva actual."
+    },
+    "coordinateQuality": "Centroide geométrico calculado a partir de los cuatro vértices oficiales de la parcela D-6; representa el polígono, no un frente de explotación, acceso ni instalación. EPSG:5347 inferido; falta confirmar la zona y los metadatos catastrales originales para uso legal o de mensura."
   }
 ]
