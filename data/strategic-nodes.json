@@ -1319,5 +1319,41 @@
       "scope": "Se contrastó la existencia y la ausencia de vuelos comerciales regulares en la página oficial nacional con el ARP publicado por ANAC en AD 2.2. La coordenada se convierte desde DMS sin reproyección. No se afirma operación actual del aeródromo; falta verificar AIP/MADHEL vigente y NOTAM."
     },
     "coordinateQuality": "ARP oficial publicado en AIP AD 2.2 (2022); el datum/CRS no está explicitado en esa fila. Punto de referencia aeroportuario, no acceso ni perímetro."
+  },
+  {
+    "id": "chubut-aeropuerto-el-tehuelche-savy",
+    "name": "Aeropuerto El Tehuelche (SAVY)",
+    "province": "Chubut",
+    "locality": "Puerto Madryn",
+    "type": "Aeropuerto",
+    "coords": [
+      -42.75916667,
+      -65.10277778
+    ],
+    "note": "ARP publicado por ANAC como centro geométrico de pista; no representa el acceso, la terminal ni el perímetro. El AIP A 192/2025 publica horarios de administración, operador y ATS; no se infieren rutas, frecuencias ni vuelos comerciales actuales.",
+    "source": "https://ais.anac.gob.ar/descarga/sup-663d2d7f10036",
+    "sourceName": "Administración Nacional de Aviación Civil (ANAC)",
+    "sourcePublishedAt": "2024-05-09",
+    "sourcePublicationNote": "Suplemento AIP A 65/2024, publicado el 09/05/2024; AD 2.2 identifica el ARP 424533S-0650610W como centro geométrico de pista.",
+    "sourceRecordId": "AIP Argentina, Suplemento A 65/2024, AD 2.2, Puerto Madryn/El Tehuelche (DRY/SAVY)",
+    "coordinateSource": "https://ais.anac.gob.ar/descarga/sup-663d2d7f10036",
+    "coordinateSourceName": "ANAC — Suplemento A 65/2024, AD 2.2",
+    "coordinateSourcePublishedAt": "2024-05-09",
+    "coordinateReferenceSystem": "No declarado en el suplemento AIP A65/2024; coordenadas geográficas del ARP.",
+    "coordinateTransformation": "Conversión aritmética de DMS a grados decimales; sin transformación de datum ni reproyección.",
+    "statusSource": "https://ais.anac.gob.ar/descarga/sup-68e66bc4cf3d8",
+    "statusSourceName": "ANAC — Suplemento A 192/2025, modificaciones temporales de horarios y servicios del aeródromo",
+    "statusSourcePublishedAt": "2025-10-08",
+    "additionalStatusSource": "https://ais.anac.gob.ar/descarga/aic-6a1986a33b972",
+    "additionalStatusSourceName": "ANAC — AIC A 13/2026, tasas por servicios aeroportuarios",
+    "additionalStatusSourcePublishedAt": "2026-05-29",
+    "administrativeStatus": "El AIP A 192/2025 publica horarios de administración, operador y ATS; el AIC A 13/2026 incluye Puerto Madryn/El Tehuelche en el grupo de cabotaje C. Argentina.gob.ar informó la reapertura de pista y la inauguración de la terminal renovada el 28/07/2024. Estas fuentes no acreditan frecuencias ni programación de vuelos comerciales actuales.",
+    "validityPeriod": "ARP según AIP Suplemento A 65/2024; horarios temporales según AIP Suplemento A 192/2025 (sin fecha de vencimiento indicada en el documento); clasificación tarifaria según AIC A 13/2026. No se verificaron NOTAM ni programación aérea en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "Se verificó el ARP en AIP ANAC A65/2024, AD 2.2, donde se identifica como centro geométrico de pista. El AIP A192/2025 publica horarios de administración, operador y ATS; la AIC A13/2026 incluye El Tehuelche en el grupo de cabotaje C; Argentina.gob.ar documenta la reapertura de pista y terminal renovada en 2024. No se comprobaron NOTAM ni frecuencias comerciales en tiempo real."
+    },
+    "coordinateQuality": "ARP oficial publicado por ANAC como centro geométrico de pista; no representa acceso ni perímetro aeroportuario. El suplemento no declara datum/CRS."
   }
 ]
