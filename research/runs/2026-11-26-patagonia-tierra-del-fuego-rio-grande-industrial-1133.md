@@ -42,9 +42,9 @@ Tierra del Fuego tenía 2 nodos y no tenía representación de Industria. Se inc
 
 ## Commit, workflow y Pages
 - Commit de catálogo: `549ad6601bb56d114691c70e720845370dd993f1`.
-- Commit de matriz, validador, README y bitácora: pendiente de creación.
-- GitHub Actions: pendiente de ejecución sobre el commit final.
-- GitHub Pages: pendiente de validar el job de despliegue y la página publicada.
+- Commit final de catálogo, matriz, validador, README y bitácora: `d08d324ed5302b2ef70ec2a95acd636dcbf58e13` (el commit de catálogo `549ad6601bb56d114691c70e720845370dd993f1` es su antecesor).
+- GitHub Actions [#805](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45841056067), run ID `45841056067`, asociado al commit `d08d324ed5302b2ef70ec2a95acd636dcbf58e13`: `validate=success`, `deploy=success`, conclusión global `success`.
+- GitHub Pages: el job `Deploy to GitHub Pages` terminó con `success` en la ejecución #805. La verificación HTTP independiente de la portada y del JSON publicado no estuvo disponible; no se afirma inspección visual independiente.
 
 ## Gaps pendientes
 - Recuperar el WFS/ZIP de IDETDF para inspeccionar la geometría del parque y, si corresponde, reemplazar la referencia secundaria por un punto oficial o publicar el polígono.
