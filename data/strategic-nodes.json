@@ -609,11 +609,33 @@
     "province": "Tucumán",
     "type": "Aeropuerto",
     "coords": [
-      -26.8409,
-      -65.1049
+      -26.83833333,
+      -65.10444444
     ],
-    "note": "Aeropuerto situado a unos 9 km al este de San Miguel de Tucumán, con conectividad aérea y actividad de carga. Coordenada referencial; verificar servicios y operación.",
-    "source": "https://www.argentina.gob.ar/tucuman/llegar"
+    "note": "Coordenada de referencia del aeródromo publicada por ANAC en la carta AIP SANT (26°50'18\"S, 065°06'16\"W); no representa acceso ni perímetro. El Suplemento AIP A39/2026 actualiza la carta y las normas de movimiento en plataforma comercial. No se infieren frecuencias ni vuelos comerciales vigentes.",
+    "source": "https://ais.anac.gob.ar/descarga/sup-698b2d7f7081a",
+    "id": "tucuman-aeropuerto-teniente-benjamin-matienzo-sant",
+    "locality": "Cevil Pozo",
+    "sourceName": "ANAC — Suplemento A 39/2026 de la AIP Argentina, SANT",
+    "sourcePublishedAt": "2026-02-09",
+    "sourcePublicationNote": "Documento permanente que actualiza AD 2.8 y AD 2.14 y reemplaza el plano de aeródromo OACI por la versión de febrero de 2026. El documento publica la coordenada geográfica 26°50'18\"S, 065°06'16\"W.",
+    "sourceRecordId": "AIP Argentina, Suplemento A 39/2026, AD Tucumán/Teniente Benjamín Matienzo (TUC/SANT)",
+    "coordinateSource": "https://ais.anac.gob.ar/descarga/sup-698b2d7f7081a",
+    "coordinateSourceName": "ANAC — Suplemento A 39/2026, carta AIP del aeródromo SANT",
+    "coordinateSourcePublishedAt": "2026-02-09",
+    "coordinateReferenceSystem": "No explicitado en el suplemento; coordenadas geográficas publicadas en grados, minutos y segundos. No se atribuye EPSG ni datum.",
+    "coordinateTransformation": "Conversión aritmética de DMS a grados decimales; sin transformación de datum ni reproyección.",
+    "statusSource": "https://ais.anac.gob.ar/descarga/sup-698b2d7f7081a",
+    "statusSourceName": "ANAC — Suplemento A 39/2026, modificaciones permanentes del AIP para SANT",
+    "statusSourcePublishedAt": "2026-02-09",
+    "administrativeStatus": "El Suplemento AIP A39/2026 actualiza los datos de plataforma y luces de aproximación/pista, reemplaza el plano de aeródromo por la versión de febrero de 2026 y establece normas de rodaje, movimiento y estacionamiento de aeronaves en plataforma comercial. Esto documenta infraestructura y procedimientos aeroportuarios, no una frecuencia de vuelos comerciales.",
+    "validityPeriod": "Suplemento AIP A39/2026 con vigencia permanente según el documento. No se consultaron NOTAM ni programación de vuelos en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "Se sustituyó la coordenada referencial anterior por la coordenada publicada por ANAC para SANT: 26°50'18\"S, 065°06'16\"W. La conversión a decimales fue aritmética; no se aplicó reproyección. El Suplemento A39/2026 confirma la actualización permanente del plano y de las normas de plataforma comercial. No se verificaron NOTAM ni programación comercial en tiempo real."
+    },
+    "coordinateQuality": "Punto de referencia aeroportuario publicado por ANAC en AIP; no representa acceso ni perímetro. El suplemento no explicita datum/CRS ni método de determinación geodésica."
   },
   {
     "name": "Puerto Iguazú — destino Cataratas y Triple Frontera",
@@ -1390,39 +1412,38 @@
       "scope": "Se verificó la adjudicación del permiso, el mineral autorizado, el plazo y los cuatro vértices publicados en el Boletín Oficial. El centroide se calculó sobre el polígono oficial y se transformó desde POSGAR 2007 / Argentina 5 (EPSG:5347) a WGS84 (EPSG:4326). La resolución no especifica la zona Gauss-Krüger; la zona 5 se infiere de la magnitud de las coordenadas y la ubicación en Olavarría. No se consultó un asiento actualizado del Catastro Minero ni se verificó actividad extractiva actual."
     },
     "coordinateQuality": "Centroide geométrico calculado a partir de los cuatro vértices oficiales de la parcela D-6; representa el polígono, no un frente de explotación, acceso ni instalación. EPSG:5347 inferido; falta confirmar la zona y los metadatos catastrales originales para uso legal o de mensura."
-  }
-,
-{
-  "id": "caba-estacion-retiro-mitre",
-  "name": "Estación Retiro — línea Mitre",
-  "province": "CABA",
-  "locality": "Retiro",
-  "type": "Estación ferroviaria",
-  "coords": [
-    -34.59081198548558,
-    -58.37512288514201
-  ],
-  "note": "Punto de estación publicado en el GeoJSON oficial del Gobierno de la Ciudad (feature 33; Retiro, línea Mitre, ramal Retiro–Tigre), con CRS84. Desde el 24/11/2026 los ramales Retiro–Tigre, Retiro–J. L. Suárez y Retiro–Bmé Mitre retomaron sus frecuencias habituales según Trenes Argentinos. El punto no representa accesos ni perímetro.",
-  "source": "https://data.buenosaires.gob.ar/ca/dataset/juqdkmgo-102/resource/78bcd320-544f-453c-ac15-110571855a8c",
-  "sourceName": "Buenos Aires Data — Gobierno de la Ciudad Autónoma de Buenos Aires",
-  "sourcePublishedAt": "2026-07-03",
-  "sourcePublicationNote": "Recurso GeoJSON Estaciones de Ferrocarril; fecha de creación 17/09/2019 y último cambio 03/07/2026.",
-  "sourceRecordId": "Feature GeoJSON id=33, idecaba=35; nombre Retiro; línea Mitre; ramal Retiro - Tigre; barrio Retiro; Comuna 1.",
-  "coordinateSource": "https://data.buenosaires.gob.ar/ca/dataset/juqdkmgo-102/resource/78bcd320-544f-453c-ac15-110571855a8c",
-  "coordinateSourceName": "Buenos Aires Data — Estaciones de Ferrocarril (GeoJSON), feature id=33",
-  "coordinateSourcePublishedAt": "2026-07-03",
-  "coordinateReferenceSystem": "OGC:CRS84 (urn:ogc:def:crs:OGC:1.3:CRS84), declarado en el GeoJSON.",
-  "coordinateTransformation": "La fuente publica [longitud, latitud]; el catálogo almacena [latitud, longitud]. Solo se reordenaron los ejes; no hubo reproyección ni transformación de datum.",
-  "statusSource": "https://www.argentina.gob.ar/noticias/la-linea-mitre-retoma-sus-servicios-habituales-tras-la-renovacion-de-vias-en-el-ramal-tigre",
-  "statusSourceName": "Trenes Argentinos / Argentina.gob.ar — retorno a frecuencias habituales de ramales Retiro de la línea Mitre",
-  "statusSourcePublishedAt": "2026-11-24",
-  "administrativeStatus": "Trenes Argentinos informó que desde el 24/11/2026 los ramales Retiro–Tigre, Retiro–J. L. Suárez y Retiro–Bmé Mitre funcionan de acuerdo con sus frecuencias habituales, tras obras del 21 al 23/11. Esto acredita la prestación de los ramales, no condiciones en tiempo real.",
-  "validityPeriod": "Geometría del conjunto oficial actualizado el 03/07/2026; estado de servicio según aviso oficial del 24/11/2026. No se consultó estado en tiempo real.",
-  "status": "operativo",
-  "verification": {
-    "checkedAt": "2026-11-26",
-    "scope": "Se verificó la feature Retiro de la línea Mitre / ramal Retiro–Tigre y sus coordenadas en el GeoJSON oficial del GCBA (CRS84). El aviso oficial de Trenes Argentinos del 24/11/2026 informa el retorno a frecuencias habituales de los ramales con cabecera Retiro desde esa fecha. No se infiere operación en tiempo real ni se representa el acceso o perímetro de la estación."
   },
-  "coordinateQuality": "Punto geográfico de estación publicado por el GCBA en GeoJSON CRS84; la fuente no declara método de captura ni precisión posicional. No es un levantamiento catastral."
-}
+  {
+    "id": "caba-estacion-retiro-mitre",
+    "name": "Estación Retiro — línea Mitre",
+    "province": "CABA",
+    "locality": "Retiro",
+    "type": "Estación ferroviaria",
+    "coords": [
+      -34.59081198548558,
+      -58.37512288514201
+    ],
+    "note": "Punto de estación publicado en el GeoJSON oficial del Gobierno de la Ciudad (feature 33; Retiro, línea Mitre, ramal Retiro–Tigre), con CRS84. Desde el 24/11/2026 los ramales Retiro–Tigre, Retiro–J. L. Suárez y Retiro–Bmé Mitre retomaron sus frecuencias habituales según Trenes Argentinos. El punto no representa accesos ni perímetro.",
+    "source": "https://data.buenosaires.gob.ar/ca/dataset/juqdkmgo-102/resource/78bcd320-544f-453c-ac15-110571855a8c",
+    "sourceName": "Buenos Aires Data — Gobierno de la Ciudad Autónoma de Buenos Aires",
+    "sourcePublishedAt": "2026-07-03",
+    "sourcePublicationNote": "Recurso GeoJSON Estaciones de Ferrocarril; fecha de creación 17/09/2019 y último cambio 03/07/2026.",
+    "sourceRecordId": "Feature GeoJSON id=33, idecaba=35; nombre Retiro; línea Mitre; ramal Retiro - Tigre; barrio Retiro; Comuna 1.",
+    "coordinateSource": "https://data.buenosaires.gob.ar/ca/dataset/juqdkmgo-102/resource/78bcd320-544f-453c-ac15-110571855a8c",
+    "coordinateSourceName": "Buenos Aires Data — Estaciones de Ferrocarril (GeoJSON), feature id=33",
+    "coordinateSourcePublishedAt": "2026-07-03",
+    "coordinateReferenceSystem": "OGC:CRS84 (urn:ogc:def:crs:OGC:1.3:CRS84), declarado en el GeoJSON.",
+    "coordinateTransformation": "La fuente publica [longitud, latitud]; el catálogo almacena [latitud, longitud]. Solo se reordenaron los ejes; no hubo reproyección ni transformación de datum.",
+    "statusSource": "https://www.argentina.gob.ar/noticias/la-linea-mitre-retoma-sus-servicios-habituales-tras-la-renovacion-de-vias-en-el-ramal-tigre",
+    "statusSourceName": "Trenes Argentinos / Argentina.gob.ar — retorno a frecuencias habituales de ramales Retiro de la línea Mitre",
+    "statusSourcePublishedAt": "2026-11-24",
+    "administrativeStatus": "Trenes Argentinos informó que desde el 24/11/2026 los ramales Retiro–Tigre, Retiro–J. L. Suárez y Retiro–Bmé Mitre funcionan de acuerdo con sus frecuencias habituales, tras obras del 21 al 23/11. Esto acredita la prestación de los ramales, no condiciones en tiempo real.",
+    "validityPeriod": "Geometría del conjunto oficial actualizado el 03/07/2026; estado de servicio según aviso oficial del 24/11/2026. No se consultó estado en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "Se verificó la feature Retiro de la línea Mitre / ramal Retiro–Tigre y sus coordenadas en el GeoJSON oficial del GCBA (CRS84). El aviso oficial de Trenes Argentinos del 24/11/2026 informa el retorno a frecuencias habituales de los ramales con cabecera Retiro desde esa fecha. No se infiere operación en tiempo real ni se representa el acceso o perímetro de la estación."
+    },
+    "coordinateQuality": "Punto geográfico de estación publicado por el GCBA en GeoJSON CRS84; la fuente no declara método de captura ni precisión posicional. No es un levantamiento catastral."
+  }
 ]
