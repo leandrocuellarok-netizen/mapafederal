@@ -1733,5 +1733,45 @@
       "scope": "La ficha SIB de APN identifica la jurisdicción Campana y publica la ubicación geográfica del parque. La página APN de visita informa apertura diaria y horarios de senderos. La coordenada se usa como referencia cartográfica del área protegida; la fuente no define si corresponde a acceso, centroide o punto interno. Verificación documental, no presencial ni en tiempo real."
     },
     "coordinateQuality": "Punto de referencia oficial publicado por SIB/APN. La fuente no declara si representa acceso, centroide o punto interno; no se presenta como acceso ni perímetro."
+  },
+  {
+    "id": "la-rioja-aeropuerto-capitan-vicente-almandos-almonacid-sanl",
+    "name": "Aeropuerto Capitán Vicente Almandos Almonacid (SANL)",
+    "province": "La Rioja",
+    "locality": "La Rioja",
+    "type": "Aeropuerto",
+    "coords": [
+      -29.38055556,
+      -66.79583333
+    ],
+    "note": "Punto de referencia aeroportuario (ARP) publicado por ANAC para SANL; corresponde al centro geométrico de pista y fue calculado en gabinete. No representa acceso, terminal ni perímetro. El AIP publica tránsito IFR/VFR; no se infieren vuelos comerciales ni operación en tiempo real.",
+    "source": "https://ais.anac.gob.ar/descarga/sup-6372a0f8a6528",
+    "sourceName": "ANAC — Suplemento AIP A 67/2022, SANL AD 2",
+    "sourcePublishedAt": "2022-11-11",
+    "sourcePublicationNote": "Actualización permanente del AIP Vol. II (AD). AD 2.2 publica el ARP 292250S 0664745W, identificado como centro geométrico de pista; también documenta tránsito IFR/VFR y al operador aeroportuario.",
+    "sourceRecordId": "AIP Argentina, Suplemento A 67/2022, La Rioja/Cap. Vicente Almonacid (LAR/SANL), AD 2.2",
+    "coordinateSource": "https://ais.anac.gob.ar/descarga/sup-6372a0f8a6528",
+    "coordinateSourceName": "ANAC — Suplemento AIP A 67/2022, SANL AD 2.2",
+    "coordinateSourcePublishedAt": "2022-11-11",
+    "coordinateSourcePublicationNote": "Coordenada original 29°22'50\"S, 066°47'45\"W; el documento la identifica como centro geométrico de pista y señala que fue calculada en gabinete.",
+    "coordinateReferenceSystem": "No declarado para el ARP en AD 2.2. El suplemento describe WGS84/POSGAR 2007 para el plano y las coordenadas de umbrales, pero no se extiende esa referencia al ARP sin declaración expresa; no se asigna EPSG.",
+    "coordinateTransformation": "Conversión aritmética de DMS a grados decimales; sin transformación de datum ni reproyección.",
+    "coordinateQuality": "ARP aeroportuario publicado por ANAC, identificado como centro geométrico de pista y calculado en gabinete. Es un punto de referencia cartográfico; no representa acceso, terminal ni perímetro.",
+    "statusSource": "https://ais.anac.gob.ar/descarga/sup-6372a0f8a6528",
+    "statusSourceName": "ANAC — Suplemento AIP A 67/2022, SANL AD 2.2",
+    "statusSourcePublishedAt": "2022-11-11",
+    "administrativeStatus": "El suplemento permanente de ANAC documenta tránsito permitido IFR/VFR y operador aeroportuario. La transcripción secundaria del AIP AIRAC 01/26 vigente desde 2026-06-11 identifica SANL como aeródromo controlado IFR/VFR y publica horarios ATS. Esto describe infraestructura y procedimientos, no programación comercial ni NOTAM en tiempo real.",
+    "validityPeriod": "Suplemento AIP A 67/2022 de actualización permanente. La transcripción secundaria del AIP AIRAC 01/26 indica vigencia desde 2026-06-11; verificar suplementos y NOTAM vigentes para cualquier decisión operativa.",
+    "additionalStatusSource": "https://www.argentina.gob.ar/node/128982",
+    "additionalStatusSourceName": "Argentina.gob.ar — Aeropuerto de La Rioja",
+    "additionalStatusSourcePublishedAt": null,
+    "secondaryStatusSource": "https://aerocartas.com/argentina/aeropuertos/sanl/aip/",
+    "secondaryStatusSourceName": "Aerocartas — transcripción secundaria del AIP ANAC, SANL AD 2, AIRAC 01/26",
+    "secondaryStatusSourcePublishedAt": "2026-06-11",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "Se incorporó el ARP de SANL publicado por ANAC en el Suplemento AIP A 67/2022: 29°22'50\"S 066°47'45\"W, centro geométrico de pista calculado en gabinete. Se convirtió DMS a decimales sin reproyección; el CRS/datum del ARP no está explicitado y no se asigna EPSG. ANAC documenta tránsito IFR/VFR; una transcripción secundaria del AIRAC 01/26, vigente desde 2026-06-11, indica aeródromo controlado con horarios ATS. No se verificaron NOTAM ni vuelos comerciales en tiempo real."
+    }
   }
 ]

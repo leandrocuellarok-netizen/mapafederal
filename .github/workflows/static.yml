@@ -583,6 +583,16 @@ jobs:
           assert formosa_port["coordinateReferenceSystem"].startswith("No declarado")
           assert formosa_port["verification"]["checkedAt"] == "2026-11-26"
           assert "26°11'55.0\"S" in formosa_port["verification"]["scope"] and "58°08'50.5\"W" in formosa_port["verification"]["scope"]
+          la_rioja_airport = next((node for node in nodes if node.get("id") == "la-rioja-aeropuerto-capitan-vicente-almandos-almonacid-sanl"), None)
+          assert la_rioja_airport is not None and la_rioja_airport["province"] == "La Rioja" and la_rioja_airport["type"] == "Aeropuerto"
+          assert la_rioja_airport["coords"] == [-29.38055556, -66.79583333]
+          assert la_rioja_airport["source"] == "https://ais.anac.gob.ar/descarga/sup-6372a0f8a6528"
+          assert la_rioja_airport["coordinateSource"] == la_rioja_airport["source"]
+          assert la_rioja_airport["status"] == "operativo"
+          assert la_rioja_airport["coordinateReferenceSystem"].startswith("No declarado")
+          assert "calculado en gabinete" in la_rioja_airport["coordinateQuality"].lower()
+          assert la_rioja_airport["verification"]["checkedAt"] == "2026-11-26"
+          assert la_rioja_airport["secondaryStatusSource"] == "https://aerocartas.com/argentina/aeropuertos/sanl/aip/"
           la_banda_customs = next((node for node in nodes if node.get("id") == "sde-la-banda-zona-primaria-aduanera-la-isla"), None)
           assert la_banda_customs is not None, "Falta el nodo de la zona primaria aduanera de La Banda"
           assert la_banda_customs["province"] == "Santiago del Estero" and la_banda_customs["type"] == "Logística"
@@ -611,6 +621,10 @@ jobs:
               }
               assert row.get("byType") == expected_counts, f"Matriz desactualizada: {row['province']}"
               assert row.get("total") == sum(expected_counts.values()), f"Total de matriz incorrecto: {row['province']}"
+          la_rioja_row = next(row for row in coverage_rows if row["province"] == "La Rioja")
+          assert la_rioja_row["total"] == 3 and la_rioja_row["byType"]["Aeropuerto"] == 1
+          assert "Aeropuerto" not in la_rioja_row["missingCategories"]
+          assert coverage["categoryTotals"]["Aeropuerto"] == 25
           rotation = coverage.get("regionalRotation", {})
           rotation_order = rotation.get("order")
           assert isinstance(rotation_order, list) and rotation_order, "Falta el orden de rotación regional"
