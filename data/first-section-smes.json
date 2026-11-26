@@ -37,7 +37,7 @@
       "sectors": [
         "Industria y manufactura",
         "Comercio y distribución",
-        "Agroindustria"
+        "Industria y manufactura"
       ],
       "description": "El perfil pyme se relaciona con la producción agropecuaria, los alimentos, los servicios rurales, el mantenimiento de maquinaria y el comercio de cercanía. Las oportunidades aparecen en agregado de valor, frío, transporte y provisión de insumos."
     },
@@ -91,8 +91,8 @@
       "sectors": [
         "Industria y manufactura",
         "Comercio y distribución",
-        "Agroindustria",
-        "Turismo y servicios"
+        "Industria y manufactura",
+        "Servicios profesionales y tecnología"
       ],
       "description": "Conviven industria alimenticia, textil, cuero, metalmecánica, comercio y servicios vinculados al turismo y al patrimonio. Las pymes pueden aprovechar la demanda regional y turística mediante productos locales, gastronomía, manufacturas y servicios especializados."
     },
@@ -108,7 +108,7 @@
     {
       "locality": "Marcos Paz",
       "sectors": [
-        "Agroindustria",
+        "Industria y manufactura",
         "Industria y manufactura",
         "Comercio y distribución",
         "Logística y transporte"
@@ -118,10 +118,10 @@
     {
       "locality": "Mercedes",
       "sectors": [
-        "Agroindustria",
+        "Industria y manufactura",
         "Industria y manufactura",
         "Comercio y distribución",
-        "Turismo y servicios"
+        "Servicios profesionales y tecnología"
       ],
       "description": "Su economía combina alimentos, actividad agropecuaria, metalmecánica, comercio y servicios. Las pymes pueden articular producción rural, transformación alimentaria, gastronomía, turismo y distribución hacia otros centros urbanos."
     },
@@ -157,7 +157,7 @@
     {
       "locality": "Navarro",
       "sectors": [
-        "Agroindustria",
+        "Industria y manufactura",
         "Industria y manufactura",
         "Comercio y distribución"
       ],
@@ -179,7 +179,7 @@
         "Industria y manufactura",
         "Logística y transporte",
         "Comercio y distribución",
-        "Turismo y servicios"
+        "Servicios profesionales y tecnología"
       ],
       "description": "La actividad náutica y naval convive con metalmecánica, servicios técnicos, logística, comercio y turismo. Las pymes pueden proveer reparación, carpintería, motores, equipamiento, gastronomía y servicios vinculados al río y a la industria."
     },
@@ -205,7 +205,7 @@
     {
       "locality": "Suipacha",
       "sectors": [
-        "Agroindustria",
+        "Industria y manufactura",
         "Industria y manufactura",
         "Comercio y distribución"
       ],
@@ -217,7 +217,7 @@
         "Logística y transporte",
         "Industria y manufactura",
         "Comercio y distribución",
-        "Turismo y servicios"
+        "Servicios profesionales y tecnología"
       ],
       "description": "La economía pyme combina logística, comercio, gastronomía, turismo, náutica, mantenimiento e industria. El Delta y los corredores de transporte generan demanda de servicios especializados, distribución, construcción y actividades recreativas."
     },
