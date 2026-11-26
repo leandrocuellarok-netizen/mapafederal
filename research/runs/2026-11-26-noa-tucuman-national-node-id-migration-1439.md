@@ -79,4 +79,7 @@ NEA, comenzando por Formosa o Misiones según la matriz vigente. Priorizar una c
 
 GitHub Actions #812 (run ID 45869759176), sobre el commit `374ddbdc36352dd4fd5618ff59dab0171c72b056`, falló en `Validate geographic and editorial JSON`. La causa fue una aserción histórica que fijaba la rotación en `CABA → NOA`, aunque el propio validador ya comprobaba dinámicamente el orden regional y la matriz se había actualizado correctamente a `NOA → NEA`. No fallaron las comprobaciones de IDs, JSON ni coordenadas; el despliegue de Pages fue omitido por la dependencia del job.
 
-Se eliminó la aserción duplicada y obsoleta. La prueba dinámica existente sigue verificando que `nextTarget` sea la región siguiente a `lastTargeted` según el orden declarado. La validación y el despliegue del commit correctivo quedan sujetos a la nueva ejecución de Actions.
+Se eliminó la aserción duplicada y obsoleta. La prueba dinámica existente sigue verificando que `nextTarget` sea la región siguiente a `lastTargeted` según el orden declarado. GitHub Actions #813 (run ID 45869881987), sobre el commit correctivo `e54dca45eb48ffaac68bc72923473e5ffa56773a`, terminó con `validate: success` y `deploy: success`; el job `Deploy to GitHub Pages` completó correctamente. URL: https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45869881987.
+
+
+La ejecución #813 confirma la validación dinámica de la rotación regional `NOA → NEA`, la obligatoriedad de los 99 IDs únicos y el despliegue de Pages. La portada pública sigue sin estar disponible para inspección independiente desde el cliente web; no se afirma verificación visual del mapa.
