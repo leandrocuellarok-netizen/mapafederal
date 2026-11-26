@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T14:40:39.162-03:00",
+  "generatedAt": "2026-11-26T15:36:03-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "fa89cd1e08fdea57e69b22b74daf0ba57cad0a55",
+  "catalogCommit": "7344ab7816de54198eeff0979a056e6a283ef594",
   "nodeCount": 99,
   "jurisdictionCount": 24,
   "categories": [
@@ -734,9 +734,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NOA",
-    "nextTarget": "NEA",
-    "note": "La ejecución del 26/11/2026 priorizó Tucumán, la jurisdicción menos cubierta (1 nodo). Se completó una migración de calidad del catálogo: 85 registros históricos recibieron IDs deterministas derivados de provincia, tipo y nombre; los 14 IDs existentes se preservaron. No se agregó un nodo geográfico: IDET publica la capa Localidad, pero no se recuperó la geometría de la feature; RIDES/IDET identifica parques industriales y ofrece capas poligonales, pero la consulta de geometrías no fue accesible. La Casa Histórica de la Independencia está documentada por Cultura de la Nación en Congreso de Tucumán 141, pero la fuente consultada no publica coordenadas. No se geocodificaron domicilios ni topónimos. Próxima región: NEA."
+    "lastTargeted": "NEA",
+    "nextTarget": "Cuyo",
+    "note": "Ejecución del 26/11/2026: se corrigió el punto existente Puerto de Formosa con la coordenada geográfica publicada por ANPyN (26°11'55.0\"S, 58°08'50.5\"W), convertida aritméticamente a grados decimales. No se añadió un nodo ni cambió el total de 99. La ficha ANPyN no declara datum/CRS ni precisa si la coordenada corresponde al centro del puerto o del muelle; el estado operativo actual permanece no verificado. Se investigó el Parque Industrial de Formosa: el Gobierno provincial documenta actividad empresarial en 2026, pero no se recuperó geometría o coordenada puntual atribuible del predio; queda como candidato no incorporado. Próxima región: Cuyo."
   },
   "pendingCandidates": [
     {
@@ -923,6 +923,19 @@
         "https://www.argentina.gob.ar/capital-humano/cultura/monumentos/museo-casa-historica-de-la-independencia",
         "https://www.argentina.gob.ar/node/506983",
         "https://www.argentina.gob.ar/noticias/el-dia-de-la-independencia-en-la-casa-historica-de-tucuman"
+      ]
+    },
+    {
+      "province": "Formosa",
+      "locality": "Formosa",
+      "category": "Industria",
+      "name": "Parque Industrial de Formosa — predio",
+      "decision": "not_added",
+      "reason": "El Gobierno provincial documenta empresas radicadas y actividad industrial en 2026, pero las fuentes consultadas no publican geometría del perímetro ni coordenada puntual atribuible. IDEF ofrece visor y servicios WMS, pero en esta ejecución no se recuperó la feature o polígono del parque. No se geocodificó un domicilio ni se utilizó el centroide urbano.",
+      "sourceUrls": [
+        "https://m.formosa.gob.ar/noticia/34029/83/el_parque_industrial_de_formosa_se_posiciona_como_referente_en_el_nea_con_empresa_quimica_que_invierte_en_innovacion_y_energia_renovable",
+        "https://m.formosa.gob.ar/noticia/34729/1301/formosa_cerro_la_semana_de_la_industria_con_inversiones_innovacion_y_respaldo_al_sector_productivo",
+        "https://idef.formosa.gob.ar/geoportal/servicios"
       ]
     }
   ],
