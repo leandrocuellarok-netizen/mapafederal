@@ -1285,5 +1285,39 @@
       "scope": "Se verificó el ARP en el suplemento oficial ANAC A40/2022. Argentina.gob.ar documenta la incorporación al SNA y el primer vuelo regular. La clasificación actual controlado/IFR/VFR se contrastó con una transcripción secundaria del AIP AIRAC 01/26; no se afirma frecuencia comercial vigente. El suplemento marca el ARP como calculado en gabinete; no se presenta como levantamiento geodésico independiente."
     },
     "coordinateQuality": "ARP oficial publicado por ANAC; el suplemento marca la coordenada como calculada en gabinete, no como levantamiento geodésico independiente."
+  },
+  {
+    "id": "la-pampa-aeropuerto-general-pico-sazg",
+    "name": "Aeropuerto de General Pico (SAZG)",
+    "province": "La Pampa",
+    "locality": "General Pico",
+    "type": "Aeropuerto",
+    "coords": [
+      -35.69598333,
+      -63.75832778
+    ],
+    "note": "ARP publicado por ANAC en AIP AD 2.2. El Gobierno nacional identifica el aeropuerto y aclara que no opera vuelos comerciales regulares de línea. No se afirma operación comercial; el estado operativo actual del aeródromo no fue verificado.",
+    "source": "https://www.argentina.gob.ar/lapampa/llegar",
+    "sourceName": "Argentina.gob.ar — Cómo llegar a La Pampa",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Página oficial consultada el 26/11/2026; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "Argentina.gob.ar, sección Conectividad aérea: Aeropuerto de General Pico",
+    "coordinateSource": "https://ais.anac.gob.ar/descarga/sup-62aaa363bab62",
+    "coordinateSourceName": "ANAC — Suplemento AIP AIRAC A18/2022, AD 2.2",
+    "coordinateSourcePublishedAt": "2022-06-16",
+    "coordinateSourcePublicationNote": "Publicado el 16/06/2022; efectivo desde el 14/07/2022. ARP: 354145.54S 0634529.98W.",
+    "coordinateReferenceSystem": "Coordenadas geográficas publicadas en AIP AD 2.2; esa fila no explicita datum/CRS. El plano oficial ANAC asociado publica coordenadas WGS84 para umbrales, no una declaración de datum para el ARP.",
+    "coordinateTransformation": "Conversión aritmética de DMS a grados decimales; sin transformación de datum ni reproyección.",
+    "statusSource": "https://www.argentina.gob.ar/lapampa/llegar",
+    "statusSourceName": "Argentina.gob.ar — Cómo llegar a La Pampa",
+    "statusSourcePublishedAt": null,
+    "administrativeStatus": "Argentina.gob.ar lo identifica como aeropuerto y señala que no opera vuelos comerciales regulares de línea. El AIP AIRAC A18/2022 registró tránsito IFR/VFR permitido y servicios/horarios en 2022; no se obtuvo confirmación primaria vigente para su estado operacional en 2026.",
+    "validityPeriod": "Coordenada y ficha aeronáutica según AIP efectivo 14/07/2022; ficha oficial nacional consultada 26/11/2026. Sin verificación de MADHEL o NOTAM vigente.",
+    "status": "no_verificado",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "Se contrastó la existencia y la ausencia de vuelos comerciales regulares en la página oficial nacional con el ARP publicado por ANAC en AD 2.2. La coordenada se convierte desde DMS sin reproyección. No se afirma operación actual del aeródromo; falta verificar AIP/MADHEL vigente y NOTAM."
+    },
+    "coordinateQuality": "ARP oficial publicado en AIP AD 2.2 (2022); el datum/CRS no está explicitado en esa fila. Punto de referencia aeroportuario, no acceso ni perímetro."
   }
 ]
