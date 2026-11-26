@@ -298,8 +298,8 @@ assert.match(tourismCircuit.operationalStatus, /recepción efectiva.*no verifica
 assert.equal(new URL(tourismCircuit.sourceUrl).protocol, "https:");
 assert.equal(new URL(tourismCircuit.relatedSources[0].url).protocol, "https:");
 assert.equal(tourismCircuit.schedule, undefined, "No inventar cronogramas para el programa de adhesión");
-const profileRenderer = fs.readFileSync("assets/foco-escobar.js", "utf8");
-assert.match(profileRenderer, /const participation=item\.participation/);
-assert.match(profileRenderer, /participation\.status/);
-assert.match(profileRenderer, /item\.sourceLabel\|\|"Fuente municipal/);
-assert.match(profileRenderer, /const scheduleHtml=schedule\?/);
+const tourismProfileRenderer = fs.readFileSync("assets/foco-escobar.js", "utf8");
+assert.match(tourismProfileRenderer, /const participation=item\.participation/);
+assert.match(tourismProfileRenderer, /participation\.status/);
+assert.match(tourismProfileRenderer, /item\.sourceLabel\|\|"Fuente municipal/);
+assert.match(tourismProfileRenderer, /const scheduleHtml=schedule\?/);

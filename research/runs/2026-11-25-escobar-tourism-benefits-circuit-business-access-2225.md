@@ -73,3 +73,11 @@ Se agregaron aserciones al test económico existente para comprobar la invitaci�
 3. GitHub Actions #721, run ID `45730292448`, commit `8cc290a2520172207e2c39f7f544f0e29f58e524`. Alcance: validación y despliegue previos.
 
 Principio aplicado: registrar una invitación comercial realmente publicada y mantener separados el programa, la adhesión anunciada y la aceptación efectiva de nuevos comercios.
+
+
+## 8. Corrección de validación
+
+- GitHub Actions #728 (run ID 45736079686), commit `924c828c062b4c631b348462a4bf2f233abb6b1c`: el job `validate` falló en `Test Escobar economic profile and company evidence` por una declaración `const profileRenderer` duplicada en el archivo de pruebas.
+- La validación previa del perfil territorial, el parseo JSON y la lectura de la estructura del nuevo registro habían pasado.
+- Se corrigió únicamente el identificador local de la nueva prueba a `tourismProfileRenderer`; no se alteraron datos ni la implementación del programa.
+- Los pasos posteriores fueron omitidos por el fallo temprano. La nueva ejecución debe confirmar el test económico y el resto del workflow.
