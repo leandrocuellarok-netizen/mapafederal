@@ -170,7 +170,8 @@ const translations={en:{
 "registros bonaerenses documentados":"documented Buenos Aires Province records",
 "INTELLIGENCE · POLITICS · BUSINESS":"INTELLIGENCE · POLITICS · BUSINESS",
 "Intendencia:":"Mayor:",
-"Signo político:":"Political affiliation:"
+"Signo político:":"Political affiliation:",
+"Investment & Political Finder Bs. As.":"Investment & Political Finder Bs. As.",
 "05 / Investment Finder":"05 / Investment Finder",
 "Oportunidades documentadas. Estados transparentes.":"Documented opportunities. Transparent statuses.",
 "Consultá registros normativos y programas con filtros por sector, alcance, jurisdicción y estado. Una norma verificada no implica que exista una convocatoria abierta ni que una empresa sea elegible.":"Explore documented regulations and programmes with filters by sector, scope, jurisdiction and status. A verified regulation does not mean an open call exists or that a company is eligible.",
