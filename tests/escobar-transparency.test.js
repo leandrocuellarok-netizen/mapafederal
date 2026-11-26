@@ -81,6 +81,33 @@ assert.match(profile, /GeoJSON Georef/);
 assert.match(profile, /escobar-boundary-reference/);
 assert.match(profile, /environmentalDatasets/);
 assert.match(profile, /escobar-environmental-dataset/);
+
+const touristDataset = transparency.culturalDatasets.find(item => item.id === "atractivos-turisticos-partido-escobar");
+assert.ok(touristDataset, "Falta la ficha municipal de atractivos turísticos de Escobar");
+assert.equal(touristDataset.status, "pendiente", "El acceso al archivo no acredita operación actual ni integración cartográfica");
+assert.equal(touristDataset.sourcePublishedAt, null, "No inventar fecha de publicación");
+assert.equal(touristDataset.createdAt, "2025-10-01");
+assert.equal(touristDataset.lastUpdatedAt, "2026-03-31");
+assert.equal(touristDataset.version, "1.0");
+assert.equal(touristDataset.periodicity, "Anual");
+assert.equal(touristDataset.license, "Open Data Commons Open Database License (ODbL)");
+assert.equal(touristDataset.sourceCrs, "urn:ogc:def:crs:OGC:1.3:CRS84");
+assert.equal(touristDataset.geometryType, "Point");
+assert.equal(touristDataset.featureCount, 18);
+assert.equal(touristDataset.localityClassificationStatus, "pending");
+assert.equal(touristDataset.geometryIntegrationStatus, "pending");
+assert.equal(touristDataset.verification.status, "verified");
+assert.equal(touristDataset.verification.checkedAt, "2026-11-25");
+assert.match(touristDataset.geometryNote, /no contiene un atributo uniforme de localidad/i);
+assert.match(touristDataset.dataQualityNotes.join(" "), /descriptio/);
+assert.match(touristDataset.dataQualityNotes.join(" "), /coordenadas/);
+assert.equal(touristDataset.resourceCheck.result, "accessible_json");
+for (const url of [touristDataset.sourceUrl, touristDataset.resourceUrl]) {
+  assert.equal(new URL(url).protocol, "https:");
+}
+assert.match(profile, /culturalDatasets/);
+assert.match(profile, /escobar-cultural-dataset/);
+
 assert.match(profile, /GeoJSON original/);
 
 

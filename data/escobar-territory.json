@@ -1320,7 +1320,7 @@
     "verification": {
       "status": "verified",
       "checkedAt": "2026-11-25",
-      "scope": "Se consultaron Transparencia municipal, Portal de Datos Abiertos y Solicitar Información Pública. El catálogo mostraba 53 datasets en 15 categorías. Se abrió la ficha municipal de Plazas y Parques y su GeoJSON original, verificando 46 polígonos y CRS EPSG:22185. No se enviaron solicitudes ni se evaluaron los buscadores dinámicos, la exhaustividad del catálogo o el mantenimiento y acceso efectivo a cada espacio verde. También se consultó la ficha municipal de Reservas Naturales: el GeoJSON enlazado devolvió HTTP 404 y el Shapefile no pudo inspeccionarse porque la herramienta rechazó su tipo MIME application/vnd.shp; esto último no se clasifica como recurso roto. La ficha municipal de la Reserva Natural Educativa de Ingeniero Maschwitz publica Sucre 1550 (PES), 23 hectáreas, horario de 9 a 17 h, entrada gratuita y Ordenanza 5767/19. No se verificó apertura en tiempo real ni días de atención."
+      "scope": "Se consultaron Transparencia municipal, Portal de Datos Abiertos y Solicitar Información Pública. El catálogo mostraba 53 datasets en 15 categorías. Se abrió la ficha municipal de Plazas y Parques y su GeoJSON original, verificando 46 polígonos y CRS EPSG:22185. No se enviaron solicitudes ni se evaluaron los buscadores dinámicos, la exhaustividad del catálogo o el mantenimiento y acceso efectivo a cada espacio verde. También se consultó la ficha municipal de Reservas Naturales: el GeoJSON enlazado devolvió HTTP 404 y el Shapefile no pudo inspeccionarse porque la herramienta rechazó su tipo MIME application/vnd.shp; esto último no se clasifica como recurso roto. La ficha municipal de la Reserva Natural Educativa de Ingeniero Maschwitz publica Sucre 1550 (PES), 23 hectáreas, horario de 9 a 17 h, entrada gratuita y Ordenanza 5767/19. No se verificó apertura en tiempo real ni días de atención. Reconsulta del 25/11/2026: se abrió el GeoJSON municipal de Atractivos Turísticos, con 18 puntos y CRS CRS84. Se conserva como fuente descargable pendiente de integración: no presenta localidad uniforme, incluye descripciones HTML y una coincidencia exacta de coordenadas entre dos registros. No se infiere operación ni acceso actual."
     },
     "dynamicContentStatus": "pendiente",
     "territorialBoundaryReference": {
@@ -1631,6 +1631,53 @@
           "status": "verified",
           "checkedAt": "2026-11-25",
           "scope": "Se verificó la ficha municipal, la categoría, la organización, la descripción, la atribución a cartografía ADA, la versión, la periodicidad, las fechas declaradas, la licencia y los tamaños y formatos. El GeoJSON se abrió parcialmente como FeatureCollection. No se inspeccionaron todas las entidades, los atributos, el CRS ni las geometrías. El recurso SHP no pudo procesarse en el visor web por su tipo de contenido."
+        }
+      }
+    ],
+    "culturalDatasets": [
+      {
+        "id": "atractivos-turisticos-partido-escobar",
+        "name": "Atractivos Turísticos del Partido de Escobar",
+        "category": "Cultura",
+        "description": "Localización geográfica municipal de atractivos de interés natural, cultural, histórico, recreativo y patrimonial.",
+        "sourceName": "Municipalidad de Escobar — relevamiento propio; organización responsable no especificada en la ficha.",
+        "sourceUrl": "https://datos.escobar.gob.ar/dataset/atractivos-turisticos-del-partido-de-escobar",
+        "resourceUrl": "https://pub-1ccab06e6b6746d4aac8bb00ba00c54c.r2.dev/datasets/atractivos-turisticos-del-partido-de-escobar/atractivos_turisticos.geojson",
+        "resourceName": "atractivos_turisticos.geojson",
+        "resourceFormat": "GeoJSON",
+        "resourceSize": "15 KB",
+        "sourcePublishedAt": null,
+        "sourcePublicationNote": "La ficha no informa fecha de publicación. Declara creación 01/10/2025 y última actualización 31/03/2026.",
+        "createdAt": "2025-10-01",
+        "lastUpdatedAt": "2026-03-31",
+        "version": "1.0",
+        "periodicity": "Anual",
+        "license": "Open Data Commons Open Database License (ODbL)",
+        "sourceCrs": "urn:ogc:def:crs:OGC:1.3:CRS84",
+        "sourceCrsLabel": "OGC:CRS84 — longitud, latitud",
+        "geometryType": "Point",
+        "featureCount": 18,
+        "localityClassificationStatus": "pending",
+        "geometryIntegrationStatus": "pending",
+        "status": "pendiente",
+        "validityPeriod": "Versión 1.0; el portal declara última actualización 31/03/2026 y periodicidad anual. No se verificó una versión posterior ni la vigencia operativa de cada atractivo.",
+        "geometryNote": "El GeoJSON declara CRS84 y presenta coordenadas en orden longitud, latitud. Aunque el recurso es legible, no se integra al mapa: no contiene un atributo uniforme de localidad, sus descripciones no son homogéneas y no acredita acceso, horarios ni operación actual de cada sitio. No se asignan localidades por proximidad ni se transforma la geometría.",
+        "dataQualityNotes": [
+          "La propiedad descriptiva aparece con la clave literal «descriptio»; varias entidades contienen marcado HTML de imagen en lugar de una descripción textual estructurada.",
+          "No existe un atributo uniforme de localidad. Solo una descripción menciona Ingeniero Maschwitz y UGC 12; no se extrapola esa clasificación a las demás entidades.",
+          "Temaikèn y Munchi's comparten exactamente las coordenadas publicadas (-58.8008499, -34.3599347). Se conserva la coincidencia sin fusionar registros ni inferir identidad de establecimiento.",
+          "La ficha y el archivo no acreditan exhaustividad del inventario, horarios, acceso público ni operación vigente."
+        ],
+        "resourceCheck": {
+          "checkedAt": "2026-11-25",
+          "result": "accessible_json",
+          "contentType": "application/json",
+          "scope": "Se abrió el enlace Descargar desde la ficha municipal y se pudo leer la FeatureCollection, su CRS y sus entidades."
+        },
+        "verification": {
+          "status": "verified",
+          "checkedAt": "2026-11-25",
+          "scope": "Se consultó la ficha municipal y el recurso GeoJSON original. El archivo se abrió como FeatureCollection con 18 entidades Point y CRS declarado urn:ogc:def:crs:OGC:1.3:CRS84; se revisaron nombres, propiedades y coordenadas visibles. La ficha declara creación 01/10/2025, actualización 31/03/2026, versión 1.0, periodicidad anual y licencia ODbL. No se verificaron en terreno los atractivos, su acceso, horarios, operación actual ni exhaustividad; no se integró geometría al mapa."
         }
       }
     ]
