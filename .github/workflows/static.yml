@@ -573,6 +573,16 @@ jobs:
           covered_jurisdictions = {node["province"] for node in nodes}
           missing_jurisdictions = expected_jurisdictions - covered_jurisdictions
           assert not missing_jurisdictions, f"Faltan jurisdicciones en el catálogo: {sorted(missing_jurisdictions)}"
+          formosa_port = next((node for node in nodes if node.get("id") == "formosa-puerto-puerto-de-formosa"), None)
+          assert formosa_port is not None, "Falta el Puerto de Formosa"
+          assert formosa_port["province"] == "Formosa" and formosa_port["type"] == "Puerto"
+          assert formosa_port["coords"] == [-26.19861111, -58.14736111]
+          assert formosa_port["source"] == "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/formosa"
+          assert formosa_port["coordinateSource"] == formosa_port["source"]
+          assert formosa_port["status"] == "no_verificado"
+          assert formosa_port["coordinateReferenceSystem"].startswith("No declarado")
+          assert formosa_port["verification"]["checkedAt"] == "2026-11-26"
+          assert "26°11'55.0\"S" in formosa_port["verification"]["scope"] and "58°08'50.5\"W" in formosa_port["verification"]["scope"]
           la_banda_customs = next((node for node in nodes if node.get("id") == "sde-la-banda-zona-primaria-aduanera-la-isla"), None)
           assert la_banda_customs is not None, "Falta el nodo de la zona primaria aduanera de La Banda"
           assert la_banda_customs["province"] == "Santiago del Estero" and la_banda_customs["type"] == "Logística"
