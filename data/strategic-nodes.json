@@ -1481,5 +1481,42 @@
       "scope": "Se verificó el ARP en el Suplemento AIP ANAC A 30/2024 (AD 2.A1), donde figura 27°26'42\"S 058°45'42\"W. La transcripción secundaria del AIP AIRAC 01/26, vigente desde 11/06/2026, lo identifica como controlado IFR/VFR con horarios ATS. Argentina.gob.ar confirma que centraliza el tráfico aéreo provincial y Vialidad Nacional documentó obras viales en inmediaciones del aeropuerto en septiembre de 2026. No se infieren frecuencias comerciales ni estado NOTAM en tiempo real. La coordenada ARP se presenta como referencia calculada en gabinete, no como levantamiento geodésico."
     },
     "coordinateQuality": "ARP publicado por ANAC como referencia del aeródromo; la transcripción del AIP vigente lo marca como calculado en gabinete. No es acceso ni perímetro y el datum/CRS del ARP no está explicitado."
+  },
+  {
+    "id": "san-juan-parque-nacional-el-leoncito",
+    "name": "Parque Nacional El Leoncito",
+    "province": "San Juan",
+    "district": "Calingasta",
+    "type": "Turismo",
+    "coords": [
+      -31.88944444,
+      -69.265
+    ],
+    "note": "Área protegida nacional con senderos, miradores, acampe y observatorios astronómicos. IGN publica la coordenada 31°53'22''S 69°15'54''O como referencia del área; la tabla no define si corresponde a acceso, centroide o punto interno. El marcador no representa acceso ni perímetro.",
+    "source": "https://www.argentina.gob.ar/parquesnacionales/centro/parque-nacional-el-leoncito",
+    "sourceName": "Administración de Parques Nacionales (APN)",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Ficha institucional consultada el 26/11/2026; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "Ficha oficial del Parque Nacional El Leoncito",
+    "coordinateSource": "https://www.ign.gob.ar/NuestrasActividades/Geografia/DatosArgentina/ParquesNacionales2",
+    "coordinateSourceName": "Instituto Geográfico Nacional (IGN) — Áreas Protegidas de Jurisdicción Nacional",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "Tabla de áreas protegidas; fila El Leoncito: 89.706 ha, creación 2002 y coordenada 31°53'22''S 69°15'54''O. La tabla no declara fecha de actualización ni la semántica geométrica del punto.",
+    "coordinateReferenceSystem": "Coordenada geográfica publicada en DMS por IGN; la fila no declara datum/CRS ni época de referencia.",
+    "coordinateTransformation": "Conversión aritmética de DMS a grados decimales; sin transformación de datum ni reproyección.",
+    "statusSource": "https://www.argentina.gob.ar/parquesnacionales/centro/parque-nacional-el-leoncito/horarios-como-llegar",
+    "statusSourceName": "APN — Horarios / Cómo llegar",
+    "statusSourcePublishedAt": null,
+    "additionalStatusSource": "https://www.argentina.gob.ar/parquesnacionales/centro/parque-nacional-el-leoncito/actividades",
+    "additionalStatusSourceName": "APN — Actividades, senderos y observatorios",
+    "additionalStatusSourcePublishedAt": null,
+    "administrativeStatus": "Parque Nacional creado en 2002 y administrado por APN. La autoridad publica horarios estacionales de ingreso, senderos, miradores, servicios y actividades para visitantes. El acceso puede depender de condiciones de ruta y avisos temporales.",
+    "validityPeriod": "Área protegida establecida en 2002; horarios y condiciones de visita según páginas institucionales de APN consultadas el 26/11/2026. No se verificó acceso en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "Se contrastó la identificación y la coordenada de referencia en la tabla oficial del IGN con la ficha, los horarios de ingreso y las actividades publicadas por APN. La coordenada se usa únicamente como referencia cartográfica del área protegida; no se interpreta como acceso, centroide certificado, instalación ni perímetro. Verificación documental, no presencial."
+    },
+    "coordinateQuality": "Coordenada oficial de referencia publicada por IGN para el área protegida; la fuente no define si es acceso, centroide o punto interno. No se presenta como acceso ni como geometría del límite."
   }
 ]
