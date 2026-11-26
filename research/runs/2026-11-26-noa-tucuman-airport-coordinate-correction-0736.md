@@ -70,9 +70,14 @@ Tucumán continúa siendo la jurisdicción menos cubierta del catálogo, con un 
 - JavaScript de portada: sin cambios; la ruta de carga y el filtro Aeropuerto ya existían.
 
 ## Commits y publicación
-- Commit del catálogo: `0e5ce749949f8d403c98b0aadb2354a90567ba3c`.
-- GitHub Actions #783 (run ID 45802997697), asociado al commit del catálogo: el job `validate` terminó correctamente; el job `deploy` estaba en curso al preparar este registro. Resultado final de Pages pendiente de consulta.
-- El commit de matriz y este registro será verificado por su propia ejecución de GitHub Actions antes de declarar la publicación.
+- Commit de corrección de coordenadas y procedencia: `0e5ce749949f8d403c98b0aadb2354a90567ba3c`.
+- Commit de limpieza de localidad no sustentada por la fuente AIP: `23ef3895373a44b7a7f8755265a85bc02ad63288` (HEAD del catálogo antes de actualizar esta matriz).
+- Commit de matriz y registro: `73adfd95c258eae6e14f6653a03e3f9d350287f6`.
+- GitHub Actions #783 (run ID 45802997697), commit `0e5ce74`: validación y despliegue de Pages aprobados.
+- GitHub Actions #784 (run ID 45803145359), commit `73adfd9`: validación y despliegue de Pages aprobados.
+- GitHub Actions #785 (run ID 45803259262), commit `23ef389`: validación y despliegue de Pages aprobados.
+- La matriz ahora referencia el último commit del catálogo (`23ef389`) y conserva los conteos de 94 nodos, 24 jurisdicciones y nueve categorías.
+- La URL pública habitual de GitHub Pages no fue accesible desde el entorno de verificación; se confirman los jobs de despliegue, pero no una inspección visual independiente del marcador en navegador.
 
 ## Pendientes y próxima prioridad
 - El datum/CRS de la coordenada publicada para SANT no está explicitado en el suplemento; no se atribuye EPSG ni precisión geodésica.
