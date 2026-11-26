@@ -20,7 +20,27 @@
         "Logística y transporte",
         "Industria y manufactura"
       ],
-      "description": "La actividad pyme se vincula con la cadena industrial, la metalmecánica, el mantenimiento, los servicios técnicos y los proveedores de logística. La cercanía con grandes plantas y corredores de transporte abre oportunidades para talleres especializados, proveedores industriales y servicios empresariales."
+      "description": "La actividad pyme se vincula con la cadena industrial, la metalmecánica, el mantenimiento, los servicios técnicos y los proveedores de logística. La cercanía con grandes plantas y corredores de transporte abre oportunidades para talleres especializados, proveedores industriales y servicios empresariales.",
+      "political": {
+        "mayor": "Sebastián Abella",
+        "party": "PRO",
+        "council": [
+          [
+            "Juntos por Campana",
+            10
+          ],
+          [
+            "Fuerza Patria",
+            8
+          ],
+          [
+            "La Libertad Avanza",
+            2
+          ]
+        ],
+        "source": "https://www.hcdcampana.gob.ar/autoridades.html",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "Escobar",
@@ -30,7 +50,31 @@
         "Comercio y distribución",
         "Construcción e inmobiliario"
       ],
-      "description": "El entramado pyme combina comercio, construcción, alimentos, servicios y proveedores de parques industriales y centros logísticos. Su ubicación sobre el corredor norte y la conexión con Pilar, Campana y Tigre favorecen la distribución y los servicios a empresas."
+      "description": "El entramado pyme combina comercio, construcción, alimentos, servicios y proveedores de parques industriales y centros logísticos. Su ubicación sobre el corredor norte y la conexión con Pilar, Campana y Tigre favorecen la distribución y los servicios a empresas.",
+      "political": {
+        "mayor": "Ariel Sujarchuk",
+        "party": "Partido Justicialista (PJ)",
+        "council": [
+          [
+            "Partido Justicialista / Unión por la Patria",
+            14
+          ],
+          [
+            "La Libertad Avanza",
+            8
+          ],
+          [
+            "PRO",
+            1
+          ],
+          [
+            "Consolidación Argentina",
+            1
+          ]
+        ],
+        "source": "https://escobar-site.com.ar/host/noticias/hcdnuevo.htm",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "General Las Heras",
@@ -39,7 +83,12 @@
         "Comercio y distribución",
         "Industria y manufactura"
       ],
-      "description": "El perfil pyme se relaciona con la producción agropecuaria, los alimentos, los servicios rurales, el mantenimiento de maquinaria y el comercio de cercanía. Las oportunidades aparecen en agregado de valor, frío, transporte y provisión de insumos."
+      "description": "El perfil pyme se relaciona con la producción agropecuaria, los alimentos, los servicios rurales, el mantenimiento de maquinaria y el comercio de cercanía. Las oportunidades aparecen en agregado de valor, frío, transporte y provisión de insumos.",
+      "political": {
+        "mayor": "Javier Osuna",
+        "party": "Frente Renovador",
+        "source": "https://www.infobae.com/politica/2025/09/07/radiografia-de-la-primera-la-region-clave-que-puede-definir-el-resultado-de-las-elecciones-bonaerenses/"
+      }
     },
     {
       "locality": "General Rodríguez",
@@ -48,7 +97,31 @@
         "Logística y transporte",
         "Construcción e inmobiliario"
       ],
-      "description": "La presencia de áreas industriales y su conexión con los corredores del oeste favorecen pymes metalmecánicas, alimenticias, de envases, mantenimiento, construcción y transporte. La articulación entre parques industriales y proveedores locales es una línea central de desarrollo."
+      "description": "La presencia de áreas industriales y su conexión con los corredores del oeste favorecen pymes metalmecánicas, alimenticias, de envases, mantenimiento, construcción y transporte. La articulación entre parques industriales y proveedores locales es una línea central de desarrollo.",
+      "political": {
+        "mayor": "Mauro García",
+        "party": "Partido Justicialista (PJ)",
+        "council": [
+          [
+            "Fuerza Patria",
+            10
+          ],
+          [
+            "Compromiso por General Rodríguez",
+            5
+          ],
+          [
+            "La Libertad Avanza",
+            3
+          ],
+          [
+            "Fuerza Libertaria",
+            1
+          ]
+        ],
+        "source": "https://generalrodriguez.gob.ar/hcd/bloques",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "General San Martín",
@@ -57,7 +130,35 @@
         "Comercio y distribución",
         "Servicios profesionales y tecnología"
       ],
-      "description": "Es uno de los núcleos industriales más importantes de la sección. Se destacan metalurgia, caucho y plástico, química, textiles y alimentos. La densidad de establecimientos pequeños y medianos genera demanda de insumos, matricería, mantenimiento, logística y servicios tecnológicos."
+      "description": "Es uno de los núcleos industriales más importantes de la sección. Se destacan metalurgia, caucho y plástico, química, textiles y alimentos. La densidad de establecimientos pequeños y medianos genera demanda de insumos, matricería, mantenimiento, logística y servicios tecnológicos.",
+      "political": {
+        "mayor": "Fernando Moreira",
+        "party": "Partido Justicialista (PJ)",
+        "council": [
+          [
+            "Fuerza Patria",
+            13
+          ],
+          [
+            "La Libertad Avanza",
+            7
+          ],
+          [
+            "PRO San Martín",
+            2
+          ],
+          [
+            "Espacio Abierto San Martín",
+            1
+          ],
+          [
+            "Unión Renovación y Fe",
+            1
+          ]
+        ],
+        "source": "https://www.hcdsanmartin.gob.ar/concejales_listado.php",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "Hurlingham",
@@ -66,7 +167,35 @@
         "Comercio y distribución",
         "Construcción e inmobiliario"
       ],
-      "description": "Su tejido productivo combina talleres industriales, metalmecánica, autopartes, textiles, comercio y servicios. Las pymes pueden integrarse como proveedoras de cadenas industriales del corredor San Martín-Tres de Febrero y del mercado metropolitano."
+      "description": "Su tejido productivo combina talleres industriales, metalmecánica, autopartes, textiles, comercio y servicios. Las pymes pueden integrarse como proveedoras de cadenas industriales del corredor San Martín-Tres de Febrero y del mercado metropolitano.",
+      "political": {
+        "mayor": "Damián Selci",
+        "party": "Partido Justicialista (PJ)",
+        "council": [
+          [
+            "Fuerza Patria",
+            10
+          ],
+          [
+            "Alianza La Libertad Avanza",
+            4
+          ],
+          [
+            "La Libertad Avanza",
+            3
+          ],
+          [
+            "Somos",
+            2
+          ],
+          [
+            "Por Hurlingham",
+            1
+          ]
+        ],
+        "source": "https://planetahurlingham.com.ar/contenido/86/como-quedo-conformado-el-concejo-deliberante-de-hurlingham",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "Ituzaingó",
@@ -75,7 +204,31 @@
         "Servicios profesionales y tecnología",
         "Construcción e inmobiliario"
       ],
-      "description": "Predominan oportunidades vinculadas al comercio, servicios profesionales, gastronomía, construcción, mantenimiento y pequeñas manufacturas. El desafío pyme es mejorar productividad, digitalización, canales de venta y articulación con los mercados del oeste metropolitano."
+      "description": "Predominan oportunidades vinculadas al comercio, servicios profesionales, gastronomía, construcción, mantenimiento y pequeñas manufacturas. El desafío pyme es mejorar productividad, digitalización, canales de venta y articulación con los mercados del oeste metropolitano.",
+      "political": {
+        "mayor": "Pablo Descalzo",
+        "party": "Partido Justicialista (PJ)",
+        "council": [
+          [
+            "Unión por la Patria / Fuerza Patria y aliados",
+            12
+          ],
+          [
+            "La Libertad Avanza",
+            5
+          ],
+          [
+            "PRO",
+            2
+          ],
+          [
+            "Monobloque aliado",
+            1
+          ]
+        ],
+        "source": "https://sinred.com.ar/politica/ituzaingo-alvarez-luna-asumio-como-presidente-del-concejo-deliberante",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "José C. Paz",
@@ -84,7 +237,11 @@
         "Construcción e inmobiliario",
         "Industria y manufactura"
       ],
-      "description": "El mercado local ofrece espacio para pymes comerciales, alimenticias, textiles, talleres, construcción y servicios personales y profesionales. La formalización, el acceso al crédito y la capacitación en gestión son factores relevantes para consolidar unidades productivas."
+      "description": "El mercado local ofrece espacio para pymes comerciales, alimenticias, textiles, talleres, construcción y servicios personales y profesionales. La formalización, el acceso al crédito y la capacitación en gestión son factores relevantes para consolidar unidades productivas.",
+      "political": {
+        "mayor": "Mario Ishii",
+        "party": "Partido Justicialista (PJ)"
+      }
     },
     {
       "locality": "Luján",
@@ -94,7 +251,35 @@
         "Industria y manufactura",
         "Servicios profesionales y tecnología"
       ],
-      "description": "Conviven industria alimenticia, textil, cuero, metalmecánica, comercio y servicios vinculados al turismo y al patrimonio. Las pymes pueden aprovechar la demanda regional y turística mediante productos locales, gastronomía, manufacturas y servicios especializados."
+      "description": "Conviven industria alimenticia, textil, cuero, metalmecánica, comercio y servicios vinculados al turismo y al patrimonio. Las pymes pueden aprovechar la demanda regional y turística mediante productos locales, gastronomía, manufacturas y servicios especializados.",
+      "political": {
+        "mayor": "Leonardo Boto",
+        "party": "Partido Justicialista (PJ)",
+        "council": [
+          [
+            "Fuerza Patria",
+            12
+          ],
+          [
+            "Interbloque La Libertad Avanza Luján",
+            3
+          ],
+          [
+            "Unión Vecinal de Luján",
+            2
+          ],
+          [
+            "La Libertad Avanza (bloques unipersonales)",
+            2
+          ],
+          [
+            "PRO Luján",
+            1
+          ]
+        ],
+        "source": "https://fmliderlujan.com.ar/la-apertura-de-sesiones-del-concejo-sera-el-9-de-marzo/",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "Malvinas Argentinas",
@@ -103,7 +288,31 @@
         "Logística y transporte",
         "Comercio y distribución"
       ],
-      "description": "El perfil productivo combina parques y establecimientos industriales, logística, distribución, alimentos, laboratorios y servicios a empresas. La escala de los corredores industriales genera oportunidades para proveedores, mantenimiento, envases y transporte."
+      "description": "El perfil productivo combina parques y establecimientos industriales, logística, distribución, alimentos, laboratorios y servicios a empresas. La escala de los corredores industriales genera oportunidades para proveedores, mantenimiento, envases y transporte.",
+      "political": {
+        "mayor": "Leonardo Nardini",
+        "party": "Partido Justicialista (PJ)",
+        "council": [
+          [
+            "Peronismo / Fuerza Patria",
+            13
+          ],
+          [
+            "La Libertad Avanza",
+            8
+          ],
+          [
+            "Frente Renovador",
+            2
+          ],
+          [
+            "Militancia Unida Corrientes Nacional Martín Fierro",
+            1
+          ]
+        ],
+        "source": "https://www.malvinasargentinas.gob.ar/docs/biblioteca/digesto/VOL10B-OrganigramaFunciones.pdf",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "Marcos Paz",
@@ -113,7 +322,12 @@
         "Comercio y distribución",
         "Logística y transporte"
       ],
-      "description": "Las pymes se vinculan con alimentos, producción agropecuaria, servicios rurales, construcción, comercio y transporte. El agregado de valor a la producción primaria y la mejora de la conectividad comercial son oportunidades para empresas locales."
+      "description": "Las pymes se vinculan con alimentos, producción agropecuaria, servicios rurales, construcción, comercio y transporte. El agregado de valor a la producción primaria y la mejora de la conectividad comercial son oportunidades para empresas locales.",
+      "political": {
+        "mayor": "Ricardo Curutchet",
+        "party": "Partido Justicialista (PJ)",
+        "source": "https://www.infobae.com/politica/2025/09/07/radiografia-de-la-primera-la-region-clave-que-puede-definir-el-resultado-de-las-elecciones-bonaerenses/"
+      }
     },
     {
       "locality": "Mercedes",
@@ -123,7 +337,31 @@
         "Comercio y distribución",
         "Servicios profesionales y tecnología"
       ],
-      "description": "Su economía combina alimentos, actividad agropecuaria, metalmecánica, comercio y servicios. Las pymes pueden articular producción rural, transformación alimentaria, gastronomía, turismo y distribución hacia otros centros urbanos."
+      "description": "Su economía combina alimentos, actividad agropecuaria, metalmecánica, comercio y servicios. Las pymes pueden articular producción rural, transformación alimentaria, gastronomía, turismo y distribución hacia otros centros urbanos.",
+      "political": {
+        "mayor": "Juan Ignacio Ustarroz",
+        "party": "Partido Justicialista (PJ)",
+        "council": [
+          [
+            "Fuerza Patria",
+            9
+          ],
+          [
+            "La Libertad Avanza",
+            5
+          ],
+          [
+            "Unión Cívica Radical",
+            2
+          ],
+          [
+            "Vecinos por Mercedes",
+            2
+          ]
+        ],
+        "source": "https://nw.mercedes.gob.ar/info/concejo-deliberante",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "Merlo",
@@ -132,7 +370,35 @@
         "Comercio y distribución",
         "Construcción e inmobiliario"
       ],
-      "description": "El entramado pyme es diverso: metalmecánica, textiles, alimentos, talleres, construcción y comercio. La escala del mercado local favorece proveedores de cercanía y servicios para hogares y empresas, mientras que la industria demanda capacitación y actualización tecnológica."
+      "description": "El entramado pyme es diverso: metalmecánica, textiles, alimentos, talleres, construcción y comercio. La escala del mercado local favorece proveedores de cercanía y servicios para hogares y empresas, mientras que la industria demanda capacitación y actualización tecnológica.",
+      "political": {
+        "mayor": "Gustavo Menéndez",
+        "party": "Partido Justicialista (PJ)",
+        "council": [
+          [
+            "Fuerza Patria",
+            13
+          ],
+          [
+            "PRO",
+            4
+          ],
+          [
+            "La Libertad Avanza",
+            3
+          ],
+          [
+            "Unión, Renovación y Fe",
+            2
+          ],
+          [
+            "Verdad Justicialista",
+            2
+          ]
+        ],
+        "source": "https://www.merlo.gob.ar/hcd/",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "Moreno",
@@ -142,7 +408,12 @@
         "Logística y transporte",
         "Construcción e inmobiliario"
       ],
-      "description": "Se combinan manufacturas, alimentos, textiles, metalmecánica, comercio y logística. La localización sobre corredores metropolitanos permite desarrollar proveedores industriales, distribución, construcción y servicios para empresas y consumidores."
+      "description": "Se combinan manufacturas, alimentos, textiles, metalmecánica, comercio y logística. La localización sobre corredores metropolitanos permite desarrollar proveedores industriales, distribución, construcción y servicios para empresas y consumidores.",
+      "political": {
+        "mayor": "Mariel Fernández",
+        "party": "Partido Justicialista (PJ)",
+        "source": "https://www.infobae.com/politica/2025/09/07/radiografia-de-la-primera-la-region-clave-que-puede-definir-el-resultado-de-las-elecciones-bonaerenses/"
+      }
     },
     {
       "locality": "Morón",
@@ -152,7 +423,51 @@
         "Industria y manufactura",
         "Salud y educación"
       ],
-      "description": "Es un centro comercial y de servicios del oeste, con actividad industrial y talleres especializados. Las pymes se distribuyen entre comercio, salud, educación, servicios profesionales, autopartes y manufactura; la digitalización y la gestión comercial son ejes de competitividad."
+      "description": "Es un centro comercial y de servicios del oeste, con actividad industrial y talleres especializados. Las pymes se distribuyen entre comercio, salud, educación, servicios profesionales, autopartes y manufactura; la digitalización y la gestión comercial son ejes de competitividad.",
+      "political": {
+        "mayor": "Lucas Ghi",
+        "party": "Nuevo Encuentro (Unión por la Patria)",
+        "council": [
+          [
+            "PJ - Movimiento Derecho al Futuro",
+            6
+          ],
+          [
+            "Unión por la Patria",
+            5
+          ],
+          [
+            "La Libertad Avanza",
+            6
+          ],
+          [
+            "Frente Renovador",
+            2
+          ],
+          [
+            "PRO Morón",
+            1
+          ],
+          [
+            "Unión Cívica Radical",
+            1
+          ],
+          [
+            "Nuevo PRO Morón",
+            1
+          ],
+          [
+            "La Libertad Avanza (monobloque)",
+            1
+          ],
+          [
+            "Todo por Argentina",
+            1
+          ]
+        ],
+        "source": "https://elcondordemoron.com.ar/2026/10/14/encuesta-ciudadana-moron-hcd-como-evaluas-el-desempeno-legislativo-de-los-concejales-y-concejalas/",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "Navarro",
@@ -161,7 +476,31 @@
         "Industria y manufactura",
         "Comercio y distribución"
       ],
-      "description": "El perfil pyme se relaciona con producción agropecuaria, lácteos, alimentos, maquinaria, transporte y servicios rurales. La transformación local de materias primas y el acceso a mercados regionales resultan claves para agregar valor."
+      "description": "El perfil pyme se relaciona con producción agropecuaria, lácteos, alimentos, maquinaria, transporte y servicios rurales. La transformación local de materias primas y el acceso a mercados regionales resultan claves para agregar valor.",
+      "political": {
+        "mayor": "Facundo Diz",
+        "party": "Partido Justicialista (PJ)",
+        "council": [
+          [
+            "Fuerza Patria",
+            5
+          ],
+          [
+            "Unión Cívica Radical - PRO",
+            4
+          ],
+          [
+            "La Libertad Avanza",
+            2
+          ],
+          [
+            "Unión Cívica Radical - Espacio Abierto",
+            1
+          ]
+        ],
+        "source": "https://navarroenlineas.com.ar/resultado-electoral-en-navarro/",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "Pilar",
@@ -171,7 +510,12 @@
         "Servicios profesionales y tecnología",
         "Salud y educación"
       ],
-      "description": "Pilar reúne parques industriales, centros logísticos, empresas de alimentos, laboratorios, tecnología y servicios profesionales. Su ecosistema pyme incluye proveedores industriales, mantenimiento, packaging, transporte y servicios especializados."
+      "description": "Pilar reúne parques industriales, centros logísticos, empresas de alimentos, laboratorios, tecnología y servicios profesionales. Su ecosistema pyme incluye proveedores industriales, mantenimiento, packaging, transporte y servicios especializados.",
+      "political": {
+        "mayor": "Federico Achával",
+        "party": "Partido Justicialista (PJ)",
+        "source": "https://www.juntaelectoral.ar/docs/resolucion-aprueba-escrutinio-2025.pdf"
+      }
     },
     {
       "locality": "San Fernando",
@@ -181,7 +525,31 @@
         "Comercio y distribución",
         "Servicios profesionales y tecnología"
       ],
-      "description": "La actividad náutica y naval convive con metalmecánica, servicios técnicos, logística, comercio y turismo. Las pymes pueden proveer reparación, carpintería, motores, equipamiento, gastronomía y servicios vinculados al río y a la industria."
+      "description": "La actividad náutica y naval convive con metalmecánica, servicios técnicos, logística, comercio y turismo. Las pymes pueden proveer reparación, carpintería, motores, equipamiento, gastronomía y servicios vinculados al río y a la industria.",
+      "political": {
+        "mayor": "Juan Andreotti",
+        "party": "Frente Renovador",
+        "council": [
+          [
+            "Unión por la Patria",
+            12
+          ],
+          [
+            "La Libertad Avanza",
+            4
+          ],
+          [
+            "Unión Cívica Radical",
+            2
+          ],
+          [
+            "Alternativa Celeste y Blanca",
+            1
+          ]
+        ],
+        "source": "https://www.sanfernando.gob.ar/municipio/hcd",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "San Isidro",
@@ -190,7 +558,55 @@
         "Comercio y distribución",
         "Salud y educación"
       ],
-      "description": "El tejido pyme presenta fuerte presencia de servicios profesionales, tecnología, salud, educación, comercio y actividades creativas. La oportunidad está en servicios de alto valor, soluciones digitales y proveedores para empresas y hogares."
+      "description": "El tejido pyme presenta fuerte presencia de servicios profesionales, tecnología, salud, educación, comercio y actividades creativas. La oportunidad está en servicios de alto valor, soluciones digitales y proveedores para empresas y hogares.",
+      "political": {
+        "mayor": "Ramón Lanús",
+        "party": "PRO",
+        "council": [
+          [
+            "Primero San Isidro",
+            4
+          ],
+          [
+            "ConVocación por San Isidro",
+            4
+          ],
+          [
+            "Frente Renovador - Frente Patria",
+            4
+          ],
+          [
+            "La Libertad Avanza",
+            3
+          ],
+          [
+            "Fuerza Patria",
+            2
+          ],
+          [
+            "Acción Vecinal San Isidro es Distinto",
+            2
+          ],
+          [
+            "Unión Cívica Radical",
+            2
+          ],
+          [
+            "Movimiento Derecho al Futuro",
+            1
+          ],
+          [
+            "Liberal Republicano",
+            1
+          ],
+          [
+            "Partido Demócrata",
+            1
+          ]
+        ],
+        "source": "https://hcd.sanisidro.gob.ar/index.php/el-concejo-2/bloques/",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "San Miguel",
@@ -200,7 +616,31 @@
         "Salud y educación",
         "Industria y manufactura"
       ],
-      "description": "Su centralidad comercial y de servicios sostiene pymes de gastronomía, salud, educación, comercio, mantenimiento y manufacturas. El mercado local y la conexión con otros municipios del noroeste metropolitano amplían la demanda potencial."
+      "description": "Su centralidad comercial y de servicios sostiene pymes de gastronomía, salud, educación, comercio, mantenimiento y manufacturas. El mercado local y la conexión con otros municipios del noroeste metropolitano amplían la demanda potencial.",
+      "political": {
+        "mayor": "Jaime Méndez",
+        "party": "Primero San Miguel (vecinalismo)",
+        "council": [
+          [
+            "Primero San Miguel",
+            10
+          ],
+          [
+            "Fuerza Patria - Partido Justicialista",
+            8
+          ],
+          [
+            "La Libertad Avanza",
+            5
+          ],
+          [
+            "PRO San Miguel",
+            1
+          ]
+        ],
+        "source": "https://www.msm.gov.ar/honorable-concejo-deliberante/",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "Suipacha",
@@ -209,7 +649,27 @@
         "Industria y manufactura",
         "Comercio y distribución"
       ],
-      "description": "La cadena agroalimentaria, los lácteos, la producción rural y los servicios asociados conforman un eje central para las pymes. Se destacan oportunidades en procesamiento, logística de alimentos, mantenimiento y comercialización regional."
+      "description": "La cadena agroalimentaria, los lácteos, la producción rural y los servicios asociados conforman un eje central para las pymes. Se destacan oportunidades en procesamiento, logística de alimentos, mantenimiento y comercialización regional.",
+      "political": {
+        "mayor": "Juan Mancini",
+        "party": "Partido Justicialista (PJ)",
+        "council": [
+          [
+            "Juntos Somos Potencia",
+            6
+          ],
+          [
+            "Fuerza Patria",
+            5
+          ],
+          [
+            "La Libertad Avanza",
+            1
+          ]
+        ],
+        "source": "https://suipacha.gob.ar/hcd/",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "Tigre",
@@ -219,7 +679,12 @@
         "Comercio y distribución",
         "Servicios profesionales y tecnología"
       ],
-      "description": "La economía pyme combina logística, comercio, gastronomía, turismo, náutica, mantenimiento e industria. El Delta y los corredores de transporte generan demanda de servicios especializados, distribución, construcción y actividades recreativas."
+      "description": "La economía pyme combina logística, comercio, gastronomía, turismo, náutica, mantenimiento e industria. El Delta y los corredores de transporte generan demanda de servicios especializados, distribución, construcción y actividades recreativas.",
+      "political": {
+        "mayor": "Julio Zamora",
+        "party": "Partido Justicialista (PJ)",
+        "source": "https://www.lanoticiaweb.com.ar/los-nuevos-nombres-de-los-bloques-en-tigre-sin-somos-fuerza-patria-ni-union-por-la-patria/"
+      }
     },
     {
       "locality": "Tres de Febrero",
@@ -228,7 +693,23 @@
         "Comercio y distribución",
         "Construcción e inmobiliario"
       ],
-      "description": "La industria local incluye metalurgia, plásticos, alimentos, textiles y talleres especializados. El municipio cuenta con un Observatorio Productivo y ha impulsado censos industriales para conocer la estructura de las empresas y orientar políticas públicas."
+      "description": "La industria local incluye metalurgia, plásticos, alimentos, textiles y talleres especializados. El municipio cuenta con un Observatorio Productivo y ha impulsado censos industriales para conocer la estructura de las empresas y orientar políticas públicas.",
+      "political": {
+        "mayor": "Diego Valenzuela",
+        "party": "La Libertad Avanza",
+        "council": [
+          [
+            "La Libertad Avanza",
+            15
+          ],
+          [
+            "Fuerza Patria",
+            9
+          ]
+        ],
+        "source": "https://www.tresdefebrero.gov.ar/wp-content/uploads/2026/BOLETIN-WEB-2026.pdf",
+        "checked": "2026-11-25"
+      }
     },
     {
       "locality": "Vicente López",
@@ -238,7 +719,12 @@
         "Comercio y distribución",
         "Salud y educación"
       ],
-      "description": "Su estructura combina servicios empresariales, tecnología, salud, educación, comercio e industria. Las pymes suelen operar en actividades de mayor especialización, servicios a empresas, manufacturas y soluciones tecnológicas."
+      "description": "Su estructura combina servicios empresariales, tecnología, salud, educación, comercio e industria. Las pymes suelen operar en actividades de mayor especialización, servicios a empresas, manufacturas y soluciones tecnológicas.",
+      "political": {
+        "mayor": "Soledad Martínez",
+        "party": "PRO",
+        "source": "https://www.hcdvlopez.gob.ar/post/juraron-los-nuevos-concejales-electos-en-vicente-l%25C3%25B3pez"
+      }
     }
   ],
   "cases": [
@@ -308,5 +794,7 @@
       "name": "Provincia de Buenos Aires · Herramientas para mipymes",
       "url": "https://www.gba.gob.ar/produccion/herramientas_mipymes"
     }
-  ]
+  ],
+  "politicalDataUpdatedAt": "2026-11-25",
+  "politicalMethodology": "Intendencias: titular y pertenencia partidaria reportada por fuentes institucionales y periodísticas. Concejos: distribución de bancas por bloque según fuentes públicas consultadas. Las denominaciones locales se preservan. Cuando no hay composición verificable, no se estima ni se inventa."
 }
