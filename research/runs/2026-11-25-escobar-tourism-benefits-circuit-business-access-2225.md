@@ -81,3 +81,12 @@ Principio aplicado: registrar una invitación comercial realmente publicada y ma
 - La validación previa del perfil territorial, el parseo JSON y la lectura de la estructura del nuevo registro habían pasado.
 - Se corrigió únicamente el identificador local de la nueva prueba a `tourismProfileRenderer`; no se alteraron datos ni la implementación del programa.
 - Los pasos posteriores fueron omitidos por el fallo temprano. La nueva ejecución debe confirmar el test económico y el resto del workflow.
+
+
+## 9. Resultado de la ejecución posterior a la corrección
+
+- GitHub Actions #729, run ID `45736158256`, commit `0bcfbcc015cee5a64f55bd7562f56814c09a7943`.
+- El test `Test Escobar economic profile and company evidence` pasó después de renombrar la variable duplicada.
+- El job general `validate` volvió a fallar más adelante en `Check public entry point`, en la comprobación `grep -q 'docs/intelligence-modules-roadmap.md' README.md`. La ejecución #727, anterior a esta mejora y sobre cambios de Radar Norte, ya mostraba el mismo fallo. No se atribuye a los archivos de Escobar ni se modifica documentación general fuera del alcance de este módulo.
+- El job `deploy` quedó `skipped` porque depende de la validación general. El nuevo contenido no se considera publicado en GitHub Pages.
+- La apertura HTTP independiente de Foco Escobar no pudo verificarse desde este entorno.
