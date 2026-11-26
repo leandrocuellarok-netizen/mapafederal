@@ -1444,5 +1444,42 @@
       "scope": "Se verificó la feature Retiro de la línea Mitre / ramal Retiro–Tigre y sus coordenadas en el GeoJSON oficial del GCBA (CRS84). El aviso oficial de Trenes Argentinos del 24/11/2026 informa el retorno a frecuencias habituales de los ramales con cabecera Retiro desde esa fecha. No se infiere operación en tiempo real ni se representa el acceso o perímetro de la estación."
     },
     "coordinateQuality": "Punto geográfico de estación publicado por el GCBA en GeoJSON CRS84; la fuente no declara método de captura ni precisión posicional. No es un levantamiento catastral."
+  },
+  {
+    "id": "corrientes-aeropuerto-internacional-doctor-fernando-piragine-niveyro-sarc",
+    "name": "Aeropuerto Internacional Doctor Fernando Piragine Niveyro (SARC)",
+    "province": "Corrientes",
+    "locality": "Corrientes",
+    "type": "Aeropuerto",
+    "coords": [
+      -27.445,
+      -58.76166667
+    ],
+    "note": "ARP publicado por ANAC en el Suplemento AIP A 30/2024; el AIP AIRAC 01/26 transcrito por una fuente secundaria lo identifica como centro geométrico de pista calculado en gabinete. No representa acceso, terminal ni perímetro. No se infieren vuelos comerciales ni NOTAM en tiempo real.",
+    "source": "https://ais.anac.gob.ar/descarga/sup-65f10716957fb",
+    "sourceName": "Administración Nacional de Aviación Civil (ANAC)",
+    "sourcePublishedAt": "2024-03-12",
+    "sourcePublicationNote": "Suplemento AIP A 30/2024, AD Corrientes (CRR/SARC), actualización permanente del AIP Vol. II (AD); reemplaza las cartas del aeródromo.",
+    "sourceRecordId": "AIP Argentina, Suplemento A 30/2024, AD 2.A1, plano de aeródromo OACI SARC.",
+    "coordinateSource": "https://ais.anac.gob.ar/descarga/sup-65f10716957fb",
+    "coordinateSourceName": "ANAC — Suplemento AIP A 30/2024, plano de aeródromo OACI, AD 2.A1.",
+    "coordinateSourcePublishedAt": "2024-03-12",
+    "coordinateSourcePublicationNote": "Publica el ARP 27°26'42\"S 058°45'42\"W. La transcripción secundaria del AIP AIRAC 01/26 lo identifica como centro geométrico de pista y aclara que fue calculado en gabinete.",
+    "coordinateReferenceSystem": "Coordenadas geográficas del ARP publicadas en AIP; el suplemento no explicita datum/CRS para ese campo. No se asigna EPSG. La carta publica WGS84 para coordenadas de umbrales, pero esa declaración no se extiende al ARP sin especificación expresa.",
+    "coordinateTransformation": "Conversión aritmética de grados, minutos y segundos a grados decimales; sin transformación de datum ni reproyección.",
+    "statusSource": "https://www.argentina.gob.ar/corrientes/llegar",
+    "statusSourceName": "Argentina.gob.ar — Cómo llegar a Corrientes, sección Conectividad aérea.",
+    "statusSourcePublishedAt": null,
+    "additionalStatusSource": "https://aerocartas.com/argentina/aeropuertos/sarc/aip/",
+    "additionalStatusSourceName": "Aerocartas — transcripción secundaria del AIP ANAC AIRAC 01/26, vigente desde 2026-06-11.",
+    "additionalStatusSourcePublishedAt": "2026-06-11",
+    "administrativeStatus": "Argentina.gob.ar identifica al Piragine Niveyro como el aeropuerto que centraliza el tráfico aéreo de la provincia. La transcripción secundaria del AIP AIRAC 01/26 registra el aeródromo controlado, con tránsito IFR/VFR y horarios ATS publicados; esto no acredita programación comercial vigente.",
+    "validityPeriod": "Coordenada ARP según AIP Suplemento A 30/2024; datos de servicios según transcripción secundaria del AIP AIRAC 01/26, vigente desde 2026-06-11. Sin verificación de NOTAM en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "Se verificó el ARP en el Suplemento AIP ANAC A 30/2024 (AD 2.A1), donde figura 27°26'42\"S 058°45'42\"W. La transcripción secundaria del AIP AIRAC 01/26, vigente desde 11/06/2026, lo identifica como controlado IFR/VFR con horarios ATS. Argentina.gob.ar confirma que centraliza el tráfico aéreo provincial y Vialidad Nacional documentó obras viales en inmediaciones del aeropuerto en septiembre de 2026. No se infieren frecuencias comerciales ni estado NOTAM en tiempo real. La coordenada ARP se presenta como referencia calculada en gabinete, no como levantamiento geodésico."
+    },
+    "coordinateQuality": "ARP publicado por ANAC como referencia del aeródromo; la transcripción del AIP vigente lo marca como calculado en gabinete. No es acceso ni perímetro y el datum/CRS del ARP no está explicitado."
   }
 ]
