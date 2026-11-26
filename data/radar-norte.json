@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-25",
+  "scope": "Exclusivamente información con localización explícita en los municipios y la unidad territorial definidos para Radar Norte. No se incorporan noticias nacionales, provinciales generales ni internacionales.",
+  "groups": [
+    {
+      "id": "urban",
+      "name": "Norte urbano consolidado",
+      "jurisdictions": [
+        "Vicente López",
+        "San Isidro",
+        "San Fernando"
+      ]
+    },
+    {
+      "id": "residential",
+      "name": "Norte residencial y turístico",
+      "jurisdictions": [
+        "Tigre",
+        "Nordelta"
+      ],
+      "note": "Nordelta se analiza por separado, dentro del municipio de Tigre."
+    },
+    {
+      "id": "industrial",
+      "name": "Norte industrial y logístico",
+      "jurisdictions": [
+        "Pilar",
+        "Escobar"
+      ]
+    },
+    {
+      "id": "metro",
+      "name": "Norte metropolitano y comercial",
+      "jurisdictions": [
+        "General San Martín",
+        "Malvinas Argentinas",
+        "San Miguel",
+        "José C. Paz"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "news-www-zonanortediario-com-ar-24-11-2026-mas-de-270-empresas-y-entidades-participaron-de-una-nueva-ronda-de-negocios-en-escobar",
+      "title": "Escobar reunió a 277 empresas y entidades en una ronda multisectorial de negocios",
+      "date": "2026-11-24",
+      "summary": "La cobertura local informó 277 empresas y entidades inscriptas, 72 de Escobar, más de 350 asistentes y 33 ramas productivas en la Ronda de Negocios realizada en Espacio Mendoza, Ingeniero Maschwitz. La Provincia confirma oficialmente la fecha y sede. No se informan contratos cerrados ni inversiones comprometidas.",
+      "source": "Zona Norte Diario Online",
+      "url": "https://www.zonanortediario.com.ar/24/11/2026/mas-de-270-empresas-y-entidades-participaron-de-una-nueva-ronda-de-negocios-en-escobar/",
+      "period": "Evento realizado el 24/11/2026. La agenda oficial de PBA confirma fecha y sede; la cobertura local aporta las cifras de participación, que no se localizaron en un comunicado oficial de resultados al corte.",
+      "jurisdiction": "Escobar",
+      "category": "Norte industrial y logístico",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-24",
+        "scope": "La página oficial del Ministerio de Producción de PBA lista la Ronda de Negocios Escobar 2026 entre los eventos realizados el 24/11 y confirma Espacio Mendoza, calle Mendoza esquina Av. Independencia, Ingeniero Maschwitz. Las cifras de 277 empresas/entidades, 72 de Escobar, más de 350 asistentes y 33 ramas productivas provienen de Zona Norte Diario (24/11); no se localizaron en un comunicado oficial de resultados al corte. La agenda oficial consigna 8:30 y el portal de inscripción 11:30; se omite la hora por discrepancia. No se infieren negocios concretados ni inversión comprometida."
+      },
+      "geographyEvidence": [
+        "Espacio Mendoza, Ingeniero Maschwitz, Partido de Escobar, Provincia de Buenos Aires"
+      ],
+      "relatedSources": [
+        {
+          "label": "Provincia de Buenos Aires — agenda oficial de Rondas de Negocios (evento realizado)",
+          "url": "https://gba.gob.ar/produccion/ronda_de_negocios"
+        },
+        {
+          "label": "Portal de Rondas de Negocios PBA — ficha del evento Escobar 2026",
+          "url": "https://rondadenegocios.mp.gba.gob.ar/"
+        }
+      ]
+    },
+    {
+      "id": "news-boletinoficial-gba-gob-ar-secciones-14526-ver",
+      "title": "El Boletín Oficial publicó un aviso de transferencia comercial en Belén de Escobar",
+      "date": "2026-11-24",
+      "summary": "La edición 14526 del Boletín Oficial bonaerense incluyó un aviso de transferencia de un fondo de comercio del rubro carnicería y granja en Belén de Escobar. El aviso está publicado por cinco días y consigna «nov. 20 v. nov. 27». No se identificó una marca comercial y la publicación no acredita que la transferencia se haya completado ni que el local continúe operando. Se omiten datos personales de las partes.",
+      "source": "Boletín Oficial de la Provincia de Buenos Aires",
+      "url": "https://boletinoficial.gba.gob.ar/secciones/14526/ver",
+      "period": "Aviso de cinco días; el ejemplar fechado 24/11/2026 consigna «nov. 20 v. nov. 27». No se verificó el cierre de la operación.",
+      "jurisdiction": "Escobar",
+      "category": "Norte industrial y logístico",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-25",
+        "scope": "Se revisó la edición 14526 del Boletín Oficial bonaerense, fechada 24/11/2026, página 83. El aviso «POR 5 DÍAS» describe la transferencia de un fondo de comercio del rubro carnicería y granja en «Las Orquideas1643», Belén de Escobar; la dirección se conserva como aparece en la fuente, sin normalizar grafía ni espaciado. Se omiten nombres, DNI y CUIT de particulares. No se verificó la conclusión de la transferencia, habilitación ni operación actual. Es un aviso legal, no una vacante ni una oportunidad de inversión."
+      },
+      "geographyEvidence": [
+        "Las Orquideas1643, Belén de Escobar, partido de Escobar, Provincia de Buenos Aires (transcripción literal del aviso; grafía y espaciado no normalizados)"
+      ],
+      "relatedSources": []
+    },
+    {
+      "id": "news-eldiadeescobar-com-ar-maschwitz-marcho-contra-la-instalacion-de-una-planta-de-baterias-de-litio",
+      "title": "Vecinos de Ingeniero Maschwitz reclamaron relocalizar el proyecto BESS",
+      "date": "2026-11-22",
+      "summary": "La movilización vecinal del 21/11 reunió a residentes que reclamaron trasladar la planta de baterías de Genneia a una zona industrial. Las coberturas locales describen inquietudes por la cercanía a viviendas, seguridad y ambiente; son reclamos, no conclusiones técnicas ni una decisión administrativa. El Municipio había informado trabajos preliminares para un sistema de 40 MW y hasta cinco horas de refuerzo. La jurisdicción del predio sigue sin conciliarse entre la comunicación municipal y el EIAS.",
+      "source": "El Día de Escobar",
+      "url": "https://eldiadeescobar.com.ar/maschwitz-marcho-contra-la-instalacion-de-una-planta-de-baterias-de-litio/",
+      "period": "Movilización vecinal realizada el 21/11/2026; cobertura publicada por El Día de Escobar el 22/11 y por Redacción Norte el 24/11. No se informa una decisión administrativa posterior.",
+      "jurisdiction": "Escobar",
+      "category": "Norte industrial y logístico",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-24",
+        "scope": "Se revisó la cobertura de El Día de Escobar publicada el 22/11 y una cobertura complementaria de Redacción Norte publicada el 24/11: ambas describen una movilización vecinal el 21/11 y reclamos de relocalización. La comunicación municipal del 03/11 confirma el proyecto, 40 MW, hasta cinco horas de refuerzo y trabajos preliminares. Las preocupaciones sobre incendio, gases, evacuación y proximidad residencial se atribuyen a residentes; no se presentan como conclusiones técnicas. Los recuentos de firmas publicados por distintos medios no se reproducen porque no se verificó el registro primario. No se constató suspensión, relocalización, resolución administrativa ni nueva licencia."
+      },
+      "geographyEvidence": [
+        "Ingeniero Maschwitz, Partido de Escobar; predio señalado sobre calle Brasil, próximo a la Ruta Provincial 26."
+      ],
+      "relatedSources": [
+        {
+          "label": "Municipalidad de Escobar — características y trabajos preliminares del BESS (03/11/2026)",
+          "url": "https://www.escobar.gob.ar/noticias/ingeniero-maschwitz-suma-una-nueva-planta-de-almacenamiento-electrico-/"
+        },
+        {
+          "label": "Redacción Norte — cobertura complementaria de la movilización (24/11/2026)",
+          "url": "https://www.redaccionnorte.com.ar/maschwitz-se-movilizo-contra-la-instalacion-de-la-planta-de-baterias-de-litio-cientos-de-vecinos-exigieron-su-reubicacion/"
+        }
+      ]
+    },
+    {
+      "id": "news-poderlocal-com-ar-2026-11-20-escobar-las-tasas-municipales-de-2027-aumentaran-64-por-encima-de-la-inflacion",
+      "title": "Escobar: las ordenanzas fiscales 2027 avanzaron en el HCD y esperan la Asamblea de Mayores Contribuyentes",
+      "date": "2026-11-20",
+      "summary": "El paquete Fiscal y Tributario 2027 recibió aprobación del Concejo Deliberante en su 12.ª sesión ordinaria, pero todavía requiere tratamiento en la Asamblea de Concejales y Mayores Contribuyentes, informada para el 27/11/2026 a las 18:00. El proyecto incluye la eliminación propuesta de 52 conceptos tributarios y un presupuesto municipal proyectado de ARS 410.000 millones. Hasta la sanción definitiva, no debe presentarse como régimen vigente.",
+      "source": "Poder Local",
+      "url": "https://poderlocal.com.ar/2026/11/20/escobar-las-tasas-municipales-de-2027-aumentaran-64-por-encima-de-la-inflacion/",
+      "period": "Ejercicio fiscal 2027; aprobación en HCD informada el 16/11/2026 y Asamblea prevista para el 27/11/2026.",
+      "jurisdiction": "Escobar",
+      "category": "Norte industrial y logístico",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-24",
+        "scope": "Contraste editorial entre Poder Local (20/11/2026), El Diario de Escobar (16/11/2026) y el anuncio oficial municipal del 02/11/2026. El estado legislativo posterior al HCD se apoya en fuentes periodísticas locales; no se localizó aún la ordenanza promulgada ni el acta definitiva de la Asamblea. No se presenta como norma vigente."
+      },
+      "geographyEvidence": [
+        "Partido de Escobar, Provincia de Buenos Aires"
+      ],
+      "relatedSources": [
+        {
+          "label": "El Diario de Escobar — aprobación en el HCD y etapa pendiente",
+          "url": "https://eldiariodeescobar.com.ar/article/el-concejo-deliberante-de-escobar-aprobo-la-fiscal-y-tributaria-2027-y-creo-un-fondo-para-entidades-de-bien-publico"
+        },
+        {
+          "label": "Municipalidad de Escobar — proyecto de Presupuesto 2027",
+          "url": "https://www.escobar.gob.ar/noticias/presupuesto-2027-con-la-supresion-de-otros-52-tributos-ariel-sujarchuk/"
+        }
+      ]
+    },
+    {
+      "id": "news-boletinoficial-gba-gob-ar-secciones-14520-ver",
+      "title": "Escobar publicó tres licitaciones de suministros y servicios con aperturas en diciembre",
+      "date": "2026-11-19",
+      "summary": "El Boletín Oficial bonaerense publicó las LP 71/26 (piedra partida, presupuesto oficial ARS 644,2 millones), 72/26 (cascote, ARS 700,5 millones) y 75/26 (fumigación y control de vectores, ARS 1.400 millones). Las LP 71 y 72 abren el 11 de diciembre; consultas 1–2/12 y venta de pliegos 3–4/12. La LP 75 abre el 9/12; consultas 26–27/11 y venta 1–2/12. Presupuestos oficiales, no adjudicaciones.",
+      "source": "Boletín Oficial de la Provincia de Buenos Aires",
+      "url": "https://boletinoficial.gba.gob.ar/secciones/14520/ver",
+      "period": "Convocatorias publicadas el 19/11/2026; cronogramas de diciembre de 2026.",
+      "jurisdiction": "Escobar",
+      "category": "Norte industrial y logístico",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-24",
+        "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
+      },
+      "geographyEvidence": [
+        "Municipalidad de Escobar; aperturas en Belén de Escobar y contratación para el Partido de Escobar."
+      ],
+      "relatedSources": []
+    },
+    {
+      "id": "news-eldiadeescobar-com-ar-una-empresa-escobarense-cerro-cinco-sucursales-y-una-fabrica-por-la-crisis",
+      "title": "Hönecker redujo su operación: desactivó la planta de Garín y frenó una nueva fábrica en Escobar",
+      "date": "2026-11-18",
+      "summary": "El Día de Escobar informó que Hönecker desactivó su planta de Garín, cerró cinco locales comerciales y postergó proyectos de crecimiento en el distrito. La empresa mantiene activa su planta de Ingeniero Maschwitz. Su fundador declaró que la producción de alfajores cayó un 30%; se registra como una declaración empresarial recogida por el medio, no como una serie estadística independiente. El proyecto de una nueva fábrica en Belén de Escobar no llegó a concretarse y el terreno de calle Capello fue puesto en venta. La fuente no detalla la situación laboral individual de las personas que trabajaban en la planta cerrada.",
+      "source": "El Día de Escobar",
+      "url": "https://eldiadeescobar.com.ar/una-empresa-escobarense-cerro-cinco-sucursales-y-una-fabrica-por-la-crisis/",
+      "period": "Situación informada el 18/11/2026; recontrastada con publicaciones de El Cronista (23/11) e iProfesional (24/11).",
+      "jurisdiction": "Escobar",
+      "category": "Norte industrial y logístico",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-24",
+        "scope": "Se revisó la nota local de El Día de Escobar, que recoge declaraciones del fundador, y se contrastaron los hechos centrales con El Cronista e iProfesional. Se verifican el cierre de la planta de Garín, la continuidad de la planta de Ingeniero Maschwitz, el freno del proyecto fabril en Belén de Escobar y la puesta en venta del terreno. La caída del 30% es una declaración atribuida al empresario; no se infieren despidos individuales ni cierre total de la compañía."
+      },
+      "geographyEvidence": [
+        "Partido de Escobar, Provincia de Buenos Aires: Garín, Ingeniero Maschwitz y Belén de Escobar."
+      ],
+      "relatedSources": [
+        {
+          "label": "El Cronista — cobertura del 23/11/2026",
+          "url": "https://www.cronista.com/negocios/una-conocida-marca-de-alfajores-en-su-hora-mas-amarga-de-7000-unidades-por-hora-al-frenazo-de-su-gran-sueno/"
+        },
+        {
+          "label": "iProfesional — cobertura del 24/11/2026",
+          "url": "https://www.iprofesional.com/actualidad/469574-reconocida-marca-de-alfajores-cerro-cinco-locales-y-una-fabrica"
+        }
+      ]
+    },
+    {
+      "id": "news-www-escobar-gob-ar-noticias-sujarchuk-y-katopodis-visitaron-importantes-obras-de-infraestructura-e",
+      "title": "Ecosan consolida en Loma Verde una planta de construcción modular industrializada",
+      "date": "2026-11-16",
+      "summary": "La Municipalidad de Escobar informó que la planta de Ecosan en Loma Verde se dedica a la construcción modular industrializada y emplea a más de 180 personas, con prioridad en la contratación de habitantes del distrito. La empresa desarrolla soluciones para viviendas, edificios residenciales y establecimientos comerciales en distintos puntos del país. La cifra de empleo es un dato publicado por el Municipio y no una auditoría de nómina; no se presenta como creación reciente de puestos.",
+      "source": "Municipalidad de Escobar",
+      "url": "https://www.escobar.gob.ar/noticias/sujarchuk-y-katopodis-visitaron-importantes-obras-de-infraestructura-e/",
+      "period": "Visita institucional y descripción de la planta publicadas el 16/11/2026; el dato de empleo corresponde a lo informado por el Municipio en esa fecha.",
+      "jurisdiction": "Escobar",
+      "category": "Norte industrial y logístico",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-24",
+        "scope": "Se revisó la publicación oficial municipal del 16/11/2026. La ubicación, actividad y cifra de más de 180 personas se atribuyen al Municipio; no se verificó una nómina independiente ni se interpreta el dato como puestos nuevos, vacantes o crecimiento interanual."
+      },
+      "geographyEvidence": [
+        "Loma Verde, Partido de Escobar, Provincia de Buenos Aires."
+      ],
+      "relatedSources": [
+        {
+          "label": "LA NACION — inauguración de la planta de Ecosan en Loma Verde, 18/04/2025",
+          "url": "https://www.lanacion.com.ar/economia/negocios/ecosan-inaugura-una-nueva-planta-para-triplicar-la-produccion-nid18042025/"
+        }
+      ]
+    },
+    {
+      "id": "news-boletinoficial-gba-gob-ar-secciones-14505-ver",
+      "title": "Escobar publicó cuatro licitaciones, incluidas dos contrataciones de salud digital",
+      "date": "2026-11-12",
+      "summary": "El Boletín Oficial publicó los segundos llamados LP 61/26 (sistema de laboratorio LIS, presupuesto oficial ARS 330 millones) y LP 62/26 (módulos de IA integrados al SIGHM, ARS 235 millones), ambos con apertura el 19/11. También convocó LP 66/26 (puesta en valor del Polideportivo Maschwitz, ARS 578,1 millones) y LP 69/26 (mobiliario urbano, ARS 2.028,8 millones), con apertura el 30/11. Al 24/11, la venta y consulta de pliegos de estas últimas ya habían vencido. No se verificaron adjudicaciones ni contratos.",
+      "source": "Boletín Oficial de la Provincia de Buenos Aires",
+      "url": "https://boletinoficial.gba.gob.ar/secciones/14505/ver",
+      "period": "Convocatorias publicadas el 12/11/2026; aperturas previstas para 19 y 30/11/2026.",
+      "jurisdiction": "Escobar",
+      "category": "Norte industrial y logístico",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-24",
+        "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
+      },
+      "geographyEvidence": [
+        "Municipalidad de Escobar; contrataciones con sede en Belén de Escobar e Ingeniero Maschwitz."
+      ],
+      "relatedSources": []
+    },
+    {
+      "id": "news-www-escobar-gob-ar-noticias-garin-sumara-una-nueva-planta-industrial-y-fortalecera-su-perfil-produ",
+      "title": "Grupo Addnice proyecta trasladar su planta industrial a Garín en 2027",
+      "date": "2026-11-04",
+      "summary": "La Municipalidad de Escobar informó que Grupo Addnice proyecta trasladar su planta desde Tigre a Garín durante 2027, al predio anteriormente ocupado por Rosen. La empresa fabrica y comercializa calzado e indumentaria deportiva. El anuncio no informa monto de inversión, cronograma detallado ni puestos comprometidos; debe tratarse como proyecto anunciado, no como operación ya iniciada.",
+      "source": "Municipalidad de Escobar",
+      "url": "https://www.escobar.gob.ar/noticias/garin-sumara-una-nueva-planta-industrial-y-fortalecera-su-perfil-produ/",
+      "period": "Traslado proyectado para 2027; sin cronograma exacto publicado.",
+      "jurisdiction": "Escobar",
+      "category": "Norte industrial y logístico",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-24",
+        "scope": "Contraste directo de la publicación institucional municipal del 4 de noviembre de 2026. No se verificaron ejecución, inversión monetaria ni empleo comprometido."
+      },
+      "geographyEvidence": [
+        "Garín, Partido de Escobar, Provincia de Buenos Aires"
+      ],
+      "relatedSources": []
+    },
+    {
+      "id": "news-www-lanacion-com-ar-propiedades-la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026",
+      "title": "Escobar suma cuatro desarrollos comerciales en el corredor de Ingeniero Maschwitz y Loma Verde",
+      "date": "2026-10-29",
+      "summary": "LA NACION relevó cuatro proyectos comerciales en el corredor de Escobar: Black, QUO Loma Verde, Paseo del Haras y Paseo Loma Verde. Los desarrollos combinan locales, gastronomía, entretenimiento, salud, oficinas y vivienda. La inversión publicada para Black es de USD 25 millones; para Paseo del Haras se informaron USD 2,5 millones en el paseo comercial y USD 6 millones en el componente residencial; Paseo Loma Verde supera los USD 6 millones. Para QUO las fuentes consultadas difieren en monto y fecha prevista de apertura, por lo que esos datos no se consolidan. Son proyectos reportados, no oportunidades de capital abiertas ni garantía de demanda o rentabilidad.",
+      "source": "LA NACION",
+      "url": "https://www.lanacion.com.ar/propiedades/la-zona-que-promete-un-boom-se-construyen-cuatro-paseos-comerciales-a-cielo-abierto-que-cambiaran-la-nid26102026/",
+      "period": "Publicación del 29/10/2026; El Cronista actualizó información de QUO y Paseo del Haras el 13/11/2026. Los estados operativos posteriores no fueron verificados.",
+      "jurisdiction": "Escobar",
+      "category": "Norte industrial y logístico",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-24",
+        "scope": "Se revisó LA NACION (29/10/2026) y se contrastó con El Cronista (13/11/2026). Se conservan los importes y etapas atribuidos a los desarrolladores; se omiten los datos de QUO no reconciliados. No se afirma que los proyectos estén terminados, abiertos al público o disponibles para inversión de terceros."
+      },
+      "geographyEvidence": [
+        "Partido de Escobar, Provincia de Buenos Aires: corredor de Ingeniero Maschwitz y Loma Verde."
+      ],
+      "relatedSources": [
+        {
+          "label": "El Cronista — QUO y Paseo del Haras, 13/11/2026",
+          "url": "https://www.cronista.com/negocios/llegan-dos-nuevos-shoppings-a-una-de-las-zonas-estrella-del-gba-y-ponen-la-mira-en-la-costa-atlantica/"
+        }
+      ]
+    },
+    {
+      "id": "news-www-escobar-gob-ar-noticias-mercado-libre-ya-funciona-en-escobar-inversion-de-115-millones-de-dola",
+      "title": "Mercado Libre inauguró su mayor centro de almacenamiento argentino en Escobar",
+      "date": "2026-10-28",
+      "summary": "Mercado Libre inauguró junto a Plaza Logística un centro de almacenamiento en Escobar mediante una inversión conjunta de USD 115 millones. La primera etapa habilitó 40.000 m²; otros 60.000 m² están previstos para marzo de 2027 y el funcionamiento pleno será progresivo durante 2028. La fuente municipal informó 96 incorporaciones iniciales, 48 residentes de Escobar, y proyectó más de 1.300 empleos directos para 2028; esa cifra no es empleo actual.",
+      "source": "Municipalidad de Escobar",
+      "url": "https://www.escobar.gob.ar/noticias/mercado-libre-ya-funciona-en-escobar-inversion-de-115-millones-de-dola/",
+      "period": "Inauguración 28/10/2026; expansión prevista hasta 2028.",
+      "jurisdiction": "Escobar",
+      "category": "Norte industrial y logístico",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-24",
+        "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
+      },
+      "geographyEvidence": [
+        "La fuente municipal ubica el centro de almacenamiento en el Partido de Escobar, Provincia de Buenos Aires."
+      ],
+      "relatedSources": []
+    },
+    {
+      "id": "news-www-escobar-gob-ar-noticias-en-el-dia-de-la-industria-se-anunciaron-nuevas-inversiones-en-escobar",
+      "title": "Escobar anunció ampliaciones industriales en química, biotecnología, farmacéutica y automotriz",
+      "date": "2026-09-03",
+      "summary": "En el Día de la Industria, la Municipalidad informó proyectos de Mapei (depósito de 3.600 m² y automatización), Biogénesis Bagó (infraestructura, planta de antígeno rábico y bioseguridad en Garín), Finadiet (laboratorio de 7.600 m² y más de 150 empleos proyectados al inaugurarse) y Yazaki (ampliación fabril superior a 3.000 m² para producción vinculada a Toyota). Son anuncios municipales: no se publicaron montos ni se verificó su avance. Mercado Libre, mencionado en el mismo acto, fue inaugurado el 28/10/2026.",
+      "source": "Municipalidad de Escobar",
+      "url": "https://www.escobar.gob.ar/noticias/en-el-dia-de-la-industria-se-anunciaron-nuevas-inversiones-en-escobar/",
+      "period": "Anuncios del 03/09/2026; estados de ejecución posteriores no consignados en esta fuente.",
+      "jurisdiction": "Escobar",
+      "category": "Norte industrial y logístico",
+      "verification": {
+        "status": "editorial_reviewed",
+        "checkedAt": "2026-11-24",
+        "scope": "Revisión de la fuente primaria o institucional original y contraste de fechas, alcance y límites declarados. No equivale a una auditoría de ejecución, adjudicación o resultados no publicados."
+      },
+      "geographyEvidence": [
+        "Proyectos empresariales anunciados para el Partido de Escobar; Biogénesis Bagó menciona expresamente su establecimiento de Garín."
+      ],
+      "relatedSources": []
+    }
+  ]
+}
