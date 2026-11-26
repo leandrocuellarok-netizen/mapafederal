@@ -683,7 +683,34 @@
       "political": {
         "mayor": "Julio Zamora",
         "party": "Partido Justicialista (PJ)",
-        "source": "https://www.lanoticiaweb.com.ar/los-nuevos-nombres-de-los-bloques-en-tigre-sin-somos-fuerza-patria-ni-union-por-la-patria/"
+        "source": "https://elconurbano.com.ar/comenzo-el-debate-por-el-presupuesto-2027-en-tigre-una-prueba-para-el-nuevo-mapa-del-concejo/79034/",
+        "council": [
+          [
+            "Frente de Todos",
+            9
+          ],
+          [
+            "Fuerza Tigre",
+            6
+          ],
+          [
+            "La Libertad Avanza Tigre",
+            6
+          ],
+          [
+            "Consolidación Argentina",
+            1
+          ],
+          [
+            "La Libertad Avanza",
+            1
+          ],
+          [
+            "La Libertad Avanza - Avanza Tigre",
+            1
+          ]
+        ],
+        "checked": "2026-11-25"
       }
     },
     {
