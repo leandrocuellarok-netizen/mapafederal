@@ -55,9 +55,10 @@ En ambos casos el marcador representa el ARP publicado por ANAC, definido como c
 
 ## Validación y publicación
 
-- Validación del primer commit: JSON, matriz y JavaScript aprobados en GitHub Actions #765 (ID 45762849612); jobs `validate` y `deploy` completados con éxito. El despliegue de Pages fue aceptado por el job, pero la portada pública y el JSON no pudieron comprobarse independientemente: el acceso web falló y el entorno de red no resolvió el dominio.
-- Este seguimiento añade la advertencia metodológica «calculado en gabinete» a los dos ARP; el workflow posterior a este commit debe volver a validar el catálogo y el despliegue.
-- No se declara confirmación visual de la publicación mientras la URL pública no pueda verificarse.
+- GitHub Actions #765 (ID 45762849612), para la primera incorporación: `validate` y `deploy` completados con éxito.
+- GitHub Actions #766 (ID 45763060834), para el commit final con la aclaración metodológica de ambos ARP: `validate` y `deploy` completados con éxito. [Ver ejecución #766](https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45763060834).
+- El job de GitHub Pages terminó correctamente en ambas ejecuciones. Sin embargo, la portada pública y el JSON publicado no pudieron comprobarse independientemente: la herramienta web devolvió URL inaccesible y el entorno de red falló al resolver el dominio.
+- Por esa limitación, se confirma el job de despliegue, pero no se afirma una verificación visual independiente de la publicación.
 
 ## Próxima prioridad
 
