@@ -1773,5 +1773,42 @@
       "checkedAt": "2026-11-26",
       "scope": "Se incorporó el ARP de SANL publicado por ANAC en el Suplemento AIP A 67/2022: 29°22'50\"S 066°47'45\"W, centro geométrico de pista calculado en gabinete. Se convirtió DMS a decimales sin reproyección; el CRS/datum del ARP no está explicitado y no se asigna EPSG. ANAC documenta tránsito IFR/VFR; una transcripción secundaria del AIRAC 01/26, vigente desde 2026-06-11, indica aeródromo controlado con horarios ATS. No se verificaron NOTAM ni vuelos comerciales en tiempo real."
     }
+  },
+  {
+    "id": "la-pampa-parque-nacional-lihue-calel",
+    "name": "Parque Nacional Lihué Calel",
+    "province": "La Pampa",
+    "district": "Lihuel Calel",
+    "type": "Turismo",
+    "coords": [
+      -37.93488,
+      -65.60471
+    ],
+    "note": "Área protegida nacional de 32.514 ha creada en 1976. SIB/APN publica esta coordenada como ubicación geográfica del parque; se usa como referencia cartográfica, no como acceso ni perímetro. APN documenta recorridos a pie, bicicleta y vehículo, senderos, centro de visitantes y área de acampe; el uso de instalaciones requiere reserva y la disponibilidad de servicios debe confirmarse.",
+    "source": "https://www.argentina.gob.ar/parquesnacionales/regionpatagonia/parque-nacional-lihue-calel",
+    "sourceName": "Administración de Parques Nacionales (APN)",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Ficha institucional consultada el 26/11/2026; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "Ficha institucional APN — Parque Nacional Lihué Calel",
+    "coordinateSource": "https://sib.gob.ar/areas-protegidas/parque-nacional-lihue-calel",
+    "coordinateSourceName": "Sistema de Información de Biodiversidad de la Administración de Parques Nacionales (SIB/APN)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La ficha publica la ubicación geográfica 37°56'05.56\"S (-37.93488), 65°36'16.96\"O (-65.60471); no informa fecha de actualización ni semántica geométrica del punto.",
+    "coordinateReferenceSystem": "Coordenadas geográficas en grados decimales publicadas por SIB/APN; datum y CRS no especificados. No se atribuye EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron los valores decimales publicados por SIB/APN; no se realizó geocodificación ni reproyección.",
+    "statusSource": "https://www.argentina.gob.ar/node/471952",
+    "statusSourceName": "APN — Recorrer el Parque Nacional Lihué Calel",
+    "statusSourcePublishedAt": null,
+    "additionalStatusSource": "https://www.argentina.gob.ar/parquesnacionales/regionpatagonia/parque-nacional-lihue-calel/servicios",
+    "additionalStatusSourceName": "APN — Servicios del Parque Nacional Lihué Calel",
+    "additionalStatusSourcePublishedAt": null,
+    "administrativeStatus": "Parque Nacional creado en 1976 y administrado por APN. La autoridad publica recorridos a pie, bicicleta y vehículo, senderos, centro de visitantes y área de acampe. Para el uso de instalaciones de acampe se requiere reserva; la disponibilidad de proveeduría y las condiciones de acceso pueden variar.",
+    "validityPeriod": "Área protegida establecida por Decreto 609/76; fichas y servicios institucionales consultados el 26/11/2026. No se verificó acceso en tiempo real ni estado de senderos el día de visita.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "Se contrastó provincia, departamento, creación y coordenada geográfica en la ficha SIB/APN con la ficha institucional y las páginas APN de recorrido y servicios. La coordenada se usa únicamente como referencia cartográfica del área protegida; la fuente no define si corresponde a acceso, centroide o punto interno. No representa acceso ni perímetro. Verificación documental, no presencial ni en tiempo real."
+    },
+    "coordinateQuality": "Punto de referencia oficial publicado por SIB/APN. La fuente no declara si representa acceso, centroide o punto interno; no se presenta como acceso ni como geometría del límite."
   }
 ]
