@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T02:35:00-03:00",
+  "generatedAt": "2026-11-26T02:39:23-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "e260ce88eff0e264d2a71bf4be6c4f85db51f446",
+  "catalogCommit": "909b58a09da6419796b745b35da6727adebd9521",
   "nodeCount": 90,
   "jurisdictionCount": 24,
   "categories": [
