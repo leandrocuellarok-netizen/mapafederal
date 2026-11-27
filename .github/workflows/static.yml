@@ -615,7 +615,7 @@ jobs:
           coverage = json.loads(Path("research/national-map-coverage.json").read_text(encoding="utf-8"))
           assert coverage.get("catalogPath") == "data/strategic-nodes.json"
           assert coverage.get("nodeCount") == len(nodes)
-          assert coverage.get("nodeCount") == 125, "El catálogo nacional debe contener 125 nodos en esta revisión"
+          assert coverage.get("nodeCount") == 126, "El catálogo nacional debe contener 126 nodos en esta revisión"
           ibera = next((node for node in nodes if node.get("id") == "corrientes-turismo-parque-nacional-ibera"), None)
           assert ibera is not None and ibera["province"] == "Corrientes" and ibera["type"] == "Turismo"
           assert ibera["coords"] == [-27.93238, -56.93083]
@@ -687,7 +687,8 @@ jobs:
           el_pantanillo = next((item for item in coverage.get("pendingCandidates", []) if item.get("name") == "Parque Industrial El Pantanillo"), None)
           assert el_pantanillo is not None and el_pantanillo["decision"] == "not_added"
           la_rioja_row = next(row for row in coverage_rows if row["province"] == "La Rioja")
-          assert la_rioja_row["total"] == 4 and la_rioja_row["byType"]["Aeropuerto"] == 1 and la_rioja_row["byType"]["Turismo"] == 1
+          assert la_rioja_row["total"] == 5 and la_rioja_row["byType"]["Aeropuerto"] == 1 and la_rioja_row["byType"]["Turismo"] == 1 and la_rioja_row["byType"]["Recurso mineral"] == 1
+          assert "Recurso mineral" not in la_rioja_row["missingCategories"]
           assert "Turismo" not in la_rioja_row["missingCategories"]
           assert "Aeropuerto" not in la_rioja_row["missingCategories"]
           assert coverage["categoryTotals"]["Aeropuerto"] == 25
@@ -763,7 +764,7 @@ jobs:
           assert "precisión de minuto" in laguna_blanca_candidate["reason"]
           noa = next(region for region in coverage["regions"] if region["name"] == "NOA")
           assert noa["nodeCount"] == 15 and noa["coveredJurisdictions"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "NEA" and coverage["regionalRotation"]["nextTarget"] == "Cuyo"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Cuyo" and coverage["regionalRotation"]["nextTarget"] == "Centro"
           formosa_reserve = next((node for node in nodes if node.get("id") == "formosa-turismo-reserva-natural-formosa"), None)
           assert formosa_reserve is not None and formosa_reserve["province"] == "Formosa" and formosa_reserve["type"] == "Turismo"
           assert formosa_reserve["district"] == "Bermejo"
@@ -919,6 +920,15 @@ jobs:
           assert "no como acceso" in veladero["coordinateQuality"].lower()
           assert veladero["statusSource"] == "https://veladero.com/home"
           assert veladero["verification"]["checkedAt"] == "2026-11-26"
+          los_corrales = next((node for node in nodes if node.get("id") == "la-rioja-recurso-mineral-los-corrales-playa-amarilla-au-11278"), None)
+          assert los_corrales is not None and los_corrales["province"] == "La Rioja" and los_corrales["district"] == "Famatina" and los_corrales["type"] == "Recurso mineral"
+          assert los_corrales["coords"] == [-28.82805, -67.65972] and los_corrales["status"] == "no_verificado"
+          assert los_corrales["source"] == "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp11278.html"
+          assert los_corrales["coordinateSource"] == los_corrales["source"] and los_corrales["sourcePublishedAt"] == "2026-07-13"
+          assert los_corrales["coordinateReferenceSystem"].startswith("Coordenadas geográficas") and "no se asigna epsg" in los_corrales["coordinateReferenceSystem"].lower()
+          assert "productor" in los_corrales["administrativeStatus"].lower() and "no acredita extracción" in los_corrales["administrativeStatus"].lower()
+          assert "no como acceso" in los_corrales["coordinateQuality"].lower() and "ni perímetro" in los_corrales["coordinateQuality"].lower()
+          assert los_corrales["verification"]["checkedAt"] == "2026-11-27"
           el_palmar = next((node for node in nodes if node.get("id") == "entre-rios-turismo-parque-nacional-el-palmar"), None)
           assert el_palmar is not None and el_palmar["province"] == "Entre Ríos" and el_palmar["district"] == "Colón" and el_palmar["type"] == "Turismo"
           assert el_palmar["coords"] == [-31.88216, -58.25668] and el_palmar["status"] == "operativo"
@@ -964,8 +974,8 @@ jobs:
           patagonia = next(region for region in coverage["regions"] if region["name"] == "Patagonia")
           assert patagonia["nodeCount"] == 25 and patagonia["coveredJurisdictions"] == 5
           assert coverage["categoryTotals"]["Industria"] == 17
-          assert coverage["regionalRotation"]["lastTargeted"] == "NEA" and coverage["regionalRotation"]["nextTarget"] == "Cuyo"
-          assert coverage["catalogCommit"] == "3edcf80d95eb223df3fe67a2af5a3a1290202dd0"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Cuyo" and coverage["regionalRotation"]["nextTarget"] == "Centro"
+          assert coverage["catalogCommit"] == "9cd645e7a8734eac0c281231bfada19f6ec083b1"
           copo = next((node for node in nodes if node.get("id") == "santiago-del-estero-turismo-parque-nacional-copo"), None)
           assert copo is not None and copo["province"] == "Santiago del Estero" and copo["district"] == "Copo" and copo["type"] == "Turismo"
           assert copo["coords"] == [-25.82089, -61.88005] and copo["status"] == "operativo"
@@ -988,7 +998,7 @@ jobs:
           assert cordoba_row["total"] == 4 and cordoba_row["byType"]["Estación ferroviaria"] == 1
           assert "Estación ferroviaria" not in cordoba_row["missingCategories"]
           assert coverage["categoryTotals"]["Estación ferroviaria"] == 8
-          assert coverage["regionalRotation"]["lastTargeted"] == "NEA" and coverage["regionalRotation"]["nextTarget"] == "Cuyo"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Cuyo" and coverage["regionalRotation"]["nextTarget"] == "Centro"
 
           entre_rios = next(row for row in coverage_rows if row["province"] == "Entre Ríos")
           assert entre_rios["total"] == 4 and entre_rios["byType"]["Turismo"] == 1
@@ -996,8 +1006,8 @@ jobs:
           centro = next(region for region in coverage["regions"] if region["name"] == "Centro")
           assert centro["nodeCount"] == 17 and centro["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Turismo"] == 22
-          assert coverage["regionalRotation"]["lastTargeted"] == "NEA" and coverage["regionalRotation"]["nextTarget"] == "Cuyo"
-          assert coverage["catalogCommit"] == "3edcf80d95eb223df3fe67a2af5a3a1290202dd0"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Cuyo" and coverage["regionalRotation"]["nextTarget"] == "Centro"
+          assert coverage["catalogCommit"] == "9cd645e7a8734eac0c281231bfada19f6ec083b1"
           san_juan = next(row for row in coverage_rows if row["province"] == "San Juan")
           assert san_juan["total"] == 4 and san_juan["byType"]["Recurso mineral"] == 1
           assert "Recurso mineral" not in san_juan["missingCategories"]
@@ -1021,8 +1031,8 @@ jobs:
           assert "116.083 habitantes" in santa_rosa["administrativeStatus"] and "Censo 2022" in santa_rosa["administrativeStatus"]
           assert santa_rosa["verification"]["checkedAt"] == "2026-11-27"
           assert coverage["categoryTotals"]["Ciudad"] == 9
-          assert coverage["regionalRotation"]["lastTargeted"] == "NEA" and coverage["regionalRotation"]["nextTarget"] == "Cuyo"
-          assert coverage["catalogCommit"] == "3edcf80d95eb223df3fe67a2af5a3a1290202dd0"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Cuyo" and coverage["regionalRotation"]["nextTarget"] == "Centro"
+          assert coverage["catalogCommit"] == "9cd645e7a8734eac0c281231bfada19f6ec083b1"
           la_pampa = next(row for row in coverage_rows if row["province"] == "La Pampa")
           assert la_pampa["total"] == 4 and la_pampa["byType"]["Ciudad"] == 1
           assert "Ciudad" not in la_pampa["missingCategories"]
@@ -1032,10 +1042,10 @@ jobs:
           assert san_luis["total"] == 4 and san_luis["byType"]["Turismo"] == 1
           assert "Turismo" not in san_luis["missingCategories"]
           cuyo = next(region for region in coverage["regions"] if region["name"] == "Cuyo")
-          assert cuyo["nodeCount"] == 16 and cuyo["coveredJurisdictions"] == 4
-          assert coverage["categoryTotals"]["Recurso mineral"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "NEA" and coverage["regionalRotation"]["nextTarget"] == "Cuyo"
-          assert coverage["catalogCommit"] == "3edcf80d95eb223df3fe67a2af5a3a1290202dd0"
+          assert cuyo["nodeCount"] == 17 and cuyo["coveredJurisdictions"] == 4
+          assert coverage["categoryTotals"]["Recurso mineral"] == 6
+          assert coverage["regionalRotation"]["lastTargeted"] == "Cuyo" and coverage["regionalRotation"]["nextTarget"] == "Centro"
+          assert coverage["catalogCommit"] == "9cd645e7a8734eac0c281231bfada19f6ec083b1"
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"

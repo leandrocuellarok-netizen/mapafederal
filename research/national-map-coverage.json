@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T19:31:21-03:00",
+  "generatedAt": "2026-11-27T20:39:34-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "3edcf80d95eb223df3fe67a2af5a3a1290202dd0",
-  "nodeCount": 125,
+  "catalogCommit": "9cd645e7a8734eac0c281231bfada19f6ec083b1",
+  "nodeCount": 126,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -48,7 +48,7 @@
         "San Juan",
         "San Luis"
       ],
-      "nodeCount": 16,
+      "nodeCount": 17,
       "coveredJurisdictions": 4
     },
     {
@@ -349,7 +349,7 @@
     {
       "province": "La Rioja",
       "region": "Cuyo",
-      "total": 4,
+      "total": 5,
       "byType": {
         "Ciudad": 0,
         "Puerto": 0,
@@ -357,7 +357,7 @@
         "Paso fronterizo": 1,
         "Logística": 0,
         "Industria": 1,
-        "Recurso mineral": 0,
+        "Recurso mineral": 1,
         "Turismo": 1,
         "Estación ferroviaria": 0
       },
@@ -365,7 +365,6 @@
         "Ciudad",
         "Puerto",
         "Logística",
-        "Recurso mineral",
         "Estación ferroviaria"
       ]
     },
@@ -667,7 +666,7 @@
     "Paso fronterizo": 13,
     "Logística": 4,
     "Industria": 17,
-    "Recurso mineral": 5,
+    "Recurso mineral": 6,
     "Turismo": 22,
     "Estación ferroviaria": 8
   },
@@ -708,9 +707,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NEA",
-    "nextTarget": "Cuyo",
-    "note": "Ejecución del 27/11/2026 en Formosa (NEA), priorizada por su empate en el mínimo de cobertura. Se incorporó el Puente Internacional San Ignacio de Loyola como Paso fronterizo: el Ministerio de Seguridad publica las coordenadas del sitio (25°15′51,4″S, 57°43′28″O), convertidas aritméticamente a grados decimales; la Dirección Nacional de Migraciones incluye el cruce entre las vías en funcionamiento y publica horario de 24 h. La ficha oficial identifica Clorinda–José Falcón y registra actualización de Gendarmería Nacional del 26/11/2026. El punto es una referencia del cruce, no un límite internacional certificado ni perímetro aduanero; no se verifican demoras o interrupciones en tiempo real. Formosa pasa de 3 a 4 nodos; NEA de 15 a 16; Paso fronterizo de 12 a 13. El Parque Industrial de Formosa permanece pendiente: hay evidencia de actividad industrial, pero no geometría o coordenada exacta atribuible. La próxima región de la rotación es Cuyo."
+    "lastTargeted": "Cuyo",
+    "nextTarget": "Centro",
+    "note": "Ejecución del 27/11/2026 en La Rioja (Cuyo), priorizada por la brecha de Recurso mineral. Se incorporó el depósito Los Corrales - Playa Amarilla (SEGEMAR 11278): la base actualizada el 13/07/2026 publica localización -28.82805, -67.65972, oro (Au), tipo placer, tamaño pequeño y estado «productor». Esa clasificación no acredita extracción vigente; el catálogo conserva status=no_verificado. La coordenada se copió sin transformación; datum/CRS y semántica geométrica no declarados. El marcador representa la localización del depósito, no un acceso ni un perímetro. La Rioja pasa de 4 a 5 nodos; Cuyo de 16 a 17; Recurso mineral de 5 a 6. El mínimo nacional permanece en 5 jurisdicciones con 3 nodos: Catamarca, Jujuy, Salta, Santiago del Estero y Tucumán. La próxima región de la rotación es Centro."
   },
   "pendingCandidates": [
     {
@@ -977,6 +976,7 @@
     "Viedma (Río Negro) se incorporó como referencia urbana de Ciudad con la coordenada central publicada por el Gobierno provincial en el Catálogo de Locaciones Río Negro 2026, p. 22. No se asigna datum/CRS ni EPSG; el punto identifica el sector del casco histórico y edificios administrativos alrededor de Plaza Alsina, no el centroide de la ciudad ni un límite administrativo.",
     "El Parque Nacional Copo (Santiago del Estero) usa la ubicación geográfica decimal publicada por SIB/APN: -25.82089, -61.88005, departamento Copo, creación 2000 y superficie 118.119 ha. La ficha no declara datum/CRS ni define si el punto corresponde a acceso, centroide o punto interno; se conserva como referencia general del área protegida, no como acceso, centroide certificado ni perímetro. APN publica apertura diaria de 7 a 15 h y accesos por RN 16; no se verificó apertura efectiva ni transitabilidad en tiempo real.",
     "La Estación Tucumán (Mitre) se incorporó como nodo ferroviario porque Trenes Argentinos identifica la terminal en su ficha oficial Buenos Aires–Tucumán y enlaza un pin de Google Maps con coordenadas decimales. Google Maps se identifica como fuente secundaria; no declara datum/CRS ni precisión. El punto se conserva como referencia de la estación, no como andén, acceso específico ni perímetro. La ficha oficial publica trenes dos veces por semana; no se verificaron calendario puntual, cancelaciones ni operación en tiempo real.",
-    "El Puente Internacional San Ignacio de Loyola (Formosa) usa las coordenadas del sitio Puente Loyola publicadas por el Ministerio de Seguridad en el Boletín de las Fronteras Argentinas N.º 2 (junio de 2021): 25°15′51,4″S, 57°43′28″O. Se convirtieron DMS a grados decimales sin reproyección; datum/CRS no declarados. El marcador es una referencia del cruce y no representa el eje exacto del puente, el límite internacional certificado ni el perímetro aduanero. La Dirección Nacional de Migraciones incluye el paso entre las vías en funcionamiento y publica horario de 24 h; no se verifican demoras ni interrupciones en tiempo real."
+    "El Puente Internacional San Ignacio de Loyola (Formosa) usa las coordenadas del sitio Puente Loyola publicadas por el Ministerio de Seguridad en el Boletín de las Fronteras Argentinas N.º 2 (junio de 2021): 25°15′51,4″S, 57°43′28″O. Se convirtieron DMS a grados decimales sin reproyección; datum/CRS no declarados. El marcador es una referencia del cruce y no representa el eje exacto del puente, el límite internacional certificado ni el perímetro aduanero. La Dirección Nacional de Migraciones incluye el paso entre las vías en funcionamiento y publica horario de 24 h; no se verifican demoras ni interrupciones en tiempo real.",
+    "El depósito Los Corrales - Playa Amarilla (La Rioja, SEGEMAR 11278) usa la coordenada decimal -28.82805, -67.65972 publicada directamente por la base SEGEMAR, actualizada el 13/07/2026. La ficha lo clasifica como depósito pequeño de placer de oro y registra estado «productor»; esto no acredita operación extractiva vigente. El catálogo conserva status=no_verificado por falta de evidencia primaria reciente de actividad. La ficha no declara datum/CRS ni semántica geométrica; se copia el punto sin transformación y se usa como localización del depósito, no como acceso, centroide certificado ni perímetro."
   ]
 }
