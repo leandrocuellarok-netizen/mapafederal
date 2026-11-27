@@ -616,6 +616,16 @@ jobs:
           assert coverage.get("catalogPath") == "data/strategic-nodes.json"
           assert coverage.get("nodeCount") == len(nodes)
           assert coverage.get("nodeCount") == 109, "El catálogo nacional debe contener 109 nodos en esta revisión"
+          quequen = next((node for node in nodes if node.get("id") == "buenos-aires-puerto-puerto-de-quequen"), None)
+          assert quequen is not None and quequen["province"] == "Buenos Aires" and quequen["type"] == "Puerto"
+          assert quequen["coords"] == [-38.57133333, -58.71347222]
+          assert quequen["source"] == "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/quequen"
+          assert quequen["coordinateSource"] == quequen["source"]
+          assert quequen["coordinateReferenceSystem"].startswith("No declarado")
+          assert quequen["status"] == "no_verificado"
+          assert quequen["statusSource"] == "https://www.argentina.gob.ar/normativa/nacional/norma-427053"
+          assert "Conversión DMS a decimal" in quequen["verification"]["scope"]
+          assert "referencia general portuaria" in quequen["coordinateQuality"].lower()
           assert coverage.get("jurisdictionCount") == len(expected_jurisdictions)
           assert set(coverage.get("categories", [])) == allowed_node_types
           coverage_rows = coverage.get("jurisdictions")
