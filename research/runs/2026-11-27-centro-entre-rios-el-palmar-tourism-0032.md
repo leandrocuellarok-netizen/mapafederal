@@ -56,9 +56,11 @@ SIB/APN publica las coordenadas geográficas decimales, departamento, superficie
 
 ## Integración y publicación
 
-- Commit de catálogo: `357269bb6edab9343bf8f9ca0c3b667dfaec85db`.
-- Matriz, README, workflow y bitácora se incorporan en el commit posterior de esta rama.
-- PR, merge, GitHub Actions y Pages: pendientes al momento de crear esta bitácora. Se actualizará el cierre con el SHA final y el resultado verificable de validación y despliegue.
+- PR #15 integrado en `main`: https://github.com/leandrocuellarok-netizen/mapafederal/pull/15.
+- Merge commit de `main`: `f342e0387e8993b41690988bcaeadf8e17a0b6b2`.
+- Commit de catálogo: `357269bb6edab9343bf8f9ca0c3b667dfaec85db`; matriz: `d736f767bb0bb75135c642868a5c9ed41b806b1d`; README: `5f5962fa5571ff718467090364d292c69a2bdb9a`; workflow: `d1218aeacfcb233eb60651a3281d9f0ab10091bf`.
+- El workflow `Deploy static content to Pages` está configurado para ejecutarse en cada push a `main`; sin embargo, la integración GitHub disponible no expone la lista de ejecuciones push ni el ID del run. `get_commit_combined_status` no devolvió checks para el merge commit. Por ello, la validación de Actions y el despliegue de Pages quedan **sin verificar**; no se afirma publicación.
+- La portada pública tampoco pudo abrirse desde el entorno de verificación. El catálogo y la matriz sí se releen desde `main`, pero la presencia visual del marcador en la web queda pendiente.
 
 ## Brechas pendientes
 
