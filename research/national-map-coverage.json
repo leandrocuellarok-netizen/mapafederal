@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T06:38:32-03:00",
+  "generatedAt": "2026-11-27T07:31:47-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "974425cebd5ae86b624fb580c9ec31683adb98b1",
-  "nodeCount": 112,
+  "catalogCommit": "8b0cd32b2f05f1e053ab4422834f88fcfddfd1d2",
+  "nodeCount": 113,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -59,7 +59,7 @@
         "La Pampa",
         "Santa Fe"
       ],
-      "nodeCount": 15,
+      "nodeCount": 16,
       "coveredJurisdictions": 4
     },
     {
@@ -206,7 +206,7 @@
     {
       "province": "Córdoba",
       "region": "Centro",
-      "total": 3,
+      "total": 4,
       "byType": {
         "Ciudad": 0,
         "Puerto": 0,
@@ -216,15 +216,14 @@
         "Industria": 2,
         "Recurso mineral": 0,
         "Turismo": 0,
-        "Estación ferroviaria": 0
+        "Estación ferroviaria": 1
       },
       "missingCategories": [
         "Ciudad",
         "Puerto",
         "Logística",
         "Recurso mineral",
-        "Turismo",
-        "Estación ferroviaria"
+        "Turismo"
       ],
       "notApplicableCategories": [
         "Paso fronterizo"
@@ -681,7 +680,7 @@
     "Industria": 15,
     "Recurso mineral": 5,
     "Turismo": 17,
-    "Estación ferroviaria": 6
+    "Estación ferroviaria": 7
   },
   "leastCoveredJurisdictions": [
     {
@@ -710,9 +709,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Cuyo",
-    "nextTarget": "Centro",
-    "note": "Ejecución del 27/11/2026 en La Rioja (Cuyo): se incorporó el Parque Nacional Talampaya en Turismo. SIB/APN publica la referencia geográfica -29.85015, -67.87759 y confirma 213.800 ha, los departamentos Coronel Felipe Varela e Independencia y su creación por Ley 24.846/97; APN documenta horarios estacionales, accesos por RN 76 y RN 40 y tarifas vigentes desde 01/06/2026. La ficha SIB no declara datum/CRS ni semántica geométrica del punto; se conserva solo como referencia general del área protegida, no como acceso, centroide certificado ni perímetro. Próxima región de rotación: Centro."
+    "lastTargeted": "Centro",
+    "nextTarget": "Patagonia",
+    "note": "Ejecución del 27/11/2026 en Córdoba (Centro): se incorporó la Estación Córdoba Mitre en Estación ferroviaria. Trenes Argentinos publica el servicio Buenos Aires–Córdoba con dos trenes por semana y enlaza la estación a un pin de Google Maps con coordenadas -31.4204589, -64.1750774. La coordenada es una referencia puntual secundaria; Google Maps no declara precisión ni datum/CRS. No representa andén, acceso ni perímetro. Próxima región de rotación: Patagonia."
   },
   "pendingCandidates": [
     {
@@ -954,6 +953,7 @@
     "El nodo Puerto de Buenos Aires (CABA) fue corregido con la localización general publicada por ANPyN: 34°35'43.9\\\"S, 58°21'50.6\\\"W. Se convirtió DMS a grados decimales mediante cálculo aritmético, sin reproyección ni transformación de datum. La ficha no declara CRS/datum, precisión ni semántica geométrica del punto; por ello se representa solo como referencia general del puerto, no como acceso, muelle específico, terminal individual, centroide certificado ni perímetro. La fuente también enumera muelles para pasajeros y carga; no se infiere operación en tiempo real.",
     "El Centro de Visitantes Aguas Negras del Parque Nacional Calilegua (Jujuy) usa el pin de lugar de Google Maps enlazado directamente por APN en «Ver mapa» desde la página oficial de Horarios / Cómo llegar. La URL de destino identifica «Parque Nacional Calilegua, Centro de Visitantes» y contiene el pin -23.7597349, -64.8504986. Google Maps se identifica como fuente secundaria de coordenadas; no declara CRS/datum ni precisión. El marcador representa el centro de visitantes, no el perímetro ni el centroide del parque. APN documenta atención diaria de 8 a 19 h y acceso por RP 83; no se verificó transitabilidad en tiempo real.",
     "El Parque Industrial y de la Innovación Posadas (Misiones) utiliza una coordenada decimal publicada por el directorio sectorial secundario Parques Industriales (ficha 74378). El sitio institucional del PIIP confirma el predio de 112 ha, infraestructura y registro RENPI 20130080; el Gobierno de Misiones (22/05/2026) y la Municipalidad de Posadas (11/05/2026) documentan actividad dentro del parque. El directorio no declara CRS/datum, precisión ni semántica geométrica; el marcador es una referencia general del predio y no representa acceso, centroide certificado, lote ni perímetro.",
-    "El Parque Nacional Talampaya (La Rioja) usa la ubicación geográfica decimal publicada por SIB/APN: -29.85015, -67.87759; la ficha identifica los departamentos Coronel Felipe Varela e Independencia, creación 1997 y superficie 213.800 ha. No declara datum/CRS ni semántica geométrica del punto; se conserva como referencia general del área protegida y no como acceso, centroide certificado ni perímetro. APN documenta horarios estacionales, accesos por RN 76 y RN 40, servicios de acampe y tarifas vigentes desde 01/06/2026; no se verificó transitabilidad ni disponibilidad de servicios en tiempo real."
+    "El Parque Nacional Talampaya (La Rioja) usa la ubicación geográfica decimal publicada por SIB/APN: -29.85015, -67.87759; la ficha identifica los departamentos Coronel Felipe Varela e Independencia, creación 1997 y superficie 213.800 ha. No declara datum/CRS ni semántica geométrica del punto; se conserva como referencia general del área protegida y no como acceso, centroide certificado ni perímetro. APN documenta horarios estacionales, accesos por RN 76 y RN 40, servicios de acampe y tarifas vigentes desde 01/06/2026; no se verificó transitabilidad ni disponibilidad de servicios en tiempo real.",
+    "La Estación Córdoba Mitre utiliza el pin de Google Maps -31.4204589, -64.1750774 enlazado directamente desde la página oficial de Trenes Argentinos para el servicio Buenos Aires–Córdoba. Google Maps es fuente secundaria de coordenadas y no declara precisión ni datum/CRS; el punto se usa como referencia puntual de estación, no como andén, acceso ni perímetro. Trenes Argentinos publica dos servicios semanales; no se verificó operación en tiempo real."
   ]
 }
