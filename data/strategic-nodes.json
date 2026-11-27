@@ -1986,4 +1986,40 @@
       "scope": "SIB/APN confirma Tucumán, los cinco departamentos, creación y ubicación geográfica exacta publicada. La guía APN de visitantes reproduce la coordenada en DMS y documenta la jurisdicción nacional, tres sectores de acceso e infraestructura de uso público. La página APN de horarios advierte que la visita depende de que el acceso esté habilitado. La coordenada se usa únicamente como referencia general del área protegida; no representa un portal, acceso, centroide certificado ni perímetro. No se verificó apertura ni transitabilidad en tiempo real."
     }
   }
+,
+  {
+    "id": "san-juan-recurso-mineral-veladero",
+    "name": "Mina Veladero",
+    "province": "San Juan",
+    "district": "Iglesia",
+    "locality": "Valle del Cura",
+    "type": "Recurso mineral",
+    "coords": [
+      -29.36833,
+      -69.95222
+    ],
+    "note": "Yacimiento de oro y plata a cielo abierto. SEGEMAR identifica el depósito 339 con estado productor y localización geográfica publicada; la coordenada se utiliza como referencia del yacimiento, no como acceso, centroide certificado ni perímetro.",
+    "source": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp339.html",
+    "sourceName": "SEGEMAR — Base de datos de yacimientos minerales de la República Argentina, depósito 339 — Veladero",
+    "sourcePublishedAt": "2026-07-13",
+    "sourcePublicationNote": "La ficha de SEGEMAR declara que la base fue actualizada el 13/07/2026; publica la localización -29.36833, -69.95222, la provincia San Juan, localidad Iglesia y estado del depósito «productor».",
+    "sourceRecordId": "SEGEMAR, Base de datos de yacimientos minerales de la República Argentina, depósito 339 — Veladero.",
+    "coordinateSource": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp339.html",
+    "coordinateSourceName": "SEGEMAR — Base de datos de yacimientos minerales de la República Argentina",
+    "coordinateSourcePublishedAt": "2026-07-13",
+    "coordinateSourcePublicationNote": "Registro 339: localización publicada en grados decimales -29.36833, -69.95222; ubicación política San Juan, subprovincia/localidad Iglesia. La ficha no declara datum, CRS ni semántica geométrica del punto.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por SEGEMAR; datum y CRS no especificados en la ficha. No se asigna EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron los valores decimales publicados por SEGEMAR; no se realizó geocodificación ni reproyección.",
+    "coordinateQuality": "Coordenada de localización del depósito publicada por SEGEMAR. La ficha no define si corresponde a boca de mina, centroide o punto interno; se utiliza como referencia geográfica del yacimiento y no como acceso ni perímetro.",
+    "statusSource": "https://veladero.com/home",
+    "statusSourceName": "Veladero — sitio oficial del operador",
+    "statusSourcePublishedAt": "2026-11-26",
+    "administrativeStatus": "SEGEMAR clasifica el estado del depósito como «productor». El sitio oficial del operador identifica Veladero como mina de oro y plata en operación desde 2005; en la consulta del 26/11/2026 publica información de camino, cámaras en vivo y noticias 2026. Esto respalda actividad operativa documentada, pero no implica acceso público ni confirma producción o capacidad actual.",
+    "validityPeriod": "Ficha SEGEMAR actualizada el 13/07/2026; sitio del operador consultado el 26/11/2026, con estado del camino actualizado el 26/11/2026 a las 08:15 ART. Las condiciones operativas y de acceso pueden cambiar.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "SEGEMAR identifica el depósito 339 como Veladero, en Iglesia, San Juan, publica la localización -29.36833, -69.95222 y clasifica su estado como productor; la base informa actualización 13/07/2026. El sitio oficial del operador consultado el 26/11/2026 describe la mina de oro y plata y publica estado del camino con actualización de esa fecha, cámaras en vivo y noticias 2026. La coordenada se conserva como localización de depósito, sin inferir acceso, centroide certificado, perímetro ni CRS."
+    }
+  }
 ]

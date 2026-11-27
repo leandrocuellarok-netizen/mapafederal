@@ -753,6 +753,24 @@ jobs:
               row = next(item for item in coverage_rows if item["province"] == province)
               assert "Paso fronterizo" in row.get("notApplicableCategories", [])
               assert "Paso fronterizo" not in row["missingCategories"]
+          veladero = next((node for node in nodes if node.get("id") == "san-juan-recurso-mineral-veladero"), None)
+          assert veladero is not None and veladero["province"] == "San Juan" and veladero["district"] == "Iglesia" and veladero["type"] == "Recurso mineral"
+          assert veladero["coords"] == [-29.36833, -69.95222] and veladero["status"] == "operativo"
+          assert veladero["source"] == "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp339.html"
+          assert veladero["coordinateSource"] == veladero["source"]
+          assert veladero["sourcePublishedAt"] == "2026-07-13"
+          assert "productor" in veladero["administrativeStatus"].lower()
+          assert "no como acceso" in veladero["coordinateQuality"].lower()
+          assert veladero["statusSource"] == "https://veladero.com/home"
+          assert veladero["verification"]["checkedAt"] == "2026-11-26"
+          san_juan = next(row for row in coverage_rows if row["province"] == "San Juan")
+          assert san_juan["total"] == 4 and san_juan["byType"]["Recurso mineral"] == 1
+          assert "Recurso mineral" not in san_juan["missingCategories"]
+          cuyo = next(region for region in coverage["regions"] if region["name"] == "Cuyo")
+          assert cuyo["nodeCount"] == 14 and cuyo["coveredJurisdictions"] == 4
+          assert coverage["categoryTotals"]["Recurso mineral"] == 5
+          assert coverage["regionalRotation"]["lastTargeted"] == "Cuyo" and coverage["regionalRotation"]["nextTarget"] == "Centro"
+          assert coverage["catalogCommit"] == "b21903a2cca2d6199c298d1b6984760598d159e8"
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
