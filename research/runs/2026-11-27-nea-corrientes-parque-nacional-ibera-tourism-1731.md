@@ -55,7 +55,7 @@ Se incorpora el Parque Nacional Iberá al catálogo nacional consumido por la po
 - Corrientes: 4 nodos; Turismo: 1.
 - NEA: 15 nodos.
 - CRS/datum no declarados, documentados sin asignar EPSG.
-- La primera validación automatizada posterior a la integración (Actions #894, run ID `46064463109`) falló en «Validate geographic and editorial JSON»: el workflow conservaba expectativas históricas de Turismo=21, NEA=14 y rotación NOA→NEA. El registro Iberá y el conteo de 123 superaron sus aserciones previas; la falla se debió a expectativas de matriz obsoletas. El job `deploy` quedó omitido. Se corrigieron las cuatro aserciones de Turismo a 22, la de NEA a 15, las seis aserciones de rotación a NEA→Cuyo, las cuatro referencias de `catalogCommit` al commit real del catálogo y se añadió una regresión explícita para Corrientes (4 nodos, Turismo=1). Actions #895 (run ID `46064609816`, SHA `0707fd390b9f8ae279140f0f3185102cfee0e130`) volvió a fallar en «Validate geographic and editorial JSON» por `NameError: coverage_rows is not defined`: la nueva aserción de Corrientes estaba ubicada antes de cargar las filas de la matriz. El job `deploy` quedó omitido. Se reubicó la aserción inmediatamente después de construir y validar `coverage_rows`; la siguiente validación completa y Pages quedan pendientes de Actions #896.
+- La primera validación automatizada posterior a la integración (Actions #894, run ID `46064463109`) falló en «Validate geographic and editorial JSON»: el workflow conservaba expectativas históricas de Turismo=21, NEA=14 y rotación NOA→NEA. El registro Iberá y el conteo de 123 superaron sus aserciones previas; la falla se debió a expectativas de matriz obsoletas. El job `deploy` quedó omitido. Se corrigieron las cuatro aserciones de Turismo a 22, la de NEA a 15, las seis aserciones de rotación a NEA→Cuyo, las cuatro referencias de `catalogCommit` al commit real del catálogo y se añadió una regresión explícita para Corrientes (4 nodos, Turismo=1). Actions #895 (run ID `46064609816`, SHA `0707fd390b9f8ae279140f0f3185102cfee0e130`) volvió a fallar en «Validate geographic and editorial JSON» por `NameError: coverage_rows is not defined`: la nueva aserción de Corrientes estaba ubicada antes de cargar las filas de la matriz. El job `deploy` quedó omitido. Se reubicó la aserción inmediatamente después de construir y validar `coverage_rows`. Actions #896 (run ID `46064690793`, SHA `a172b0ff72bdbd04498ec50c1419c330fb6a6121`) completó con `validate=success` y `deploy=success`; el paso `Deploy to GitHub Pages` terminó correctamente.
 
 ## Integración y publicación
 
@@ -68,8 +68,9 @@ Se incorpora el Parque Nacional Iberá al catálogo nacional consumido por la po
 - Actions #894 (run ID `46064463109`, SHA `e0b3a32b495ad57d630a2102650047757b490b65`): `validate` falló en la aserción de Turismo=21, expectativa obsoleta; `deploy` fue omitido.
 - PR #42 integrado: https://github.com/leandrocuellarok-netizen/mapafederal/pull/42; merge commit `0707fd390b9f8ae279140f0f3185102cfee0e130`.
 - Actions #895 (run ID `46064609816`, SHA `0707fd390b9f8ae279140f0f3185102cfee0e130`): `validate` falló por orden de inicialización de la nueva aserción; `deploy` fue omitido.
-- PR #43 de corrección del orden de validación: pendiente de integración.
-- Actions #896 y GitHub Pages: pendientes; no se afirma publicación hasta verificar el job `deploy`.
+- PR #43 integrado: https://github.com/leandrocuellarok-netizen/mapafederal/pull/43; merge commit `a172b0ff72bdbd04498ec50c1419c330fb6a6121`.
+- Actions #896 (run ID `46064690793`, SHA `a172b0ff72bdbd04498ec50c1419c330fb6a6121`): `validate` y `deploy` completados con `success`; el paso `Deploy to GitHub Pages` también terminó con `success`.
+- La inspección visual independiente de la portada y del JSON servido por Pages no fue posible desde el navegador de verificación, que rechazó la URL pública; se confirma el job de despliegue, no la visualización del marcador.
 
 ## Brechas no resueltas
 
