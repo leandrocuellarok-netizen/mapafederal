@@ -3,7 +3,7 @@
   "generatedAt": "2026-11-27T19:31:21-03:00",
   "catalogPath": "data/strategic-nodes.json",
   "catalogCommit": "3edcf80d95eb223df3fe67a2af5a3a1290202dd0",
-  "nodeCount": 124,
+  "nodeCount": 125,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -37,7 +37,7 @@
         "Formosa",
         "Misiones"
       ],
-      "nodeCount": 15,
+      "nodeCount": 16,
       "coveredJurisdictions": 4
     },
     {
@@ -276,12 +276,12 @@
     {
       "province": "Formosa",
       "region": "NEA",
-      "total": 3,
+      "total": 4,
       "byType": {
         "Ciudad": 0,
         "Puerto": 1,
         "Aeropuerto": 1,
-        "Paso fronterizo": 0,
+        "Paso fronterizo": 1,
         "Logística": 0,
         "Industria": 0,
         "Recurso mineral": 0,
@@ -290,7 +290,6 @@
       },
       "missingCategories": [
         "Ciudad",
-        "Paso fronterizo",
         "Logística",
         "Industria",
         "Recurso mineral",
@@ -665,7 +664,7 @@
     "Ciudad": 9,
     "Puerto": 22,
     "Aeropuerto": 25,
-    "Paso fronterizo": 12,
+    "Paso fronterizo": 13,
     "Logística": 4,
     "Industria": 17,
     "Recurso mineral": 5,
@@ -676,11 +675,6 @@
     {
       "province": "Catamarca",
       "region": "NOA",
-      "total": 3
-    },
-    {
-      "province": "Formosa",
-      "region": "NEA",
       "total": 3
     },
     {
@@ -714,9 +708,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NOA",
-    "nextTarget": "NEA",
-    "note": "Ejecución del 27/11/2026 en Tucumán (NOA), priorizada sobre el siguiente turno regional Cuyo por la brecha mínima de cobertura: Tucumán tenía 2 nodos y ninguna estación ferroviaria. Se incorporó Estación Tucumán (Mitre) en Estación ferroviaria. Trenes Argentinos identifica la estación como terminal del servicio Buenos Aires–Tucumán y publica trenes dos veces por semana; enlaza un pin de Google Maps, fuente secundaria de coordenadas (-26.8210207, -65.2109874). El pin no declara datum/CRS ni precisión y no representa un andén, acceso específico ni perímetro. No se verificaron calendario puntual, cancelaciones ni circulación en tiempo real. Tucumán pasa de 2 a 3 nodos; NOA de 14 a 15; Estación ferroviaria de 7 a 8. Se priorizó el mínimo de cobertura por encima del turno Cuyo; la rotación continúa en NEA."
+    "lastTargeted": "NEA",
+    "nextTarget": "Cuyo",
+    "note": "Ejecución del 27/11/2026 en Formosa (NEA), priorizada por su empate en el mínimo de cobertura. Se incorporó el Puente Internacional San Ignacio de Loyola como Paso fronterizo: el Ministerio de Seguridad publica las coordenadas del sitio (25°15′51,4″S, 57°43′28″O), convertidas aritméticamente a grados decimales; la Dirección Nacional de Migraciones incluye el cruce entre las vías en funcionamiento y publica horario de 24 h. La ficha oficial identifica Clorinda–José Falcón y registra actualización de Gendarmería Nacional del 26/11/2026. El punto es una referencia del cruce, no un límite internacional certificado ni perímetro aduanero; no se verifican demoras o interrupciones en tiempo real. Formosa pasa de 3 a 4 nodos; NEA de 15 a 16; Paso fronterizo de 12 a 13. El Parque Industrial de Formosa permanece pendiente: hay evidencia de actividad industrial, pero no geometría o coordenada exacta atribuible. La próxima región de la rotación es Cuyo."
   },
   "pendingCandidates": [
     {
@@ -982,6 +976,7 @@
     "El Campo de Piedra Pómez (Catamarca) usa las coordenadas GPS -26.480508, -67.337452 publicadas en los fundamentos del Proyecto HCDN 6541-D-2024. El documento es un proyecto legislativo, no una norma sancionada, y no declara método de captura, datum/CRS, precisión ni semántica geométrica. El punto se usa solo como referencia general del atractivo; Visit Catamarca y Argentina.gob.ar documentan su ubicación turística y condiciones de acceso, pero no se afirma que la coordenada sea un acceso, centroide certificado ni perímetro.",
     "Viedma (Río Negro) se incorporó como referencia urbana de Ciudad con la coordenada central publicada por el Gobierno provincial en el Catálogo de Locaciones Río Negro 2026, p. 22. No se asigna datum/CRS ni EPSG; el punto identifica el sector del casco histórico y edificios administrativos alrededor de Plaza Alsina, no el centroide de la ciudad ni un límite administrativo.",
     "El Parque Nacional Copo (Santiago del Estero) usa la ubicación geográfica decimal publicada por SIB/APN: -25.82089, -61.88005, departamento Copo, creación 2000 y superficie 118.119 ha. La ficha no declara datum/CRS ni define si el punto corresponde a acceso, centroide o punto interno; se conserva como referencia general del área protegida, no como acceso, centroide certificado ni perímetro. APN publica apertura diaria de 7 a 15 h y accesos por RN 16; no se verificó apertura efectiva ni transitabilidad en tiempo real.",
-    "La Estación Tucumán (Mitre) se incorporó como nodo ferroviario porque Trenes Argentinos identifica la terminal en su ficha oficial Buenos Aires–Tucumán y enlaza un pin de Google Maps con coordenadas decimales. Google Maps se identifica como fuente secundaria; no declara datum/CRS ni precisión. El punto se conserva como referencia de la estación, no como andén, acceso específico ni perímetro. La ficha oficial publica trenes dos veces por semana; no se verificaron calendario puntual, cancelaciones ni operación en tiempo real."
+    "La Estación Tucumán (Mitre) se incorporó como nodo ferroviario porque Trenes Argentinos identifica la terminal en su ficha oficial Buenos Aires–Tucumán y enlaza un pin de Google Maps con coordenadas decimales. Google Maps se identifica como fuente secundaria; no declara datum/CRS ni precisión. El punto se conserva como referencia de la estación, no como andén, acceso específico ni perímetro. La ficha oficial publica trenes dos veces por semana; no se verificaron calendario puntual, cancelaciones ni operación en tiempo real.",
+    "El Puente Internacional San Ignacio de Loyola (Formosa) usa las coordenadas del sitio Puente Loyola publicadas por el Ministerio de Seguridad en el Boletín de las Fronteras Argentinas N.º 2 (junio de 2021): 25°15′51,4″S, 57°43′28″O. Se convirtieron DMS a grados decimales sin reproyección; datum/CRS no declarados. El marcador es una referencia del cruce y no representa el eje exacto del puente, el límite internacional certificado ni el perímetro aduanero. La Dirección Nacional de Migraciones incluye el paso entre las vías en funcionamiento y publica horario de 24 h; no se verifican demoras ni interrupciones en tiempo real."
   ]
 }
