@@ -2359,4 +2359,44 @@
       "scope": "La Municipalidad de La Plata identifica el punto -34.97873888888889, -58.15296944444444 como entrada al predio del Parque Industrial La Plata II, en Abasto, partido de La Plata. La coordenada se convirtió aritméticamente desde 34°58'43.46\"S, 58°9'10.69\"O; sin reproyección ni transformación de datum. El EIA no declara CRS/datum ni precisión. La Provincia informó el 04/04/2025 la escrituración de la primera fase, la construcción del parque en 2006 y más de 100 empresas de la zona; no aporta padrón actualizado ni prueba operación actual de cada parcela. El marcador representa la entrada, no el centroide ni el perímetro."
     }
   }
+,
+{
+  "id": "caba-logistica-centro-transferencia-de-cargas-villa-soldati",
+  "name": "Centro de Transferencia de Cargas CTC Villa Soldati",
+  "province": "CABA",
+  "district": "Comuna 8",
+  "locality": "Villa Soldati",
+  "type": "Logística",
+  "coords": [
+    -34.668449,
+    -58.436462
+  ],
+  "note": "Centro de transferencia y cross-docking de cargas en Villa Soldati. El operador informa servicios de carga y descarga y más de 67 empresas; la coordenada es una referencia general del predio procedente de un directorio sectorial secundario, no un acceso ni perímetro.",
+  "source": "https://buenosaires.gob.ar/gcaba_historico/infraestructura/ctc-villa-soldati",
+  "sourceName": "Gobierno de la Ciudad Autónoma de Buenos Aires — CTC Villa Soldati",
+  "sourcePublishedAt": null,
+  "sourcePublicationNote": "Página institucional consultada el 2026-11-27; no informa fecha de publicación o actualización. Describe la inauguración en septiembre de 2016.",
+  "sourceRecordId": "Página institucional GCBA «CTC Villa Soldati»; identifica el Centro de Transferencia de Cargas en Villa Soldati y su predio de 37 hectáreas.",
+  "coordinateSource": "https://parquesindustriales.com.ar/parques/78000",
+  "coordinateSourceName": "Parques Industriales — ficha Centro de Transferencia de Cargas CTC Villa Soldati CABA",
+  "coordinateSourcePublishedAt": null,
+  "coordinateSourcePublicationNote": "Ficha consultada el 2026-11-27; publica -34.668449, -58.436462 y superficie de 37 ha. No informa fecha de publicación, CRS/datum, método de captura ni precisión.",
+  "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por directorio sectorial secundario; CRS/datum no declarados. No se asigna EPSG.",
+  "coordinateTransformation": "Transcripción de la pareja decimal latitud/longitud publicada; sin conversión, reproyección ni transformación de datum.",
+  "coordinateQuality": "Coordenada publicada por directorio sectorial secundario Parques Industriales. La ficha no declara método de captura, precisión ni semántica geométrica; se conserva como referencia general del predio, no como acceso, centroide certificado, parcela ni perímetro.",
+  "statusSource": "https://www.ctcadministradora.com.ar/servicios",
+  "statusSourceName": "CTC Administradora S.A. — Servicios y operación logística",
+  "statusSourcePublishedAt": null,
+  "statusSourcePublicationNote": "Página del operador consultada el 2026-11-27; no informa fecha de publicación o actualización. Declara más de 67 empresas de transporte y servicios de carga/descarga.",
+  "additionalStatusSource": "https://www.argentina.gob.ar/noticias/el-ministerio-de-trabajo-y-la-afip-detectaron-un-40-de-informalidad-laboral-en-un-centro-de-transferencia-de-cargas",
+  "additionalStatusSourceName": "Ministerio de Trabajo y AFIP — fiscalización en centro de transferencia de cargas",
+  "additionalStatusSourcePublishedAt": "2021-11-18",
+  "administrativeStatus": "El GCBA informa que el CTC se inauguró en septiembre de 2016 y lo describe como infraestructura estratégica de transferencia de cargas en Villa Soldati, con un predio de 37 ha. El operador informa más de 67 empresas de transporte y publica servicios de carga y descarga. AFIP y el Ministerio de Trabajo documentaron en 2021 empresas operando en el centro; ese recuento es histórico y no se presenta como padrón actual.",
+  "validityPeriod": "Sitio del operador consultado el 2026-11-27; no declara fecha de actualización. La operación se considera documentada por el operador, sin verificación en tiempo real ni auditoría independiente del padrón actual.",
+  "status": "operativo",
+  "verification": {
+    "checkedAt": "2026-11-27",
+    "scope": "Se verificó la identificación y función logística con el GCBA, los servicios y la cifra de más de 67 empresas declarados por el operador, y el antecedente oficial de AFIP/Ministerio de Trabajo del 18/11/2021. La coordenada proviene de un directorio sectorial secundario y no declara CRS/datum, precisión ni método de captura; el marcador se conserva como referencia general del predio, no como acceso, centroide certificado, parcela ni perímetro. No se verificó la actividad individual de cada empresa ni la operación en tiempo real."
+  }
+}
 ]
