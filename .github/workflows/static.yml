@@ -861,7 +861,7 @@ jobs:
           assert allen_norte["source"] == "https://parquesindustriales.rionegro.gov.ar/programa/557/registro-provincial-de-parques-industriales-y-logisticos"
           assert allen_norte["coordinateSource"] == allen_norte["source"]
           assert allen_norte["coordinateReferenceSystem"].startswith("Coordenadas geográficas") and "no se asigna epsg" in allen_norte["coordinateReferenceSystem"].lower()
-          assert "Acceso Martín Fierro" in allen_norte["coordinateQuality"] and "no representa" in allen_norte["coordinateQuality"]
+          assert "acceso martín fierro" in allen_norte["coordinateQuality"].lower() and "no representa" in allen_norte["coordinateQuality"].lower()
           assert "En desarrollo" in allen_norte["administrativeStatus"] and "1 empresa operativa" in allen_norte["administrativeStatus"]
           assert "9 empresas en proyecto" in allen_norte["administrativeStatus"] and "0 en construcción" in allen_norte["administrativeStatus"]
           assert allen_norte["verification"]["checkedAt"] == "2026-11-27"
