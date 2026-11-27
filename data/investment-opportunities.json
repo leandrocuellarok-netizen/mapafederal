@@ -3163,7 +3163,7 @@
       "jurisdiction": "Partido de Presidente Perón, Provincia de Buenos Aires",
       "location": "Guernica, Partido de Presidente Perón, Provincia de Buenos Aires",
       "stage": "announced",
-      "opportunityStatus": "open",
+      "opportunityStatus": "unknown",
       "amount": {
         "value": 124000000,
         "currency": "ARS",
@@ -3178,9 +3178,9 @@
       "description": "Contratación del servicio de recolección de residuos para toda el área del distrito de Presidente Perón. Presupuesto oficial ARS 124.000.000 y valor del pliego ARS 119.400. La venta del pliego finaliza el 25/11; la recepción de ofertas vence el 26/11 a las 09:00.",
       "territorialRelevance": "Oportunidad de servicios ambientales y logística urbana para operadores con capacidad de recolección, flota y gestión de residuos. El plazo es inmediato y debe verificarse la documentación completa.",
       "verification": {
-        "status": "verified",
+        "status": "outdated",
         "checkedAt": "2026-11-25",
-        "scope": "Verificado en el Boletín Oficial bonaerense, edición 30366, sección oficial, página 81. Se comprobaron objeto, presupuesto, valor del pliego, venta, consultas, fecha y hora límite de presentación, apertura, sede y expediente. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución."
+        "scope": "Verificado en el Boletín Oficial bonaerense, edición 30366, sección oficial, página 81. Se comprobaron objeto, presupuesto, valor del pliego, venta, consultas, fecha y hora límite de presentación, apertura, sede y expediente. No se revisó el pliego completo ni se verificaron ofertas, adjudicación o ejecución. Al 2026-11-27 el plazo publicado de presentación de ofertas (26/11/2026) ya transcurrió; no se verificó prórroga, apertura efectiva, ofertas ni adjudicación. Por eso el estado de oportunidad pasa a desconocido y la verificación se marca desactualizada, sin inferir cierre contractual ni adjudicación."
       }
     },
     {
