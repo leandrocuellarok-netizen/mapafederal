@@ -93,3 +93,8 @@ CABA conserva la categoría Paso fronterizo como brecha de catálogo. No se aña
 - La ejecución #855 (run ID `45953649302`) permanece registrada como fallida por el literal de prueba sensible a mayúsculas/minúsculas; la corrección se integró en PR #20 y la ejecución #856 pasó.
 - La portada pública y el JSON publicado no pudieron abrirse desde el entorno de verificación. Por tanto, el despliegue de Pages está confirmado por Actions, pero no se afirma inspección visual independiente del marcador ni lectura directa del archivo servido.
 - Integración de homepage: `index.html` no cambió; sigue solicitando `./data/strategic-nodes.json`, y el registro corregido permanece dentro del catálogo conectado a sus filtros.
+
+
+## Ajuste de trazabilidad del SHA de catálogo
+
+Tras la integración squash de PR #19, el cambio de catálogo quedó contenido en el commit de `main` `1120c4278002be0bb2193aa0a2b0c13f2f830880`. Se actualiza `research/national-map-coverage.json` para que `catalogCommit` apunte a ese commit integrado, en lugar del commit de catálogo de la rama de trabajo previo al squash (`ed9bfefa0e416c12d1b0a4d7f58fc9b4f984b4d0`). El workflow se ajusta para validar el SHA de `main`. No cambian datos, coordenadas, conteos ni filtros.
