@@ -64,7 +64,13 @@
 - Commit de README: `049d8daaf45646d285a2f59cac83a447e4e07623`.
 - Commit de workflow: `200f77220ad023381e8be6a8e56f58c29ca2a162`.
 - Rama de trabajo: `automation/2026-11-27-nea-misiones-piip`.
-- PR, ejecución de GitHub Actions y despliegue de Pages: pendientes de integración y verificación.
+- PR #23 integrado en `main`: https://github.com/leandrocuellarok-netizen/mapafederal/pull/23.
+- Commit de integración del catálogo, matriz, README, workflow y bitácora: `9c039da45cb709d335702862d96aab5dcc45a99a`.
+- Actions #864 (`45967102344`), SHA `9c039da45cb709d335702862d96aab5dcc45a99a`: falló en la nueva aserción de calidad geoespacial porque el test esperaba «no como perímetro», mientras el registro dice «ni perímetro». La validación llegó a la prueba del PIIP; no fue un fallo del JSON ni de la matriz. Deploy quedó omitido.
+- PR #24 corrigió únicamente esa aserción: https://github.com/leandrocuellarok-netizen/mapafederal/pull/24. Commit integrado: `9981dd8f7abffaad79a749d4fa7a802514063a0f`.
+- Actions #865 (`45967226508`), SHA `9981dd8f7abffaad79a749d4fa7a802514063a0f`: job `validate` aprobado y job `deploy` aprobado; resultado final `success`.
+- GitHub Pages: despliegue confirmado por el job `Deploy to GitHub Pages` de Actions #865. URL de publicación configurada: https://leandrocuellarok-netizen.github.io/mapafederal/.
+- Inspección independiente de la portada y del JSON publicado: pendiente; el entorno de navegación no pudo acceder al dominio público.
 
 ## Próxima prioridad
 
