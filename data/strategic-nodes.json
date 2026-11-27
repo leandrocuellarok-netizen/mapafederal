@@ -645,6 +645,43 @@
     }
   },
   {
+    "id": "formosa-turismo-reserva-natural-formosa",
+    "name": "Reserva Natural Formosa",
+    "province": "Formosa",
+    "district": "Bermejo",
+    "type": "Turismo",
+    "coords": [
+      -24.27366,
+      -61.80071
+    ],
+    "note": "Área protegida nacional de 9.005 ha en el Chaco Seco. SIB/APN publica esta ubicación geográfica como referencia general; no representa la portada oeste ni el perímetro. APN documenta acceso público, senderos, miradores, observación de aves y acampe en el Centro Operativo Guaipo; el ingreso y los recorridos dependen del estado de los caminos y las condiciones locales.",
+    "source": "https://www.argentina.gob.ar/parquesnacionales/nea/reserva-natural-formosa",
+    "sourceName": "Administración de Parques Nacionales (APN)",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Ficha institucional consultada el 26/11/2026; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "Ficha APN — Reserva Natural Formosa; páginas institucionales de actividades y horarios/cómo llegar.",
+    "coordinateSource": "https://sib.gob.ar/areas-protegidas/reserva-natural-formosa",
+    "coordinateSourceName": "Sistema de Información de Biodiversidad de la Administración de Parques Nacionales (SIB/APN)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La ficha publica 24 16 25.17 S (-24.27366), 61 48 02.55 O (-61.80071). No informa fecha de actualización ni semántica geométrica exacta del punto.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por SIB/APN; datum y CRS no especificados. No se atribuye EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron los valores decimales publicados por SIB/APN; no se realizó geocodificación ni reproyección.",
+    "coordinateQuality": "Punto de referencia geográfica de la reserva publicado por SIB/APN. La fuente no define si corresponde a acceso, centroide o punto interno; no se presenta como portada oeste, acceso, centroide certificado ni perímetro.",
+    "statusSource": "https://www.argentina.gob.ar/parquesnacionales/nea/reserva-natural-formosa/horarios-como-llegar",
+    "statusSourceName": "APN — Horarios / Cómo llegar",
+    "statusSourcePublishedAt": null,
+    "additionalStatusSource": "https://www.argentina.gob.ar/parquesnacionales/nea/reserva-natural-formosa/actividades",
+    "additionalStatusSourceName": "APN — Actividades",
+    "additionalStatusSourcePublishedAt": null,
+    "administrativeStatus": "Reserva Natural de jurisdicción y administración nacional, creada en 1968 por Ley Nacional 17.916/68. APN documenta acceso público, ingreso por la portada oeste sobre RP 9, horarios estacionales, acampe y servicios en el Centro Operativo Guaipo, senderos, miradores y observación de aves. El estado operativo refiere al área protegida y al uso público documentado; no confirma transitabilidad ni condiciones meteorológicas en tiempo real.",
+    "validityPeriod": "Área protegida creada en 1968; información de acceso y visita consultada el 26/11/2026. No se verificó el estado de rutas ni la disponibilidad de servicios en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "SIB/APN publica la ubicación geográfica 24 16 25.17 S (-24.27366), 61 48 02.55 O (-61.80071), la provincia, el departamento Bermejo, la superficie de 9.005 ha y la creación en 1968. APN confirma acceso público, portada oeste sobre RP 9, horarios estacionales, acampe, servicios en el Centro Operativo Guaipo, senderos y miradores. El punto se usa solo como referencia general del área protegida; no representa la portada, un acceso exacto, centroide certificado ni perímetro. No se verificó transitabilidad o disponibilidad de servicios en tiempo real."
+    }
+  },
+  {
     "id": "entre-rios-puerto-puerto-de-concepcion-del-uruguay",
     "name": "Puerto de Concepción del Uruguay",
     "province": "Entre Ríos",
