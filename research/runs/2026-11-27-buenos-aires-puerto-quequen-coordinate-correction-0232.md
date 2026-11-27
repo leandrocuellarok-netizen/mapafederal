@@ -1,0 +1,25 @@
+# MAPA FEDERAL — Corrección de coordenadas de Puerto Quequén
+
+- Fecha de verificación: 2026-11-27 (Argentina).
+- Región: Buenos Aires Province.
+- Jurisdicción: Buenos Aires, departamento Necochea, localidad Quequén.
+- Categoría: Puerto.
+- Registros corregidos: 1 (sin altas ni bajas).
+- ID: `buenos-aires-puerto-puerto-de-quequen`.
+- Coordenada anterior: `[-38.57, -58.7]` (redondeada, sin atribución puntual).
+- Coordenada corregida: `[-38.57133333, -58.71347222]`.
+- Coordenada original publicada: 38°34'16.8"S, 58°42'48.5"W.
+- Transformación: conversión aritmética DMS a decimal; sin reproyección ni transformación de datum.
+- CRS/datum: no declarados por la ficha oficial; no se asigna EPSG.
+- Fuente de localización: https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/quequen
+- Fuente de estado administrativo: https://www.argentina.gob.ar/normativa/nacional/norma-427053 (Resolución 39/2026, sancionada 24/06/2026 y publicada 26/06/2026).
+- Fuente previa conservada: https://www.puertoquequen.com/
+- Estado: habilitación administrativa documentada; operación efectiva en tiempo real no verificada (`no_verificado`).
+- Archivos: `data/strategic-nodes.json`, `.github/workflows/static.yml`, `research/national-map-coverage.json`, este registro.
+- Integración homepage: `index.html` no modificado; el catálogo sigue cargándose mediante `data/strategic-nodes.json`.
+- Cobertura: permanece en 109 nodos, 24 jurisdicciones y 9 categorías; solo se corrige la georreferenciación del puerto.
+- Validación: se añadieron aserciones de regresión para ID, jurisdicción, categoría, coordenada oficial, fuente ANPyN, CRS no declarado y estado administrativo.
+- Commits en la rama: catálogo `40406cfc1d9de3e7837ac88be476b7e412abc32d`; workflow `fdb2c32d7c0bac1c40273520cca2c5f57ab2073f`; matriz `3e835e5c59e5d7ae89a278a2246a67769d907f59`.
+- GitHub Actions / Pages: pendiente de ejecución tras integrar el PR; se verificará el run exacto y el job de despliegue.
+- Próxima prioridad regional: CABA, según la rotación nacional.
+- Brechas persistentes: Catamarca, Jujuy, Santiago del Estero y Tucumán continúan con 2 nodos cada una; Buenos Aires mantiene concentración de registros en Escobar, por lo que no se agregaron puntos nuevos en esta ejecución.
