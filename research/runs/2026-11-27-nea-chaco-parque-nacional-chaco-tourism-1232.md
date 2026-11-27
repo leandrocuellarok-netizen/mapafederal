@@ -67,9 +67,14 @@ SIB/APN identifica la provincia Chaco, departamento Presidencia de la Plaza, cre
 - Rama de trabajo: `automation/nea-chaco-parque-nacional-20261127-1232`.
 - Commit del catálogo: `b1c6b31dc7ce4f7ded271e5fe7a70503a8662564`.
 - PR #33 integrado en `main`: https://github.com/leandrocuellarok-netizen/mapafederal/pull/33.
-- Merge commit de `main`: `f135d2357262671d30366d7876e8461976f4bdb1`.
-- GitHub Actions #881 (run ID `46026439613`): falló en `Validate geographic and editorial JSON` porque tres aserciones del workflow todavía comparaban `coverage.catalogCommit` con el SHA anterior `f55c0e5`; el catálogo y la matriz ya apuntaban al commit nuevo `b1c6b31`. El job `deploy` fue omitido. La corrección actualiza esas tres aserciones sin alterar datos.
-- PR #34 y ejecución de validación/despliegue posterior: pendientes.
+- Merge commit de datos: `f135d2357262671d30366d7876e8461976f4bdb1`.
+- GitHub Actions #881 (run ID `46026439613`, SHA `f135d2357262671d30366d7876e8461976f4bdb1`): falló en `Validate geographic and editorial JSON` porque tres aserciones del workflow todavía comparaban `coverage.catalogCommit` con el SHA anterior `f55c0e5`; el catálogo y la matriz ya apuntaban al commit nuevo `b1c6b31`. El job `deploy` fue omitido.
+- PR #34 integrado: https://github.com/leandrocuellarok-netizen/mapafederal/pull/34. Actualizó únicamente las tres aserciones obsoletas y registró la incidencia.
+- Commit de corrección del workflow: `c01df0f8ed48c9e2fc6d6f29c9348c5ba4aee0fa`; commit de actualización de esta bitácora: `7d90a2d5a6bbc7f4cd6065b9072f9bdba90768d7`.
+- Merge final de `main`: `5fe3ca2cba69f50bd658384294f3657f6f03f4bb`.
+- GitHub Actions #882 (run ID `46026593611`, SHA `5fe3ca2cba69f50bd658384294f3657f6f03f4bb`): `validate` y `deploy` completados con `success`; el paso `Deploy to GitHub Pages` terminó correctamente.
+- `index.html` conserva el blob SHA `69e72891fe28e19580f681b85699da6377912c9c`; no fue modificado y continúa cargando `data/strategic-nodes.json`.
+- Inspección independiente: se intentó abrir la portada y el JSON publicado en GitHub Pages, pero el navegador no pudo acceder al dominio. Se confirma el despliegue del job Pages, pero no se afirma verificación visual del marcador.
 - La verificación visual independiente de la portada se realizará después del despliegue, si el dominio responde.
 
 ## Brechas no resueltas
