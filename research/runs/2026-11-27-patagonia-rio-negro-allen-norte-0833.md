@@ -69,3 +69,10 @@
 - Río Negro: Ciudad, Paso fronterizo, Logística, Recurso mineral y Estación ferroviaria siguen sin nodos.
 - Parque Industrial II de General Roca: fuentes oficiales documentan ubicación en RP 6 km 93 y actividad empresarial, pero no aportan coordenada puntual o geometría; no se geocodificó el kilometraje ni se incorporó un punto aproximado.
 - Catamarca, Santiago del Estero y Tucumán continúan como las jurisdicciones menos representadas.
+
+## Incidencia de validación y corrección
+
+- GitHub Actions #871 (run ID `45991925263`, commit `052d5b8b10757443d8d51935d8387725b1d35cbb`) falló en el paso «Validate geographic and editorial JSON» por una aserción sensible a mayúsculas/minúsculas: el metadato correcto decía «No se asigna EPSG» y la prueba esperaba «no se asigna EPSG».
+- No se modificó el dato geográfico. Se corrigió la prueba para comparar el texto normalizado con `.lower()` en la rama de reparación.
+- Commit de corrección del workflow: `ea4d6f82f79bd6fd452704100938374d080a1ef2`.
+- Nueva validación en `main` y despliegue de Pages: pendientes de integración de la corrección.
