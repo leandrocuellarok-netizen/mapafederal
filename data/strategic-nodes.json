@@ -2220,4 +2220,42 @@
     "scope": "El sitio institucional oficial del PIIP confirma su localización en Posadas, Paraje Nemesio Parma, superficie de 112 ha, infraestructura y registro RENPI 20130080. El Gobierno de Misiones documenta una planta de Plastimi SRL en el parque el 22/05/2026 y la Municipalidad de Posadas informa una capacitación en el espacio MiDi del PIIP el 11/05/2026. La coordenada -27.369429, -55.991358 se transcribió del directorio sectorial Parques Industriales (ficha 74378), fuente secundaria que no declara datum/CRS, precisión ni semántica geométrica. Se usa como referencia general del predio, no como acceso, centroide certificado, lote ni perímetro. No se verificó el padrón empresarial ni disponibilidad de lotes en tiempo real."
   }
 }
+,
+  {
+    "id": "la-rioja-turismo-parque-nacional-talampaya",
+    "name": "Parque Nacional Talampaya",
+    "province": "La Rioja",
+    "district": "Coronel Felipe Varela e Independencia",
+    "type": "Turismo",
+    "coords": [
+      -29.85015,
+      -67.87759
+    ],
+    "note": "Área protegida nacional de 213.800 ha y Sitio de Patrimonio Mundial. SIB/APN publica esta ubicación geográfica como referencia general; la ficha no define si corresponde a acceso, centroide o punto interno. No representa acceso, centroide certificado ni perímetro. APN publica horarios estacionales, accesos por RN 76 y RN 40 y servicios de visita; no se verificó transitabilidad en tiempo real.",
+    "source": "https://www.argentina.gob.ar/parquesnacionales/centro/parque-nacional-talampaya",
+    "sourceName": "Administración de Parques Nacionales (APN)",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Página institucional consultada el 2026-11-27; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "APN/SIB — Parque Nacional Talampaya; Ley Nacional 24.846/97; Sitio de Patrimonio Mundial desde 2000.",
+    "coordinateSource": "https://sib.gob.ar/areas-protegidas/parque-nacional-talampaya",
+    "coordinateSourceName": "Sistema de Información de Biodiversidad de la Administración de Parques Nacionales (SIB/APN)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La ficha publica 29 51 0.55 S (-29.85015), 67 52 39.34 O (-67.87759); consultada el 2026-11-27. No informa fecha de actualización, datum/CRS ni semántica geométrica exacta del punto.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por SIB/APN; datum y CRS no especificados. No se atribuye EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron los valores decimales publicados por SIB/APN; no se realizó geocodificación ni reproyección.",
+    "coordinateQuality": "Punto de referencia geográfica del área protegida publicado por SIB/APN. La ficha no define si corresponde a acceso, centroide o punto interno; se usa solo como referencia general del parque y no se presenta como acceso, centroide certificado ni perímetro.",
+    "statusSource": "https://www.argentina.gob.ar/parquesnacionales/centro/parque-nacional-talampaya/horarios-como-llegar",
+    "statusSourceName": "APN — Horarios / Cómo llegar",
+    "statusSourcePublishedAt": null,
+    "additionalStatusSource": "https://www.argentina.gob.ar/node/138506",
+    "additionalStatusSourceName": "APN — Tarifas",
+    "additionalStatusSourcePublishedAt": null,
+    "administrativeStatus": "Parque Nacional de jurisdicción y administración nacional, creado por Ley Nacional 24.846/97. SIB/APN informa 213.800 ha, los departamentos Coronel Felipe Varela e Independencia y categoría internacional Sitio de Patrimonio Mundial. APN publica horarios estacionales de visita, accesos por RN 76 y RN 40, estacionamiento en sectores de visita y servicios de acampe; la página de tarifas informa valores vigentes desde 2026-06-01 y venta de entradas. Esto respalda uso público documentado, pero no confirma transitabilidad, cupos ni disponibilidad de excursiones en tiempo real.",
+    "validityPeriod": "Ficha SIB/APN y página de horarios consultadas el 2026-11-27; tarifas vigentes desde 2026-06-01. No se verificó el estado de rutas ni la disponibilidad de servicios en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "SIB/APN identifica el Parque Nacional Talampaya en La Rioja, departamentos Coronel Felipe Varela e Independencia, creación 1997 por Ley 24.846, superficie 213.800 ha y categoría internacional Sitio de Patrimonio Mundial; publica 29 51 0.55 S (-29.85015), 67 52 39.34 O (-67.87759). La ficha no declara datum/CRS ni semántica geométrica del punto; se conserva solo como referencia general del área protegida, no como acceso, centroide certificado ni perímetro. APN publica horarios estacionales, accesos por RN 76 y RN 40 y estacionamiento en sectores de visita; su página de tarifas informa valores vigentes desde 2026-06-01. No se verificó transitabilidad, cupos ni disponibilidad de servicios en tiempo real."
+    }
+  }
 ]

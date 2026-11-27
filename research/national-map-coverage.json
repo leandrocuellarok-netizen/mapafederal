@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T05:33:08-03:00",
+  "generatedAt": "2026-11-27T06:38:32-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "955c31b67b138731391f45a297cc532a17ab0ec2",
-  "nodeCount": 111,
+  "catalogCommit": "974425cebd5ae86b624fb580c9ec31683adb98b1",
+  "nodeCount": 112,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -48,7 +48,7 @@
         "San Juan",
         "San Luis"
       ],
-      "nodeCount": 14,
+      "nodeCount": 15,
       "coveredJurisdictions": 4
     },
     {
@@ -356,7 +356,7 @@
     {
       "province": "La Rioja",
       "region": "Cuyo",
-      "total": 3,
+      "total": 4,
       "byType": {
         "Ciudad": 0,
         "Puerto": 0,
@@ -365,7 +365,7 @@
         "Logística": 0,
         "Industria": 1,
         "Recurso mineral": 0,
-        "Turismo": 0,
+        "Turismo": 1,
         "Estación ferroviaria": 0
       },
       "missingCategories": [
@@ -373,7 +373,6 @@
         "Puerto",
         "Logística",
         "Recurso mineral",
-        "Turismo",
         "Estación ferroviaria"
       ]
     },
@@ -681,7 +680,7 @@
     "Logística": 3,
     "Industria": 15,
     "Recurso mineral": 5,
-    "Turismo": 16,
+    "Turismo": 17,
     "Estación ferroviaria": 6
   },
   "leastCoveredJurisdictions": [
@@ -711,9 +710,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NEA",
-    "nextTarget": "Cuyo",
-    "note": "Ejecución del 27/11/2026 en Misiones (NEA): se incorporó el Parque Industrial y de la Innovación Posadas (PIIP) como nodo Industria. El sitio oficial del PIIP documenta 112 ha, infraestructura y registro RENPI 20130080; el Gobierno de Misiones y la Municipalidad de Posadas documentan actividad dentro del predio en mayo de 2026. La coordenada (-27.369429, -55.991358) procede de un directorio sectorial secundario que no declara datum/CRS, precisión ni semántica geométrica; se usa como referencia general, no como acceso, centroide certificado, lote ni perímetro. Próxima región de rotación: Cuyo."
+    "lastTargeted": "Cuyo",
+    "nextTarget": "Centro",
+    "note": "Ejecución del 27/11/2026 en La Rioja (Cuyo): se incorporó el Parque Nacional Talampaya en Turismo. SIB/APN publica la referencia geográfica -29.85015, -67.87759 y confirma 213.800 ha, los departamentos Coronel Felipe Varela e Independencia y su creación por Ley 24.846/97; APN documenta horarios estacionales, accesos por RN 76 y RN 40 y tarifas vigentes desde 01/06/2026. La ficha SIB no declara datum/CRS ni semántica geométrica del punto; se conserva solo como referencia general del área protegida, no como acceso, centroide certificado ni perímetro. Próxima región de rotación: Centro."
   },
   "pendingCandidates": [
     {
@@ -954,6 +953,7 @@
     "El Parque Nacional Tierra del Fuego (Tierra del Fuego) usa la ubicación geográfica decimal publicada por SIB/APN: 54 38 32.13 S (-54.64226), 68 29 09.51 O (-68.48597), provincia Tierra del Fuego, departamento Ushuaia, creación 1960 y superficie 68.909 ha. La ficha no declara datum/CRS ni define si el punto corresponde a acceso, centroide o punto interno; se conserva como referencia general del área protegida, no como portada, acceso ni perímetro. APN publica horarios estacionales, acceso desde RN 3 y estacionamientos en varios sectores; la Resolución 132/2026 incluye el parque en el régimen de derechos de acceso vigente desde 01/06/2026. No se verificó apertura diaria ni transitabilidad en tiempo real.",
     "El nodo Puerto de Buenos Aires (CABA) fue corregido con la localización general publicada por ANPyN: 34°35'43.9\\\"S, 58°21'50.6\\\"W. Se convirtió DMS a grados decimales mediante cálculo aritmético, sin reproyección ni transformación de datum. La ficha no declara CRS/datum, precisión ni semántica geométrica del punto; por ello se representa solo como referencia general del puerto, no como acceso, muelle específico, terminal individual, centroide certificado ni perímetro. La fuente también enumera muelles para pasajeros y carga; no se infiere operación en tiempo real.",
     "El Centro de Visitantes Aguas Negras del Parque Nacional Calilegua (Jujuy) usa el pin de lugar de Google Maps enlazado directamente por APN en «Ver mapa» desde la página oficial de Horarios / Cómo llegar. La URL de destino identifica «Parque Nacional Calilegua, Centro de Visitantes» y contiene el pin -23.7597349, -64.8504986. Google Maps se identifica como fuente secundaria de coordenadas; no declara CRS/datum ni precisión. El marcador representa el centro de visitantes, no el perímetro ni el centroide del parque. APN documenta atención diaria de 8 a 19 h y acceso por RP 83; no se verificó transitabilidad en tiempo real.",
-    "El Parque Industrial y de la Innovación Posadas (Misiones) utiliza una coordenada decimal publicada por el directorio sectorial secundario Parques Industriales (ficha 74378). El sitio institucional del PIIP confirma el predio de 112 ha, infraestructura y registro RENPI 20130080; el Gobierno de Misiones (22/05/2026) y la Municipalidad de Posadas (11/05/2026) documentan actividad dentro del parque. El directorio no declara CRS/datum, precisión ni semántica geométrica; el marcador es una referencia general del predio y no representa acceso, centroide certificado, lote ni perímetro."
+    "El Parque Industrial y de la Innovación Posadas (Misiones) utiliza una coordenada decimal publicada por el directorio sectorial secundario Parques Industriales (ficha 74378). El sitio institucional del PIIP confirma el predio de 112 ha, infraestructura y registro RENPI 20130080; el Gobierno de Misiones (22/05/2026) y la Municipalidad de Posadas (11/05/2026) documentan actividad dentro del parque. El directorio no declara CRS/datum, precisión ni semántica geométrica; el marcador es una referencia general del predio y no representa acceso, centroide certificado, lote ni perímetro.",
+    "El Parque Nacional Talampaya (La Rioja) usa la ubicación geográfica decimal publicada por SIB/APN: -29.85015, -67.87759; la ficha identifica los departamentos Coronel Felipe Varela e Independencia, creación 1997 y superficie 213.800 ha. No declara datum/CRS ni semántica geométrica del punto; se conserva como referencia general del área protegida y no como acceso, centroide certificado ni perímetro. APN documenta horarios estacionales, accesos por RN 76 y RN 40, servicios de acampe y tarifas vigentes desde 01/06/2026; no se verificó transitabilidad ni disponibilidad de servicios en tiempo real."
   ]
 }
