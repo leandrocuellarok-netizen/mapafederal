@@ -94,7 +94,13 @@
 - Commit de workflow: `e26900dec363eee98416c4f5b0d034e92ac4b903`.
 - Commit de actualización final del README: `2982a59c99b1f48580bab5b594c5cbf36894d371`.
 - Rama de trabajo: `automation/caba-ctc-villa-soldati-20261127-1039`.
-- PR, merge SHA, workflow run y Pages: pendientes.
+- PR #31: https://github.com/leandrocuellarok-netizen/mapafederal/pull/31, integrado el 2026-11-27 10:44 ART (UTC-3).
+- Merge commit en `main`: `feb521c5f36124f03cf0a61018402635783783c3`.
+- HEAD de `main` al finalizar la integración de datos: `feb521c5f36124f03cf0a61018402635783783c3`.
+- GitHub Actions #877: https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/46009697761 — validación y despliegue completados con `success`.
+- GitHub Pages: el job `deploy` y el paso `Deploy to GitHub Pages` finalizaron con `success`.
+- `index.html` conserva el blob SHA `69e72891fe28e19580f681b85699da6377912c9c`; no fue modificado y continúa conectado al catálogo nacional.
+- Inspección independiente posterior al despliegue: se intentó abrir la portada y el JSON público de Pages, pero el entorno de navegación devolvió que ambas URL no eran accesibles. Se confirma el despliegue del workflow, pero no se afirma verificación visual del marcador.
 
 ## Gaps no resueltos
 
