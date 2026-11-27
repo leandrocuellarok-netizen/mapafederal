@@ -2324,4 +2324,40 @@
       "scope": "El Registro Provincial de Parques Industriales y Logísticos (REPPIL) identifica el Parque Industrial Allen Norte como público, creado en 2012, de 437 ha y en desarrollo. Publica la ubicación «Acceso Martín Fierro (acceso Autódromo Gral. Enrique Mosconi)» y las coordenadas 38°55'31.85\"S / 67°52'0.35\"O. La coordenada se convirtió aritméticamente de DMS a decimal, sin reproyección; datum/CRS, precisión y método no declarados. El registro informa 1 empresa operativa, 9 en proyecto y 0 en construcción; no se afirma operación integral ni disponibilidad comercial actual. El marcador identifica el acceso, no el perímetro ni una parcela."
     }
   }
+,
+  {
+    "id": "buenos-aires-industria-parque-industrial-la-plata-ii",
+    "name": "Parque Industrial La Plata II",
+    "province": "Buenos Aires",
+    "district": "La Plata",
+    "locality": "Abasto",
+    "type": "Industria",
+    "coords": [
+      -34.97873888888889,
+      -58.15296944444444
+    ],
+    "note": "El EIA municipal identifica explícitamente esta coordenada como la entrada al predio del Parque Industrial La Plata II, en Abasto, partido de La Plata. La Provincia informó su escrituración en 2025 y más de 100 empresas de la zona; no se presume operación actual de cada parcela ni disponibilidad de lotes.",
+    "source": "https://www.ambiente.gba.gob.ar/sites/default/files/PCAbstract/PC_RESUMEN%20Estudio%20de%20Impacto%20Ambiental%20-%20Parque%20Industrial%20La%20Plata%202.pdf",
+    "sourceName": "Municipalidad de La Plata — Resumen del Estudio de Impacto Ambiental del Parque Industrial La Plata II (documento alojado en el portal ambiental de la Provincia de Buenos Aires)",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Documento asociado al expediente OPDS 2145-40596/2013; el PDF no declara fecha formal de publicación. Incluye planos fechados en abril de 2019. Consultado el 2026-11-27.",
+    "sourceRecordId": "Resumen del Estudio de Impacto Ambiental — Parque Industrial La Plata II, expediente 2145-40596/2013; página 3, descripción del proyecto y coordenadas de entrada al predio.",
+    "coordinateSource": "https://www.ambiente.gba.gob.ar/sites/default/files/PCAbstract/PC_RESUMEN%20Estudio%20de%20Impacto%20Ambiental%20-%20Parque%20Industrial%20La%20Plata%202.pdf",
+    "coordinateSourceName": "Municipalidad de La Plata — Estudio de Impacto Ambiental del Parque Industrial La Plata II, página 3",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La página 3 publica la entrada al predio en 34°58'43.46\"S, 58°9'10.69\"O. El documento no declara datum/CRS, precisión ni método de captura; consultado el 2026-11-27.",
+    "coordinateReferenceSystem": "Coordenadas geográficas en grados, minutos y segundos publicadas en el EIA municipal; datum, CRS y EPSG no declarados. No se asigna EPSG.",
+    "coordinateTransformation": "Conversión aritmética DMS a grados decimales: 34°58'43.46\"S → -34.97873888888889; 58°9'10.69\"O → -58.15296944444444. Sin reproyección ni transformación de datum.",
+    "coordinateQuality": "La Municipalidad identifica expresamente el punto como entrada al predio del Parque Industrial La Plata II. Se utiliza como referencia de acceso; no representa centroide, parcela, lote ni perímetro. El EIA no declara precisión ni datum/CRS.",
+    "statusSource": "https://www.gba.gob.ar/escribaniageneral/noticias/la_provincia_y_la_municipalidad_de_la_plata_escrituraron_el_parque",
+    "statusSourceName": "Gobierno de la Provincia de Buenos Aires — Escrituración del Parque Industrial La Plata II",
+    "statusSourcePublishedAt": "2025-04-04",
+    "administrativeStatus": "La Provincia y la Municipalidad de La Plata informaron el 04/04/2025 la escrituración de la primera fase del Parque Industrial La Plata II y señalaron que el parque fue construido en 2006; la nota refiere a más de 100 empresas de la zona y a empresas radicadas. La fuente no publica un padrón empresarial actualizado ni acredita la operación actual de cada parcela. No se presume disponibilidad de lotes.",
+    "validityPeriod": "EIA municipal asociado al expediente 2145-40596/2013, con planos que incluyen fecha abril de 2019; noticia oficial de escrituración publicada el 2025-04-04. Fuentes consultadas el 2026-11-27; no se verificó padrón ni operación parcelaria en tiempo real.",
+    "status": "no_verificado",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "La Municipalidad de La Plata identifica el punto -34.97873888888889, -58.15296944444444 como entrada al predio del Parque Industrial La Plata II, en Abasto, partido de La Plata. La coordenada se convirtió aritméticamente desde 34°58'43.46\"S, 58°9'10.69\"O; sin reproyección ni transformación de datum. El EIA no declara CRS/datum ni precisión. La Provincia informó el 04/04/2025 la escrituración de la primera fase, la construcción del parque en 2006 y más de 100 empresas de la zona; no aporta padrón actualizado ni prueba operación actual de cada parcela. El marcador representa la entrada, no el centroide ni el perímetro."
+    }
+  }
 ]
