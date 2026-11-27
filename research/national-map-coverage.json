@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-11-27T02:32:10-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "40406cfc1d9de3e7837ac88be476b7e412abc32d",
+  "catalogCommit": "b1cccd51ebae7c6a2cbd56f6aa7be2e78c9b8f61",
   "nodeCount": 109,
   "jurisdictionCount": 24,
   "categories": [
@@ -720,7 +720,7 @@
     ],
     "lastTargeted": "Buenos Aires Province",
     "nextTarget": "CABA",
-    "note": "Ejecución del 27/11/2026 en Buenos Aires Province: se corrigió la localización del nodo existente Puerto de Quequén con las coordenadas DMS publicadas por ANPyN (38°34'16.8\\\"S, 58°42'48.5\\\"W), convertidas aritméticamente a grados decimales. No se agregó un nodo ni se alteró la cobertura cuantitativa; se conservó la fuente previa del Consorcio como referencia complementaria. La Resolución ANPyN 39/2026 acredita habilitación administrativa provincial, de uso público y destino comercial; la operación efectiva no se verificó en tiempo real. Próxima región de rotación: CABA."
+    "note": "Ejecución del 27/11/2026 en Buenos Aires Province: se corrigió la localización del nodo existente Puerto de Quequén con las coordenadas DMS publicadas por ANPyN (38°34'16.8\"S, 58°42'48.5\"W), convertidas aritméticamente a grados decimales. No se agregó un nodo ni se alteró la cobertura cuantitativa; se conservó la fuente previa del Consorcio como referencia complementaria. La Resolución ANPyN 39/2026 acredita habilitación administrativa provincial, de uso público y destino comercial; la operación efectiva no se verificó en tiempo real. Próxima región de rotación: CABA."
   },
   "pendingCandidates": [
     {
