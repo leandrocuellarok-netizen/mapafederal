@@ -67,3 +67,10 @@ La base de datos de yacimientos minerales de SEGEMAR declara actualización al 1
 ## Próxima prioridad
 
 Región Centro, priorizando La Pampa y Santa Fe/Córdoba según las brechas verificables de la matriz.
+
+## Corrección posterior a la primera validación
+
+- PR #13 integrado en `main`; merge commit: `327594d8270a87db2af18dba87b38eaa66ec7f82`.
+- GitHub Actions #842 (ID `45929975173`) falló en el paso `Validate geographic and editorial JSON`: una aserción histórica todavía esperaba la rotación NEA → Cuyo. La matriz ya estaba correctamente actualizada a Cuyo → Centro. El catálogo, la matriz y la nueva aserción específica de Veladero pasaron hasta ese punto; la falla fue la expectativa desactualizada, no el registro geográfico.
+- Corrección: se actualizó la aserción de rotación en `.github/workflows/static.yml` para esperar Cuyo → Centro. Commit de la corrección en rama: `979829dde6bfb9e0908258f9fb552ca457cdd710`.
+- Validación completa y despliegue de Pages tras integrar esta corrección: pendientes.
