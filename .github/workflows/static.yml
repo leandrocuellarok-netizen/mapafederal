@@ -669,7 +669,22 @@ jobs:
           assert "Turismo" not in tucuman["missingCategories"]
           noa = next(region for region in coverage["regions"] if region["name"] == "NOA")
           assert noa["nodeCount"] == 11 and noa["coveredJurisdictions"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "NOA" and coverage["regionalRotation"]["nextTarget"] == "NEA"
+          assert coverage["regionalRotation"]["lastTargeted"] == "NEA" and coverage["regionalRotation"]["nextTarget"] == "Cuyo"
+          formosa_reserve = next((node for node in nodes if node.get("id") == "formosa-turismo-reserva-natural-formosa"), None)
+          assert formosa_reserve is not None and formosa_reserve["province"] == "Formosa" and formosa_reserve["type"] == "Turismo"
+          assert formosa_reserve["district"] == "Bermejo"
+          assert formosa_reserve["coords"] == [-24.27366, -61.80071] and formosa_reserve["status"] == "operativo"
+          assert formosa_reserve["source"] == "https://www.argentina.gob.ar/parquesnacionales/nea/reserva-natural-formosa"
+          assert formosa_reserve["coordinateSource"] == "https://sib.gob.ar/areas-protegidas/reserva-natural-formosa"
+          assert formosa_reserve["coordinateReferenceSystem"].startswith("Coordenadas geográficas")
+          assert "no se presenta como portada oeste" in formosa_reserve["coordinateQuality"].lower()
+          assert "Centro Operativo Guaipo" in formosa_reserve["administrativeStatus"]
+          assert formosa_reserve["verification"]["checkedAt"] == "2026-11-26"
+          formosa = next(row for row in coverage_rows if row["province"] == "Formosa")
+          assert formosa["total"] == 3 and formosa["byType"]["Turismo"] == 1 and formosa["byType"]["Puerto"] == 1 and formosa["byType"]["Aeropuerto"] == 1
+          assert "Turismo" not in formosa["missingCategories"]
+          nea = next(region for region in coverage["regions"] if region["name"] == "NEA")
+          assert nea["nodeCount"] == 12 and nea["coveredJurisdictions"] == 4
           tehuelche = next((node for node in nodes if node.get("id") == "chubut-aeropuerto-el-tehuelche-savy"), None)
           assert tehuelche is not None and tehuelche["province"] == "Chubut" and tehuelche["type"] == "Aeropuerto"
           assert tehuelche["status"] == "operativo"
@@ -686,7 +701,7 @@ jobs:
           chubut = next(row for row in coverage_rows if row["province"] == "Chubut")
           assert chubut["total"] == 6 and chubut["byType"]["Turismo"] == 1
           assert "Turismo" not in chubut["missingCategories"]
-          assert coverage["categoryTotals"]["Turismo"] == 12
+          assert coverage["categoryTotals"]["Turismo"] == 13
           rio_grande = next((node for node in nodes if node.get("id") == "tierra-del-fuego-parque-industrial-rio-grande"), None)
           assert rio_grande is not None and rio_grande["province"] == "Tierra del Fuego" and rio_grande["type"] == "Industria"
           assert rio_grande["status"] == "no_verificado"
