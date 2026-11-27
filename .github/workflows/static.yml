@@ -744,7 +744,7 @@ jobs:
           assert "precisión de minuto" in laguna_blanca_candidate["reason"]
           noa = next(region for region in coverage["regions"] if region["name"] == "NOA")
           assert noa["nodeCount"] == 14 and noa["coveredJurisdictions"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "NOA (prioridad por menor cobertura)" and coverage["regionalRotation"]["nextTarget"] == "NEA"
+          assert coverage["regionalRotation"]["lastTargeted"] == "NOA" and coverage["regionalRotation"]["nextTarget"] == "NEA"
           formosa_reserve = next((node for node in nodes if node.get("id") == "formosa-turismo-reserva-natural-formosa"), None)
           assert formosa_reserve is not None and formosa_reserve["province"] == "Formosa" and formosa_reserve["type"] == "Turismo"
           assert formosa_reserve["district"] == "Bermejo"
@@ -936,7 +936,7 @@ jobs:
           patagonia = next(region for region in coverage["regions"] if region["name"] == "Patagonia")
           assert patagonia["nodeCount"] == 25 and patagonia["coveredJurisdictions"] == 5
           assert coverage["categoryTotals"]["Industria"] == 17
-          assert coverage["regionalRotation"]["lastTargeted"] == "NOA (prioridad por menor cobertura)" and coverage["regionalRotation"]["nextTarget"] == "NEA"
+          assert coverage["regionalRotation"]["lastTargeted"] == "NOA" and coverage["regionalRotation"]["nextTarget"] == "NEA"
           assert coverage["catalogCommit"] == "12bbf7ce6febf92bd362d8f15991a5740b7f0d6d"
           copo = next((node for node in nodes if node.get("id") == "santiago-del-estero-turismo-parque-nacional-copo"), None)
           assert copo is not None and copo["province"] == "Santiago del Estero" and copo["district"] == "Copo" and copo["type"] == "Turismo"
@@ -960,7 +960,7 @@ jobs:
           assert cordoba_row["total"] == 4 and cordoba_row["byType"]["Estación ferroviaria"] == 1
           assert "Estación ferroviaria" not in cordoba_row["missingCategories"]
           assert coverage["categoryTotals"]["Estación ferroviaria"] == 7
-          assert coverage["regionalRotation"]["lastTargeted"] == "NOA (prioridad por menor cobertura)" and coverage["regionalRotation"]["nextTarget"] == "NEA"
+          assert coverage["regionalRotation"]["lastTargeted"] == "NOA" and coverage["regionalRotation"]["nextTarget"] == "NEA"
 
           entre_rios = next(row for row in coverage_rows if row["province"] == "Entre Ríos")
           assert entre_rios["total"] == 4 and entre_rios["byType"]["Turismo"] == 1
@@ -968,7 +968,7 @@ jobs:
           centro = next(region for region in coverage["regions"] if region["name"] == "Centro")
           assert centro["nodeCount"] == 17 and centro["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Turismo"] == 21
-          assert coverage["regionalRotation"]["lastTargeted"] == "NOA (prioridad por menor cobertura)" and coverage["regionalRotation"]["nextTarget"] == "NEA"
+          assert coverage["regionalRotation"]["lastTargeted"] == "NOA" and coverage["regionalRotation"]["nextTarget"] == "NEA"
           assert coverage["catalogCommit"] == "12bbf7ce6febf92bd362d8f15991a5740b7f0d6d"
           san_juan = next(row for row in coverage_rows if row["province"] == "San Juan")
           assert san_juan["total"] == 4 and san_juan["byType"]["Recurso mineral"] == 1
@@ -993,7 +993,7 @@ jobs:
           assert "116.083 habitantes" in santa_rosa["administrativeStatus"] and "Censo 2022" in santa_rosa["administrativeStatus"]
           assert santa_rosa["verification"]["checkedAt"] == "2026-11-27"
           assert coverage["categoryTotals"]["Ciudad"] == 9
-          assert coverage["regionalRotation"]["lastTargeted"] == "NOA (prioridad por menor cobertura)" and coverage["regionalRotation"]["nextTarget"] == "NEA"
+          assert coverage["regionalRotation"]["lastTargeted"] == "NOA" and coverage["regionalRotation"]["nextTarget"] == "NEA"
           assert coverage["catalogCommit"] == "12bbf7ce6febf92bd362d8f15991a5740b7f0d6d"
           la_pampa = next(row for row in coverage_rows if row["province"] == "La Pampa")
           assert la_pampa["total"] == 4 and la_pampa["byType"]["Ciudad"] == 1
@@ -1006,7 +1006,7 @@ jobs:
           cuyo = next(region for region in coverage["regions"] if region["name"] == "Cuyo")
           assert cuyo["nodeCount"] == 16 and cuyo["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Recurso mineral"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "NOA (prioridad por menor cobertura)" and coverage["regionalRotation"]["nextTarget"] == "NEA"
+          assert coverage["regionalRotation"]["lastTargeted"] == "NOA" and coverage["regionalRotation"]["nextTarget"] == "NEA"
           assert coverage["catalogCommit"] == "12bbf7ce6febf92bd362d8f15991a5740b7f0d6d"
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
