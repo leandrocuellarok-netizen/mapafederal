@@ -83,3 +83,13 @@ CABA conserva la categoría Paso fronterizo como brecha de catálogo. No se aña
 - Las comprobaciones previas del nodo y del resto de los datasets avanzaron; el job de despliegue fue omitido por la política del workflow al fallar la validación.
 - Corrección preparada en PR #20: se normalizó también el literal esperado a minúsculas (`conversión aritmética dms`). Commit de corrección del workflow: `c7fdbc53354f3b93e9b43106aafd37dbaabe2b57`.
 - La ejecución posterior de validación y Pages queda pendiente hasta integrar la corrección.
+
+
+## Integración final, validación y publicación
+
+- PR #20 integrado mediante squash: https://github.com/leandrocuellarok-netizen/mapafederal/pull/20.
+- Commit de corrección del workflow: `c367b2603fda5202ddad3ee9d315224ca5946b6c`.
+- GitHub Actions #856 (run ID `45953747499`, commit `c367b2603fda5202ddad3ee9d315224ca5946b6c`): job `validate` = `success`; job `deploy` = `success`, incluido `Deploy to GitHub Pages`.
+- La ejecución #855 (run ID `45953649302`) permanece registrada como fallida por el literal de prueba sensible a mayúsculas/minúsculas; la corrección se integró en PR #20 y la ejecución #856 pasó.
+- La portada pública y el JSON publicado no pudieron abrirse desde el entorno de verificación. Por tanto, el despliegue de Pages está confirmado por Actions, pero no se afirma inspección visual independiente del marcador ni lectura directa del archivo servido.
+- Integración de homepage: `index.html` no cambió; sigue solicitando `./data/strategic-nodes.json`, y el registro corregido permanece dentro del catálogo conectado a sus filtros.
