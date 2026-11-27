@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T03:39:00-03:00",
+  "generatedAt": "2026-11-27T04:34:48-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "1120c4278002be0bb2193aa0a2b0c13f2f830880",
-  "nodeCount": 109,
+  "catalogCommit": "176c0e9012ea0253b93bfdb2eeb156482fd4b443",
+  "nodeCount": 110,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -26,7 +26,7 @@
         "Santiago del Estero",
         "Tucumán"
       ],
-      "nodeCount": 11,
+      "nodeCount": 12,
       "coveredJurisdictions": 5
     },
     {
@@ -305,7 +305,7 @@
     {
       "province": "Jujuy",
       "region": "NOA",
-      "total": 2,
+      "total": 3,
       "byType": {
         "Ciudad": 0,
         "Puerto": 0,
@@ -314,7 +314,7 @@
         "Logística": 0,
         "Industria": 0,
         "Recurso mineral": 0,
-        "Turismo": 0,
+        "Turismo": 1,
         "Estación ferroviaria": 0
       },
       "missingCategories": [
@@ -323,7 +323,6 @@
         "Logística",
         "Industria",
         "Recurso mineral",
-        "Turismo",
         "Estación ferroviaria"
       ]
     },
@@ -683,17 +682,12 @@
     "Logística": 3,
     "Industria": 14,
     "Recurso mineral": 5,
-    "Turismo": 15,
+    "Turismo": 16,
     "Estación ferroviaria": 6
   },
   "leastCoveredJurisdictions": [
     {
       "province": "Catamarca",
-      "region": "NOA",
-      "total": 2
-    },
-    {
-      "province": "Jujuy",
       "region": "NOA",
       "total": 2
     },
@@ -718,9 +712,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "CABA",
-    "nextTarget": "NOA",
-    "note": "Ejecución del 27/11/2026 en CABA: se corrigió la localización general del nodo existente Puerto de Buenos Aires con la coordenada DMS publicada por ANPyN (34°35'43.9\"S, 58°21'50.6\"W), convertida aritméticamente a grados decimales. No se agregó ni eliminó un nodo y la cobertura cuantitativa permanece en 109 nodos. La fuente no declara datum/CRS, precisión ni semántica geométrica; el punto se conserva como referencia general del puerto, no como muelle, acceso ni terminal individual. La ficha documenta muelles para pasajeros y carga, pero no se verificó operación en tiempo real. Próxima región de rotación: NOA."
+    "lastTargeted": "NOA",
+    "nextTarget": "NEA",
+    "note": "Ejecución del 27/11/2026 en Jujuy (NOA): se incorporó el Centro de Visitantes Aguas Negras del Parque Nacional Calilegua como nodo Turismo. APN documenta atención diaria de 8 a 19 h y acceso por RP 83. La coordenada corresponde al pin de Google Maps enlazado por APN, fuente secundaria sin datum/CRS ni precisión declarados; el punto representa el centro de visitantes, no el perímetro ni el centroide del parque. No se verificó transitabilidad de RP 83 en tiempo real. Se investigó además la Reserva Natural Provincial Laguna Blanca (Catamarca), pero no se agregó: SIB/APN publica ubicación solo a minuto y no define punto exacto; los geoservicios IDECat no entregaron geometría (WFS GetCapabilities respondió 403). Próxima región de rotación: NEA."
   },
   "pendingCandidates": [
     {
@@ -925,6 +919,19 @@
         "https://www.coloniaexpress.com/es/ar/mas-informacion/terminales/",
         "https://argentina.worldplaces.me/es/view-place/75497846-terminal-fluviomaritima-colonia-express.html"
       ]
+    },
+    {
+      "province": "Catamarca",
+      "locality": "Laguna Blanca",
+      "category": "Turismo",
+      "name": "Reserva Natural Provincial Laguna Blanca",
+      "decision": "not_added",
+      "reason": "SIB/APN confirma la reserva provincial, su jurisdicción, departamentos y creación en 1979, pero publica la ubicación solo como 26°21'S, 66°48'O (precisión de minuto) y no define acceso, centroide ni geometría. El WFS del Nodo IDECat se anunció en el portal de geoservicios, pero la consulta GetCapabilities respondió 403; no se recuperó un polígono oficial ni un punto de acceso atribuible. Tampoco se verificó acceso turístico público. No se convierte la referencia general en un marcador puntual.",
+      "sourceUrls": [
+        "https://sib.gob.ar/index.php/areas-protegidas/reserva-natural-provincial-laguna-blanca-catamarca",
+        "https://nodoide.catamarca.gob.ar/geoservicios.php",
+        "https://nodoide.catamarca.gob.ar/geoserver/idecat/ows?service=wfs&version=2.0.0&request=GetCapabilities"
+      ]
     }
   ],
   "methodology": [
@@ -946,6 +953,7 @@
     "La Terminal Fluvial Binacional de Tigre (Buenos Aires) se agregó como Paso fronterizo porque la Dirección Nacional de Migraciones la incluye entre las vías de ingreso y egreso en funcionamiento. La coordenada [-34.42121, -58.58097] procede de Mapcarta/OpenStreetMap way 269888419 (amenity=ferry_terminal), fuente secundaria; no se obtuvo una geometría puntual primaria recuperable. El CRS/datum, método y precisión no están declarados. El punto es una referencia de la terminal, no un acceso, muelle específico ni puesto de control. La ficha de Migraciones publica horario de 07 a 17 para embarcaciones particulares y deportivas; no se infiere servicio internacional comercial regular.",
     "El Parque Nacional Aconquija (Tucumán) usa la ubicación geográfica publicada por SIB/APN: 27 11 37.77 S (-27.19383), 65 57 27.27 O (-65.95758), contrastada con la guía oficial de visitantes de APN (septiembre de 2022), que reproduce la misma coordenada en DMS. El SIB no declara datum/CRS ni semántica geométrica del punto. Se conserva solo como referencia general del área protegida; no representa portal, acceso, centroide certificado ni perímetro. APN documenta tres sectores de acceso y condiciona la visita a que el acceso esté habilitado; no se verificó apertura ni transitabilidad en tiempo real.",
     "El Parque Nacional Tierra del Fuego (Tierra del Fuego) usa la ubicación geográfica decimal publicada por SIB/APN: 54 38 32.13 S (-54.64226), 68 29 09.51 O (-68.48597), provincia Tierra del Fuego, departamento Ushuaia, creación 1960 y superficie 68.909 ha. La ficha no declara datum/CRS ni define si el punto corresponde a acceso, centroide o punto interno; se conserva como referencia general del área protegida, no como portada, acceso ni perímetro. APN publica horarios estacionales, acceso desde RN 3 y estacionamientos en varios sectores; la Resolución 132/2026 incluye el parque en el régimen de derechos de acceso vigente desde 01/06/2026. No se verificó apertura diaria ni transitabilidad en tiempo real.",
-    "El nodo Puerto de Buenos Aires (CABA) fue corregido con la localización general publicada por ANPyN: 34°35'43.9\\\"S, 58°21'50.6\\\"W. Se convirtió DMS a grados decimales mediante cálculo aritmético, sin reproyección ni transformación de datum. La ficha no declara CRS/datum, precisión ni semántica geométrica del punto; por ello se representa solo como referencia general del puerto, no como acceso, muelle específico, terminal individual, centroide certificado ni perímetro. La fuente también enumera muelles para pasajeros y carga; no se infiere operación en tiempo real."
+    "El nodo Puerto de Buenos Aires (CABA) fue corregido con la localización general publicada por ANPyN: 34°35'43.9\\\"S, 58°21'50.6\\\"W. Se convirtió DMS a grados decimales mediante cálculo aritmético, sin reproyección ni transformación de datum. La ficha no declara CRS/datum, precisión ni semántica geométrica del punto; por ello se representa solo como referencia general del puerto, no como acceso, muelle específico, terminal individual, centroide certificado ni perímetro. La fuente también enumera muelles para pasajeros y carga; no se infiere operación en tiempo real.",
+    "El Centro de Visitantes Aguas Negras del Parque Nacional Calilegua (Jujuy) usa el pin de lugar de Google Maps enlazado directamente por APN en «Ver mapa» desde la página oficial de Horarios / Cómo llegar. La URL de destino identifica «Parque Nacional Calilegua, Centro de Visitantes» y contiene el pin -23.7597349, -64.8504986. Google Maps se identifica como fuente secundaria de coordenadas; no declara CRS/datum ni precisión. El marcador representa el centro de visitantes, no el perímetro ni el centroide del parque. APN documenta atención diaria de 8 a 19 h y acceso por RP 83; no se verificó transitabilidad en tiempo real."
   ]
 }
