@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T09:32:09-03:00",
+  "generatedAt": "2026-11-27T10:39:40-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "b5db97619a15e49fe5a4d424a3dd9ae0c8a7f69e",
-  "nodeCount": 115,
+  "catalogCommit": "e96ff7d060311c75856f030271ec0637230ecc23",
+  "nodeCount": 116,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -87,7 +87,7 @@
       "jurisdictions": [
         "CABA"
       ],
-      "nodeCount": 5,
+      "nodeCount": 6,
       "coveredJurisdictions": 1
     }
   ],
@@ -95,13 +95,13 @@
     {
       "province": "CABA",
       "region": "CABA",
-      "total": 5,
+      "total": 6,
       "byType": {
         "Ciudad": 1,
         "Puerto": 1,
         "Aeropuerto": 1,
         "Paso fronterizo": 0,
-        "Logística": 0,
+        "Logística": 1,
         "Industria": 0,
         "Recurso mineral": 0,
         "Turismo": 1,
@@ -109,7 +109,6 @@
       },
       "missingCategories": [
         "Paso fronterizo",
-        "Logística",
         "Industria",
         "Recurso mineral"
       ]
@@ -675,7 +674,7 @@
     "Puerto": 22,
     "Aeropuerto": 25,
     "Paso fronterizo": 12,
-    "Logística": 3,
+    "Logística": 4,
     "Industria": 17,
     "Recurso mineral": 5,
     "Turismo": 17,
@@ -708,9 +707,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Buenos Aires Province",
-    "nextTarget": "CABA",
-    "note": "Ejecución del 27/11/2026 en Abasto, partido de La Plata (Buenos Aires): se incorporó el Parque Industrial La Plata II en Industria para ampliar la cobertura productiva fuera del corredor norte y de Escobar. El EIA de la Municipalidad de La Plata publica la coordenada exacta de la entrada al predio: 34°58'43.46\"S, 58°9'10.69\"O; conversión aritmética DMS a decimal, sin reproyección. El documento no declara datum/CRS ni precisión. La Provincia informó el 04/04/2025 la escrituración de la primera fase, la construcción del parque en 2006 y más de 100 empresas de la zona; no se infiere padrón actualizado ni operación de cada parcela. El marcador identifica la entrada, no el perímetro. Próxima región de rotación: CABA."
+    "lastTargeted": "CABA",
+    "nextTarget": "NOA",
+    "note": "Ejecución del 27/11/2026 en Villa Soldati, Comuna 8 (CABA): se incorporó el Centro de Transferencia de Cargas CTC Villa Soldati en Logística. El GCBA identifica el centro, su inauguración en septiembre de 2016 y el predio de 37 ha; el operador CTC publica servicios de carga/descarga, horario de atención y más de 67 empresas de transporte. La coordenada -34.668449, -58.436462 procede de la ficha sectorial secundaria Parques Industriales; no declara CRS/datum, precisión ni método de captura. Se conserva como referencia general del predio, no como acceso, centroide certificado ni perímetro. Próxima región de rotación: NOA."
   },
   "pendingCandidates": [
     {
