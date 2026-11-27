@@ -73,3 +73,13 @@ CABA conserva la categoría Paso fronterizo como brecha de catálogo. No se aña
 1. Geometrías oficiales individuales para las terminales internacionales Buquebus y Colonia Express en CABA.
 2. Geometrías oficiales de nodos logísticos e industriales de CABA, si se identifican instalaciones con punto inequívoco.
 3. Catamarca, Jujuy, Santiago del Estero y Tucumán siguen entre las jurisdicciones con menor cobertura; la próxima rotación prioriza NOA, sin perder de vista esas brechas.
+
+
+## Resultado de la primera ejecución de CI y corrección
+
+- PR #19 integrado en `main`: https://github.com/leandrocuellarok-netizen/mapafederal/pull/19.
+- Commit de integración: `1120c4278002be0bb2193aa0a2b0c13f2f830880`.
+- GitHub Actions #855 (run ID `45953649302`) ejecutó las validaciones iniciales y falló en «Validate geographic and editorial JSON», línea 145 del bloque Python: una aserción comparaba la frase `conversión aritmética DMS` contra un texto convertido a minúsculas. La diferencia de mayúsculas/minúsculas era un defecto del test, no de la coordenada ni del registro.
+- Las comprobaciones previas del nodo y del resto de los datasets avanzaron; el job de despliegue fue omitido por la política del workflow al fallar la validación.
+- Corrección preparada en PR #20: se normalizó también el literal esperado a minúsculas (`conversión aritmética dms`). Commit de corrección del workflow: `c7fdbc53354f3b93e9b43106aafd37dbaabe2b57`.
+- La ejecución posterior de validación y Pages queda pendiente hasta integrar la corrección.
