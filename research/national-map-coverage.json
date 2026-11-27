@@ -111,8 +111,7 @@
         "Paso fronterizo",
         "Industria",
         "Recurso mineral"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "Buenos Aires",
@@ -129,8 +128,7 @@
         "Turismo": 3,
         "Estación ferroviaria": 5
       },
-      "missingCategories": [],
-      "notApplicableCategories": []
+      "missingCategories": []
     },
     {
       "province": "Catamarca",
@@ -154,8 +152,7 @@
         "Industria",
         "Recurso mineral",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "Chaco",
@@ -178,8 +175,7 @@
         "Logística",
         "Recurso mineral",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "Chubut",
@@ -202,8 +198,7 @@
         "Logística",
         "Industria",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "Córdoba",
@@ -253,8 +248,7 @@
         "Recurso mineral",
         "Turismo",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "Entre Ríos",
@@ -278,8 +272,7 @@
         "Industria",
         "Recurso mineral",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "Formosa",
@@ -303,8 +296,7 @@
         "Industria",
         "Recurso mineral",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "Jujuy",
@@ -328,8 +320,7 @@
         "Industria",
         "Recurso mineral",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "La Pampa",
@@ -378,8 +369,7 @@
         "Logística",
         "Recurso mineral",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "Mendoza",
@@ -403,8 +393,7 @@
         "Industria",
         "Recurso mineral",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "Misiones",
@@ -427,8 +416,7 @@
         "Logística",
         "Recurso mineral",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "Neuquén",
@@ -451,8 +439,7 @@
         "Recurso mineral",
         "Turismo",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "Río Negro",
@@ -474,8 +461,7 @@
         "Logística",
         "Recurso mineral",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "Salta",
@@ -500,8 +486,7 @@
         "Recurso mineral",
         "Turismo",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "San Juan",
@@ -524,8 +509,7 @@
         "Logística",
         "Industria",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "San Luis",
@@ -574,8 +558,7 @@
         "Logística",
         "Industria",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "Santa Fe",
@@ -650,8 +633,7 @@
         "Logística",
         "Recurso mineral",
         "Estación ferroviaria"
-      ],
-      "notApplicableCategories": []
+      ]
     },
     {
       "province": "Tucumán",
@@ -709,7 +691,7 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NOA (prioridad por menor cobertura)",
+    "lastTargeted": "NOA",
     "nextTarget": "NEA",
     "note": "Ejecución del 27/11/2026 en Santiago del Estero: se incorporó el Parque Nacional Copo en Turismo. La secuencia regional se apartó temporalmente de Buenos Aires Province porque esa jurisdicción ya registra 30 nodos, mientras Santiago del Estero y Tucumán eran las menos representadas con 2 cada una. Se priorizó una brecha real de cobertura en Santiago del Estero; luego de esta excepción, la rotación retoma el orden canónico en NEA. El SIB/APN publica la ubicación general -25.82089, -61.88005, departamento Copo, creación 2000 y superficie 118.119 ha. APN publica horario diario de visita de 7 a 15 h. La fuente no declara datum/CRS ni semántica geométrica del punto; se usa solo como referencia general del área protegida, no como acceso, centroide certificado ni perímetro. No se verificó apertura ni transitabilidad en tiempo real."
   },
