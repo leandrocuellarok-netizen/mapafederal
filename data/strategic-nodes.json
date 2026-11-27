@@ -1985,8 +1985,7 @@
       "checkedAt": "2026-11-26",
       "scope": "SIB/APN confirma Tucumán, los cinco departamentos, creación y ubicación geográfica exacta publicada. La guía APN de visitantes reproduce la coordenada en DMS y documenta la jurisdicción nacional, tres sectores de acceso e infraestructura de uso público. La página APN de horarios advierte que la visita depende de que el acceso esté habilitado. La coordenada se usa únicamente como referencia general del área protegida; no representa un portal, acceso, centroide certificado ni perímetro. No se verificó apertura ni transitabilidad en tiempo real."
     }
-  }
-,
+  },
   {
     "id": "san-juan-recurso-mineral-veladero",
     "name": "Mina Veladero",
@@ -2021,5 +2020,37 @@
       "checkedAt": "2026-11-26",
       "scope": "SEGEMAR identifica el depósito 339 como Veladero, en Iglesia, San Juan, publica la localización -29.36833, -69.95222 y clasifica su estado como productor; la base informa actualización 13/07/2026. El sitio oficial del operador consultado el 26/11/2026 describe la mina de oro y plata y publica estado del camino con actualización de esa fecha, cámaras en vivo y noticias 2026. La coordenada se conserva como localización de depósito, sin inferir acceso, centroide certificado, perímetro ni CRS."
     }
+  },
+  {
+    "id": "entre-rios-turismo-parque-nacional-el-palmar",
+    "name": "Parque Nacional El Palmar",
+    "province": "Entre Ríos",
+    "district": "Colón",
+    "type": "Turismo",
+    "coords": [
+      -31.88216,
+      -58.25668
+    ],
+    "status": "operativo",
+    "source": "https://www.argentina.gob.ar/parquesnacionales/centro/parque-nacional-el-palmar",
+    "sourceName": "Administración de Parques Nacionales (APN)",
+    "sourcePublicationNote": "Página institucional consultada el 2026-11-27; no informa fecha de publicación o actualización.",
+    "coordinateSource": "https://sib.gob.ar/index.php/areas-protegidas/parque-nacional-el-palmar",
+    "coordinateSourceName": "Sistema de Información de Biodiversidad (SIB), Administración de Parques Nacionales",
+    "coordinateSourcePublicationNote": "La ficha publica coordenadas geográficas decimales, pero no indica fecha de publicación o actualización de ese dato; consultada el 2026-11-27.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por SIB/APN; datum y CRS no especificados. No se atribuye EPSG.",
+    "coordinateTransformation": "No se realizó transformación ni reproyección; se conservaron las coordenadas geográficas decimales publicadas por SIB/APN.",
+    "coordinateQuality": "Punto de referencia geográfica del área protegida publicado por SIB/APN; la ficha no define si corresponde a acceso, centroide o punto interno. No se presenta como acceso, centroide certificado ni perímetro.",
+    "statusSource": "https://www.argentina.gob.ar/node/152864",
+    "statusSourceName": "Administración de Parques Nacionales (APN) — Horarios / Cómo llegar",
+    "additionalStatusSource": "https://www.argentina.gob.ar/normativa/nacional/ley-16802-46365/texto",
+    "additionalStatusSourceName": "Argentina.gob.ar — Ley Nacional 16.802",
+    "additionalStatusSourcePublishedAt": "1966-01-28",
+    "administrativeStatus": "Parque Nacional de jurisdicción y administración nacional, creado por Ley 16.802/65. APN publica horarios estacionales para visitas y senderos, y acceso por RN 14 km 198; no se verificó transitabilidad en tiempo real.",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "SIB/APN publica la ubicación geográfica 31°52'55.77\"S (-31.88216), 58°15'24.04\"O (-58.25668), provincia de Entre Ríos, departamento Colón, creación 1965, superficie 8.213 ha y categoría internacional Sitio Ramsar. La ficha no declara datum/CRS ni define si el punto es acceso, centroide o punto interno; se conserva como referencia general del área protegida. APN confirma el parque y publica la portada en RN 14 km 198, horarios estacionales de visita y senderos; la ley 16.802 crea el parque. No se geocodificó la portada ni se verificó estado de caminos en tiempo real."
+    },
+    "note": "Área protegida nacional de 8.213 ha en el departamento Colón, junto al río Uruguay. SIB/APN publica esta ubicación como referencia geográfica general; no representa la portada, un acceso, centroide certificado ni perímetro. APN publica horarios estacionales y condiciones de visita."
   }
 ]
