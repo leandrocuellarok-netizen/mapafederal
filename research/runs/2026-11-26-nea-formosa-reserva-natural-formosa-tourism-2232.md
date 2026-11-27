@@ -57,4 +57,6 @@ El Parque Industrial de Formosa sigue pendiente: las fuentes consultadas confirm
 - Commit de matriz: `1a533461615c00b9674478816dee4641083fd23e`.
 - Commit de README: `a046f10c40092219a5f8d748cf3fa90f6fd30a17`.
 - Commit de workflow y regresión: `6a264a44e8a6fcd5ff45b05e78c27dbbc1baf3f4`.
-- Pull request y ejecución de validación/despliegue en `main`: pendientes al crear esta bitácora. No se declara publicación hasta comprobar los jobs de GitHub Pages.
+- PR #12 integrado en `main` mediante squash merge; commit de integración: `ecbbf4346985badb22e05839ddbef61f47e00c55`.
+- Estado de Actions consultado para el commit de integración: la consulta de estados combinados devolvió una lista vacía y el endpoint disponible de ejecuciones por commit solo expone eventos `pull_request`, sin mostrar la ejecución `push` de `main`. Por ello no se pudo verificar el job `validate` ni `Deploy to GitHub Pages` desde la integración disponible.
+- Inspección independiente: tanto la portada pública como el JSON publicado de GitHub Pages resultaron inaccesibles desde el entorno de verificación. La integración en `main` está confirmada; no se afirma que el nodo ya esté publicado ni visible hasta contar con evidencia de Actions/Pages.
