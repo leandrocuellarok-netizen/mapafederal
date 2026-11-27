@@ -62,15 +62,20 @@ Se incorporó el Puente Internacional San Ignacio de Loyola, que conecta Clorind
 - Formosa 4; NEA 16; Paso fronterizo 13.
 - Mínimo nacional actualizado a cinco jurisdicciones con 3 nodos.
 - Pruebas del workflow actualizadas para la nueva cobertura y la rotación NEA → Cuyo.
-- GitHub Actions y Pages del cambio quedan pendientes de integración y ejecución.
+- GitHub Actions #901 (run ID 46077748255) falló en la aserción de coordenadas por una diferencia de una ULP entre el literal de prueba y el float serializado en JSON; el job deploy fue omitido. No fue un error del registro ni de su fuente.
+- La aserción se corrigió en PR #47: https://github.com/leandrocuellarok-netizen/mapafederal/pull/47, integrado en 5cfafe8a201538d45bb4035041480d3d587c8059.
+- GitHub Actions #902 (run ID 46077831456): validate = success; deploy = success. El paso Check public entry point también terminó en success. https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/46077831456
+- GitHub Pages: despliegue confirmado para el catálogo de 125 nodos.
 
 ## Integración y publicación
 
-- Rama: automation/nea-formosa-san-ignacio-20261127.
-- Commits de archivos: data/strategic-nodes.json: 3180099ecf5536a2e5c2b16d7c5debdaede40ac8; research/national-map-coverage.json: 43bfce40a8c1731df9347e5820e0d2bc12fd0194; .github/workflows/static.yml: 2c67f7fc10d75053381214f63c0b755aa7edd86b; README.md: 035e8d15b31e6d19f6b56390218933a771031b10.
-- PR: pendiente de apertura.
-- Workflow y Pages: pendientes después del merge.
-- No se afirma inspección visual independiente de la portada.
+- Rama de catálogo: automation/nea-formosa-san-ignacio-20261127.
+- PR #46: https://github.com/leandrocuellarok-netizen/mapafederal/pull/46 — integrado.
+- Commit de catálogo y matriz: 778bdefc05f15cd0bfec1095234b3249176ce85a.
+- PR #47: https://github.com/leandrocuellarok-netizen/mapafederal/pull/47 — integrado; commit de corrección de prueba: 5cfafe8a201538d45bb4035041480d3d587c8059.
+- Archivos de catálogo: data/strategic-nodes.json, research/national-map-coverage.json, .github/workflows/static.yml y README.md; bitácora de esta ejecución.
+- index.html no se modificó; el nodo se conecta al catálogo JSON y al filtro Paso fronterizo existente.
+- La herramienta de navegador no pudo recuperar la portada ni el JSON público; por eso no se afirma una inspección visual del marcador. El chequeo de punto de entrada del workflow sí pasó.
 
 ## Próxima prioridad
 
