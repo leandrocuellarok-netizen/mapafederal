@@ -615,7 +615,7 @@ jobs:
           coverage = json.loads(Path("research/national-map-coverage.json").read_text(encoding="utf-8"))
           assert coverage.get("catalogPath") == "data/strategic-nodes.json"
           assert coverage.get("nodeCount") == len(nodes)
-          assert coverage.get("nodeCount") == 112, "El catálogo nacional debe contener 112 nodos en esta revisión"
+          assert coverage.get("nodeCount") == 113, "El catálogo nacional debe contener 113 nodos en esta revisión"
           quequen = next((node for node in nodes if node.get("id") == "buenos-aires-puerto-puerto-de-quequen"), None)
           assert quequen is not None and quequen["province"] == "Buenos Aires" and quequen["type"] == "Puerto"
           assert quequen["coords"] == [-38.57133333, -58.71347222]
@@ -728,7 +728,7 @@ jobs:
           assert "precisión de minuto" in laguna_blanca_candidate["reason"]
           noa = next(region for region in coverage["regions"] if region["name"] == "NOA")
           assert noa["nodeCount"] == 12 and noa["coveredJurisdictions"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "Cuyo" and coverage["regionalRotation"]["nextTarget"] == "Centro"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
           formosa_reserve = next((node for node in nodes if node.get("id") == "formosa-turismo-reserva-natural-formosa"), None)
           assert formosa_reserve is not None and formosa_reserve["province"] == "Formosa" and formosa_reserve["type"] == "Turismo"
           assert formosa_reserve["district"] == "Bermejo"
@@ -845,22 +845,37 @@ jobs:
           assert el_palmar["additionalStatusSourcePublishedAt"] == "1966-01-28"
           assert el_palmar["verification"]["checkedAt"] == "2026-11-27"
           assert "RN 14 km 198" in el_palmar["administrativeStatus"]
+          cordoba_mitre = next((node for node in nodes if node.get("id") == "cordoba-estacion-ferroviaria-estacion-cordoba-mitre"), None)
+          assert cordoba_mitre is not None and cordoba_mitre["province"] == "Córdoba" and cordoba_mitre["locality"] == "Córdoba" and cordoba_mitre["type"] == "Estación ferroviaria"
+          assert cordoba_mitre["coords"] == [-31.4204589, -64.1750774] and cordoba_mitre["status"] == "operativo"
+          assert cordoba_mitre["source"] == "https://www.argentina.gob.ar/transporte/trenes-argentinos/horarios-tarifas-y-recorridos/servicios-regionales-larga-distancia/buenosaires-cordoba"
+          assert cordoba_mitre["coordinateSource"] == "https://maps.app.goo.gl/2UuuMGnCrfpDysTT7"
+          assert cordoba_mitre["coordinateReferenceSystem"].startswith("Coordenadas geográficas")
+          assert "no como andén" in cordoba_mitre["coordinateQuality"].lower() and "ni perímetro" in cordoba_mitre["coordinateQuality"].lower()
+          assert "dos trenes por semana" in cordoba_mitre["administrativeStatus"]
+          assert cordoba_mitre["verification"]["checkedAt"] == "2026-11-27"
+          cordoba_row = next(row for row in coverage_rows if row["province"] == "Córdoba")
+          assert cordoba_row["total"] == 4 and cordoba_row["byType"]["Estación ferroviaria"] == 1
+          assert "Estación ferroviaria" not in cordoba_row["missingCategories"]
+          assert coverage["categoryTotals"]["Estación ferroviaria"] == 7
+          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
+
           entre_rios = next(row for row in coverage_rows if row["province"] == "Entre Ríos")
           assert entre_rios["total"] == 4 and entre_rios["byType"]["Turismo"] == 1
           assert "Turismo" not in entre_rios["missingCategories"]
           centro = next(region for region in coverage["regions"] if region["name"] == "Centro")
-          assert centro["nodeCount"] == 15 and centro["coveredJurisdictions"] == 4
+          assert centro["nodeCount"] == 16 and centro["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Turismo"] == 17
-          assert coverage["regionalRotation"]["lastTargeted"] == "Cuyo" and coverage["regionalRotation"]["nextTarget"] == "Centro"
-          assert coverage["catalogCommit"] == "974425cebd5ae86b624fb580c9ec31683adb98b1"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
+          assert coverage["catalogCommit"] == "8b0cd32b2f05f1e053ab4422834f88fcfddfd1d2"
           san_juan = next(row for row in coverage_rows if row["province"] == "San Juan")
           assert san_juan["total"] == 4 and san_juan["byType"]["Recurso mineral"] == 1
           assert "Recurso mineral" not in san_juan["missingCategories"]
           cuyo = next(region for region in coverage["regions"] if region["name"] == "Cuyo")
           assert cuyo["nodeCount"] == 15 and cuyo["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Recurso mineral"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "Cuyo" and coverage["regionalRotation"]["nextTarget"] == "Centro"
-          assert coverage["catalogCommit"] == "974425cebd5ae86b624fb580c9ec31683adb98b1"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
+          assert coverage["catalogCommit"] == "8b0cd32b2f05f1e053ab4422834f88fcfddfd1d2"
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
