@@ -71,7 +71,19 @@
 ## Commits y publicación
 
 - Commit de catálogo: `130f38aa104ab3779f3c7d2e56796197e481f90b`.
-- Commit de matriz, workflow y bitácora inicial: se incorpora en el commit posterior al catálogo de esta rama; el SHA final se asentará al cierre.
-- Pull request: #30 — https://github.com/leandrocuellarok-netizen/mapafederal/pull/30.
-- Workflow y GitHub Pages: pendientes de verificación tras el merge.
-- Inspección visual de la portada pública: pendiente.
+- Commit de matriz, workflow y bitácora inicial: `d509dc886e1b587a75985ec7113023a42ada8593`.
+- Pull request: [#30](https://github.com/leandrocuellarok-netizen/mapafederal/pull/30), integrado el 2026-11-27 09:36 ART (UTC-3).
+- Merge commit en `main`: `661e457276d61f74fa6ebb3215092e82fd3ad91b`.
+- GitHub Actions #875 (run ID `46000031888`, commit `661e457276d61f74fa6ebb3215092e82fd3ad91b`): workflow `Deploy static content to Pages` completado con conclusión `success`; jobs `validate` y `deploy` completados con `success`.
+- Validación: JSON geográfico/editorial, catálogo de nodos, matriz federal, aserciones específicas del nuevo nodo, sintaxis JavaScript inline, filtros de portada y pruebas del repositorio: todos los pasos del job `validate` aprobados.
+- GitHub Pages: el job `Deploy to GitHub Pages` completó con `success` en Actions #875.
+- `index.html` conserva el blob SHA `69e72891fe28e19580f681b85699da6377912c9c`; no se modificó y continúa cargando `data/strategic-nodes.json`.
+- Inspección visual independiente: se intentó abrir `https://leandrocuellarok-netizen.github.io/mapafederal/` después del despliegue, pero el entorno de navegación devolvió que la URL no era accesible. Por ello se confirma el despliegue de Pages, pero no se afirma inspección visual del marcador.
+
+## Estado final de publicación
+
+- HEAD de `main` tras el merge: `661e457276d61f74fa6ebb3215092e82fd3ad91b`.
+- Catálogo: 115 nodos; Buenos Aires 30; Buenos Aires / Industria 5; Industria nacional 17.
+- Matriz: `catalogCommit` = `b5db97619a15e49fe5a4d424a3dd9ae0c8a7f69e`; 24 jurisdicciones y nueve categorías.
+- Actions #875: https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/46000031888 — `validate: success`, `deploy: success`.
+- Próxima región de rotación: CABA.
