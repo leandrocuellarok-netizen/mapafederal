@@ -2577,5 +2577,39 @@
       "checkedAt": "2026-11-27",
       "scope": "El Catálogo de Locaciones Río Negro 2026, p. 22, publica para Viedma el sector «Casco histórico y edificios administrativos», lo delimita principalmente entre Buenos Aires, Laprida, Guido y Colón en torno a Plaza Alsina y aporta una referencia central georreferenciada (-40.8136, -62.9966). La coordenada ya está en grados decimales; no se transformó ni geocodificó. El documento no declara datum, CRS, EPSG ni precisión; se conserva solo como referencia central del sector urbano, no como centroide de la ciudad, límite del ejido o inmueble individual. El Gobierno de Río Negro documenta que Viedma fue declarada capital definitiva el 20/10/1973. Verificación documental, no presencial."
     }
+  },
+  {
+    "id": "santiago-del-estero-turismo-parque-nacional-copo",
+    "name": "Parque Nacional Copo",
+    "province": "Santiago del Estero",
+    "district": "Copo",
+    "type": "Turismo",
+    "coords": [
+      -25.82089,
+      -61.88005
+    ],
+    "note": "Parque Nacional del Chaco Seco en el departamento Copo, creado en 2000 y con 118.119 ha según SIB/APN. APN publica horario de visita de 7 a 15 h; la coordenada se usa solo como referencia geográfica general del área protegida.",
+    "source": "https://www.argentina.gob.ar/parquesnacionales/region-noroeste/parque-nacional-copo",
+    "sourceName": "Administración de Parques Nacionales (APN)",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Ficha institucional consultada el 27/11/2026; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "Ficha APN/SIB — Parque Nacional Copo; provincia Santiago del Estero; departamento Copo; creación 2000; superficie SIB 118.119 ha.",
+    "coordinateSource": "https://sib.gob.ar/areas-protegidas/parque-nacional-copo",
+    "coordinateSourceName": "Sistema de Información de Biodiversidad de la Administración de Parques Nacionales (SIB/APN)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La ficha publica la ubicación geográfica 25 49 15.22 S (-25.82089), 61 52 48.19 O (-61.88005). No informa fecha de actualización ni semántica geométrica del punto.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por SIB/APN; datum y CRS no especificados. No se atribuye EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron los valores decimales publicados por SIB/APN; no se realizó geocodificación ni reproyección.",
+    "coordinateQuality": "Referencia geográfica general del área protegida publicada por SIB/APN. La ficha no define si el punto corresponde a acceso, centroide o punto interno; no se presenta como acceso, centroide certificado ni perímetro.",
+    "statusSource": "https://www.argentina.gob.ar/parquesnacionales/region-noroeste/parque-nacional-copo/horarios-como-llegar",
+    "statusSourceName": "APN — Horarios / Cómo llegar, Parque Nacional Copo",
+    "statusSourcePublishedAt": null,
+    "administrativeStatus": "Parque Nacional de jurisdicción y administración nacional, creado en 2000 por Ley 25.366/00. SIB/APN registra 118.119 ha. APN informa apertura de lunes a domingos de 7 a 15 h y servicios de acampe disponibles las 24 h; documenta accesos por RN 16 a través del Centro Operativo La Portada y la Seccional El Aybal. El estado operativo se refiere a la visita pública publicada por APN; no confirma apertura efectiva, transitabilidad ni disponibilidad de servicios en tiempo real.",
+    "validityPeriod": "Ficha SIB/APN y página APN de horarios/cómo llegar consultadas el 27/11/2026. No se verificó apertura efectiva ni transitabilidad en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "SIB/APN publica explícitamente provincia Santiago del Estero, departamento Copo, creación 2000, superficie 118.119 ha y coordenadas -25.82089, -61.88005. APN publica apertura diaria de 7 a 15 h y documenta los accesos por RN 16. El SIB no declara datum/CRS ni define si la coordenada es acceso, centroide o punto interno; se conserva como referencia general del área protegida. No se verificó apertura efectiva, transitabilidad ni servicios en tiempo real."
+    }
   }
 ]
