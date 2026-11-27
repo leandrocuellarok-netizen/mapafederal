@@ -61,8 +61,9 @@ No se incorporó un nodo al catálogo geográfico. La revisión confirmó activi
 ## Integración y publicación
 
 - Rama: `automation/nea-formosa-industrial-preflight-1931`.
-- Commit de matriz: pendiente de confirmación.
-- PR: pendiente de apertura.
+- Commit de matriz: `8900c435fdafd9e062ce437cc0b45209f836342d`.
+- Commit inicial de bitácora: `1dbfee6a1abda1140c863ea68c67479e0a76599b`.
+- PR #45: https://github.com/leandrocuellarok-netizen/mapafederal/pull/45 (abierto; merge pendiente).
 - Workflow y Pages: pendientes de ejecución después de integrar.
 - La inspección visual de la portada no se realizó en esta ejecución.
 
