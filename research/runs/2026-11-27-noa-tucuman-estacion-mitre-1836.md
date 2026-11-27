@@ -66,9 +66,9 @@ Se incorpora Estación Tucumán (Mitre) al catálogo nacional consumido por la p
 - Commit de catálogo: `3edcf80d95eb223df3fe67a2af5a3a1290202dd0`.
 - Commit de matriz: `0ad2ff6537a9f97377c37731cc2ee371f42c3ef9`.
 - Commit de README: `63a3bba88d98d37b1c4d327f210d710204d4110b`.
-- Commit de workflow: `2fc30c560f00c1061251eb934f986e1672b9c8d8`.
+- Commit de workflow: `cfb00e99ca916bf753b2b82f7e7acb6b79d936c4`.
 - PR #44: https://github.com/leandrocuellarok-netizen/mapafederal/pull/44.
-- Merge, SHA final, Actions y GitHub Pages: pendientes de integración y verificación.
+- Merge, SHA final, Actions y GitHub Pages: pendientes de integración y verificación. Se corrigieron además las cuatro aserciones de procedencia del catálogo para que apunten al commit de datos `3edcf80d95eb223df3fe67a2af5a3a1290202dd0`.
 
 ## Brechas no resueltas
 
