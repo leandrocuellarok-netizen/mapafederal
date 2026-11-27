@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T01:37:00-03:00",
+  "generatedAt": "2026-11-27T02:32:10-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "fc1f057dfb8e491f6584ab1adc5306d5aced0acb",
+  "catalogCommit": "39bde02a37011ce9cb4665fd8e7ec8c0ba433374",
   "nodeCount": 109,
   "jurisdictionCount": 24,
   "categories": [
@@ -718,9 +718,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Patagonia",
-    "nextTarget": "Buenos Aires Province",
-    "note": "Ejecución del 27/11/2026 en Tierra del Fuego (Patagonia): se incorporó el Parque Nacional Tierra del Fuego en Turismo con la ubicación geográfica decimal publicada por SIB/APN (-54.64226, -68.48597). APN publica horarios estacionales, acceso desde RN 3 y estacionamientos; la coordenada se conserva como referencia general del área protegida, sin inferir portada, acceso ni perímetro. Tierra del Fuego pasa de tres a cuatro nodos y suma su primer registro Turismo. Patagonia pasa de 22 a 23 nodos. Próxima región de rotación: Buenos Aires Province."
+    "lastTargeted": "Buenos Aires Province",
+    "nextTarget": "CABA",
+    "note": "Ejecución del 27/11/2026 en Buenos Aires Province: se corrigió la localización del nodo existente Puerto de Quequén con las coordenadas DMS publicadas por ANPyN (38°34'16.8\"S, 58°42'48.5\"W), convertidas aritméticamente a grados decimales. No se agregó un nodo ni se alteró la cobertura cuantitativa; se conservó la fuente previa del Consorcio como referencia complementaria. La Resolución ANPyN 39/2026 acredita habilitación administrativa provincial, de uso público y destino comercial; la operación efectiva no se verificó en tiempo real. Próxima región de rotación: CABA."
   },
   "pendingCandidates": [
     {
