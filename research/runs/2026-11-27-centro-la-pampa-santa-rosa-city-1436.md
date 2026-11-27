@@ -69,7 +69,10 @@ La coordenada se incorpora como punto de referencia de la ciudad, no como locali
 - Commit de matriz: `84ca42cb4093dd5289b1b7c23777ee8e95088109`.
 - Commit de README: `fd01853cda089152db7d7cc374557e78b9edcce5`.
 - Commit de workflow: `4194a91e44ef1f3fb923c2853a4cc1edf1ead2f0`.
-- Pull request, merge, GitHub Actions y Pages: pendientes de ejecución.
+- PR #36 integrado en `main`: https://github.com/leandrocuellarok-netizen/mapafederal/pull/36.
+- Merge commit: `73fde0734acc8ed871078dc8325ab5463cc33614`.
+- GitHub Actions #887 (run ID `46043501903`, SHA `73fde0734acc8ed871078dc8325ab5463cc33614`): jobs `validate` y `deploy` completados con `success`; el paso `Deploy to GitHub Pages` terminó correctamente.
+- GitHub Pages: despliegue confirmado por el job de publicación. La inspección independiente de la portada y del JSON publicado no fue posible desde el navegador, que devolvió error de acceso; por ello no se afirma verificación visual del marcador.
 - `index.html` conserva el blob SHA `69e72891fe28e19580f681b85699da6377912c9c`; no fue modificado y continúa cargando `data/strategic-nodes.json`.
 
 ## Brechas no resueltas
