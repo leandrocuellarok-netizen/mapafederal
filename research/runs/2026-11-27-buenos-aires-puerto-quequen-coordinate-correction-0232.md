@@ -19,7 +19,7 @@
 - Integración homepage: `index.html` no modificado; el catálogo sigue cargándose mediante `data/strategic-nodes.json`.
 - Cobertura: permanece en 109 nodos, 24 jurisdicciones y 9 categorías; solo se corrige la georreferenciación del puerto.
 - Validación: se añadieron aserciones de regresión para ID, jurisdicción, categoría, coordenada oficial, fuente ANPyN, CRS no declarado y estado administrativo.
-- Commits en la rama: catálogo `40406cfc1d9de3e7837ac88be476b7e412abc32d`; workflow `fdb2c32d7c0bac1c40273520cca2c5f57ab2073f`; matriz `3e835e5c59e5d7ae89a278a2246a67769d907f59`.
+- Commits en la rama: catálogo `b1cccd51ebae7c6a2cbd56f6aa7be2e78c9b8f61`; workflow `fdb2c32d7c0bac1c40273520cca2c5f57ab2073f`; matriz `2f2d877899507efa2433e02f5890000c74c5b9e1`.
 - GitHub Actions / Pages: pendiente de ejecución tras integrar el PR; se verificará el run exacto y el job de despliegue.
 - Próxima prioridad regional: CABA, según la rotación nacional.
 - Brechas persistentes: Catamarca, Jujuy, Santiago del Estero y Tucumán continúan con 2 nodos cada una; Buenos Aires mantiene concentración de registros en Escobar, por lo que no se agregaron puntos nuevos en esta ejecución.
