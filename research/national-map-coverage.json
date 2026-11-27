@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T17:31:30-03:00",
+  "generatedAt": "2026-11-27T18:36:30-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "64ec4e428eb6822ce2940285af6ba6f7cfb90572",
-  "nodeCount": 123,
+  "catalogCommit": "3edcf80d95eb223df3fe67a2af5a3a1290202dd0",
+  "nodeCount": 124,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -26,7 +26,7 @@
         "Santiago del Estero",
         "Tucumán"
       ],
-      "nodeCount": 14,
+      "nodeCount": 15,
       "coveredJurisdictions": 5
     },
     {
@@ -637,7 +637,7 @@
     {
       "province": "Tucumán",
       "region": "NOA",
-      "total": 2,
+      "total": 3,
       "byType": {
         "Ciudad": 0,
         "Puerto": 0,
@@ -647,15 +647,14 @@
         "Industria": 0,
         "Recurso mineral": 0,
         "Turismo": 1,
-        "Estación ferroviaria": 0
+        "Estación ferroviaria": 1
       },
       "missingCategories": [
         "Ciudad",
         "Puerto",
         "Logística",
         "Industria",
-        "Recurso mineral",
-        "Estación ferroviaria"
+        "Recurso mineral"
       ],
       "notApplicableCategories": [
         "Paso fronterizo"
@@ -671,13 +670,38 @@
     "Industria": 17,
     "Recurso mineral": 5,
     "Turismo": 22,
-    "Estación ferroviaria": 7
+    "Estación ferroviaria": 8
   },
   "leastCoveredJurisdictions": [
     {
+      "province": "Catamarca",
+      "region": "NOA",
+      "total": 3
+    },
+    {
+      "province": "Formosa",
+      "region": "NEA",
+      "total": 3
+    },
+    {
+      "province": "Jujuy",
+      "region": "NOA",
+      "total": 3
+    },
+    {
+      "province": "Salta",
+      "region": "NOA",
+      "total": 3
+    },
+    {
+      "province": "Santiago del Estero",
+      "region": "NOA",
+      "total": 3
+    },
+    {
       "province": "Tucumán",
       "region": "NOA",
-      "total": 2
+      "total": 3
     }
   ],
   "regionalRotation": {
@@ -690,9 +714,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NEA",
-    "nextTarget": "Cuyo",
-    "note": "Ejecución del 27/11/2026 en Corrientes: se incorporó el Parque Nacional Iberá en Turismo. Corrientes pasa de 3 a 4 nodos y de 0 a 1 en Turismo; el NEA pasa de 14 a 15 nodos. Se priorizó una brecha real de la matriz: Corrientes no tenía referencias turísticas. SIB/APN publica -27.93238, -56.93083, los departamentos y la creación en 2018; APN informa apertura diaria y cuatro portales con accesos sujetos a condiciones meteorológicas. La coordenada no tiene datum/CRS ni semántica geométrica declarados y se conserva como referencia general del área, no como portal ni perímetro. No se verificó transitabilidad en tiempo real. La secuencia regional continúa en Cuyo."
+    "lastTargeted": "NOA",
+    "nextTarget": "NEA",
+    "note": "Ejecución del 27/11/2026 en Tucumán (NOA), priorizada sobre el siguiente turno regional Cuyo por la brecha mínima de cobertura: Tucumán tenía 2 nodos y ninguna estación ferroviaria. Se incorporó Estación Tucumán (Mitre) en Estación ferroviaria. Trenes Argentinos identifica la estación como terminal del servicio Buenos Aires–Tucumán y publica trenes dos veces por semana; enlaza un pin de Google Maps, fuente secundaria de coordenadas (-26.8210207, -65.2109874). El pin no declara datum/CRS ni precisión y no representa un andén, acceso específico ni perímetro. No se verificaron calendario puntual, cancelaciones ni circulación en tiempo real. Tucumán pasa de 2 a 3 nodos; NOA de 14 a 15; Estación ferroviaria de 7 a 8. Se priorizó el mínimo de cobertura por encima del turno Cuyo; la rotación continúa en NEA."
   },
   "pendingCandidates": [
     {
@@ -954,6 +978,7 @@
     "El Parque Industrial Allen Norte (Río Negro) usa las coordenadas DMS publicadas por el Registro Provincial de Parques Industriales y Logísticos (REPPIL) para el Acceso Martín Fierro (acceso al Autódromo Gral. Enrique Mosconi). Se convirtió DMS a grados decimales mediante cálculo aritmético, sin reproyección ni transformación de datum. La fuente no declara datum/CRS, precisión ni método de captura; el marcador identifica el acceso, no una parcela ni el perímetro del parque. El REPPIL clasifica el parque como «En desarrollo» y registra 1 empresa operativa, 9 en proyecto y 0 en construcción; no se afirma operación integral ni disponibilidad comercial actual.",
     "El Campo de Piedra Pómez (Catamarca) usa las coordenadas GPS -26.480508, -67.337452 publicadas en los fundamentos del Proyecto HCDN 6541-D-2024. El documento es un proyecto legislativo, no una norma sancionada, y no declara método de captura, datum/CRS, precisión ni semántica geométrica. El punto se usa solo como referencia general del atractivo; Visit Catamarca y Argentina.gob.ar documentan su ubicación turística y condiciones de acceso, pero no se afirma que la coordenada sea un acceso, centroide certificado ni perímetro.",
     "Viedma (Río Negro) se incorporó como referencia urbana de Ciudad con la coordenada central publicada por el Gobierno provincial en el Catálogo de Locaciones Río Negro 2026, p. 22. No se asigna datum/CRS ni EPSG; el punto identifica el sector del casco histórico y edificios administrativos alrededor de Plaza Alsina, no el centroide de la ciudad ni un límite administrativo.",
-    "El Parque Nacional Copo (Santiago del Estero) usa la ubicación geográfica decimal publicada por SIB/APN: -25.82089, -61.88005, departamento Copo, creación 2000 y superficie 118.119 ha. La ficha no declara datum/CRS ni define si el punto corresponde a acceso, centroide o punto interno; se conserva como referencia general del área protegida, no como acceso, centroide certificado ni perímetro. APN publica apertura diaria de 7 a 15 h y accesos por RN 16; no se verificó apertura efectiva ni transitabilidad en tiempo real."
+    "El Parque Nacional Copo (Santiago del Estero) usa la ubicación geográfica decimal publicada por SIB/APN: -25.82089, -61.88005, departamento Copo, creación 2000 y superficie 118.119 ha. La ficha no declara datum/CRS ni define si el punto corresponde a acceso, centroide o punto interno; se conserva como referencia general del área protegida, no como acceso, centroide certificado ni perímetro. APN publica apertura diaria de 7 a 15 h y accesos por RN 16; no se verificó apertura efectiva ni transitabilidad en tiempo real.",
+    "La Estación Tucumán (Mitre) se incorporó como nodo ferroviario porque Trenes Argentinos identifica la terminal en su ficha oficial Buenos Aires–Tucumán y enlaza un pin de Google Maps con coordenadas decimales. Google Maps se identifica como fuente secundaria; no declara datum/CRS ni precisión. El punto se conserva como referencia de la estación, no como andén, acceso específico ni perímetro. La ficha oficial publica trenes dos veces por semana; no se verificaron calendario puntual, cancelaciones ni operación en tiempo real."
   ]
 }

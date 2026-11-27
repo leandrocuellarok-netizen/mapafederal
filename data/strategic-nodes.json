@@ -2645,5 +2645,40 @@
       "checkedAt": "2026-11-27",
       "scope": "SIB/APN publica provincia Corrientes, departamentos Concepción, Ituzaingó, Mercedes y San Miguel, creación 2018, superficie 195.094 ha y ubicación geográfica -27.93238, -56.93083. APN informa apertura todos los días, cuatro portales con horarios estacionales y condiciones de acceso dependientes del clima. El SIB no declara datum/CRS, precisión ni semántica geométrica de la coordenada; se conserva como referencia general del área protegida, no como portal, acceso, centroide certificado ni perímetro. No se verificó apertura efectiva ni transitabilidad en tiempo real."
     }
+  },
+  {
+    "id": "tucuman-estacion-ferroviaria-estacion-mitre-san-miguel",
+    "name": "Estación Tucumán (Mitre)",
+    "province": "Tucumán",
+    "district": "Capital",
+    "locality": "San Miguel de Tucumán",
+    "type": "Estación ferroviaria",
+    "coords": [
+      -26.8210207,
+      -65.2109874
+    ],
+    "note": "Estación de la terminal del servicio de larga distancia Buenos Aires–Tucumán. Trenes Argentinos publica trenes dos veces por semana y enlaza el pin de esta estación en Google Maps. El punto es una referencia de la estación; no identifica un andén, acceso operativo específico ni geometría ferroviaria. No se verificó calendario puntual ni circulación en tiempo real.",
+    "source": "https://www.argentina.gob.ar/transporte/trenes-argentinos/horarios-tarifas-y-recorridos/servicios-regionales-larga-distancia/buenosaires-tucuman",
+    "sourceName": "Trenes Argentinos — Servicio Buenos Aires–Tucumán",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Ficha institucional consultada el 27/11/2026; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "Servicio de larga distancia Buenos Aires–Tucumán; la ficha identifica Estación Tucumán como terminal y publica trenes dos veces por semana.",
+    "coordinateSource": "https://maps.app.goo.gl/7wrLkDmdmxdffjjy5",
+    "coordinateSourceName": "Google Maps — Estación de Trenes MITRE (pin enlazado desde la ficha oficial de Trenes Argentinos; fuente secundaria de coordenadas).",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "Pin de Google Maps enlazado directamente por Trenes Argentinos; no se informa fecha de captura ni actualización.",
+    "coordinateReferenceSystem": "Coordenadas geográficas del pin de Google Maps; datum y CRS no declarados. No se asigna EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron las coordenadas decimales del pin enlazado por Trenes Argentinos; no se realizó reproyección ni transformación de datum.",
+    "coordinateQuality": "Pin de Google Maps enlazado directamente desde la ficha oficial de Trenes Argentinos. Es una fuente secundaria de coordenadas y no declara datum, CRS ni precisión. Se usa como referencia puntual de la estación, no como andén, acceso ferroviario específico, centroide certificado ni perímetro.",
+    "statusSource": "https://www.argentina.gob.ar/transporte/trenes-argentinos/horarios-tarifas-y-recorridos/servicios-regionales-larga-distancia/buenosaires-tucuman",
+    "statusSourceName": "Trenes Argentinos — Servicio Buenos Aires–Tucumán; indica trenes dos veces por semana y señala Estación Tucumán.",
+    "statusSourcePublishedAt": null,
+    "administrativeStatus": "La ficha oficial publica el servicio Buenos Aires–Tucumán con trenes dos veces por semana e identifica la Estación Tucumán. La frecuencia corresponde a lo informado en la página consultada el 27/11/2026; no se verificaron calendario puntual, cancelaciones ni operación en tiempo real.",
+    "validityPeriod": "Información institucional consultada el 27/11/2026; la página no informa fecha de actualización. No se verificó circulación en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "Trenes Argentinos identifica la Estación Tucumán como terminal del servicio Buenos Aires–Tucumán y publica trenes dos veces por semana. La ficha oficial enlaza un pin de Google Maps para la estación; el destino del enlace publica -26.8210207, -65.2109874. Google Maps se identifica como fuente secundaria de coordenadas; no declara datum/CRS ni precisión. Se conserva como referencia puntual de la estación, no como andén, acceso específico ni perímetro. No se verificaron calendario puntual, cancelaciones ni circulación en tiempo real."
+    }
   }
 ]
