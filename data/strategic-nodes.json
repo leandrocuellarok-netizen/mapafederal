@@ -2680,5 +2680,45 @@
       "checkedAt": "2026-11-27",
       "scope": "Trenes Argentinos identifica la Estación Tucumán como terminal del servicio Buenos Aires–Tucumán y publica trenes dos veces por semana. La ficha oficial enlaza un pin de Google Maps para la estación; el destino del enlace publica -26.8210207, -65.2109874. Google Maps se identifica como fuente secundaria de coordenadas; no declara datum/CRS ni precisión. Se conserva como referencia puntual de la estación, no como andén, acceso específico ni perímetro. No se verificaron calendario puntual, cancelaciones ni circulación en tiempo real."
     }
+  },
+  {
+    "id": "formosa-paso-fronterizo-puente-internacional-san-ignacio-de-loyola",
+    "name": "Puente Internacional San Ignacio de Loyola",
+    "province": "Formosa",
+    "district": "Pilcomayo",
+    "locality": "Clorinda",
+    "type": "Paso fronterizo",
+    "coords": [
+      -25.264277777777778,
+      -57.724444444444444
+    ],
+    "note": "Paso internacional terrestre entre Clorinda (Argentina) y José Falcón (Paraguay), sobre el río Pilcomayo. El sitio oficial de Pasos Internacionales publica horario de Migraciones de 24 h; no se verifican demoras, interrupciones ni condiciones de tránsito en tiempo real.",
+    "source": "https://www.argentina.gob.ar/seguridad/pasosinternacionales/detalle/ruta/71/Clorinda-Puerto-Jos%C3%A9-Falc%C3%B3n",
+    "sourceName": "Presidencia de la Nación — Detalle oficial del Paso Clorinda - Puerto José Falcón",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Ficha institucional consultada el 2026-11-27; identifica lado argentino Formosa y el cruce Clorinda–José Falcón por el Puente Internacional San Ignacio de Loyola.",
+    "sourceRecordId": "Paso 71 — Clorinda - Puerto José Falcón",
+    "coordinateSource": "https://www.argentina.gob.ar/sites/default/files/boletin_fronteras_2_15octubre2021.pdf",
+    "coordinateSourceName": "Ministerio de Seguridad de la Nación — Boletín de las Fronteras Argentinas N.º 2, Dirección Nacional de Control de Fronteras e Hidrovías",
+    "coordinateSourcePublishedAt": "2021-06",
+    "coordinateSourcePublicationNote": "El documento publica para el sitio Puente Loyola: 25°15′51,4″S - 57°43′28″O. No declara datum ni CRS.",
+    "coordinateReferenceSystem": "Coordenadas geográficas DMS publicadas por el Ministerio de Seguridad; datum y CRS no declarados. No se atribuye código EPSG.",
+    "coordinateTransformation": "Conversión aritmética de DMS a grados decimales; sin transformación de datum ni reproyección.",
+    "coordinateQuality": "Coordenada puntual del sitio Puente Loyola publicada por la Dirección Nacional de Control de Fronteras e Hidrovías. La fuente no define si corresponde al eje del puente, una cabecera o el puesto de control; se usa como referencia del cruce, no como geometría del puente ni perímetro aduanero.",
+    "statusSource": "https://www.argentina.gob.ar/node/289004",
+    "statusSourceName": "Dirección Nacional de Migraciones — Pasos Internacionales",
+    "statusSourcePublishedAt": null,
+    "statusSourcePublicationNote": "Página oficial consultada el 2026-11-27; incluye el Puente Internacional San Ignacio de Loyola entre las vías de ingreso/egreso en funcionamiento y publica horario de Migraciones de 24 h. No informa fecha de actualización individual del horario.",
+    "additionalStatusSource": "https://www.argentina.gob.ar/seguridad/pasosinternacionales/detalle/ruta/71/Clorinda-Puerto-Jos%C3%A9-Falc%C3%B3n",
+    "additionalStatusSourceName": "Argentina.gob.ar — ficha del paso; información de Gendarmería Nacional y Vialidad Nacional",
+    "additionalStatusSourcePublishedAt": null,
+    "additionalStatusSourcePublicationNote": "La ficha consultada el 2026-11-27 identifica el lado argentino como Formosa; informa última actualización de Gendarmería Nacional el 2026-11-26 17:15 y de Vialidad Nacional el 2026-11-04 09:40.",
+    "administrativeStatus": "Paso internacional terrestre que conecta Clorinda (Formosa, Argentina) con José Falcón (Paraguay) mediante el Puente Internacional San Ignacio de Loyola sobre el río Pilcomayo. La Dirección Nacional de Migraciones publica horario de 24 h. El estado operativo se refiere a la inclusión del cruce en el listado oficial de vías en funcionamiento; no confirma ausencia de demoras, interrupciones, cierres temporales ni disponibilidad de carriles en tiempo real.",
+    "validityPeriod": "Horario de Migraciones publicado como 24 h en la página oficial consultada el 2026-11-27; la ficha de detalle informa actualización de Gendarmería Nacional del 2026-11-26. No se verificó tránsito en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "El Boletín de las Fronteras Argentinas N.º 2 (Ministerio de Seguridad, junio de 2021) publica para el sitio Puente Loyola las coordenadas 25°15′51,4″S - 57°43′28″O; se convirtieron aritméticamente a grados decimales sin reproyección. La fuente no declara datum/CRS ni semántica geométrica exacta del punto. Argentina.gob.ar identifica el puente como conexión Clorinda–José Falcón; la página de la Dirección Nacional de Migraciones lo incluye entre los pasos en funcionamiento y publica horario 24 h. Gendarmería Nacional figura con actualización 2026-11-26 17:15. El punto es una referencia del cruce, no el límite internacional certificado ni el perímetro aduanero; no se verificaron demoras o interrupciones en tiempo real."
+    }
   }
 ]
