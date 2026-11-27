@@ -71,7 +71,7 @@
 ## Commits y publicación
 
 - Commit de catálogo: `130f38aa104ab3779f3c7d2e56796197e481f90b`.
-- Commit de matriz, workflow y bitácora inicial: pendiente de creación.
-- Pull request: pendiente de creación.
+- Commit de matriz, workflow y bitácora inicial: se incorpora en el commit posterior al catálogo de esta rama; el SHA final se asentará al cierre.
+- Pull request: #30 — https://github.com/leandrocuellarok-netizen/mapafederal/pull/30.
 - Workflow y GitHub Pages: pendientes de verificación tras el merge.
 - Inspección visual de la portada pública: pendiente.
