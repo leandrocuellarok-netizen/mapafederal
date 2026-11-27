@@ -669,7 +669,7 @@ jobs:
           assert "Turismo" not in tucuman["missingCategories"]
           noa = next(region for region in coverage["regions"] if region["name"] == "NOA")
           assert noa["nodeCount"] == 11 and noa["coveredJurisdictions"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "Cuyo" and coverage["regionalRotation"]["nextTarget"] == "Centro"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
           formosa_reserve = next((node for node in nodes if node.get("id") == "formosa-turismo-reserva-natural-formosa"), None)
           assert formosa_reserve is not None and formosa_reserve["province"] == "Formosa" and formosa_reserve["type"] == "Turismo"
           assert formosa_reserve["district"] == "Bermejo"
@@ -701,7 +701,7 @@ jobs:
           chubut = next(row for row in coverage_rows if row["province"] == "Chubut")
           assert chubut["total"] == 6 and chubut["byType"]["Turismo"] == 1
           assert "Turismo" not in chubut["missingCategories"]
-          assert coverage["categoryTotals"]["Turismo"] == 13
+          assert coverage["categoryTotals"]["Turismo"] == 14
           rio_grande = next((node for node in nodes if node.get("id") == "tierra-del-fuego-parque-industrial-rio-grande"), None)
           assert rio_grande is not None and rio_grande["province"] == "Tierra del Fuego" and rio_grande["type"] == "Industria"
           assert rio_grande["status"] == "no_verificado"
@@ -763,14 +763,32 @@ jobs:
           assert "no como acceso" in veladero["coordinateQuality"].lower()
           assert veladero["statusSource"] == "https://veladero.com/home"
           assert veladero["verification"]["checkedAt"] == "2026-11-26"
+          el_palmar = next((node for node in nodes if node.get("id") == "entre-rios-turismo-parque-nacional-el-palmar"), None)
+          assert el_palmar is not None and el_palmar["province"] == "Entre Ríos" and el_palmar["district"] == "Colón" and el_palmar["type"] == "Turismo"
+          assert el_palmar["coords"] == [-31.88216, -58.25668] and el_palmar["status"] == "operativo"
+          assert el_palmar["source"] == "https://www.argentina.gob.ar/parquesnacionales/centro/parque-nacional-el-palmar"
+          assert el_palmar["coordinateSource"] == "https://sib.gob.ar/index.php/areas-protegidas/parque-nacional-el-palmar"
+          assert el_palmar["coordinateReferenceSystem"].startswith("Coordenadas geográficas") and "no se presenta como acceso" in el_palmar["coordinateQuality"].lower()
+          assert el_palmar["statusSource"] == "https://www.argentina.gob.ar/node/152864"
+          assert el_palmar["additionalStatusSourcePublishedAt"] == "1966-01-28"
+          assert el_palmar["verification"]["checkedAt"] == "2026-11-27"
+          assert "RN 14 km 198" in el_palmar["administrativeStatus"]
+          entre_rios = next(row for row in coverage_rows if row["province"] == "Entre Ríos")
+          assert entre_rios["total"] == 4 and entre_rios["byType"]["Turismo"] == 1
+          assert "Turismo" not in entre_rios["missingCategories"]
+          centro = next(region for region in coverage["regions"] if region["name"] == "Centro")
+          assert centro["nodeCount"] == 15 and centro["coveredJurisdictions"] == 4
+          assert coverage["categoryTotals"]["Turismo"] == 14
+          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
+          assert coverage["catalogCommit"] == "357269bb6edab9343bf8f9ca0c3b667dfaec85db"
           san_juan = next(row for row in coverage_rows if row["province"] == "San Juan")
           assert san_juan["total"] == 4 and san_juan["byType"]["Recurso mineral"] == 1
           assert "Recurso mineral" not in san_juan["missingCategories"]
           cuyo = next(region for region in coverage["regions"] if region["name"] == "Cuyo")
           assert cuyo["nodeCount"] == 14 and cuyo["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Recurso mineral"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "Cuyo" and coverage["regionalRotation"]["nextTarget"] == "Centro"
-          assert coverage["catalogCommit"] == "b21903a2cca2d6199c298d1b6984760598d159e8"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
+          assert coverage["catalogCommit"] == "357269bb6edab9343bf8f9ca0c3b667dfaec85db"
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
