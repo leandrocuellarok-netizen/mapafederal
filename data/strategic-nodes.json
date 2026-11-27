@@ -2052,5 +2052,42 @@
       "scope": "SIB/APN publica la ubicación geográfica 31°52'55.77\"S (-31.88216), 58°15'24.04\"O (-58.25668), provincia de Entre Ríos, departamento Colón, creación 1965, superficie 8.213 ha y categoría internacional Sitio Ramsar. La ficha no declara datum/CRS ni define si el punto es acceso, centroide o punto interno; se conserva como referencia general del área protegida. APN confirma el parque y publica la portada en RN 14 km 198, horarios estacionales de visita y senderos; la ley 16.802 crea el parque. No se geocodificó la portada ni se verificó estado de caminos en tiempo real."
     },
     "note": "Área protegida nacional de 8.213 ha en el departamento Colón, junto al río Uruguay. SIB/APN publica esta ubicación como referencia geográfica general; no representa la portada, un acceso, centroide certificado ni perímetro. APN publica horarios estacionales y condiciones de visita."
+  },
+  {
+    "id": "tierra-del-fuego-turismo-parque-nacional-tierra-del-fuego",
+    "name": "Parque Nacional Tierra del Fuego",
+    "province": "Tierra del Fuego",
+    "district": "Ushuaia",
+    "type": "Turismo",
+    "coords": [
+      -54.64226,
+      -68.48597
+    ],
+    "note": "Área protegida nacional de 68.909 ha en el departamento Ushuaia. SIB/APN publica esta ubicación como referencia geográfica general; no representa la portada, un acceso, centroide certificado ni perímetro. APN publica horarios estacionales, acceso desde RN 3 y sectores de estacionamiento; no se verificó apertura ni transitabilidad en tiempo real.",
+    "source": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-tierra-del-fuego",
+    "sourceName": "Administración de Parques Nacionales (APN)",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Página institucional consultada el 2026-11-27; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "APN/SIB — Parque Nacional Tierra del Fuego; provincia Tierra del Fuego; departamento Ushuaia; creación 1960.",
+    "coordinateSource": "https://sib.gob.ar/index.php/areas-protegidas/parque-nacional-tierra-del-fuego",
+    "coordinateSourceName": "Sistema de Información de Biodiversidad de la Administración de Parques Nacionales (SIB/APN)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La ficha publica la ubicación geográfica 54 38 32.13 S (-54.64226), 68 29 09.51 O (-68.48597); consultada el 2026-11-27. No informa fecha de actualización de la coordenada.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por SIB/APN; datum y CRS no especificados. No se atribuye EPSG.",
+    "coordinateTransformation": "Sin transformación: se conservaron las coordenadas decimales publicadas por SIB/APN; no se realizó geocodificación ni reproyección.",
+    "coordinateQuality": "Punto de referencia geográfica del área protegida publicado por SIB/APN. La ficha no define si corresponde a acceso, centroide o punto interno; no se presenta como portada, acceso, centroide certificado ni perímetro.",
+    "statusSource": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-tierra-del-fuego/horarios-como-llegar",
+    "statusSourceName": "APN — Horarios / Cómo llegar",
+    "statusSourcePublishedAt": null,
+    "additionalStatusSource": "https://www.argentina.gob.ar/normativa/nacional/norma-425804/actualizacion",
+    "additionalStatusSourceName": "Administración de Parques Nacionales — Resolución 132/2026, texto actualizado",
+    "additionalStatusSourcePublishedAt": "2026-05-15",
+    "administrativeStatus": "Parque Nacional de jurisdicción y administración nacional, creado por Ley Nacional 15.554/60. SIB/APN informa una superficie de 68.909 ha. APN publica horarios de ingreso por temporada, acceso vehicular desde RN 3 y estacionamientos en la portada, Río Pipo, Ensenada Zaratiegui, Centro de Visitantes Alakush, Lago Acigami y Bahía Lapataia. La Resolución APN 132/2026, publicada el 15/05/2026 y vigente desde el 01/06/2026, incluye el parque entre las áreas con derechos de acceso. Esta documentación acredita el destino y su oferta de visita, pero no confirma apertura diaria, transitabilidad ni servicios en tiempo real.",
+    "validityPeriod": "Ficha SIB/APN y página de horarios consultadas el 2026-11-27; Resolución APN 132/2026 publicada el 2026-05-15 y con vigencia de acceso desde el 2026-06-01. No se verificó apertura, transitabilidad ni condiciones meteorológicas en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "SIB/APN identifica Tierra del Fuego, departamento Ushuaia, creación 1960 y publica la ubicación geográfica 54 38 32.13 S (-54.64226), 68 29 09.51 O (-68.48597), con superficie de 68.909 ha. La ficha no declara datum/CRS ni semántica geométrica del punto; se conserva como referencia general del área protegida, no como portada, acceso ni perímetro. APN publica horarios estacionales, acceso desde RN 3 y estacionamientos en distintos sectores. La Resolución 132/2026 incluye el parque en el régimen de derechos de acceso vigente desde 01/06/2026. No se verificó apertura diaria, transitabilidad ni servicios en tiempo real."
+    }
   }
 ]
