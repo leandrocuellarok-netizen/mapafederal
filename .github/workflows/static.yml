@@ -779,7 +779,7 @@ jobs:
           assert "Turismo" not in formosa["missingCategories"] and "Paso fronterizo" not in formosa["missingCategories"]
           san_ignacio = next((node for node in nodes if node.get("id") == "formosa-paso-fronterizo-puente-internacional-san-ignacio-de-loyola"), None)
           assert san_ignacio is not None and san_ignacio["province"] == "Formosa" and san_ignacio["district"] == "Pilcomayo" and san_ignacio["locality"] == "Clorinda" and san_ignacio["type"] == "Paso fronterizo"
-          assert san_ignacio["coords"] == [-25.26427777777778, -57.72444444444444] and san_ignacio["status"] == "operativo"
+          assert san_ignacio["coords"] == [-25.264277777777778, -57.724444444444444] and san_ignacio["status"] == "operativo"
           assert san_ignacio["source"] == "https://www.argentina.gob.ar/seguridad/pasosinternacionales/detalle/ruta/71/Clorinda-Puerto-Jos%C3%A9-Falc%C3%B3n"
           assert san_ignacio["coordinateSource"] == "https://www.argentina.gob.ar/sites/default/files/boletin_fronteras_2_15octubre2021.pdf"
           assert san_ignacio["coordinateReferenceSystem"].startswith("Coordenadas geográficas DMS") and "no se atribuye código epsg" in san_ignacio["coordinateReferenceSystem"].lower()
