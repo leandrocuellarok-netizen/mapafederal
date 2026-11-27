@@ -48,6 +48,7 @@ Fuente del registro: [Boletín Oficial de la Provincia de Buenos Aires — edici
 - `README.md` — conteo nacional y descripción del nuevo punto.
 - `.github/workflows/static.yml` — regresión del nuevo nodo, matriz, rotación y estado no abierto de la licitación vencida.
 - `data/investment-opportunities.json` — corrección del estado vencido que bloqueaba la validación compartida.
+- `tests/boletin-14523-procurement.test.js` — actualización de la regresión para distinguir el estado desconocido/desactualizado del plazo vencido.
 - Este archivo de bitácora.
 
 `index.html` no se modificó: su función `loadPoints()` continúa leyendo `./data/strategic-nodes.json`; los filtros de provincia y categoría se generan a partir del catálogo, por lo que el nuevo punto queda integrado en el mapa y el directorio existentes.
@@ -59,7 +60,11 @@ Fuente del registro: [Boletín Oficial de la Provincia de Buenos Aires — edici
 - Matriz federal: `dc3122e500feace67cda68516361c3eea8bd43dd`.
 - README: `9407ca1b44af6d87f3a49dc864e61bec09deaf02`.
 - Workflow: `da1e9a1eccb6e76c6dd97e0135425428b304c6d1`.
-- Integración a `main`, ejecución de Actions y Pages: pendientes de PR y validación final al momento de esta bitácora.
+- PR [#16](https://github.com/leandrocuellarok-netizen/mapafederal/pull/16) integrado en `main`; merge commit: `64a62cdb68ca127ea8633c8b5c5d9336828e01c2`.
+- Corrección de la regresión del Boletín 14523: `93a98331945dfa294d1d517b303be7cf8b6f6bcb`.
+- GitHub Actions #849 (run ID `45941426365`): validación falló porque el test del Boletín 14523 todavía esperaba `open`; se actualizó para esperar `unknown` y `outdated` tras vencer el plazo.
+- GitHub Actions #850 (run ID `45941477099`, commit `93a98331945dfa294d1d517b303be7cf8b6f6bcb`): validación completa aprobada y job `Deploy to GitHub Pages` aprobado.
+- La portada y el JSON publicado no pudieron inspeccionarse independientemente desde el entorno de verificación; el éxito del job Pages se registra por separado y no se presenta como comprobación visual.
 
 ## Validación previa a PR
 
@@ -73,7 +78,9 @@ Fuente del registro: [Boletín Oficial de la Provincia de Buenos Aires — edici
 - Fuentes principales y fuente de coordenadas HTTPS: comprobadas.
 - Matriz: 109 nodos, Patagonia 23, Tierra del Fuego 4, Turismo 15; reconciliada con el catálogo.
 - Estado de la licitación vencida: `unknown`, verificación `outdated`.
-- Validación completa de GitHub Actions y despliegue de Pages: pendientes.
+- GitHub Actions #850: validación completa, pruebas del catálogo y de oportunidades, sintaxis JavaScript, punto de entrada y SEO/GEO aprobados.
+- GitHub Actions #850: `Deploy to GitHub Pages` completado correctamente.
+- La inspección HTTP independiente de la portada y del catálogo publicado no estuvo disponible desde el entorno de verificación.
 
 ## Pendientes y siguiente prioridad
 
