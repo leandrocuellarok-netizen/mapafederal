@@ -615,7 +615,7 @@ jobs:
           coverage = json.loads(Path("research/national-map-coverage.json").read_text(encoding="utf-8"))
           assert coverage.get("catalogPath") == "data/strategic-nodes.json"
           assert coverage.get("nodeCount") == len(nodes)
-          assert coverage.get("nodeCount") == 113, "El catálogo nacional debe contener 113 nodos en esta revisión"
+          assert coverage.get("nodeCount") == 114, "El catálogo nacional debe contener 114 nodos en esta revisión"
           quequen = next((node for node in nodes if node.get("id") == "buenos-aires-puerto-puerto-de-quequen"), None)
           assert quequen is not None and quequen["province"] == "Buenos Aires" and quequen["type"] == "Puerto"
           assert quequen["coords"] == [-38.57133333, -58.71347222]
@@ -665,7 +665,7 @@ jobs:
           assert "Turismo" not in la_rioja_row["missingCategories"]
           assert "Aeropuerto" not in la_rioja_row["missingCategories"]
           assert coverage["categoryTotals"]["Aeropuerto"] == 25
-          assert coverage["categoryTotals"]["Industria"] == 15
+          assert coverage["categoryTotals"]["Industria"] == 16
           rotation = coverage.get("regionalRotation", {})
           rotation_order = rotation.get("order")
           assert isinstance(rotation_order, list) and rotation_order, "Falta el orden de rotación regional"
@@ -728,7 +728,7 @@ jobs:
           assert "precisión de minuto" in laguna_blanca_candidate["reason"]
           noa = next(region for region in coverage["regions"] if region["name"] == "NOA")
           assert noa["nodeCount"] == 12 and noa["coveredJurisdictions"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Patagonia" and coverage["regionalRotation"]["nextTarget"] == "Buenos Aires Province"
           formosa_reserve = next((node for node in nodes if node.get("id") == "formosa-turismo-reserva-natural-formosa"), None)
           assert formosa_reserve is not None and formosa_reserve["province"] == "Formosa" and formosa_reserve["type"] == "Turismo"
           assert formosa_reserve["district"] == "Bermejo"
@@ -784,7 +784,7 @@ jobs:
           assert tierra_del_fuego_park["additionalStatusSourcePublishedAt"] == "2026-05-15"
           assert tierra_del_fuego_park["verification"]["checkedAt"] == "2026-11-27"
           patagonia = next(region for region in coverage["regions"] if region["name"] == "Patagonia")
-          assert patagonia["nodeCount"] == 23 and patagonia["coveredJurisdictions"] == 5
+          assert patagonia["nodeCount"] == 24 and patagonia["coveredJurisdictions"] == 5
           ciervo = next((node for node in nodes if node.get("id") == "buenos-aires-parque-nacional-ciervo-de-los-pantanos"), None)
           assert ciervo is not None and ciervo["province"] == "Buenos Aires" and ciervo["district"] == "Campana" and ciervo["type"] == "Turismo"
           assert ciervo["coords"] == [-34.23450, -58.87724] and ciervo["status"] == "operativo"
@@ -854,11 +854,30 @@ jobs:
           assert "no como andén" in cordoba_mitre["coordinateQuality"].lower() and "ni perímetro" in cordoba_mitre["coordinateQuality"].lower()
           assert "dos trenes por semana" in cordoba_mitre["administrativeStatus"]
           assert cordoba_mitre["verification"]["checkedAt"] == "2026-11-27"
+
+          allen_norte = next((node for node in nodes if node.get("id") == "rio-negro-industria-parque-industrial-allen-norte"), None)
+          assert allen_norte is not None and allen_norte["province"] == "Río Negro" and allen_norte["locality"] == "Allen" and allen_norte["type"] == "Industria"
+          assert allen_norte["coords"] == [-38.92551388888889, -67.86676388888888] and allen_norte["status"] == "no_verificado"
+          assert allen_norte["source"] == "https://parquesindustriales.rionegro.gov.ar/programa/557/registro-provincial-de-parques-industriales-y-logisticos"
+          assert allen_norte["coordinateSource"] == allen_norte["source"]
+          assert allen_norte["coordinateReferenceSystem"].startswith("Coordenadas geográficas") and "no se asigna EPSG" in allen_norte["coordinateReferenceSystem"]
+          assert "Acceso Martín Fierro" in allen_norte["coordinateQuality"] and "no representa" in allen_norte["coordinateQuality"]
+          assert "En desarrollo" in allen_norte["administrativeStatus"] and "1 empresa operativa" in allen_norte["administrativeStatus"]
+          assert "9 empresas en proyecto" in allen_norte["administrativeStatus"] and "0 en construcción" in allen_norte["administrativeStatus"]
+          assert allen_norte["verification"]["checkedAt"] == "2026-11-27"
+          rio_negro = next(row for row in coverage_rows if row["province"] == "Río Negro")
+          assert rio_negro["total"] == 4 and rio_negro["byType"]["Industria"] == 1
+          assert "Industria" not in rio_negro["missingCategories"]
+          patagonia = next(region for region in coverage["regions"] if region["name"] == "Patagonia")
+          assert patagonia["nodeCount"] == 24 and patagonia["coveredJurisdictions"] == 5
+          assert coverage["categoryTotals"]["Industria"] == 16
+          assert coverage["regionalRotation"]["lastTargeted"] == "Patagonia" and coverage["regionalRotation"]["nextTarget"] == "Buenos Aires Province"
+          assert coverage["catalogCommit"] == "31f7ab4064a42a64d22f8f41bbe2f3685cb6bb0d"
           cordoba_row = next(row for row in coverage_rows if row["province"] == "Córdoba")
           assert cordoba_row["total"] == 4 and cordoba_row["byType"]["Estación ferroviaria"] == 1
           assert "Estación ferroviaria" not in cordoba_row["missingCategories"]
           assert coverage["categoryTotals"]["Estación ferroviaria"] == 7
-          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Patagonia" and coverage["regionalRotation"]["nextTarget"] == "Buenos Aires Province"
 
           entre_rios = next(row for row in coverage_rows if row["province"] == "Entre Ríos")
           assert entre_rios["total"] == 4 and entre_rios["byType"]["Turismo"] == 1
@@ -866,16 +885,16 @@ jobs:
           centro = next(region for region in coverage["regions"] if region["name"] == "Centro")
           assert centro["nodeCount"] == 16 and centro["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Turismo"] == 17
-          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
-          assert coverage["catalogCommit"] == "8b0cd32b2f05f1e053ab4422834f88fcfddfd1d2"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Patagonia" and coverage["regionalRotation"]["nextTarget"] == "Buenos Aires Province"
+          assert coverage["catalogCommit"] == "31f7ab4064a42a64d22f8f41bbe2f3685cb6bb0d"
           san_juan = next(row for row in coverage_rows if row["province"] == "San Juan")
           assert san_juan["total"] == 4 and san_juan["byType"]["Recurso mineral"] == 1
           assert "Recurso mineral" not in san_juan["missingCategories"]
           cuyo = next(region for region in coverage["regions"] if region["name"] == "Cuyo")
           assert cuyo["nodeCount"] == 15 and cuyo["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Recurso mineral"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
-          assert coverage["catalogCommit"] == "8b0cd32b2f05f1e053ab4422834f88fcfddfd1d2"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Patagonia" and coverage["regionalRotation"]["nextTarget"] == "Buenos Aires Province"
+          assert coverage["catalogCommit"] == "31f7ab4064a42a64d22f8f41bbe2f3685cb6bb0d"
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
