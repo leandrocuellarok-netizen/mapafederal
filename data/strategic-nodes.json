@@ -2720,5 +2720,39 @@
       "checkedAt": "2026-11-27",
       "scope": "El Boletín de las Fronteras Argentinas N.º 2 (Ministerio de Seguridad, junio de 2021) publica para el sitio Puente Loyola las coordenadas 25°15′51,4″S - 57°43′28″O; se convirtieron aritméticamente a grados decimales sin reproyección. La fuente no declara datum/CRS ni semántica geométrica exacta del punto. Argentina.gob.ar identifica el puente como conexión Clorinda–José Falcón; la página de la Dirección Nacional de Migraciones lo incluye entre los pasos en funcionamiento y publica horario 24 h. Gendarmería Nacional figura con actualización 2026-11-26 17:15. El punto es una referencia del cruce, no el límite internacional certificado ni el perímetro aduanero; no se verificaron demoras o interrupciones en tiempo real."
     }
+  },
+  {
+    "id": "la-rioja-recurso-mineral-los-corrales-playa-amarilla-au-11278",
+    "name": "Los Corrales - Playa Amarilla (oro)",
+    "province": "La Rioja",
+    "district": "Famatina",
+    "type": "Recurso mineral",
+    "coords": [
+      -28.82805,
+      -67.65972
+    ],
+    "note": "Depósito pequeño de oro aluvial (Au) en el distrito Famatina. SEGEMAR registra el estado del depósito como «productor» en la base actualizada el 13/07/2026; esto no confirma extracción vigente. El estado operativo actual no está verificado. La coordenada es una localización del depósito, no un acceso ni un perímetro.",
+    "source": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp11278.html",
+    "sourceName": "SEGEMAR — Base de datos de yacimientos minerales de la República Argentina, depósito 11278 — Los Corrales - Playa Amarilla",
+    "sourcePublishedAt": "2026-07-13",
+    "sourcePublicationNote": "La ficha declara que la base fue actualizada el 13/07/2026; publica la localización -28.82805, -67.65972, la provincia La Rioja, localidad Famatina, commodity Au, tipo de depósito de placer, tamaño pequeño y estado productor.",
+    "sourceRecordId": "SEGEMAR — Base de datos de yacimientos minerales de la República Argentina, depósito 11278 — Los Corrales - Playa Amarilla.",
+    "coordinateSource": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp11278.html",
+    "coordinateSourceName": "SEGEMAR — Base de datos de yacimientos minerales de la República Argentina",
+    "coordinateSourcePublishedAt": "2026-07-13",
+    "coordinateSourcePublicationNote": "Registro 11278: localización publicada en grados decimales -28.82805, -67.65972; ubicación política La Rioja, subprovincia/localidad Famatina; commodity Au; depósito de placer, tamaño pequeño. La ficha no declara datum, CRS ni semántica geométrica del punto.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por SEGEMAR; datum y CRS no especificados. No se asigna EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron los valores decimales publicados por SEGEMAR; no se realizó geocodificación, reproyección ni transformación de datum.",
+    "coordinateQuality": "Coordenada de localización del depósito publicada por SEGEMAR. La ficha no define si corresponde a frente de explotación, centroide o punto interno; se utiliza como referencia geográfica del depósito, no como acceso, centroide certificado ni perímetro.",
+    "statusSource": "https://sigam.segemar.gov.ar/segedoc/res/img/sigam_yacimientos/dp11278.html",
+    "statusSourceName": "SEGEMAR — Base de datos de yacimientos minerales de la República Argentina, campo «Estado del depósito».",
+    "statusSourcePublishedAt": "2026-07-13",
+    "administrativeStatus": "SEGEMAR clasifica el depósito como «productor» en la base actualizada el 13/07/2026. Esa etiqueta corresponde a la clasificación del registro y no acredita extracción en curso a la fecha de verificación. No se encontró evidencia primaria reciente de operador o autoridad que confirme actividad actual; el estado operativo permanece no verificado.",
+    "validityPeriod": "Base SEGEMAR actualizada el 13/07/2026; la operación minera actual no está verificada.",
+    "status": "no_verificado",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "SEGEMAR, registro 11278, identifica Los Corrales - Playa Amarilla en la provincia de La Rioja, localidad Famatina; publica -28.82805, -67.65972, oro (Au), tipo depósito de placer, tamaño pequeño y estado «productor». La base declara actualización 13/07/2026. Se copiaron las coordenadas decimales sin transformación; la ficha no declara datum/CRS ni la semántica geométrica del punto. La clasificación «productor» no demuestra extracción vigente y no se localizó evidencia primaria reciente de operador o autoridad que confirme actividad actual. El punto representa la localización del depósito, no un acceso, centroide certificado ni perímetro."
+    }
   }
 ]
