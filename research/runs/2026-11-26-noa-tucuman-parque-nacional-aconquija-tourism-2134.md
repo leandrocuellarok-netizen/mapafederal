@@ -54,9 +54,12 @@ No se agregaron parques industriales, Casa Histórica ni terminales de transport
 - Validación local de construcción: JSON parseable; 105 IDs únicos; 105 nombres únicos; 105 pares de coordenadas únicos; jurisdicción, categoría, rango argentino y URLs HTTPS válidos; matriz recalculada.
 - Se añadió una aserción para verificar coordenadas, fuente, CRS no declarado, calidad de punto de referencia, condición de acceso y conteo de Tucumán.
 - Commit de catálogo en la rama de trabajo: `2b41d8699be9447dd62651ca56f3b42dfe9c0ab4`.
-- Commit de matriz, README, workflow y bitácora: pendiente de creación.
-- Pull request y validación final en `main`: pendientes.
-- GitHub Pages: no se declara despliegue hasta que el workflow posterior a la integración termine correctamente y se verifique el job de Pages.
+- Commit de catálogo: `2b41d8699be9447dd62651ca56f3b42dfe9c0ab4`.
+- Commit de matriz, README, workflow y bitácora: `4eab5e9dfc30fbd4518d70eca61fb2b2951bd9cc`.
+- PR #10 integrado en `main`; merge commit `ef5886947095aa8f2d62eabf0bc3aac200356192`.
+- GitHub Actions #834 (run ID `45917772563`): `validate` falló en `Validate geographic and editorial JSON`; `deploy` fue omitido. La causa no fue el nodo ni la matriz: el runner usa fecha UTC `2026-11-27`, mientras que en Buenos Aires todavía era `2026-11-26`; el validador interpretó como vencida una oportunidad municipal vigente hasta el 26/11/2026. No se modificó `data/investment-opportunities.json`.
+- Corrección preparada: el workflow usa la fecha civil de `America/Argentina/Buenos_Aires` para validaciones date-only y añade un fixture que prueba una oportunidad válida hasta el día local actual. La validación y Pages posteriores a esta corrección quedan pendientes.
+- GitHub Pages: no se declara despliegue del nodo mientras el job `Deploy to GitHub Pages` no termine correctamente.
 
 ## Brechas pendientes
 
