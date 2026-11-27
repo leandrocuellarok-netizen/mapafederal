@@ -74,8 +74,8 @@ SIB/APN identifica la provincia Chaco, departamento Presidencia de la Plaza, cre
 - Merge final de `main`: `5fe3ca2cba69f50bd658384294f3657f6f03f4bb`.
 - GitHub Actions #882 (run ID `46026593611`, SHA `5fe3ca2cba69f50bd658384294f3657f6f03f4bb`): `validate` y `deploy` completados con `success`; el paso `Deploy to GitHub Pages` terminó correctamente.
 - `index.html` conserva el blob SHA `69e72891fe28e19580f681b85699da6377912c9c`; no fue modificado y continúa cargando `data/strategic-nodes.json`.
-- Inspección independiente: se intentó abrir la portada y el JSON publicado en GitHub Pages, pero el navegador no pudo acceder al dominio. Se confirma el despliegue del job Pages, pero no se afirma verificación visual del marcador.
-- La verificación visual independiente de la portada se realizará después del despliegue, si el dominio responde.
+- Inspección independiente posterior al despliegue: se intentó abrir la portada y el JSON publicado en GitHub Pages, pero el navegador no pudo acceder al dominio. Se confirma el despliegue del job Pages, pero no se afirma verificación visual del marcador.
+- Commit de cierre documental: `a3e5544225e568f45e805d02dda10b8d6f30f2c1`; GitHub Actions #883 (run ID `46026751209`) completó `validate` y `deploy` con `success`, incluido `Deploy to GitHub Pages`.
 
 ## Brechas no resueltas
 
