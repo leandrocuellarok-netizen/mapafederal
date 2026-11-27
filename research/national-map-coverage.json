@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T04:34:48-03:00",
+  "generatedAt": "2026-11-27T05:33:08-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "176c0e9012ea0253b93bfdb2eeb156482fd4b443",
-  "nodeCount": 110,
+  "catalogCommit": "955c31b67b138731391f45a297cc532a17ab0ec2",
+  "nodeCount": 111,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -37,7 +37,7 @@
         "Formosa",
         "Misiones"
       ],
-      "nodeCount": 12,
+      "nodeCount": 13,
       "coveredJurisdictions": 4
     },
     {
@@ -404,14 +404,14 @@
     {
       "province": "Misiones",
       "region": "NEA",
-      "total": 3,
+      "total": 4,
       "byType": {
         "Ciudad": 0,
         "Puerto": 1,
         "Aeropuerto": 1,
         "Paso fronterizo": 0,
         "Logística": 0,
-        "Industria": 0,
+        "Industria": 1,
         "Recurso mineral": 0,
         "Turismo": 1,
         "Estación ferroviaria": 0
@@ -420,7 +420,6 @@
         "Ciudad",
         "Paso fronterizo",
         "Logística",
-        "Industria",
         "Recurso mineral",
         "Estación ferroviaria"
       ]
@@ -680,7 +679,7 @@
     "Aeropuerto": 25,
     "Paso fronterizo": 12,
     "Logística": 3,
-    "Industria": 14,
+    "Industria": 15,
     "Recurso mineral": 5,
     "Turismo": 16,
     "Estación ferroviaria": 6
@@ -712,9 +711,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NOA",
-    "nextTarget": "NEA",
-    "note": "Ejecución del 27/11/2026 en Jujuy (NOA): se incorporó el Centro de Visitantes Aguas Negras del Parque Nacional Calilegua como nodo Turismo. APN documenta atención diaria de 8 a 19 h y acceso por RP 83. La coordenada corresponde al pin de Google Maps enlazado por APN, fuente secundaria sin datum/CRS ni precisión declarados; el punto representa el centro de visitantes, no el perímetro ni el centroide del parque. No se verificó transitabilidad de RP 83 en tiempo real. Se investigó además la Reserva Natural Provincial Laguna Blanca (Catamarca), pero no se agregó: SIB/APN publica ubicación solo a minuto y no define punto exacto; los geoservicios IDECat no entregaron geometría (WFS GetCapabilities respondió 403). Próxima región de rotación: NEA."
+    "lastTargeted": "NEA",
+    "nextTarget": "Cuyo",
+    "note": "Ejecución del 27/11/2026 en Misiones (NEA): se incorporó el Parque Industrial y de la Innovación Posadas (PIIP) como nodo Industria. El sitio oficial del PIIP documenta 112 ha, infraestructura y registro RENPI 20130080; el Gobierno de Misiones y la Municipalidad de Posadas documentan actividad dentro del predio en mayo de 2026. La coordenada (-27.369429, -55.991358) procede de un directorio sectorial secundario que no declara datum/CRS, precisión ni semántica geométrica; se usa como referencia general, no como acceso, centroide certificado, lote ni perímetro. Próxima región de rotación: Cuyo."
   },
   "pendingCandidates": [
     {
@@ -954,6 +953,7 @@
     "El Parque Nacional Aconquija (Tucumán) usa la ubicación geográfica publicada por SIB/APN: 27 11 37.77 S (-27.19383), 65 57 27.27 O (-65.95758), contrastada con la guía oficial de visitantes de APN (septiembre de 2022), que reproduce la misma coordenada en DMS. El SIB no declara datum/CRS ni semántica geométrica del punto. Se conserva solo como referencia general del área protegida; no representa portal, acceso, centroide certificado ni perímetro. APN documenta tres sectores de acceso y condiciona la visita a que el acceso esté habilitado; no se verificó apertura ni transitabilidad en tiempo real.",
     "El Parque Nacional Tierra del Fuego (Tierra del Fuego) usa la ubicación geográfica decimal publicada por SIB/APN: 54 38 32.13 S (-54.64226), 68 29 09.51 O (-68.48597), provincia Tierra del Fuego, departamento Ushuaia, creación 1960 y superficie 68.909 ha. La ficha no declara datum/CRS ni define si el punto corresponde a acceso, centroide o punto interno; se conserva como referencia general del área protegida, no como portada, acceso ni perímetro. APN publica horarios estacionales, acceso desde RN 3 y estacionamientos en varios sectores; la Resolución 132/2026 incluye el parque en el régimen de derechos de acceso vigente desde 01/06/2026. No se verificó apertura diaria ni transitabilidad en tiempo real.",
     "El nodo Puerto de Buenos Aires (CABA) fue corregido con la localización general publicada por ANPyN: 34°35'43.9\\\"S, 58°21'50.6\\\"W. Se convirtió DMS a grados decimales mediante cálculo aritmético, sin reproyección ni transformación de datum. La ficha no declara CRS/datum, precisión ni semántica geométrica del punto; por ello se representa solo como referencia general del puerto, no como acceso, muelle específico, terminal individual, centroide certificado ni perímetro. La fuente también enumera muelles para pasajeros y carga; no se infiere operación en tiempo real.",
-    "El Centro de Visitantes Aguas Negras del Parque Nacional Calilegua (Jujuy) usa el pin de lugar de Google Maps enlazado directamente por APN en «Ver mapa» desde la página oficial de Horarios / Cómo llegar. La URL de destino identifica «Parque Nacional Calilegua, Centro de Visitantes» y contiene el pin -23.7597349, -64.8504986. Google Maps se identifica como fuente secundaria de coordenadas; no declara CRS/datum ni precisión. El marcador representa el centro de visitantes, no el perímetro ni el centroide del parque. APN documenta atención diaria de 8 a 19 h y acceso por RP 83; no se verificó transitabilidad en tiempo real."
+    "El Centro de Visitantes Aguas Negras del Parque Nacional Calilegua (Jujuy) usa el pin de lugar de Google Maps enlazado directamente por APN en «Ver mapa» desde la página oficial de Horarios / Cómo llegar. La URL de destino identifica «Parque Nacional Calilegua, Centro de Visitantes» y contiene el pin -23.7597349, -64.8504986. Google Maps se identifica como fuente secundaria de coordenadas; no declara CRS/datum ni precisión. El marcador representa el centro de visitantes, no el perímetro ni el centroide del parque. APN documenta atención diaria de 8 a 19 h y acceso por RP 83; no se verificó transitabilidad en tiempo real.",
+    "El Parque Industrial y de la Innovación Posadas (Misiones) utiliza una coordenada decimal publicada por el directorio sectorial secundario Parques Industriales (ficha 74378). El sitio institucional del PIIP confirma el predio de 112 ha, infraestructura y registro RENPI 20130080; el Gobierno de Misiones (22/05/2026) y la Municipalidad de Posadas (11/05/2026) documentan actividad dentro del parque. El directorio no declara CRS/datum, precisión ni semántica geométrica; el marcador es una referencia general del predio y no representa acceso, centroide certificado, lote ni perímetro."
   ]
 }

@@ -2182,4 +2182,42 @@
       "scope": "SIB/APN confirma la provincia Jujuy, departamento Ledesma, creación en 1979, superficie de 76.306 ha y ubicación geográfica general del Parque Nacional Calilegua. APN documenta que el acceso se realiza por RP 83 y que la oficina de informes se concentra en el Centro de Visitantes Aguas Negras, con atención diaria de 8 a 19 h. El enlace oficial «Ver mapa» conduce al pin de Google Maps del centro de visitantes (-23.7597349, -64.8504986); Google Maps es fuente secundaria de coordenadas y no declara datum/CRS ni precisión. El marcador representa el centro de visitantes, no el perímetro ni el centroide del parque. No se comprobó el estado de RP 83 en tiempo real."
     }
   }
+,
+{
+  "id": "misiones-industria-parque-industrial-y-de-la-innovacion-posadas",
+  "name": "Parque Industrial y de la Innovación Posadas (PIIP)",
+  "province": "Misiones",
+  "locality": "Posadas — Paraje Nemesio Parma",
+  "type": "Industria",
+  "coords": [
+    -27.369429,
+    -55.991358
+  ],
+  "note": "Parque industrial oficial de 112 ha, inscripto en RENPI (registro 20130080), en Paraje Nemesio Parma y junto al Nuevo Puerto de Posadas. El Gobierno de Misiones documentó actividad industrial dentro del predio el 22/05/2026. La coordenada, publicada por un directorio sectorial secundario, se usa como referencia general del parque; no representa acceso, centroide certificado, lote ni perímetro.",
+  "source": "https://piip.misiones.gob.ar/",
+  "sourceName": "Parque Industrial y de la Innovación Posadas (PIIP) — sitio institucional oficial",
+  "sourcePublishedAt": null,
+  "sourcePublicationNote": "Sitio institucional consultado el 2026-11-27; no informa fecha de publicación o actualización. Describe el predio, su superficie de 112 ha, infraestructura y registro RENPI 20130080.",
+  "sourceRecordId": "PIIP — ficha institucional; Posadas, Paraje Nemesio Parma; 112 ha; Registro Nacional de Parques Industriales 20130080.",
+  "coordinateSource": "https://parquesindustriales.com.ar/parques/74378",
+  "coordinateSourceName": "Parques Industriales — ficha Parque Industrial y de la Innovación Posadas (PIIP), ID 74378 (fuente secundaria sectorial)",
+  "coordinateSourcePublishedAt": null,
+  "coordinateSourcePublicationNote": "La ficha publica latitud -27.369429 y longitud -55.991358; consultada el 2026-11-27. No informa fecha de captura, precisión, datum/CRS ni semántica geométrica del punto.",
+  "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por un directorio sectorial secundario; datum, CRS y EPSG no declarados. No se asigna EPSG.",
+  "coordinateTransformation": "Sin transformación: se copiaron los valores decimales publicados por la fuente; no se realizó geocodificación, reproyección ni transformación de datum.",
+  "coordinateQuality": "Coordenada de localización del parque publicada por un directorio sectorial secundario. La ficha no declara precisión ni semántica geométrica; se utiliza como referencia general del predio, no como acceso, centroide certificado, lote ni perímetro.",
+  "statusSource": "https://misiones.gob.ar/accion-cooperativa-jornada-de-packaging-estrategico-en-posadas/",
+  "statusSourceName": "Gobierno de Misiones — Acción Cooperativa: jornada de packaging estratégico en Posadas",
+  "statusSourcePublishedAt": "2026-05-22",
+  "additionalStatusSource": "https://posadas.gov.ar/28DD9032AE0AA5C89D03C94DC20BB81F/noticiashow",
+  "additionalStatusSourceName": "Municipalidad de Posadas — Capacitación en IA aplicada a la moda en el Parque Industrial",
+  "additionalStatusSourcePublishedAt": "2026-05-11",
+  "administrativeStatus": "El sitio oficial del PIIP documenta un parque industrial de 112 ha, infraestructura, servicios y registro RENPI 20130080. El Gobierno de Misiones informó el 22/05/2026 actividad de una planta de Plastimi SRL dentro del parque; la Municipalidad de Posadas informó el 11/05/2026 una capacitación realizada en el espacio MiDi del parque. La evidencia confirma actividad en el predio, no el estado de todas las empresas ni la disponibilidad de lotes.",
+  "validityPeriod": "Sitio institucional consultado el 2026-11-27; actividad documentada por el Gobierno de Misiones el 2026-05-22 y por la Municipalidad de Posadas el 2026-05-11. No se verificó padrón empresarial ni disponibilidad de lotes en tiempo real.",
+  "status": "operativo",
+  "verification": {
+    "checkedAt": "2026-11-27",
+    "scope": "El sitio institucional oficial del PIIP confirma su localización en Posadas, Paraje Nemesio Parma, superficie de 112 ha, infraestructura y registro RENPI 20130080. El Gobierno de Misiones documenta una planta de Plastimi SRL en el parque el 22/05/2026 y la Municipalidad de Posadas informa una capacitación en el espacio MiDi del PIIP el 11/05/2026. La coordenada -27.369429, -55.991358 se transcribió del directorio sectorial Parques Industriales (ficha 74378), fuente secundaria que no declara datum/CRS, precisión ni semántica geométrica. Se usa como referencia general del predio, no como acceso, centroide certificado, lote ni perímetro. No se verificó el padrón empresarial ni disponibilidad de lotes en tiempo real."
+  }
+}
 ]
