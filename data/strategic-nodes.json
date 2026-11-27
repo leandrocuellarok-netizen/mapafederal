@@ -1911,5 +1911,42 @@
       "checkedAt": "2026-11-26",
       "scope": "Se consultó el GeoJSON oficial de Buenos Aires Data. La feature id=17 identifica la parada principal de Reserva Ecológica, dirección Achával Rodríguez 1500, Puerto Madero, Comuna 1. El recurso declara OGC:CRS84; se reordenó longitud/latitud a latitud/longitud. No se hizo inspección presencial ni verificación del servicio en tiempo real."
     }
+  },
+  {
+    "id": "tucuman-turismo-parque-nacional-aconquija",
+    "name": "Parque Nacional Aconquija",
+    "province": "Tucumán",
+    "district": "Alberdi, Chicligasta, Monteros, Río Chico y Tafí del Valle",
+    "type": "Turismo",
+    "coords": [
+      -27.19383,
+      -65.95758
+    ],
+    "note": "Área protegida nacional de Yungas y Altos Andes, creada en 2018. SIB/APN publica esta ubicación geográfica como referencia general; no representa un portal de ingreso, centroide certificado ni perímetro. APN documenta tres sectores de acceso y advierte que la visita depende de que el acceso esté habilitado.",
+    "source": "https://www.argentina.gob.ar/parquesnacionales/region-noroeste/parque-nacional-aconquija",
+    "sourceName": "Administración de Parques Nacionales (APN)",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Ficha institucional consultada el 26/11/2026; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "Ficha SIB/APN — Parque Nacional Aconquija; provincia Tucumán; departamentos Alberdi, Chicligasta, Monteros, Río Chico y Tafí del Valle; creación 22/08/2018.",
+    "coordinateSource": "https://sib.gob.ar/index.php/areas-protegidas/parque-nacional-Aconquija",
+    "coordinateSourceName": "Sistema de Información de Biodiversidad de la Administración de Parques Nacionales (SIB/APN)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La ficha publica la ubicación geográfica 27 11 37.77 S (-27.19383), 65 57 27.27 O (-65.95758). No informa fecha de actualización ni semántica geométrica del punto. La guía de visitantes de APN (septiembre de 2022) reproduce la misma ubicación en DMS.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por SIB/APN; datum y CRS no especificados. No se atribuye EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron los valores decimales publicados por SIB/APN; no se realizó geocodificación ni reproyección.",
+    "coordinateQuality": "Punto de referencia geográfica del área protegida publicado por SIB/APN. La fuente no define si corresponde a acceso, centroide o punto interno; no se presenta como portal de ingreso, centroide certificado ni perímetro.",
+    "statusSource": "https://www.argentina.gob.ar/parquesnacionales/region-noroeste/parque-nacional-aconquija/horarios-como-llegar",
+    "statusSourceName": "APN — Horarios / Cómo llegar",
+    "statusSourcePublishedAt": null,
+    "additionalStatusSource": "https://www.argentina.gob.ar/sites/default/files/2019/05/informacion_y_recomendaciones_pn_aconquija_actualizado_septiembre_2022.pdf",
+    "additionalStatusSourceName": "APN — Información para visitantes, Parque Nacional Aconquija (actualizado septiembre de 2022)",
+    "additionalStatusSourcePublishedAt": "2022-09",
+    "administrativeStatus": "Parque Nacional de jurisdicción y administración nacional, creado el 22/08/2018 por Ley 27.451 y ampliado por Ley 27.697/2022. APN documenta tres sectores de acceso (Portal Campo de Los Alisos, Portal Cochuna/Laguna del Tesoro y Piedra Labrada/Campo de las Azucenas), infraestructura de uso público en Campo de Los Alisos y acceso condicionado a que los caminos y portales estén habilitados. El estado operativo describe el área protegida y su uso público documentado; no confirma apertura diaria, caminos ni servicios en tiempo real.",
+    "validityPeriod": "Área protegida establecida en 2018; información institucional de visita consultada el 26/11/2026. No se verificó apertura, transitabilidad ni disponibilidad de servicios en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-26",
+      "scope": "SIB/APN confirma Tucumán, los cinco departamentos, creación y ubicación geográfica exacta publicada. La guía APN de visitantes reproduce la coordenada en DMS y documenta la jurisdicción nacional, tres sectores de acceso e infraestructura de uso público. La página APN de horarios advierte que la visita depende de que el acceso esté habilitado. La coordenada se usa únicamente como referencia general del área protegida; no representa un portal, acceso, centroide certificado ni perímetro. No se verificó apertura ni transitabilidad en tiempo real."
+    }
   }
 ]
