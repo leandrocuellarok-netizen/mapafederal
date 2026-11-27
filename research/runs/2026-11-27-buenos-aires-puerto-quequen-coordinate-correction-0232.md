@@ -30,6 +30,6 @@
 - PR #17 integrado mediante squash en `main`: https://github.com/leandrocuellarok-netizen/mapafederal/pull/17.
 - Merge commit: `a678d9f283690c0221a24f8f78561a484ad8a9c7`.
 - GitHub Actions #852 (run ID 45946731172) falló en la aserción de rotación regional: el workflow aún esperaba Patagonia → Buenos Aires Province, aunque esta ejecución ya había avanzado correctamente a Buenos Aires Province → CABA. Las validaciones previas del catálogo, coordenadas y nuevo registro Puerto de Quequén pasaron.
-- Corrección preparada en PR #18: actualizar la expectativa del validador y apuntar `catalogCommit` al merge commit real de `main`.
+- PR #18 integrado mediante squash en `main`: https://github.com/leandrocuellarok-netizen/mapafederal/pull/18. Merge commit de corrección CI: `4e7b0fd8e001bc081ca965579b4fd832eade3d43`. Se actualizaron las tres aserciones de rotación y las dos referencias de `catalogCommit`.
 - Workflow correction commit: `e26c35711cbb50a7439ed9ec4aebb297d41f2c60` (actualiza las tres aserciones de rotación y las dos referencias de catalogCommit).; coverage correction commit: `7fbcdf24182b4795e50b3d95382629fc83c5ac17`.
-- Pages no se desplegó en #852 porque el job de validación falló. Se verificará el siguiente run después de integrar PR #18.
+- GitHub Actions #853 (run ID `45946867635`, commit `4e7b0fd8e001bc081ca965579b4fd832eade3d43`): job `validate` exitoso y job `deploy` exitoso. GitHub Pages confirmó el despliegue: https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45946867635. La URL pública estándar de Pages no fue accesible desde el entorno de verificación; por eso el despliegue está confirmado, pero la presencia visual del marcador no pudo inspeccionarse independientemente.
