@@ -49,16 +49,22 @@ Fuentes:
 - `data/strategic-nodes.json`
 - `research/national-map-coverage.json`
 - `README.md`
+- `.github/workflows/static.yml`
 - `research/runs/2026-11-27-noa-jujuy-calilegua-0434.md`
 
 ## Validación
 
 - Preflight local del contenido: JSON parseable; ID, nombre y coordenadas no duplicados; jurisdicción Jujuy; categoría Turismo permitida; coordenadas dentro del rango argentino; URLs HTTPS.
-- Validación completa del repositorio y GitHub Actions: pendiente de integración en `main`.
-- Commit de catálogo en rama de trabajo: `176c0e9012ea0253b93bfdb2eeb156482fd4b443`.
-- Pull request / commit de integración: pendiente.
-- Workflow run: pendiente.
-- GitHub Pages: pendiente de confirmación.
+- Preflight manual: JSON parseable; 110 IDs, nombres y pares de coordenadas únicos; Jujuy y NOA reconciliados; coordenadas dentro del rango argentino; categorías y URLs HTTPS admitidas.
+- PR #22 integrado en `main`: https://github.com/leandrocuellarok-netizen/mapafederal/pull/22.
+- Commit de catálogo: `176c0e9012ea0253b93bfdb2eeb156482fd4b443` (incluido en el historial de `main`).
+- Commit de integración del PR: `92a50198cdf0bd338f13c127d0587fede10f33d5`.
+- Actions #860 (`45959988000`): falló por una aserción antigua que esperaba 109 nodos; el catálogo y la matriz ya tenían 110.
+- Actions #861 (`45960088631`): falló por aserciones restantes con el conteo turístico, la rotación y el `catalogCommit` anterior. No fue un fallo del registro geográfico.
+- Se corrigieron las pruebas del workflow en los commits `f891d667a7070dc252805f9dfcdf1b8f831db5cb` y `ba5f4df53ef4c663f77748301802971cac894290`, incorporando además regresiones específicas para Calilegua y para la reserva de Laguna Blanca no incorporada.
+- Actions #862 (`45960125017`), SHA `ba5f4df53ef4c663f77748301802971cac894290`: validación completa aprobada; job `Deploy to GitHub Pages` aprobado. Resultado final: `success`.
+- URL de Pages reportada por el job: https://leandrocuellarok-netizen.github.io/mapafederal/.
+- Inspección independiente de la portada y del JSON publicado: no disponible desde el entorno de verificación; el dominio no respondió a la herramienta de navegación. El despliegue sí está confirmado por el job de Pages.
 
 ## Próxima prioridad
 
