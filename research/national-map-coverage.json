@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T13:37:50-03:00",
+  "generatedAt": "2026-11-27T14:36:07-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "9d307921eb03817df3f7ef1856a9203856a2a951",
-  "nodeCount": 119,
+  "catalogCommit": "c098a9802a5692723c7c370eb4840f55f5600867",
+  "nodeCount": 120,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -59,7 +59,7 @@
         "La Pampa",
         "Santa Fe"
       ],
-      "nodeCount": 16,
+      "nodeCount": 17,
       "coveredJurisdictions": 4
     },
     {
@@ -325,9 +325,9 @@
     {
       "province": "La Pampa",
       "region": "Centro",
-      "total": 3,
+      "total": 4,
       "byType": {
-        "Ciudad": 0,
+        "Ciudad": 1,
         "Puerto": 0,
         "Aeropuerto": 2,
         "Paso fronterizo": 0,
@@ -338,7 +338,6 @@
         "Estación ferroviaria": 0
       },
       "missingCategories": [
-        "Ciudad",
         "Puerto",
         "Logística",
         "Industria",
@@ -667,7 +666,7 @@
     }
   ],
   "categoryTotals": {
-    "Ciudad": 7,
+    "Ciudad": 8,
     "Puerto": 22,
     "Aeropuerto": 25,
     "Paso fronterizo": 12,
@@ -699,9 +698,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Cuyo",
-    "nextTarget": "Centro",
-    "note": "Ejecución del 27/11/2026 en San Luis: se incorporó el Parque Nacional Sierra de las Quijadas en Turismo. SIB/APN publica la ubicación geográfica decimal (-32.55677, -67.13459), departamento Belgrano, creación en 1991, superficie 73.785 ha y categoría internacional Sitio Ramsar. La ficha no declara datum/CRS ni semántica geométrica; el marcador se conserva como referencia general del área protegida, no como acceso, centroide certificado ni perímetro. APN documenta senderos autoguiados y guiados, horarios estacionales y área recreativa de acampe. No se verificó transitabilidad, cupos ni disponibilidad de servicios en tiempo real. Próxima región de rotación: Centro."
+    "lastTargeted": "Centro",
+    "nextTarget": "Patagonia",
+    "note": "Ejecución del 27/11/2026 en La Pampa: se incorporó la referencia urbana general de Santa Rosa, con coordenada publicada por la Municipalidad de Santa Rosa (36°37′13″S 64°17′26″O), convertida a grados decimales por cálculo aritmético. La página publica 116.083 habitantes para la ciudad y 133.712 para el aglomerado Gran Santa Rosa, ambos del Censo 2022. No declara CRS/datum, precisión ni semántica geométrica; el punto es una referencia urbana general, no el límite del ejido, un centroide certificado ni una instalación específica. La Pampa pasa de 3 a 4 nodos; Ciudad pasa de 7 a 8; Centro de 16 a 17. Próxima región de rotación: Patagonia."
   },
   "pendingCandidates": [
     {
