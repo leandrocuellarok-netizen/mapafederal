@@ -2257,5 +2257,39 @@
       "checkedAt": "2026-11-27",
       "scope": "SIB/APN identifica el Parque Nacional Talampaya en La Rioja, departamentos Coronel Felipe Varela e Independencia, creación 1997 por Ley 24.846, superficie 213.800 ha y categoría internacional Sitio de Patrimonio Mundial; publica 29 51 0.55 S (-29.85015), 67 52 39.34 O (-67.87759). La ficha no declara datum/CRS ni semántica geométrica del punto; se conserva solo como referencia general del área protegida, no como acceso, centroide certificado ni perímetro. APN publica horarios estacionales, accesos por RN 76 y RN 40 y estacionamiento en sectores de visita; su página de tarifas informa valores vigentes desde 2026-06-01. No se verificó transitabilidad, cupos ni disponibilidad de servicios en tiempo real."
     }
+  },
+  {
+    "id": "cordoba-estacion-ferroviaria-estacion-cordoba-mitre",
+    "name": "Estación Córdoba Mitre",
+    "province": "Córdoba",
+    "locality": "Córdoba",
+    "type": "Estación ferroviaria",
+    "coords": [
+      -31.4204589,
+      -64.1750774
+    ],
+    "note": "Estación terminal del servicio de larga distancia Buenos Aires–Córdoba. Trenes Argentinos publica dos servicios por semana e identifica Córdoba Mitre como terminal. La coordenada procede del pin de Google Maps enlazado desde la página oficial; se usa como referencia puntual de la estación, no como andén, acceso ni perímetro.",
+    "source": "https://www.argentina.gob.ar/transporte/trenes-argentinos/horarios-tarifas-y-recorridos/servicios-regionales-larga-distancia/buenosaires-cordoba",
+    "sourceName": "Trenes Argentinos Operaciones — Buenos Aires–Córdoba, horarios, tarifas y recorridos",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Página oficial consultada el 2026-11-27; informa dos servicios por semana e identifica la Estación Córdoba Mitre como terminal. No presenta fecha de publicación o actualización.",
+    "sourceRecordId": "Trenes Argentinos — servicio Buenos Aires–Córdoba; estación Córdoba Mitre como terminal.",
+    "coordinateSource": "https://maps.app.goo.gl/2UuuMGnCrfpDysTT7",
+    "coordinateSourceName": "Google Maps — pin Estación Córdoba, enlazado desde la página oficial de Trenes Argentinos",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "El enlace oficial maps.app.goo.gl/2UuuMGnCrfpDysTT7 redirige a la ficha Estación Córdoba y publica el pin -31.4204589, -64.1750774. Consultado el 2026-11-27; Google Maps no declara precisión, datum ni CRS.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales del destino de Google Maps enlazado por Trenes Argentinos; datum, CRS, EPSG y precisión no declarados. No se asigna EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron las coordenadas decimales del destino del enlace oficial; no se geocodificó el topónimo ni se realizó reproyección o transformación de datum.",
+    "coordinateQuality": "Pin de lugar de Google Maps enlazado directamente desde la página oficial de Trenes Argentinos para la Estación Córdoba Mitre. La fuente secundaria no declara precisión ni datum/CRS; se utiliza como referencia puntual de la estación, no como andén, acceso vial, centroide certificado ni perímetro.",
+    "statusSource": "https://www.argentina.gob.ar/transporte/trenes-argentinos/horarios-tarifas-y-recorridos/servicios-regionales-larga-distancia/buenosaires-cordoba",
+    "statusSourceName": "Trenes Argentinos Operaciones — servicio Buenos Aires–Córdoba",
+    "statusSourcePublishedAt": null,
+    "administrativeStatus": "Trenes Argentinos publica el servicio Buenos Aires–Córdoba con dos trenes por semana e identifica la Estación Córdoba Mitre como terminal. Esto acredita un servicio publicado en la página oficial al momento de consulta, pero no confirma salidas en tiempo real, regularidad efectiva ni estado de accesos.",
+    "validityPeriod": "Página oficial consultada el 2026-11-27; no informa fecha de actualización. Los horarios y la prestación efectiva pueden cambiar.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "Se verificó la página oficial de Trenes Argentinos para el servicio Buenos Aires–Córdoba, que informa dos trenes por semana y enlaza la Estación Córdoba Mitre a un pin de Google Maps. El enlace redirige a una ficha con coordenadas -31.4204589, -64.1750774. Google Maps es fuente secundaria de la coordenada y no declara precisión ni datum/CRS. Se conserva como referencia puntual de la estación, no como andén, acceso ni perímetro. No se verificaron horarios en tiempo real."
+    }
   }
 ]
