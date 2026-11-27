@@ -64,7 +64,10 @@
 - Commit de workflow: `cc34012a45b404745e8cfc2531b74564f97c2c4b`.
 - Commit de README: `5c7ab9216244f824ad00fa9b96974d68ff21d83b`.
 - Rama de trabajo: `automation/2026-11-27-centro-cordoba-mitre-0731`.
-- Pull request, validación de Actions en main y despliegue de Pages: pendientes de integración; se completarán en el registro final tras verificar los resultados.
+- PR #26 integrado en `main`: https://github.com/leandrocuellarok-netizen/mapafederal/pull/26.
+- Commit de merge en `main`: `a9fac8b3e80f823682361caa956c8a9bdff66861`.
+- GitHub Actions: el workflow `Deploy static content to Pages` está configurado para ejecutarse en cada push a `main`. El endpoint de estado combinado devolvió cero checks y el conector disponible no expone la lista de ejecuciones de push; no se obtuvo ID ni resultado de la ejecución correspondiente. Estado de validación y despliegue: no verificado.
+- GitHub Pages: la URL configurada es https://leandrocuellarok-netizen.github.io/mapafederal/. La inspección independiente de la portada y de `data/strategic-nodes.json` no pudo completarse desde el entorno de verificación; no se afirma que el marcador esté publicado ni visible.
 
 ## Brechas pendientes
 
