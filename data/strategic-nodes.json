@@ -2438,4 +2438,42 @@
       "scope": "Visit Catamarca ubica el Campo de Piedra Pómez en El Peñón, departamento Antofagasta de la Sierra, describe el atractivo y publica acceso arancelado, puesto de guardaparques, uso de 4x4 y guía habilitado. Argentina.gob.ar confirma el acceso principal desde El Peñón y recomienda 4x4 y guías locales. El par GPS -26.480508, -67.337452 se transcribió del fundamento del Proyecto HCDN 6541-D-2024; el documento es un proyecto legislativo y no una norma sancionada, y no declara método de captura, datum/CRS, precisión ni semántica geométrica. Se conserva solo como referencia general del atractivo, no como acceso, centroide certificado ni perímetro. No se verificó apertura diaria ni transitabilidad en tiempo real."
     }
   }
+,
+  {
+    "id": "chaco-turismo-parque-nacional-chaco",
+    "name": "Parque Nacional Chaco",
+    "province": "Chaco",
+    "district": "Presidencia de la Plaza",
+    "type": "Turismo",
+    "coords": [
+      -26.82658,
+      -59.65506
+    ],
+    "note": "Área protegida nacional creada en 1954. SIB/APN publica esta ubicación geográfica como referencia general del parque; la ficha no define si corresponde a acceso, centroide o punto interno. No representa portada, acceso ni perímetro. APN informa ingreso público todos los días de 7 a 19 h y documenta el acceso desde Capitán Solari; no se verificó transitabilidad en tiempo real.",
+    "source": "https://www.argentina.gob.ar/parquesnacionales/nea/parque-nacional-chaco",
+    "sourceName": "Administración de Parques Nacionales (APN)",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Página institucional consultada el 2026-11-27; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "Ficha APN — Parque Nacional Chaco; ficha SIB/APN — departamento Presidencia de la Plaza, creación 1954 y superficie 14.981 ha.",
+    "coordinateSource": "https://sib.gob.ar/areas-protegidas/parque-nacional-chaco",
+    "coordinateSourceName": "Sistema de Información de Biodiversidad de la Administración de Parques Nacionales (SIB/APN)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La ficha publica 26 49 35.70 S (-26.82658), 59 39 18.21 O (-59.65506); consultada el 2026-11-27. No informa fecha de actualización ni semántica geométrica del punto.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por SIB/APN; datum y CRS no especificados. No se atribuye EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron los valores decimales publicados por SIB/APN; no se realizó geocodificación ni reproyección.",
+    "coordinateQuality": "Punto de referencia geográfica general del Parque Nacional Chaco publicado por SIB/APN. La ficha no define si corresponde a portada, acceso, centroide o punto interno; no se presenta como acceso, centroide certificado ni perímetro.",
+    "statusSource": "https://www.argentina.gob.ar/parquesnacionales/nea/parque-nacional-chaco/horarios-como-llegar",
+    "statusSourceName": "APN — Horarios / Cómo llegar del Parque Nacional Chaco",
+    "statusSourcePublishedAt": null,
+    "additionalStatusSource": "https://www.argentina.gob.ar/parquesnacionales/nea/parque-nacional-chaco/servicios",
+    "additionalStatusSourceName": "APN — Servicios del Parque Nacional Chaco",
+    "additionalStatusSourcePublishedAt": null,
+    "administrativeStatus": "Parque Nacional de jurisdicción y administración nacional, creado en 1954 por Ley Nacional 14.366/54. SIB/APN informa 14.981 ha y departamento Presidencia de la Plaza. APN publica ingreso al público todos los días de 7 a 19 h, acceso desde Capitán Solari por camino vecinal, estacionamiento en sectores de uso público y servicios de visita junto al Centro de Visitantes. El estado operativo refiere al uso público documentado; no confirma transitabilidad, apertura de senderos ni disponibilidad de servicios en tiempo real.",
+    "validityPeriod": "Ficha SIB/APN y páginas institucionales APN consultadas el 2026-11-27; no informan fecha de actualización. No se verificó transitabilidad ni disponibilidad de servicios en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "SIB/APN identifica el Parque Nacional Chaco en la provincia de Chaco, departamento Presidencia de la Plaza, creación 1954 por Ley Nacional 14.366/54, superficie 14.981 ha y publica 26 49 35.70 S (-26.82658), 59 39 18.21 O (-59.65506). La ficha no declara datum/CRS ni semántica geométrica del punto; se conserva como referencia general del área protegida, no como portada, acceso, centroide certificado ni perímetro. APN informa ingreso público diario de 7 a 19 h y documenta el acceso desde Capitán Solari, estacionamiento, Centro de Visitantes y servicios de uso público. No se verificó transitabilidad, apertura de senderos ni disponibilidad de servicios en tiempo real."
+    }
+  }
 ]

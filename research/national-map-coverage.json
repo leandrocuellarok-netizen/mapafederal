@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T11:34:13-03:00",
+  "generatedAt": "2026-11-27T12:32:38-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "f55c0e50178721fcd7dfc1320245d7f192e06960",
-  "nodeCount": 117,
+  "catalogCommit": "b1c6b31dc7ce4f7ded271e5fe7a70503a8662564",
+  "nodeCount": 118,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -37,7 +37,7 @@
         "Formosa",
         "Misiones"
       ],
-      "nodeCount": 13,
+      "nodeCount": 14,
       "coveredJurisdictions": 4
     },
     {
@@ -157,7 +157,7 @@
     {
       "province": "Chaco",
       "region": "NEA",
-      "total": 3,
+      "total": 4,
       "byType": {
         "Ciudad": 0,
         "Puerto": 1,
@@ -166,7 +166,7 @@
         "Logística": 0,
         "Industria": 1,
         "Recurso mineral": 0,
-        "Turismo": 0,
+        "Turismo": 1,
         "Estación ferroviaria": 0
       },
       "missingCategories": [
@@ -174,7 +174,6 @@
         "Paso fronterizo",
         "Logística",
         "Recurso mineral",
-        "Turismo",
         "Estación ferroviaria"
       ]
     },
@@ -676,7 +675,7 @@
     "Logística": 4,
     "Industria": 17,
     "Recurso mineral": 5,
-    "Turismo": 18,
+    "Turismo": 19,
     "Estación ferroviaria": 7
   },
   "leastCoveredJurisdictions": [
@@ -701,9 +700,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NOA",
-    "nextTarget": "NEA",
-    "note": "Ejecución del 27/11/2026 en Catamarca: se incorporó Campo de Piedra Pómez en Turismo. Visit Catamarca documenta el destino, el acceso arancelado, el puesto de guardaparques y las condiciones de visita; Argentina.gob.ar confirma el acceso principal desde El Peñón y recomienda 4x4 y guía local. La coordenada GPS se transcribió del fundamento del Proyecto HCDN 6541-D-2024, que no es una norma sancionada y no declara datum/CRS, método ni precisión; el punto se usa como referencia general del atractivo, no como acceso, centroide ni perímetro. El Parque Industrial El Pantanillo no se incorporó: la coordenada disponible procede de un directorio secundario y el servicio IDECAT no entregó una geometría verificable en esta revisión. Próxima región de rotación: NEA."
+    "lastTargeted": "NEA",
+    "nextTarget": "Cuyo",
+    "note": "Ejecución del 27/11/2026 en Chaco: se incorporó el Parque Nacional Chaco en Turismo. SIB/APN publica la ubicación geográfica decimal (-26.82658, -59.65506), provincia, departamento, creación en 1954 y superficie de 14.981 ha. APN documenta ingreso público todos los días de 7 a 19 h, acceso desde Capitán Solari por camino vecinal y servicios de visita. La ficha SIB no declara datum/CRS ni semántica geométrica; el marcador se conserva como referencia general del área protegida, no como portada, acceso, centroide certificado ni perímetro. No se verificó transitabilidad ni disponibilidad de servicios en tiempo real. Próxima región de rotación: Cuyo."
   },
   "pendingCandidates": [
     {
