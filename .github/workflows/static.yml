@@ -632,7 +632,7 @@ jobs:
           assert caba_port["source"] == "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/buenos-aires"
           assert caba_port["coordinateSource"] == caba_port["source"]
           assert caba_port["coordinateReferenceSystem"].startswith("Coordenadas geográficas")
-          assert "conversión aritmética DMS" in caba_port["coordinateTransformation"].lower()
+          assert "conversión aritmética dms" in caba_port["coordinateTransformation"].lower()
           assert "referencia general del puerto" in caba_port["coordinateQuality"].lower()
           assert caba_port["status"] == "no_verificado" and caba_port["statusSource"] == caba_port["source"]
           assert caba_port["previousSource"] == "https://www.puertobuenosaires.gob.ar/"
