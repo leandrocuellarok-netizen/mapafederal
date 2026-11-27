@@ -2144,5 +2144,42 @@
       "checkedAt": "2026-11-27",
       "scope": "SIB/APN identifica Tierra del Fuego, departamento Ushuaia, creación 1960 y publica la ubicación geográfica 54 38 32.13 S (-54.64226), 68 29 09.51 O (-68.48597), con superficie de 68.909 ha. La ficha no declara datum/CRS ni semántica geométrica del punto; se conserva como referencia general del área protegida, no como portada, acceso ni perímetro. APN publica horarios estacionales, acceso desde RN 3 y estacionamientos en distintos sectores. La Resolución 132/2026 incluye el parque en el régimen de derechos de acceso vigente desde 01/06/2026. No se verificó apertura diaria, transitabilidad ni servicios en tiempo real."
     }
+  },
+  {
+    "id": "jujuy-turismo-centro-visitantes-aguas-negras-calilegua",
+    "name": "Centro de Visitantes Aguas Negras — Parque Nacional Calilegua",
+    "province": "Jujuy",
+    "district": "Ledesma",
+    "type": "Turismo",
+    "coords": [
+      -23.7597349,
+      -64.8504986
+    ],
+    "note": "Centro de Visitantes Aguas Negras, donde APN concentra la oficina de informes del Parque Nacional Calilegua. APN documenta atención diaria al público de 8 a 19 h y acceso por RP 83; los horarios de visita y excursiones varían por temporada. La coordenada corresponde al pin del centro de visitantes enlazado por APN, no al perímetro ni al centroide del parque. Verificar el estado de la RP 83 antes de viajar.",
+    "source": "https://www.argentina.gob.ar/parquesnacionales/region-noroeste/parque-nacional-calilegua/horarios-como-llegar",
+    "sourceName": "Administración de Parques Nacionales (APN) — Parque Nacional Calilegua, Horarios / Cómo llegar",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Página institucional consultada el 2026-11-27; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "APN — sección Puntos de entrada al parque: acceso por RP 83 y oficina de informes en el Centro de Visitantes Aguas Negras, con atención diaria de 8 a 19 h.",
+    "coordinateSource": "https://maps.app.goo.gl/yDz2i2xoGBvbDsgt8",
+    "coordinateSourceName": "Google Maps — pin del Centro de Visitantes Aguas Negras, enlazado desde APN mediante «Ver mapa».",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La página oficial de APN enlaza este destino de Google Maps para el punto de entrada al parque; la URL de destino identifica «Parque Nacional Calilegua, Centro de Visitantes» y publica el pin -23.7597349, -64.8504986. Consultado el 2026-11-27.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales del pin de Google Maps enlazado por APN; el servicio no declara datum, CRS ni EPSG. No se atribuye sistema de referencia geodésica.",
+    "coordinateTransformation": "Sin transformación: valores decimales tomados del destino de Google Maps enlazado por APN; no se geocodificó el topónimo ni se realizó reproyección o transformación de datum.",
+    "coordinateQuality": "Pin de lugar del Centro de Visitantes Aguas Negras enlazado directamente desde la página oficial de APN. La fuente secundaria no declara precisión ni datum/CRS; se usa como referencia puntual del centro de visitantes, no como perímetro, acceso vial, centroide del parque ni levantamiento geodésico.",
+    "statusSource": "https://www.argentina.gob.ar/parquesnacionales/region-noroeste/parque-nacional-calilegua/horarios-como-llegar",
+    "statusSourceName": "APN — Parque Nacional Calilegua, Horarios / Cómo llegar",
+    "statusSourcePublishedAt": null,
+    "additionalStatusSource": "https://sib.gob.ar/index.php/areas-protegidas/parque-nacional-calilegua",
+    "additionalStatusSourceName": "Sistema de Información de Biodiversidad de APN (SIB) — ficha Parque Nacional Calilegua",
+    "additionalStatusSourcePublishedAt": null,
+    "administrativeStatus": "Parque Nacional de jurisdicción y administración nacional, creado por Decreto Nacional 1.733/79. SIB/APN informa 76.306 ha en el departamento Ledesma, Jujuy. APN documenta acceso por RP 83 y atención diaria al público en el Centro de Visitantes Aguas Negras de 8 a 19 h; el parque y las excursiones tienen horarios estacionales. No se verifica el estado vial en tiempo real.",
+    "validityPeriod": "Ficha SIB/APN y página APN de horarios consultadas el 2026-11-27. No se verificó el estado de transitabilidad de la RP 83 en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "SIB/APN confirma la provincia Jujuy, departamento Ledesma, creación en 1979, superficie de 76.306 ha y ubicación geográfica general del Parque Nacional Calilegua. APN documenta que el acceso se realiza por RP 83 y que la oficina de informes se concentra en el Centro de Visitantes Aguas Negras, con atención diaria de 8 a 19 h. El enlace oficial «Ver mapa» conduce al pin de Google Maps del centro de visitantes (-23.7597349, -64.8504986); Google Maps es fuente secundaria de coordenadas y no declara datum/CRS ni precisión. El marcador representa el centro de visitantes, no el perímetro ni el centroide del parque. No se comprobó el estado de RP 83 en tiempo real."
+    }
   }
 ]
