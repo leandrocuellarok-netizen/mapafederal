@@ -816,7 +816,7 @@ jobs:
           assert centro["nodeCount"] == 15 and centro["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Turismo"] == 15
           assert coverage["regionalRotation"]["lastTargeted"] == "CABA" and coverage["regionalRotation"]["nextTarget"] == "NOA"
-          assert coverage["catalogCommit"] == "ed9bfefa0e416c12d1b0a4d7f58fc9b4f984b4d0""
+          assert coverage["catalogCommit"] == "ed9bfefa0e416c12d1b0a4d7f58fc9b4f984b4d0"
           san_juan = next(row for row in coverage_rows if row["province"] == "San Juan")
           assert san_juan["total"] == 4 and san_juan["byType"]["Recurso mineral"] == 1
           assert "Recurso mineral" not in san_juan["missingCategories"]
@@ -824,7 +824,7 @@ jobs:
           assert cuyo["nodeCount"] == 14 and cuyo["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Recurso mineral"] == 5
           assert coverage["regionalRotation"]["lastTargeted"] == "CABA" and coverage["regionalRotation"]["nextTarget"] == "NOA"
-          assert coverage["catalogCommit"] == "ed9bfefa0e416c12d1b0a4d7f58fc9b4f984b4d0""
+          assert coverage["catalogCommit"] == "ed9bfefa0e416c12d1b0a4d7f58fc9b4f984b4d0"
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
