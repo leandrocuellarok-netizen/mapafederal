@@ -53,9 +53,12 @@ La base de datos de yacimientos minerales de SEGEMAR declara actualización al 1
 
 ## Integración y publicación
 
-- PR y commit de merge: pendientes.
-- GitHub Actions `validate` y `Deploy to GitHub Pages`: pendientes de integración.
-- No se afirma publicación hasta verificar ambos jobs.
+- PR #13 integrado en `main`; merge commit: `327594d8270a87db2af18dba87b38eaa66ec7f82`.
+- La primera ejecución sobre ese merge, Actions #842 (ID `45929975173`), falló porque el workflow aún esperaba la rotación NEA → Cuyo. La matriz ya registraba correctamente Cuyo → Centro.
+- PR #14 corrigió la aserción obsoleta; merge commit: `4612917c13977fc91740ad10f83b3da25f7b9e18`.
+- Actions #843 (ID `45930068797`), sobre el commit `4612917c13977fc91740ad10f83b3da25f7b9e18`: job `validate` exitoso y job `deploy` exitoso; el paso `Deploy to GitHub Pages` terminó en `success`.
+- El catálogo, la matriz, README, workflow y esta bitácora quedaron integrados en `main`. La portada `index.html` no fue modificada y sigue cargando el catálogo nacional.
+- La portada pública no pudo inspeccionarse independientemente desde la herramienta web; se confirma el job de Pages, no una verificación visual del marcador.
 
 ## Brechas pendientes
 
