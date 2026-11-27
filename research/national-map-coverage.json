@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T21:34:12-03:00",
+  "generatedAt": "2026-11-26T22:32:31-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "2b41d8699be9447dd62651ca56f3b42dfe9c0ab4",
-  "nodeCount": 105,
+  "catalogCommit": "24d355a7a872aaede07e4236dfbd6d36962f7555",
+  "nodeCount": 106,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -37,7 +37,7 @@
         "Formosa",
         "Misiones"
       ],
-      "nodeCount": 11,
+      "nodeCount": 12,
       "coveredJurisdictions": 4
     },
     {
@@ -282,7 +282,7 @@
     {
       "province": "Formosa",
       "region": "NEA",
-      "total": 2,
+      "total": 3,
       "byType": {
         "Ciudad": 0,
         "Puerto": 1,
@@ -291,7 +291,7 @@
         "Logística": 0,
         "Industria": 0,
         "Recurso mineral": 0,
-        "Turismo": 0,
+        "Turismo": 1,
         "Estación ferroviaria": 0
       },
       "missingCategories": [
@@ -300,7 +300,6 @@
         "Logística",
         "Industria",
         "Recurso mineral",
-        "Turismo",
         "Estación ferroviaria"
       ]
     },
@@ -687,23 +686,13 @@
     "Logística": 3,
     "Industria": 14,
     "Recurso mineral": 4,
-    "Turismo": 12,
+    "Turismo": 13,
     "Estación ferroviaria": 6
   },
   "leastCoveredJurisdictions": [
     {
-      "province": "Tucumán",
-      "region": "NOA",
-      "total": 2
-    },
-    {
       "province": "Catamarca",
       "region": "NOA",
-      "total": 2
-    },
-    {
-      "province": "Formosa",
-      "region": "NEA",
       "total": 2
     },
     {
@@ -713,6 +702,11 @@
     },
     {
       "province": "Santiago del Estero",
+      "region": "NOA",
+      "total": 2
+    },
+    {
+      "province": "Tucumán",
       "region": "NOA",
       "total": 2
     }
@@ -727,9 +721,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NOA",
-    "nextTarget": "NEA",
-    "note": "Ejecución del 26/11/2026 en Tucumán (NOA): se incorporó el Parque Nacional Aconquija en Turismo con la ubicación geográfica publicada por SIB/APN (-27.19383, -65.95758), contrastada con la guía oficial de visitantes de APN. El punto es una referencia general del área protegida, no un portal, acceso, centroide certificado ni perímetro. APN documenta tres sectores de acceso y condiciona la visita a que estén habilitados; no se verificó apertura ni transitabilidad en tiempo real. Catálogo: 105 nodos. Tucumán pasa de uno a dos nodos y suma su primer registro de Turismo. Próxima región: NEA."
+    "lastTargeted": "NEA",
+    "nextTarget": "Cuyo",
+    "note": "Ejecución del 26/11/2026 en Formosa (NEA): se incorporó la Reserva Natural Formosa en Turismo con la ubicación geográfica publicada por SIB/APN (-24.27366, -61.80071), contrastada con las páginas de visita, actividades y horarios de APN. El punto es una referencia general del área protegida, no la portada oeste ni el perímetro. APN documenta acceso público, acampe, senderos y miradores; no se verificó transitabilidad ni disponibilidad en tiempo real. Catálogo: 106 nodos. Formosa pasa de dos a tres nodos y suma su primer registro de Turismo. Próxima región: Cuyo."
   },
   "pendingCandidates": [
     {
