@@ -63,8 +63,10 @@ No se incorporó un nodo al catálogo geográfico. La revisión confirmó activi
 - Rama: `automation/nea-formosa-industrial-preflight-1931`.
 - Commit de matriz: `8900c435fdafd9e062ce437cc0b45209f836342d`.
 - Commit inicial de bitácora: `1dbfee6a1abda1140c863ea68c67479e0a76599b`.
-- PR #45: https://github.com/leandrocuellarok-netizen/mapafederal/pull/45 (abierto; merge pendiente).
-- Workflow y Pages: pendientes de ejecución después de integrar.
+- PR #45: https://github.com/leandrocuellarok-netizen/mapafederal/pull/45 — integrado.
+- Commit de integración: df775e99048ddc630b2539526e400e4ae43ea177.
+- GitHub Actions #900 (run ID 46077370325): validate = success; deploy = success. https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/46077370325
+- GitHub Pages: despliegue confirmado por el job deploy. La verificación visual independiente de la portada no se realizó en ese preflight.
 - La inspección visual de la portada no se realizó en esta ejecución.
 
 ## Próxima prioridad
