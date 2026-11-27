@@ -54,7 +54,7 @@
 - Deduplicación previa contra el catálogo completo: ID, nombre y par de coordenadas no existentes.
 - Coordenadas convertidas: latitud -38.92551388888889, longitud -67.86676388888888; dentro de rango geográfico y jurisdicción Río Negro.
 - Catálogo JSON: 114 registros tras la incorporación.
-- IDs, nombres y coordenadas: validación completa pendiente de Actions.
+- IDs, nombres y coordenadas: 114 IDs únicos, 114 nombres únicos y 114 pares de coordenadas únicos; 24 jurisdicciones, nueve categorías válidas y coordenadas dentro de rangos geográficos.
 - Matriz provincial recalculada para 24 jurisdicciones y nueve categorías.
 - Rotación actualizada: Patagonia → Buenos Aires Province.
 - Commit de catálogo: `31f7ab4064a42a64d22f8f41bbe2f3685cb6bb0d`.
@@ -62,7 +62,13 @@
 - Commit de README: `25f05c092d2c69a2652cdfe3aa4551fbc8c9ecf9`.
 - Commit de workflow: `69c101d287b461ce9310c5fbfad06e3b39b682d3`.
 - Rama: `automation/2026-11-27-patagonia-rio-negro-allen-norte-0833`.
-- Pull request, validación final en `main` y despliegue de Pages: pendientes de integración; se completarán tras comprobar Actions.
+- PR #27 integrado en `main`: https://github.com/leandrocuellarok-netizen/mapafederal/pull/27; merge commit `052d5b8b10757443d8d51935d8387725b1d35cbb`.
+- PR #28 integrado: https://github.com/leandrocuellarok-netizen/mapafederal/pull/28; merge commit `47627578a38ba5847e0a0b491b4fcbd553be9adc`.
+- PR #29 integrado: https://github.com/leandrocuellarok-netizen/mapafederal/pull/29; merge commit `338ea389e604f13a0a4ffd0a92f688572fea9c4d`.
+- GitHub Actions #873 (run ID `45992143373`, commit `338ea389e604f13a0a4ffd0a92f688572fea9c4d`): workflow `Deploy static content to Pages` completado con conclusión `success`; jobs `validate` y `deploy` completados con `success`.
+- Validación final: JSON geográfico/editorial, 114 nodos, IDs/nombres/coordenadas únicas, matriz de 24 jurisdicciones y nueve categorías, sintaxis JavaScript inline, directorio escalable, filtros territoriales, informes federales, exportaciones CSV, SEO/GEO, assets y pruebas de procurement: todos los pasos del job `validate` aprobados.
+- GitHub Pages: job `Deploy to GitHub Pages` completado con `success` en Actions #873. La comprobación visual independiente de la portada y del JSON publicado no pudo completarse: el entorno de verificación no resolvió el DNS de `leandrocuellarok-netizen.github.io`. No se afirma que el marcador haya sido inspeccionado visualmente.
+- `index.html` no se modificó; conserva su referencia a `data/strategic-nodes.json` y los filtros existentes.
 
 ## Brechas pendientes
 
@@ -75,8 +81,15 @@
 - GitHub Actions #871 (run ID `45991925263`, commit `052d5b8b10757443d8d51935d8387725b1d35cbb`) falló en el paso «Validate geographic and editorial JSON» por una aserción sensible a mayúsculas/minúsculas: el metadato correcto decía «No se asigna EPSG» y la prueba esperaba «no se asigna EPSG».
 - No se modificó el dato geográfico. Se corrigió la prueba para comparar el texto normalizado con `.lower()` en la rama de reparación.
 - Commit de corrección del workflow: `ea4d6f82f79bd6fd452704100938374d080a1ef2`.
-- Nueva validación en `main` y despliegue de Pages: pendientes de integración de la corrección.
+- La primera corrección se integró mediante PR #28 y fue seguida por una segunda incidencia de texto normalizado, corregida en PR #29.
 
 - GitHub Actions #872 (run ID `45992043475`, commit `47627578a38ba5847e0a0b491b4fcbd553be9adc`) volvió a detenerse en la validación geográfica por una segunda comparación textual sensible a mayúsculas/minúsculas («Acceso Martín Fierro» / «No representa»). Se normalizó también esa aserción con `.lower()`; no se modificó el registro ni las coordenadas.
 - Commit de esta segunda corrección del workflow: `711a46c8a0a40982369c9188e05902f6ba6a406e`.
-- Nueva validación de `main` y despliegue de Pages: pendientes de integración.
+- La validación definitiva y el despliegue de Pages quedaron aprobados en Actions #873 (run ID `45992143373`).
+
+## Estado final de publicación
+
+- HEAD de integración del catálogo y la matriz: `338ea389e604f13a0a4ffd0a92f688572fea9c4d`.
+- GitHub Actions #873: https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/45992143373 — `validate: success`, `deploy: success`.
+- Pages: despliegue confirmado por el job oficial; inspección independiente de la URL pública pendiente por fallo de resolución DNS desde el entorno de verificación.
+- El commit que actualiza esta bitácora incorpora únicamente el estado final de la ejecución; no cambia catálogo, matriz ni homepage.
