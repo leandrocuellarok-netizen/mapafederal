@@ -131,17 +131,36 @@
     "note": "Complejo portuario e industrial del sudoeste bonaerense.",
     "source": "https://puertobahiablanca.com/"
   },
-  {
+    {
     "id": "buenos-aires-puerto-puerto-de-quequen",
     "name": "Puerto de Quequén",
     "province": "Buenos Aires",
     "type": "Puerto",
     "coords": [
-      -38.57,
-      -58.7
+      -38.57133333,
+      -58.71347222
     ],
-    "note": "Nodo portuario del sudeste bonaerense.",
-    "source": "https://www.puertoquequen.com/"
+    "note": "Puerto marítimo sobre ambas márgenes del río Quequén Grande. ANPyN publica la localización y datos técnicos de sus muelles; la Resolución 39/2026 lo habilita con carácter provincial, de uso público y destino comercial. Coordenada general del puerto, no representa un muelle o terminal específico; actividad y condiciones operativas deben verificarse con la autoridad.",
+    "source": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/quequen",
+    "sourceName": "Agencia Nacional de Puertos y Navegación (ANPyN)",
+    "sourceRecordId": "Ficha ANPyN — Puerto Quequén, secciones Localización y Datos Técnicos; localidad Quequén, departamento Necochea, Buenos Aires.",
+    "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/quequen",
+    "coordinateSourceName": "ANPyN — ficha oficial de Puerto Quequén, sección Localización",
+    "coordinateReferenceSystem": "No declarado por la ficha ANPyN; publica latitud/longitud geográficas. No se atribuye datum ni EPSG.",
+    "coordinateTransformation": "Conversión aritmética de DMS a grados decimales: 38°34'16.8\\\"S, 58°42'48.5\\\"W → [-38.57133333, -58.71347222]; sin transformación de datum ni reproyección.",
+    "coordinateQuality": "Coordenada oficial de localización portuaria publicada por ANPyN; la ficha no define si representa punto medio, muelle, terminal o perímetro. Se utiliza como referencia general portuaria, no como ubicación de un muelle específico ni como levantamiento geodésico independiente.",
+    "additionalSource": "https://www.puertoquequen.com/",
+    "additionalSourceName": "Consorcio de Gestión del Puerto de Quequén — sitio institucional, fuente complementaria conservada del registro anterior.",
+    "status": "no_verificado",
+    "statusSource": "https://www.argentina.gob.ar/normativa/nacional/norma-427053",
+    "statusSourceName": "ANPyN — Resolución 39/2026, habilitación de Puerto Quequén",
+    "statusSourcePublishedAt": "2026-06-26",
+    "administrativeStatus": "La Resolución ANPyN 39/2026 habilitó Puerto Quequén con carácter provincial, de uso público y destino comercial, circunscripto a las terminales y muelles enumerados en la norma. La ficha ANPyN publica la localización y datos técnicos de los muelles. La habilitación administrativa no sustituye la verificación de actividad de buques, calado efectivo ni servicios en tiempo real.",
+    "validityPeriod": "Resolución 39/2026 sancionada el 24/06/2026 y publicada el 26/06/2026; ficha portuaria ANPyN consultada el 27/11/2026. No se verificó actividad operativa en tiempo real.",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "Se reemplazó la coordenada redondeada previa [-38.57, -58.7], que no tenía atribución de punto exacta, por la localización publicada por ANPyN: 38°34'16.8\\\"S, 58°42'48.5\\\"W. Conversión DMS a decimal, sin reproyección. Se conserva como fuente complementaria el sitio institucional del Consorcio. La Resolución 39/2026 acredita habilitación administrativa provincial, pública y comercial; no se verificaron movimientos de buques ni condiciones operativas en tiempo real."
+    }
   },
   {
     "id": "cordoba-industria-parque-industrial-cordoba",
