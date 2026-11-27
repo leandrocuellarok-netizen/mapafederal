@@ -492,9 +492,16 @@ jobs:
           import math
           from pathlib import Path
           import re
-          from datetime import date, time, timedelta
+          from datetime import date, datetime, time, timedelta
           from urllib.parse import urlparse
           from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
+
+          # Date-only records in this repository use Argentina's civil date, not the UTC date of hosted runners.
+          try:
+              argentina_today = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires")).date()
+          except ZoneInfoNotFoundError:
+              argentina_today = date.today()
+          print(f"Fecha de referencia para validaciones: {argentina_today.isoformat()} (America/Argentina/Buenos_Aires).")
 
           with open("data/strategic-nodes.json", encoding="utf-8") as f:
               nodes = json.load(f)
@@ -744,7 +751,7 @@ jobs:
           assert verification.get("status") in {"verified", "not_verified", "outdated"}, "Estado de verificación provincial no admitido"
           assert isinstance(verification.get("checkedAt"), str), "Falta fecha de verificación provincial"
           verification_date = date.fromisoformat(verification["checkedAt"])
-          assert verification_date <= date.today(), "La fecha de verificación provincial no puede ser futura"
+          assert verification_date <= argentina_today, "La fecha de verificación provincial no puede ser futura"
           assert isinstance(verification.get("scope"), str) and verification["scope"].strip(), "Falta el alcance de verificación provincial"
           source_url = urlparse(provincial_data.get("sourceUrl", ""))
           assert source_url.scheme == "https" and source_url.netloc, "Fuente OPEX no HTTPS"
@@ -821,7 +828,7 @@ jobs:
                   checked_date = date.fromisoformat(checked_at)
                   assert checked_date.isoformat() == checked_at, f"Fecha de verificación no ISO: {item.get('title', 'sin titular')}"
                   published_date = date.fromisoformat(item["date"])
-                  assert published_date <= checked_date <= date.today(), f"Fecha de verificación anterior a la publicación o futura: {item.get('title', 'sin titular')}"
+                  assert published_date <= checked_date <= argentina_today, f"Fecha de verificación anterior a la publicación o futura: {item.get('title', 'sin titular')}"
 
           verification_fixture = {
               "title": "Fixture de trazabilidad editorial",
@@ -843,7 +850,7 @@ jobs:
               }
           }
           validate_news_verification(pending_fixture)
-          for invalid_checked_at in ("2026-11-19", "2026-11-21T00:00:00", (date.today() + timedelta(days=1)).isoformat()):
+          for invalid_checked_at in ("2026-11-19", "2026-11-21T00:00:00", (argentina_today + timedelta(days=1)).isoformat()):
               invalid_fixture = {
                   **verification_fixture,
                   "verification": {**verification_fixture["verification"], "checkedAt": invalid_checked_at}
@@ -938,7 +945,7 @@ jobs:
               assert item["id"] not in news_ids, f"ID de noticia duplicado: {item['id']}"
               news_ids.add(item["id"])
               date.fromisoformat(item["date"])
-              assert item["date"] <= date.today().isoformat(), f"Noticia con fecha futura: {item['title']}"
+              assert item["date"] <= argentina_today.isoformat(), f"Noticia con fecha futura: {item['title']}"
               assert item["category"] in categories, f"Categoría no admitida: {item['category']}"
               validate_news_summary(item)
               validate_news_period(item)
@@ -969,7 +976,7 @@ jobs:
           assert event_catalog.get("schemaVersion") == 1, "Versión de esquema de eventos no admitida"
           catalog_updated = date.fromisoformat(event_catalog.get("updatedAt", ""))
           assert catalog_updated.isoformat() == event_catalog["updatedAt"], "Fecha de actualización de eventos no ISO"
-          assert catalog_updated <= date.today(), "Fecha futura en catálogo de eventos"
+          assert catalog_updated <= argentina_today, "Fecha futura en catálogo de eventos"
           assert isinstance(event_catalog.get("note"), str) and event_catalog["note"].strip(), "Falta la nota de alcance del catálogo de eventos"
           events = event_catalog.get("events")
           assert isinstance(events, list), "El catálogo de eventos debe contener una lista"
@@ -1013,14 +1020,14 @@ jobs:
               assert verification.get("status") in event_verification_statuses, f"Estado de verificación de evento no admitido: {event['id']}"
               checked_at = date.fromisoformat(verification.get("checkedAt", ""))
               assert checked_at.isoformat() == verification["checkedAt"], f"Fecha de verificación no ISO: {event['id']}"
-              assert published <= checked_at <= date.today(), f"Fechas de fuente/verificación inconsistentes: {event['id']}"
+              assert published <= checked_at <= argentina_today, f"Fechas de fuente/verificación inconsistentes: {event['id']}"
               assert isinstance(verification.get("scope"), str) and verification["scope"].strip(), f"Evento sin alcance de verificación: {event['id']}"
               last_event_day = date.fromisoformat(end_date) if end_date else start_date
               if event["status"] in {"confirmed", "rescheduled"}:
                   assert verification["status"] == "verified", f"Evento futuro no confirmado por fuente oficial: {event['id']}"
-                  assert last_event_day >= date.today(), f"Evento vencido todavía marcado como próximo: {event['id']}"
+                  assert last_event_day >= argentina_today, f"Evento vencido todavía marcado como próximo: {event['id']}"
               if event["status"] == "completed":
-                  assert last_event_day <= date.today(), f"Evento marcado como completado tiene fecha futura: {event['id']}"
+                  assert last_event_day <= argentina_today, f"Evento marcado como completado tiene fecha futura: {event['id']}"
               return event["id"].strip().casefold()
 
           for event in events:
@@ -1074,7 +1081,7 @@ jobs:
           # Investment Finder: contrato verificable, sin inferir oportunidades desde exportaciones o infraestructura.
           assert investment_catalog.get("schemaVersion") == 2, "Versión de esquema de oportunidades no admitida"
           investment_updated = date.fromisoformat(investment_catalog.get("updatedAt", ""))
-          assert investment_updated.isoformat() == investment_catalog["updatedAt"] and investment_updated <= date.today(), "Fecha de actualización inválida en oportunidades"
+          assert investment_updated.isoformat() == investment_catalog["updatedAt"] and investment_updated <= argentina_today, "Fecha de actualización inválida en oportunidades"
           assert isinstance(investment_catalog.get("note"), str) and investment_catalog["note"].strip(), "Falta la nota de alcance del catálogo de oportunidades"
           opportunities = investment_catalog.get("opportunities")
           assert isinstance(opportunities, list), "El catálogo de oportunidades debe contener una lista"
@@ -1140,7 +1147,7 @@ jobs:
               source_url = urlparse(opportunity["sourceUrl"])
               assert source_url.scheme == "https" and source_url.hostname and source_url.username is None and source_url.password is None, f"Fuente de oportunidad inválida: {opportunity['id']}"
               source_published = date.fromisoformat(opportunity["sourcePublishedAt"])
-              assert source_published.isoformat() == opportunity["sourcePublishedAt"] and source_published <= date.today(), f"Fecha de publicación de fuente inválida: {opportunity['id']}"
+              assert source_published.isoformat() == opportunity["sourcePublishedAt"] and source_published <= argentina_today, f"Fecha de publicación de fuente inválida: {opportunity['id']}"
               assert isinstance(opportunity["period"], str) and opportunity["period"].strip(), f"Período ausente o inválido: {opportunity['id']}"
               valid_from = opportunity["validFrom"]
               valid_until = opportunity["validUntil"]
@@ -1172,11 +1179,11 @@ jobs:
                   assert checked_at is None or isinstance(checked_at, str), f"Fecha de verificación inválida: {opportunity['id']}"
               if checked_at is not None:
                   checked_date = date.fromisoformat(checked_at)
-                  assert checked_date.isoformat() == checked_at and source_published <= checked_date <= date.today(), f"Fecha de verificación inconsistente: {opportunity['id']}"
+                  assert checked_date.isoformat() == checked_at and source_published <= checked_date <= argentina_today, f"Fecha de verificación inconsistente: {opportunity['id']}"
               if opportunity["opportunityStatus"] == "open":
                   assert verification["status"] == "verified" and checked_at is not None, f"Oportunidad abierta sin verificación vigente registrada: {opportunity['id']}"
-                  assert valid_from is not None and valid_from <= date.today(), f"Oportunidad abierta sin inicio de vigencia válido: {opportunity['id']}"
-                  assert valid_until is None or valid_until >= date.today(), f"Oportunidad vencida marcada como abierta: {opportunity['id']}"
+                  assert valid_from is not None and valid_from <= argentina_today, f"Oportunidad abierta sin inicio de vigencia válido: {opportunity['id']}"
+                  assert valid_until is None or valid_until >= argentina_today, f"Oportunidad vencida marcada como abierta: {opportunity['id']}"
                   assert opportunity["stage"] not in {"completed", "cancelled"}, f"Proyecto finalizado marcado como oportunidad abierta: {opportunity['id']}"
               return opportunity["id"].strip().casefold()
 
@@ -1223,6 +1230,8 @@ jobs:
               }
           }
           validate_opportunity(sample_opportunity)
+          local_expiry_fixture = {**sample_opportunity, "id": "fixture-valid-through-argentina-today", "validUntil": argentina_today.isoformat()}
+          validate_opportunity(local_expiry_fixture)
           national_fixture = {**sample_opportunity, "id": "fixture-nacional", "scope": "national", "jurisdiction": None}
           validate_opportunity(national_fixture)
           municipal_fixture = {**sample_opportunity, "id": "fixture-escobar-municipal", "recordType": "investment_project", "scope": "municipal", "jurisdiction": "Partido de Escobar, Provincia de Buenos Aires", "location": "Garín"}
@@ -1233,7 +1242,7 @@ jobs:
               {**sample_opportunity, "scope": "national"},
               {**sample_opportunity, "scope": "provincial", "jurisdiction": None},
               {**sample_opportunity, "scope": "municipal"},
-              {**sample_opportunity, "sourcePublishedAt": (date.today() + timedelta(days=1)).isoformat()},
+              {**sample_opportunity, "sourcePublishedAt": (argentina_today + timedelta(days=1)).isoformat()},
               {**sample_opportunity, "period": None},
               {**sample_opportunity, "period": ""},
               {**sample_opportunity, "verification": {**sample_opportunity["verification"], "checkedAt": "2026-11-19"}},
