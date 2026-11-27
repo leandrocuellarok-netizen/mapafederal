@@ -615,7 +615,7 @@ jobs:
           coverage = json.loads(Path("research/national-map-coverage.json").read_text(encoding="utf-8"))
           assert coverage.get("catalogPath") == "data/strategic-nodes.json"
           assert coverage.get("nodeCount") == len(nodes)
-          assert coverage.get("nodeCount") == 109, "El catálogo nacional debe contener 109 nodos en esta revisión"
+          assert coverage.get("nodeCount") == 110, "El catálogo nacional debe contener 110 nodos en esta revisión"
           quequen = next((node for node in nodes if node.get("id") == "buenos-aires-puerto-puerto-de-quequen"), None)
           assert quequen is not None and quequen["province"] == "Buenos Aires" and quequen["type"] == "Puerto"
           assert quequen["coords"] == [-38.57133333, -58.71347222]
@@ -690,9 +690,22 @@ jobs:
           tucuman = next(row for row in coverage_rows if row["province"] == "Tucumán")
           assert tucuman["total"] == 2 and tucuman["byType"]["Turismo"] == 1 and tucuman["byType"]["Aeropuerto"] == 1
           assert "Turismo" not in tucuman["missingCategories"]
+          calilegua = next((node for node in nodes if node.get("id") == "jujuy-turismo-centro-visitantes-aguas-negras-calilegua"), None)
+          assert calilegua is not None and calilegua["province"] == "Jujuy" and calilegua["district"] == "Ledesma" and calilegua["type"] == "Turismo"
+          assert calilegua["coords"] == [-23.7597349, -64.8504986] and calilegua["status"] == "operativo"
+          assert calilegua["source"] == "https://www.argentina.gob.ar/parquesnacionales/region-noroeste/parque-nacional-calilegua/horarios-como-llegar"
+          assert calilegua["coordinateSource"] == "https://maps.app.goo.gl/yDz2i2xoGBvbDsgt8"
+          assert "centro de visitantes" in calilegua["coordinateQuality"].lower() and "no como perímetro" in calilegua["coordinateQuality"].lower()
+          assert "8 a 19 h" in calilegua["administrativeStatus"] and calilegua["verification"]["checkedAt"] == "2026-11-27"
+          jujuy = next(row for row in coverage_rows if row["province"] == "Jujuy")
+          assert jujuy["total"] == 3 and jujuy["byType"]["Turismo"] == 1
+          assert "Turismo" not in jujuy["missingCategories"]
+          laguna_blanca_candidate = next((item for item in coverage.get("pendingCandidates", []) if item.get("name") == "Reserva Natural Provincial Laguna Blanca"), None)
+          assert laguna_blanca_candidate is not None and laguna_blanca_candidate["decision"] == "not_added"
+          assert "precisión de minuto" in laguna_blanca_candidate["reason"]
           noa = next(region for region in coverage["regions"] if region["name"] == "NOA")
-          assert noa["nodeCount"] == 11 and noa["coveredJurisdictions"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "CABA" and coverage["regionalRotation"]["nextTarget"] == "NOA"
+          assert noa["nodeCount"] == 12 and noa["coveredJurisdictions"] == 5
+          assert coverage["regionalRotation"]["lastTargeted"] == "NOA" and coverage["regionalRotation"]["nextTarget"] == "NEA"
           formosa_reserve = next((node for node in nodes if node.get("id") == "formosa-turismo-reserva-natural-formosa"), None)
           assert formosa_reserve is not None and formosa_reserve["province"] == "Formosa" and formosa_reserve["type"] == "Turismo"
           assert formosa_reserve["district"] == "Bermejo"
@@ -724,7 +737,7 @@ jobs:
           chubut = next(row for row in coverage_rows if row["province"] == "Chubut")
           assert chubut["total"] == 6 and chubut["byType"]["Turismo"] == 1
           assert "Turismo" not in chubut["missingCategories"]
-          assert coverage["categoryTotals"]["Turismo"] == 15
+          assert coverage["categoryTotals"]["Turismo"] == 16
           rio_grande = next((node for node in nodes if node.get("id") == "tierra-del-fuego-parque-industrial-rio-grande"), None)
           assert rio_grande is not None and rio_grande["province"] == "Tierra del Fuego" and rio_grande["type"] == "Industria"
           assert rio_grande["status"] == "no_verificado"
