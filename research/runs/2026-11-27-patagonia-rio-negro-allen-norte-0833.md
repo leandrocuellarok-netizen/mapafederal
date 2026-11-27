@@ -76,3 +76,7 @@
 - No se modificó el dato geográfico. Se corrigió la prueba para comparar el texto normalizado con `.lower()` en la rama de reparación.
 - Commit de corrección del workflow: `ea4d6f82f79bd6fd452704100938374d080a1ef2`.
 - Nueva validación en `main` y despliegue de Pages: pendientes de integración de la corrección.
+
+- GitHub Actions #872 (run ID `45992043475`, commit `47627578a38ba5847e0a0b491b4fcbd553be9adc`) volvió a detenerse en la validación geográfica por una segunda comparación textual sensible a mayúsculas/minúsculas («Acceso Martín Fierro» / «No representa»). Se normalizó también esa aserción con `.lower()`; no se modificó el registro ni las coordenadas.
+- Commit de esta segunda corrección del workflow: `711a46c8a0a40982369c9188e05902f6ba6a406e`.
+- Nueva validación de `main` y despliegue de Pages: pendientes de integración.
