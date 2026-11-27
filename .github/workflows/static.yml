@@ -707,7 +707,7 @@ jobs:
           assert piip["source"] == "https://piip.misiones.gob.ar/"
           assert piip["coordinateSource"] == "https://parquesindustriales.com.ar/parques/74378"
           assert piip["coordinateReferenceSystem"].startswith("Coordenadas geográficas decimales")
-          assert "no como acceso" in piip["coordinateQuality"].lower() and "no como perímetro" in piip["coordinateQuality"].lower()
+          assert "no como acceso" in piip["coordinateQuality"].lower() and "ni perímetro" in piip["coordinateQuality"].lower()
           assert piip["statusSourcePublishedAt"] == "2026-05-22" and piip["additionalStatusSourcePublishedAt"] == "2026-05-11"
           assert "112 ha" in piip["administrativeStatus"] and "Plastimi SRL" in piip["administrativeStatus"]
           misiones_row = next(row for row in coverage_rows if row["province"] == "Misiones")
