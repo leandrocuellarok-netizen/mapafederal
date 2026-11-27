@@ -55,16 +55,23 @@ Se incorpora el Parque Nacional Copo al catálogo nacional de la portada:
 - Santiago del Estero: 3 nodos; Turismo: 1.
 - NOA: 14 nodos.
 - CRS/datum no declarados, documentados sin asignar EPSG.
-- La validación CI y el despliegue de Pages quedan pendientes de ejecución en `main`.
+- La primera ejecución CI #891 falló en la aserción de rotación porque `lastTargeted` contenía una etiqueta descriptiva fuera del orden canónico; el job `deploy` quedó omitido. Se corrigió en PR #39: `lastTargeted` conserva la clave canónica `NOA`, la justificación queda en `note`, y `nextTarget` es `NEA`. La ejecución #892 completó con éxito todas las validaciones, incluida la validación geográfica, JavaScript, SEO/GEO, y el job `deploy`.
 
 ## Integración y publicación
 
 - Rama: `automation/noa-santiago-del-estero-copo-1639`.
 - Commit del catálogo: `12bbf7ce6febf92bd362d8f15991a5740b7f0d6d`.
-- Commit de matriz: `925493a31c4eb37d4fa3903686c8e9185b9a3ad6`.
+- Commit inicial de matriz: `925493a31c4eb37d4fa3903686c8e9185b9a3ad6`.
+- Corrección de matriz y rotación canónica: `937e6f5b3f2aaa2a9866f00d84f44178e2dfc9c7`.
 - Commit de README: `1c61a59631bd50654bf4e90018377441cc3d505f`.
-- Commit de workflow: `a2fc19b603e685513d08a7e8b36758b84f24c686`.
-- Pull request, Actions y Pages: pendientes.
+- Commit inicial de workflow: `a2fc19b603e685513d08a7e8b36758b84f24c686`.
+- Corrección del workflow: `3bbdeb1ebfbbcf2b0fb8dde5bfc96f1d1c33c743`.
+- PR #38 integrado: https://github.com/leandrocuellarok-netizen/mapafederal/pull/38; merge commit `46b3c77fa1239cf97900aca79fe495d7cfaebd77`.
+- Actions #891 (run ID `46058645783`, SHA `46b3c77fa1239cf97900aca79fe495d7cfaebd77`): `validate` falló en «Región de rotación no reconocida»; `deploy` fue omitido. Se identificó la causa en la clave descriptiva de `lastTargeted`, no en el registro Copo.
+- PR #39 integrado: https://github.com/leandrocuellarok-netizen/mapafederal/pull/39; merge commit final `c57dd8eef34e3fccacc6ca036c9f6f4b61b09e07`.
+- Actions #892 (run ID `46058806520`, SHA `c57dd8eef34e3fccacc6ca036c9f6f4b61b09e07`): `validate` y `deploy` completados con `success`; la validación geográfica, la comprobación de JavaScript, SEO/GEO y las pruebas adicionales terminaron correctamente. El paso `Deploy to GitHub Pages` reportó «Reported success!» y confirmó el despliegue del artefacto para ese SHA.
+- URL de entorno informada por el job: https://leandrocuellarok-netizen.github.io/mapafederal/.
+- `main` quedó en `c57dd8eef34e3fccacc6ca036c9f6f4b61b09e07` tras PR #39. El archivo raw de GitHub en `main` se recuperó y contiene 122 registros, incluido Copo. La inspección visual independiente de la portada y del JSON servido por Pages no fue posible desde el navegador de verificación, que rechazó la URL; no se afirma comprobación visual del marcador.
 
 ## Brechas no resueltas
 
