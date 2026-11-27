@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T14:36:07-03:00",
+  "generatedAt": "2026-11-27T15:33:14-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "c098a9802a5692723c7c370eb4840f55f5600867",
-  "nodeCount": 120,
+  "catalogCommit": "8c80feb2670e128301920b5a869af658c4708c8f",
+  "nodeCount": 121,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -71,7 +71,7 @@
         "Santa Cruz",
         "Tierra del Fuego"
       ],
-      "nodeCount": 24,
+      "nodeCount": 25,
       "coveredJurisdictions": 5
     },
     {
@@ -444,9 +444,9 @@
     {
       "province": "Río Negro",
       "region": "Patagonia",
-      "total": 4,
+      "total": 5,
       "byType": {
-        "Ciudad": 0,
+        "Ciudad": 1,
         "Puerto": 1,
         "Aeropuerto": 1,
         "Paso fronterizo": 0,
@@ -457,7 +457,6 @@
         "Estación ferroviaria": 0
       },
       "missingCategories": [
-        "Ciudad",
         "Paso fronterizo",
         "Logística",
         "Recurso mineral",
@@ -666,7 +665,7 @@
     }
   ],
   "categoryTotals": {
-    "Ciudad": 8,
+    "Ciudad": 9,
     "Puerto": 22,
     "Aeropuerto": 25,
     "Paso fronterizo": 12,
@@ -698,9 +697,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Centro",
-    "nextTarget": "Patagonia",
-    "note": "Ejecución del 27/11/2026 en La Pampa: se incorporó la referencia urbana general de Santa Rosa, con coordenada publicada por la Municipalidad de Santa Rosa (36°37′13″S 64°17′26″O), convertida a grados decimales por cálculo aritmético. La página publica 116.083 habitantes para la ciudad y 133.712 para el aglomerado Gran Santa Rosa, ambos del Censo 2022. No declara CRS/datum, precisión ni semántica geométrica; el punto es una referencia urbana general, no el límite del ejido, un centroide certificado ni una instalación específica. La Pampa pasa de 3 a 4 nodos; Ciudad pasa de 7 a 8; Centro de 16 a 17. Próxima región de rotación: Patagonia."
+    "lastTargeted": "Patagonia",
+    "nextTarget": "Buenos Aires Province",
+    "note": "Ejecución del 27/11/2026 en Río Negro: se incorporó Viedma — capital de Río Negro, categoría Ciudad. El Gobierno provincial, en su Catálogo de Locaciones Río Negro 2026 (p. 22), publica una referencia central georreferenciada del casco histórico y edificios administrativos en torno a Plaza Alsina: -40.8136, -62.9966. La coordenada ya está en grados decimales; no se geocodificó ni transformó. El documento no declara datum/CRS, EPSG ni precisión; el punto no representa el centroide de la ciudad, el límite del ejido ni un inmueble individual. El Gobierno de Río Negro confirma la capitalidad definitiva desde el 20/10/1973. Río Negro pasa de 4 a 5 nodos; Ciudad pasa de 8 a 9; Patagonia pasa de 24 a 25. Próxima región de rotación: Buenos Aires Province."
   },
   "pendingCandidates": [
     {
@@ -960,6 +959,7 @@
     "El Parque Nacional Talampaya (La Rioja) usa la ubicación geográfica decimal publicada por SIB/APN: -29.85015, -67.87759; la ficha identifica los departamentos Coronel Felipe Varela e Independencia, creación 1997 y superficie 213.800 ha. No declara datum/CRS ni semántica geométrica del punto; se conserva como referencia general del área protegida y no como acceso, centroide certificado ni perímetro. APN documenta horarios estacionales, accesos por RN 76 y RN 40, servicios de acampe y tarifas vigentes desde 01/06/2026; no se verificó transitabilidad ni disponibilidad de servicios en tiempo real.",
     "La Estación Córdoba Mitre utiliza el pin de Google Maps -31.4204589, -64.1750774 enlazado directamente desde la página oficial de Trenes Argentinos para el servicio Buenos Aires–Córdoba. Google Maps es fuente secundaria de coordenadas y no declara precisión ni datum/CRS; el punto se usa como referencia puntual de estación, no como andén, acceso ni perímetro. Trenes Argentinos publica dos servicios semanales; no se verificó operación en tiempo real.",
     "El Parque Industrial Allen Norte (Río Negro) usa las coordenadas DMS publicadas por el Registro Provincial de Parques Industriales y Logísticos (REPPIL) para el Acceso Martín Fierro (acceso al Autódromo Gral. Enrique Mosconi). Se convirtió DMS a grados decimales mediante cálculo aritmético, sin reproyección ni transformación de datum. La fuente no declara datum/CRS, precisión ni método de captura; el marcador identifica el acceso, no una parcela ni el perímetro del parque. El REPPIL clasifica el parque como «En desarrollo» y registra 1 empresa operativa, 9 en proyecto y 0 en construcción; no se afirma operación integral ni disponibilidad comercial actual.",
-    "El Campo de Piedra Pómez (Catamarca) usa las coordenadas GPS -26.480508, -67.337452 publicadas en los fundamentos del Proyecto HCDN 6541-D-2024. El documento es un proyecto legislativo, no una norma sancionada, y no declara método de captura, datum/CRS, precisión ni semántica geométrica. El punto se usa solo como referencia general del atractivo; Visit Catamarca y Argentina.gob.ar documentan su ubicación turística y condiciones de acceso, pero no se afirma que la coordenada sea un acceso, centroide certificado ni perímetro."
+    "El Campo de Piedra Pómez (Catamarca) usa las coordenadas GPS -26.480508, -67.337452 publicadas en los fundamentos del Proyecto HCDN 6541-D-2024. El documento es un proyecto legislativo, no una norma sancionada, y no declara método de captura, datum/CRS, precisión ni semántica geométrica. El punto se usa solo como referencia general del atractivo; Visit Catamarca y Argentina.gob.ar documentan su ubicación turística y condiciones de acceso, pero no se afirma que la coordenada sea un acceso, centroide certificado ni perímetro.",
+    "Viedma (Río Negro) se incorporó como referencia urbana de Ciudad con la coordenada central publicada por el Gobierno provincial en el Catálogo de Locaciones Río Negro 2026, p. 22. No se asigna datum/CRS ni EPSG; el punto identifica el sector del casco histórico y edificios administrativos alrededor de Plaza Alsina, no el centroide de la ciudad ni un límite administrativo."
   ]
 }
