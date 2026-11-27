@@ -2475,5 +2475,42 @@
       "checkedAt": "2026-11-27",
       "scope": "SIB/APN identifica el Parque Nacional Chaco en la provincia de Chaco, departamento Presidencia de la Plaza, creación 1954 por Ley Nacional 14.366/54, superficie 14.981 ha y publica 26 49 35.70 S (-26.82658), 59 39 18.21 O (-59.65506). La ficha no declara datum/CRS ni semántica geométrica del punto; se conserva como referencia general del área protegida, no como portada, acceso, centroide certificado ni perímetro. APN informa ingreso público diario de 7 a 19 h y documenta el acceso desde Capitán Solari, estacionamiento, Centro de Visitantes y servicios de uso público. No se verificó transitabilidad, apertura de senderos ni disponibilidad de servicios en tiempo real."
     }
+  },
+  {
+    "id": "san-luis-turismo-parque-nacional-sierra-de-las-quijadas",
+    "name": "Parque Nacional Sierra de las Quijadas",
+    "province": "San Luis",
+    "district": "Belgrano",
+    "type": "Turismo",
+    "coords": [
+      -32.55677,
+      -67.13459
+    ],
+    "note": "Área protegida nacional creada en 1991, con 73.785 ha y reconocimiento como Sitio Ramsar. SIB/APN publica esta ubicación geográfica como referencia general del parque; la ficha no define si corresponde a acceso, centroide o punto interno. No representa acceso ni perímetro. APN documenta senderos autoguiados y guiados, horarios estacionales y área recreativa de acampe; no se verificó transitabilidad ni disponibilidad de servicios en tiempo real.",
+    "source": "https://www.argentina.gob.ar/parquesnacionales/centro/parque-nacional-sierra-de-las-quijadas",
+    "sourceName": "Administración de Parques Nacionales (APN)",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Página institucional consultada el 2026-11-27; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "Ficha APN — Parque Nacional Sierra de las Quijadas; ficha SIB/APN — departamento Belgrano, creación 1991, superficie 73.785 ha y Sitio Ramsar; APN — Actividades y noticia institucional del 34.º aniversario (2025-12-17).",
+    "coordinateSource": "https://sib.gob.ar/index.php/areas-protegidas/parque-nacional-sierra-de-las-quijadas",
+    "coordinateSourceName": "Sistema de Información de Biodiversidad de la Administración de Parques Nacionales (SIB/APN)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La ficha publica 32 33 24.38 S (-32.55677), 67 08 04.53 O (-67.13459); consultada el 2026-11-27. No informa fecha de actualización, datum/CRS ni semántica geométrica del punto.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por SIB/APN; datum y CRS no especificados. No se atribuye EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron los valores decimales publicados por SIB/APN; no se realizó geocodificación ni reproyección.",
+    "coordinateQuality": "Punto de referencia geográfica general del Parque Nacional Sierra de las Quijadas publicado por SIB/APN. La ficha no define si corresponde a acceso, centroide o punto interno; se usa solo como referencia general del área protegida y no se presenta como acceso, centroide certificado ni perímetro.",
+    "statusSource": "https://www.argentina.gob.ar/parquesnacionales/centro/parque-nacional-sierra-de-las-quijadas/actividades",
+    "statusSourceName": "APN — Actividades, senderos, horarios estacionales y áreas recreativas",
+    "statusSourcePublishedAt": null,
+    "additionalStatusSource": "https://www.argentina.gob.ar/node/487863",
+    "additionalStatusSourceName": "APN — Aniversario 34.º del Parque Nacional Sierra de las Quijadas",
+    "additionalStatusSourcePublishedAt": "2025-12-17",
+    "administrativeStatus": "Parque Nacional de jurisdicción y administración nacional, creado en 1991 por Ley Nacional 24.015/91. SIB/APN informa 73.785 ha y departamento Belgrano. APN publica senderos autoguiados y guiados, horarios estacionales, área de acampe con sanitarios y estacionamiento. El estado operativo refiere a la existencia y uso público documentado; no confirma transitabilidad de accesos, cupos ni disponibilidad de servicios en tiempo real.",
+    "validityPeriod": "Ficha SIB/APN y páginas institucionales APN consultadas el 2026-11-27; los horarios de actividades varían según temporada. No se verificó transitabilidad ni disponibilidad de servicios en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "SIB/APN identifica el Parque Nacional Sierra de las Quijadas en San Luis, departamento Belgrano, creación 1991 por Ley 24.015/91, superficie 73.785 ha y categoría internacional Sitio Ramsar; publica 32 33 24.38 S (-32.55677), 67 08 04.53 O (-67.13459). La ficha no declara datum/CRS ni semántica geométrica del punto; se conserva solo como referencia general del área protegida, no como acceso, centroide certificado ni perímetro. APN documenta senderos autoguiados y guiados, horarios estacionales, área recreativa de acampe, sanitarios y estacionamiento. La noticia institucional del 2025-12-17 confirma actividad administrativa y coordinación nacional-provincial en el área. No se verificó transitabilidad, cupos ni disponibilidad de servicios en tiempo real."
+    }
   }
 ]
