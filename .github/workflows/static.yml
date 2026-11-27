@@ -927,7 +927,7 @@ jobs:
           assert patagonia["nodeCount"] == 24 and patagonia["coveredJurisdictions"] == 5
           assert coverage["categoryTotals"]["Industria"] == 17
           assert coverage["regionalRotation"]["lastTargeted"] == "NEA" and coverage["regionalRotation"]["nextTarget"] == "Cuyo"
-          assert coverage["catalogCommit"] == "f55c0e50178721fcd7dfc1320245d7f192e06960"
+          assert coverage["catalogCommit"] == "b1c6b31dc7ce4f7ded271e5fe7a70503a8662564"
           cordoba_row = next(row for row in coverage_rows if row["province"] == "Córdoba")
           assert cordoba_row["total"] == 4 and cordoba_row["byType"]["Estación ferroviaria"] == 1
           assert "Estación ferroviaria" not in cordoba_row["missingCategories"]
@@ -941,7 +941,7 @@ jobs:
           assert centro["nodeCount"] == 16 and centro["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Turismo"] == 19
           assert coverage["regionalRotation"]["lastTargeted"] == "NEA" and coverage["regionalRotation"]["nextTarget"] == "Cuyo"
-          assert coverage["catalogCommit"] == "f55c0e50178721fcd7dfc1320245d7f192e06960"
+          assert coverage["catalogCommit"] == "b1c6b31dc7ce4f7ded271e5fe7a70503a8662564"
           san_juan = next(row for row in coverage_rows if row["province"] == "San Juan")
           assert san_juan["total"] == 4 and san_juan["byType"]["Recurso mineral"] == 1
           assert "Recurso mineral" not in san_juan["missingCategories"]
@@ -949,7 +949,7 @@ jobs:
           assert cuyo["nodeCount"] == 15 and cuyo["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Recurso mineral"] == 5
           assert coverage["regionalRotation"]["lastTargeted"] == "NEA" and coverage["regionalRotation"]["nextTarget"] == "Cuyo"
-          assert coverage["catalogCommit"] == "f55c0e50178721fcd7dfc1320245d7f192e06960"
+          assert coverage["catalogCommit"] == "b1c6b31dc7ce4f7ded271e5fe7a70503a8662564"
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
