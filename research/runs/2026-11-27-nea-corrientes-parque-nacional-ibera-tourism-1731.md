@@ -55,7 +55,7 @@ Se incorpora el Parque Nacional Iberá al catálogo nacional consumido por la po
 - Corrientes: 4 nodos; Turismo: 1.
 - NEA: 15 nodos.
 - CRS/datum no declarados, documentados sin asignar EPSG.
-- La primera validación automatizada posterior a la integración (Actions #894, run ID `46064463109`) falló en «Validate geographic and editorial JSON»: el workflow conservaba expectativas históricas de Turismo=21, NEA=14 y rotación NOA→NEA. El registro Iberá y el conteo de 123 superaron sus aserciones previas; la falla se debió a expectativas de matriz obsoletas. El job `deploy` quedó omitido. Se corrigieron las cuatro aserciones de Turismo a 22, la de NEA a 15, las seis aserciones de rotación a NEA→Cuyo y se añadió una regresión explícita para Corrientes (4 nodos, Turismo=1). La validación completa y el despliegue quedan pendientes de Actions #895.
+- La primera validación automatizada posterior a la integración (Actions #894, run ID `46064463109`) falló en «Validate geographic and editorial JSON»: el workflow conservaba expectativas históricas de Turismo=21, NEA=14 y rotación NOA→NEA. El registro Iberá y el conteo de 123 superaron sus aserciones previas; la falla se debió a expectativas de matriz obsoletas. El job `deploy` quedó omitido. Se corrigieron las cuatro aserciones de Turismo a 22, la de NEA a 15, las seis aserciones de rotación a NEA→Cuyo, las cuatro referencias de `catalogCommit` al commit real del catálogo y se añadió una regresión explícita para Corrientes (4 nodos, Turismo=1). La validación completa y el despliegue quedan pendientes de Actions #895.
 
 ## Integración y publicación
 
