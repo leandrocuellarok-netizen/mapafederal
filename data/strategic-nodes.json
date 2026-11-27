@@ -2399,4 +2399,43 @@
     "scope": "Se verificó la identificación y función logística con el GCBA, los servicios y la cifra de más de 67 empresas declarados por el operador, y el antecedente oficial de AFIP/Ministerio de Trabajo del 18/11/2021. La coordenada proviene de un directorio sectorial secundario y no declara CRS/datum, precisión ni método de captura; el marcador se conserva como referencia general del predio, no como acceso, centroide certificado, parcela ni perímetro. No se verificó la actividad individual de cada empresa ni la operación en tiempo real."
   }
 }
+,
+  {
+    "id": "catamarca-turismo-campo-de-piedra-pomez",
+    "name": "Campo de Piedra Pómez",
+    "province": "Catamarca",
+    "district": "Antofagasta de la Sierra",
+    "locality": "El Peñón (acceso principal)",
+    "type": "Turismo",
+    "coords": [
+      -26.480508,
+      -67.337452
+    ],
+    "note": "Atractivo natural de la Puna catamarqueña, descrito por el portal provincial Visit Catamarca como un campo de roca blanca de aproximadamente 25 km. El portal documenta acceso arancelado, puesto de guardaparques y circulación en 4x4 con guía habilitado; Argentina.gob.ar también recomienda vehículos 4x4 y guías locales desde El Peñón. La coordenada GPS procede de un proyecto de ley de la HCDN y se conserva solo como referencia general del atractivo: no representa un acceso, centroide certificado ni perímetro. No se verificó transitabilidad ni apertura en tiempo real.",
+    "source": "https://www.visitcatamarca.com/imperdibles/campo-de-piedra-pomez",
+    "sourceName": "Ministerio de Cultura, Turismo y Deporte de Catamarca — Visit Catamarca",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Ficha turística institucional consultada el 2026-11-27; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "Visit Catamarca — Campo de Piedra Pómez; ubicación indicada como El Peñón, Antofagasta de la Sierra; condiciones de visita, acceso arancelado y guía habilitado.",
+    "coordinateSource": "https://www4.hcdn.gob.ar/dependencias/dsecretaria/Periodo2024/PDF2024/TP2024/6541-D-2024.pdf",
+    "coordinateSourceName": "Honorable Cámara de Diputados de la Nación — Proyecto 6541-D-2024, fundamentos",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "Proyecto legislativo del período 2024; el PDF no consigna día y mes de presentación. En los fundamentos publica literalmente las coordenadas GPS -26.480508, -67.337452. Se usa únicamente como fuente del par de coordenadas, no como prueba de sanción de una ley nacional.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales reproducidas en el fundamento del Proyecto HCDN 6541-D-2024; datum y CRS no declarados. No se asigna EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron los valores GPS decimales -26.480508, -67.337452 tal como figuran en el documento; no se realizó geocodificación, reproyección ni transformación de datum.",
+    "coordinateQuality": "Coordenada GPS atribuida al Campo de Piedra Pómez en los fundamentos de un proyecto legislativo de la HCDN. El documento no declara método de captura, datum/CRS, precisión ni semántica geométrica. Se utiliza como referencia general del atractivo natural; no representa acceso, punto de ingreso, centroide certificado ni perímetro.",
+    "statusSource": "https://www.visitcatamarca.com/imperdibles/campo-de-piedra-pomez",
+    "statusSourceName": "Ministerio de Cultura, Turismo y Deporte de Catamarca — Visit Catamarca, ficha Campo de Piedra Pómez",
+    "statusSourcePublishedAt": null,
+    "additionalStatusSource": "https://www.argentina.gob.ar/jefatura/turismo/viaja-por-argentina/caminar-en-el-campo-de-piedra-pomez",
+    "additionalStatusSourceName": "Presidencia de la Nación — Argentina.gob.ar, Caminar en el Campo de Piedra Pómez",
+    "additionalStatusSourcePublishedAt": null,
+    "administrativeStatus": "El portal provincial Visit Catamarca identifica el destino en Antofagasta de la Sierra y publica condiciones de visita: ingreso arancelado, puesto de guardaparques dentro del área, circulación en 4x4 y guía habilitado; describe accesos desde El Peñón (35 km), la Villa de Antofagasta de la Sierra (63 km) y una alternativa desde Fiambalá habilitada entre abril y octubre. Argentina.gob.ar confirma que el acceso principal es desde El Peñón y recomienda 4x4 y guías locales. El estado operativo refiere a la visita turística documentada por ambos portales; no confirma apertura diaria, disponibilidad de guías, tarifas actuales ni transitabilidad en tiempo real.",
+    "validityPeriod": "Portales turísticos provincial y nacional consultados el 2026-11-27; la ficha provincial no declara fecha de actualización. No se verificaron apertura, tarifas vigentes ni condiciones de caminos en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "Visit Catamarca ubica el Campo de Piedra Pómez en El Peñón, departamento Antofagasta de la Sierra, describe el atractivo y publica acceso arancelado, puesto de guardaparques, uso de 4x4 y guía habilitado. Argentina.gob.ar confirma el acceso principal desde El Peñón y recomienda 4x4 y guías locales. El par GPS -26.480508, -67.337452 se transcribió del fundamento del Proyecto HCDN 6541-D-2024; el documento es un proyecto legislativo y no una norma sancionada, y no declara método de captura, datum/CRS, precisión ni semántica geométrica. Se conserva solo como referencia general del atractivo, no como acceso, centroide certificado ni perímetro. No se verificó apertura diaria ni transitabilidad en tiempo real."
+    }
+  }
 ]
