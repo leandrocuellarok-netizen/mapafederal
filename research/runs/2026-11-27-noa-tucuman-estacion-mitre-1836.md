@@ -68,7 +68,7 @@ Se incorpora Estación Tucumán (Mitre) al catálogo nacional consumido por la p
 - Commit de README: `63a3bba88d98d37b1c4d327f210d710204d4110b`.
 - Commit de workflow: `cfb00e99ca916bf753b2b82f7e7acb6b79d936c4`.
 - PR #44: https://github.com/leandrocuellarok-netizen/mapafederal/pull/44.
-- Merge, SHA final, Actions y GitHub Pages: pendientes de integración y verificación. Se corrigieron además las cuatro aserciones de procedencia del catálogo para que apunten al commit de datos `3edcf80d95eb223df3fe67a2af5a3a1290202dd0`.
+- PR #44 se integró mediante squash. Merge commit / HEAD de main para los datos: `1e5b6c4fabfc1c71e14ab81cab2030355cdf67ac`. El workflow Actions #898 (run ID `46071869225`) terminó con `validate: success` y `deploy: success`; el paso `Deploy to GitHub Pages` finalizó correctamente. El catálogo conserva como `catalogCommit` el commit de datos `3edcf80d95eb223df3fe67a2af5a3a1290202dd0`. La portada y el JSON publicados no pudieron inspeccionarse visualmente de forma independiente desde el navegador; el despliegue se confirma por el job de Pages, no por una comprobación visual.
 
 ## Brechas no resueltas
 
