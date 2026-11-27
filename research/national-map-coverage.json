@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T16:39:46-03:00",
+  "generatedAt": "2026-11-27T17:31:30-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "12bbf7ce6febf92bd362d8f15991a5740b7f0d6d",
-  "nodeCount": 122,
+  "catalogCommit": "64ec4e428eb6822ce2940285af6ba6f7cfb90572",
+  "nodeCount": 123,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -37,7 +37,7 @@
         "Formosa",
         "Misiones"
       ],
-      "nodeCount": 14,
+      "nodeCount": 15,
       "coveredJurisdictions": 4
     },
     {
@@ -229,7 +229,7 @@
     {
       "province": "Corrientes",
       "region": "NEA",
-      "total": 3,
+      "total": 4,
       "byType": {
         "Ciudad": 0,
         "Puerto": 1,
@@ -238,7 +238,7 @@
         "Logística": 0,
         "Industria": 0,
         "Recurso mineral": 0,
-        "Turismo": 0,
+        "Turismo": 1,
         "Estación ferroviaria": 0
       },
       "missingCategories": [
@@ -246,7 +246,6 @@
         "Logística",
         "Industria",
         "Recurso mineral",
-        "Turismo",
         "Estación ferroviaria"
       ]
     },
@@ -671,7 +670,7 @@
     "Logística": 4,
     "Industria": 17,
     "Recurso mineral": 5,
-    "Turismo": 21,
+    "Turismo": 22,
     "Estación ferroviaria": 7
   },
   "leastCoveredJurisdictions": [
@@ -691,9 +690,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NOA",
-    "nextTarget": "NEA",
-    "note": "Ejecución del 27/11/2026 en Santiago del Estero: se incorporó el Parque Nacional Copo en Turismo. La secuencia regional se apartó temporalmente de Buenos Aires Province porque esa jurisdicción ya registra 30 nodos, mientras Santiago del Estero y Tucumán eran las menos representadas con 2 cada una. Se priorizó una brecha real de cobertura en Santiago del Estero; luego de esta excepción, la rotación retoma el orden canónico en NEA. El SIB/APN publica la ubicación general -25.82089, -61.88005, departamento Copo, creación 2000 y superficie 118.119 ha. APN publica horario diario de visita de 7 a 15 h. La fuente no declara datum/CRS ni semántica geométrica del punto; se usa solo como referencia general del área protegida, no como acceso, centroide certificado ni perímetro. No se verificó apertura ni transitabilidad en tiempo real."
+    "lastTargeted": "NEA",
+    "nextTarget": "Cuyo",
+    "note": "Ejecución del 27/11/2026 en Corrientes: se incorporó el Parque Nacional Iberá en Turismo. Corrientes pasa de 3 a 4 nodos y de 0 a 1 en Turismo; el NEA pasa de 14 a 15 nodos. Se priorizó una brecha real de la matriz: Corrientes no tenía referencias turísticas. SIB/APN publica -27.93238, -56.93083, los departamentos y la creación en 2018; APN informa apertura diaria y cuatro portales con accesos sujetos a condiciones meteorológicas. La coordenada no tiene datum/CRS ni semántica geométrica declarados y se conserva como referencia general del área, no como portal ni perímetro. No se verificó transitabilidad en tiempo real. La secuencia regional continúa en Cuyo."
   },
   "pendingCandidates": [
     {
