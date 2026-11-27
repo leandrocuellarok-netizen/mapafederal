@@ -60,13 +60,17 @@ SIB/APN identifica la provincia San Luis, departamento Belgrano, creación en 19
 - San Luis: 4 nodos y 1 de Turismo; Cuyo: 16 nodos; Turismo nacional: 20.
 - Rotación actualizada: Cuyo → Centro.
 - Workflow actualizado para comprobar el nodo, sus fuentes, coordenadas, estado y matriz.
-- Validación completa de GitHub Actions y despliegue de Pages: pendientes de la integración en `main`.
+- Validación completa de GitHub Actions y despliegue de Pages: aprobados en Actions #885.
 
 ## Integración y publicación
 
 - Rama de trabajo: `automation/cuyo-san-luis-sierra-quijadas-1337`.
 - Commit del catálogo: `9d307921eb03817df3f7ef1856a9203856a2a951`.
-- PR, merge commit, ejecuciones de GitHub Actions y despliegue: se completarán tras la revisión e integración.
+- PR #35 integrado en `main`: https://github.com/leandrocuellarok-netizen/mapafederal/pull/35.
+- Merge commit de integración: `584571575033e065d8d2e449385dd396774def01`.
+- GitHub Actions #885 (run ID `46035639507`, SHA `584571575033e065d8d2e449385dd396774def01`): jobs `validate` y `deploy` completados con `success`; el paso `Deploy to GitHub Pages` terminó correctamente.
+- `index.html` conserva el blob SHA `69e72891fe28e19580f681b85699da6377912c9c`; no fue modificado y continúa cargando `data/strategic-nodes.json`.
+- Inspección independiente posterior al despliegue: el navegador no pudo acceder a la portada `https://leandrocuellarok-netizen.github.io/mapafederal/` ni al JSON publicado `https://leandrocuellarok-netizen.github.io/mapafederal/data/strategic-nodes.json`. Se confirma el despliegue del job Pages, pero no se afirma verificación visual independiente del marcador.
 
 ## Brechas no resueltas
 
