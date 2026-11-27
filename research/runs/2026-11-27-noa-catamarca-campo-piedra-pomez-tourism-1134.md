@@ -96,7 +96,13 @@
 - Commit de README: `f9a435721d2c229fc5b59cc44c458ca182203d0b`.
 - Commit de workflow: `b80950ee1295f85c09ce4da1c035eebbd6c11b3e`.
 - Rama de trabajo: `automation/noa-catamarca-campo-piedra-pomez-20261127-1134`.
-- PR, merge, SHA final de main, workflow y Pages: pendientes.
+- PR #32: https://github.com/leandrocuellarok-netizen/mapafederal/pull/32, integrado el 2026-11-27 11:38 ART (UTC-3).
+- Merge commit y HEAD de main tras la integración de datos: `0fc75cc1d58ccd7bbac82baa906c8044aa5ae135`.
+- GitHub Actions #879: https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/46017798982 — ejecución completada con `success` sobre el SHA de merge.
+- Job `validate`: `success`; las pruebas del catálogo, matriz, geografía, JSON y sintaxis de JavaScript finalizaron correctamente.
+- Job `deploy`: `success`; el paso `Deploy to GitHub Pages` terminó correctamente.
+- `index.html` conserva el blob SHA `69e72891fe28e19580f681b85699da6377912c9c`; no fue modificado y sigue cargando el catálogo nacional.
+- Inspección independiente posterior al despliegue: se intentó abrir https://leandrocuellarok-netizen.github.io/mapafederal/, pero el navegador devolvió que la URL no era accesible. Se confirma el job de Pages, pero no se afirma verificación visual del marcador.
 
 ## Gaps no resueltos
 
