@@ -680,7 +680,7 @@ jobs:
           assert "Turismo" not in tucuman["missingCategories"]
           noa = next(region for region in coverage["regions"] if region["name"] == "NOA")
           assert noa["nodeCount"] == 11 and noa["coveredJurisdictions"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "Patagonia" and coverage["regionalRotation"]["nextTarget"] == "Buenos Aires Province"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Buenos Aires Province" and coverage["regionalRotation"]["nextTarget"] == "CABA"
           formosa_reserve = next((node for node in nodes if node.get("id") == "formosa-turismo-reserva-natural-formosa"), None)
           assert formosa_reserve is not None and formosa_reserve["province"] == "Formosa" and formosa_reserve["type"] == "Turismo"
           assert formosa_reserve["district"] == "Bermejo"
@@ -803,16 +803,16 @@ jobs:
           centro = next(region for region in coverage["regions"] if region["name"] == "Centro")
           assert centro["nodeCount"] == 15 and centro["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Turismo"] == 15
-          assert coverage["regionalRotation"]["lastTargeted"] == "Patagonia" and coverage["regionalRotation"]["nextTarget"] == "Buenos Aires Province"
-          assert coverage["catalogCommit"] == "fc1f057dfb8e491f6584ab1adc5306d5aced0acb"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Buenos Aires Province" and coverage["regionalRotation"]["nextTarget"] == "CABA"
+          assert coverage["catalogCommit"] == "a678d9f283690c0221a24f8f78561a484ad8a9c7"
           san_juan = next(row for row in coverage_rows if row["province"] == "San Juan")
           assert san_juan["total"] == 4 and san_juan["byType"]["Recurso mineral"] == 1
           assert "Recurso mineral" not in san_juan["missingCategories"]
           cuyo = next(region for region in coverage["regions"] if region["name"] == "Cuyo")
           assert cuyo["nodeCount"] == 14 and cuyo["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Recurso mineral"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "Patagonia" and coverage["regionalRotation"]["nextTarget"] == "Buenos Aires Province"
-          assert coverage["catalogCommit"] == "fc1f057dfb8e491f6584ab1adc5306d5aced0acb"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Buenos Aires Province" and coverage["regionalRotation"]["nextTarget"] == "CABA"
+          assert coverage["catalogCommit"] == "a678d9f283690c0221a24f8f78561a484ad8a9c7"
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
