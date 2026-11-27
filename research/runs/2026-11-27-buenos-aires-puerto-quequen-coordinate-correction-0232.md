@@ -23,3 +23,13 @@
 - GitHub Actions / Pages: pendiente de ejecución tras integrar el PR; se verificará el run exacto y el job de despliegue.
 - Próxima prioridad regional: CABA, según la rotación nacional.
 - Brechas persistentes: Catamarca, Jujuy, Santiago del Estero y Tucumán continúan con 2 nodos cada una; Buenos Aires mantiene concentración de registros en Escobar, por lo que no se agregaron puntos nuevos en esta ejecución.
+
+
+## Integración y corrección de CI
+
+- PR #17 integrado mediante squash en `main`: https://github.com/leandrocuellarok-netizen/mapafederal/pull/17.
+- Merge commit: `a678d9f283690c0221a24f8f78561a484ad8a9c7`.
+- GitHub Actions #852 (run ID 45946731172) falló en la aserción de rotación regional: el workflow aún esperaba Patagonia → Buenos Aires Province, aunque esta ejecución ya había avanzado correctamente a Buenos Aires Province → CABA. Las validaciones previas del catálogo, coordenadas y nuevo registro Puerto de Quequén pasaron.
+- Corrección preparada en PR #18: actualizar la expectativa del validador y apuntar `catalogCommit` al merge commit real de `main`.
+- Workflow correction commit: `7ede369bd6d54bfbc3836d7e890f3cd9a2c7f1ec`; coverage correction commit: `7fbcdf24182b4795e50b3d95382629fc83c5ac17`.
+- Pages no se desplegó en #852 porque el job de validación falló. Se verificará el siguiente run después de integrar PR #18.
