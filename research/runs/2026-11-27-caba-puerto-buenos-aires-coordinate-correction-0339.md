@@ -98,3 +98,14 @@ CABA conserva la categoría Paso fronterizo como brecha de catálogo. No se aña
 ## Ajuste de trazabilidad del SHA de catálogo
 
 Tras la integración squash de PR #19, el cambio de catálogo quedó contenido en el commit de `main` `1120c4278002be0bb2193aa0a2b0c13f2f830880`. Se actualiza `research/national-map-coverage.json` para que `catalogCommit` apunte a ese commit integrado, en lugar del commit de catálogo de la rama de trabajo previo al squash (`ed9bfefa0e416c12d1b0a4d7f58fc9b4f984b4d0`). El workflow se ajusta para validar el SHA de `main`. No cambian datos, coordenadas, conteos ni filtros.
+
+
+## Cierre de trazabilidad y última validación
+
+- PR #21 integrado: https://github.com/leandrocuellarok-netizen/mapafederal/pull/21.
+- Commit de integración en `main`: `510085a0b45b80ca0cfa30d83b3433ac65468d94`.
+- La matriz `research/national-map-coverage.json` referencia ahora `catalogCommit = 1120c4278002be0bb2193aa0a2b0c13f2f830880`, el commit squash de `main` que integró la modificación del catálogo. El workflow contiene dos aserciones para ese SHA.
+- GitHub Actions #858 (run ID `45954053766`, commit `510085a0b45b80ca0cfa30d83b3433ac65468d94`): `validate` = `success`; `deploy` = `success`, incluido `Deploy to GitHub Pages`.
+- Reconciliación final: 109 nodos; 109 IDs, 109 nombres y 109 pares de coordenadas únicos; 24 jurisdicciones; nueve categorías; todos los conteos provinciales/categoriales coinciden con el catálogo.
+- La rotación queda `lastTargeted = CABA`, `nextTarget = NOA`.
+- La portada y el JSON publicados siguen sin poder abrirse desde el entorno de verificación; no se declara inspección visual independiente. La publicación queda respaldada por el job de Pages aprobado.
