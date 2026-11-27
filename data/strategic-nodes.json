@@ -2543,5 +2543,39 @@
       "checkedAt": "2026-11-27",
       "scope": "La Municipalidad de Santa Rosa publica la ciudad, su población censal 2022 y las coordenadas 36°37′13″S 64°17′26″O. Se convirtió DMS a grados decimales por cálculo aritmético, sin geocodificación ni reproyección. La ficha identifica la ciudad, no el perímetro ni el límite administrativo. Se usa como punto de referencia urbana general."
     }
+  },
+  {
+    "id": "rio-negro-ciudad-viedma-capital-provincial",
+    "name": "Viedma — capital de Río Negro",
+    "province": "Río Negro",
+    "locality": "Viedma",
+    "type": "Ciudad",
+    "coords": [
+      -40.8136,
+      -62.9966
+    ],
+    "note": "Capital provincial y principal centro administrativo de Río Negro. Punto de referencia del casco histórico y edificios administrativos en torno a Plaza Alsina; no representa límites administrativos ni el ejido urbano.",
+    "source": "https://rionegro.gov.ar/contenido/Filmm%20Commission/Rio%20Negro%20-%20catalogo%20locaciones.pdf",
+    "sourceName": "Gobierno de Río Negro — Catálogo de Locaciones Río Negro 2026, p. 22",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "La portada identifica la edición 2026; el documento no consigna fecha exacta de publicación.",
+    "sourceRecordId": "Catálogo de Locaciones Río Negro 2026, p. 22; Región Costa; Viedma; Casco histórico y edificios administrativos.",
+    "coordinateSource": "https://rionegro.gov.ar/contenido/Filmm%20Commission/Rio%20Negro%20-%20catalogo%20locaciones.pdf",
+    "coordinateSourceName": "Gobierno de Río Negro — Catálogo de Locaciones Río Negro 2026, p. 22",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La portada identifica la edición 2026; el documento no consigna fecha exacta de publicación. La ficha publica «Ubicación georreferenciada (referencia central)» con latitud -40.8136 y longitud -62.9966.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por el Gobierno de Río Negro; datum y CRS no especificados. No se asigna EPSG.",
+    "coordinateTransformation": "Sin transformación: las coordenadas ya están publicadas en grados decimales; no se realizó geocodificación, reproyección ni cambio de datum.",
+    "coordinateQuality": "Referencia central georreferenciada del sector del casco histórico y edificios administrativos de Viedma, delimitado principalmente por Buenos Aires, Laprida, Guido y Colón en torno a Plaza Alsina. No representa el centroide de la ciudad, el límite del ejido ni la ubicación de un inmueble individual.",
+    "statusSource": "https://salud.rionegro.gov.ar/articulo/47359/viedma-celebra-sus-50-anos-como-capital-con-una-muestra-de-cine",
+    "statusSourceName": "Gobierno de Río Negro — Viedma es capital definitiva de la provincia desde el 20/10/1973.",
+    "statusSourcePublishedAt": "2023-10-19",
+    "administrativeStatus": "Viedma es la capital definitiva de Río Negro desde el 20 de octubre de 1973. El catálogo provincial 2026 identifica el sector georreferenciado como casco histórico y edificios administrativos, alrededor de Plaza Alsina.",
+    "validityPeriod": "Capitalidad documentada por el Gobierno de Río Negro el 19/10/2023; referencia geográfica publicada en el Catálogo de Locaciones Río Negro 2026, sin fecha exacta de publicación.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "El Catálogo de Locaciones Río Negro 2026, p. 22, publica para Viedma el sector «Casco histórico y edificios administrativos», lo delimita principalmente entre Buenos Aires, Laprida, Guido y Colón en torno a Plaza Alsina y aporta una referencia central georreferenciada (-40.8136, -62.9966). La coordenada ya está en grados decimales; no se transformó ni geocodificó. El documento no declara datum, CRS, EPSG ni precisión; se conserva solo como referencia central del sector urbano, no como centroide de la ciudad, límite del ejido o inmueble individual. El Gobierno de Río Negro documenta que Viedma fue declarada capital definitiva el 20/10/1973. Verificación documental, no presencial."
+    }
   }
 ]
