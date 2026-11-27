@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T22:32:31-03:00",
+  "generatedAt": "2026-11-26T23:40:36-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "ecbbf4346985badb22e05839ddbef61f47e00c55",
-  "nodeCount": 106,
+  "catalogCommit": "b21903a2cca2d6199c298d1b6984760598d159e8",
+  "nodeCount": 107,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -48,7 +48,7 @@
         "San Juan",
         "San Luis"
       ],
-      "nodeCount": 13,
+      "nodeCount": 14,
       "coveredJurisdictions": 4
     },
     {
@@ -502,7 +502,7 @@
     {
       "province": "San Juan",
       "region": "Cuyo",
-      "total": 3,
+      "total": 4,
       "byType": {
         "Ciudad": 0,
         "Puerto": 0,
@@ -510,7 +510,7 @@
         "Paso fronterizo": 1,
         "Logística": 0,
         "Industria": 0,
-        "Recurso mineral": 0,
+        "Recurso mineral": 1,
         "Turismo": 1,
         "Estación ferroviaria": 0
       },
@@ -519,7 +519,6 @@
         "Puerto",
         "Logística",
         "Industria",
-        "Recurso mineral",
         "Estación ferroviaria"
       ]
     },
@@ -685,7 +684,7 @@
     "Paso fronterizo": 12,
     "Logística": 3,
     "Industria": 14,
-    "Recurso mineral": 4,
+    "Recurso mineral": 5,
     "Turismo": 13,
     "Estación ferroviaria": 6
   },
@@ -721,9 +720,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "NEA",
-    "nextTarget": "Cuyo",
-    "note": "Ejecución del 26/11/2026 en Formosa (NEA): se incorporó la Reserva Natural Formosa en Turismo con la ubicación geográfica publicada por SIB/APN (-24.27366, -61.80071), contrastada con las páginas de visita, actividades y horarios de APN. El punto es una referencia general del área protegida, no la portada oeste ni el perímetro. APN documenta acceso público, acampe, senderos y miradores; no se verificó transitabilidad ni disponibilidad en tiempo real. Catálogo: 106 nodos. Formosa pasa de dos a tres nodos y suma su primer registro de Turismo. Próxima región: Cuyo."
+    "lastTargeted": "Cuyo",
+    "nextTarget": "Centro",
+    "note": "Ejecución del 26/11/2026 en San Juan (Cuyo): se incorporó Mina Veladero en la categoría Recurso mineral. SEGEMAR publica la localización geográfica del depósito 339 (-29.36833, -69.95222), la jurisdicción Iglesia y el estado «productor»; su base informa actualización 13/07/2026. El sitio oficial del operador consultado el 26/11/2026 documenta la mina de oro y plata, estado del camino actualizado ese día, cámaras en vivo y noticias 2026. La coordenada se conserva como referencia del depósito, sin inferir acceso, centroide certificado ni perímetro. Catálogo: 107 nodos. San Juan pasa de tres a cuatro nodos y suma su primer Recurso mineral. Próxima región: Centro."
   },
   "pendingCandidates": [
     {
