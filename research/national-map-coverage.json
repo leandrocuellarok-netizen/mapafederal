@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T18:36:30-03:00",
+  "generatedAt": "2026-11-27T19:31:21-03:00",
   "catalogPath": "data/strategic-nodes.json",
   "catalogCommit": "3edcf80d95eb223df3fe67a2af5a3a1290202dd0",
   "nodeCount": 124,
@@ -901,11 +901,14 @@
       "category": "Industria",
       "name": "Parque Industrial de Formosa — predio",
       "decision": "not_added",
-      "reason": "El Gobierno provincial documenta empresas radicadas y actividad industrial en 2026, pero las fuentes consultadas no publican geometría del perímetro ni coordenada puntual atribuible. IDEF ofrece visor y servicios WMS, pero en esta ejecución no se recuperó la feature o polígono del parque. No se geocodificó un domicilio ni se utilizó el centroide urbano.",
+      "reason": "Revisión del 2026-11-27: las fuentes oficiales provinciales confirman actividad industrial dentro del Parque Industrial de Formosa. La nota del 30/09/2026 documenta a Cloronor S.A. radicada en el predio y una ampliación de planta en instalación; la nota del 05/09/2026 ubica un acto de la Semana de la Industria en las instalaciones de Cloronor dentro del parque. Esto acredita actividad empresarial en el área, pero no la geometría del predio ni una coordenada exacta de acceso o instalación. IDEF publica un visor WMS y advierte que la información es referencial y que la exactitud/vigencia debe comprobarse en los metadatos de la capa y con el organismo productor; su catálogo de servicios enumera WMS/CSW y servicios catastrales, pero durante esta revisión no se pudo recuperar un GetCapabilities, metadato de capa ni feature/polígono del parque (las páginas/servicios consultados agotaron tiempo o no fueron accesibles). La página municipal de ubicación geográfica describe la ciudad y su condición de capital, pero no publica coordenadas del parque. No se geocodificó una dirección, no se derivó un punto desde RN 11 ni se usó el centroide urbano. Decisión: no agregar marcador hasta obtener polígono/feature oficial con CRS y atributos, o coordenada institucional atribuible de un acceso/instalación puntual; el estado operativo del parque completo también debe distinguirse de los proyectos empresariales individuales.",
       "sourceUrls": [
         "https://m.formosa.gob.ar/noticia/34029/83/el_parque_industrial_de_formosa_se_posiciona_como_referente_en_el_nea_con_empresa_quimica_que_invierte_en_innovacion_y_energia_renovable",
         "https://m.formosa.gob.ar/noticia/34729/1301/formosa_cerro_la_semana_de_la_industria_con_inversiones_innovacion_y_respaldo_al_sector_productivo",
-        "https://idef.formosa.gob.ar/geoportal/servicios"
+        "https://idef.formosa.gob.ar/geoportal/servicios",
+        "https://idef.formosa.gob.ar/geoportal/visores",
+        "https://www.formosatuciudad.gob.ar/tu-ciudad/ubicacion-geografica",
+        "https://idef.formosa.gob.ar/geoportal/"
       ]
     },
     {
