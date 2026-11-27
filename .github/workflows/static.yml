@@ -615,7 +615,7 @@ jobs:
           coverage = json.loads(Path("research/national-map-coverage.json").read_text(encoding="utf-8"))
           assert coverage.get("catalogPath") == "data/strategic-nodes.json"
           assert coverage.get("nodeCount") == len(nodes)
-          assert coverage.get("nodeCount") == 122, "El catálogo nacional debe contener 121 nodos en esta revisión"
+          assert coverage.get("nodeCount") == 122, "El catálogo nacional debe contener 122 nodos en esta revisión"
           quequen = next((node for node in nodes if node.get("id") == "buenos-aires-puerto-puerto-de-quequen"), None)
           assert quequen is not None and quequen["province"] == "Buenos Aires" and quequen["type"] == "Puerto"
           assert quequen["coords"] == [-38.57133333, -58.71347222]
