@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T20:33:13-03:00",
+  "generatedAt": "2026-11-26T21:34:12-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "3ec915af721bafb723d9c4f35db793a3968e2630",
-  "nodeCount": 104,
+  "catalogCommit": "2b41d8699be9447dd62651ca56f3b42dfe9c0ab4",
+  "nodeCount": 105,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -26,7 +26,7 @@
         "Santiago del Estero",
         "Tucumán"
       ],
-      "nodeCount": 10,
+      "nodeCount": 11,
       "coveredJurisdictions": 5
     },
     {
@@ -654,7 +654,7 @@
     {
       "province": "Tucumán",
       "region": "NOA",
-      "total": 1,
+      "total": 2,
       "byType": {
         "Ciudad": 0,
         "Puerto": 0,
@@ -663,7 +663,7 @@
         "Logística": 0,
         "Industria": 0,
         "Recurso mineral": 0,
-        "Turismo": 0,
+        "Turismo": 1,
         "Estación ferroviaria": 0
       },
       "missingCategories": [
@@ -672,7 +672,6 @@
         "Logística",
         "Industria",
         "Recurso mineral",
-        "Turismo",
         "Estación ferroviaria"
       ],
       "notApplicableCategories": [
@@ -688,14 +687,14 @@
     "Logística": 3,
     "Industria": 14,
     "Recurso mineral": 4,
-    "Turismo": 11,
+    "Turismo": 12,
     "Estación ferroviaria": 6
   },
   "leastCoveredJurisdictions": [
     {
       "province": "Tucumán",
       "region": "NOA",
-      "total": 1
+      "total": 2
     },
     {
       "province": "Catamarca",
@@ -728,9 +727,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "CABA",
-    "nextTarget": "NOA",
-    "note": "Ejecución del 26/11/2026 en CABA: se incorporó la Parada 07 — Reserva Ecológica (principal) del Bus Turístico como referencia de Turismo, usando la feature 17 del GeoJSON oficial de Buenos Aires Data, CRS84. El punto representa la parada, no el acceso ni el perímetro de la reserva; la operación del servicio no se verificó en tiempo real. Se investigaron las terminales internacionales Buquebus y Colonia Express: Migraciones y ANPyN confirman su función y muelles, pero no se obtuvo una coordenada puntual oficial; no se geocodificaron domicilios ni se reutilizó el punto general del Puerto de Buenos Aires. Catálogo: 104 nodos. Próxima región: NOA."
+    "lastTargeted": "NOA",
+    "nextTarget": "NEA",
+    "note": "Ejecución del 26/11/2026 en Tucumán (NOA): se incorporó el Parque Nacional Aconquija en Turismo con la ubicación geográfica publicada por SIB/APN (-27.19383, -65.95758), contrastada con la guía oficial de visitantes de APN. El punto es una referencia general del área protegida, no un portal, acceso, centroide certificado ni perímetro. APN documenta tres sectores de acceso y condiciona la visita a que estén habilitados; no se verificó apertura ni transitabilidad en tiempo real. Catálogo: 105 nodos. Tucumán pasa de uno a dos nodos y suma su primer registro de Turismo. Próxima región: NEA."
   },
   "pendingCandidates": [
     {
@@ -953,6 +952,7 @@
     "El Parque Industrial de Río Grande (Tierra del Fuego) se incorporó con una coordenada publicada por un directorio sectorial secundario. El punto cae dentro de la extensión geográfica de la capa oficial IDETDF «Parque Industrial» (edición 2025, EPSG:4326), cuyo linaje declara datos extraídos de la base IGN y complementados por IDETDF. La descarga WFS/ZIP agotó el tiempo de espera y no se inspeccionó la geometría; por ello no se asigna CRS al punto secundario ni se representa acceso, centroide, perímetro o lote específico. La Municipalidad de Río Grande informa aproximadamente 102 empresas en operación y 15 en construcción para 2024; el estado vigente del padrón queda no_verificado.",
     "El 26/11/2026 se completó la asignación de IDs estables del catálogo: los 85 registros históricos que carecían de id recibieron un slug determinista derivado de provincia, tipo y nombre; los 14 IDs preexistentes se conservaron. Los IDs se consideran claves persistentes y no deben regenerarse al editar nombres descriptivos.",
     "El Aeropuerto Capitán Vicente Almandos Almonacid (SANL, La Rioja) usa el ARP publicado por ANAC en el Suplemento AIP A 67/2022 (AD 2.2): 29°22'50\"S 066°47'45\"W, identificado como centro geométrico de pista calculado en gabinete. Se convirtió DMS a grados decimales sin reproyección. El datum/CRS del ARP no está explicitado; no se asigna EPSG. El estado de infraestructura se apoya en el AIP permanente de ANAC y en la transcripción secundaria del AIRAC 01/26 vigente desde 11/06/2026, que identifica SANL como controlado IFR/VFR; no se infieren frecuencias comerciales ni NOTAM en tiempo real.",
-    "La Terminal Fluvial Binacional de Tigre (Buenos Aires) se agregó como Paso fronterizo porque la Dirección Nacional de Migraciones la incluye entre las vías de ingreso y egreso en funcionamiento. La coordenada [-34.42121, -58.58097] procede de Mapcarta/OpenStreetMap way 269888419 (amenity=ferry_terminal), fuente secundaria; no se obtuvo una geometría puntual primaria recuperable. El CRS/datum, método y precisión no están declarados. El punto es una referencia de la terminal, no un acceso, muelle específico ni puesto de control. La ficha de Migraciones publica horario de 07 a 17 para embarcaciones particulares y deportivas; no se infiere servicio internacional comercial regular."
+    "La Terminal Fluvial Binacional de Tigre (Buenos Aires) se agregó como Paso fronterizo porque la Dirección Nacional de Migraciones la incluye entre las vías de ingreso y egreso en funcionamiento. La coordenada [-34.42121, -58.58097] procede de Mapcarta/OpenStreetMap way 269888419 (amenity=ferry_terminal), fuente secundaria; no se obtuvo una geometría puntual primaria recuperable. El CRS/datum, método y precisión no están declarados. El punto es una referencia de la terminal, no un acceso, muelle específico ni puesto de control. La ficha de Migraciones publica horario de 07 a 17 para embarcaciones particulares y deportivas; no se infiere servicio internacional comercial regular.",
+    "El Parque Nacional Aconquija (Tucumán) usa la ubicación geográfica publicada por SIB/APN: 27 11 37.77 S (-27.19383), 65 57 27.27 O (-65.95758), contrastada con la guía oficial de visitantes de APN (septiembre de 2022), que reproduce la misma coordenada en DMS. El SIB no declara datum/CRS ni semántica geométrica del punto. Se conserva solo como referencia general del área protegida; no representa portal, acceso, centroide certificado ni perímetro. APN documenta tres sectores de acceso y condiciona la visita a que el acceso esté habilitado; no se verificó apertura ni transitabilidad en tiempo real."
   ]
 }

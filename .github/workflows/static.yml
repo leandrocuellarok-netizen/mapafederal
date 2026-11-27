@@ -647,6 +647,22 @@ jobs:
           assert lihue["coordinateSource"] == "https://sib.gob.ar/areas-protegidas/parque-nacional-lihue-calel"
           assert lihue["coordinateReferenceSystem"].startswith("Coordenadas geográficas") and "no se presenta como acceso" in lihue["coordinateQuality"].lower()
           assert "reserva" in lihue["administrativeStatus"].lower()
+          aconquija = next((node for node in nodes if node.get("id") == "tucuman-turismo-parque-nacional-aconquija"), None)
+          assert aconquija is not None and aconquija["province"] == "Tucumán" and aconquija["type"] == "Turismo"
+          assert aconquija["district"] == "Alberdi, Chicligasta, Monteros, Río Chico y Tafí del Valle"
+          assert aconquija["coords"] == [-27.19383, -65.95758] and aconquija["status"] == "operativo"
+          assert aconquija["source"] == "https://www.argentina.gob.ar/parquesnacionales/region-noroeste/parque-nacional-aconquija"
+          assert aconquija["coordinateSource"] == "https://sib.gob.ar/index.php/areas-protegidas/parque-nacional-Aconquija"
+          assert aconquija["coordinateReferenceSystem"].startswith("Coordenadas geográficas")
+          assert "no se presenta como portal" in aconquija["coordinateQuality"].lower()
+          assert "habilitado" in aconquija["administrativeStatus"].lower()
+          assert aconquija["verification"]["checkedAt"] == "2026-11-26"
+          tucuman = next(row for row in coverage_rows if row["province"] == "Tucumán")
+          assert tucuman["total"] == 2 and tucuman["byType"]["Turismo"] == 1 and tucuman["byType"]["Aeropuerto"] == 1
+          assert "Turismo" not in tucuman["missingCategories"]
+          noa = next(region for region in coverage["regions"] if region["name"] == "NOA")
+          assert noa["nodeCount"] == 11 and noa["coveredJurisdictions"] == 5
+          assert coverage["regionalRotation"]["lastTargeted"] == "NOA" and coverage["regionalRotation"]["nextTarget"] == "NEA"
           tehuelche = next((node for node in nodes if node.get("id") == "chubut-aeropuerto-el-tehuelche-savy"), None)
           assert tehuelche is not None and tehuelche["province"] == "Chubut" and tehuelche["type"] == "Aeropuerto"
           assert tehuelche["status"] == "operativo"
@@ -663,7 +679,7 @@ jobs:
           chubut = next(row for row in coverage_rows if row["province"] == "Chubut")
           assert chubut["total"] == 6 and chubut["byType"]["Turismo"] == 1
           assert "Turismo" not in chubut["missingCategories"]
-          assert coverage["categoryTotals"]["Turismo"] == 11
+          assert coverage["categoryTotals"]["Turismo"] == 12
           rio_grande = next((node for node in nodes if node.get("id") == "tierra-del-fuego-parque-industrial-rio-grande"), None)
           assert rio_grande is not None and rio_grande["province"] == "Tierra del Fuego" and rio_grande["type"] == "Industria"
           assert rio_grande["status"] == "no_verificado"
