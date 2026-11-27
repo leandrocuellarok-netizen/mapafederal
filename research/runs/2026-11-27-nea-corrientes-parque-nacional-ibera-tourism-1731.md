@@ -55,7 +55,7 @@ Se incorpora el Parque Nacional Iberá al catálogo nacional consumido por la po
 - Corrientes: 4 nodos; Turismo: 1.
 - NEA: 15 nodos.
 - CRS/datum no declarados, documentados sin asignar EPSG.
-- La validación automatizada completa queda pendiente de la ejecución de GitHub Actions tras la integración.
+- La primera validación automatizada posterior a la integración (Actions #894, run ID `46064463109`) falló en «Validate geographic and editorial JSON»: el workflow conservaba expectativas históricas de Turismo=21, NEA=14 y rotación NOA→NEA. El registro Iberá y el conteo de 123 superaron sus aserciones previas; la falla se debió a expectativas de matriz obsoletas. El job `deploy` quedó omitido. Se corrigieron las cuatro aserciones de Turismo a 22, la de NEA a 15, las seis aserciones de rotación a NEA→Cuyo y se añadió una regresión explícita para Corrientes (4 nodos, Turismo=1). La validación completa y el despliegue quedan pendientes de Actions #895.
 
 ## Integración y publicación
 
@@ -64,8 +64,10 @@ Se incorpora el Parque Nacional Iberá al catálogo nacional consumido por la po
 - Commit de matriz: `f6594b5e1527d9944cdd15df2751b2cdf5ecc01a`.
 - Commit de workflow: `e93277aa3698ed6a7e059d3d4c96dfd5b4796f74`.
 - Commit de README: `905e4bde09871da58df72dc1ac84af70bfef24d1`.
-- Pull request: pendiente de creación e integración.
-- Workflow y Pages: pendientes de la integración en `main`; no se afirma publicación en esta bitácora hasta verificar el job `deploy`.
+- PR #41 integrado: https://github.com/leandrocuellarok-netizen/mapafederal/pull/41; merge commit `e0b3a32b495ad57d630a2102650047757b490b65`.
+- Actions #894 (run ID `46064463109`, SHA `e0b3a32b495ad57d630a2102650047757b490b65`): `validate` falló en la aserción de Turismo=21, expectativa obsoleta; `deploy` fue omitido.
+- PR #42 de corrección del workflow: pendiente de integración.
+- Actions #895 y GitHub Pages: pendientes de la corrección; no se afirma publicación hasta verificar el job `deploy`.
 
 ## Brechas no resueltas
 
