@@ -15,13 +15,49 @@
     "id": "caba-puerto-puerto-de-buenos-aires",
     "name": "Puerto de Buenos Aires",
     "province": "CABA",
+    "district": "Ciudad de Buenos Aires",
+    "locality": "Ciudad de Buenos Aires",
     "type": "Puerto",
     "coords": [
-      -34.576,
-      -58.369
+      -34.59552777777778,
+      -58.36405555555556
     ],
-    "note": "Infraestructura portuaria y logística metropolitana.",
-    "source": "https://www.puertobuenosaires.gob.ar/"
+    "note": "Localización general del Puerto de Buenos Aires publicada por ANPyN. La coordenada no identifica un muelle, acceso, terminal individual ni perímetro; el estado operativo en tiempo real no fue verificado.",
+    "source": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/buenos-aires",
+    "sourceName": "Agencia Nacional de Puertos y Navegación (ANPyN) — Puerto Buenos Aires",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Ficha institucional consultada el 2026-11-27; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "Ficha ANPyN — Puerto Buenos Aires; localización 34°35'43.9\"S, 58°21'50.6\"W; provincia Ciudad de Buenos Aires; departamento y localidad Ciudad de Buenos Aires.",
+    "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/buenos-aires",
+    "coordinateSourceName": "Agencia Nacional de Puertos y Navegación (ANPyN) — ficha Puerto Buenos Aires",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La sección Localización publica latitud 34°35'43.9\"S y longitud 58°21'50.6\"W; consultada el 2026-11-27. No informa fecha de actualización de la coordenada.",
+    "coordinateReferenceSystem": "Coordenadas geográficas en grados, minutos y segundos publicadas por ANPyN; datum y CRS no especificados. No se asigna EPSG.",
+    "coordinateTransformation": "Conversión aritmética DMS a grados decimales: 34°35'43.9\"S → -34.59552777777778; 58°21'50.6\"W → -58.36405555555556. Sin reproyección ni transformación de datum.",
+    "coordinateQuality": "Localización general del Puerto de Buenos Aires publicada por ANPyN. La ficha no define precisión ni semántica geométrica del punto; se utiliza como referencia general del puerto, no como acceso, muelle específico, terminal individual, centroide certificado ni perímetro.",
+    "statusSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/buenos-aires",
+    "statusSourceName": "ANPyN — ficha institucional del Puerto Buenos Aires",
+    "statusSourcePublishedAt": null,
+    "administrativeStatus": "ANPyN identifica el puerto en CABA y publica una ficha técnica de muelles y terminales, incluidos atraques para pasajeros y carga. Esto acredita la identificación administrativa y la infraestructura portuaria documentada; no confirma la operación efectiva de cada muelle en tiempo real.",
+    "validityPeriod": "Ficha consultada el 2026-11-27; no informa fecha de actualización. No se verificó el estado operativo de los muelles en tiempo real.",
+    "status": "no_verificado",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "ANPyN publica la localización general del Puerto de Buenos Aires en Ciudad de Buenos Aires: 34°35'43.9\"S, 58°21'50.6\"W. Se convirtió DMS a grados decimales por cálculo aritmético, sin reproyección ni transformación de datum. La ficha no declara CRS/datum, precisión ni semántica geométrica; el punto se conserva como referencia general del puerto y no como muelle, acceso, terminal individual, centroide certificado ni perímetro. La ficha también documenta muelles para pasajeros y carga; no se verificó operación en tiempo real."
+    },
+    "previousSource": "https://www.puertobuenosaires.gob.ar/",
+    "previousSourceName": "Fuente institucional consignada en el registro anterior",
+    "coordinateHistory": [
+      {
+        "coords": [
+          -34.576,
+          -58.369
+        ],
+        "source": "https://www.puertobuenosaires.gob.ar/",
+        "checkedAt": "2026-11-27",
+        "note": "Coordenada anterior redondeada del catálogo, sin una coordenada puntual atribuible en el registro previo. Se conserva como antecedente y no se usa para el marcador actual."
+      }
+    ]
   },
   {
     "id": "buenos-aires-aeropuerto-aeropuerto-internacional-de-ezeiza",
