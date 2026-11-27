@@ -2611,5 +2611,39 @@
       "checkedAt": "2026-11-27",
       "scope": "SIB/APN publica explícitamente provincia Santiago del Estero, departamento Copo, creación 2000, superficie 118.119 ha y coordenadas -25.82089, -61.88005. APN publica apertura diaria de 7 a 15 h y documenta los accesos por RN 16. El SIB no declara datum/CRS ni define si la coordenada es acceso, centroide o punto interno; se conserva como referencia general del área protegida. No se verificó apertura efectiva, transitabilidad ni servicios en tiempo real."
     }
+  },
+  {
+    "id": "corrientes-turismo-parque-nacional-ibera",
+    "name": "Parque Nacional Iberá",
+    "province": "Corrientes",
+    "district": "Concepción, Ituzaingó, Mercedes y San Miguel",
+    "type": "Turismo",
+    "coords": [
+      -27.93238,
+      -56.93083
+    ],
+    "note": "Área protegida nacional creada en 2018 por Ley 27.481/18. SIB/APN publica una ubicación geográfica general y una superficie de 195.094 ha. APN informa apertura diaria y cuatro portales de acceso independientes; la transitabilidad depende de las condiciones meteorológicas. La coordenada no identifica un portal ni un perímetro.",
+    "source": "https://www.argentina.gob.ar/parquesnacionales/nea/parque-nacional-ibera",
+    "sourceName": "Administración de Parques Nacionales (APN) — Parque Nacional Iberá",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Ficha institucional consultada el 27/11/2026; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "Ficha SIB/APN — Parque Nacional Iberá; provincia Corrientes; departamentos Concepción, Ituzaingó, Mercedes y San Miguel; creación 2018; ubicación geográfica -27.93238, -56.93083; superficie 195.094 ha.",
+    "coordinateSource": "https://sib.gob.ar/index.php/areas-protegidas/parque-nacional-ibera",
+    "coordinateSourceName": "Sistema de Información de Biodiversidad de la Administración de Parques Nacionales (SIB/APN)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La ficha publica ubicación geográfica 27 55 56.56 S (-27.93238), 56 55 50.98 O (-56.93083). No informa fecha de actualización ni precisión.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por SIB/APN; datum y CRS no especificados. No se asigna EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron los valores decimales publicados por SIB/APN; no se realizó geocodificación, reproyección ni transformación de datum.",
+    "coordinateQuality": "Referencia geográfica general del área protegida publicada por SIB/APN. La ficha no define si el punto corresponde a un portal de acceso, centroide o punto interno; no se presenta como acceso, centroide certificado ni perímetro.",
+    "statusSource": "https://www.argentina.gob.ar/parquesnacionales/nea/parque-nacional-ibera/horarios-como-llegar",
+    "statusSourceName": "APN — Horarios / Cómo llegar, Parque Nacional Iberá",
+    "statusSourcePublishedAt": null,
+    "administrativeStatus": "Parque Nacional de jurisdicción nacional, creado en 2018 por Ley 27.481/18. APN informa apertura todos los días y horarios estacionales para sus portales. Los accesos Cambyretá, Carambola y Laguna Iberá son transitables cuando los caminos están en condiciones normales; el Portal San Nicolás requiere vehículo 4x4 y especial precaución. La fuente recomienda consultar el estado de los caminos en días de lluvia. No se confirma apertura efectiva ni transitabilidad en tiempo real.",
+    "validityPeriod": "Fichas SIB/APN y APN de horarios/cómo llegar consultadas el 27/11/2026; no se verificó el estado de los caminos ni la apertura efectiva en tiempo real.",
+    "status": "operativo",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "SIB/APN publica provincia Corrientes, departamentos Concepción, Ituzaingó, Mercedes y San Miguel, creación 2018, superficie 195.094 ha y ubicación geográfica -27.93238, -56.93083. APN informa apertura todos los días, cuatro portales con horarios estacionales y condiciones de acceso dependientes del clima. El SIB no declara datum/CRS, precisión ni semántica geométrica de la coordenada; se conserva como referencia general del área protegida, no como portal, acceso, centroide certificado ni perímetro. No se verificó apertura efectiva ni transitabilidad en tiempo real."
+    }
   }
 ]
