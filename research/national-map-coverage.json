@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T08:33:33-03:00",
+  "generatedAt": "2026-11-27T09:32:09-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "31f7ab4064a42a64d22f8f41bbe2f3685cb6bb0d",
-  "nodeCount": 114,
+  "catalogCommit": "130f38aa104ab3779f3c7d2e56796197e481f90b",
+  "nodeCount": 115,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -79,7 +79,7 @@
       "jurisdictions": [
         "Buenos Aires"
       ],
-      "nodeCount": 29,
+      "nodeCount": 30,
       "coveredJurisdictions": 1
     },
     {
@@ -117,14 +117,14 @@
     {
       "province": "Buenos Aires",
       "region": "Buenos Aires Province",
-      "total": 29,
+      "total": 30,
       "byType": {
         "Ciudad": 6,
         "Puerto": 7,
         "Aeropuerto": 1,
         "Paso fronterizo": 1,
         "Logística": 1,
-        "Industria": 4,
+        "Industria": 5,
         "Recurso mineral": 1,
         "Turismo": 3,
         "Estación ferroviaria": 5
@@ -676,7 +676,7 @@
     "Aeropuerto": 25,
     "Paso fronterizo": 12,
     "Logística": 3,
-    "Industria": 16,
+    "Industria": 17,
     "Recurso mineral": 5,
     "Turismo": 17,
     "Estación ferroviaria": 7
@@ -708,9 +708,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Patagonia",
-    "nextTarget": "Buenos Aires Province",
-    "note": "Ejecución del 27/11/2026 en Allen (Río Negro, Patagonia): se incorporó el Parque Industrial Allen Norte en Industria. El REPPIL del Gobierno de Río Negro publica el acceso Martín Fierro (acceso al Autódromo Gral. Enrique Mosconi) con coordenadas 38°55'31.85\"S / 67°52'0.35\"O; conversión aritmética DMS a decimal, sin reproyección. La fuente no declara datum/CRS, precisión ni método. El registro provincial clasifica el parque como «En desarrollo» e informa 1 empresa operativa, 9 en proyecto y 0 en construcción; no se presume operación integral ni disponibilidad comercial en tiempo real. El marcador identifica el acceso, no el perímetro. Próxima región de rotación: Buenos Aires Province."
+    "lastTargeted": "Buenos Aires Province",
+    "nextTarget": "CABA",
+    "note": "Ejecución del 27/11/2026 en Abasto, partido de La Plata (Buenos Aires): se incorporó el Parque Industrial La Plata II en Industria para ampliar la cobertura productiva fuera del corredor norte y de Escobar. El EIA de la Municipalidad de La Plata publica la coordenada exacta de la entrada al predio: 34°58'43.46\"S, 58°9'10.69\"O; conversión aritmética DMS a decimal, sin reproyección. El documento no declara datum/CRS ni precisión. La Provincia informó el 04/04/2025 la escrituración de la primera fase, la construcción del parque en 2006 y más de 100 empresas de la zona; no se infiere padrón actualizado ni operación de cada parcela. El marcador identifica la entrada, no el perímetro. Próxima región de rotación: CABA."
   },
   "pendingCandidates": [
     {
