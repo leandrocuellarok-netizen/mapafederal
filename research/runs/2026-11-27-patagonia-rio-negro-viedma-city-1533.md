@@ -63,8 +63,10 @@ Se incorpora una referencia urbana de Viedma, capital provincial:
 - Commit de matriz: `b6b068c85f160664f44cf8ac70ec21720d17fb1f`.
 - Commit de README: `53ed1205eb8c574b9eed543b0e7f86f90b1d3726`.
 - Commit de workflow: `71a8d11a6ac24bba79df693314e831e41d15baef`.
-- Pull request y ejecución de Actions: pendientes de integración en esta versión de la bitácora.
-- GitHub Pages: pendiente de verificación del job de despliegue.
+- PR #37 integrado: https://github.com/leandrocuellarok-netizen/mapafederal/pull/37.
+- Merge commit en `main`: `158c31d1c47f9a3b019df3e5726fe1d0ab4d8606`.
+- GitHub Actions #889 (run ID `46050777376`, SHA `158c31d1c47f9a3b019df3e5726fe1d0ab4d8606`): jobs `validate` y `deploy` completados con `success`; el paso `Deploy to GitHub Pages` terminó correctamente.
+- GitHub Pages: despliegue confirmado por el job de publicación. La inspección independiente de la portada y del JSON publicado no fue posible desde el navegador, que devolvió error de acceso; por ello no se afirma verificación visual del marcador.
 
 ## Brechas no resueltas
 
