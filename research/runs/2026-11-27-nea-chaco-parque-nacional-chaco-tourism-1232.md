@@ -65,7 +65,11 @@ SIB/APN identifica la provincia Chaco, departamento Presidencia de la Plaza, cre
 ## Integración y publicación
 
 - Rama de trabajo: `automation/nea-chaco-parque-nacional-20261127-1232`.
-- Commit del catálogo, PR, merge SHA, ejecución de Actions y estado de Pages: pendientes.
+- Commit del catálogo: `b1c6b31dc7ce4f7ded271e5fe7a70503a8662564`.
+- PR #33 integrado en `main`: https://github.com/leandrocuellarok-netizen/mapafederal/pull/33.
+- Merge commit de `main`: `f135d2357262671d30366d7876e8461976f4bdb1`.
+- GitHub Actions #881 (run ID `46026439613`): falló en `Validate geographic and editorial JSON` porque tres aserciones del workflow todavía comparaban `coverage.catalogCommit` con el SHA anterior `f55c0e5`; el catálogo y la matriz ya apuntaban al commit nuevo `b1c6b31`. El job `deploy` fue omitido. La corrección actualiza esas tres aserciones sin alterar datos.
+- PR #34 y ejecución de validación/despliegue posterior: pendientes.
 - La verificación visual independiente de la portada se realizará después del despliegue, si el dominio responde.
 
 ## Brechas no resueltas
