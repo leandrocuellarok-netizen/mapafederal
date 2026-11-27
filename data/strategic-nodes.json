@@ -147,7 +147,7 @@
     "coordinateSource": "https://www.argentina.gob.ar/economia/agencia-nacional-de-puertos-y-navegacion/puertos/quequen",
     "coordinateSourceName": "ANPyN — ficha oficial de Puerto Quequén, sección Localización",
     "coordinateReferenceSystem": "No declarado por la ficha ANPyN; publica latitud/longitud geográficas. No se atribuye datum ni EPSG.",
-    "coordinateTransformation": "Conversión aritmética de DMS a grados decimales: 38°34'16.8\\\"S, 58°42'48.5\\\"W → [-38.57133333, -58.71347222]; sin transformación de datum ni reproyección.",
+    "coordinateTransformation": "Conversión aritmética de DMS a grados decimales: 38°34'16.8\"S, 58°42'48.5\"W → [-38.57133333, -58.71347222]; sin transformación de datum ni reproyección.",
     "coordinateQuality": "Coordenada oficial de localización portuaria publicada por ANPyN; la ficha no define si representa punto medio, muelle, terminal o perímetro. Se utiliza como referencia general portuaria, no como ubicación de un muelle específico ni como levantamiento geodésico independiente.",
     "additionalSource": "https://www.puertoquequen.com/",
     "additionalSourceName": "Consorcio de Gestión del Puerto de Quequén — sitio institucional, fuente complementaria conservada del registro anterior.",
@@ -159,7 +159,7 @@
     "validityPeriod": "Resolución 39/2026 sancionada el 24/06/2026 y publicada el 26/06/2026; ficha portuaria ANPyN consultada el 27/11/2026. No se verificó actividad operativa en tiempo real.",
     "verification": {
       "checkedAt": "2026-11-27",
-      "scope": "Se reemplazó la coordenada redondeada previa [-38.57, -58.7], que no tenía atribución de punto exacta, por la localización publicada por ANPyN: 38°34'16.8\\\"S, 58°42'48.5\\\"W. Conversión DMS a decimal, sin reproyección. Se conserva como fuente complementaria el sitio institucional del Consorcio. La Resolución 39/2026 acredita habilitación administrativa provincial, pública y comercial; no se verificaron movimientos de buques ni condiciones operativas en tiempo real."
+      "scope": "Se reemplazó la coordenada redondeada previa [-38.57, -58.7], que no tenía atribución de punto exacta, por la localización publicada por ANPyN: 38°34'16.8\"S, 58°42'48.5\"W. Conversión DMS a decimal, sin reproyección. Se conserva como fuente complementaria el sitio institucional del Consorcio. La Resolución 39/2026 acredita habilitación administrativa provincial, pública y comercial; no se verificaron movimientos de buques ni condiciones operativas en tiempo real."
     }
   },
   {
