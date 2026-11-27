@@ -53,10 +53,8 @@ El Parque Industrial de Formosa sigue pendiente: las fuentes consultadas confirm
 - Deduplificación previa contra los 105 registros: ID, nombre y par de coordenadas no existentes.
 - Validación local de construcción: JSON parseable; 106 IDs únicos; 106 nombres únicos; 106 pares de coordenadas únicos; 24 jurisdicciones; nueve categorías; rangos geográficos válidos; URLs HTTPS; matriz recalculada y conteos provinciales/regionales/categoriales reconciliados.
 - Prueba de regresión incorporada para la coordenada, fuente, CRS no declarado, calidad de referencia, condición de acceso y cobertura de Formosa.
-- Commit de catálogo: `24d355a7a872aaede07e4236dfbd6d36962f7555`.
-- Commit de matriz: `1a533461615c00b9674478816dee4641083fd23e`.
-- Commit de README: `a046f10c40092219a5f8d748cf3fa90f6fd30a17`.
-- Commit de workflow y regresión: `6a264a44e8a6fcd5ff45b05e78c27dbbc1baf3f4`.
-- PR #12 integrado en `main` mediante squash merge; commit de integración: `ecbbf4346985badb22e05839ddbef61f47e00c55`.
+- Commits de preparación en la rama de trabajo: catálogo `24d355a7a872aaede07e4236dfbd6d36962f7555`; matriz `1a533461615c00b9674478816dee4641083fd23e`; README `a046f10c40092219a5f8d748cf3fa90f6fd30a17`; workflow/regresión `6a264a44e8a6fcd5ff45b05e78c27dbbc1baf3f4`.
+- PR #12 integrado en `main` mediante squash merge; commit que incorporó los cinco archivos: `ecbbf4346985badb22e05839ddbef61f47e00c55`.
+- Se corrigió `catalogCommit` de la matriz para apuntar al commit de integración real en `main`: `fb70b49b88ba10d031207ffa67061e84d867ddc9`.
 - Estado de Actions consultado para el commit de integración: la consulta de estados combinados devolvió una lista vacía y el endpoint disponible de ejecuciones por commit solo expone eventos `pull_request`, sin mostrar la ejecución `push` de `main`. Por ello no se pudo verificar el job `validate` ni `Deploy to GitHub Pages` desde la integración disponible.
 - Inspección independiente: tanto la portada pública como el JSON publicado de GitHub Pages resultaron inaccesibles desde el entorno de verificación. La integración en `main` está confirmada; no se afirma que el nodo ya esté publicado ni visible hasta contar con evidencia de Actions/Pages.
