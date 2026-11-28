@@ -60,7 +60,12 @@ La ficha provincial id=2 corresponde a Parque Industrial Gualeguaychú - CODEGU,
 - Commit de matriz: `4e91e15a888e74a7ddcb54ab5deb70fbfd3ccac8`.
 - Commit de validaciones: `738c3f22702cb4a07657a954aaeb17104659bef6`.
 - Commit de README: `22f137b083a1e9668a2fe31e9e7e817fe45f70ec`.
-- PR, merge, SHA final, workflow y Pages: pendientes de integración y ejecución al momento de crear esta bitácora.
+- PR #50: https://github.com/leandrocuellarok-netizen/mapafederal/pull/50 — integrado.
+- Merge/squash en `main`: `e91b3b154aa97925270e8c44cda5ca327edbb68c`.
+- GitHub Actions #906 (run ID 46088762738, commit `e91b3b154aa97925270e8c44cda5ca327edbb68c`): `validate=success`; `deploy=success`. El paso `Check public entry point` terminó correctamente y `Deploy to GitHub Pages` completó con éxito.
+- Run: https://github.com/leandrocuellarok-netizen/mapafederal/actions/runs/46088762738
+- URL de Pages del proyecto: https://leandrocuellarok-netizen.github.io/mapafederal/
+- La inspección visual independiente de la portada y del JSON público no pudo completarse: el navegador no pudo acceder al dominio. Se confirma el job de Pages, no la visualización final del marcador en pantalla.
 
 ## Gaps y próxima prioridad
 
