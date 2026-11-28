@@ -56,9 +56,9 @@ La ficha provincial id=2 corresponde a Parque Industrial Gualeguaychú - CODEGU,
 - Prevalidación local sobre los contenidos recuperados de GitHub: JSON parseado; 127 IDs únicos, 127 nombres únicos y 127 pares de coordenadas únicos; coordenadas dentro del rango nacional; categorías y jurisdicciones admitidas.
 - Matriz recalculada desde el catálogo: Entre Ríos = 5, Centro = 18, Industria = 18; filas provinciales reconciliadas con el catálogo.
 - Regresión de GitHub Actions añadida para el ID, coordenadas, fuente, CRS no declarado, calidad de referencia y estado `no_verificado`.
-- Commit del catálogo: `3782b4fa8b403557cc9701e74f91fc86ecc75058`.
-- Commit de matriz: `248c4f396ea4200af8121562063c32ed4d78b646`.
-- Commit de validaciones: `138d11e8756dc4631b842c3c8eeb6d542e873828`.
+- Commit del catálogo: `87bde3b5c4a24d0ab7f784b26029c7fbec67c68a`.
+- Commit de matriz: `4e91e15a888e74a7ddcb54ab5deb70fbfd3ccac8`.
+- Commit de validaciones: `738c3f22702cb4a07657a954aaeb17104659bef6`.
 - Commit de README: `22f137b083a1e9668a2fe31e9e7e817fe45f70ec`.
 - PR, merge, SHA final, workflow y Pages: pendientes de integración y ejecución al momento de crear esta bitácora.
 
