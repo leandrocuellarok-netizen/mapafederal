@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T21:32:42-03:00",
+  "generatedAt": "2026-11-27T22:36:21-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "87bde3b5c4a24d0ab7f784b26029c7fbec67c68a",
-  "nodeCount": 127,
+  "catalogCommit": "c2f89810f0694978cf26d30d646ff3d853647733",
+  "nodeCount": 128,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -71,7 +71,7 @@
         "Santa Cruz",
         "Tierra del Fuego"
       ],
-      "nodeCount": 25,
+      "nodeCount": 26,
       "coveredJurisdictions": 5
     },
     {
@@ -611,9 +611,9 @@
     {
       "province": "Tierra del Fuego",
       "region": "Patagonia",
-      "total": 4,
+      "total": 5,
       "byType": {
-        "Ciudad": 0,
+        "Ciudad": 1,
         "Puerto": 1,
         "Aeropuerto": 1,
         "Paso fronterizo": 0,
@@ -624,7 +624,6 @@
         "Estación ferroviaria": 0
       },
       "missingCategories": [
-        "Ciudad",
         "Paso fronterizo",
         "Logística",
         "Recurso mineral",
@@ -659,7 +658,7 @@
     }
   ],
   "categoryTotals": {
-    "Ciudad": 9,
+    "Ciudad": 10,
     "Puerto": 22,
     "Aeropuerto": 25,
     "Paso fronterizo": 13,
@@ -706,9 +705,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Centro",
-    "nextTarget": "Patagonia",
-    "note": "Ejecución del 27/11/2026 en Gualeguaychú (Entre Ríos, región Centro), priorizada por la brecha de Industria en la provincia: tenía 4 nodos y 0 referencias industriales. Se incorporó el Parque Industrial Gualeguaychú (Municipal), ficha provincial id=37, con coordenada decimal -33.0267144514673, -58.6065778299143 publicada por la Dirección de Industria y Parques Industriales de Entre Ríos. La ficha declara 23 ha de superficie total, pero no informa fecha de actualización, datum/CRS, precisión ni semántica geométrica; el punto se usa como referencia general, no como acceso, centroide certificado, lote ni perímetro. No se verificaron operación vigente ni disponibilidad de lotes; status=no_verificado. Entre Ríos pasa de 4 a 5 nodos; Centro de 17 a 18; Industria de 17 a 18. El mínimo nacional permanece en 5 jurisdicciones con 3 nodos: Catamarca, Jujuy, Salta, Santiago del Estero y Tucumán. La próxima región de la rotación es Patagonia."
+    "lastTargeted": "Patagonia",
+    "nextTarget": "Buenos Aires Province",
+    "note": "Ejecución del 27/11/2026 en Ushuaia (Tierra del Fuego, región Patagonia), priorizada por la brecha de Ciudad: la provincia tenía 4 nodos y 0 referencias urbanas. Se incorporó Ushuaia — capital de Tierra del Fuego — en Ciudad, con coordenadas 54°48′26″S, 68°18′16″O publicadas por la Municipalidad de Ushuaia el 18/06/2014; conversión aritmética a -54.80722222222222, -68.30444444444444, sin reproyección ni transformación de datum. La fuente no declara datum/CRS ni precisión métrica; el punto es una referencia urbana general, no centroide certificado ni límite del ejido. CONAE corrobora la condición de capital y publica otra referencia general de la ciudad (54°48′30″S, 68°18′30″O) en la ficha de imagen ALOS fechada el 23/01/2008. Tierra del Fuego pasa de 4 a 5 nodos; Patagonia de 25 a 26; Ciudad de 9 a 10. El mínimo nacional permanece en cinco provincias con 3 nodos: Catamarca, Jujuy, Salta, Santiago del Estero y Tucumán. La siguiente región de la rotación es Buenos Aires Province."
   },
   "pendingCandidates": [
     {

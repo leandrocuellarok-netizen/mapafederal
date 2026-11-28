@@ -615,7 +615,7 @@ jobs:
           coverage = json.loads(Path("research/national-map-coverage.json").read_text(encoding="utf-8"))
           assert coverage.get("catalogPath") == "data/strategic-nodes.json"
           assert coverage.get("nodeCount") == len(nodes)
-          assert coverage.get("nodeCount") == 127, "El catálogo nacional debe contener 127 nodos en esta revisión"
+          assert coverage.get("nodeCount") == 128, "El catálogo nacional debe contener 127 nodos en esta revisión"
           ibera = next((node for node in nodes if node.get("id") == "corrientes-turismo-parque-nacional-ibera"), None)
           assert ibera is not None and ibera["province"] == "Corrientes" and ibera["type"] == "Turismo"
           assert ibera["coords"] == [-27.93238, -56.93083]
@@ -692,7 +692,7 @@ jobs:
           assert "Turismo" not in la_rioja_row["missingCategories"]
           assert "Aeropuerto" not in la_rioja_row["missingCategories"]
           assert coverage["categoryTotals"]["Aeropuerto"] == 25
-          assert coverage["categoryTotals"]["Ciudad"] == 9
+          assert coverage["categoryTotals"]["Ciudad"] == 10
           assert coverage["categoryTotals"]["Industria"] == 18
           rotation = coverage.get("regionalRotation", {})
           rotation_order = rotation.get("order")
@@ -764,7 +764,7 @@ jobs:
           assert "precisión de minuto" in laguna_blanca_candidate["reason"]
           noa = next(region for region in coverage["regions"] if region["name"] == "NOA")
           assert noa["nodeCount"] == 15 and noa["coveredJurisdictions"] == 5
-          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Patagonia" and coverage["regionalRotation"]["nextTarget"] == "Buenos Aires Province"
           formosa_reserve = next((node for node in nodes if node.get("id") == "formosa-turismo-reserva-natural-formosa"), None)
           assert formosa_reserve is not None and formosa_reserve["province"] == "Formosa" and formosa_reserve["type"] == "Turismo"
           assert formosa_reserve["district"] == "Bermejo"
@@ -828,8 +828,8 @@ jobs:
           assert -53.80682039 <= rio_grande["coords"][0] <= -53.79380794
           assert -67.74924058 <= rio_grande["coords"][1] <= -67.72373435
           tierra_del_fuego = next(row for row in coverage_rows if row["province"] == "Tierra del Fuego")
-          assert tierra_del_fuego["total"] == 4 and tierra_del_fuego["byType"]["Industria"] == 1 and tierra_del_fuego["byType"]["Turismo"] == 1
-          assert "Turismo" not in tierra_del_fuego["missingCategories"]
+          assert tierra_del_fuego["total"] == 5 and tierra_del_fuego["byType"]["Ciudad"] == 1 and tierra_del_fuego["byType"]["Industria"] == 1 and tierra_del_fuego["byType"]["Turismo"] == 1
+          assert "Turismo" not in tierra_del_fuego["missingCategories"] and "Ciudad" not in tierra_del_fuego["missingCategories"]
           tierra_del_fuego_park = next((node for node in nodes if node.get("id") == "tierra-del-fuego-turismo-parque-nacional-tierra-del-fuego"), None)
           assert tierra_del_fuego_park is not None and tierra_del_fuego_park["province"] == "Tierra del Fuego" and tierra_del_fuego_park["district"] == "Ushuaia" and tierra_del_fuego_park["type"] == "Turismo"
           assert tierra_del_fuego_park["coords"] == [-54.64226, -68.48597] and tierra_del_fuego_park["status"] == "operativo"
@@ -840,8 +840,19 @@ jobs:
           assert tierra_del_fuego_park["statusSource"] == "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-tierra-del-fuego/horarios-como-llegar"
           assert tierra_del_fuego_park["additionalStatusSourcePublishedAt"] == "2026-05-15"
           assert tierra_del_fuego_park["verification"]["checkedAt"] == "2026-11-27"
+          ushuaia_city = next((node for node in nodes if node.get("id") == "tierra-del-fuego-ciudad-ushuaia-capital-provincial"), None)
+          assert ushuaia_city is not None and ushuaia_city["province"] == "Tierra del Fuego" and ushuaia_city["district"] == "Ushuaia" and ushuaia_city["locality"] == "Ushuaia" and ushuaia_city["type"] == "Ciudad"
+          assert ushuaia_city["coords"] == [-54.80722222222222, -68.30444444444444] and ushuaia_city["status"] == "operativo"
+          assert ushuaia_city["source"] == "https://www.ushuaia.gob.ar/eventos/muestra-fotografica-54-48-26-s-68-18-16-o-de-lujan-agusti"
+          assert ushuaia_city["sourcePublishedAt"] == "2014-06-18" and ushuaia_city["coordinateSource"] == ushuaia_city["source"]
+          assert ushuaia_city["coordinateReferenceSystem"].startswith("Coordenadas geográficas") and "no se asigna epsg" in ushuaia_city["coordinateReferenceSystem"].lower()
+          assert "conversión aritmética dms" in ushuaia_city["coordinateTransformation"].lower()
+          assert "referencia urbana general" in ushuaia_city["coordinateQuality"].lower() and "no representa centroide certificado" in ushuaia_city["coordinateQuality"].lower()
+          assert ushuaia_city["statusSource"] == "https://www.ushuaia.gob.ar/mapa-ushuaia"
+          assert ushuaia_city["additionalStatusSource"] == "https://www.argentina.gob.ar/ciencia/conae/educacion-y-formacion-masiva/materiales-educativos/ciudad-de-ushuaia-tierra-del-fuego-alos-avnir2-23-de-enero-de-2008"
+          assert ushuaia_city["verification"]["checkedAt"] == "2026-11-27"
           patagonia = next(region for region in coverage["regions"] if region["name"] == "Patagonia")
-          assert patagonia["nodeCount"] == 25 and patagonia["coveredJurisdictions"] == 5
+          assert patagonia["nodeCount"] == 26 and patagonia["coveredJurisdictions"] == 5
           ciervo = next((node for node in nodes if node.get("id") == "buenos-aires-parque-nacional-ciervo-de-los-pantanos"), None)
           assert ciervo is not None and ciervo["province"] == "Buenos Aires" and ciervo["district"] == "Campana" and ciervo["type"] == "Turismo"
           assert ciervo["coords"] == [-34.23450, -58.87724] and ciervo["status"] == "operativo"
@@ -984,10 +995,10 @@ jobs:
           assert rio_negro["total"] == 5 and rio_negro["byType"]["Industria"] == 1 and rio_negro["byType"]["Ciudad"] == 1
           assert "Industria" not in rio_negro["missingCategories"] and "Ciudad" not in rio_negro["missingCategories"]
           patagonia = next(region for region in coverage["regions"] if region["name"] == "Patagonia")
-          assert patagonia["nodeCount"] == 25 and patagonia["coveredJurisdictions"] == 5
+          assert patagonia["nodeCount"] == 26 and patagonia["coveredJurisdictions"] == 5
           assert coverage["categoryTotals"]["Industria"] == 18
-          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
-          assert coverage["catalogCommit"] == "87bde3b5c4a24d0ab7f784b26029c7fbec67c68a"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Patagonia" and coverage["regionalRotation"]["nextTarget"] == "Buenos Aires Province"
+          assert coverage["catalogCommit"] == "c2f89810f0694978cf26d30d646ff3d853647733"
           copo = next((node for node in nodes if node.get("id") == "santiago-del-estero-turismo-parque-nacional-copo"), None)
           assert copo is not None and copo["province"] == "Santiago del Estero" and copo["district"] == "Copo" and copo["type"] == "Turismo"
           assert copo["coords"] == [-25.82089, -61.88005] and copo["status"] == "operativo"
@@ -1010,7 +1021,7 @@ jobs:
           assert cordoba_row["total"] == 4 and cordoba_row["byType"]["Estación ferroviaria"] == 1
           assert "Estación ferroviaria" not in cordoba_row["missingCategories"]
           assert coverage["categoryTotals"]["Estación ferroviaria"] == 8
-          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Patagonia" and coverage["regionalRotation"]["nextTarget"] == "Buenos Aires Province"
 
           entre_rios = next(row for row in coverage_rows if row["province"] == "Entre Ríos")
           assert entre_rios["total"] == 5 and entre_rios["byType"]["Turismo"] == 1 and entre_rios["byType"]["Industria"] == 1
@@ -1018,8 +1029,8 @@ jobs:
           centro = next(region for region in coverage["regions"] if region["name"] == "Centro")
           assert centro["nodeCount"] == 18 and centro["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Turismo"] == 22
-          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
-          assert coverage["catalogCommit"] == "87bde3b5c4a24d0ab7f784b26029c7fbec67c68a"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Patagonia" and coverage["regionalRotation"]["nextTarget"] == "Buenos Aires Province"
+          assert coverage["catalogCommit"] == "c2f89810f0694978cf26d30d646ff3d853647733"
           san_juan = next(row for row in coverage_rows if row["province"] == "San Juan")
           assert san_juan["total"] == 4 and san_juan["byType"]["Recurso mineral"] == 1
           assert "Recurso mineral" not in san_juan["missingCategories"]
@@ -1042,9 +1053,9 @@ jobs:
           assert "referencia urbana general" in santa_rosa["coordinateQuality"].lower() and "no como límite administrativo" in santa_rosa["coordinateQuality"].lower()
           assert "116.083 habitantes" in santa_rosa["administrativeStatus"] and "Censo 2022" in santa_rosa["administrativeStatus"]
           assert santa_rosa["verification"]["checkedAt"] == "2026-11-27"
-          assert coverage["categoryTotals"]["Ciudad"] == 9
-          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
-          assert coverage["catalogCommit"] == "87bde3b5c4a24d0ab7f784b26029c7fbec67c68a"
+          assert coverage["categoryTotals"]["Ciudad"] == 10
+          assert coverage["regionalRotation"]["lastTargeted"] == "Patagonia" and coverage["regionalRotation"]["nextTarget"] == "Buenos Aires Province"
+          assert coverage["catalogCommit"] == "c2f89810f0694978cf26d30d646ff3d853647733"
           la_pampa = next(row for row in coverage_rows if row["province"] == "La Pampa")
           assert la_pampa["total"] == 4 and la_pampa["byType"]["Ciudad"] == 1
           assert "Ciudad" not in la_pampa["missingCategories"]
@@ -1056,8 +1067,8 @@ jobs:
           cuyo = next(region for region in coverage["regions"] if region["name"] == "Cuyo")
           assert cuyo["nodeCount"] == 17 and cuyo["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Recurso mineral"] == 6
-          assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
-          assert coverage["catalogCommit"] == "87bde3b5c4a24d0ab7f784b26029c7fbec67c68a"
+          assert coverage["regionalRotation"]["lastTargeted"] == "Patagonia" and coverage["regionalRotation"]["nextTarget"] == "Buenos Aires Province"
+          assert coverage["catalogCommit"] == "c2f89810f0694978cf26d30d646ff3d853647733"
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
