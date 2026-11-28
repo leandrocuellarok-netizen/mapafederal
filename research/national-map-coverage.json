@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T20:39:34-03:00",
+  "generatedAt": "2026-11-27T21:32:42-03:00",
   "catalogPath": "data/strategic-nodes.json",
-  "catalogCommit": "9cd645e7a8734eac0c281231bfada19f6ec083b1",
-  "nodeCount": 126,
+  "catalogCommit": "87bde3b5c4a24d0ab7f784b26029c7fbec67c68a",
+  "nodeCount": 127,
   "jurisdictionCount": 24,
   "categories": [
     "Ciudad",
@@ -59,7 +59,7 @@
         "La Pampa",
         "Santa Fe"
       ],
-      "nodeCount": 17,
+      "nodeCount": 18,
       "coveredJurisdictions": 4
     },
     {
@@ -252,14 +252,14 @@
     {
       "province": "Entre Ríos",
       "region": "Centro",
-      "total": 4,
+      "total": 5,
       "byType": {
         "Ciudad": 0,
         "Puerto": 2,
         "Aeropuerto": 0,
         "Paso fronterizo": 1,
         "Logística": 0,
-        "Industria": 0,
+        "Industria": 1,
         "Recurso mineral": 0,
         "Turismo": 1,
         "Estación ferroviaria": 0
@@ -268,7 +268,6 @@
         "Ciudad",
         "Aeropuerto",
         "Logística",
-        "Industria",
         "Recurso mineral",
         "Estación ferroviaria"
       ]
@@ -665,7 +664,7 @@
     "Aeropuerto": 25,
     "Paso fronterizo": 13,
     "Logística": 4,
-    "Industria": 17,
+    "Industria": 18,
     "Recurso mineral": 6,
     "Turismo": 22,
     "Estación ferroviaria": 8
@@ -707,9 +706,9 @@
       "Buenos Aires Province",
       "CABA"
     ],
-    "lastTargeted": "Cuyo",
-    "nextTarget": "Centro",
-    "note": "Ejecución del 27/11/2026 en La Rioja (Cuyo), priorizada por la brecha de Recurso mineral. Se incorporó el depósito Los Corrales - Playa Amarilla (SEGEMAR 11278): la base actualizada el 13/07/2026 publica localización -28.82805, -67.65972, oro (Au), tipo placer, tamaño pequeño y estado «productor». Esa clasificación no acredita extracción vigente; el catálogo conserva status=no_verificado. La coordenada se copió sin transformación; datum/CRS y semántica geométrica no declarados. El marcador representa la localización del depósito, no un acceso ni un perímetro. La Rioja pasa de 4 a 5 nodos; Cuyo de 16 a 17; Recurso mineral de 5 a 6. El mínimo nacional permanece en 5 jurisdicciones con 3 nodos: Catamarca, Jujuy, Salta, Santiago del Estero y Tucumán. La próxima región de la rotación es Centro."
+    "lastTargeted": "Centro",
+    "nextTarget": "Patagonia",
+    "note": "Ejecución del 27/11/2026 en Gualeguaychú (Entre Ríos, región Centro), priorizada por la brecha de Industria en la provincia: tenía 4 nodos y 0 referencias industriales. Se incorporó el Parque Industrial Gualeguaychú (Municipal), ficha provincial id=37, con coordenada decimal -33.0267144514673, -58.6065778299143 publicada por la Dirección de Industria y Parques Industriales de Entre Ríos. La ficha declara 23 ha de superficie total, pero no informa fecha de actualización, datum/CRS, precisión ni semántica geométrica; el punto se usa como referencia general, no como acceso, centroide certificado, lote ni perímetro. No se verificaron operación vigente ni disponibilidad de lotes; status=no_verificado. Entre Ríos pasa de 4 a 5 nodos; Centro de 17 a 18; Industria de 17 a 18. El mínimo nacional permanece en 5 jurisdicciones con 3 nodos: Catamarca, Jujuy, Salta, Santiago del Estero y Tucumán. La próxima región de la rotación es Patagonia."
   },
   "pendingCandidates": [
     {
@@ -945,6 +944,17 @@
         "https://nodoide.catamarca.gob.ar/geoservicios.php",
         "https://nodoide.catamarca.gob.ar/geoserver/idecat/ows?service=WFS&version=2.0.0&request=GetCapabilities"
       ]
+    },
+    {
+      "province": "Entre Ríos",
+      "locality": "Gualeguaychú",
+      "category": "Industria",
+      "name": "Parque Industrial Gualeguaychú — CODEGU",
+      "decision": "not_added",
+      "reason": "La ficha provincial id=2 documenta un parque distinto (CODEGU), con 214 ha, empresas e infraestructura; sin embargo, la coordenada aparece en la sección «Información y contacto del municipio», no atribuida expresamente al parque. No se reutiliza ese punto como ubicación del predio; se requiere polígono oficial o coordenada explícita del parque.",
+      "sourceUrls": [
+        "https://portal.entrerios.gov.ar/parquesindustriales/parque.html?id=2"
+      ]
     }
   ],
   "methodology": [
@@ -977,6 +987,7 @@
     "El Parque Nacional Copo (Santiago del Estero) usa la ubicación geográfica decimal publicada por SIB/APN: -25.82089, -61.88005, departamento Copo, creación 2000 y superficie 118.119 ha. La ficha no declara datum/CRS ni define si el punto corresponde a acceso, centroide o punto interno; se conserva como referencia general del área protegida, no como acceso, centroide certificado ni perímetro. APN publica apertura diaria de 7 a 15 h y accesos por RN 16; no se verificó apertura efectiva ni transitabilidad en tiempo real.",
     "La Estación Tucumán (Mitre) se incorporó como nodo ferroviario porque Trenes Argentinos identifica la terminal en su ficha oficial Buenos Aires–Tucumán y enlaza un pin de Google Maps con coordenadas decimales. Google Maps se identifica como fuente secundaria; no declara datum/CRS ni precisión. El punto se conserva como referencia de la estación, no como andén, acceso específico ni perímetro. La ficha oficial publica trenes dos veces por semana; no se verificaron calendario puntual, cancelaciones ni operación en tiempo real.",
     "El Puente Internacional San Ignacio de Loyola (Formosa) usa las coordenadas del sitio Puente Loyola publicadas por el Ministerio de Seguridad en el Boletín de las Fronteras Argentinas N.º 2 (junio de 2021): 25°15′51,4″S, 57°43′28″O. Se convirtieron DMS a grados decimales sin reproyección; datum/CRS no declarados. El marcador es una referencia del cruce y no representa el eje exacto del puente, el límite internacional certificado ni el perímetro aduanero. La Dirección Nacional de Migraciones incluye el paso entre las vías en funcionamiento y publica horario de 24 h; no se verifican demoras ni interrupciones en tiempo real.",
-    "El depósito Los Corrales - Playa Amarilla (La Rioja, SEGEMAR 11278) usa la coordenada decimal -28.82805, -67.65972 publicada directamente por la base SEGEMAR, actualizada el 13/07/2026. La ficha lo clasifica como depósito pequeño de placer de oro y registra estado «productor»; esto no acredita operación extractiva vigente. El catálogo conserva status=no_verificado por falta de evidencia primaria reciente de actividad. La ficha no declara datum/CRS ni semántica geométrica; se copia el punto sin transformación y se usa como localización del depósito, no como acceso, centroide certificado ni perímetro."
+    "El depósito Los Corrales - Playa Amarilla (La Rioja, SEGEMAR 11278) usa la coordenada decimal -28.82805, -67.65972 publicada directamente por la base SEGEMAR, actualizada el 13/07/2026. La ficha lo clasifica como depósito pequeño de placer de oro y registra estado «productor»; esto no acredita operación extractiva vigente. El catálogo conserva status=no_verificado por falta de evidencia primaria reciente de actividad. La ficha no declara datum/CRS ni semántica geométrica; se copia el punto sin transformación y se usa como localización del depósito, no como acceso, centroide certificado ni perímetro.",
+    "El Parque Industrial Gualeguaychú (Municipal, ficha provincial id=37) usa la coordenada decimal publicada por la Dirección de Industria y Parques Industriales de Entre Ríos. La ficha no declara datum/CRS, precisión ni semántica geométrica; se conserva como referencia general del parque, no como acceso, centroide certificado, lote ni perímetro. La ficha declara 23 ha de superficie total, pero no se verificaron operación vigente ni disponibilidad de lotes."
   ]
 }

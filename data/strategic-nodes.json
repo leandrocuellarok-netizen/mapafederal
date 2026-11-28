@@ -2754,5 +2754,40 @@
       "checkedAt": "2026-11-27",
       "scope": "SEGEMAR, registro 11278, identifica Los Corrales - Playa Amarilla en la provincia de La Rioja, localidad Famatina; publica -28.82805, -67.65972, oro (Au), tipo depósito de placer, tamaño pequeño y estado «productor». La base declara actualización 13/07/2026. Se copiaron las coordenadas decimales sin transformación; la ficha no declara datum/CRS ni la semántica geométrica del punto. La clasificación «productor» no demuestra extracción vigente y no se localizó evidencia primaria reciente de operador o autoridad que confirme actividad actual. El punto representa la localización del depósito, no un acceso, centroide certificado ni perímetro."
     }
+  },
+  {
+    "id": "entre-rios-industria-parque-industrial-gualeguaychu-municipal",
+    "name": "Parque Industrial Gualeguaychú (Municipal)",
+    "province": "Entre Ríos",
+    "district": "Gualeguaychú",
+    "locality": "Gualeguaychú",
+    "type": "Industria",
+    "coords": [
+      -33.0267144514673,
+      -58.6065778299143
+    ],
+    "note": "Parque industrial municipal de Gualeguaychú. La ficha provincial publica su ubicación y una superficie total declarada de 23 ha; la coordenada se conserva como referencia general del predio, sin atribuir acceso, centroide certificado ni perímetro. No se confirma estado operativo ni disponibilidad actual de lotes.",
+    "source": "https://portal.entrerios.gov.ar/parquesindustriales/parque.html?id=37",
+    "sourceName": "Gobierno de Entre Ríos — Dirección de Industria y Parques Industriales, ficha Parque Industrial Gualeguaychú (Municipal)",
+    "sourcePublishedAt": null,
+    "sourcePublicationNote": "Ficha institucional consultada el 2026-11-27; no informa fecha de publicación o actualización.",
+    "sourceRecordId": "Ficha provincial de parques industriales id=37; Parque Industrial Gualeguaychú (Municipal), departamento/localidad Gualeguaychú, superficie total declarada 23 ha.",
+    "coordinateSource": "https://portal.entrerios.gov.ar/parquesindustriales/parque.html?id=37",
+    "coordinateSourceName": "Gobierno de Entre Ríos — Dirección de Industria y Parques Industriales, ficha Parque Industrial Gualeguaychú (Municipal)",
+    "coordinateSourcePublishedAt": null,
+    "coordinateSourcePublicationNote": "La sección Ubicación publica las coordenadas decimales -33.0267144514673, -58.6065778299143; consultada el 2026-11-27. No informa datum, CRS/EPSG, precisión ni método de captura.",
+    "coordinateReferenceSystem": "Coordenadas geográficas decimales publicadas por el portal provincial; datum, CRS y EPSG no declarados. No se asigna EPSG.",
+    "coordinateTransformation": "Sin transformación: se copiaron los valores decimales publicados; no se realizó geocodificación, reproyección ni transformación de datum.",
+    "coordinateQuality": "La ficha provincial identifica la coordenada bajo la sección Ubicación del Parque Industrial Gualeguaychú (Municipal), pero no define si corresponde a acceso, centroide, punto interno o perímetro ni declara precisión. Se usa solo como referencia general del parque; no representa acceso, centroide certificado, lote ni perímetro.",
+    "statusSource": "https://portal.entrerios.gov.ar/parquesindustriales/parque.html?id=37",
+    "statusSourceName": "Gobierno de Entre Ríos — Dirección de Industria y Parques Industriales, ficha Parque Industrial Gualeguaychú (Municipal)",
+    "statusSourcePublishedAt": null,
+    "administrativeStatus": "La Dirección de Industria y Parques Industriales del Gobierno de Entre Ríos mantiene una ficha del Parque Industrial Gualeguaychú (Municipal), lo identifica en el departamento Gualeguaychú y declara una superficie total de 23 ha. La ficha no informa fecha de actualización ni aporta evidencia suficiente para afirmar operación actual del parque, actividad vigente de cada empresa o disponibilidad efectiva de lotes. El estado operativo se conserva como no verificado.",
+    "validityPeriod": "Ficha consultada el 2026-11-27; sin fecha de publicación o actualización indicada. Estado operativo y disponibilidad de lotes no verificados.",
+    "status": "no_verificado",
+    "verification": {
+      "checkedAt": "2026-11-27",
+      "scope": "La ficha oficial provincial id=37 identifica el Parque Industrial Gualeguaychú (Municipal), departamento/localidad Gualeguaychú, y publica la coordenada decimal -33.0267144514673, -58.6065778299143 y superficie total declarada de 23 ha. Se copiaron los valores sin geocodificación ni transformación. La fuente no declara datum/CRS, precisión, método de captura ni semántica geométrica; el punto se conserva como referencia general del parque, no como acceso, centroide certificado, lote ni perímetro. La ficha no aporta fecha de actualización ni confirma operación vigente o disponibilidad de lotes."
+    }
   }
 ]
