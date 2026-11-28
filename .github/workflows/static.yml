@@ -987,7 +987,7 @@ jobs:
           assert patagonia["nodeCount"] == 25 and patagonia["coveredJurisdictions"] == 5
           assert coverage["categoryTotals"]["Industria"] == 18
           assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
-          assert coverage["catalogCommit"] == "3782b4fa8b403557cc9701e74f91fc86ecc75058"
+          assert coverage["catalogCommit"] == "87bde3b5c4a24d0ab7f784b26029c7fbec67c68a"
           copo = next((node for node in nodes if node.get("id") == "santiago-del-estero-turismo-parque-nacional-copo"), None)
           assert copo is not None and copo["province"] == "Santiago del Estero" and copo["district"] == "Copo" and copo["type"] == "Turismo"
           assert copo["coords"] == [-25.82089, -61.88005] and copo["status"] == "operativo"
@@ -1019,7 +1019,7 @@ jobs:
           assert centro["nodeCount"] == 18 and centro["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Turismo"] == 22
           assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
-          assert coverage["catalogCommit"] == "3782b4fa8b403557cc9701e74f91fc86ecc75058"
+          assert coverage["catalogCommit"] == "87bde3b5c4a24d0ab7f784b26029c7fbec67c68a"
           san_juan = next(row for row in coverage_rows if row["province"] == "San Juan")
           assert san_juan["total"] == 4 and san_juan["byType"]["Recurso mineral"] == 1
           assert "Recurso mineral" not in san_juan["missingCategories"]
@@ -1044,7 +1044,7 @@ jobs:
           assert santa_rosa["verification"]["checkedAt"] == "2026-11-27"
           assert coverage["categoryTotals"]["Ciudad"] == 9
           assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
-          assert coverage["catalogCommit"] == "3782b4fa8b403557cc9701e74f91fc86ecc75058"
+          assert coverage["catalogCommit"] == "87bde3b5c4a24d0ab7f784b26029c7fbec67c68a"
           la_pampa = next(row for row in coverage_rows if row["province"] == "La Pampa")
           assert la_pampa["total"] == 4 and la_pampa["byType"]["Ciudad"] == 1
           assert "Ciudad" not in la_pampa["missingCategories"]
@@ -1057,7 +1057,7 @@ jobs:
           assert cuyo["nodeCount"] == 17 and cuyo["coveredJurisdictions"] == 4
           assert coverage["categoryTotals"]["Recurso mineral"] == 6
           assert coverage["regionalRotation"]["lastTargeted"] == "Centro" and coverage["regionalRotation"]["nextTarget"] == "Patagonia"
-          assert coverage["catalogCommit"] == "3782b4fa8b403557cc9701e74f91fc86ecc75058"
+          assert coverage["catalogCommit"] == "87bde3b5c4a24d0ab7f784b26029c7fbec67c68a"
           print(f"Matriz nacional válida: {len(nodes)} nodos, {len(coverage_rows)} jurisdicciones y {len(coverage['categories'])} categorías.")
           assert provincial_data.get("period") == "2025", "El período del dataset provincial debe ser 2025"
           assert provincial_data.get("publisher") == "INDEC", "La fuente de exportaciones provinciales debe ser INDEC"
