@@ -2754,8 +2754,7 @@
       "checkedAt": "2026-11-27",
       "scope": "SEGEMAR, registro 11278, identifica Los Corrales - Playa Amarilla en la provincia de La Rioja, localidad Famatina; publica -28.82805, -67.65972, oro (Au), tipo depósito de placer, tamaño pequeño y estado «productor». La base declara actualización 13/07/2026. Se copiaron las coordenadas decimales sin transformación; la ficha no declara datum/CRS ni la semántica geométrica del punto. La clasificación «productor» no demuestra extracción vigente y no se localizó evidencia primaria reciente de operador o autoridad que confirme actividad actual. El punto representa la localización del depósito, no un acceso, centroide certificado ni perímetro."
     }
-  }
-,
+  },
   {
     "id": "entre-rios-industria-parque-industrial-gualeguaychu-municipal",
     "name": "Parque Industrial Gualeguaychú (Municipal)",
